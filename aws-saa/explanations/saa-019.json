@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "file": "saa-019.json",
+    "question_range": "Q901-Q912",
+    "total_questions": 12
+  },
+  "questions": [
+    {
+      "id": 901,
+      "type": "single",
+      "question": "Acompanyismigratinganewapplicationfromanon-premisesdatacentertoanewVPCintheAWS Cloud.ThecompanyhasmultipleAWSaccountsandVPCsthatsharemanysubnetsandapplications. Thecompanywantstohavefine-grainedaccesscontrolforthenewapplication.Thecompanywants toensurethatallnetworkresourcesacrossaccountsandVPCsthataregrantedpermissiontoaccess thenewapplicationcanaccesstheapplication. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "SetupaVPCpeeringconnectionforeachVPCthatneedsaccesstothenewapplicationVPC. UpdateroutetablesineachVPCtoenableconnectivity.",
+        "B": "Deployatransitgatewayintheaccountthathoststhenewapplication.Sharethetransitgateway witheachaccountthatneedstoconnecttotheapplication.UpdateroutetablesintheVPCthathosts thenewapplicationandinthetransitgatewaytoenableconnectivity.",
+        "C": "UseanAWSPrivateLinkendpointservicetomakethenewapplicationaccessibletootherVPCs. Controlaccesstotheapplicationbyusinganendpointpolicy.",
+        "D": "UseanApplicationLoadBalancer(ALB)toexposethenewapplicationtotheinternet.Configure authenticationandauthorizationprocessestoensurethatonlyspecifiedVPCscanaccessthe application."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "A.VPCpeering:Createsafullymeshedarchitecture,whichiscomplextomanageformultipleVPCs.\nB.Transitgateway:SimplifiesnetworkmanagementbyconnectingmultipleVPCsandon-premises\nnetworksviaacentralhub.\nC.PrivateLink:RestrictscommunicationtotheapplicationendpointbutmaynotallowfullVPC\nconnectivity.\nD.ALBwithinternetexposure:Notsecureorspecifictoprivatenetworkcommunication.\nReference:AWSTransitGateway"
+    },
+    {
+      "id": 902,
+      "type": "single",
+      "question": "Acompanyiscreatinganapplication.Thecompanystoresdatafromtestsoftheapplicationin multipleon-premiseslocations.Thecompanyneedstoconnecttheon-premiseslocationstoVPCsin anAWSRegionintheAWSCloud.ThenumberofaccountsandVPCswillincreaseduringthenext year.Thenetworkarchitecturemustsimplifytheadministrationofnewconnectionsandmust providetheabilitytoscale. WhichsolutionwillmeettheserequirementswiththeLEASTadministrativeoverhead?",
+      "options": {
+        "A": "CreateapeeringconnectionbetweentheVPCs.CreateaVPNconnectionbetweentheVPCsand theon-premiseslocations.",
+        "B": "LaunchanAmazonEC2instance.Ontheinstance,includeVPNsoftwarethatusesaVPN connectiontoconnectallVPCsandon-premiseslocations.",
+        "C": "Createatransitgateway.CreateVPCattachmentsfortheVPCconnections.CreateVPN attachmentsfortheon-premisesconnections.",
+        "D": "CreateanAWSDirectConnectconnectionbetweentheon-premiseslocationsandacentralVPC. ConnectthecentralVPCtootherVPCsbyusingpeeringconnections."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A.VPCpeering+VPN:NotscalableformultipleVPCsandaccounts.\nB.EC2withVPNsoftware:Requiresmanualsetupandhighadministrativeoverhead.\nC.Transitgateway:SimplifiesconnectionmanagementacrossVPCsandon-premiseslocations.\nD.DirectConnectwithcentralVPC:Limitsscalabilityandrequiresadditionalpeeringconnections.\nReference:AWSTransitGateway"
+    },
+    {
+      "id": 903,
+      "type": "single",
+      "question": "AcompanyisenhancingthesecurityofitsAWSenvironment,wherethecompanystoresasignificant amountofsensitivecustomerdat a.Thecompanyneedsasolutionthatautomaticallyidentifiesandclassifiessensitivedatathatis storedinmultipleAmazonS3buckets.Thesolutionmustautomaticallyrespondtodatabreachesand alertthecompany'ssecurityteamthroughemailimmediatelywhennoncompliantdataisfound. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "UseAmazonGuardDuty.ConfigureanAWSLambdafunctiontoroutealertstoanAmazonSimple NotificationService(AmazonSNS)topic.SubscribethesecurityteamtotheSNStopic.",
+        "B": "UseAmazonGuardDuty.ConfigureanAWSLambdafunctiontoroutealertstoanAmazonSimple QueueService(AmazonSQS)queue.ConfigureasecondLambdafunctiontoperiodicallypolltheSQS queueandtosendemailstothesecurityteambyusingAmazonSimpleEmailService(AmazonSES).",
+        "C": "UseAmazonMacie.IntegrateAmazonEventBridgewithMacie,andconfigureEventBridgetosend alertstoanAmazonSimpleNotificationService(AmazonSNS)topic.Subscribethesecurityteamto theSNStopic.",
+        "D": "UseAmazonMacie.IntegrateAmazonEventBridgewithMacie,andconfigureEventBridgeto routealertstoanAmazonSimpleQueueService(AmazonSQS)queue.ConfigureanAWSLambda functiontoperiodicallypolltheSQSqueueandtosendalertstothesecurityteambyusingAmazon SimpleEmailService(AmazonSES)."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A&B.GuardDuty:Designedforthreatdetection,notforidentifyingorclassifyingsensitivedatainS3\nbuckets.\nC.MaciewithEventBridge+SNS:Automaticallyidentifiessensitivedata,triggersalerts,anduses\nSNSforimmediatenotificationviaemail.\nD.MaciewithEventBridge+SQS:Introduceslatencyduetoperiodicpollingandaddsunnecessary\ncomplexity.\nReference:AmazonMacie,AmazonEventBridge"
+    },
+    {
+      "id": 904,
+      "type": "single",
+      "question": "Anecommercecompanyisplanningtomigrateanon-premisesMicrosoftSQLServerdatabasetothe AWSCloud.ThecompanyneedstomigratethedatabasetoSQLServerAlwaysOnavailabilitygroups. Thecloud-basedsolutionmustbehighlyavailable. Options:",
+      "options": {
+        "A": "DeploythreeAmazonEC2instanceswithSQLServeracrossthreeAvailabilityZones.Attachone AmazonElasticBlockStore(AmazonEBS)volumetotheEC2instances.",
+        "B": "MigratethedatabasetoAmazonRDSforSQLServer.ConfigureaMulti-AZdeploymentandread replicas.",
+        "C": "DeploythreeAmazonEC2instanceswithSQLServeracrossthreeAvailabilityZones.UseAmazon FSxforWindowsFileServerasthestoragetier.",
+        "D": "DeploythreeAmazonEC2instanceswithSQLServeracrossthreeAvailabilityZones.UseAmazon S3asthestoragetier."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A.EC2withEBS:DoesnotsupportSQLServerAlwaysOnavailabilitygroupseffectively.\nB.RDSMulti-AZ:ProvideshighavailabilitybutdoesnotsupportSQLServerAlwaysOnavailability\ngroups.\nC.EC2withFSxforWindows:BestsolutionforSQLServerAlwaysOnasFSxprovidessharedstorage\ncompatiblewithSQLServerclustering.\nD.EC2withS3:S3isnotsuitableforSQLServerstorage.\nReference:AmazonFSxforWindows"
+    },
+    {
+      "id": 905,
+      "type": "single",
+      "question": "Acompanyisdevelopingahighlyavailablenaturallanguageprocessing(NLP)application.The applicationhandleslargevolumesofconcurrentrequests.TheapplicationperformsNLPtaskssuch asentityrecognition,sentimentanalysis,andkeyphraseextractionontextdata. Thecompanyneedstostoredatathattheapplicationprocessesinahighlyavailableandscalable database. Options:",
+      "options": {
+        "A": "CreateanAmazonAPIGatewayRESTAPIendpointtohandleincomingrequests.Configurethe RESTAPItoinvokeanAWSLambdafunctionforeachrequest.ConfiguretheLambdafunctiontocall AmazonComprehendtoperformNLPtasksonthetextdata.StoretheprocesseddatainAmazon DynamoDB.",
+        "B": "CreateanAmazonAPIGatewayHTTPAPIendpointtohandleincomingrequests.Configurethe HTTPAPItoinvokeanAWSLambdafunctionforeachrequest.ConfiguretheLambdafunctiontocall AmazonTranslatetoperformNLPtasksonthetextdata.StoretheprocesseddatainAmazon ElastiCache.",
+        "C": "CreateanAmazonSQSqueuetobufferincomingrequests.DeploytheNLPapplicationonAmazon EC2instancesinanAutoScalinggroup.UseAmazonComprehendtoperformNLPtasks.Storethe processeddatainanAmazonRDSdatabase.",
+        "D": "CreateanAmazonAPIGatewayWebSocketAPIendpointtohandleincomingrequests.Configure theWebSocketAPItoinvokeanAWSLambdafunctionforeachrequest.ConfiguretheLambda functiontocallAmazonTextracttoperformNLPtasksonthetextdata.Storetheprocesseddatain AmazonElastiCache."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A.APIGateway+DynamoDB:Provideshighscalability,lowlatency,andseamlessintegrationwith\nAmazonComprehendforNLPtasks.\nB.HTTPAPI+Translate+ElastiCache:TranslateisnotrelevantforNLPtaskslikesentimentanalysis\norentityrecognition.ElastiCacheisunsuitableforpermanentstorage.\nC.SQS+EC2+RDS:Increasescomplexityandoperationaloverhead.RDSmaynotscaleeffectively\nforhighconcurrentloads.\nD.WebSocketAPI+Textract:TextractisirrelevantforNLPtasks.WebSocketAPIisnottheoptimal\nchoiceforthisusecase.\nReference:AmazonComprehend,AmazonDynamoDB"
+    },
+    {
+      "id": 906,
+      "type": "single",
+      "question": "AcompanyhasdevelopedanAPIusinganAmazonAPIGatewayRESTAPIandAWSLambda functions.TheAPIservesstaticanddynamiccontenttousersworldwide.Thecompanywantsto decreasethelatencyoftransferringcontentforAPIrequests. Options:",
+      "options": {
+        "A": "DeploytheRESTAPIasanedge-optimizedAPIendpoint.Enablecaching.Enablecontentencoding intheAPIdefinitiontocompresstheapplicationdataintransit.",
+        "B": "DeploytheRESTAPIasaRegionalAPIendpoint.Enablecaching.Enablecontentencodinginthe APIdefinitiontocompresstheapplicationdataintransit.",
+        "C": "DeploytheRESTAPIasanedge-optimizedAPIendpoint.Enablecaching.Configurereserved concurrencyfortheLambdafunctions.",
+        "D": "DeploytheRESTAPIasaRegionalAPIendpoint.Enablecaching.Configurereservedconcurrency fortheLambdafunctions."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A.Edge-optimizedAPI+Caching:ReduceslatencybyusingAmazonCloudFrontforedgelocations\nandenablescachingfordynamiccontent.Compressionreducesdatatransferlatency.\nB.RegionalAPI+Caching:Increaseslatencyforglobalusersduetothelackofedgelocations.\nC.Edge-optimizedAPI+ReservedConcurrency:ReservedconcurrencyensuresLambdaavailability\nbutdoesnotaddresslatencyfordynamiccontent.\nD.RegionalAPI+ReservedConcurrency:Lacksedgeoptimization,increasinglatencyforglobal\nusers.\nReference:AmazonAPIGateway"
+    },
+    {
+      "id": 907,
+      "type": "single",
+      "question": "Agamingcompanyisbuildinganapplicationthatusesadatabasetostoreuserdat a.Thecompanywantsthedatabasetohaveanactive-activeconfigurationthatallowsdatawritesto asecondaryAWSRegion.Thedatabasemustachieveasub-secondrecoverypointobjective(RPO). Options:",
+      "options": {
+        "A": "DeployanAmazonElastiCache(RedisOSS)cluster.Configureaglobaldatastorefordisaster recovery.ConfiguretheElastiCacheclustertocachedatafromanAmazonRDSdatabasethatis deployedintheprimaryRegion.",
+        "B": "DeployanAmazonDynamoDBtableintheprimaryRegionandthesecondaryRegion.Configure AmazonDynamoDBStreamstoinvokeanAWSLambdafunctiontowritechangesfromthetablein theprimaryRegiontothetableinthesecondaryRegion.",
+        "C": "DeployanAmazonAuroraMySQLdatabaseintheprimaryRegion.Configureaglobaldatabasefor thesecondaryRegion.",
+        "D": "DeployanAmazonDynamoDBtableintheprimaryRegion.Configureglobaltablesforthe secondaryRegion."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "A.ElastiCache:Providesin-memorycaching,notsuitableforpersistent,scalabledatabases.\nB.DynamoDBStreams+Lambda:Managesreplicationmanually,increasinglatencyandoperational\ncomplexity.\nC.AuroraGlobalDatabase:Provideshighavailabilitybutdoesnotsupportactive-active\nconfiguration.\nD.DynamoDBGlobalTables:Providesactive-activeconfigurationandsub-secondRPO.\nReference:AmazonDynamoDBGlobalTables"
+    },
+    {
+      "id": 908,
+      "type": "single",
+      "question": "AcompanywantstoimplementadatalakeintheAWSCloud.Thecompanymustensurethatonly specificteamshaveaccesstosensitivedatainthedatalake.Thecompanymusthaverow-level accesscontrolforthedatalake. Options:",
+      "options": {
+        "A": "UseAmazonRDStostorethedata.UseIAMrolesandpermissionsfordatagovernanceandaccess control.",
+        "B": "UseAmazonRedshifttostorethedata.UseIAMrolesandpermissionsfordatagovernanceand accesscontrol.",
+        "C": "UseAmazonS3tostorethedata.UseAWSLakeFormationfordatagovernanceandaccess control.",
+        "D": "UseAWSGlueCatalogtostorethedata.UseAWSGlueDataBrewfordatagovernanceandaccess control."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Detailed\nA.RDS:Suitableforrelationaldatabasesbutdoesnotprovidenativesupportfordatalakesorrow-\nlevelaccess.\nB.Redshift:Primarilyforanalytics,notdesignedforlarge-scaledatalakegovernance.\nC.S3+LakeFormation:Providesnativesupportfordatalakeswithgranularaccesscontrol,including\nrow-levelpermissions.\nD.GlueCatalog+DataBrew:Focusedondatapreparationandmetadatamanagement,notrow-level\naccesscontrol.\nReference:AWSLakeFormation"
+    },
+    {
+      "id": 909,
+      "type": "single",
+      "question": "Acompanyhostsamulti-tierinventoryreportingapplicationonAWS.Thecompanyneedsacost- effectivesolutiontogenerateinventoryreportsondemand.Adminusersneedtohavetheabilityto generatenewreports.Reportstakeapproximately5-10minutestofinish.Theapplicationmustsend reportstotheemailaddressoftheadminuserwhogenerateseachreport. Options:",
+      "options": {
+        "A": "UseAmazonElasticContainerService(AmazonECS)tohostthereportgenerationcode.Usean AmazonAPIGatewayHTTPAPItoinvokethecode.UseAmazonSimpleEmailService(AmazonSES) tosendthereportstoadminusers.",
+        "B": "UseAmazonEventBridgetoinvokeascheduledAWSLambdafunctiontogeneratethereports. UseAmazonSimpleNotificationService(AmazonSNS)tosendthereportstoadminusers.",
+        "C": "UseAmazonElasticKubernetesService(AmazonEKS)tohostthereportgenerationcode.Usean AmazonAPIGatewayRESTAPItoinvokethecode.UseAmazonSimpleNotificationService(Amazon SNS)tosendthereportstoadminusers.",
+        "D": "CreateanAWSLambdafunctiontogeneratethereports.UseafunctionURLtoinvokethe function.UseAmazonSimpleEmailService(AmazonSES)tosendthereportstoadminusers."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Detailed\nA.ECS+APIGateway:Overlycomplexandcostlyforanon-demand,intermittentworkload.\nB.EventBridge+SNS:EventBridgeschedulesareunnecessaryforon-demandgeneration.\nC.EKS+APIGateway:Overkillforthisusecase,withhighoperationaloverhead.\nD.Lambda+SES:Mostcost-effectiveandefficientsolutionforgeneratingandemailingreportson\ndemand.\nReference:AWSLambda,AmazonSES"
+    },
+    {
+      "id": 910,
+      "type": "single",
+      "question": "AcompanythathasmultipleAWSaccountsmaintainsanon-premisesMicrosoftActiveDirectory.The companyneedsasolutiontoimplementSingleSign-Onforitsemployees.Thecompanywantstouse AWSIAMIdentityCenter. Thesolutionmustmeetthefollowingrequirements: AllowuserstoaccessAWSaccountsandthird-partyapplicationsbyusingexistingActiveDirectory credentials. Enforcemulti-factorauthentication(MFA)toaccessAWSaccounts. CentrallymanagepermissionstoaccessAWSaccountsandapplications. Options:",
+      "options": {
+        "A": "CreateanIAMidentityproviderforActiveDirectoryineachAWSaccount.EnsurethatActive DirectoryusersandgroupsaccessAWSaccountsdirectlythroughIAMroles.UseIAMIdentityCenter toenforceMFAineachaccountforallusers.",
+        "B": "UseAWSDirectoryServicetocreateanewAWSManagedMicrosoftADActiveDirectory. ConfigureIAMIdentityCenterineachaccounttousethenewAWSManagedMicrosoftADActive Directoryastheidentitysource.UseIAMIdentityCentertoenforceMFAforallusers.",
+        "C": "UseIAMIdentityCenterwiththeexistingActiveDirectoryastheidentitysource.EnforceMFAfor allusers.UseAWSOrganizationsandActiveDirectorygroupstomanageaccesspermissionsforAWS accountsandapplicationaccess.",
+        "D": "UseAWSLambdafunctionstoperiodicallysynchronizeActiveDirectoryusersandgroupswithIAM usersandgroupsineachAWSaccount.UseIAMrolesandpoliciestomanageapplicationaccess. CreateasecondLambdafunctiontoenforceMFA."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Detailed\nA.IAMidentityprovider:Doesnotsupportcentralizedmanagementacrossmultipleaccounts.\nB.AWSManagedAD:Unnecessaryifanon-premisesActiveDirectoryalreadyexists.\nC.IAMIdentityCenter+ExistingAD:BestapproachtointegrateexistingActiveDirectoryforSSO,\nwithMFAandcentralizedpermissions.\nD.Lambdaforsynchronization:AddscomplexityanddoesnotleverageIAMIdentityCenter\ncapabilities.\nReference:AWSIAMIdentityCenter"
+    },
+    {
+      "id": 911,
+      "type": "multiple",
+      "question": "AcompanyrunsanordermanagementapplicationonAWS.Theapplicationallowscustomersto placeordersandpaywithacreditcard.ThecompanyusesanAmazonCloudFrontdistributionto delivertheapplication. Asecurityteamhassetuploggingforallincomingrequests.Thesecurityteamneedsasolutionto generateanalertifanyusermodifiestheloggingconfiguration. Options(SelectTWO):",
+      "options": {
+        "A": "ConfigureanAmazonEventBridgerulethatisinvokedwhenausercreatesormodifiesa CloudFrontdistribution.AddtheAWSLambdafunctionasatargetoftheEventBridgerule.",
+        "B": "CreateanApplicationLoadBalancer(ALB).EnableAWSWAFrulesfortheALB.ConfigureanAWS Configruletodetectsecurityviolations.",
+        "C": "CreateanAWSLambdafunctiontodetectchangesinCloudFrontdistributionlogging.Configure theLambdafunctiontouseAmazonSimpleNotificationService(AmazonSNS)tosendnotifications tothesecurityteam.",
+        "D": "SetupAmazonGuardDuty.ConfigureGuardDutytomonitorfindingsfromtheCloudFront distribution.CreateanAWSLambdafunctiontoaddressthefindings.",
+        "E": "CreateaprivateAPIinAmazonAPIGateway.UseAWSWAFrulestoprotecttheprivateAPIfrom commonsecurityproblems."
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "Detailed\nA.EventBridgeRule:DetectsmodificationstoCloudFrontdistributionsinrealtimeandtriggersthe\nLambdafunctionforfurtheraction.\nB.ALB+Config:FocusesonALBsecurityviolations,notrelevantforCloudFrontloggingchanges.\nC.Lambda+SNS:Providesreal-timenotificationsaboutchangesinloggingconfiguration.\nD.GuardDuty:Focusesonthreatdetection,notloggingconfigurationchanges.\nE.APIGateway+WAF:UnrelatedtoCloudFrontloggingchanges.\nReference:AmazonEventBridge,AmazonSNS"
+    },
+    {
+      "id": 912,
+      "type": "single",
+      "question": "Acompanyhasathree-tierenvironmentonAWSthatingestssensordatafromitsusers'devicesThe trafficflowsthroughaNetworkLoadBalancer(NIB)thentoAmazonEC2instancesforthewebtier andfinallytoEC2instancesfortheapplicationtierthatmakesdatabasecalls Whatshouldasolutionsarchitectdotoimprovethesecurityofdataintransittothewebtier?",
+      "options": {
+        "A": "ConfigureaTLSlistenerandaddtheservercertificateontheNLB",
+        "B": "ConfigureAWSShieldAdvancedandenableAWSWAFontheNLB",
+        "C": "ChangetheloadbalancertoanApplicationLoadBalancerandattachAWSWAFtoit",
+        "D": "EncrypttheAmazonElasticBlockStore(AmazonEBS)volumeontheEC2instancesusingAWSKey ManagementService(AWSKMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A:Howdoyouprotectyourdataintransit?\nBestPractices:\nImplementsecurekeyandcertificatemanagement:Storeencryptionkeysandcertificatessecurely\nandrotatethematappropriatetimeintervalswhileapplyingstrictaccesscontrol;forexample,by\nusingacertificatemanagementservice,suchasAWSCertificateManager(ACM).\nEnforceencryptionintransit:Enforceyourdefinedencryptionrequirementsbasedonappropriate\nstandardsandrecommendationstohelpyoumeetyourorganizational,legal,andcompliance\nrequirements.\nAutomatedetectionofunintendeddataaccess:UsetoolssuchasGuardDutytoautomaticallydetect\nattemptstomovedataoutsideofdefinedboundariesbasedondataclassificationlevel,forexample,\ntodetectatrojanthatiscopyingdatatoanunknownoruntrustednetworkusingtheDNSprotocol.\nAuthenticatenetworkcommunications:Verifytheidentityofcommunicationsbyusingprotocols\nthatsupportauthentication,suchasTransportLayerSecurity(TLS)orIPsec.\nhttps://wa.aws.amazon.com/wat.question.SEC_9.en.html\nThank You for Purchasing SAA-C03 PDF\nDownload Free Practice Test Demo from Here:\nTest Your Preparation with\nPractice Exam Software\nUse Coupon “20OFF” for extra 20% discount on purchase of\nPractice Test Software. Practice Exam Software helps you validate\nyour preparation in simulated exam environment."
+    }
+  ]
+}

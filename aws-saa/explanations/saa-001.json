@@ -1,0 +1,766 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "file": "saa-001.json",
+    "question_range": "Q1-Q50",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Acompanycollectstemperature,humidity,andatmosphericpressuredataincitiesacrossmultiple continents.Theaveragevolumeofdatacollectedpersiteeachdayis500GB.Eachsitehasahigh- speedinternetconnection.Thecompany'sweatherforecastingapplicationsarebasedinasingle Regionandanalyzethedatadaily. WhatistheFASTESTwaytoaggregatedatafromalloftheseglobalsites?",
+      "options": {
+        "A": "EnableAmazonS3TransferAccelerationonthedestinationbucket.Usemultipartuploadsto directlyuploadsitedatatothedestinationbucket.",
+        "B": "UploadsitedatatoanAmazonS3bucketintheclosestAWSRegion.UseS3cross-Region replicationtocopyobjectstothedestinationbucket.",
+        "C": "ScheduleAWSSnowballjobsdailytotransferdatatotheclosestAWSRegion.UseS3cross-Region replicationtocopyobjectstothedestinationbucket.",
+        "D": "UploadthedatatoanAmazonEC2instanceintheclosestRegion.StorethedatainanAmazon ElasticBlockStore(AmazonEBS)volume.OnceadaytakeanEBSsnapshotandcopyittothe centralizedRegion.RestoretheEBSvolumeinthecentralizedRegionandrunananalysisonthedata daily."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "YoumightwanttouseTransferAccelerationonabucketforvariousreasons,includingthefollowing:\nYouhavecustomersthatuploadtoacentralizedbucketfromallovertheworld.\nYoutransfergigabytestoterabytesofdataonaregularbasisacrosscontinents.\nYouareunabletoutilizeallofyouravailablebandwidthovertheInternetwhenuploadingtoAmazon\nS3.\nhttps://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html\nhttps://aws.amazon.com/s3/transfer-\nacceleration/#:~:text=S3%20Transfer%20Acceleration%20(S3TA)%20reduces,to%20S3%20for%20rem\note%20applications:\n\"AmazonS3TransferAccelerationcanspeedupcontenttransferstoandfromAmazonS3byasmuch\nas50-500%forlong-distancetransferoflargerobjects.Customerswhohaveeitherwebormobile\napplicationswithwidespreadusersorapplicationshostedfarawayfromtheirS3bucketcan\nexperiencelongandvariableuploadanddownloadspeedsovertheInternet\"\nhttps://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html\n\"Improvedthroughput-Youcanuploadpartsinparalleltoimprovethroughput.\""
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Acompanyneedstheabilitytoanalyzethelogfilesofitsproprietaryapplication.Thelogsarestored inJSONformatinanAmazonS3bucketQuerieswillbesimpleandwillrunon-demandAsolutions architectneedstoperformtheanalysiswithminimalchangestotheexistingarchitecture WhatshouldthesolutionsarchitectdotomeettheserequirementswiththeLEASTamountof operationaloverhead?",
+      "options": {
+        "A": "UseAmazonRedshifttoloadallthecontentintooneplaceandruntheSQLqueriesasneeded",
+        "B": "UseAmazonCloudWatchLogstostorethelogsRunSQLqueriesasneededfromtheAmazon CloudWatchconsole",
+        "C": "UseAmazonAthenadirectlywithAmazonS3torunthequeriesasneeded",
+        "D": "UseAWSGluetocatalogthelogsUseatransientApacheSparkclusteronAmazonEMRtorunthe SQLqueriesasneeded"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AmazonAthenacanbeusedtoqueryJSONinS3"
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "AcompanyusesAWSOrganizationstomanagemultipleAWSaccountsfordifferentdepartments. ThemanagementaccounthasanAmazonS3bucketthatcontainsprojectreports.Thecompany wantstolimitaccesstothisS3buckettoonlyusersofaccountswithintheorganizationinAWS Organizations. WhichsolutionmeetstheserequirementswiththeLEASTamountofoperationaloverhead?",
+      "options": {
+        "A": "Addtheaws:PrincipalOrgIDglobalconditionkeywithareferencetotheorganizationIDtotheS3 bucketpolicy.",
+        "B": "Createanorganizationalunit(OU)foreachdepartment.Addtheaws:PrincipalOrgPathsglobal conditionkeytotheS3bucketpolicy.",
+        "C": "UseAWSCloudTrailtomonitortheCreateAccount,InviteAccountToOrganization, LeaveOrganization,andRemoveAccountFromOrganizationevents.UpdatetheS3bucketpolicy accordingly.",
+        "D": "TageachuserthatneedsaccesstotheS3bucket.Addtheaws:PrincipalTagglobalconditionkeyto theS3bucketpolicy."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/blogs/security/control-access-to-aws-resources-by-using-the-aws-\norganization-of-iam-principals/\nTheaws:PrincipalOrgIDglobalkeyprovidesanalternativetolistingalltheaccountIDsforallAWS\naccountsinanorganization.Forexample,thefollowingAmazonS3bucketpolicyallowsmembersof\nanyaccountintheXXXorganizationtoaddanobjectintotheexamtopicsbucket.\n{\"Version\":\"2020-09-10\",\n\"Statement\":{\n\"Sid\":\"AllowPutObject\",\n\"Effect\":\"Allow\",\n\"Principal\":\"*\",\n\"Action\":\"s3:PutObject\",\n\"Resource\":\"arn:aws:s3:::examtopics/*\",\n\"Condition\":{\"StringEquals\":\n{\"aws:PrincipalOrgID\":[\"XXX\"]}}}}\nhttps://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html"
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "AnapplicationrunsonanAmazonEC2instanceinaVPC.Theapplicationprocesseslogsthatare storedinanAmazonS3bucket.TheEC2instanceneedstoaccesstheS3bucketwithoutconnectivity totheinternet. WhichsolutionwillprovideprivatenetworkconnectivitytoAmazonS3?",
+      "options": {
+        "A": "CreateagatewayVPCendpointtotheS3bucket.",
+        "B": "StreamthelogstoAmazonCloudWatchLogs.ExportthelogstotheS3bucket.",
+        "C": "CreateaninstanceprofileonAmazonEC2toallowS3access.",
+        "D": "CreateanAmazonAPIGatewayAPIwithaprivatelinktoaccesstheS3endpoint."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "VPCendpointallowsyoutoconnecttoAWSservicesusingaprivatenetworkinsteadofusingthe\npublicInternet"
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "AcompanyishostingawebapplicationonAWSusingasingleAmazonEC2instancethatstoresuser- uploadeddocumentsinanAmazonEBSvolume.Forbetterscalabilityandavailability,thecompany duplicatedthearchitectureandcreatedasecondEC2instanceandEBSvolumeinanotherAvailability ZoneplacingbothbehindanApplicationLoadBalancerAftercompletingthischange,usersreported that,eachtimetheyrefreshedthewebsite,theycouldseeonesubsetoftheirdocumentsorthe other,butneverallofthedocumentsatthesametime. Whatshouldasolutionsarchitectproposetoensureusersseealloftheirdocumentsatonce?",
+      "options": {
+        "A": "CopythedatasobothEBSvolumescontainallthedocuments.",
+        "B": "ConfiguretheApplicationLoadBalancertodirectausertotheserverwiththedocuments",
+        "C": "CopythedatafrombothEBSvolumestoAmazonEFSModifytheapplicationtosavenew documentstoAmazonEFS",
+        "D": "ConfiguretheApplicationLoadBalancertosendtherequesttobothserversReturneach documentfromthecorrectserver."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "https://docs.aws.amazon.com/efs/latest/ug/how-it-works.html#how-it-works-ec2"
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "AcompanyusesNFStostorelargevideofilesinon-premisesnetworkattachedstorage.Eachvideo filerangesinsizefrom1MBto500GB.Thetotalstorageis70TBandisnolongergrowing.The companydecidestomigratethevideofilestoAmazonS3.Thecompanymustmigratethevideofiles assoonaspossiblewhileusingtheleastpossiblenetworkbandwidth. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "CreateanS3bucketCreateanIAMrolethathaspermissionstowritetotheS3bucket.Usethe AWSCLItocopyallfileslocallytotheS3bucket.",
+        "B": "CreateanAWSSnowballEdgejob.ReceiveaSnowballEdgedeviceonpremises.UsetheSnowball Edgeclienttotransferdatatothedevice.ReturnthedevicesothatAWScanimportthedatainto AmazonS3.",
+        "C": "DeployanS3FileGatewayonpremises.CreateapublicserviceendpointtoconnecttotheS3File GatewayCreateanS3bucketCreateanewNFSfileshareontheS3FileGatewayPointthenewfile sharetotheS3bucket.TransferthedatafromtheexistingNFSfilesharetotheS3FileGateway.",
+        "D": "SetupanAWSDirectConnectconnectionbetweentheon-premisesnetworkandAWS.Deployan S3FileGatewayonpremises.Createapublicvirtualinterlace(VIF)toconnecttotheS3FileGateway. CreateanS3bucket.CreateanewNFSfileshareontheS3FileGateway.Pointthenewfileshareto theS3bucket.TransferthedatafromtheexistingNFSfilesharetotheS3FileGateway."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "ThebasicdifferencebetweenSnowballandSnowballEdgeisthecapacitytheyprovide.Snowball\nprovidesatotalof50TBor80TB,outofwhich42TBor72TBisavailable,whileAmazonSnowball\nEdgeprovides100TB,outofwhich83TBisavailable."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Acompanyhasanapplicationthatingestsincomingmessages.Thesemessagesarethenquickly consumedbydozensofotherapplicationsandmicroservices. Thenumberofmessagesvariesdrasticallyandsometimesspikesashighas100,000eachsecond. Thecompanywantstodecouplethesolutionandincreasescalability. Whichsolutionmeetstheserequirements?",
+      "options": {
+        "A": "PersistthemessagestoAmazonKinesisDataAnalytics.Alltheapplicationswillreadandprocess themessages.",
+        "B": "DeploytheapplicationonAmazonEC2instancesinanAutoScalinggroup,whichscalesthe numberofEC2instancesbasedonCPUmetrics.",
+        "C": "WritethemessagestoAmazonKinesisDataStreamswithasingleshard.Allapplicationswillread fromthestreamandprocessthemessages.",
+        "D": "PublishthemessagestoanAmazonSimpleNotificationService(AmazonSNS)topicwithoneor moreAmazonSimpleQueueService(AmazonSQS)subscriptions.Allapplicationsthenprocessthe messagesfromthequeues."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "https://aws.amazon.com/sqs/features/\nByroutingincomingrequeststoAmazonSQS,thecompanycandecouplethejobrequestsfromthe\nprocessinginstances.Thisallowsthemtoscalethenumberofinstancesbasedonthesizeofthe\nqueue,providingmoreresourceswhenneeded.Additionally,usinganAutoScalinggroupbasedon\nthequeuesizewillautomaticallyscalethenumberofinstancesupordowndependingonthe\nworkload.Updatingthesoftwaretoreadfromthequeuewillallowittoprocessthejobrequestsina\nmoreefficientmanner,improvingtheperformanceofthesystem."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "AcompanyismigratingadistributedapplicationtoAWSTheapplicationservesvariableworkloads Thelegacyplatformconsistsofaprimaryservertrialcoordinatesjobsacrossmultiplecomputenodes Thecompanywantstomodernizetheapplicationwithasolutionthatmaximizesresiliencyand scalability. Howshouldasolutionsarchitectdesignthearchitecturetomeettheserequirements?",
+      "options": {
+        "A": "ConfigureanAmazonSimpleQueueService(AmazonSQS)queueasadestinationforthejobs ImplementthecomputenodeswithAmazonEC2instancesthataremanagedinanAutoScaling group.ConfigureEC2AutoScalingtousescheduledscaling",
+        "B": "ConfigureanAmazonSimpleQueueService(AmazonSQS)queueasadestinationforthejobs ImplementthecomputenodeswithAmazonEC2InstancesthataremanagedinanAutoScaling groupConfigureEC2AutoScalingbasedonthesizeofthequeue",
+        "C": "ImplementtheprimaryserverandthecomputenodeswithAmazonEC2instancesthatare managedInanAutoScalinggroup.ConfigureAWSCloudTrailasadestinationforthefobsConfigure EC2AutoScalingbasedontheloadontheprimaryserver",
+        "D": "implementtheprimaryserverandthecomputenodeswithAmazonEC2instancesthatare managedinanAutoScalinggroupConfigureAmazonEventBridge(AmazonCloudWatchEvents)asa destinationforthejobsConfigureEC2AutoScalingbasedontheloadonthecomputenodes"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Tomaximizeresiliencyandscalability,thebestsolutionistouseanAmazonSQSqueueasa\ndestinationforthejobs.Thisdecouplestheprimaryserverfromthecomputenodes,allowingthem\ntoscaleindependently.Thisalsohelpstopreventjoblossintheeventofafailure.UsinganAuto\nScalinggroupofAmazonEC2instancesforthecomputenodesallowsforautomaticscalingbasedon\ntheworkload.Inthiscase,it'srecommendedtoconfiguretheAutoScalinggroupbasedonthesizeof\ntheAmazonSQSqueue,whichisabetterindicatoroftheactualworkloadthantheloadonthe\nprimaryserverorcomputenodes.Thisapproachensuresthattheapplicationcanhandlevariable\nworkloads,whilealsominimizingcostsbyautomaticallyscalingupordownthecomputenodesas\nneeded."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "AcompanyisrunninganSMBfileserverinitsdatacenter.Thefileserverstoreslargefilesthatare accessedfrequentlyforthefirstfewdaysafterthefilesarecreated.After7daysthefilesarerarely accessed. Thetotaldatasizeisincreasingandisclosetothecompany'stotalstoragecapacity.Asolutions architectmustincreasethecompany'savailablestoragespacewithoutlosinglow-latencyaccessto themostrecentlyaccessedfiles.Thesolutionsarchitectmustalsoprovidefilelifecyclemanagement toavoidfuturestorageissues. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "UseAWSDataSynctocopydatathatisolderthan7daysfromtheSMBfileservertoAWS.",
+        "B": "CreateanAmazonS3FileGatewaytoextendthecompany'sstoragespace.CreateanS3Lifecycle policytotransitionthedatatoS3GlacierDeepArchiveafter7days.",
+        "C": "CreateanAmazonFSxforWindowsFileServerfilesystemtoextendthecompany'sstorage space.",
+        "D": "Installautilityoneachuser'scomputertoaccessAmazonS3.CreateanS3Lifecyclepolicyto transitionthedatatoS3GlacierFlexibleRetrievalafter7days."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AmazonS3FileGatewayisahybridcloudstorageservicethatenableson-premisesapplicationsto\nseamlesslyuseAmazonS3cloudstorage.ItprovidesafileinterfacetoAmazonS3andsupportsSMB\nandNFSprotocols.ItalsosupportsS3LifecyclepoliciesthatcanautomaticallytransitiondatafromS3\nStandardtoS3GlacierDeepArchiveafteraspecifiedperiodoftime.Thissolutionwillmeetthe\nrequirementsofincreasingthecompany’savailablestoragespacewithoutlosinglow-latencyaccess\ntothemostrecentlyaccessedfilesandprovidingfilelifecyclemanagementtoavoidfuturestorage\nissues.\nReference:\nhttps://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html"
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "AcompanyisbuildinganecommercewebapplicationonAWS.Theapplicationsendsinformation aboutneworderstoanAmazonAPIGatewayRESTAPItoprocess.Thecompanywantstoensurethat ordersareprocessedintheorderthattheyarereceived. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "UseanAPIGatewayintegrationtopublishamessagetoanAmazonSimpleNotificationService (AmazonSNS)topicwhentheapplicationreceivesanorder.SubscribeanAWSLambdafunctionto thetopictoperformprocessing.",
+        "B": "UseanAPIGatewayintegrationtosendamessagetoanAmazonSimpleQueueService(Amazon SQS)FIFOqueuewhentheapplicationreceivesanorder.ConfiguretheSQSFIFOqueuetoinvokean AWSLambdafunctionforprocessing.",
+        "C": "UseanAPIGatewayauthorizertoblockanyrequestswhiletheapplicationprocessesanorder.",
+        "D": "UseanAPIGatewayintegrationtosendamessagetoanAmazonSimpleQueueService(Amazon SQS)standardqueuewhentheapplicationreceivesanorder.ConfiguretheSQSstandardqueueto invokeanAWSLambdafunctionforprocessing."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Toensurethatordersareprocessedintheorderthattheyarereceived,thebestsolutionistousean\nAmazonSQSFIFO(First-In-First-Out)queue.Thistypeofqueuemaintainstheexactorderinwhich\nmessagesaresentandreceived.Inthiscase,theapplicationcansendinformationaboutneworders\ntoanAmazonAPIGatewayRESTAPI,whichcanthenuseanAPIGatewayintegrationtosenda\nmessagetoanAmazonSQSFIFOqueueforprocessing.Thequeuecanthenbeconfiguredtoinvoke\nanAWSLambdafunctiontoperformthenecessaryprocessingoneachorder.Thisensuresthat\nordersareprocessedintheexactorderinwhichtheyarereceived."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "AcompanyhasanapplicationthatrunsonAmazonEC2instancesandusesanAmazonAurora database.TheEC2instancesconnecttothedatabasebyusingusernamesandpasswordsthatare storedlocallyinafile.Thecompanywantstominimizetheoperationaloverheadofcredential management. Whatshouldasolutionsarchitectdotoaccomplishthisgoal?",
+      "options": {
+        "A": "UseAWSSecretsManager.Turnonautomaticrotation.",
+        "B": "UseAWSSystemsManagerParameterStore.Turnonautomaticrotation.",
+        "C": "CreateanAmazonS3bucketlostoreobjectsthatareencryptedwithanAWSKeyC.Management Service(AWSKMS)encryptionkey.MigratethecredentialfiletotheS3bucket.Pointtheapplication totheS3bucket.",
+        "D": "CreateanencryptedAmazonElasticBlockStore(AmazonEBS)volume(oreachEC2instance. AttachthenewEBSvolumetoeachEC2instance.MigratethecredentialfiletothenewEBSvolume. PointtheapplicationtothenewEBSvolume."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/cn/blogs/security/how-to-connect-to-aws-secrets-manager-service-within-\na-virtual-private-cloud/\nhttps://aws.amazon.com/blogs/security/rotate-amazon-rds-database-credentials-automatically-\nwith-aws-secrets-manager/"
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "AglobalcompanyhostsitswebapplicationonAmazonEC2instancesbehindanApplicationLoad Balancer(ALB).Thewebapplicationhasstaticdataanddynamicdat a.ThecompanystoresitsstaticdatainanAmazonS3bucket.Thecompanywantstoimprove performanceandreducelatencyforthestaticdataanddynamicdata.Thecompanyisusingitsown domainnameregisteredwithAmazonRoute53. Whatshouldasolutionsarchitectdotomeettheserequirements?",
+      "options": {
+        "A": "CreateanAmazonCloudFrontdistributionthathastheS3bucketandtheALBasoriginsConfigure Route53toroutetraffictotheCloudFrontdistribution.",
+        "B": "CreateanAmazonCloudFrontdistributionthathastheALBasanoriginCreateanAWSGlobal AcceleratorstandardacceleratorthathastheS3bucketasanendpoint.ConfigureRoute53toroute traffictotheCloudFrontdistribution.",
+        "C": "CreateanAmazonCloudFrontdistributionthathastheS3bucketasanoriginCreateanAWS GlobalAcceleratorstandardacceleratorthathastheALBandtheCloudFrontdistributionas endpointsCreateacustomdomainnamethatpointstotheacceleratorDNSnameUsethecustom domainnameasanendpointforthewebapplication.",
+        "D": "CreateanAmazonCloudFrontdistributionthathastheALBasanoriginC.CreateanAWSGlobal AcceleratorstandardacceleratorthathastheS3bucketasanendpointCreatetwodomainnames. PointonedomainnametotheCloudFrontDNSnamefordynamiccontent,Pointtheotherdomain nametotheacceleratorDNSnameforstaticcontentUsethedomainnamesasendpointsforthe webapplication."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "StaticcontentcanbecachedatCloudfrontEdgelocationsfromS3anddynamiccontentEC2behind\ntheALBwhoseperformancecanbeimprovedbyGlobalAcceleratorwhoseoneendpointisALBand\notherCloudfront.SowithregardstocustomdomainnameendpointiswebapplicationisR53alias\nrecordsforthecustomdomainpointtowebapplicationhttps://aws.amazon.com/blogs/networking-\nand-content-delivery/improving-availability-and-performance-for-application-load-balancers-using-\none-click-integration-with-aws-global-accelerator/"
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "AcompanyperformsmonthlymaintenanceonitsAWSinfrastructure.Duringthesemaintenance activities,thecompanyneedstorotatethecredentialstoritsAmazonROStorMySQLdatabases acrossmultipleAWSRegions WhichsolutionwillmeettheserequirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "StorethecredentialsassecretsinAWSSecretsManager.Usemulti-Regionsecretreplicationfor therequiredRegionsConfigureSecretsManagertorotatethesecretsonaschedule",
+        "B": "StorethecredentialsassecretsinAWSSystemsManagerbycreatingasecurestringparameter Usemulti-RegionsecretreplicationfortherequiredRegionsConfigureSystemsManagertorotate thesecretsonaschedule",
+        "C": "StorethecredentialsinanAmazonS3bucketthathasserver-sideencryption(SSE)enabledUse AmazonEventBridge(AmazonCloudWatchEvents)toinvokeanAWSLambdafunctiontorotatethe credentials",
+        "D": "EncryptthecredentialsassecretsbyusingAWSKeyManagementService(AWSKMS)multi- RegioncustomermanagedkeysStorethesecretsinanAmazonDynamoDBglobaltableUseanAWS LambdafunctiontoretrievethesecretsfromDynamoDBUsetheRDSAPItorotatethesecrets."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/blogs/security/how-to-replicate-secrets-aws-secrets-manager-multiple-\nregions/"
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "AcompanyrunsanecommerceapplicationonAmazonEC2instancesbehindanApplicationLoad Balancer.TheinstancesruninanAmazonEC2AutoScalinggroupacrossmultipleAvailabilityZones. TheAutoScalinggroupscalesbasedonCPUutilizationmetrics.Theecommerceapplicationstores thetransactiondatainaMySQL8.0databasethatishostedonalargeEC2instance. Thedatabase'sperformancedegradesquicklyasapplicationloadincreases.Theapplicationhandles morereadrequeststhanwritetransactions.Thecompanywantsasolutionthatwillautomatically scalethedatabasetomeetthedemandofunpredictablereadworkloadswhilemaintaininghigh availability. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "UseAmazonRedshiftwithasinglenodeforleaderandcomputefunctionality.",
+        "B": "UseAmazonRDSwithaSingle-AZdeploymentConfigureAmazonRDStoaddreaderinstancesin adifferentAvailabilityZone.",
+        "C": "UseAmazonAurorawithaMulti-AZdeployment.ConfigureAuroraAutoScalingwithAurora Replicas.",
+        "D": "UseAmazonElastiCacheforMemcachedwithEC2SpotInstances."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AURORAis5xperformanceimprovementoverMySQLonRDSandhandlesmorereadrequeststhan\nwrite,;maintaininghighavailability=Multi-AZdeployment"
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "AcompanyrecentlymigratedtoAWSandwantstoimplementasolutiontoprotectthetrafficthat flowsinandoutoftheproductionVPC.Thecompanyhadaninspectionserverinitson-premises datacenter.Theinspectionserverperformedspecificoperationssuchastrafficflowinspectionand trafficfiltering.ThecompanywantstohavethesamefunctionalitiesintheAWSCloud. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "UseAmazonGuardDutyfortrafficinspectionandtrafficfilteringintheproductionVPC",
+        "B": "UseTrafficMirroringtomirrortrafficfromtheproductionVPCfortrafficinspectionandfiltering.",
+        "C": "UseAWSNetworkFirewalltocreatetherequiredrulesfortrafficinspectionandtrafficfilteringfor theproductionVPC.",
+        "D": "UseAWSFirewallManagertocreatetherequiredrulesfortrafficinspectionandtrafficfilteringfor theproductionVPC."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWSNetworkFirewallsupportsbothinspectionandfilteringasrequired"
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "AcompanyhostsadatalakeonAWS.ThedatalakeconsistsofdatainAmazonS3andAmazonRDS forPostgreSQL.Thecompanyneedsareportingsolutionthatprovidesdatavisualizationandincludes allthedatasourceswithinthedatalake.Onlythecompany'smanagementteamshouldhavefull accesstoallthevisualizations.Therestofthecompanyshouldhaveonlylimitedaccess. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "CreateananalysisinAmazonQuickSight.Connectallthedatasourcesandcreatenewdatasets. Publishdashboardstovisualizethedata.SharethedashboardswiththeappropriateIAMroles.",
+        "B": "CreateananalysisinAmazonOuickSighl.Connectallthedatasourcesandcreatenewdatasets. Publishdashboardstovisualizethedata.Sharethedashboardswiththeappropriateusersand groups.",
+        "C": "CreateanAWSGluetableandcrawlerforthedatainAmazonS3.CreateanAWSGlueextract, transform,andload(ETL)jobtoproducereports.PublishthereportstoAmazonS3.UseS3bucket policiestolimitaccesstothereports.",
+        "D": "CreateanAWSGluetableandcrawlerforthedatainAmazonS3.UseAmazonAthenaFederated QuerytoaccessdatawithinAmazonRDSforPoslgreSQL.GeneratereportsbyusingAmazonAthena. PublishthereportstoAmazonS3.UseS3bucketpoliciestolimitaccesstothereports."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AmazonQuickSightisadatavisualizationservicethatallowsyoutocreateinteractivedashboards\nandreportsfromvariousdatasources,includingAmazonS3andAmazonRDSforPostgreSQL.You\ncanconnectallthedatasourcesandcreatenewdatasetsinQuickSight,andthenpublishdashboards\ntovisualizethedata.Youcanalsosharethedashboardswiththeappropriateusersandgroups,and\ncontroltheiraccesslevelsusingIAMrolesandpermissions.\nReference:https://docs.aws.amazon.com/quicksight/latest/user/working-with-data-sources.html"
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Acompanyisimplementinganewbusinessapplication.TheapplicationrunsontwoAmazonEC2 instancesandusesanAmazonS3bucketfordocumentstorage.Asolutionsarchitectneedstoensure thattheEC2instancescanaccesstheS3bucket. Whatshouldthesolutionsarchitectdotomeetthisrequirement?",
+      "options": {
+        "A": "CreateanIAMrolethatgrantsaccesstotheS3bucket.AttachtheroletotheEC2instances.",
+        "B": "CreateanIAMpolicythatgrantsaccesstotheS3bucket.AttachthepolicytotheEC2instances.",
+        "C": "CreateanIAMgroupthatgrantsaccesstotheS3bucket.AttachthegrouptotheEC2instances.",
+        "D": "CreateanIAMuserthatgrantsaccesstotheS3bucket.AttachtheuseraccounttotheEC2 instances."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/"
+    },
+    {
+      "id": 18,
+      "type": "multiple",
+      "question": "Anapplicationdevelopmentteamisdesigningamicroservicethatwillconvertlargeimagesto smaller,compressedimages.Whenauseruploadsanimagethroughthewebinterface,the microserviceshouldstoretheimageinanAmazonS3bucket,processandcompresstheimagewith anAWSLambdafunction,andstoretheimageinitscompressedforminadifferentS3bucket. Asolutionsarchitectneedstodesignasolutionthatusesdurable,statelesscomponentstoprocess theimagesautomatically. Whichcombinationofactionswillmeettheserequirements?(Choosetwo.)",
+      "options": {
+        "A": "CreateanAmazonSimpleQueueService(AmazonSQS)queueConfiguretheS3buckettosenda notificationtotheSQSqueuewhenanimageisuploadedtotheS3bucket",
+        "B": "ConfiguretheLambdafunctiontousetheAmazonSimpleQueueService(AmazonSQS)queueas theinvocationsourceWhentheSQSmessageissuccessfullyprocessed,deletethemessageinthe queue",
+        "C": "ConfiguretheLambdafunctiontomonitortheS3bucketfornewuploadsWhenanuploaded imageisdetectedwritethefilenametoatextfileinmemoryandusethetextfiletokeeptrackof theimagesthatwereprocessed",
+        "D": "LaunchanAmazonEC2instancetomonitoranAmazonSimpleQueueService(AmazonSQS) queueWhenitemsareaddedtothequeuelogthefilenameinatextfileontheEC2instanceand invoketheLambdafunction",
+        "E": "ConfigureanAmazonEventBridge(AmazonCloudWatchEvents)eventtomonitortheS3bucket Whenanimageisuploaded.sendanalerttoanAmazonSimpleNotificationService(AmazonSNS) topicwiththeapplicationowner'semailaddressforfurtherprocessing"
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "CreatinganAmazonSimpleQueueService(SQS)queueandconfiguringtheS3buckettosenda\nnotificationtotheSQSqueuewhenanimageisuploadedtotheS3bucketwillensurethatthe\nLambdafunctionistriggeredinastatelessanddurablemanner.\nConfiguringtheLambdafunctiontousetheSQSqueueastheinvocationsource,anddeletingthe\nmessageinthequeueafteritissuccessfullyprocessedwillensurethattheLambdafunction\nprocessestheimageinastatelessanddurablemanner.\nAmazonSQSisafullymanagedmessagequeuingservicethatenablesyoutodecoupleandscale\nmicroservices,distributedsystems,andserverlessapplications.SQSeliminatesthecomplexityand\noverheadassociatedwithmanagingandoperating-messageorientedmiddleware,andempowers\ndeveloperstofocusondifferentiatingwork.WhennewimagesareuploadedtotheS3bucket,SQS\nwilltriggertheLambdafunctiontoprocesstheimageandcompressit.Oncetheimageisprocessed,\ntheSQSmessageisdeleted,ensuringthattheLambdafunctionisstatelessanddurable."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Acompanyhasathree-tierwebapplicationthatisdeployedonAWS.Thewebserversaredeployed inapublicsubnetinaVPC.Theapplicationserversanddatabaseserversaredeployedinprivate subnetsinthesameVPC.Thecompanyhasdeployedathird-partyvirtualfirewallappliancefrom AWSMarketplaceinaninspectionVPC.TheapplianceisconfiguredwithanIPinterfacethatcan acceptIPpackets. AsolutionsarchitectneedstoIntegratethewebapplicationwiththeappliancetoinspectalltrafficto theapplicationbeforethetrafficteachesthewebserver.Whichsolutionwillmootthese requirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "CreateaNetworkLoadBalancerthepublicsubnetoftheapplication'sVPCtoroutethetrafficlo theapplianceforpacketinspection",
+        "B": "CreateanApplicationLoadBalancerinthepublicsubnetoftheapplication'sVPCtoroutethe traffictotheapplianceforpacketinspection",
+        "C": "DeployatransitgatewaymtheinspectionVPCConfigureroutetablestoroutetheincoming pocketsthroughthetransitgateway",
+        "D": "DeployaGatewayLoadBalancerintheinspectionVPCCreateaGatewayLoadBalancerendpoint toreceivetheincomingpacketsandforwardthepacketstotheappliance"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-network-traffic-inspection-\nusing-aws-gateway-load-balancer/"
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "Acompanywantstoimproveitsabilitytoclonelargeamountsofproductiondataintoatest environmentinthesameAWSRegion.ThedataisstoredinAmazonEC2instancesonAmazonElastic BlockStore(AmazonEBS)volumes.Modificationstothecloneddatamustnotaffecttheproduction environment.ThesoftwarethataccessesthisdatarequiresconsistentlyhighI/Operformance. Asolutionsarchitectneedstominimizethetimethatisrequiredtoclonetheproductiondatainto thetestenvironment. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "TakeEBSsnapshotsoftheproductionEBSvolumes.RestorethesnapshotsontoEC2instance storevolumesinthetestenvironment.",
+        "B": "ConfiguretheproductionEBSvolumestousetheEBSMulti-Attachfeature.TakeEBSsnapshotsof theproductionEBSvolumes.AttachtheproductionEBSvolumestotheEC2instancesinthetest environment.",
+        "C": "TakeEBSsnapshotsoftheproductionEBSvolumes.CreateandinitializenewEBSvolumes.Attach thenewEBSvolumestoEC2instancesinthetestenvironmentbeforerestoringthevolumesfromthe productionEBSsnapshots.",
+        "D": "TakeEBSsnapshotsoftheproductionEBSvolumes.TurnontheEBSfastsnapshotrestorefeature ontheEBSsnapshots.RestorethesnapshotsintonewEBSvolumes.AttachthenewEBSvolumesto EC2instancesinthetestenvironment."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "ToclonetheproductiondataintothetestenvironmentwithhighI/Operformanceandwithout\naffectingtheproductionenvironment,thebestoptionistotakeEBSsnapshotsoftheproductionEBS\nvolumesandrestorethemontonewEBSvolumesinthetestenvironment.Then,attachthenewEBS\nvolumestoEC2instancesinthetestenvironment.Thisoptionminimizesthetimerequiredtoclone\nthedataandensuresthatmodificationstothecloneddatadonotaffecttheproductionenvironment.\nTherefore,optionCisthecorrectanswer.\nReference:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-restoring-volume.html"
+    },
+    {
+      "id": 21,
+      "type": "single",
+      "question": "Anecommercecompanywantstolaunchaone-deal-a-daywebsiteonAWS.Eachdaywillfeature exactlyoneproductonsaleforaperiodof24hours.Thecompanywantstobeabletohandle millionsofrequestseachhourwithmillisecondlatencyduringpeakhours. WhichsolutionwillmeettheserequirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "UseAmazonS3tohostthefullwebsiteindifferentS3bucketsAddAmazonCloudFront distributionsSettheS3bucketsasoriginsforthedistributionsStoretheorderdatainAmazonS3",
+        "B": "DeploythefullwebsiteonAmazonEC2instancesthatruninAutoScalinggroupsacrossmultiple AvailabilityZonesAddanApplicationLoadBalancer(ALB)todistributethewebsitetrafficAdd anotherALBforthebackendAPIsStorethedatainAmazonRDSforMySQL",
+        "C": "MigratethefullapplicationtorunincontainersHostthecontainersonAmazonElasticKubernetes Service(AmazonEKS)UsetheKubernetesClusterAutoscalertoincreaseanddecreasethenumberof podstoprocessburstsintrafficStorethedatainAmazonRDSforMySQL",
+        "D": "UseanAmazonS3buckettohostthewebsite'sstaticcontentDeployanAmazonCloudFront distribution.SettheS3bucketastheoriginUseAmazonAPIGatewayandAWSLambdafunctionsfor thebackendAPIsStorethedatainAmazonDynamoDB"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Tolaunchaone-deal-a-daywebsiteonAWSwithmillisecondlatencyduringpeakhoursandwiththe\nleastoperationaloverhead,thebestoptionistouseanAmazonS3buckettohostthewebsite'sstatic\ncontent,deployanAmazonCloudFrontdistribution,settheS3bucketastheorigin,useAmazonAPI\nGatewayandAWSLambdafunctionsforthebackendAPIs,andstorethedatainAmazonDynamoDB.\nThisoptionrequiresminimaloperationaloverheadandcanhandlemillionsofrequestseachhour\nwithmillisecondlatencyduringpeakhours.Therefore,optionDisthecorrectanswer.\nReference:https://aws.amazon.com/blogs/compute/building-a-serverless-multi-player-game-with-\naws-lambda-and-amazon-dynamodb/"
+    },
+    {
+      "id": 22,
+      "type": "single",
+      "question": "AsolutionsarchitectisusingAmazonS3todesignthestoragearchitectureofanewdigitalmedia application.ThemediafilesmustberesilienttothelossofanAvailabilityZoneSomefilesare accessedfrequentlywhileotherfilesarerarelyaccessedinanunpredictablepattern.Thesolutions architectmustminimizethecostsofstoringandretrievingthemediafiles. Whichstorageoptionmeetstheserequirements?",
+      "options": {
+        "A": "S3Standard",
+        "B": "S3Intelligent-Tiering",
+        "C": "S3Standard-InfrequentAccess{S3Standard-IA)",
+        "D": "S3OneZone-InfrequentAccess(S3OneZone-IA)"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "S3Intelligent-Tiering-Perfectusecasewhenyoudon'tknowthefrequencyofaccessorirregular\npatternsofusage.\nAmazonS3offersarangeofstorageclassesdesignedfordifferentusecases.TheseincludeS3\nStandardforgeneral-purposestorageoffrequentlyaccesseddata;S3Intelligent-Tieringfordatawith\nunknownorchangingaccesspatterns;S3Standard-InfrequentAccess(S3Standard-IA)andS3One\nZone-InfrequentAccess(S3OneZone-IA)forlong-lived,butlessfrequentlyaccesseddata;and\nAmazonS3Glacier(S3Glacier)andAmazonS3GlacierDeepArchive(S3GlacierDeepArchive)for\nlong-termarchiveanddigitalpreservation.Ifyouhavedataresidencyrequirementsthatcan’tbemet\nbyanexistingAWSRegion,youcanusetheS3OutpostsstorageclasstostoreyourS3dataon-\npremises.AmazonS3alsoofferscapabilitiestomanageyourdatathroughoutitslifecycle.OnceanS3\nLifecyclepolicyisset,yourdatawillautomaticallytransfertoadifferentstorageclasswithoutany\nchangestoyourapplication.\nhttps://aws.amazon.com/getting-started/hands-on/getting-started-using-amazon-s3-intelligent-\ntiering/?nc1=h_ls"
+    },
+    {
+      "id": 23,
+      "type": "single",
+      "question": "AcompanyisstoringbackupfilesbyusingAmazonS3Standardstorage.Thefilesareaccessed frequentlyfor1month.However,thefilesarenotaccessedafter1month.Thecompanymustkeep thefilesindefinitely. WhichstoragesolutionwillmeettheserequirementsMOSTcost-effectively?",
+      "options": {
+        "A": "ConfigureS3Intelligent-Tieringtoautomaticallymigrateobjects.",
+        "B": "CreateanS3LifecycleconfigurationtotransitionobjectsfromS3StandardtoS3GlacierDeep Archiveafter1month.",
+        "C": "CreateanS3LifecycleconfigurationtotransitionobjectsfromS3StandardtoS3Standard- InfrequentAccess(S3Standard-IA)after1month.",
+        "D": "CreateanS3LifecycleconfigurationtotransitionobjectsfromS3StandardtoS3OneZone- InfrequentAccess(S3OneZone-IA)after1month."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Thestoragesolutionthatwillmeettheserequirementsmostcost-effectivelyisB:CreateanS3\nLifecycleconfigurationtotransitionobjectsfromS3StandardtoS3GlacierDeepArchiveafter1\nmonth.AmazonS3GlacierDeepArchiveisasecure,durable,andextremelylow-costAmazonS3\nstorageclassforlong-termretentionofdatathatisrarelyaccessedandforwhichretrievaltimesof\nseveralhoursareacceptable.Itisthelowest-coststorageoptioninAmazonS3,makingitacost-\neffectivechoiceforstoringbackupfilesthatarenotaccessedafter1month.YoucanuseanS3\nLifecycleconfigurationtoautomaticallytransitionobjectsfromS3StandardtoS3GlacierDeep\nArchiveafter1month.Thiswillminimizethestoragecostsforthebackupfilesthatarenotaccessed\nfrequently."
+    },
+    {
+      "id": 24,
+      "type": "single",
+      "question": "AcompanyobservesanincreaseinAmazonEC2costsinitsmostrecentbillThebillingteamnotices unwantedverticalscalingofinstancetypesforacoupleofEC2instancesAsolutionsarchitectneeds tocreateagraphcomparingthelast2monthsofEC2costsandperformanin-depthanalysisto identifytherootcauseoftheverticalscaling HowshouldthesolutionsarchitectgeneratetheinformationwiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "UseAWSBudgetstocreateabudgetreportandcompareEC2costsbasedoninstancetypes",
+        "B": "UseCostExplorer'sgranularfilteringfeaturetoperformanin-depthanalysisofEC2costsbasedon instancetypes",
+        "C": "UsegraphsfromtheAWSBillingandCostManagementdashboardtocompareEC2costsbasedon instancetypesforthelast2months",
+        "D": "UseAWSCostandUsageReportstocreateareportandsendittoanAmazonS3bucketUse AmazonQuickSightwithAmazonS3asasourcetogenerateaninteractivegraphbasedoninstance types."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWSCostExplorerisatoolthatenablesyoutoviewandanalyzeyourcostsandusage.Youcan\nexploreyourusageandcostsusingthemaingraph,theCostExplorercostandusagereports,orthe\nCostExplorerRIreports.Youcanviewdataforuptothelast12months,forecasthowmuchyou're\nlikelytospendforthenext12months,andgetrecommendationsforwhatReservedInstancesto\npurchase.YoucanuseCostExplorertoidentifyareasthatneedfurtherinquiryandseetrendsthat\nyoucanusetounderstandyourcosts.https://docs.aws.amazon.com/cost-\nmanagement/latest/userguide/ce-what-is.html"
+    },
+    {
+      "id": 25,
+      "type": "single",
+      "question": "Acompanyisdesigninganapplication.TheapplicationusesanAWSLambdafunctiontoreceive informationthroughAmazonAPIGatewayandtostoretheinformationinanAmazonAurora PostgreSQLdatabase. Duringtheproof-of-conceptstage,thecompanyhastoincreasetheLambdaquotassignificantlyto handlethehighvolumesofdatathatthecompanyneedstoloadintothedatabase.Asolutions architectmustrecommendanewdesigntoimprovescalabilityandminimizetheconfiguration effort. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "RefactortheLambdafunctioncodetoApacheTomcatcodethatrunsonAmazonEC2instances. ConnectthedatabasebyusingnativeJavaDatabaseConnectivity(JDBC)drivers.",
+        "B": "ChangetheplatformfromAuroratoAmazonDynamoDB.ProvisionaDynamoDBAccelerator (DAX)cluster.UsetheDAXclientSDKtopointtheexistingDynamoDBAPIcallsattheDAXcluster.",
+        "C": "SetuptwoLambdafunctions.Configureonefunctiontoreceivetheinformation.Configurethe otherfunctiontoloadthe informationintothedatabase.IntegratetheLambdafunctionsbyusing AmazonSimpleNotificationService(AmazonSNS).",
+        "D": "SetuptwoLambdafunctions.Configureonefunctiontoreceivetheinformation.Configurethe otherfunctiontoloadtheinformationintothedatabase.IntegratetheLambdafunctionsbyusingan AmazonSimpleQueueService(AmazonSQS)queue."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "bottleneckscanbeavoidedwithqueues(SQS)."
+    },
+    {
+      "id": 26,
+      "type": "single",
+      "question": "AcompanyneedstoreviewitsAWSClouddeploymenttoensurethatitsAmazonS3bucketsdonot haveunauthorizedconfigurationchanges. Whatshouldasolutionsarchitectdotoaccomplishthisgoal?",
+      "options": {
+        "A": "TurnonAWSConfigwiththeappropriaterules.",
+        "B": "TurnonAWSTrustedAdvisorwiththeappropriatechecks.",
+        "C": "TurnonAmazonInspectorwiththeappropriateassessmenttemplate.",
+        "D": "TurnonAmazonS3serveraccesslogging.ConfigureAmazonEventBridge(AmazonCloudWatch Events)."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "ToensurethatAmazonS3bucketsdonothaveunauthorizedconfigurationchanges,asolutions\narchitectshouldturnonAWSConfigwiththeappropriaterules.AWSConfigisaservicethatallows\nuserstoauditandassesstheirAWSresourceconfigurationsforcompliancewithindustrystandards\nandinternalpolicies.Itprovidesadetailedviewoftheresourcesandtheirconfigurations,including\ninformationonhowtheresourcesarerelatedtoeachother.ByturningonAWSConfigwiththe\nappropriaterules,userscanidentifyandremediateunauthorizedconfigurationchangestotheir\nAmazonS3buckets."
+    },
+    {
+      "id": 27,
+      "type": "single",
+      "question": "AcompanyislaunchinganewapplicationandwilldisplayapplicationmetricsonanAmazon CloudWatchdashboard.Thecompany’sproductmanagerneedstoaccessthisdashboard periodically.TheproductmanagerdoesnothaveanAWSaccount.Asolutionarchitectmustprovide accesstotheproductmanagerbyfollowingtheprincipleofleastprivilege. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "SharethedashboardfromtheCloudWatchconsole.Entertheproductmanager’semailaddress, andcompletethesharingsteps.Provideashareablelinkforthedashboardtotheproductmanager.",
+        "B": "CreateanIAMuserspecificallyfortheproductmanager.AttachtheCloudWatchReadOnlyAccess managedpolicytotheuser.Sharethenewlogincredentialwiththeproductmanager.Sharethe browserURLofthecorrectdashboardwiththeproductmanager.",
+        "C": "CreateanIAMuserforthecompany’semployees,AttachtheViewOnlyAccessAWSmanaged policytotheIAMuser.Sharethenewlogincredentialswiththeproductmanager.Asktheproduct managertonavigatetotheCloudWatchconsoleandlocatethedashboardbynameinthe Dashboardssection.",
+        "D": "Deployabastionserverinapublicsubnet.Whentheproductmanagerrequiresaccesstothe dashboard,starttheserverandsharetheRDPcredentials.Onthebastionserver,ensurethatthe browserisconfiguredtoopenthedashboardURLwithcachedAWScredentialsthathaveappropriate permissionstoviewthedashboard."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "ToprovidetheproductmanageraccesstotheAmazonCloudWatchdashboardwhilefollowingthe\nprincipleofleastprivilege,asolutionarchitectshouldcreateanIAMuserspecificallyfortheproduct\nmanagerandattachtheCloudWatchReadOnlyAccessmanagedpolicytotheuser.Thispolicyallows\ntheusertoviewthedashboardwithoutbeingabletomakeanychangestoit.Thesolutionarchitect\nshouldthensharethenewlogincredentialwiththeproductmanagerandprovidethemwiththe\nbrowserURLofthecorrectdashboard."
+    },
+    {
+      "id": 28,
+      "type": "single",
+      "question": "AcompanyismigratingapplicationstoAWS.Theapplicationsaredeployedindifferentaccounts.The companymanagestheaccountscentrallybyusingAWSOrganizations.Thecompany'ssecurityteam needsasinglesign-on(SSO)solutionacrossallthecompany'saccounts.Thecompanymustcontinue managingtheusersandgroupsinitson-premisesself-managedMicrosoftActiveDirectory. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "EnableAWSSingleSign-On(AWSSSO)fromtheAWSSSOconsole.Createaone-wayforesttrust oraone-waydomaintrusttoconnectthecompany'sself-managedMicrosoftActiveDirectorywith AWSSSObyusingAWSDirectoryServiceforMicrosoftActiveDirectory.",
+        "B": "EnableAWSSingleSign-On(AWSSSO)fromtheAWSSSOconsole.Createatwo-wayforesttrust toconnectthecompany'sself-managedMicrosoftActiveDirectorywithAWSSSObyusingAWS DirectoryServiceforMicrosoftActiveDirectory.",
+        "C": "UseAWSDirectoryService.Createatwo-waytrustrelationshipwiththecompany'sself-managed MicrosoftActiveDirectory.",
+        "D": "Deployanidentityprovider(IdP)onpremises.EnableAWSSingleSign-On(AWSSSO)fromthe AWSSSOconsole."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Toprovidesinglesign-on(SSO)acrossallthecompany'saccountswhilecontinuingtomanageusers\nandgroupsinitson-premisesself-managedMicrosoftActiveDirectory,thesolutionistoenableAWS\nSingleSign-On(SSO)fromtheAWSSSOconsoleandcreateaone-wayforesttrustoraone-way\ndomaintrusttoconnectthecompany'sself-managedMicrosoftActiveDirectorywithAWSSSOby\nusingAWSDirectoryServiceforMicrosoftActiveDirectory.ThissolutionisdescribedintheAWS\ndocumentation"
+    },
+    {
+      "id": 29,
+      "type": "single",
+      "question": "AcompanyprovidesaVoiceoverInternetProtocol(VoIP)servicethatusesUDPconnections.The serviceconsistsofAmazonEC2instancesthatruninanAutoScalinggroup.Thecompanyhas deploymentsacrossmultipleAWSRegions. ThecompanyneedstorouteuserstotheRegionwiththelowestlatency.Thecompanyalsoneeds automatedfailoverbetweenRegions. Whichsolutionwillmeettheserequirements?",
+      "options": {
+        "A": "DeployaNetworkLoadBalancer(NLB)andanassociatedtargetgroup.Associatethetargetgroup withtheAutoScalinggroup.UsetheNLBasanAWSGlobalAcceleratorendpointineachRegion.",
+        "B": "DeployanApplicationLoadBalancer(ALB)andanassociatedtargetgroup.Associatethetarget groupwiththeAutoScalinggroup.UsetheALBasanAWSGlobalAcceleratorendpointineach Region.",
+        "C": "DeployaNetworkLoadBalancer(NLB)andanassociatedtargetgroup.Associatethetargetgroup withtheAutoScalinggroup.CreateanAmazonRoute53latencyrecordthatpointstoaliasesfor eachNLB.CreateanAmazonCloudFrontdistributionthatusesthelatencyrecordasanorigin.",
+        "D": "DeployanApplicationLoadBalancer(ALB)andanassociatedtargetgroup.Associatethetarget groupwiththeAutoScalinggroup.CreateanAmazonRoute53weightedrecordthatpointsto aliasesforeachALB.DeployanAmazonCloudFrontdistributionthatusestheweightedrecordasan origin."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "https://aws.amazon.com/global-accelerator/faqs/\nHTTP/HTTPS-ALB;TCPandUDP-NLB;Lowestlatencyroutingandmorethroughput.Alsosupports\nfailover,usesAnycastIpaddressing-GlobalAcceleratorCachingatEgdeLocations–Cloutfront\nWSGlobalAcceleratorautomaticallychecksthehealthofyourapplicationsandroutesusertraffic\nonlytohealthyapplicationendpoints.Ifthehealthstatuschangesoryoumakeconfiguration\nupdates,AWSGlobalAcceleratorreactsinstantaneouslytorouteyouruserstothenextavailable\nendpoint.."
+    },
+    {
+      "id": 30,
+      "type": "single",
+      "question": "Adevelopmentteamrunsmonthlyresource-intensivetestsonitsgeneralpurposeAmazonRDSfor MySQLDBinstancewithPerformanceInsightsenabled.Thetestinglastsfor48hoursonceamonth andistheonlyprocessthatusesthedatabase.Theteamwantstoreducethecostofrunningthe testswithoutreducingthecomputeandmemoryattributesoftheDBinstance. WhichsolutionmeetstheserequirementsMOSTcost-effectively?",
+      "options": {
+        "A": "StoptheDBinstancewhentestsarecompleted.RestarttheDBinstancewhenrequired.",
+        "B": "UseanAutoScalingpolicywiththeDBinstancetoautomaticallyscalewhentestsarecompleted.",
+        "C": "Createasnapshotwhentestsarecompleted.TerminatetheDBinstanceandrestorethesnapshot whenrequired.",
+        "D": "ModifytheDBinstancetoalow-capacityinstancewhentestsarecompleted.ModifytheDB instanceagainwhenrequired."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Toreducethecostofrunningthetestswithoutreducingthecomputeandmemoryattributesofthe\nAmazonRDSforMySQLDBinstance,thedevelopmentteamcanstoptheinstancewhentestsare\ncompletedandrestartitwhenrequired.StoppingtheDBinstancewhennotinusecanhelpsave\ncostsbecausecustomersareonlychargedforstoragewhiletheDBinstanceisstopped.Duringthis\ntime,automatedbackupsandautomatedDBinstancemaintenancearesuspended.Whenthe\ninstanceisrestarted,itretainsthesameconfigurations,securitygroups,andDBparametergroupsas\nwhenitwasstopped.\nReference:\nAmazonRDSDocumentation:StoppingandStartingaDBinstance\n(https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html)"
+    },
+    {
+      "id": 31,
+      "type": "single",
+      "question": "AcompanythathostsitswebapplicationonAWSwantstoensureallAmazonEC2instances.Amazon RDSDBinstances.andAmazonRedshiftclustersareconfiguredwithtags.Thecompanywantsto minimizetheeffortofconfiguringandoperatingthischeck. Whatshouldasolutionsarchitectdotoaccomplishthis?",
+      "options": {
+        "A": "UseAWSConfigrulestodefineanddetectresourcesthatarenotproperlytagged.",
+        "B": "UseCostExplorertodisplayresourcesthatarenotproperlytagged.Tagthoseresources manually.",
+        "C": "WriteAPIcallstocheckallresourcesforpropertagallocation.PeriodicallyrunthecodeonanEC2 instance.",
+        "D": "WriteAPIcallstocheckallresourcesforpropertagallocation.ScheduleanAWSLambdafunction throughAmazonCloudWatchtoperiodicallyrunthecode."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "ToensureallAmazonEC2instances,AmazonRDSDBinstances,andAmazonRedshiftclustersare\nconfiguredwithtags,asolutionsarchitectshoulduseAWSConfigrulestodefineanddetect\nresourcesthatarenotproperlytagged.AWSConfigrulesareasetofcustomizablerulesthatAWS\nConfigusestoevaluateAWSresourceconfigurationsforcompliancewithbestpracticesandcompany\npolicies.UsingAWSConfigrulescanminimizetheeffortofconfiguringandoperatingthischeck\nbecauseitautomatestheprocessofidentifyingnon-compliantresourcesandnotifyingthe\nresponsibleteams.\nReference:\nAWSConfigDeveloperGuide:AWSConfigRules\n(https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-\nrules.html)"
+    },
+    {
+      "id": 32,
+      "type": "single",
+      "question": "Adevelopmentteamneedstohostawebsitethatwillbeaccessedbyotherteams.Thewebsite contentsconsistofHTML,CSS,client-sideJavaScript,andimagesWhichmethodistheMOSTcost- effectiveforhostingthewebsite?",
+      "options": {
+        "A": "ContainerizethewebsiteandhostitinAWSFargate.",
+        "B": "CreateanAmazonS3bucketandhostthewebsitethere",
+        "C": "DeployawebserveronanAmazonEC2instancetohostthewebsite.",
+        "D": "ConfigureanApplicationLoadBalancerwithanAWSLambdatargetthatusestheExpressjs framework."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "InStaticWebsites,Webpagesarereturnedbytheserverwhichareprebuilt.\nTheyusesimplelanguagessuchasHTML,CSS,orJavaScript.\nThereisnoprocessingofcontentontheserver(accordingtotheuser)inStaticWebsites.Webpages\narereturnedbytheserverwithnochangetherefore,staticWebsitesarefast.\nThereisnointeractionwithdatabases.\nAlso,theyarelesscostlyasthehostdoesnotneedtosupportserver-sideprocessingwithdifferent\nlanguages.\n============\nInDynamicWebsites,Webpagesarereturnedbytheserverwhichareprocessedduringruntime\nmeanstheyarenotprebuiltwebpagesbuttheyarebuiltduringruntimeaccordingtotheuser’s\ndemand.\nTheseuseserver-sidescriptinglanguagessuchasPHP,Node.js,ASP.NETandmanymoresupported\nbytheserver.\nSo,theyareslowerthanstaticwebsitesbutupdatesandinteractionwithdatabasesarepossible."
+    },
+    {
+      "id": 33,
+      "type": "single",
+      "question": "AcompanyrunsanonlinemarketplacewebapplicationonAWS.Theapplicationserveshundredsof thousandsofusersduringpeakhours.Thecompanyneedsascalable,near-real-timesolutionto sharethedetailsofmillionsoffinancialtransactionswithseveralotherinternalapplications Transactionsalsoneedtobeprocessedtoremovesensitivedatabeforebeingstoredinadocument databaseforlow-latencyretrieval. Whatshouldasolutionsarchitectrecommendtomeettheserequirements?",
+      "options": {
+        "A": "StorethetransactionsdataintoAmazonDynamoDBSetuparuleinDynamoDBtoremove sensitivedatafromeverytransactionuponwriteUseDynamoDBStreamstosharethetransactions datawithotherapplications",
+        "B": "StreamthetransactionsdataintoAmazonKinesisDataFirehosetostoredatainAmazon DynamoDBandAmazonS3UseAWSLambdaintegrationwithKinesisDataFirehosetoremove sensitivedata.OtherapplicationscanconsumethedatastoredinAmazonS3",
+        "C": "StreamthetransactionsdataintoAmazonKinesisDataStreamsUseAWSLambdaintegrationto removesensitivedatafromeverytransactionandthenstorethetransactionsdatainAmazon DynamoDBOtherapplicationscanconsumethetransactionsdataofftheKinesisdatastream.",
+        "D": "StorethebatchedtransactionsdatainAmazonS3asfiles.UseAWSLambdatoprocesseveryfile andremovesensitivedatabeforeupdatingthefilesinAmazonS3TheLambdafunctionthenstores thedatainAmazonDynamoDBOtherapplicationscanconsumetransactionfilesstoredinAmazon S3."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "ThedestinationofyourKinesisDataFirehosedeliverystream.KinesisDataFirehosecansenddata\nrecordstovariousdestinations,includingAmazonSimpleStorageService(AmazonS3),Amazon\nRedshift,AmazonOpenSearchService,andanyHTTPendpointthatisownedbyyouoranyofyour\nthird-partyserviceproviders.Thefollowingarethesupporteddestinations:\n*AmazonOpenSearchService\n*AmazonS3\n*Datadog\n*Dynatrace\n*Honeycomb\n*HTTPEndpoint\n*LogicMonitor\n*MongoDBCloud\n*NewRelic\n*Splunk\n*SumoLogic\nhttps://docs.aws.amazon.com/firehose/latest/dev/create-name.html\nhttps://aws.amazon.com/kinesis/data-streams/\nAmazonKinesisDataStreams(KDS)isamassivelyscalableanddurablereal-timedatastreaming\nservice.KDScancontinuouslycapturegigabytesofdatapersecondfromhundredsofthousandsof\nsourcessuchaswebsiteclickstreams,databaseeventstreams,financialtransactions,socialmedia\nfeeds,ITlogs,andlocation-trackingevents."
+    },
+    {
+      "id": 34,
+      "type": "single",
+      "question": "Acompanyhostsitsmulti-tierapplicationsonAWS.Forcompliance,governance,auditing,and security,thecompanymusttrackconfigurationchangesonitsAWSresourcesandrecordahistoryof APIcallsmadetotheseresources. Whatshouldasolutionsarchitectdotomeettheserequirements?",
+      "options": {
+        "A": "UseAWSCloudTrailtotrackconfigurationchangesandAWSConfigtorecordAPIcalls",
+        "B": "UseAWSConfigtotrackconfigurationchangesandAWSCloudTrailtorecordAPIcalls",
+        "C": "UseAWSConfigtotrackconfigurationchangesandAmazonCloudWatchtorecordAPIcalls",
+        "D": "UseAWSCloudTrailtotrackconfigurationchangesandAmazonCloudWatchtorecordAPIcalls"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWSConfigisafullymanagedservicethatallowsthecompanytoassess,audit,andevaluatethe\nconfigurationsofitsAWSresources.Itprovidesadetailedinventoryoftheresourcesinuseand\ntrackschangestoresourceconfigurations.AWSConfigcandetectconfigurationchangesandalertthe\ncompanywhenchangesoccur.Italsoprovidesahistoricalviewofchanges,whichisessentialfor\ncomplianceandgovernancepurposes.AWSCloudTrailisafullymanagedservicethatprovidesa\ndetailedhistoryofAPIcallsmadetothecompany'sAWSresources.ItrecordsallAPIactivityinthe\nAWSaccount,includingwhomadetheAPIcall,whenthecallwasmade,andwhatresourceswere\naffectedbythecall.Thisinformationiscriticalforsecurityandauditingpurposes,asitallowsthe\ncompanytoinvestigateanysuspiciousactivitythatmightoccuronitsAWSresources."
+    },
+    {
+      "id": 35,
+      "type": "single",
+      "question": "Acompanyispreparingtolaunchapublic-facingwebapplicationintheAWSCloud.Thearchitecture consistsofAmazonEC2instanceswithinaVPCbehindanElasticLoadBalancer(ELB).Athird-party serviceisusedfortheDNS.Thecompany'ssolutionsarchitectmustrecommendasolutiontodetect andprotectagainstlarge-scaleDDoSattacks. Whichsolutionmeetstheserequirements?",
+      "options": {
+        "A": "EnableAmazonGuardDutyontheaccount.",
+        "B": "EnableAmazonInspectorontheEC2instances.",
+        "C": "EnableAWSShieldandassignAmazonRoute53toit.",
+        "D": "EnableAWSShieldAdvancedandassigntheELBtoit."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "https://aws.amazon.com/shield/faqs/"
+    },
+    {
+      "id": 36,
+      "type": "single",
+      "question": "AcompanyisbuildinganapplicationintheAWSCloud.TheapplicationwillstoredatainAmazonS3 bucketsintwoAWSRegions.ThecompanymustuseanAWSKeyManagementService(AWSKMS) customermanagedkeytoencryptalldatathatisstoredintheS3buckets.ThedatainbothS3 bucketsmustbeencryptedanddecryptedwiththesameKMSkey.Thedataandthekeymustbe storedineachofthetwoRegions. WhichsolutionwillmeettheserequirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "CreateanS3bucketineachRegionConfiguretheS3bucketstouseserver-sideencryptionwith AmazonS3managedencryptionkeys(SSE-S3)ConfigurereplicationbetweentheS3buckets.",
+        "B": "Createacustomermanagedmulti-RegionKMSkey.CreateanS3bucketineachRegion.Configure replicationbetweentheS3buckets.ConfiguretheapplicationtousetheKMSkeywithclient-side encryption.",
+        "C": "CreateacustomermanagedKMSkeyandanS3bucketineachRegionConfiguretheS3bucketsto useserver-sideencryptionwithAmazonS3managedencryptionkeys(SSE-S3)Configurereplication betweentheS3buckets.",
+        "D": "CreateacustomermanagedKMSkeyandanS3bucketmeachRegionConfiguretheS3bucketsto useserver-sideencryptionwithAWSKMSkeys(SSE-KMS)ConfigurereplicationbetweentheS3 buckets."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Fromhttps://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html\nFormostusers,thedefaultAWSKMSkeystore,whichisprotectedbyFIPS140-2validated\ncryptographicmodules,fulfillstheirsecurityrequirements.Thereisnoneedtoaddanextralayerof\nmaintenanceresponsibilityoradependencyonanadditionalservice.However,youmightconsider\ncreatingacustomkeystoreifyourorganizationhasanyofthefollowingrequirements:Keymaterial\ncannotbestoredinasharedenvironment.Keymaterialmustbesubjecttoasecondary,independent\nauditpath.TheHSMsthatgenerateandstorekeymaterialmustbecertifiedatFIPS140-2Level3.\nhttps://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html\nhttps://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html"
+    },
+    {
+      "id": 37,
+      "type": "single",
+      "question": "AcompanyrecentlylaunchedavarietyofnewworkloadsonAmazonEC2instancesinitsAWS account.Thecompanyneedstocreateastrategytoaccessandadministertheinstancesremotely andsecurely.ThecompanyneedstoimplementarepeatableprocessthatworkswithnativeAWS servicesandfollowstheAWSWell-ArchitectedFramework. WhichsolutionwillmeettheserequirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "UsetheEC2serialconsoletodirectlyaccesstheterminalinterfaceofeachinstancefor administration.",
+        "B": "AttachtheappropriateIAMroletoeachexistinginstanceandnewinstance.UseAWSSystems ManagerSessionManagertoestablisharemoteSSHsession.",
+        "C": "CreateanadministrativeSSHkeypair.LoadthepublickeyintoeachEC2instance.Deployabastion hostinapublicsubnettoprovideatunnelforadministrationofeachinstance.",
+        "D": "EstablishanAWSSite-to-SiteVPNconnection.Instructadministratorstousetheirlocalon- premisesmachinestoconnectdirectlytotheinstancesbyusingSSHkeysacrosstheVPNtunnel."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-launch-managed-\ninstance.html"
+    },
+    {
+      "id": 38,
+      "type": "single",
+      "question": "AcompanyishostingastaticwebsiteonAmazonS3andisusingAmazonRoute53forDNS.The websiteisexperiencingincreaseddemandfromaroundtheworld.Thecompanymustdecrease latencyforuserswhoaccessthewebsite. WhichsolutionmeetstheserequirementsMOSTcost-effectively?",
+      "options": {
+        "A": "ReplicatetheS3bucketthatcontainsthewebsitetoallAWSRegions.AddRoute53geolocation routingentries.",
+        "B": "ProvisionacceleratorsinAWSGlobalAccelerator.AssociatethesuppliedIPaddresseswiththeS3 bucket.EdittheRoute53entriestopointtotheIPaddressesoftheaccelerators.",
+        "C": "AddanAmazonCloudFrontdistributioninfrontoftheS3bucket.EdittheRoute53entriestopoint totheCloudFrontdistribution.",
+        "D": "EnableS3TransferAccelerationonthebucket.EdittheRoute53entriestopointtothenew endpoint."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AmazonCloudFrontisacontentdeliverynetwork(CDN)thatcachescontentatedgelocations\naroundtheworld,providinglowlatencyandhightransferspeedstousersaccessingthecontent.\nAddingaCloudFrontdistributioninfrontoftheS3bucketwillcachethestaticwebsite'scontentat\nedgelocationsaroundtheworld,decreasinglatencyforusersaccessingthewebsite.Thissolutionis\nalsocost-effectiveasitonlychargesforthedatatransferandrequestsmadebyusersaccessingthe\ncontentfromtheCloudFrontedgelocations.Additionally,thissolutionprovidesscalabilityand\nreliabilitybenefitsasCloudFrontcanautomaticallyscaletohandleincreaseddemandandprovide\nhighavailabilityforthewebsite."
+    },
+    {
+      "id": 39,
+      "type": "single",
+      "question": "Acompanymaintainsasearchablerepositoryofitemsonitswebsite.Thedataisstoredinan AmazonRDSforMySQLdatabasetablethatcontainsmorethan10millionrowsThedatabasehas2 TBofGeneralPurposeSSDstorageTherearemillionsofupdatesagainstthisdataeverydaythrough thecompany'swebsite Thecompanyhasnoticedthatsomeinsertoperationsaretaking10secondsorlongerThecompany hasdeterminedthatthedatabasestorageperformanceistheproblem Whichsolutionaddressesthisperformanceissue?",
+      "options": {
+        "A": "ChangethestoragetypetoProvisionedIOPSSSD",
+        "B": "ChangetheDBinstancetoamemoryoptimizedinstanceclass",
+        "C": "ChangetheDBinstancetoaburstableperformanceinstanceclass",
+        "D": "EnableMulti-AZRDSreadreplicaswithMySQLnativeasynchronousreplication."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/ebs/features/\n\"ProvisionedIOPSvolumesarebackedbysolid-statedrives(SSDs)andarethehighestperformance\nEBSvolumesdesignedforyourcritical,I/Ointensivedatabaseapplications.\nThesevolumesareidealforbothIOPS-intensiveandthroughput-intensiveworkloadsthatrequire\nextremelylowlatency.\"\nhttps://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html"
+    },
+    {
+      "id": 40,
+      "type": "single",
+      "question": "Acompanyhasthousandsofedgedevicesthatcollectivelygenerate1TBofstatusalertseachday. Eachalertisapproximately2KBinsize.Asolutionsarchitectneedstoimplementasolutiontoingest andstorethealertsforfutureanalysis. Thecompanywantsahighlyavailablesolution.However,thecompanyneedstominimizecostsand doesnotwanttomanageadditionalinfrastructure.Additionally,thecompanywantstokeep14days ofdataavailableforimmediateanalysisandarchiveanydataolderthan14days. WhatistheMOSToperationallyefficientsolutionthatmeetstheserequirements?",
+      "options": {
+        "A": "CreateanAmazonKinesisDataFirehosedeliverystreamtoingestthealertsConfiguretheKinesis DataFirehosestreamtodeliverthealertstoanAmazonS3bucketSetupanS3Lifecycle configurationtotransitiondatatoAmazonS3Glacierafter14days",
+        "B": "LaunchAmazonEC2instancesacrosstwoAvailabilityZonesandplacethembehindanElasticLoad BalancertoingestthealertsCreateascriptontheEC2instancesthatwillstoretnealertsman AmazonS3bucketSetupanS3LifecycleconfigurationtotransitiondatatoAmazonS3Glacierafter 14days",
+        "C": "CreateanAmazonKinesisDataFirehosedeliverystreamtoingestthealertsConfiguretheKinesis DataFirehosestreamtodeliverthealertstoanAmazonElasticsearchService(AmazonES)dusterSet uptheAmazonESclustertotakemanualsnapshotseverydayanddeletedatafromthedusterthatis olderthan14days",
+        "D": "CreateanAmazonSimpleQueueService(AmazonSQSistandardqueuetoingestthealertsand setthemessageretentionperiodto14daysConfigureconsumerstopolltheSQSqueuecheckthe ageofthemessageandanalyzethemessagedataasneededIfthemessageis14daysoldthe consumershouldcopythemessagetoanAmazonS3bucketanddeletethemessagefromtheSQS queue"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "https://aws.amazon.com/kinesis/data-\nfirehose/features/?nc=sn&loc=2#:~:text=into%20Amazon%20S3%2C%20Amazon%20Redshift%2C%2\n0Amazon%20OpenSearch%20Service%2C%20Kinesis,Delivery%20streams"
+    },
+    {
+      "id": 41,
+      "type": "single",
+      "question": "Acompany'sapplicationintegrateswithmultiplesoftware-as-a-service(SaaS)sourcesfordata collection.ThecompanyrunsAmazonEC2instancestoreceivethedataandtouploadthedatatoan AmazonS3bucketforanalysis.ThesameEC2instancethatreceivesanduploadsthedataalsosends anotificationtotheuserwhenanuploadiscomplete.Thecompanyhasnoticedslowapplication performanceandwantstoimprovetheperformanceasmuchaspossible. WhichsolutionwillmeettheserequirementswiththeLEASToperationaloverhead?",
+      "options": {
+        "A": "CreateanAutoScalinggroupsothatEC2instancescanscaleout.ConfigureanS3event notificationtosendeventstoanAmazonSimpleNotificationService(AmazonSNS)topicwhenthe uploadtotheS3bucketiscomplete.",
+        "B": "CreateanAmazonAppFlowflowtotransferdatabetweeneachSaaSsourceandtheS3bucket. ConfigureanS3eventnotificationtosendeventstoanAmazonSimpleNotificationService(Amazon SNS)topicwhentheuploadtotheS3bucketiscomplete.",
+        "C": "CreateanAmazonEventBridge(AmazonCloudWatchEvents)ruleforeachSaaSsourcetosend outputdata.ConfiguretheS3bucketastherule'starget.CreateasecondEventBridge(CloudWatch Events)ruletosendeventswhentheuploadtotheS3bucketiscomplete.ConfigureanAmazon SimpleNotificationService(AmazonSNS)topicasthesecondrule'starget.",
+        "D": "CreateaDockercontainertouseinsteadofanEC2instance.Hostthecontainerizedapplicationon AmazonElasticContainerService(AmazonECS).ConfigureAmazonCloudWatchContainerInsightsto sendeventstoanAmazonSimpleNotificationService(AmazonSNS)topicwhentheuploadtotheS3 bucketiscomplete."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AmazonAppFlowisafullymanagedintegrationservicethatenablesyoutosecurelytransferdata\nbetweenSoftware-as-a-Service(SaaS)applicationslikeSalesforce,SAP,Zendesk,Slack,and\nServiceNow,andAWSserviceslikeAmazonS3andAmazonRedshift,injustafewclicks.\nhttps://aws.amazon.com/appflow/"
+    },
+    {
+      "id": 42,
+      "type": "single",
+      "question": "Acompanyrunsahighlyavailableimage-processingapplicationonAmazonEC2instancesinasingle VPCTheEC2instancesruninsideseveralsubnetsacrossmultipleAvailabilityZones.TheEC2 instancesdonotcommunicatewitheachotherHowever,theEC2instancesdownloadimagesfrom AmazonS3anduploadimagestoAmazonS3throughasingleNATgatewayThecompanyis concernedaboutdatatransfercharges WhatistheMOSTcost-effectivewayforthecompanytoavoidRegionaldatatransfercharges?",
+      "options": {
+        "A": "LaunchtheNATgatewayineachAvailabilityZone",
+        "B": "ReplacetheNATgatewaywithaNATinstance",
+        "C": "DeployagatewayVPCendpointforAmazonS3",
+        "D": "ProvisionanEC2DedicatedHosttoruntheEC2instances"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Inthisscenario,thecompanywantstoavoidregionaldatatransferchargeswhiledownloadingand\nuploadingimagesfromAmazonS3.Toaccomplishthisatthelowestcost,theNATgatewayshouldbe\nlaunchedineachavailabilityzonethattheEC2instancesarerunningin.ThisallowstheEC2instances\ntoroutetrafficthroughthelocalNATgatewayinsteadofsendingtrafficacrossanavailabilityzone\nboundaryandincurringregionaldatatransferfees.Thismethodwillhelpreducethedatatransfer\ncostssinceinter-AvailabilityZonedatatransfersinasingleregionarefreeofcharge.\nReference:\nAWSNATGatewaydocumentation:https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-\ngateway.html"
+    },
+    {
+      "id": 43,
+      "type": "single",
+      "question": "Acompanyhasanon-premisesapplicationthatgeneratesalargeamountoftime-sensitivedatathat isbackeduptoAmazonS3.Theapplicationhasgrownandthereareusercomplaintsaboutinternet bandwidthlimitations.Asolutionsarchitectneedstodesignalong-termsolutionthatallowsforboth timelybackupstoAmazonS3andwithminimalimpactoninternetconnectivityforinternalusers. Whichsolutionmeetstheserequirements?",
+      "options": {
+        "A": "EstablishAWSVPNconnectionsandproxyalltrafficthroughaVPCgatewayendpoint",
+        "B": "EstablishanewAWSDirectConnectconnectionanddirectbackuptrafficthroughthisnew connection.",
+        "C": "OrderdailyAWSSnowballdevicesLoadthedataontotheSnowballdevicesandreturnthedevices toAWSeachday.",
+        "D": "SubmitasupportticketthroughtheAWSManagementConsoleRequesttheremovalofS3service limitsfromtheaccount."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Toaddresstheissueofbandwidthlimitationsonthecompany'son-premisesapplication,andto\nminimizetheimpactoninternaluserconnectivity,anewAWSDirectConnectconnectionshouldbe\nestablishedtodirectbackuptrafficthroughthisnewconnection.Thissolutionwillofferasecure,\nhigh-speedconnectionbetweenthecompany'sdatacenterandAWS,whichwillallowthecompany\ntotransferdataquicklywithoutconsuminginternetbandwidth.\nReference:\nAWSDirectConnectdocumentation:https://aws.amazon.com/directconnect/"
+    },
+    {
+      "id": 44,
+      "type": "multiple",
+      "question": "AcompanyhasanAmazonS3bucketthatcontainscriticaldat a.Thecompanymustprotectthedatafromaccidentaldeletion. Whichcombinationofstepsshouldasolutionsarchitecttaketomeettheserequirements?(Choose two.)",
+      "options": {
+        "A": "EnableversioningontheS3bucket.",
+        "B": "EnableMFADeleteontheS3bucket.",
+        "C": "CreateabucketpolicyontheS3bucket.",
+        "D": "EnabledefaultencryptionontheS3bucket.",
+        "E": "CreatealifecyclepolicyfortheobjectsintheS3bucket."
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "ToprotectdatainanS3bucketfromaccidentaldeletion,versioningshouldbeenabled,which\nenablesyoutopreserve,retrieve,andrestoreeveryversionofeveryobjectinanS3bucket.\nAdditionally,enablingMFA(multi-factorauthentication)DeleteontheS3bucketaddsanextralayer\nofprotectionbyrequiringanauthenticationtokeninadditiontotheuser'saccesskeystodelete\nobjectsinthebucket.\nReference:\nAWSS3Versioningdocumentation:\nhttps://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html\nAWSS3MFADeletedocumentation:\nhttps://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMFADelete.html"
+    },
+    {
+      "id": 45,
+      "type": "multiple",
+      "question": "Acompanyhasadataingestionworkflowthatconsiststhefollowing: AnAmazonSimpleNotificationService(AmazonSNS)topicfornotificationsaboutnewdata deliveries AnAWSLambdafunctiontoprocessthedataandrecordmetadata Thecompanyobservesthattheingestionworkflowfailsoccasionallybecauseofnetwork connectivityissues.Whensuchafailureoccurs,theLambdafunctiondoesnotingestthe correspondingdataunlessthecompanymanuallyrerunsthejob. WhichcombinationofactionsshouldasolutionsarchitecttaketoensurethattheLambdafunction ingestsalldatainthefuture?(SelectTWO.)",
+      "options": {
+        "A": "ConfiguretheLambdafunctionInmultipleAvailabilityZones.",
+        "B": "CreateanAmazonSimpleQueueService(AmazonSQS)queue,andsubscribeIttomeSNStopic.",
+        "C": "IncreasetheCPUandmemorythatareallocatedtotheLambdafunction.",
+        "D": "IncreaseprovisionedthroughputfortheLambdafunction.",
+        "E": "ModifytheLambdafunctiontoreadfromanAmazonSimpleQueueService(AmazonSQS)queue"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "explanation": "ToensurethattheLambdafunctioningestsalldatainthefuturedespiteoccasionalnetwork\nconnectivityissues,thefollowingactionsshouldbetaken:\nCreateanAmazonSimpleQueueService(SQS)queueandsubscribeittotheSNStopic.Thisallows\nfordecouplingofthenotificationandprocessing,sothateveniftheprocessingLambdafunction\nfails,themessageremainsinthequeueforfurtherprocessinglater.\nModifytheLambdafunctiontoreadfromtheSQSqueueinsteadofdirectlyfromSNS.This\ndecouplingallowsforretriesandfaulttoleranceandensuresthatallmessagesareprocessedbythe\nLambdafunction.\nReference:\nAWSSNSdocumentation:https://aws.amazon.com/sns/\nAWSSQSdocumentation:https://aws.amazon.com/sqs/\nAWSLambdadocumentation:https://aws.amazon.com/lambda/"
+    },
+    {
+      "id": 46,
+      "type": "single",
+      "question": "Acompanyhasanapplicationthatprovidesmarketingservicestostores.Theservicesarebasedon previouspurchasesbystorecustomers.Thestoresuploadtransactiondatatothecompanythrough SFTP,andthedataisprocessedandanalyzedtogeneratenewmarketingoffers.Someofthefilescan exceed200GBinsize. Recently,thecompanydiscoveredthatsomeofthestoreshaveuploadedfilesthatcontain personallyidentifiableinformation(PII)thatshouldnothavebeenincluded.Thecompanywants administratorstobealertedifPIIissharedagain.Thecompanyalsowantstoautomateremediation. WhatshouldasolutionsarchitectdotomeettheserequirementswiththeLEASTdevelopment effort?",
+      "options": {
+        "A": "UseanAmazonS3bucketasasecuretransferpoint.UseAmazonInspectortoscanmeobjectsin thebucket.IfobjectscontainPll.triggeranS3LifecyclepolicytoremovetheobjectsthatcontainPll.",
+        "B": "UseanAmazonS3bucketasasecuretransferpoint.UseAmazonMacie toscantheobjectsinthe bucket.IfobjectscontainPll. UseAmazonSimpleNotificationService(AmazonSNS)totriggera notificationtotheadministratorstoremovetheobjectsmatcontainPll.",
+        "C": "ImplementcustomscanningalgorithmsinanAWSLambdafunction.Triggerthefunctionwhen objectsareloadedintothebucket.ItobjectscontainRll.useAmazonSimpleNotificationService (AmazonSNS)totriggeranotificationtotheadministratorstoremovetheobjectsthatcontainPll.",
+        "D": "ImplementcustomscanningalgorithmsinanAWSLambdafunction.Triggerthefunctionwhen objectsareloadedintothebucket.IfobjectscontainPll.useAmazonSimpleEmailService(Amazon STS)totriggeranotificationtotheadministratorsandtriggeronS3Lifecyclepolicytoremovethe objectsmotcontainPII."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "TomeettherequirementsofdetectingandalertingtheadministratorswhenPIIissharedand\nautomatingremediationwiththeleastdevelopmenteffort,thebestapproachwouldbetouse\nAmazonS3bucketasasecuretransferpointandscantheobjectsinthebucketwithAmazonMacie.\nAmazonMacieisafullymanageddatasecurityanddataprivacyservicethatusesmachinelearning\nandpatternmatchingtodiscoverandprotectsensitivedatastoredinAmazonS3.Itcanbeusedto\nclassifysensitivedata,monitoraccesstosensitivedata,andautomateremediationactions.\nInthisscenario,afteruploadingthefilestotheAmazonS3bucket,theobjectscanbescannedforPII\nbyAmazonMacie,andifitdetectsanyPII,itcantriggeranAmazonSimpleNotificationService(SNS)\nnotificationtoalerttheadministratorstoremovetheobjectscontainingPII.Thisapproachrequires\ntheleastdevelopmenteffort,asAmazonMaciealreadyhaspre-builtdataclassificationrulesthatcan\ndetectPIIinvariousformats.\nHence,optionBisthecorrectanswer.\nReference:\nAmazonMacieUserGuide:https://docs.aws.amazon.com/macie/latest/userguide/what-is-\nmacie.html\nAWSWell-ArchitectedFramework-SecurityPillar:\nhttps://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html"
+    },
+    {
+      "id": 47,
+      "type": "single",
+      "question": "AcompanyneedsguaranteedAmazonEC2capacityinthreespecificAvailabilityZonesinaspecific AWSRegionforanupcomingeventthatwilllast1week. WhatshouldthecompanydotoguaranteetheEC2capacity?",
+      "options": {
+        "A": "PurchaseReservedinstancesthatspecifytheRegionneeded",
+        "B": "CreateanOnDemandCapacityReservationthatspecifiestheRegionneeded",
+        "C": "PurchaseReservedinstancesthatspecifytheRegionandthreeAvailabilityZonesneeded",
+        "D": "CreateanOn-DemandCapacityReservationthatspecifiestheRegionandthreeAvailabilityZones needed"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html\nReserveinstances:Youwillhavetopayforthewholeterm(1yearor3years)whichisnotcost\neffective"
+    },
+    {
+      "id": 48,
+      "type": "single",
+      "question": "Acompany'swebsiteusesanAmazonEC2instancestoreforitscatalogofitems.Thecompanywants tomakesurethatthecatalogishighlyavailableandthatthecatalogisstoredinadurablelocation. Whatshouldasolutionsarchitectdotomeettheserequirements?",
+      "options": {
+        "A": "MovethecatalogtoAmazonElastiCacheforRedis.",
+        "B": "DeployalargerEC2instancewithalargerinstancestore.",
+        "C": "MovethecatalogfromtheinstancestoretoAmazonS3GlacierDeepArchive.",
+        "D": "MovethecatalogtoanAmazonElasticFileSystem(AmazonEFS)filesystem."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "MovingthecatalogtoanAmazonElasticFileSystem(AmazonEFS)filesystemprovidesbothhigh\navailabilityanddurability.AmazonEFSisafully-managed,highly-available,anddurablefilesystem\nthatisbuilttoscaleondemand.WithAmazonEFS,thecatalogdatacanbestoredandaccessedfrom\nmultipleEC2instancesindifferentavailabilityzones,ensuringhighavailability.Also,AmazonEFS\nautomaticallystoresfilesredundantlywithinandacrossmultipleavailabilityzones,makingita\ndurablestorageoption."
+    },
+    {
+      "id": 49,
+      "type": "single",
+      "question": "Acompanystorescalltranscriptfilesonamonthlybasis.Usersaccessthefilesrandomlywithin1 yearofthecall,butusersaccessthefilesinfrequentlyafter1year.Thecompanywantstooptimizeits solutionbygivinguserstheabilitytoqueryandretrievefilesthatarelessthan1-year-oldasquickly aspossible.Adelayinretrievingolderfilesisacceptable. WhichsolutionwillmeettheserequirementsMOSTcost-effectively?",
+      "options": {
+        "A": "StoreindividualfileswithtagsinAmazonS3GlacierInstantRetrieval.Querythetagstoretrieve thefilesfromS3GlacierInstantRetrieval.",
+        "B": "StoreindividualfilesinAmazonS3Intelligent-Tiering.UseS3Lifecyclepoliciestomovethefiles toS3GlacierFlexibleRetrievalafter1year.QueryandretrievethefilesthatareinAmazonS3by usingAmazonAthena.QueryandretrievethefilesthatareinS3GlacierbyusingS3GlacierSelect.",
+        "C": "StoreindividualfileswithtagsinAmazonS3Standardstorage.Storesearchmetadataforeach archiveinAmazonS3Standardstorage.UseS3LifecyclepoliciestomovethefilestoS3Glacier InstantRetrievalafter1year.QueryandretrievethefilesbysearchingformetadatafromAmazonS3.",
+        "D": "StoreindividualfilesinAmazonS3Standardstorage.UseS3Lifecyclepoliciestomovethefilesto S3GlacierDeepArchiveafter1year.StoresearchmetadatainAmazonRDS.Querythefilesfrom AmazonRDS.RetrievethefilesfromS3GlacierDeepArchive."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "\"Forarchivedatathatneedsimmediateaccess,suchasmedicalimages,newsmediaassets,or\ngenomicsdata,choosetheS3GlacierInstantRetrievalstorageclass,anarchivestorageclassthat\ndeliversthelowestcoststoragewithmillisecondsretrieval.Forarchivedatathatdoesnotrequire\nimmediateaccessbutneedstheflexibilitytoretrievelargesetsofdataatnocost,suchasbackupor\ndisasterrecoveryusecases,chooseS3GlacierFlexibleRetrieval(formerlyS3Glacier),withretrieval\ninminutesorfreebulkretrievalsin5-12hours.\"https://aws.amazon.com/about-aws/whats-\nnew/2021/11/amazon-s3-glacier-instant-retrieval-storage-class/"
+    },
+    {
+      "id": 50,
+      "type": "single",
+      "question": "Acompanyhasaproductionworkloadthatrunson1,000AmazonEC2Linuxinstances.Theworkload ispoweredbythird-partysoftware.Thecompanyneedstopatchthethird-partysoftwareonallEC2 instancesasquicklyaspossibletoremediateacriticalsecurityvulnerability. Whatshouldasolutionsarchitectdotomeettheserequirements?",
+      "options": {
+        "A": "CreateanAWSLambdafunctiontoapplythepatchtoallEC2instances.",
+        "B": "ConfigureAWSSystemsManagerPatchManagertoapplythepatchtoallEC2instances.",
+        "C": "ScheduleanAWSSystemsManagermaintenancewindowtoapplythepatchtoallEC2instances.",
+        "D": "UseAWSSystemsManagerRunCommandtorunacustomcommandthatappliesthepatchtoall EC2instances."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "https://docs.aws.amazon.com/systems-manager/latest/userguide/about-windows-app-\npatching.html"
+    }
+  ]
+}
