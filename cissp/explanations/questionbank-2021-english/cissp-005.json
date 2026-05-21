@@ -1,0 +1,761 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q201 - Q250",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 201,
+      "question": "A firewall can be classified as a:",
+      "options": {
+        "A": "Directory based access control.",
+        "B": "Rule based access control.",
+        "C": "Lattice based access control.",
+        "D": "ID based access control."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Rule based access control is based on a specific profile for each user. Information can be easily changed for only one user but this scheme may become a burden in a very large environment. A rule-based access control unit will intercept every request to the server and compare the source specific access conditions with the rights of the user in order to make an access decision. A good example could be a firewall. Here a set of rules defined by the network administrator is recorded in a file. Every time a connection is attempted (incoming or outgoing), the firewall software checks the rules file to see if the connection is allowed. If it is not, the firewall closes the connection."
+    },
+    {
+      "id": 202,
+      "question": "Which of the following are the two most well known access control models?",
+      "options": {
+        "A": "Lattice and Biba",
+        "B": "Bell LaPadula and Biba",
+        "C": "Bell LaPadula and Chinese war",
+        "D": "Bell LaPadula and Info Flow"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The two most well known models are Bell&LaPadula [1973] and Biba[1977]. Both were designed in and for military environments."
+    },
+    {
+      "id": 203,
+      "question": "What security model implies a central authority that determines what subjects can have access to what objects?",
+      "options": {
+        "A": ") Centralized access control",
+        "B": ") Discretionary access control",
+        "C": ") Mandatory access control",
+        "D": ") Non-discretionary access control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A role-based access control (RBAC) model, also called nondiscretionary access control, uses a centrally administrated set of controls to determine how subjects and objects interact. - Shon Harris, \"CISSP All-in-One Exam Guide\", 3rd Ed, p 165."
+    },
+    {
+      "id": 204,
+      "question": "Which of the following is best known for capturing security requirements of commercial applications?",
+      "options": {
+        "A": "Lattice",
+        "B": "Biba",
+        "C": "Bell LaPadula",
+        "D": "Clark and Wilson"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This model attempts to capture security requirements of commercial applications. 'Military' and 'Commercial' are shorthand for different ways of using computers. This model has emphasis on integrity: Internal consistency: properties of the internal state of a system External consistency: relation of the internal state of a system to the outside world"
+    },
+    {
+      "id": 205,
+      "question": "Which of the following is a straightforward approach that provides access rights to subjects for objects?",
+      "options": {
+        "A": ") Access Matrix model",
+        "B": ") Take-Grant Model",
+        "C": ") Bell-LaPadula Model",
+        "D": ") Biba Model"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The access matrix is a straightforward approach that provides access rights to subjects for objects. Access rights are of the type read, write, and execute. A subject is an active entity that is seeking rights to a resource or object. A subject can be a person, a program, or a process. An object is a passive entity, such as a file or a storage resource.\" Pg 272 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 206,
+      "question": "What is called the type of access control where there are pairs of elements that have the least upper bound of values and greatest lower bound of values?",
+      "options": {
+        "A": ") Mandatory model",
+        "B": ") Discretionary model",
+        "C": ") Lattice model",
+        "D": ") Rule model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Lattice-based access control provides an upper bound and lower bound of access capabilities for every subject and object relationship. Pg 156 Shon Harris All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 207,
+      "question": "Which access control would a lattice-based access control be an example of?",
+      "options": {
+        "A": ") Mandatory access control",
+        "B": ") Discretionary access control",
+        "C": ") Non-discretionary access control",
+        "D": ") Rule-based access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Lattice-based access control is a variation of nondiscretionary access controls. Lattice-based controls define upper and lower bounds of access for every relationship between object and subject. These boundaries can be arbitrary, but they usually follow the military or corporate security label levels. Subjects under lattice-based access controls are said to have the least upper bound and the greatest lower bound of access to labeled objects based on their assigned lattice position.\" Pg. 16 Tittel: CISSP Prep Guide"
+    },
+    {
+      "id": 208,
+      "question": "Who developed one of the first mathematical models of a multilevel-security computer system?",
+      "options": {
+        "A": ") Diffie Hillman",
+        "B": ") Clark and Wilson",
+        "C": ") Bell and LaPadula",
+        "D": ") Gasser and Lipner"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 209,
+      "question": "Which of the following was the first mathematical model of multilevel security policy?",
+      "options": {
+        "A": "Biba",
+        "B": "Take-Grant",
+        "C": "Bell-La Padula",
+        "D": "Clark Wilson"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"In the 1970's, the U.S. military used time-sharing mainframe systems and was concerned about these systems and leakage of classified information. The Bell-LaPadula model was developed to address these concerns. It was the first mathematical model of a multilevel security policy used to define the concept of a secure state machine and modes of access and outline rules of access.\" Pg 212 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 210,
+      "question": "Which security model allows the data custodian to grant access privileges to other users?",
+      "options": {
+        "A": "Mandatory",
+        "B": "Bell-LaPadula",
+        "C": "Discretionary",
+        "D": "Clark-Wilson"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\" Discretionary Access Control. The subject has authority, within certain limitations, to specify what objects are accessible.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 46"
+    },
+    {
+      "id": 211,
+      "question": "What is one issue NOT addressed by the Bell-LaPadula model?",
+      "options": {
+        "A": "Information flow control",
+        "B": "Security levels",
+        "C": "Covert channels",
+        "D": "Access modes"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "As with any model, the Bell-LaPadula model has some weaknesses. These are the major ones. The model considers normal channels of the information exchange and does not address covert channels. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 275-276"
+    },
+    {
+      "id": 212,
+      "question": "Which one of the following access control models associates every resource and every user of a resource with one of an ordered set of classes?",
+      "options": {
+        "A": "Take-Grant model",
+        "B": "Biba model",
+        "C": "Lattice model",
+        "D": "Clark-Wilson model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "With a lattice model you first have to define a set of security classes that can be assigned to users or objects...After you have defined set of security classes, you define a set flow operations showing when information can flow from one class to another - Roberta Bragg Cissp Certification Training Guide (que) pg 23"
+    },
+    {
+      "id": 213,
+      "question": "What scheme includes the requirement that the system maintain the separation of duty requirement expressed in the access control triples?",
+      "options": {
+        "A": "Bella",
+        "B": "Lattice",
+        "C": "Clark-Wilson",
+        "D": "Bell-LaPadula"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Separation of duty is necessarily determined by conditions external to the computer system. The Clark-Wilson scheme includes the requirement that the system maintain the separation of duty requirement expressed in the access control triples. Enforcement is on a per-user basis, using the user ID from the access control triple."
+    },
+    {
+      "id": 214,
+      "question": "The access matrix model consists of which of the following parts? (Choose all that apply)",
+      "options": {
+        "A": "A function that returns an objects type.",
+        "B": "A list of subjects.",
+        "C": "A list of objects."
+      },
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: The access matrix model consists of four major parts: A list of objects A list of subjects A function T that returns an object's type The matrix itself, with the objects making the columns and the subjects making the rows Note: This question seems to confuse access control matrix, Harris, 3rd Ed, p 169 with access control types, Ibid, p 188ff \"An access control matrix is a table of subjects and objects indicating what actions ... subjects can take upon ... objects\", Harris, 3rd Ed, p 169. It would be right if item \"A\" was \"a function that returned an access right\""
+    },
+    {
+      "id": 215,
+      "question": "The access matrix model has which of the following common implementations?",
+      "options": {
+        "A": "Access control lists and capabilities.",
+        "B": "Access control lists.",
+        "C": "Capabilities.",
+        "D": "Access control list and availability."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The two most used implementations are access control lists and capabilities. Access control lists are achieved by placing on each object a list of users and their associated rights to that object."
+    },
+    {
+      "id": 216,
+      "question": "The lattice-based model aims at protecting against:",
+      "options": {
+        "A": "Illegal attributes.",
+        "B": "None of the choices.",
+        "C": "Illegal information flow among the entities.",
+        "D": "Illegal access rights"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The lattice-based model aims at protecting against illegal information flow among the entities. One security class is given to each entity in the system. A flow relation among the security classes is defined to denote that information in one class can flow into another class."
+    },
+    {
+      "id": 217,
+      "question": "Which of the following are the components of the Chinese wall model?",
+      "options": {
+        "A": "Conflict if interest.",
+        "B": "All of the choices.",
+        "C": "Subject",
+        "D": "Company Datasets."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The model has the following component: COMPONENT EXAMPLE Subject Analyst Object Data item for a single client Company Datasets Give for each company its own company dataset Conflict of interest classes Give for each object companies that have a conflict of interest Labels Company dataset + conflict of interest class Sanitized information No access restriction"
+    },
+    {
+      "id": 218,
+      "question": "Enforcing minimum privileges for general system users can be easily achieved through the use of:",
+      "options": {
+        "A": "TSTEC",
+        "B": "RBAC",
+        "C": "TBAC",
+        "D": "IPSEC"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Ensuring least privilege requires identifying what the user's job is, determining the minimum set of privileges required to perform that job, and restricting the user to a domain with those privileges and nothing more. By denying to subjects transactions that are not necessary for the performance of their duties, those denied privileges couldn't be used to circumvent the organizational security policy. Although the concept of least privilege currently exists within the context of the TCSEC, requirements restrict those privileges of the system administrator. Through the use of RBAC, enforced minimum privileges for general system users can be easily achieved."
+    },
+    {
+      "id": 219,
+      "question": "What is necessary for a subject to have write access to an object in a Multi-Level Security Policy?",
+      "options": {
+        "A": ") The subject's sensitivity label must dominate the object's sensitivity label",
+        "B": ") The subject's sensitivity label subordinates the object's sensitivity label",
+        "C": ") The subject's sensitivity label is subordinated by the object's sensitivity label",
+        "D": ") The subject's sensitivity label is dominated by the object's sensitivity label"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: \" \"The Bell-LaPadula model has a simple security rule, which means that a subject cannot read data from a higher level (no read up). The *-property rule means that a subject cannot write to an object at a lower level (no write down).\" - Shon Harris, \"CISSP All-in-One Exam Guide\", 3rd Ed, p 327. Therefore the object must be at the same or higher level. \"The Bell-LaPadula model is an example of a multilevel security modelThe Bell-LaPadula model is an example of a multilevel security model...\" - Shon Harris, \"CISSP All-in-One Exam Guide\", 3rd Ed, p 298. Simple security property. A subject can read an object if the access of the class of the subject dominates the access class of the object. Thus, a subject can read down but cannot read up.\" Pg 105 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 220,
+      "question": "Which of the following security modes of operation involved the highest risk?",
+      "options": {
+        "A": ") Compartmented Security Mode",
+        "B": ") Multilevel Security Mode",
+        "C": ") System-High Security Mode",
+        "D": ") Dedicated Security Mode"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Security Modes In a secure environment, information systems are configured to process information in one of four security modes. These modes are set out by the Department of Defense as follows: Systems running compartmental security mode may process two or more types of compartmented information. All system users must have an appropriate clearance to access all information processed by the system but do not necessarily have a need to know all of the information in the system. Compartments are subcategories or compartments within the different classification levels and extreme care is taken to preserve the information within the different compartments. The system may be classified at the Secret level but contain five different compartments, all classified Secret. If a user has only the need to know about two of the five different compartments to do their job, that user can access the system but can only access the two compartments. Compartmented systems are usually dedicated systems for each specific compartment to prevent the chance of any errors, because compartmentalization is the most secret of all the secrets. Systems running in the dedicated security mode are authorized to process only a specific classification level at a time, and all system users must have clearance and a need to know that information. Systems running in multilevel security mode are authorized to process information at more than one level of security even when all system users do not have appropriate clearances or a need to know for all information processed by the system. Systems running in system-high security mode are authorized to process only information that all system users are cleared to read and to have a valid need to know. These systems are not trusted to maintain separation between security levels, and all information processed by these systems must be handled as if it were classified at the same level as the most highly classified information processed by the system.\" Pg. 234 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 221,
+      "question": "Controlled Security Mode is also known as:",
+      "options": {
+        "A": ") Multilevel Security Mode",
+        "B": ") Partitioned Security Mode",
+        "C": ") Dedicated Security Mode",
+        "D": ") System-high Security Mode"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 264 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 222,
+      "question": "The unauthorized mixing of data of one sensitivity level and need-to-know with data of a lower sensitivity level, or different need-to-know, is called data",
+      "options": {
+        "A": "Contamination",
+        "B": "Seepage",
+        "C": "Aggregation",
+        "D": "Commingling"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "WOW if you are reading these comments then you know I have disagreed with a bunch of the original answers!Well here is another.The original was Seepage.I think it is Contamination. \"The intermixing of data at different sensitivity and need-to-know levels.The lower-level data is said to be contaminated by the higher-level data; thus contaminating (higher-level) data might not receive the required level of protection\"-Ronald Krutz The CISSP PREP Guide (gold edition) pg 890"
+    },
+    {
+      "id": 223,
+      "question": "Which one of the following should be employed to protect data against undetected corruption?",
+      "options": {
+        "A": "Non-repudiation",
+        "B": "Encryption",
+        "C": "Authentication",
+        "D": "Integrity"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 224,
+      "question": "Which of the following is a communication path that is not protected by the system's normal security mechanisms?",
+      "options": {
+        "A": ") A trusted path",
+        "B": ") A protection domain",
+        "C": ") A covert channel",
+        "D": ") A maintenance hook"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 225,
+      "question": "A channel within a computer system or network that is designed for the authorized transfer of information is identified as a(n)?",
+      "options": {
+        "A": ") Covert channel",
+        "B": ") Overt channel",
+        "C": ") Opened channel",
+        "D": ") Closed channel"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"An overt channel is a channel of communication that was developed specifically for communication purposes. Processes should be communicating through overt channels, not covert channels.\" Pg 237 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 226,
+      "question": "Covert channel is a communication channel that can be used for:",
+      "options": {
+        "A": "Hardening the system.",
+        "B": "Violating the security policy.",
+        "C": "Protecting the DMZ.",
+        "D": "Strengthening the security policy."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Covert channel is a communication channel that allows transfer of information in a manner that violates the system's security policy."
+    },
+    {
+      "id": 227,
+      "question": "What is an indirect way to transmit information with no explicit reading of confidential information?",
+      "options": {
+        "A": "Covert channels",
+        "B": "Backdoor",
+        "C": "Timing channels",
+        "D": "Overt channels"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Covert channels: indirect ways for transmitting information with no explicit reading of confidential information. This kind of difficulties induced some researchers to re-think from scratch the whole problem of guaranteeing security in computer systems."
+    },
+    {
+      "id": 228,
+      "question": "Which one of the following describes a covert timing channel?",
+      "options": {
+        "A": "Modulated to carry an unintended information signal that can only be detected by special, sensitive receivers.",
+        "B": "Used by a supervisor to monitor the productivity of a user without their knowledge.",
+        "C": "Provides the timing trigger to activate a malicious program disguised as a legitimate function.",
+        "D": "Allows one process to signal information to another by modulating its own use of system resources."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A covert channel in which one process signals information to another by modulating its own use of system resources (for example, CPU time) in such a way that this manipulation affects the real response time observed by the second process. - Shon Harris All-in-one CISSP Certification Guide pg 929"
+    },
+    {
+      "id": 229,
+      "question": "Covert channel analysis is required for",
+      "options": {
+        "A": "Systems processing Top Secret or classified information.",
+        "B": "A Trusted Computer Base with a level of trust B2 or above.",
+        "C": "A system that can be monitored in a supervisor state.",
+        "D": "Systems that use exposed communication links."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Table 6.6 Standards Comparison B2 Structured Protection (covert channel, device labels, subject sensitivity labels, trusted path, trusted facility management, configuration management) F4+E4 EAL5 - Roberta Bragg CISSP Certification Training Guide (que) pg 370"
+    },
+    {
+      "id": 230,
+      "question": "In multi-processing systems, which one of the following lacks mandatory controls and is NORMALLY AVOIDED for communication?",
+      "options": {
+        "A": "Storage channels",
+        "B": "Covert channels",
+        "C": "Timing channels",
+        "D": "Object channels"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Covert channel - A communication path that enables a process to transmit information in a way that violates the system's security policy.- Shon Harris All-in-one CISSP Certification Guide pg 929"
+    },
+    {
+      "id": 231,
+      "question": "What security risk does a covert channel create?",
+      "options": {
+        "A": "A process can signal information to another process.",
+        "B": "It bypasses the reference monitor functions.",
+        "C": "A user can send data to another user.",
+        "D": "Data can be disclosed by inference."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The risk is not that a process can signal another process. The risk is that the signaling bypasses the reference monitor functions (ie the communication is not screened by the security kernel that implements the reference monitor)."
+    },
+    {
+      "id": 232,
+      "question": "What is the essential difference between a self-audit and an independent audit?",
+      "options": {
+        "A": ") Tools used",
+        "B": ") Results",
+        "C": ") Objectivity",
+        "D": ") Competence"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 233,
+      "question": "What is called the formal acceptance of the adequacy of a system's overall security by the management?",
+      "options": {
+        "A": ") Certification",
+        "B": ") Acceptance",
+        "C": ") Accreditation",
+        "D": ") Evaluation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 234,
+      "question": "FIPS-140 is a standard for the security of:",
+      "options": {
+        "A": ") Cryptographic service providers",
+        "B": ") Smartcards",
+        "C": ") Hardware and software cryptographic modules",
+        "D": ") Hardware security modules"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 235,
+      "question": "Which of the following will you consider as the MOST secure way of authentication?",
+      "options": {
+        "A": "Biometric",
+        "B": "Password",
+        "C": "Token",
+        "D": "Ticket Granting"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Biometric authentication systems take advantage of an individual's unique physical characteristics in order to authenticate that person's identity. Various forms of biometric authentication include face, voice, eye, hand, signature, and fingerprint, each have their own advantages and disadvantages. When combined with the use of a PIN it can provide two factors authentication."
+    },
+    {
+      "id": 236,
+      "question": "In biometric identification systems, at the beginning, it was soon apparent that truly positive identification could only be based on physical attributes of a person. This raised the necessicity of answering 2 questions:",
+      "options": {
+        "A": ") what was the sex of a person and his age",
+        "B": ") what part of the body to be used and how to accomplish identification to be viable",
+        "C": ") what was the age of a person and his income level",
+        "D": ") what was the tone of the voice of a person and his habits"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 237,
+      "question": "What is called the percentage of invalid subjects that are falsely accepted?",
+      "options": {
+        "A": ") False Rejection Rate (FRR) or Type I Error",
+        "B": ") False Acceptance Rate (FAR) or Type II Error",
+        "C": ") Crossover Error Rate (CER)",
+        "D": ") True Acceptance Rate (TAR) or Type III error"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 238,
+      "question": "Which of the following biometrics devices has the highs Crossover Error Rate (CER)?",
+      "options": {
+        "A": ") Iris scan",
+        "B": ") Hang Geometry",
+        "C": ") Voice pattern",
+        "D": ") Fingerprints"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 239,
+      "question": "Which of the following biometric parameters are better suited for authentication use over a long period of time?",
+      "options": {
+        "A": ") Iris pattern",
+        "B": ") Voice pattern",
+        "C": ") Signature dynamics",
+        "D": ") Retina pattern"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 240,
+      "question": "Which one of the following is the MOST critical characteristic of a biometrics system?",
+      "options": {
+        "A": "Acceptability",
+        "B": "Accuracy",
+        "C": "Throughput",
+        "D": "Reliability"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "We don't agree with the original answer, which was throughput. Granted throughput is vital but Krutz lists accuracy is most important. In addition to the accuracy of the biometric systems, there are OTHER factors that must also be considered. These factors include the enrollment time, the throughput rate, and acceptability. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 51"
+    },
+    {
+      "id": 241,
+      "question": "Which of the following biometric devices has the lowest user acceptance level?",
+      "options": {
+        "A": ") Voice recognition",
+        "B": ") Fingerprint scan",
+        "C": ") Hand geometry",
+        "D": ") Signature recognition"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 242,
+      "question": "Biometric performance is most commonly measured in terms of:",
+      "options": {
+        "A": "FRR and FAR",
+        "B": "FAC and ERR",
+        "C": "IER and FAR",
+        "D": "FRR and GIC"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Biometric performance is most commonly measured in two ways: False Rejection Rate (FRR), and False Acceptance Rate (FAR). The FRR is the probability that you are not authenticated to access your account. A strict definition states that the FRR is the probability that a mated comparison (i.e. 2 biometric samples of the same finger) incorrectly determines that there is no match."
+    },
+    {
+      "id": 243,
+      "question": "What is the most critical characteristic of a biometric identifying system?",
+      "options": {
+        "A": ") Perceived intrusiveness",
+        "B": ") Storage requirements",
+        "C": ") Accuracy",
+        "D": ") Reliability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 244,
+      "question": "Which of the following biometric characteristics cannot be used to uniquely authenticate an individual's identity?",
+      "options": {
+        "A": ") Retina scans",
+        "B": ") Iris scans",
+        "C": ") Palm scans",
+        "D": ") Skin scans"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Biometrics: Fingerprints Palm Scan Hand Geometry Retina Scan Iris Scan Signature Dynamics Keyboard Dynamic Voice Print Facial Scan Hand Topology Pg. 128-130 Shon Harris All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 245,
+      "question": "In biometric identification systems, at the beginning, it was soon apparent that truly positive identification could only be based on physical attributes of a person. This raised the necessicity of answering 2 questions:",
+      "options": {
+        "A": ") What was the sex of a person and his age",
+        "B": ") what part of body to be used and how to accomplish identification to be viable",
+        "C": ") what was the age of a person and his income level",
+        "D": ") what was the tone of the voice of a person and his habits"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 246,
+      "question": "You are comparing biometric systems. Security is the top priority. A low ________ is most important in this regard.",
+      "options": {
+        "A": "FAR",
+        "B": "FRR",
+        "C": "MTBF",
+        "D": "ERR"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: When comparing biometric systems, a low false acceptance rate is most important when security is the priority. Whereas, a low false rejection rate is most important when convenience is the priority. All biometric implementations balance these two criteria. Some systems use very high FAR's such as 1 in 300. This means that the likelihood that the system will accept someone other than the enrolled user is 1 in 300. However, the likelihood that the system will reject the enrolled user (its FRR) is very low, giving them ease of use, but with low security. Most fingerprint systems should be able to run with FARs of 1 in 10,000 or better."
+    },
+    {
+      "id": 247,
+      "question": "Almost all types of detection permit a system's sensitivity to be increased or decreased during an inspection process. To have a valid measure of the system performance:",
+      "options": {
+        "A": ") The CER is used.",
+        "B": ") the FRR is used",
+        "C": ") the FAR is used",
+        "D": ") none of the above choices is correct"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"When a biometric system reject an authorized individual, it is called a Type 1 error. When the system accepts impostors who should be rejected, it is called a Type II error. The goal is to obtain low numbers for each type of error. When comparing different biometric systems, many different variables are used, but one of the most important variables is the crossover error rate (CER). This rating is stated in a percentage and represents the point at which the false rejection rate equals the false acceptance rate. This rating is the most important measurement when determining the system's accuracy.\" Pg 113 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 248,
+      "question": "The quality of finger prints is crucial to maintain the necessary:",
+      "options": {
+        "A": "FRR",
+        "B": "ERR and FAR",
+        "C": "FAR",
+        "D": "FRR and FAR"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Another factor that must be taken into account when determining the necessary FAR and FRR for your organization is the actual quality of the fingerprints in your user population. ABC's experience with several thousand users, and the experience of its customers, indicates that a percentage of the populations do not have fingerprints of sufficient quality to allow for authentication of the individual. Approximately 2.5% of employees fall into this group in the general office worker population. For these users, a smart card token with password authentication is recommended."
+    },
+    {
+      "id": 249,
+      "question": "By requiring the user to use more than one finger to authenticate, you can:",
+      "options": {
+        "A": "Provide statistical improvements in EAR.",
+        "B": "Provide statistical improvements in MTBF.",
+        "C": "Provide statistical improvements in FRR.",
+        "D": "Provide statistical improvements in ERR."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Statistical improvements in false rejection rates can also be achieved by requiring the user to use more than one finger to authenticate. Such techniques are referred to as flexible verification."
+    },
+    {
+      "id": 250,
+      "question": "Which of the following is being considered as the most reliable kind of personal identification?",
+      "options": {
+        "A": "Token",
+        "B": "Finger print",
+        "C": "Password",
+        "D": "Ticket Granting"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Every person's fingerprint is unique and is a feature that stays with the person throughout his/her life. This makes the fingerprint the most reliable kind of personal identification because it cannot be forgotten, misplaced, or stolen. Fingerprint authorization is potentially the most affordable and convenient method of verifying a person's identity."
+    }
+  ]
+}

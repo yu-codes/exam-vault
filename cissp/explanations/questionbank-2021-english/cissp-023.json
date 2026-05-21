@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1101 - Q1150",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1101,
+      "question": "A forensic examination should inspect slack space because it",
+      "options": {
+        "A": "Contains system level access control kernel.",
+        "B": "Can contain a hidden file or data.",
+        "C": "Can contain vital system information.",
+        "D": "Can be defeted to avoid detection."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1102,
+      "question": "Forensic imaging of a workstation is initiated by",
+      "options": {
+        "A": "Booting the machine with the installed operating system.",
+        "B": "Booting the machine with an operating system diskette.",
+        "C": "Removing the hard drive to view the output of the forensic imaging software.",
+        "D": "Directing the output of the forensic imaging software to the small computer system interface (SCSI)."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"It is very important that the person, or people, conducting the forensics investigation is skilled in this trade and knows what to look out for. If a person reboots the attacked system or goes around looking at different files, it could corrupt viable evidence, change timestamps on key files, and erase footprints the criminal may have left. One very good first step is to make a sound image of the attacked system and perform forensic analysis on this copy. This will ensure that the evidence stays unharmed on the original system in case some steps in the investigation actually corrupt or destroy data. Also the memory of the system should be dumped to a file before doing any work on the system or powering it down.\" - Shon Harris All-in-one CISSP Certification Guide pg 672-673 PCMCIA to SCSI and parallel to SCSI forensic products can be found at the following vendor. http://www.icsforensic.com/products_cat_fr.cfm"
+    },
+    {
+      "id": 1103,
+      "question": "A disk image backup is used for forensic investigation because it",
+      "options": {
+        "A": "Is based on secured hardware technology.",
+        "B": "Creates a bit level copy of the entire disk.",
+        "C": "Time stamps the files with the date and time of the copy operation.",
+        "D": "Excludes areas that have never been used to store data."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Never conduct your investigation on an actual system that was compromised. Take the system offline, make a backup, and use the backup to investigate the incident. - Ed Tittle CISSP Study Guide (sybex) pg 595"
+    },
+    {
+      "id": 1104,
+      "question": "When it comes to magnetic media sanitization, what difference can be made between clearing and purging information?",
+      "options": {
+        "A": ") Clearing completely erases the media whereas purging only remoes file headers, allowing the recovery of files",
+        "B": ") Clearing renders information unrecoverable by a keyboard attack and purging renders information unrecoverable against laboratory attack",
+        "C": ") They both involve rewriting the media",
+        "D": ") Clearing renders information unrecoverable against a laboratory attack and purging renders information unrecoverable to a keyboard attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 405 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 1105,
+      "question": "What is HIPPA?",
+      "options": {
+        "A": ") The Home Insurance Portability & Accountability Act of 1996 (August 21), Public Law 104-191, which amends the Internal Revenue Service Code of 1986. Also known as the Kennedy-Kassebaum Act.",
+        "B": ") The Public Health Insurance Portability & Accountability Act of 1996 (August 21), Public Law 104-191, which amends the Internal Revenue Service Code of 1986. Also known as the Kennedy-Kassebaum Act.",
+        "C": ")The Health Insurance Privacy & Accountability Act of 1996 (August 2), public law 104-191, which amends the Internal Revenue Service Code of 1986. Also known as the Kennedy-Kassebaum Act.",
+        "D": ") The Health Insurance Privacy & Accountability Act of 1996 (August 2), Public Law 104-191, which amends the Internal Revenue Service Code of 1986. Also known as the Kennedy-Kassebaum Act."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"The United States Kennedy-Kassebaum Health Insurance Portability and Accountability Act (HIPPA-Public Law 104-191), effective August 21, 1996, addresses the issues of health care privacy, security, transactions and code sets, unique identifies, electronic signatures, and plan portability in the United States.\" Pg 499-500 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 1106,
+      "question": "The privacy provisions of the federal law, the Health Insurance Portability and Accountability Act of 1996 (HIPPA),",
+      "options": {
+        "A": ") apply to certain types of critical health information created or maintained by health care providers who engage in certain electronic transactions, health plans, and health care clearinghouses.",
+        "B": ") apply to health information created or maintained by health care providers who engage in certain electronic transactions, health plans, and health care clearinghouses.",
+        "C": ") apply to health information created or maintained by some large health care providers who engage in certain electronic transactions, health plans, and health care clearinghouses.",
+        "D": ") apply to health information created or maintained by health care providers regardless of whether they engage in certain electronic transactions, health plans, and health care clearinghouses."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1107,
+      "question": "Gap analysis does not apply to",
+      "options": {
+        "A": ") Transactions",
+        "B": ") availability",
+        "C": ") Privacy",
+        "D": ") Security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1108,
+      "question": "A gap analysis for Privacy refers",
+      "options": {
+        "A": ") to the practice of identifying the policies and procedures you currently have in place regarding the availability of protected health information.",
+        "B": ") to the practice of identifying the policies and procedures you currently have in place regarding the confidentiality of protected health information.",
+        "C": ") to the practice of identifying the policies and procedures you currently have in place regarding the authenticity of protected health information.",
+        "D": ") to the practices of identifying the legislation you currently have in place regarding the confidentiality of protected health information."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1109,
+      "question": "A gap analysis for Privacy",
+      "options": {
+        "A": ") includes a comparison of your proposed policies and procedures and the requirements established in the Security and Privacy Regulation in order to identify any necessary modifications in existing policies to satisfy HIPPA regulations when they are stricter than state privacy laws.",
+        "B": ") includes a comparison of your current policies and procedures and the requirements established in the Security and Privacy Regulation in order to identify any necessary modifications in existing policies to satisfy HIPPA regulations when they are stricter than state privacy laws",
+        "C": ") includes a comparison of your ideal policies and procedures and the requirements established in the Security and Privacy Regulation in order to identify any necessary modifications in existing policies to satisfy HIPPA regulations when they are stricter than state privacy laws.",
+        "D": ") includes a comparison of your exceptional policies and procedures and the requirements established in the Security and Privacy Regulation in order to identify any necessary modifications in existing policies to satisfy HIPPA regulations when they are stricter than state privacy laws"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1110,
+      "question": "What is a gap analysis in relationship to HIPPA?",
+      "options": {
+        "A": ") In terms of HIPPA, a gap analysis cannot be defined.",
+        "B": ") In terms of HIPPA, a gap analysis defines what an organization currently is doing in a specific area of their organization and compares current operations to other requirements mandated by ethical standards.",
+        "C": ") In terms of HIPPA, a gap analysis defines what an organization currently is doing in a specific area of their organization and compares current operations to other requirements mandated by state or federal law",
+        "D": ") In terms of HIPPA, a gap analysis defines what an organization proposes to be doing in a specific area of their organization and compares proposed operations to other requirements mandated by state or federal law."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1111,
+      "question": "The privacy provisions of the federal law, the Health Insurance Portability and Accountability Act of 1996 (HIPPA), apply to certain types of health information created or maintained by health care providers",
+      "options": {
+        "A": ") who engage in certain electronic transactions, health plans, and health care clearinghouses",
+        "B": ") who do not engage in certain electronic transactions, health plans, and health care clearinghouses",
+        "C": ") regardless of whether they engage in certain electronic transactions, health plans, and health care clearinghouses",
+        "D": ") if they engage for a majority of days in a year in certain electronic transactions, health plans, and health care clearinghouses."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1112,
+      "question": "HIPPA preempts state laws",
+      "options": {
+        "A": ") except to the extent that the state law is less stringent",
+        "B": ") regardless of the extent that the state law is more stringent",
+        "C": ") except to the extent that the state law more stringent",
+        "D": ") except to the extent that the state law is legislated later than HIPPA"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1113,
+      "question": "The Implementation Guides",
+      "options": {
+        "A": ") are referred to in the Static Rule",
+        "B": ") are referred to in the Transaction Rule",
+        "C": ") are referred to in the Transitional Rule",
+        "D": ") are referred to in the Acquision Rule"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1114,
+      "question": "The HIPPA task force must first",
+      "options": {
+        "A": ") inventory the organization's systems, processes, policies, procedures and data to determine which elements are critical to patient care and central to the organization's business",
+        "B": ") inventory the organization's systems, processes, policies, procedures and data to determine which elements are non critical to patient care and central to the organization's business",
+        "C": ") inventory the organization's systems, processes, policies, procedures and data to determine which elements are critical to patient complaints and central to the organization's peripheral businesses",
+        "D": ") modify the organization's systems, processes, policies, procedures and data to determine which elements are critical to patient care and central to the organization's business"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1115,
+      "question": "A covered healthcare provider which a direct treatment relationship with an individual need not:",
+      "options": {
+        "A": ") provide the notice no later than the date of the first service delivery, including service delivered electronically",
+        "B": ") have the notice available at the service delivery site for individuals to request and keep",
+        "C": ") get a acknowledgement of the notice from each individual on stamped paper",
+        "D": ") post the notice in a clear and prominent location where it is reasonable to expect individuals seeking service from the covered healthcare provider to be able to read it"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1116,
+      "question": "A health plan may conduct its covered transactions through a clearinghouse, and may require a provider to conduct covered transactions with it through a clearinghouse. The incremental cost of doing so must be borne",
+      "options": {
+        "A": ") by the HIPPA authorities",
+        "B": ") by the health plan",
+        "C": ") by any other entity but the health plan",
+        "D": ") by insurance companies"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1117,
+      "question": "Covered entities (certain health care providers, health plans, and health care clearinghouses) are not required to comply with the HIPPA Privacy Rule until the compliance date. Covered entities may, of course, decide to:",
+      "options": {
+        "A": ") unvoluntarily protect patient health information before this date",
+        "B": ") voluntarily protect patient health information before this date",
+        "C": ") after taking permission, voluntarily protect patient health information before this date",
+        "D": ") compulsorily protect patient health information before this date"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1118,
+      "question": "The confidentiality of alcohol and drug abuse patient records maintained by this program is protected by federal law and regulations. Generally, the program may not say to a person outside the program that a patient attends the program, or disclose any information identifying a patient as an alcohol or drug abuser even if:",
+      "options": {
+        "A": ")The person outside the program gives a written request for the information",
+        "B": ") the patient consent in writing",
+        "C": ") the disclosure is allowed by a court order",
+        "D": ") the disclosure is made to medical personnel in a medical emergency or to qualified personnel for research, audit, or program evaluation."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Incident handling is not related to disaster recovery, it is related to security incidents."
+    },
+    {
+      "id": 1119,
+      "question": "What is a Covered Entity? The term \"Covered Entity\" is defined in 160.103 of the regulation.",
+      "options": {
+        "A": ") The definition is complicate and long.",
+        "B": ") The definition is referred to in the Secure Computing Act",
+        "C": ") The definition is very detailed.",
+        "D": ") The definition is deceptively simple and short"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1120,
+      "question": "Are employers required to submit enrollments by the standard transactions?",
+      "options": {
+        "A": ") Though Employers are not CEs and they have to send enrollment using HIPPA standard transactions. However, the employer health plan IS a CE and must be able to conduct applicable transactions using the HIPPA standards",
+        "B": ") Employers are not CEs and do not have to send enrollment using HIPPA standard transactions. However, the employer health plan IS a CE and must be able to conduct applicable transactions using the HIPPA standards.",
+        "C": ") Employers are CEs and have to send enrollment using HIPPA standard transactions. However, the employer health plan IS a CE and must be able to conduct applicable transactions using the HIPPA standards.",
+        "D": ") Employers are CEs and do not have to send enrollment using HIPPA standard transactions. Further, the employer health plan IS also a CE and must be able to conduct applicable transactions using the HIPPA standards."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1121,
+      "question": "Employers",
+      "options": {
+        "A": ") often advocate on behalf of their employees in benefit disputes and appeals, answer questions with regard to the health plan, and generally help them navigate their health benefits.",
+        "B": ") sometimes advocate on behalf of their employees in benefit disputes and appeals, answer questions with regard to the health plan, and generally help them navigate their health benefits.",
+        "C": ") never advocate on behalf of their employees in benefit disputes and appeals, answer questions with regard to health plan, and generally help them navigate their health benefits.",
+        "D": ") are prohibited by plan sponsors from advocating on behalf of group health plan participants or providing assistance in understanding their health plan."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1122,
+      "question": "Employers",
+      "options": {
+        "A": ") are covered entities if they do not use encryption",
+        "B": ") are covered entities",
+        "C": ") are not legal entities",
+        "D": ") are not covered entities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1123,
+      "question": "The HIPPA task force must inventory the organization's systems, processes, policies, procedures and data to determine which elements are critical to patient care and central to the organizations business. All must be inventoried and listed by",
+      "options": {
+        "A": ") by priority as well as encryption levels, authenticity, storage-devices, availability, reliability, access and use. The person responsible for criticality analysis must remain mission-focused and carefully document all the criteria used.",
+        "B": ") by priority and cost as well as availability, reliability, access and use. The person responsible for criticality analysis must remain mission-focused and carefully document all the criteria used.",
+        "C": ") by priority as well availability, reliability, access and use. The person responsible for criticality analysis must remain mission-focused but need not document all the criteria used.",
+        "D": ") by priority as well as availability, reliability, access and use. The person responsible for criticality analysis must remain mission-focused and carefully document all the criteria used."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1124,
+      "question": "Are there penalties under HIPPA?",
+      "options": {
+        "A": ") No penalties",
+        "B": ") HIPPA calls for severe civil and criminal penalties for noncompliance, including: -- fines up to $25k for multiple violations of the same standard in a calendar year -- fines up to $250k and/or imprisonment up to 10 years for knowing misuse of individually identifiable health information.",
+        "C": ") HIPPA calls for severe civil and criminal penalties for noncompliance, includes: -- fines up to 50k for multiple violations of the same standard in a calendar year -- fines up to $500k and/or imprisonment up to 10 years for knowing misuse of individually identifiable health information",
+        "D": ") HIPPA calls for severe civil and criminal penalties for noncompliance, including: -- fines up to $100 for multiple violations of the same standard in a calendar year -- fines up to $750k and/or imprisonment up to 20 years for knowing misuse of individually identifiable health information"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1125,
+      "question": "HIPPA gave the option to adopt other financial and administrative transactions standards, \"consistent with the goals of improving the operation of health care system and reducing administrative costs\" to",
+      "options": {
+        "A": ") ASCA prohibits HHS from paying Medicare claims that are not submitted electronically after October 16, 2003.",
+        "B": ") ASCA prohibits HHS from paying Medicare claims that are not submitted on paper after October 16, 2003",
+        "C": ") ASCA prohibits HHS from paying Medicare claims that are not submitted electronically after October 16, 2003, unless the Secretary grants a waiver from this requirement",
+        "D": ") No"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1126,
+      "question": "May a health plan require a provider to use a health care clearinghouse to conduct a HIPPA-covered transaction, or must the health plan acquire the ability to conduct the transaction directly with those providers capable of conducting direct transactions?",
+      "options": {
+        "A": ") A health plan may conduct its covered transactions through a clearinghouse, and may require a provider to conduct covered transactions with it through a clearinghouse. But the incremental cost of doing so must be borne by the health plan. It is a cost-benefit decision on the part of the health plan whether to acquire the ability to conduct HIPPA transactions directly with other entities, or to require use of a clearinghouse.",
+        "B": ") A health plan may not conduct it's covered transactions through a clearinghouse",
+        "C": ") A health plan may after taking specific permission from HIPPA authorities conduct its covered transactions through a clearinghouse",
+        "D": ") is not as per HIPPA allowed to require provider to conduct covered transactions with it through a clearinghouse"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1127,
+      "question": "Business Associate Agreements are required by the regulation whenever a business associate relationship exists. This is true even when the business associates are both covered entities.",
+      "options": {
+        "A": ") There are no specific elements which must be included in a Business Associate Agreement. However some recommended but not compulsory elements are listed in 164.504(e) (2)",
+        "B": ") There are specific elements which must be included in a Business Associate Agreement. These elements are listed Privacy Legislation",
+        "C": ") There are no specific elements which must be included in a Business Associate Agreement.",
+        "D": ") There are specific elements which must be included in a Business Associate Agreement. These elements are listed in 164.504(e) (2)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1128,
+      "question": "The implementation Guides",
+      "options": {
+        "A": ") are referred to in the Transaction Rule",
+        "B": ") are not referred to in the Transaction Rule",
+        "C": ") are referred to in the Compliance Rules",
+        "D": ") are referred to in the Confidentiality Rule"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1129,
+      "question": "Business Associates",
+      "options": {
+        "A": ") are entities that perform services that require the use of Protected Health Information on behalf of Covered Entities. One covered entity may be a business partner of another covered entity",
+        "B": ") are entities that do not perform services that require the use of Protected Health Information on behalf of Covered Entities. One covered entity may be a business partner of another covered entity",
+        "C": ") are entities that perform services that require the use of Encrypted Insurance Information on behalf of Covered Entities. One covered entity may be a business partner of another covered entity",
+        "D": ") are entities that perform services that require the use of Protected Health Information on behalf of Covered Entities. One covered entity cannot be a business partner of another covered entity."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1130,
+      "question": "Health Care Providers, however,",
+      "options": {
+        "A": ") become the business associates of health plans even without joining a network",
+        "B": ") become the business associates of health plans by simply joining a network",
+        "C": ") do not become the business associates of health plans by simply joining a network",
+        "D": ") do not become the HIPPA associates of health plans by simply joining a network"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1131,
+      "question": "In terms of HIPPA what an organization currently is doing in a specific area of their organization and compared current operations to other requirements mandated by state or federal law is called",
+      "options": {
+        "A": ") HIPPA status analysis",
+        "B": ") gap analysis",
+        "C": ") comparison analysis",
+        "D": ") stop-gap analysis"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1132,
+      "question": "Group Health Plans sponsored or maintained by employers, however,",
+      "options": {
+        "A": ") ARE SOMETIMES covered entities.",
+        "B": ") ARE NOT covered entities.",
+        "C": ") ARE covered entities",
+        "D": ") ARE called uncovered entities"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1133,
+      "question": "Employers often advocate on behalf of their employees in benefit disputes and appeals, answer questions with regard to the health plan, and generally help them navigate their health benefits. Is this type of assistance allowed under the regulation?",
+      "options": {
+        "A": ") The final rule does nothing to hinder or prohibit plan sponsors from advocating on behalf of group health plan participants or providing assistance in understanding their health plans.",
+        "B": ") The final rule prohibits plan sponsors from advocating on behalf of group health plan participants or providing assistance in understanding their health plans",
+        "C": ") The final rule does hinder but does not prohibit plan sponsors from advocating on behalf of group health plan participants or providing assistance in understanding their health plans",
+        "D": ") The final rule does no advocating on behalf of group health plan participants or provide assistance in understanding their health plan."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1134,
+      "question": "HIPPA does not call for:",
+      "options": {
+        "A": ") Standardization of electronic patient health, administrative and financial data",
+        "B": ") Unique health identifiers for individuals, employers, health plans, and health care providers.",
+        "C": ") Common health identifiers for individuals, employers, health plans and health care providers.",
+        "D": ") Security standards protecting the confidentiality and integrity of \"individually identifiable health information,\" past, present or future."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1135,
+      "question": "A gap analysis for the Transactions set refer to the practice of identifying the data content you currently have available",
+      "options": {
+        "A": ") through your medical software",
+        "B": ") through your accounting software",
+        "C": ") through competing unit medical software",
+        "D": ") based on the statutory authorities report"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1136,
+      "question": "A gap analysis for the Transactions set does not refer to",
+      "options": {
+        "A": ") the practice of identifying the data content you currently have available through your medical software",
+        "B": ") the practice of and comparing that content to what is required by HIPPA, and ensuring there is a match.",
+        "C": ") and requires that you study the specific format of a regulated transaction to ensure that the order of the information when sent electronically matches the order that is mandated in the Implementation Guides.",
+        "D": ") but does not require that you study the specific format of a regulated transaction to ensure that the order of information when sent electronically matches the order that is mandated in the Implementation Guides."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1137,
+      "question": "Health Information Rights although your health record is the physical property of the healthcare practitioner or facility that compiled it, the information belongs to you. You do not have the right to:",
+      "options": {
+        "A": ") obtain a paper copy of the notice of information practices upon request inspect and obtain a copy of your health record as provided for in 45 CFR 164.524",
+        "B": ") request a restriction on certain uses and disclosures of your information outside the terms as provided by 45 CFR 164.522",
+        "C": ") amend your health record as provided in 45 CFR 164.528 obtain an accounting of disclosures of your health information as provided in 45 CFR 164.528",
+        "D": ") revoke your authorization to use or disclose health information except to the extent that action has already been taken"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1138,
+      "question": "Employers often advocate on behalf of their employees in benefit disputes and appeals, answer questions with regard to the health plan, and generally help them navigate their health benefits. Is individual consent required?",
+      "options": {
+        "A": ") No",
+        "B": ") Sometimes",
+        "C": ") Yes",
+        "D": ") The answer is indeterminate"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1139,
+      "question": "Who enforces HIPPA?",
+      "options": {
+        "A": ") The Office of Civil Rights of the Department of Confidentiality Services is responsible for enforcement of these rules",
+        "B": ") The Office of Civil Rights of the Department of Health and Human Services is responsible for enforcement of these rules",
+        "C": ") The Office of Health Workers Rights of the Department of Health and Human Services in responsible for enforcement of these rules",
+        "D": ") The Department of Civil Rights of the Office of Health and Human Services is responsible for enforcement of these rules"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1140,
+      "question": "Gap analysis does not apply to",
+      "options": {
+        "A": ") Transactions",
+        "B": ") availability",
+        "C": ") Privacy",
+        "D": ") Security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1141,
+      "question": "A gap analysis for Security",
+      "options": {
+        "A": ") refers to the practice of trusting the security policies and practices currently in place in your organization designed to protect all your data from unauthorized access, alternation or inadvertent disclose.",
+        "B": ") refers to the practice of modifying the security policies and practices currently in place in your organization designed to protect all your data from unauthorized access, alteration or inadvertent disclosure.",
+        "C": ") refers to the practice of identifying the security policies and practices currently in place in your organization designed to protect all your data from unauthorized access, alteration or inadvertent disclosure.",
+        "D": ") refers to the practice of improving the security policies and practices currently in place in your organization designed to protect all your data from unauthorized access alteration or inadvertent disclosure."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1142,
+      "question": "The Implementation Guides are referred to in the Transaction Rule. The manuals are",
+      "options": {
+        "A": ") non-technical in nature and do not specifically state what the data content should be for each HIPPA transaction. They also do not state the order in which this data must appear when transmitted electronically.",
+        "B": ") theoretical in nature and specifically state what the data content should be for each HIPPA transaction. They also state the order in which this data must appear when transmitted electronically.",
+        "C": ") technical in nature and specifically state what the data content should be for each HIPPA transaction. They do not state the order in which this data must appear when transmitted electronically.",
+        "D": ") technical in nature and specifically state what the data content should be for each HIPPA transaction. They also state the order in which this data must appear when transmitted electronically."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1143,
+      "question": "Title II of HIPPA includes a section, Administrative Simplification, not requiring:",
+      "options": {
+        "A": ") Improved efficiency in healthcare delivery by standardizing electronic data interchange",
+        "B": ") Protection of confidentiality of health data through setting and enforcing standards",
+        "C": ") Protection of security of health data through setting and enforcing standards",
+        "D": ") Protection of availability of health data through setting and enforcing standards"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1144,
+      "question": "Who is not affected by HIPPA?",
+      "options": {
+        "A": ") clearing houses",
+        "B": ") banks",
+        "C": ") universities",
+        "D": ") billing agencies"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1145,
+      "question": "HIPPA results in",
+      "options": {
+        "A": ") sweeping changed in some healthcare transaction and administrative information systems",
+        "B": ") sweeping changes in most healthcare transaction and administrative information systems",
+        "C": ") minor changes in most healthcare transaction and administrative information systems",
+        "D": ") no changes in most healthcare transaction and minor changes in administrative information systems"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1146,
+      "question": "Which one is an example of a man-in-the-middle attack?",
+      "options": {
+        "A": "Buffer overflow",
+        "B": "DoS attack",
+        "C": "All of the above",
+        "D": "None of the above"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Wrong: Both A and B could be the result of a man-in-the-middle attack, but neither are man-in-the-middle attacks. For example someone who uses a packet capturing device, such as a \"sniffer\" to obtain an unencrypted user ID and password to one or more PCs or servers and then the platforms to launch a DOS attach or create a Buffer Overflow by exploiting an application flaw or OS Vulnerability."
+    },
+    {
+      "id": 1147,
+      "question": "Which one of these is a basic firewall?",
+      "options": {
+        "A": "Packet Filtering Firewalls",
+        "B": "Proxy Firewalls",
+        "C": "All of the above",
+        "D": "None of the above"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Packet Filtering Firewall - only examines an IP packet based on Source IP (SIP), Destination IP (DIP), Source Port and Destination Port for both UDP and TCP by subjecting each IP packet to an Access Control List."
+    },
+    {
+      "id": 1148,
+      "question": "Why is there an exception area in a policy?",
+      "options": {
+        "A": "Policy isn't valid without it",
+        "B": "Management has to deal with various issues that may require exceptions",
+        "C": "All of the above",
+        "D": "None of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Polices are ever evolving process that requires updating. Polices must change as the goals, functions and responsibilities of a company, government or employee changes. A simple policy exception could be - No unauthorized person or persons can enter the computer room. The Exception would be - Unless cleared by management and escorted by an authorized individual. In some cases there are NO exceptions - An example: Military TOP Secret information can ONLY be handled by someone with a TOP secret Clearanve;thus answer A is incorrect."
+    },
+    {
+      "id": 1149,
+      "question": "Which is a characteristic of IDEA?",
+      "options": {
+        "A": "56 bytes",
+        "B": "64 bits",
+        "C": "64 bytes",
+        "D": "All of the above",
+        "E": "None of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: From Wikipedia: International Data Encryption Algorithm (IDEA) operates on 64-bit blocks using a 128-bit key, and consists of a series of eight identical transformations (a round, see the illustration) and an output transformation (the half-round). The processes for encryption and decryption are similar. IDEA derives much of its security by interleaving operations from different groups - modular addition and multiplication, and bitwise eXclusive OR (XOR) - which are algebraically \"incompatible\" in some sense."
+    },
+    {
+      "id": 1150,
+      "question": "Which of the following can be used to raise awareness of the importance of security and risk?",
+      "options": {
+        "A": "Money",
+        "B": "All of the above",
+        "C": "None of the above"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: C is the only logical choice. Awareness and the importance of security and risk can not be improved or awareness be increased with only money. Awareness is produced by providing employees with education and training. Reference the Training and Education Triad. Exam Cram 2 CISSP Page 52"
+    }
+  ]
+}

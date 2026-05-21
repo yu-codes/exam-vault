@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q901 - Q950",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 901,
+      "question": "Which of the following statements pertaining to firewalls is incorrect?",
+      "options": {
+        "A": ") Firewall create bottlenecks between the internal and external network",
+        "B": ") Firewalls allow for centralization of security services in machines optimized and dedicated to the task",
+        "C": ") Strong firewalls can protect a network at all layers of the OSI models",
+        "D": ") Firewalls are used to create security checkpoints at the boundaries of private networks"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 902,
+      "question": "Which of the following is the least important security service provided by a firewall?",
+      "options": {
+        "A": ") Packet filtering",
+        "B": ") Encrypted tunnels",
+        "C": ") Network Address Translation",
+        "D": ") Proxy services"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 903,
+      "question": "Which of the following firewall rules is less likely to be found on a firewall installed between an organization's internal network and internet?",
+      "options": {
+        "A": ") Permit all traffic to and from local host",
+        "B": ") Permit all inbound ssh traffic",
+        "C": ") Permit all inbound tcp connections",
+        "D": ") Permit all syslog traffic to log-server.abc.org"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 904,
+      "question": "Which of the following packets should NOT be dropped at a firewall protecting an organization's internal network?",
+      "options": {
+        "A": ") Inbound packets with Source Routing option set",
+        "B": ") Router information exchange protocols",
+        "C": ") Inbound packets with an internal source IP address",
+        "D": ") Outbound packets with an external destination IP address"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 905,
+      "question": "By examining the \"state\" and \"context\" of the incoming data packets, it helps to track the protocols that are considered \"connectionless\", such as UDP-based applications and Remote Procedure Calls (RPC). This type of firewall system is used in:",
+      "options": {
+        "A": ") first generation firewall systems",
+        "B": ") second generation firewall systems",
+        "C": ") third generation firewall systems",
+        "D": ") fourth generation firewall systems"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Stateful Inspection Characteristics The firewall maintains a state table that tracks each and every communication channel. Frames are analyzed at all communication layers. It provides a high degree of security and does not introduce the performance hit that proxy firewalls introduce. It is scaleable and transparent to users It provides data tracking for tracking connectionless protocols such as UDP and ICMP The stat and context of the data within the packets are stored and updated continuously. It is considered a third-generation firewall.\" Pg. 375 Shon Harris: All-in-One CISSP Certification Not A: \"Packet filtering is the first generation firewall-that is, it was the first type that was created and used, and other types were developed fall into different generations.\" Pg 373 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 906,
+      "question": "Which of the following statements pertaining to packet filtering is incorrect?",
+      "options": {
+        "A": ") It is based on ACLs",
+        "B": ") It is not application dependant",
+        "C": ") It operates at the network layer",
+        "D": ") It keeps track of the state of a connection"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 907,
+      "question": "A screening router can perform packet filtering based upon what data?",
+      "options": {
+        "A": "Translated source destination addresses.",
+        "B": "Inverse address resolution.",
+        "C": "Source and destination port number.",
+        "D": "Source and destination addresses and application data."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The original answer was A (translated source destination address). I did not come across this term in my reading. Screening router A screening router is one of the simplest firewall strategies to implement. This is a popular design because most companies already have the hardware in place to implement it. A screening router is an excellent first line of defense in the creation of your firewall strategy. It's just a router that has filters associated with it to screen outbound and inbound traffic based on IP address and UDP and TCP ports. http://www.zdnet.co.uk/news/specials/2000/10/enterprise/techrepublic/2002/10/article002c.html"
+    },
+    {
+      "id": 908,
+      "question": "Why are hardware security features preferred over software security features?",
+      "options": {
+        "A": "They lock in a particular implementation.",
+        "B": "They have a lower meantime to failure.",
+        "C": "Firmware has fever software bugs.",
+        "D": "They permit higher performance."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "This is a sort of iffy question. Hardware allows faster performance then software and does not need to utilize an underlying OS to make the security software operate. (An example is PIX firewall vs checkpoint). The meantime to failure answer to me is ok but the hardware that the software security also has a MTFF. A few people looked over this question and had no problem with the answer of B (meantime to failure question) but as I looked into it I have picked D. MTTF is typical the time to failure. \"MTFF is the expected typical functional lifetime of the device given a specific operating environment\" (- Ed Tittle CISSP Study Guide (sybex) pg 657). This leads me to think that this question says hardware has a SHORTER lifespan then software. Thus I am going to have to go with D (higher performance). This can be because of ASICs. As always uses your best judgment, knowledge and experience on this question. Below are some points of view. Few things to consider when deploying software based firewall: Patching OS or firewall software could bring down firewall or open additional holes OS Expertise vs. firewall expertise (you may need two administrators). Support contract (One for hardware, one for OS, one for firewall), who do you call? Administration (One for OS and one for firewall). If your not an expert in both then forget it. High-availability (Stateful failover) (usually requires additional software and costs a lot of money). As a result it adds to support costs. Is software firewalls a bad idea it depends. Every situation is different. -Bob http://www.securityfocus.com/archive/105/322401/2003-05-22/2003-05-28/2 A software firewall application is designed to be installed onto an existing operating system running on generic server or desktop hardware. The application may or may not 'harden' the underlying operating system by replacing core components. Typical host operating systems include Windows NT, 2000 server or Solaris. Software firewall applications all suffer from the following key disadvantages: They run on a generic operating system that may or may not be hardened by the Firewall installation itself. A generic operating system is non-specialized and more complex than is necessary to operate the firewall. This leads to reliability problems and hacking opportunities were peripheral/unnecessary services are kept running. Generic operating systems have their own CPU and memory overheads making software based firewalls slower than their dedicated hardware counterparts. If the software firewalls uses PC hardware as the host platform, then there may be additional reliability problems with the hardware itself. Sub-optimal performance of generic hardware also affects software applications bundled with their own operating systems. There is no physical or topological separation of the firewalling activity. A dedicated hardware firewall is a software firewall application and operating system running on dedicated hardware. This means the hardware used is optimized for the task, perhaps including digital signal processors (DSPs) and several network interfaces. There may also be special hardware used to accelerate the encryption/decryption of VPN data. It may be rack mounted for easy installation into a comms' cabinet. We recommend dedicated hardware firewalls as they offer several key advantages over software applications: Dedicated hardware is typically more reliable. Hardware firewalls are simpler, hence more secure. Hardware firewalls are more efficient and offer superior performance, especially in support of VPNs. The firewalling activity is physically and topologically distinct. http://www.zensecurity.co.uk/default.asp?URL=hardware%20software%20firewall"
+    },
+    {
+      "id": 909,
+      "question": "Firewalls can be used to",
+      "options": {
+        "A": "Enforce security policy.",
+        "B": "Protect data confidentiality.",
+        "C": "Protect against protocol redirects.",
+        "D": "Enforce Secure Network Interface addressing."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A firewall is a device that supports and enforces the company's network security policy. - Shon Harris All-in-one CISSP Certification Guide pg 412"
+    },
+    {
+      "id": 910,
+      "question": "Which one of the following operations of a secure communication session cannot be protected?",
+      "options": {
+        "A": "Session initialization",
+        "B": "Session support",
+        "C": "Session termination",
+        "D": "Session control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I did not find the answer to this question in any of the texts sources I read for the cissp. However, Network Intrusion Detection (3rd edition) gives some hints. I am basing this off of the 3 way hand shake and looking for the termination of the session and who does it. Was it a RESET or FIN in the packet. So based off this concept I am concluding that Session Termination is really not controllable. Use your best judgment on this question based off of experience and knowledge."
+    },
+    {
+      "id": 911,
+      "question": "The general philosophy for DMZ's are that:",
+      "options": {
+        "A": ") any system on the DMZ can be compromised because it's accessible from the Internet",
+        "B": ") any system on the DMZ cannot be compromised because it's not accessible from the Internet",
+        "C": ") some systems on the DMZ can be compromised because they are accessible from the Internet",
+        "D": ") any system on the DMZ cannot be compromised because it's by definition 100% safe and not accessible from the Internet"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 912,
+      "question": "What is NOT an authentication method within IKE and IPsec:",
+      "options": {
+        "A": ") CHAP",
+        "B": ") Pre-shared Key",
+        "C": ") certificate based authentication",
+        "D": ") Public Key authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 913,
+      "question": "In IPSec, if the communication mode is gateway-gateway or host-gateway:",
+      "options": {
+        "A": ") Only tunnel mode can be used",
+        "B": ") Only transport mode can be used",
+        "C": ") Encapsulating Security Payload (ESP) authentication must be used",
+        "D": ") Both tunnel and transport mode can be used"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"IPSec can work in one of two modes: transport mode, where the payload of the message is protected, and tunnel mode, where the payload and the routing and header information is protected.\" Pg 527 Shon Harris: All-in-One CISSP Certification Not: C \"IPSec is not a strict protocol that dictates the type of algorithm, keys, and authentication method to be used, but it is an open, modular framework that provides a lot of flexibility for companies when they choose to use this type of technology. IPSec uses two basic security protocols: Authentication Header (AH) and the Encapsulating Security Payload (ESP). AH is the authenticating protocol, and ESP is an authenticating and encrypting protocol that uses cryptographic mechanisms to provide source authentication, confidentiality, and message integrity.\" Pg 527 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 914,
+      "question": "Internet Protocol Security (IPSec) provides security service within the Internet Protocol (IP) by doing all of the following EXCEPT",
+      "options": {
+        "A": "Enabling a system to select required security protocols.",
+        "B": "Providing traffic analysis protection.",
+        "C": "Determining the algorithm(s) to use for the IPsec services.",
+        "D": "Putting in place any cryptographic keys required to provide the requested services."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Pg 527 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 915,
+      "question": "Which of the following Internet Protocol (IP) security headers are defined by the Security Architecture for IP (IPSEC)?",
+      "options": {
+        "A": "The IPv4 and IPv5 Authentication Headers",
+        "B": "The Authentication Header Encapsulating Security Payload",
+        "C": "The Authentication Header and Digital Signature Tag",
+        "D": "The Authentication Header and Message Authentication Code"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"IPSec uses two basic security protocols: Authentication Header (AH) and the Encapsulating Security Payload (ESP).\" pg 575 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 916,
+      "question": "Which of the following statements is not true of IPSec Transport mode?",
+      "options": {
+        "A": ") It is required for gateways providing access to internal systems",
+        "B": ") Set-up when end-point is host or communications terminates at end-points",
+        "C": ") If used in gateway-to-host communication, gateway must act as host",
+        "D": ")Detective/Administrative Pairing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 917,
+      "question": "What is called the standard format that was established to set up and manage Security Associations (SA) on the Internet in IPSec?",
+      "options": {
+        "A": ") Internet Key Exchange",
+        "B": ") Secure Key Exchange Mechanism",
+        "C": ") Oakley",
+        "D": ") Internet Security Association and Key Management Protocol"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 221 Krutz"
+    },
+    {
+      "id": 918,
+      "question": "What is the purpose of the Encapsulation Security Payload (ESP) in the Internet Protocol (IP) Security Architecture for Internet Protocol Security?",
+      "options": {
+        "A": "To provide non-repudiation and confidentiality for IP transmission.",
+        "B": "To provide integrity and confidentiality for IP transmissions.",
+        "C": "To provide integrity and authentication for IP transmissions.",
+        "D": "To provide key management and key distribution for IP transmissions."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Encapsulating Security Payload (ESP). AH is the authenticating protocol and ESP is an authenticating and encrypting protocol that uses cryptographic mechanisms to provide source authentication, confidentiality, and message integrity.\" Pg 575 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 919,
+      "question": "Which one of the following is a circuit level application gateway and works independent of any supported TCP/IP application protocol?",
+      "options": {
+        "A": "SOCK-et-S (SOCKS)",
+        "B": "Common Information Model (CIM)",
+        "C": "Secure Multipurpose Internet Mail Extension (S/MIME)",
+        "D": "Generic Security Service Application Programming Interface (GSS-API)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Socks Proxy Server Characteristics Circuit-level proxy server Requires clients to be SOCKS-fied with SOCKS client software Mainly used for outbound Internet access and virtual private network (VPN) functionality Can be resource-intensive Provides authentication and encryption features to other VPN protocols, but not considered a traditional VPN protocol\" Pg. 422 Shon Harris CISSP All-In-One Certification Exam Guide Reference: The SOCKS is an example of a circuit-level proxy gateway that provides a secure channel between two computers. pg. 379 Shon Harris CISSP"
+    },
+    {
+      "id": 920,
+      "question": "How does the SOCKS protocol secure Internet Protocol (IP) connections?",
+      "options": {
+        "A": "By negotiating encryption keys during the connection setup.",
+        "B": "By attaching Authentication Headers (AH) to each packet.",
+        "C": "By distributing encryption keys to SOCKS enabled applications.",
+        "D": "By acting as a connection proxy."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"SOCKS is an example of a circuit-level proxy gateway that provides a secure channel between two computers. When a SOCKS-enabled client sends a request to a computer on the Internet, this request actually goes to the network's SOCKS proxy server...\" pg 379 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 921,
+      "question": "In the TCP/IP protocol stack, at what level is the SSL (Secure Sockets Layer) protocol provided?",
+      "options": {
+        "A": ") Application",
+        "B": ") Network",
+        "C": ") Presentation",
+        "D": ") Session"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 922,
+      "question": "SSL (Secure Sockets Layer) has two possible 'session key' lengths, what are they?",
+      "options": {
+        "A": ") 40 bit & 54 bit",
+        "B": ") 40 bit & 128 bit",
+        "C": ") 64 bit & 128 bit",
+        "D": ") 128 bit & 256 bit"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 923,
+      "question": "Which of the following is NOT true of SSL?",
+      "options": {
+        "A": ") By convention is uses 's-http://' instead of 'http://'.",
+        "B": ") It stands for Secure Sockets Layer",
+        "C": ") It was developed by Netscape",
+        "D": ") IT is used for transmitting private documents over the internet"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 924,
+      "question": "Which SSL version offers client-side authentication",
+      "options": {
+        "A": ") SSL v1",
+        "B": ") SSL v2",
+        "C": ") SSL v3",
+        "D": ") SSL v4"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Client Authentication using Digital IDs Enable access by certificates1. Choose Encryption|Security Preferences in the Server Manager. 2. Specify which versions of SSL your server can communication with. The latest and most secure version is SSL version 3, but many older clients use only SSL version 2. You will probably want to enable your server to use both versions. 3. Refuse access to any client that does not have a client certificate from a trusted CA by choosing the Yes box under Require client certificates (regardless of access control): 4. Click the OK button and confirm your changes.\" http://www.verisign.com/repository/clientauth/ent_ig.htm#clientauth"
+    },
+    {
+      "id": 925,
+      "question": "In which way does a Secure Socket Layer (SSL) server prevent a \"man-in-the-middle\" attack?",
+      "options": {
+        "A": "It uses signed certificates to authenticate the server's public key.",
+        "B": "A 128 bit value is used during the handshake protocol that is unique to the connection.",
+        "C": "It uses only 40 bits of secret key within a 128 bit key length.",
+        "D": "Every message sent by the SSL includes a sequence number within the message contents."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Secure Sockets Layer (SSL). An encryption technology that is used to provide secure transactions such as the exchange of credit card numbers. SSL is a socket layer security protocol and is a two-layered protocol that contains the SSL Record Protocol and the SSL Handshake Protocol. Similiar to SSH, SSL uses symmetric encryption for private connections and asymmetric or public key cryptography (certificates) for peer authentication. It also uses a Message Authentication Code for message integrity checking. Krutz: The CISSP Prep Guide pg. 89. It prevents a man in the middle attack by confirming that you are authenticating with the server desired prior entering your user name and password. If the server was not authenticated, a man-in-the-middle could retrieve the username and password then use it to login. The SSL protocol has been known to be vulnerable to some man-in-the-middle attacks. The attacker injects herself right at the beginning of the authentication phase so that she obtains both parties' keys. This enables her to decrypt and view messages that were not intended for her. Using digital signatures during the session-key exchange can circumvent the man-in-the-middle attack. If using kerberos, when Lance and Tanya obtain each other's public keys from the KDC, the public keys are signed by the KDC. Because Tanya and Lanace have the public key of the KDC, they both can decrypt and verify the signature on each other's public key and be sure that it came from the KDC itself. Because David does not have the private key of the KDC, he cannot substitute his pubic key during this type of transmission. Shon Harris All-In-One CISSP Certification pg. 579. One of the most important pieces a PKI is its public key certificate. A certificate is the mechanism used to associate a public key with a collection of components sufficient to uniquely authenticate the claimed owner. Shon Harris All-In-One CISSP Certification pg. 540."
+    },
+    {
+      "id": 926,
+      "question": "Secure Shell (SSH) and Secure Sockets Layer (SSL) are very heavily used for protecting",
+      "options": {
+        "A": ") Internet transactions",
+        "B": ") Ethernet transactions",
+        "C": ") Telnet transactions",
+        "D": ") Electronic Payment transactions"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 927,
+      "question": "Which one of the following CANNOT be prevented by the Secure Shell (SSH) program?",
+      "options": {
+        "A": "Internet Protocol (IP) spoofing.",
+        "B": "Data manipulation during transmissions.",
+        "C": "Network based birthday attack.",
+        "D": "Compromise of the source/destination host."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "This is a question that I disagreed with. The premises that SSH does use RSA and 3DES, thus susceptible to cryptographic attack (namely birthday attach) has merit but I think the answer is more simple, in that you SSH cant protect against a compromised source/destination. You can safely rule out spoofing and manipulation (that is the job of ssh to protect the transmission). Original answer was C birthday attack. Use your best judgment based on knowledge and experience. The use of ssh helps to correct these vulnerabilities. Specifically, ssh protects against these attacks: IP spoofing (where the spoofer is on either a remote or local host), IP source routing, DNS spoofing, interception of cleartext passwords/data and attacks based on listening to X authentication data and spoofed connections to an X11 server. http://www-arc.com/sara/cve/SSH_vulnerabilities.html Birthday attack - Usually applied to the probability of two different messages using the same hash fucntion that produces a common message digest; or given a message and its corresponding message digest, finding another message that when passed through the same hash function generates the same specific message digest. The term \"birthday\" comes from the fact that in a room with 23 people, the probability of two people having the same birthday is great than 50 percent. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 212"
+    },
+    {
+      "id": 928,
+      "question": "Another name for a VPN is a:",
+      "options": {
+        "A": ") tunnel",
+        "B": ") one-time password",
+        "C": ") pipeline",
+        "D": ") bypass"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 929,
+      "question": "Which one of the following attacks is MOST effective against an Internet Protocol Security (IPSEC) based virtual private network (VPN)?",
+      "options": {
+        "A": "Brute force",
+        "B": "Man-in-the-middle",
+        "C": "Traffic analysis",
+        "D": "Replay"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Active attacks find identities by being a man-in-the-middle or by replacing the responder in the negotiation. The attacker proceeds through the key negotiation with the attackee until the attackee has revealed its identity. In a well-designed system, the negotiation will fail after the attackee has revealed its identity because the attacker cannot spoof the identity of the originally-intended system. The attackee might then suspect that there was an attack because the other side failed before it gave its identity. Therefore, an active attack cannot be persistent because it would prevent all legitimate access to the desired IPsec system. http://msgs.securepoint.com/cgi-bin/get/ipsec-0201/18.html Not C: Traffic analysis is a good attack but not the most effective as it is passive in nature, while Man in the middle is active."
+    },
+    {
+      "id": 930,
+      "question": "Which of the following is NOT an essential component of a VPN?",
+      "options": {
+        "A": ") VPN Server",
+        "B": ") NAT Server",
+        "C": ") authentication",
+        "D": ") encryption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 931,
+      "question": "Virtual Private Network software typically encrypts all of the following EXCEPT",
+      "options": {
+        "A": "File transfer protocol",
+        "B": "Data link messaging",
+        "C": "HTTP protocol",
+        "D": "Session information"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 932,
+      "question": "Which of the following is less likely to be used in creating a Virtual Private Network?",
+      "options": {
+        "A": ") L2TP",
+        "B": ") PPTP",
+        "C": ") IPSec",
+        "D": ") L2F"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"The following are the three most common VPN communications protocol standards: Point-to-Point Tunneling Protocol(PPTP). PPTP works at the Data Link Layer of the OSI model. Designed for individual client to server connections, it enables only a single point-to-point connection per session. This standard is very common with asynchronous connections that use Win9x or NT clients. PPTP uses native Point-to-Point Protocol (PPP) authentication and encryption services. Layer 2 Tunneling Protocol (L2TP). L2TP is a combination of PPTP and the earlier Layer 2 Forwarding (L2F) Protocol that works at the Data Link Layer like PPTP. It has become an accepted tunneling standard for VPN's. In fact, dial-up VPNs use this standard quite frequently. Like PPTP, this standard was designed for single point-to-point client to server connections. Not that multiple protocols can be encapsulated within the L2TP tunnel, but do not use encryption like PPTP. Also, L2TP supports TACACS+ and RADIUS, but PPTP does not. IPSEC. IPSec operates at the Network Layer and it enables multiple and simultaneous tunnels, unlike the single connection of the previous standards. IPSec has the functionality to encrypt and authenticate IP data. It is built into the new Ipv6 standard, and is used as an add-on to the current Ipv4. While PPTP and L2TP are aimed more at dial-up VPNs, IPSec focuses more on network-to-network connectivity.\" Pg. 123-125 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 933,
+      "question": "Which one of the following instigates a SYN flood attack?",
+      "options": {
+        "A": "Generating excessive broadcast packets.",
+        "B": "Creating a high number of half-open connections.",
+        "C": "Inserting repetitive Internet Relay Chat (IRC) messages.",
+        "D": "A large number of Internet Control Message Protocol (ICMP) traces."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A SYN attack occurs when an attacker exploits the use of the buffer space during a Transmission Control Protocol (TCP) session initialization handshake. The attacker floods the target system's small \"in-process\" queue with connection requests, but it does not respond when a target system replies to those requests. This causes the target system to time out while waiting for the proper response, which makes the system crash or become unusable. - Ronald Krutz The CISSP PREP Guide (gold edition) pg 103 \"In a SYN flood attack, hackers use special software that sends a large number of fake packets with the SYN flag set to the targeted system. The victim then reserves space in memory for the connection and attempts to send the standard SYN/ACK reply but never hears back from the originator. This process repeats hundreds or even thousands of times, and the targeted computer eventually becomes overwhelmed and runs out of available resources for the half-opened connections. At that time, it either crashes or simply ignores all inbound connection requests because it can't possibly handle any more half-open connections.\" Pg 266 Tittel: CISSP Study Guide."
+    },
+    {
+      "id": 934,
+      "question": "Which one of the following is defined as the process of distributing incorrect Internet Protocol (IP) addresses/names with the intent of diverting traffic?",
+      "options": {
+        "A": "Network aliasing",
+        "B": "Domain Name Server (DNS) poisoning",
+        "C": "Reverse Address Resolution Protocol (ARP)",
+        "D": "Port scanning"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "This reference is close to the one listed DNS poisoning is the correct answer however, Harris does not say the name when describing the attack but later on the page she state the following. This is how DNS DOS attack can occur. If the actual DNS records are unattainable to the attacker for him to alter in this fashion, which they should be, the attacker can insert this data into the cache of there server instead of replacing the actual records, which is referred to as cache poisoning. - Shon Harris All-in-one CISSP Certification Guide pg 795"
+    },
+    {
+      "id": 935,
+      "question": "A Packet containing a long string of NOP's followed by a command is usually indicative of what?",
+      "options": {
+        "A": ") A syn scan",
+        "B": ") A half-port scan",
+        "C": ") A buffer overflow",
+        "D": ") A packet destined for the network's broadcast address"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference \"This paper is for those who want a practical approach to writing buffer overflow exploits. As the title says, this text will teach you how to write these exploits in Perl. ..... There are reasons why we construct the buffer this way. First we have a lot of NOPs, then the shellcode (which in this example will execute /bin/sh), and at last the ESP + offset values.\" http://hackersplayground.org/papers/perl-buffer.txt"
+    },
+    {
+      "id": 936,
+      "question": "You are running a packet sniffer on a network and see a packet with a long string of long string of \"90 90 90 90....\" in the middle of it traveling to an x86-based machine. This could be indicative of what?",
+      "options": {
+        "A": ") Over-subscription of the traffic on a backbone",
+        "B": ") A source quench packet",
+        "C": ") a FIN scan",
+        "D": ") A buffer overflow"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"TCP Port 5000 Buffer Overflow Attack The attack on Port 5000 was part of this scan pattern Mar 14, 2004 15:58:17.837 - (TCP) 68.144.13.102 : 2282 >>> 192.168.1.36 : 2745 Mar 14, 2004 15:58:17.857 - (TCP) 68.144.13.102 : 2283 >>> 68.144.193.246 : 135 Mar 14, 2004 15:58:17.887 - (TCP) 68.144.13.102 : 2284 >>> 192.168.1.38 : 1025 Mar 14, 2004 15:58:17.907 - (TCP) 68.144.13.102 : 2285 >>> 68.144.193.246 : 445 Mar 14, 2004 15:58:17.938 - (TCP) 68.144.13.102 : 2286 >>> 192.168.1.36 : 3127 Mar 14, 2004 15:58:17.958 - (TCP) 68.144.13.102 : 2287 >>> 68.144.193.246 : 6129 Mar 14, 2004 15:58:17.988 - (TCP) 68.144.13.102 : 2288 >>> 68.144.193.246 : 139 Mar 14, 2004 15:58:18.008 - (TCP) 68.144.13.102 : 2289 >>> 192.168.1.36 : 5000 Mar 14, 2004 15:58:29.164 - (TCP) 68.144.13.102 : 1442 >>> 68.144.193.246 : 1981 Mar 14, 2004 15:58:33.470 - (TCP) 68.144.13.102 : 1442 >>> 68.144.193.246 : 1981 Mar 14, 2004 15:58:39.288 - (TCP) 68.144.13.102 : 1442 >>> 68.144.193.246 : 1981 The attack appears to be a buffer overfull attack on the Plug and Play service on TCP Port 5000, which likely contains instructions to download and execute the rest of the worm. TCP Connection Request ---- 14/03/2004 15:40:57.910 68.144.193.124 : 4560 TCP Connected ID = 1 ---- 14/03/2004 15:40:57.910 Status Code: 0 OK 68.144.193.124 : 4560 TCP Data In Length 697 bytes MD5 = 19323C2EA6F5FCEE2382690100455C17 ---- 14/03/2004 15:40:57.920 0000 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0010 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0020 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0030 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0040 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0050 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0060 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0070 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0080 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0090 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00A0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00B0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00C0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00D0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00E0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 00F0 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0100 90 90 90 90 90 90 90 90 90 90 90 90 4D 3F E3 77 ............M?.w 0110 90 90 90 90 FF 63 64 90 90 90 90 90 90 90 90 90 .....cd......... 0120 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ................ 0130 90 90 90 90 90 90 90 90 EB 10 5A 4A 33 C9 66 B9 ..........ZJ3.f. 0140 66 01 80 34 0A 99 E2 FA EB 05 E8 EB FF FF FF 70 f..4...........p 0150 99 98 99 99 C3 21 95 69 64 E6 12 99 12 E9 85 34 .....!.id......4 0160 12 D9 91 12 41 12 EA A5 9A 6A 12 EF E1 9A 6A 12 ....A....j....j. 0170 E7 B9 9A 62 12 D7 8D AA 74 CF CE C8 12 A6 9A 62 ...b....t......b 0180 12 6B F3 97 C0 6A 3F ED 91 C0 C6 1A 5E 9D DC 7B .k...j?.....^..{ 0190 70 C0 C6 C7 12 54 12 DF BD 9A 5A 48 78 9A 58 AA p....T....ZHx.X. 01A0 50 FF 12 91 12 DF 85 9A 5A 58 78 9B 9A 58 12 99 P.......ZXx..X.. 01B0 9A 5A 12 63 12 6E 1A 5F 97 12 49 F3 9A C0 71 E5 .Z.c.n._..I...q. 01C0 99 99 99 1A 5F 94 CB CF 66 CE 65 C3 12 41 F3 9D ...._...f.e..A.. 01D0 C0 71 F0 99 99 99 C9 C9 C9 C9 F3 98 F3 9B 66 CE .q............f. 01E0 69 12 41 5E 9E 9B 99 9E 24 AA 59 10 DE 9D F3 89 i.A^....$.Y..... 01F0 CE CA 66 CE 6D F3 98 CA 66 CE 61 C9 C9 CA 66 CE ..f.m...f.a...f. 0200 65 1A 75 DD 12 6D AA 42 F3 89 C0 10 85 17 7B 62 e.u..m.B......{b 0210 10 DF A1 10 DF A5 10 DF D9 5E DF B5 98 98 99 99 .........^...... 0220 14 DE 89 C9 CF CA CA CA F3 98 CA CA 5E DE A5 FA ............^... 0230 F4 FD 99 14 DE A5 C9 CA 66 CE 7D C9 66 CE 71 AA ........f.}.f.q. 0240 59 35 1C 59 EC 60 C8 CB CF CA 66 4B C3 C0 32 7B Y5.Y.`....fK..2{ 0250 77 AA 59 5A 71 62 67 66 66 DE FC ED C9 EB F6 FA w.YZqbgff....... 0260 D8 FD FD EB FC EA EA 99 DA EB FC F8 ED FC C9 EB ................ 0270 F6 FA FC EA EA D8 99 DC E1 F0 ED C9 EB F6 FA FC ................ 0280 EA EA 99 D5 F6 F8 FD D5 F0 FB EB F8 EB E0 D8 99 ................ 0290 EE EA AB C6 AA AB 99 CE CA D8 CA F6 FA F2 FC ED ................ 02A0 D8 99 FB F0 F7 FD 99 F5 F0 EA ED FC F7 99 F8 FA ................ 02B0 FA FC E9 ED 99 0D 0A 0D 0A ......... \" http://www.linklogger.com/TCP5000_Overflow.htm"
+    },
+    {
+      "id": 937,
+      "question": "Which of the following is true related to network sniffing?",
+      "options": {
+        "A": ") Sniffers allow an attacker to monitor data passing across a network.",
+        "B": ") Sniffers alter the source address of a computer to disguise and exploit weak authentication methods.",
+        "C": ") Sniffers take over network connections",
+        "D": ") Sniffers send IP fragments to a system that overlap with each other."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Sniffing is the action of capture / monitor the traffic going over the network. Because, in a normal networking environment, account and password information is passed along Ethernet in clear-text, it is not hard for an intruder to put a machine into promiscuous mode and by sniffing, compromise all the machines on the net by capturing password in an illegal fashion."
+    },
+    {
+      "id": 938,
+      "question": "Which one of the following threats does NOT rely on packet size or large volumes of data?",
+      "options": {
+        "A": "SYN flood",
+        "B": "Spam",
+        "C": "Ping of death",
+        "D": "Macro virus"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "SPAM - The term describing unwanted email, newsgroup, or discussion forum messages. Spam can be innocuous as an advertisement from a well-meaning vendor or as malignant as floods or unrequested messages with viruses or Trojan horses attached SYN Flood Attack - A type of DoS. A Syn flood attack is waged by not sending the final ACK packet, which breaks the standard three-way handshake used by TCP/IP to initiate communication sessions. Ping of death attack - A type of DoS. A ping of death attack employs an oversized ping packet. Using special tools, an attacker can send numerous oversized ping packets to a victim. In many cases, when the victimized system attempts to process the packets, an error occurs causing the system to freeze, crash, or reboot. Macro Viruses - A virus that utilizes crude technologies to infect documents created in the Microsoft Word environment. - Ed Tittle CISSP Study Guide (sybex) pg 550 740, 743, 723, 713"
+    },
+    {
+      "id": 939,
+      "question": "A TCP SYN Attack:",
+      "options": {
+        "A": ") requires a synchronized effort by multiple attackers",
+        "B": ") takes advantage of the way a TCP session is established",
+        "C": ") may result in elevation of privileges.",
+        "D": ") is not something system users would notice"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"[SYN Flood] Attackers can take advantage of this design flaw by continually sending the victim SYN messages with spoofed packets. The victim will commit the necessary resources to setup this communication socket, and it will send its SYN/ACK message waiting for the ACK message in return. However, the victim will never receive the ACK message, because the packet is spoofed, and victim system sent the SYN/ACK message to a computer that does not exist. So the victim system receives a SYN message, add it dutifully commits the necessary resources to setup a connection with another computer. This connection is queued waiting for the ACK message, and the attacker sends another SYN message. The victim system does what is supposed to can commits more resources, sends the SYN/ACK message, and queues this connection. This may only need to happen a dozen times before the victim system no longer has the necessary resources to open up another connection. This makes the victim computer unreachable from legitimate computers, denying other systems service from the victim computer.\" Pg. 735 Shon Harris CISSP All-In-One Exam Guide"
+    },
+    {
+      "id": 940,
+      "question": "What attack is typically used for identifying the topology of the target network?",
+      "options": {
+        "A": "Spoofing",
+        "B": "Brute force",
+        "C": "Teardrop",
+        "D": "Scanning"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Flaw exploitation attacks exploit a flaw in the target system's software in order to cause a processing failure or to cause it to exhaust system resources. An example of such a processing failure is the 'ping of death' attack. This attack involved sending an unexpectedly large ping packet to certain Windows systems. The target system could not handle this abnormal packet, and a system crash resulted. With respect to resource exhaustion attacks, the resources targeted include CPU time, memory, disk space, space in a special buffer, or network bandwidth. In many cases, simply patching the software can circumvent this type of DOS attack."
+    },
+    {
+      "id": 941,
+      "question": "Which one of the following is the reason for why hyperlink spoofing attacks are usually successful?",
+      "options": {
+        "A": "Most users requesting DNS name service do not follow hyperlinks.",
+        "B": "The attack performs user authentication with audit logs.",
+        "C": "The attack relies on modifications to server software.",
+        "D": "Most users do not make a request to connect to a DNS names, they follow hyperlinks."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The problem is that most users do not request to connect to DNS names or even URLs, they follow hyperlinks... But, whereas DNS names are subject to \"DNS spoofing\" (whereby a DNS server lies about the internet address of a server) so too are URLs subject to what I call \"hyperlink spoofing\" or \"Trojan HTML\", whereby a page lies about an URLs DNS name. Both forms of spoofing have the same effect of steering you to the wrong internet site, however hyperlink spoofing is technically much easier than DNS spoofing. http://www.brd.ie/papers/sslpaper/sslpaper.html"
+    },
+    {
+      "id": 942,
+      "question": "Which of the following identifies the first phase of a Distributed Denial of Service attack?",
+      "options": {
+        "A": "Establishing communications between the handler and agent.",
+        "B": "Disrupting the normal traffic to the host.",
+        "C": "Disabling the router so it cannot filter traffic.",
+        "D": "Compromising as many machines as possible."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Another form of attack is called the distributed denial of service (DDOS). A distributed denial of service occurs when the attacker compromises several systems and uses them as launching platforms against on or more victims. - Ed Tittle CISSP Study Guide (sybex) pg 51"
+    },
+    {
+      "id": 943,
+      "question": "This type of vulnerability enables the intruder to re-route data traffic from a network device to a personal machine? This diversion enables the intruder to capture data traffic to and from the devices for analysis or modification, or to steal the password file from the server and gain access to user accounts.",
+      "options": {
+        "A": ") Network Address Translation",
+        "B": ") Network Address Hijacking",
+        "C": ") Network Address Supernetting",
+        "D": ") Network Address Sniffing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Network Address Hijacking. It might be possible for an intruder to reroute data traffic from a server or network device to a personal machine, either by device address modification or network address \"hijacking.\" This diversion enables the intruder to capture traffic to and from the devices for data analysis or modification or to steal the password file from the server and gain access to user accounts. By rerouting the data output, the intruder can obtain supervisory terminal functions and bypass the system logs.\" Pg. 324 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 944,
+      "question": "Which one of the following is an example of hyperlink spoofing?",
+      "options": {
+        "A": "Compromising a web server Domain Name Service reference.",
+        "B": "Connecting the user to a different web server.",
+        "C": "Executing Hypertext Transport Protocol Secure GET commands.",
+        "D": "Starting the user's browser on a secured page."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The problem is that most users do not request to connect to DNS names or even URLs, they follow hyperlinks... But, whereas DNS names are subject to \"DNS spoofing\" (whereby a DNS server lies about the internet address of a server) so too are URLs subject to what I call \"hyperlink spoofing\" or \"Trojan HTML\", whereby a page lies about an URLs DNS name. Both forms of spoofing have the same effect of steering you to the wrong internet site, however hyperlink spoofing is technically much easier than DNS spoofing. http://www.brd.ie/papers/sslpaper/sslpaper.html"
+    },
+    {
+      "id": 945,
+      "question": "Why are packet filtering routers NOT effective against mail bomb attacks?",
+      "options": {
+        "A": "The bomb code is obscured by the message encoding algorithm.",
+        "B": "Mail bombs are polymorphic and present no consistent signature to filter on.",
+        "C": "Filters do not examine the data portion of a packet.",
+        "D": "The bomb code is hidden in the header and appears as a normal routing information."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 946,
+      "question": "Which one of the following correctly identifies the components of a Distributed Denial of Service Attack?",
+      "options": {
+        "A": "Node, server, hacker, destination",
+        "B": "Client, handler, agent, target",
+        "C": "Source, destination, client, server",
+        "D": "Attacker, proxy, handler, agent"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Another form of DoS. A distributed denial of service occurs when the attacker compromises several systems to be used as launching platforms against one or more victims. The compromised systems used in the attacks are often called claves or zombies. A DDoS attack results in the victims being flooded with data from numerous sources. - Ed Tittle CISSP Study Guide (sybex) pg 693"
+    },
+    {
+      "id": 947,
+      "question": "Which one of the following attacks will pass through a network layer intrusion detection system undetected?",
+      "options": {
+        "A": "A teardrop attack",
+        "B": "A SYN flood attack",
+        "C": "A DNS spoofing attack",
+        "D": "A test.cgi attack"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Because a network-based IDS reviews packets and headers, it can also detect denial of service (DoS) attacks.\" Pg. 64 Krutz: The CISSP Prep Guide Not A or B: \"The following sections discuss some of the possible DoS attacks available. Smurf Fraggle SYN Flood Teardrop DNS DoS Attacks\" Pg. 732-737 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 948,
+      "question": "Which one of the following is a passive network attack?",
+      "options": {
+        "A": "Spoofing",
+        "B": "Traffic Analysis",
+        "C": "Playback",
+        "D": "Masquerading"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Traffic analysis and trend analysis are forms of monitoring that examine the flow of packets rather than the actual content of packets. Traffic and trend analysis can be used to infer a large amount of information, such as primary communication routes, sources of encrypted traffic, location of primary servers, primary and backup communication pathways, amount of traffic supported by the network, typical direction of traffic flow, frequency of communications, and much more.\" Pg 429 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 949,
+      "question": "Which one of the following can NOT typically be accomplished using a Man-in-the-middle attack?",
+      "options": {
+        "A": "DNS spoofing",
+        "B": "Session hijacking",
+        "C": "Denial of service flooding",
+        "D": "Digital signature spoofing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 950,
+      "question": "What is called an attach where the attacker spoofs the source IP address in an ICMP ECHO broadcast packet so it seems to have originated at the victim's system, in order to flood it with REPLY packets?",
+      "options": {
+        "A": ") SYN flood attack",
+        "B": ") Smurf attack",
+        "C": ") Ping of Dead Attack",
+        "D": ") Denial of Service (DOS) Attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 158 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    }
+  ]
+}

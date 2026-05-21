@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q401 - Q450",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 401,
+      "question": "With __________, access decisions are based on the roles that individual users have as part of an organization.",
+      "options": {
+        "A": "Server based access control.",
+        "B": "Rule based access control.",
+        "C": "Role based access control.",
+        "D": "Token based access control."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With role-based access control, access decisions are based on the roles that individual users have as part of an organization. Users take on assigned roles (such as doctor, nurse, teller, manager). The process of defining roles should be based on a thorough analysis of how an organization operates and should include input from a wide spectrum of users in an organization."
+    },
+    {
+      "id": 402,
+      "question": "Under Role based access control, access rights are grouped by:",
+      "options": {
+        "A": "Policy name",
+        "B": "Rules",
+        "C": "Role name",
+        "D": "Sensitivity label"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With role-based access control, access rights are grouped by role name, and the use of resources is restricted to individuals authorized to assume the associated role. For example, within a hospital system the role of doctor can include operations to perform diagnosis, prescribe medication, and order laboratory tests; and the role of researcher can be limited to gathering anonymous clinical information for studies."
+    },
+    {
+      "id": 403,
+      "question": "Which of the following will you consider as a \"role\" under a role based access control system?",
+      "options": {
+        "A": "Bank rules",
+        "B": "Bank computer",
+        "C": "Bank teller",
+        "D": "Bank network"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With role-based access control, access rights are grouped by role name, and the use of resources is restricted to individuals authorized to assume the associated role. For example, within a hospital system the role of doctor can include operations to perform diagnosis, prescribe medication, and order laboratory tests; and the role of researcher can be limited to gathering anonymous clinical information for studies."
+    },
+    {
+      "id": 404,
+      "question": "Role based access control is attracting increasing attention particularly for what applications?",
+      "options": {
+        "A": "Scientific",
+        "B": "Commercial",
+        "C": "Security",
+        "D": "Technical"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Role based access control (RBAC) is a technology that is attracting increasing attention, particularly for commercial applications, because of its potential for reducing the complexity and cost of security administration in large networked applications."
+    },
+    {
+      "id": 405,
+      "question": "What is one advantage of deploying Role based access control in large networked applications?",
+      "options": {
+        "A": "Higher security",
+        "B": "Higher bandwidth",
+        "C": "User friendliness",
+        "D": "Lower cost"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Role based access control (RBAC) is an alternative to traditional discretionary (DAC) and mandatory access control (MAC) policies. The principle motivation behind RBAC is the desire to specify and enforce enterprise-specific security policies in a way that maps naturally to an organization's structure. Traditionally, managing security has required mapping an organization's security policy to a relatively low-level set of controls, typically access control lists."
+    },
+    {
+      "id": 406,
+      "question": "DAC and MAC policies can be effectively replaced by:",
+      "options": {
+        "A": "Rule based access control.",
+        "B": "Role based access control.",
+        "C": "Server based access control.",
+        "D": "Token based access control"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Role based access control (RBAC) is an alternative to traditional discretionary (DAC) and mandatory access control (MAC) policies. The principle motivation behind RBAC is the desire to specify and enforce enterprise-specific security policies in a way that maps naturally to an organization's structure. Traditionally, managing security has required mapping an organization's security policy to a relatively low-level set of controls, typically access control lists."
+    },
+    {
+      "id": 407,
+      "question": "Which of the following correctly describe Role based access control?",
+      "options": {
+        "A": "It allows you to specify and enforce enterprise-specific security policies in a way that maps to your user profile groups.",
+        "B": "It allows you to specify and enforce enterprise-specific security policies in a way that maps to your organizations structure.",
+        "C": "It allows you to specify and enforce enterprise-specific security policies in a way that maps to your ticketing system.",
+        "D": "It allows you to specify and enforce enterprise-specific security policies in a way that maps to your ACL."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Role based access control (RBAC) is an alternative to traditional discretionary (DAC) and mandatory access control (MAC) policies. The principle motivation behind RBAC is the desire to specify and enforce enterprise-specific security policies in a way that maps naturally to an organization's structure. Traditionally, managing security has required mapping an organization's security policy to a relatively low-level set of controls, typically access control lists."
+    },
+    {
+      "id": 408,
+      "question": "Which of the following RFC talks about Rule Based Security Policy?",
+      "options": {
+        "A": "1316",
+        "B": "1989",
+        "C": "2717",
+        "D": "2828"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The RFC 2828 - Internet Security Glossary talks about Rule Based Security Policy: A security policy based on global rules imposed for all users. These rules usually rely on comparison of the sensitivity of the resource being accessed and the possession of corresponding attributes of users, a group of users, or entities acting on behalf of users."
+    },
+    {
+      "id": 409,
+      "question": "With Rule Based Security Policy, a security policy is based on:",
+      "options": {
+        "A": "Global rules imposed for all users.",
+        "B": "Local rules imposed for some users.",
+        "C": "Global rules imposed for no body.",
+        "D": "Global rules imposed for only the local users."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The RFC 2828 - Internet Security Glossary talks about Rule Based Security Policy: A security policy based on global rules imposed for all users. These rules usually rely on comparison of the sensitivity of the resource being accessed and the possession of corresponding attributes of users, a group of users, or entities acting on behalf of users."
+    },
+    {
+      "id": 410,
+      "question": "With Rule Based Security Policy, global rules usually rely on comparison of the _______ of the resource being accessed.",
+      "options": {
+        "A": "A group of users.",
+        "B": "Users",
+        "C": "Sensitivity",
+        "D": "Entities"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The RFC 2828 - Internet Security Glossary talks about Rule Based Security Policy: A security policy based on global rules imposed for all users. These rules usually rely on comparison of the sensitivity of the resource being accessed and the possession of corresponding attributes of users, a group of users, or entities acting on behalf of users."
+    },
+    {
+      "id": 411,
+      "question": "Which of the following is a facial feature identification product that can employ artificial intelligence and can require the system to learn from experience?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "Digital nervous system.",
+        "C": "Neural networking",
+        "D": "DSV"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are facial feature identification products that are on the market that use other technologies or methods to capture one's face. One type of method used is neural networking technology. This type of technology can employ artificial intelligence that requires the system to \"learn\" from experience. This \"learning\" experience helps the system to close in on an identification of an individual. Most facial feature identification systems today only allow for two-dimensional frontal images of one's face. Not DSV: Signature biometrics are often referred to dynamic signature verification (DSV) and look at the way we sign our names. [15] The dynamic nature differentiates it from the study of static signatures on paper. Within DSV a number of characteristics can be extracted from the physical signing process. Examples of these behavioral characteristics are the angle of the pen is held, the time taken to sign, velocity and acceleration of the tip of the pen, number of times the pen is lifted from the paper. Despite the fact that the way we sign is mostly learnt during the years it is very hard to forge and replicate."
+    },
+    {
+      "id": 412,
+      "question": "Which option is NOT a benefit derived from the use of neural networks?",
+      "options": {
+        "A": "Linearity",
+        "B": "Input-Output Mapping",
+        "C": "Adaptivity",
+        "D": "Fault Tolerance"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Linearity: \"If the sum of the weighted inputs then exceeds the threshold, the neuron will \"fire\" and there will be an output from that neuron. An alternative approach would be to have the output of the neuron be a linear function of the sum of the artificial neuron inputs.\" Input-Output Mapping: \"For example, if a specific output vector was required for a specific input where the relationship between input and output was non-linear, the neural network would be trained by applying a set of input vector.\" Adaptivity: \"The neural network would have then be said to have learned to provide the correct response for each input vector.\" Pg. 261 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 413,
+      "question": "Which of the following is a characteristic of a decision support system (DSS)?",
+      "options": {
+        "A": ") DSS is aimed at solving highly structured problems",
+        "B": ") DSS emphasizes flexibility in the decision making approach of users",
+        "C": ") DSS supports only structured decision-making tasks",
+        "D": ") DSS combines the use of models with non-traditional data access and retrieval functions"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 414,
+      "question": "Which of the following is a communication mechanism that enables direct conversation between two applications?",
+      "options": {
+        "A": ") DDE",
+        "B": ") OLE",
+        "C": ") ODBC",
+        "D": ") DCOM"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Dynamic Data Exchange (DDE) enables applications to share data by providing IPC. It is based on the client/server model and enables two programs to send commands to each other directly. DDE is a communication mechanism that enables direct conversation between two applications. The source of the data is called the server, and the receiver of the data is the client.\" Pg. 718 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 415,
+      "question": "Which expert system operating mode allows determining if a given hypothesis is valid?",
+      "options": {
+        "A": ") Vertical chaining",
+        "B": ") Lateral chaining",
+        "C": ") Forward chaining",
+        "D": ") Backward chaining"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"The expert system operates in either a forward-chaining or backward-chaining mode. In a forward-chaining mode, the expert system acquires information and comes to a conclusion based on that information. Forward-chaining is the reasoning approach that can be used when there is a small number of solutions relative to the number of inputs. In a backward-chaining mode, the expert system backtracks to determine if a given hypothesis is valid. Backward-chaining is generally used when there are a large number of possible solutions relative to the number of inputs. Another type of expert system is the blackboard. A blackboard is an expert system-reasoning methodology in which a solution is generated by the use of a virtual \"blackboard,\" wherein information or portential solutions are placed on the blackboard by the plurality of individuals or expert knowledge sources. As more information is placed on the blackboard in an iterative process, a solution is generated.\" Pg 354 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 416,
+      "question": "Which one of the following is a security issue related to aggregation in a database?",
+      "options": {
+        "A": "Polyinstantiation",
+        "B": "Inference",
+        "C": "Partitioning",
+        "D": "Data swapping"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Inference is the ability of users to infer or deduce information about data at sensitivity levels for which they do not have access privileges. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 358 The other security issue is inference, which is very similar to aggregation. - Shon Harris All-in-one CISSP Certification Guide pg 727 Partitioning a database involves dividing the database into different parts, which makes it much harder for an unauthorized individual to find connecting pieces of data that can be brought together and other information that can be deduced or uncovered. - Shon Harris All-in-one CISSP Certification Guide pg 726 Polyinstantiation- This enables a relation to contain multiple tuples with the same primary keys with each instance distinguished by a security level. - Shon Harris All-in-one CISSP Certification Guide pg 727"
+    },
+    {
+      "id": 417,
+      "question": "How is polyinstantiation used to secure a multilevel database?",
+      "options": {
+        "A": "It prevents low-level database users from inferring the existence of higher level data.",
+        "B": "It confirms that all constrained data items within the system conform to integrity specifications.",
+        "C": "It ensures that all mechanism in a system are responsible for enforcing the database security policy.",
+        "D": "Two operations at the same layer will conflict if they operate on the same data item and at least one of them is an update."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Polyinstantiation is the development of a detailed version of an object from another object using different values in the new object. In the database information security, this term is concerned with the same primary key for different relations at different classification levels being stored in the same database. For example, in a relational database, the same of a military unit may be classified Secret in the database and may have an identification number as the primary key. If another user at a lower classification level attempts to create a confidential entry for another military unit using the same identification number as a primary key, a rejection of this attempt would imply to the lower level user that the same identification number existed at a higher level of classification. To avoid this inference channel of information, the lower level user would be issued the same identification number for their unit and the database management system would manage this situation where the same primary key was used for different units.\" Pg 352-353 Krutz: The CISSP Prep Guide: Gold Edition. \"Polyinstantiation occurs when to or more rows in the same table appear to have identical primary key elements but contain different data for use at differing classification levels. Polyinstantiation is often used as a defense against some types of inference attacks. For example, consider a database table containing the location of various naval ships on patrol. Normally, this database contains the exact position of each ship stored at the level with secret classification. However, on particular ship, the USS UpToNoGood, is on an undercover mission to a top-secret location. Military commanders do not want anyone to know that the ship deviated from its normal patrol. If the database administrators simply change the classification of the UpToNoGood's location to top secret, a user with secret clearance would know that something unusual was going on when they couldn't query the location of the ship. However, if polyinstantiation is used, two records could be inserted into the table. The first one, classified at the top secret level, would reflect the true location of the ship and be available only to users with the appropriate top secret security clearance. The second record, classified at the secret level, would indicate that the ship was on routine patrol and would be returned to users with a secret clearance.\" Pg. 191 Tittel: CISSP Study Guide Second Edition"
+    },
+    {
+      "id": 418,
+      "question": "Which of the following defines the software that maintains and provides access to the database?",
+      "options": {
+        "A": ") database management system (DBMS)",
+        "B": ") relational database management systems (RDBMS)",
+        "C": ") database identification system (DBIS)",
+        "D": ") Interface Definition Language system (IDLS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 419,
+      "question": "Which of the following is not a responsibility of a database administrator?",
+      "options": {
+        "A": ") Maintaining databases",
+        "B": ") Implementing access rules to databases",
+        "C": ") Reorganizing databases",
+        "D": ") Providing access authorization to databases"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 420,
+      "question": "SQL commands do not include which of the following?",
+      "options": {
+        "A": ") Select, Update",
+        "B": ") Grant, Revoke",
+        "C": ") Delete, Insert",
+        "D": ") Add, Replace"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"SQL commands include Select, Update, Delete, Insert, Grant, and Revoke.\" Pg 62 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 421,
+      "question": "A persistent collection of interrelated data items can be defined as which of the following?",
+      "options": {
+        "A": ") database",
+        "B": ") database management system",
+        "C": ") database security",
+        "D": ") database shadowing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 422,
+      "question": "Which one of the following is commonly used for retrofitting multilevel security to a Database Management System?",
+      "options": {
+        "A": "Trusted kernel",
+        "B": "Kernel controller",
+        "C": "Front end controller",
+        "D": "Trusted front-end"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 423,
+      "question": "Which of the following is the marriage of object-oriented and relational technologies combining the attributes of both?",
+      "options": {
+        "A": ") object-relational database",
+        "B": ") object-oriented database",
+        "C": ") object-linking database",
+        "D": ") object-management database"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 424,
+      "question": "A department manager has read access to the salaries of the employees in his/her department but not to the salaries of employees in other departments. A database security mechanism that enforces this policy would typically be said to provide which of the following?",
+      "options": {
+        "A": ") content-dependent access control",
+        "B": ") context-dependent access control",
+        "C": ") least privileges access control",
+        "D": ") ownership-based access control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Database security takes a different approach than operating system security. In an operating system, the identity and authentication of the subject controls access. This is done through access control lists (ACLs), capability tables, roles, and security labels. The operating system only makes decisions about where a subject can access a file; it does not make this decisions based on the contents of the file itself. If Mitch can access file A, it does not matter if that file contains information about a cookie recipe or secret information from the Cold War. On the other hand, database security does look at the contents of a file when it makes an access control decision, which is referred to as content-dependent access control. This type of access control increases processing overhead, but it provides higher granular control.\" Pg. 677 Shon Harris: CISSP Certification All-in-One Exam Guide"
+    },
+    {
+      "id": 425,
+      "question": "Which of the following is an important part of database design that ensures that attributes in a table depend only on the primary key?",
+      "options": {
+        "A": ") Normalization",
+        "B": ") Assimilation",
+        "C": ") Reduction",
+        "D": ") Compaction"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 426,
+      "question": "Which of the following does not address Database Management Systems (DBMS) Security?",
+      "options": {
+        "A": ") Perturbation",
+        "B": ") Cell suppression",
+        "C": ") Padded Cells",
+        "D": ") Partitioning"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 427,
+      "question": "Which of the following is commonly used for retrofitting multilevel security to a database management system?",
+      "options": {
+        "A": ") trusted front-end",
+        "B": ") trusted back-end",
+        "C": ") controller",
+        "D": ") kernel"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 428,
+      "question": "Normalizing data within a database includes all of the following except which?",
+      "options": {
+        "A": ") Eliminating repeating groups by putting them into separate tables",
+        "B": ") Eliminating redundant data",
+        "C": ") Eliminating attributes in a table that are not dependent on the primary key of that table",
+        "D": ") Eliminating duplicate key fields by putting them into separate tables"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Data Normalization Normalization is an important part of database design that ensures that attributes in a table depend only on the primary key. This process makes it easier to maintain data and have consistent reports. Normalizing data in the database consists of three steps: 1.) Eliminating any repeating groups by putting them into separate tables 2.) Eliminating redundant data (occurring in more than one table) 3.) Eliminating attributes in a table that are not dependent on the primary key of that table\" Pg. 62 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 429,
+      "question": "SQL commands do not include which of the following?",
+      "options": {
+        "A": ") Select, Update",
+        "B": ") Grant, Revoke",
+        "C": ") Delete, Insert",
+        "D": ") Add, Replace"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"SQL commands include Select, Update, Delete, Grant, and Revoke.\" Pg. 62 Krutz: The CISSP Prep Guide: Gold Edition \"Developed by IBM, SQL is a standard data manipulation and relational database definition language. The SQL Data Definition Language creates and deletes views and relations (tables). SQL commands include Select, Update, Delete, Insert, Grant, and Revoke. The latter two commands are used in access control to grant and revoke privileges to resources. Usually, the owner of an object can withhold or transfer GRANT privileges to an object to another subject. If the owner intentionally does not transfer the GRANT privileges, however, which are relative to an object to the individual A, A cannot pass on the GRANT privileges to another subject. In some instances, however, this security control can be circumvented. For example, if A copies the object, A essentially becomes the owner of that object and thus can transfer the GRANT privileges to another user, such as user B. SQL security issues include the granularity of authorization and the number of different ways you can execute the same query. Pg. 63 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 430,
+      "question": "SQL security issues include which of the following?",
+      "options": {
+        "A": ") The granularity of authorizations",
+        "B": ") The size of databases",
+        "C": ") The complexity of key structures",
+        "D": ") The number of candidate key elements"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Developed by IBM, SQL is a standard data manipulation and relational database definition language. The SQL Data Definition Language creates and deletes views and relations (tables). SQL commands include Select, Update, Delete, Insert, Grant, and Revoke. The latter two commands are used in access control to grant and revoke privileges to resources. Usually, the owner of an object can withhold or transfer GRANT privileges to an object to another subject. If the owner intentionally does not transfer the GRANT privileges, however, which are relative to an object to the individual A, A cannot pass on the GRANT privileges to another subject. In some instances, however, this security control can be circumvented. For example, if A copies the object, A essentially becomes the owner of that object and thus can transfer the GRANT privileges to another user, such as user B. SQL security issues include the granularity of authorization and the number of different ways you can execute the same query. Pg. 63 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 431,
+      "question": "Which of the following are placeholders for literal values in a Structured Query Language (SQL) query being sent to the database on a server?",
+      "options": {
+        "A": ") Bind variables",
+        "B": ") Assimilation variables",
+        "C": ") Reduction variables",
+        "D": ") Resolution variables"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 432,
+      "question": "What ensures that attributes in a table depend only on the primary key?",
+      "options": {
+        "A": ") Referential integrity",
+        "B": ") The database management system (DBMS)",
+        "C": ") Data Normalization",
+        "D": ") Entity integrity"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 433,
+      "question": "Which of the following represent the rows of the table in a relational database?",
+      "options": {
+        "A": ") attributes",
+        "B": ") records or tuples",
+        "C": ") record retention",
+        "D": ") relation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 434,
+      "question": "With regard to databases, which of the following has characteristics of ease of reusing code and analysis and reduced maintenance?",
+      "options": {
+        "A": ") Object-Oriented Data Bases (OODB)",
+        "B": ") Object-Relational Data Bases (ORDB)",
+        "C": ") Relational Data Bases",
+        "D": ") Data Base management systems (DBMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 435,
+      "question": "Complex applications involving multimedia, computer aided design, video, graphics, and expert systems are more suited to which of the following?",
+      "options": {
+        "A": ") Object-Oriented Data Bases (OODB)",
+        "B": ") Object-Relational Data Bases",
+        "C": ") Relational Data Bases",
+        "D": ") Data base management systems (DBMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 436,
+      "question": "Which of the following refers to the number of columns in a table?",
+      "options": {
+        "A": ") Schema",
+        "B": ") Relation",
+        "C": ") Degree",
+        "D": ") Cardinality"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 437,
+      "question": "Which of the following refers to the number of rows in a relation?",
+      "options": {
+        "A": ") cardinality",
+        "B": ") degree",
+        "C": ") depth",
+        "D": ") breadth"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 438,
+      "question": "Which of the following refers to the number of columns in a relation?",
+      "options": {
+        "A": ") degree",
+        "B": ") cardinality",
+        "C": ") depth",
+        "D": ") breadth"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 439,
+      "question": "What is one disadvantage of content-dependent protection of information?",
+      "options": {
+        "A": ") It increases processing overhead",
+        "B": ") It requires additional password entry",
+        "C": ") It exposes the system to data locking",
+        "D": ") It limits the user's individual address space"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Content-Dependent Access Control \"Just like the name sounds, access to objects is determined by the content within the object. This is used many times in databases and the type of Web-based material a firewall allows...If a table within the database contains information about employees' salaries, the managers were not allowed to view it, but they could view information about an employee's work history. The content of the database fields dictates which user can see specific information within the database tables.\" pg 161 Shon Harris: All-In-One CISSP Certification. Decisions will have to be made about the content, therefore increasing processing overhead."
+    },
+    {
+      "id": 440,
+      "question": "Which one of the following control steps is usually NOT performed in data warehousing applications?",
+      "options": {
+        "A": "Monitor summary tables for regular use.",
+        "B": "Control meta data from being used interactively.",
+        "C": "Monitor the data purging plan.",
+        "D": "Reconcile data moved between the operations environment and data warehouse."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Not B: It is important to control meta data from being used interactively by unauthorized users. \"Data warehouses and data mining are significant to security professionals for two reasons. First, as previously mentioned, data warehouses contain large amounts of potentially sensitive information vulnerable to aggregation and inference attacks, and security practitioners must ensure that adequate access controls and other security measures are in place to safeguard this data.\" Pg 192 Tittel: CISSP Study Guide Not C: \"The data in the data warehouse must be maintained to ensure that it is timely and valid. The term data scrubbing refers to maintenance of the data warehouse by deleting information that is unreliable or no longer relevant.\" Pg 358-359 Krutz: The CISSP Prep Guide: Gold Edition Not D: \"To create a data warehouse, data is taken from an operational database, redundancies are removed, and the data is \"cleaned up\" in general.\" Pg 358 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 441,
+      "question": "A storage information architecture does not address which of the following?",
+      "options": {
+        "A": ") archiving of data",
+        "B": ") collection of data",
+        "C": ") management of data",
+        "D": ") use of data"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 442,
+      "question": "Which of the following can be defined as the set of allowable values that an attribute can take?",
+      "options": {
+        "A": ") domain of a relation",
+        "B": ") domain name service of a relation",
+        "C": ") domain analysis of a relation",
+        "D": ") domains, in database of a relation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 443,
+      "question": "Programmed procedures which ensure that valid transactions are processed accurately and only once in the current timescale are referred to as",
+      "options": {
+        "A": "Data installation controls",
+        "B": "Application controls",
+        "C": "Operation controls",
+        "D": "Physical controls"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 444,
+      "question": "What is the most effective means of determining how controls are functioning within an operating system?",
+      "options": {
+        "A": ") Interview with computer operator",
+        "B": ") Review of software control features and/or parameters",
+        "C": ") Review of operating system manual",
+        "D": ") Interview with product vendor"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 445,
+      "question": "What is the most effective means of determining how controls are functioning within an operating system?",
+      "options": {
+        "A": ") Interview with computer operator",
+        "B": ") Review of software control features and/or parameters",
+        "C": ") Review of operating system manual",
+        "D": ") Interview with product vendor"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 446,
+      "question": "Program change controls must ensure that all changes are",
+      "options": {
+        "A": "Audited to verify intent.",
+        "B": "Tested to ensure correctness.",
+        "C": "Implemented into production systems.",
+        "D": "Within established performance criteria."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Document of the change. Once the change is approved, it should be entered into a change log and the log should be updated as the process continues toward completion. Tested and presented. The change must be fully tested to uncover any unforeseen results. Depending on the severity of the change and the company's organization, the change and implementation may need to be presented to a change control committee. This helps show different sides to the purpose and outcome of the change and the possible ramifications. - Shon Harris All-in-one CISSP Certification Guide pg 815"
+    },
+    {
+      "id": 447,
+      "question": "Which question is NOT true concerning Application Control?",
+      "options": {
+        "A": ") It limits end users use of applications in such a way that only particular screens are visible",
+        "B": ") Only specific records can be requested choice",
+        "C": ") Particular uses of application can be recorded for audit purposes",
+        "D": ") Is non-transparent to the endpoint applications so changes are needed to the applications involved"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 448,
+      "question": "A computer program used to process the weekly payroll contains an instruction that the amount of the gross pay cannot exceed $2,500 for any one employee. This instruction is an example of a control that is referred to as a:",
+      "options": {
+        "A": "sequence check",
+        "B": "check digit",
+        "C": "limit check",
+        "D": "record check"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 449,
+      "question": "What are edit controls?",
+      "options": {
+        "A": ") Preventive controls",
+        "B": ") Detective controls",
+        "C": ") Corrective controls",
+        "D": ") Compensating controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Challenge Handshake Authentication Protocol (CHAP) One of the authentication protocols used over PPP links. CHAP encrypts usernames and passwords.\" Pg. 682 Glossary: Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 450,
+      "question": "Which one of the following properties of a transaction processing system ensures that once a transaction completes successfully (commits), the update service even if there is a system failure?",
+      "options": {
+        "A": "Atomicity",
+        "B": "Consistency",
+        "C": "Isolation",
+        "D": "Durability"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Atomicity is correct. Consistency is not a viable answer. Atomicity states that database modifications must follow an \"all or nothing\" rule. Each transaction is said to be \"atomic.\" If one part of the transaction fails, the entire transaction fails. It is critical that the database management system maintain the atomic nature of transactions in spite of any DBMS, operating system or hardware failure. Consistency states that only valid data will be written to the database. If, for some reason, a transaction is executed that violates the database's consistency rules, the entire transaction will be rolled back and the database will be restored to a state consistent with those rules. On the other hand, if a transaction successfully executes, it will take the database from one state that is consistent with the rules to another state that is also consistent with the rules. Isolation requires that multiple transactions occurring at the same time not impact each other's execution. For example, if Joe issues a transaction against a database at the same time that Mary issues a different transaction, both transactions should operate on the database in an isolated manner. The database should either perform Joe's entire transaction before executing Mary's or vice-versa. This prevents Joe's transaction from reading intermediate data produced as a side effect of part of Mary's transaction that will not eventually be committed to the database. Note that the isolation property does not ensure which transaction will execute first, merely that they will not interfere with each other. Durability ensures that any transaction committed to the database will not be lost. Durability is ensured through the use of database backups and transaction logs that facilitate the restoration of committed transactions in spite of any subsequent software or hardware failures."
+    }
+  ]
+}

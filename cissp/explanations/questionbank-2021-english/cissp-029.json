@@ -1,0 +1,729 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1401 - Q1444",
+    "total_questions": 44
+  },
+  "questions": [
+    {
+      "id": 1401,
+      "question": "If an employee is suspected of computer crime and evidence need to be collected, which of the following departments must be involved with the procedure?",
+      "options": {
+        "A": "Public relations",
+        "B": "Law enforcement",
+        "C": "Computer security",
+        "D": "Auditing",
+        "E": "HR"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Human Resources always needs to be involved if an employee is suspected of wrongdoing. They know what rules apply to protect and prosecute employees."
+    },
+    {
+      "id": 1402,
+      "question": "What is it called when a system has apparent flaws that were deliberately available for penetration and exploitation?",
+      "options": {
+        "A": "A jail",
+        "B": "Investigation",
+        "C": "Enticement",
+        "D": "Data manipulation",
+        "E": "Trapping"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Administrators that leave systems with apparent flaws are performing an act of enticement. This is sometimes called a honeypot."
+    },
+    {
+      "id": 1403,
+      "question": "Why are computer generated documents not considered reliable?",
+      "options": {
+        "A": "Difficult to detect electron tampering",
+        "B": "Stored in volatile media",
+        "C": "Unable to capture and reproduce",
+        "D": "Too delicate",
+        "E": "Because of US law, Section 7 paragraph 154"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Because it is difficult to detect electron tampering and can be easily modified."
+    },
+    {
+      "id": 1404,
+      "question": "What is the name of the software that prevents users from seeing all items or directories on a computer and is most commonly found in the UNIX/Linux environment?",
+      "options": {
+        "A": "Shell Kits",
+        "B": "Root Kits",
+        "C": "Ethereal",
+        "D": "Shadow data",
+        "E": "Netbus"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1405,
+      "question": "What is a commercial application of steganography that is used to identify pictures or verify their authenticity?",
+      "options": {
+        "A": "A MAC",
+        "B": "A digital checksum",
+        "C": "A MD5 hash",
+        "D": "A digital signature",
+        "E": "A watermark"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "A watermark is a commercial application of steganography that is used to identify pictures or verify its authenticity."
+    },
+    {
+      "id": 1406,
+      "question": "What are the basic questions that must be asked at the beginning of any investigation?(Choose all that apply)",
+      "options": {
+        "A": "Who",
+        "B": "Cost",
+        "C": "What",
+        "D": "When",
+        "E": "Where",
+        "F": "How",
+        "G": "Time frame H. Budget"
+      },
+      "answers": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "At the beginning of any investigation, an investigator must ask who, what, when, where, and how. Answering the questions will lead to the successful conclusion of the case."
+    },
+    {
+      "id": 1407,
+      "question": "Risk can be eliminated.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Risk can never be eliminated. It may be reduced or transferred to a third party through insurance, but will always remain in some form."
+    },
+    {
+      "id": 1408,
+      "question": "Employees are a greater risk to employers than outsiders. T/F(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Employees are a greater risk to employers than outsiders, because they possess two of the three items required to commit a crime: means and opportunity."
+    },
+    {
+      "id": 1409,
+      "question": "What does the term \"red boxing\" mean?",
+      "options": {
+        "A": "Denial of Service",
+        "B": "Telephone voltage manipulation",
+        "C": "Sounds of coins dropping",
+        "D": "Tone manipulation",
+        "E": "A salami attack"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Red boxing was used by phone phreakers to record the sound off coins dropping in pay phones and play it back to gain free phone access."
+    },
+    {
+      "id": 1410,
+      "question": "Which of the following is the proper lifecycle of evidence?",
+      "options": {
+        "A": "A Collection, storage, present in court, destroy",
+        "B": "Collection, transportation, storage, return to owner",
+        "C": "Collection, present in court, transportation, return to owner",
+        "D": "Collection, analysis, storage, present in court, return to owner",
+        "E": "Collection, storage, transportation, present in court, return to owner"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The life cycle of evidence includes: collection, analysis, storage, present in court, and return to owner"
+    },
+    {
+      "id": 1411,
+      "question": "A copy of a computer disk would be what type of evidence?",
+      "options": {
+        "A": "Secondary",
+        "B": "Best",
+        "C": "Hearsay",
+        "D": "Direct",
+        "E": "Indirect"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A copy of a computer disk is considered hearsay, because unless it has been copied in a forensically approved manner, it is not credible evidence."
+    },
+    {
+      "id": 1412,
+      "question": "A copyright protects _________.",
+      "options": {
+        "A": "The trade secrets of a company",
+        "B": "A persons private papers",
+        "C": "An invention",
+        "D": "An expression or an idea",
+        "E": "Distinguishing or unique characters, colors, or words"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A copyright protects the expression of a resource, not the resource directly."
+    },
+    {
+      "id": 1413,
+      "question": "________ is a ________ attack that eavesdrops on communication. (Choose two)",
+      "options": {
+        "A": "Passive",
+        "B": "Active",
+        "C": "Brute force",
+        "D": "Wiretapping",
+        "E": "Password cracking"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Wiretapping is a passive attack that eavesdrops on communication. It is only legal with prior consent or a warrant."
+    },
+    {
+      "id": 1414,
+      "question": "What types of laws are considered standards of performance or conduct expected by government agencies from companies, industries, and certain officials.(Chose all that apply)",
+      "options": {
+        "A": "Civil",
+        "B": "Criminal",
+        "C": "Administrative",
+        "D": "Regulatory",
+        "E": "Tort"
+      },
+      "answers": [
+        "C",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Administrative or regulatory laws are considered standards of performance or conduct expected by government agencies from companies, industries, and certain officials."
+    },
+    {
+      "id": 1415,
+      "question": "Sandra's employer is considering placing login banners on all company computers to indicate to the users about the permitted use of company computers. What is this called?",
+      "options": {
+        "A": "Employee privacy law",
+        "B": "Employee policies",
+        "C": "Employee regulations",
+        "D": "User policies",
+        "E": "Acceptable use policy"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Acceptable use policies provide the company with legal protection. Logon banners should be used to inform users what will happen if they do not follow company rules."
+    },
+    {
+      "id": 1416,
+      "question": "________ deemed proprietary to a company and can be information that provides a competitive edge.",
+      "options": {
+        "A": "Trade secrets are",
+        "B": "Copyrights are",
+        "C": "Restricted information is",
+        "D": "Information marked strictly private is"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Trade secrets are deemed proprietary to a company and can be information that provides a competitive edge. This information is protected as long as the owner takes the necessary security actions."
+    },
+    {
+      "id": 1417,
+      "question": "Sandra is studying for her CISSP exam. Sandra has come to you for help and wants to know what the last step in the change control process is?",
+      "options": {
+        "A": "Validated and approved",
+        "B": "Test and implement",
+        "C": "Review and approve",
+        "D": "Report change to management",
+        "E": "Inform user of change"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reporting the change to management is the last step in the process."
+    },
+    {
+      "id": 1418,
+      "question": "Who is ultimately responsible for the security of an organization?",
+      "options": {
+        "A": "Management",
+        "B": "Senior management",
+        "C": "The chief security officer",
+        "D": "Department heads",
+        "E": "Employees"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Senior management is ultimately responsible for the security of an organization. Policy flows from the top down."
+    },
+    {
+      "id": 1419,
+      "question": "Which of the following falls under the categories of configuration management?(Choose three)",
+      "options": {
+        "A": "Operating system configuration",
+        "B": "Software configuration",
+        "C": "Hardware configuration",
+        "D": "Logical configuration",
+        "E": "Physical configuration"
+      },
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "type": "multiple",
+      "explanation": "Configuration management controls the changes that take place in hardware, software, and operating systems."
+    },
+    {
+      "id": 1420,
+      "question": "Macro viruses infect what type of files.",
+      "options": {
+        "A": "Microsoft office files",
+        "B": "Mail servers",
+        "C": "E-mail messages",
+        "D": "Web browsers",
+        "E": "Linux Kernel files"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Macro viruses infect Microsoft office files. There are many macro viruses because the macro language is easy to use and because Microsoft Office is prolific."
+    },
+    {
+      "id": 1421,
+      "question": "What is another name for rows and columns within relational databases?(Choose two)",
+      "options": {
+        "A": "Attributes",
+        "B": "Keys",
+        "C": "Tuples",
+        "D": "Views",
+        "E": "Attributes"
+      },
+      "answers": [
+        "C",
+        "E"
+      ],
+      "type": "multiple",
+      "explanation": "Within a relational database, the rows of a table are called tuples and the columns are called attributes."
+    },
+    {
+      "id": 1422,
+      "question": "Which of the following can reproduce itself without the help of system applications or resources?",
+      "options": {
+        "A": "Trojan",
+        "B": "Logic bomb",
+        "C": "Virus",
+        "D": "Worm",
+        "E": "Backdoor"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Worms can reproduce themselves without the help of system applications or resources."
+    },
+    {
+      "id": 1423,
+      "question": "What is the final stage of the system development life cycle?",
+      "options": {
+        "A": "Certification",
+        "B": "Validation",
+        "C": "Evaluation",
+        "D": "Implementation",
+        "E": "Maintenance",
+        "F": "Installation"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Maintenance is the final stage of the system development life cycle."
+    },
+    {
+      "id": 1424,
+      "question": "A polymorphic virus is _____________.",
+      "options": {
+        "A": "A virus that makes copies of itself and then makes changes to those copies",
+        "B": "A virus that can make itself stealth",
+        "C": "A virus that is written in a macro language",
+        "D": "A virus that is written in visual basic",
+        "E": "A virus that infects the boot sector of a hard drive"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A polymorphic virus is a virus that makes copies of itself, then makes changes to those copies. It does this in hopes of avoiding detection of anti-virus software."
+    },
+    {
+      "id": 1425,
+      "question": "Which one of the following is identified by a business impact analysis?(Choose three)",
+      "options": {
+        "A": "Determining regulatory requirements",
+        "B": "Analyzing the threats associated with each functional area",
+        "C": "Determining the risk associated with each threat",
+        "D": "Identifying the major functional areas of information",
+        "E": "Determining the team members that will be associated with disaster planning"
+      },
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "The following identifies a business impact analysis: analyzing the threats associated with each functional area, determining the risk associated with each threat, and identifying the major functional areas of information."
+    },
+    {
+      "id": 1426,
+      "question": "_______ are the step-by-step instructions used to satisfy control requirements.",
+      "options": {
+        "A": "Policy",
+        "B": "Procedure",
+        "C": "Guideline",
+        "D": "Standard",
+        "E": "Outline"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Procedures are the step-by-step instructions used to satisfy control requirements."
+    },
+    {
+      "id": 1427,
+      "question": "Which of the following are controls that can be used to secure faxing of sensitive data?(Choose all that apply)",
+      "options": {
+        "A": "Disable automatic printing",
+        "B": "Print \"sensitive document banner\" on each page",
+        "C": "Fax encryptor",
+        "D": "Send to email boxes instead of printing",
+        "E": "Restrict the use of fax machines that use a ribbon or duplication cartridge"
+      },
+      "answers": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "type": "multiple",
+      "explanation": "All of the items listed can help secure faxes except printing a sensitive document banner, which actually encourages people to look at the document."
+    },
+    {
+      "id": 1428,
+      "question": "Which of the following are considered administrative controls?(Choose all that apply)",
+      "options": {
+        "A": "Rotation of duties",
+        "B": "Separation of duties",
+        "C": "Implementation of WEP keys",
+        "D": "Enforcing mandatory vacations"
+      },
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Rotation of duties, separation of duties, and mandatory vacations are all administrative controls, enforcing WEP is a technical control"
+    },
+    {
+      "id": 1429,
+      "question": "Why should organizations enforce separation of duties?",
+      "options": {
+        "A": "It ensures compliance with federal union rules",
+        "B": "It helps verify that all employees know their job tasks",
+        "C": "It provides for a better work environment",
+        "D": "It encourages collusion",
+        "E": "It is considered valuable in deterring fraud"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Separation of duties is considered valuable in deterring fraud since fraud can occur if an opportunity exists for collaboration between various job related capabilities. The most commonly used examples are the separate transactions needed to initiate a payment and to authorize a payment. No single individual should be capable of executing both transactions."
+    },
+    {
+      "id": 1430,
+      "question": "What is the most secure way to dispose of data held on a CD?",
+      "options": {
+        "A": "Reformatting",
+        "B": "Sanitizing",
+        "C": "Physical destruction",
+        "D": "Degaussing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Since CD's cannot be sanitized in a way to remove all data, they should be physically destroyed. There are many products that con do this. Some actually shred the CD!"
+    },
+    {
+      "id": 1431,
+      "question": "What is the most accepted way to dispose data held on a floppy disk?",
+      "options": {
+        "A": "Reformatting",
+        "B": "Sanitizing",
+        "C": "Physical destruction",
+        "D": "Degaussing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Degaussing is the most accepted way of disposing data held on a floppy disk."
+    },
+    {
+      "id": 1432,
+      "question": "Which of the following is NOT an attack against operations?",
+      "options": {
+        "A": "Morris Worm",
+        "B": "SYN Denial of Service",
+        "C": "Buffer Overflow",
+        "D": "Brute force",
+        "E": "Known plain text attack"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "A known plain text attack is an attack against the organization's cryptosystem, not a direct attack against operations."
+    },
+    {
+      "id": 1433,
+      "question": "Which one of the following tools can be used to launch a Distributed Denial of service attack against a network?",
+      "options": {
+        "A": "Satan",
+        "B": "Saint",
+        "C": "Trinoo",
+        "D": "Nmap",
+        "E": "Netcat"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Trinoo and the Tribal Flood Network (TFN) are the two most commonly used distributed denial of service attacks. The other four tools mentioned are reconnaissance techniques used to map networks and scan for known vulnerabilities."
+    },
+    {
+      "id": 1434,
+      "question": "Which one of the following network attacks takes advantages of weaknesses in the fragment reassembly functionality of the TCP/IP protocol stack?",
+      "options": {
+        "A": "Teardrop",
+        "B": "Smurf",
+        "C": "Ping of Death",
+        "D": "SYN flood",
+        "E": "SNMP Attack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The teardrop attack uses overlapping packet fragments to confuse a target system and cause the system to reboot or crash."
+    },
+    {
+      "id": 1435,
+      "question": "What are the elements of the CIA triad?(Choose three)",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Accountability",
+        "C": "Accessibility",
+        "D": "Integrity",
+        "E": "Interest",
+        "F": "Control",
+        "G": "Availability"
+      },
+      "answers": [
+        "A",
+        "D",
+        "G"
+      ],
+      "type": "multiple",
+      "explanation": "The essential security principles of confidentiality, integrity, and availability are referred to as the CIA Triad."
+    },
+    {
+      "id": 1436,
+      "question": "____________ is the first step of access control.",
+      "options": {
+        "A": "Identification",
+        "B": "Authorization",
+        "C": "Validation",
+        "D": "Interrogation",
+        "E": "Accountability logging"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The first step in the access control process is identifying who the subject is."
+    },
+    {
+      "id": 1437,
+      "question": "What is a Type 2 authentication factor?",
+      "options": {
+        "A": "Something you know",
+        "B": "Something you are",
+        "C": "Something you have"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A Type 2 authentication factor is something you have, such as a smart card, ATM card, token device, memory card, etc."
+    },
+    {
+      "id": 1438,
+      "question": "_______ requires that two entities work together to complete a task?",
+      "options": {
+        "A": "Rotation of duties",
+        "B": "Separation of duties",
+        "C": "Dual controls",
+        "D": "Enforced mandatory vacations",
+        "E": "Workplace rules"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Dual controls require that two entities work together to complete a task. This is used to reduce the possibility of fraud."
+    },
+    {
+      "id": 1439,
+      "question": "PGP provides which of the following?(Choose three)",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Accountability",
+        "C": "Accessibility",
+        "D": "Integrity",
+        "E": "Interest",
+        "F": "Non-repudiation",
+        "G": "Authenticity"
+      },
+      "answers": [
+        "A",
+        "D",
+        "G"
+      ],
+      "type": "multiple",
+      "explanation": "PGP provides confidentiality, integrity, and authenticity."
+    },
+    {
+      "id": 1440,
+      "question": "Computer security is generally considered the responsibility of everyone in the organization.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Everyone is responsible for security."
+    },
+    {
+      "id": 1441,
+      "question": "Which aspect of security was the Bell-LaPadula access control model designed to protect?",
+      "options": {
+        "A": "Authenticity",
+        "B": "Accountability",
+        "C": "Accessibility",
+        "D": "Integrity",
+        "E": "Interest",
+        "F": "Non-repudiation",
+        "G": "Confidentiality"
+      },
+      "answers": [
+        "G"
+      ],
+      "type": "single",
+      "explanation": "The Bell-LaPadula model is focused on maintaining confidentiality."
+    },
+    {
+      "id": 1442,
+      "question": "Which access control method uses security policies and security awareness training to stop or deter an unauthorized activity from occurring?",
+      "options": {
+        "A": "Administrative",
+        "B": "Preventative",
+        "C": "Detective",
+        "D": "Authoritative",
+        "E": "Corrective"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Preventative access control is deployed to stop an unauthorized activity from occurring."
+    },
+    {
+      "id": 1443,
+      "question": "The Secure Hash Algorithm (SHA) is specified in?",
+      "options": {
+        "A": "Digital Encryption Standard",
+        "B": "Digital Signature Standard",
+        "C": "Digital Encryption Standard",
+        "D": "Advanced Encryption Standard",
+        "E": "NSA 1403"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Secure Hash Algorithm (SHA) is specified in the Digital Encryption Standard. This is the most widely used encryption to date. It is used to encrypt millions of files ranging from matters of national security, to bank accounts, and electronic funds transfers."
+    },
+    {
+      "id": 1444,
+      "question": "Which of the following is an example of a symmetric key algorithm?(Choose all that apply)",
+      "options": {
+        "A": "Rijndael",
+        "B": "RSA",
+        "C": "Diffie-Hellman",
+        "D": "Knapsack",
+        "E": "IDEA"
+      },
+      "answers": [
+        "A",
+        "E"
+      ],
+      "type": "multiple",
+      "explanation": "All the others except Rijndael and IDEA are examples of asymmetric key algorithms."
+    }
+  ]
+}

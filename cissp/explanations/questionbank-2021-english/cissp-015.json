@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q701 - Q750",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 701,
+      "question": "Which of the following is a class A fire?",
+      "options": {
+        "A": ") common combustibles",
+        "B": ") liquid",
+        "C": ") electrical",
+        "D": ") Halon"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 702,
+      "question": "To be in compliance with the Montreal Protocol, which of the following options can be taken to refill a Halon flooding system in the event that Halon is fully discharged in the computer room?",
+      "options": {
+        "A": ") Order an immediate refill with Halon 1201 from the manufacture",
+        "B": ") Contact a Halon recycling bank to make arrangements for a refill",
+        "C": ") Order a different chlorofluorocarbon compound from the manufacture",
+        "D": ") Order an immediate refill with Halon 1301 from the manufacture"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 703,
+      "question": "Under what conditions would the use of a Class C fire extinguisher be preferable to a Class A extinguisher?",
+      "options": {
+        "A": ") When the fire involves paper products",
+        "B": ") When the fire is caused by flammable products",
+        "C": ") When the fire involves electrical equipment",
+        "D": ") When the fire is in an enclosed area"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 704,
+      "question": "Which of the following is true about a \"dry pipe\" sprinkler system?",
+      "options": {
+        "A": ") It is a substitute for carbon dioxide systems",
+        "B": ") It maximizes chances of accidental discharge of water",
+        "C": ") it minimizes chances of accidental discharge of water",
+        "D": ") It uses less water than \"wet pipe\" systems"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 705,
+      "question": "Under what conditions would use of a \"Class C\" hand-held fire extinguisher be preferable to use of a \"Class A\" hand-held fire extinguisher?",
+      "options": {
+        "A": ") When the fire is in its incipient stage",
+        "B": ") When the fire involves electrical equipment",
+        "C": ") When the fire is located in an enclosed area",
+        "D": ") When the fire is caused by flammable products"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 706,
+      "question": "Which fire class can water be most appropriate for?",
+      "options": {
+        "A": ") Class A fires",
+        "B": ") Class B fires",
+        "C": ") Class C fires",
+        "D": ") Class D fires"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 707,
+      "question": "What category of water sprinkler system is currently the most recommended water system for a computer room?",
+      "options": {
+        "A": ") Dry Pipe sprinkler system",
+        "B": ") Wet Pipe sprinkler system",
+        "C": ") Pre-action sprinkler system",
+        "D": ") Deluge sprinkler system"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 708,
+      "question": "Which of the following is currently the most recommended water system for a computer room?",
+      "options": {
+        "A": ") pre-action",
+        "B": ") wet pipe",
+        "C": ") dry pipe",
+        "D": ") deluge"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 496 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 709,
+      "question": "According to the ISC2, what should be the fire rating for the walls of an information processing facility?",
+      "options": {
+        "A": ") All walls must have a one-hour minimum fire rating",
+        "B": ") All walls must have a one-hour minimum fire rating, except for walls to adjacent rooms where records such as paper and media are stored, which should have a two-hour minimum fire rating",
+        "C": ") All walls must have a two-hour minimum fire rating",
+        "D": ") All walls must have a two-hour minimum fire rating, except for walls to adjacent rooms where records such as paper and media are stored, which should have a three-hour minimum fire rating."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 710,
+      "question": "Which of the following suppresses the fuel supply of the fire?",
+      "options": {
+        "A": ") soda acid",
+        "B": ") Co2",
+        "C": ") Halon",
+        "D": ") water"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 711,
+      "question": "Which of the following is true about a \"dry pipe\" sprinkler system?",
+      "options": {
+        "A": ") It is a substitute for carbon dioxide systems",
+        "B": ") It maximizes chances of accidental discharge of water",
+        "C": ") It minimizes chances of accidental discharge of water",
+        "D": ") It uses less water than \"wet pipe\" systems"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 712,
+      "question": "The most prevalent cause of computer center fires is which of the following?",
+      "options": {
+        "A": ") AC equipment",
+        "B": ") electrical distribution systems",
+        "C": ") heating systems",
+        "D": ") natural causes"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 713,
+      "question": "What fire suppression system can be used in computer rooms that will not damage computers and is safe for humans?",
+      "options": {
+        "A": ") Water",
+        "B": ") FM200",
+        "C": ") Halon",
+        "D": ") CO2"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: http://www.fireline.com/fl_fm200firesuppression.html FM-200 Systems FM-200 Fire Suppression Systems - Halon Alternatives Fire Protection Systems FM200 is a fire suppression system agent manufactured by Great Lakes Chemical. How FM200 Suppresses Fire FM200 suppresses fire by discharging as a gas onto the surface of combusting materials. Large amounts of heat energy are absorbed from the surface of the burning material, lowering it's temperature below the ignition point. FM200 Fire Suppression Systems and the Environment FM200 fire suppression systems have low atmospheric lifetimes, global warming, and ozone depletion potentials. Unlike Halon 1301 fire suppression systems, FM200 systems are environmentally friendly. They provide an effective, safe method of special hazards fire suppression where a non-residue producing clean agent is essential."
+    },
+    {
+      "id": 714,
+      "question": "The following are fire detector types EXCEPT:",
+      "options": {
+        "A": ") smoke activated",
+        "B": ") flame actuated",
+        "C": ") acoustical-seismic detection system",
+        "D": ") heat activated"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 715,
+      "question": "Which fire class can water be most appropriate for?",
+      "options": {
+        "A": ") Class A fires",
+        "B": ") Class B fires",
+        "C": ") Class C fires",
+        "D": ") Class D fires"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Fire Extinguisher Classes Class Type Suppression Material A Common combustibles Water, soda acid (dry powder) B Liquids CO2 , Halon, soda acid C Electrical CO2, Halon\" Pg. 578 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 716,
+      "question": "Which one of the following actions should be taken FIRST after a fire has been detected?",
+      "options": {
+        "A": "Turn off power to the computers",
+        "B": "Call the fire department",
+        "C": "Notify management",
+        "D": "Evacuate all personnel"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Protection of life is of the utmost importance and should be dealt with first before looking to save material objects. . - Shon Harris All-in-one CISSP Certification Guide pg 625"
+    },
+    {
+      "id": 717,
+      "question": "Which of the following provides coordinated procedures for minimizing loss of life or injury and protecting property damage in response to a physical threat?",
+      "options": {
+        "A": ") Business continuity plan",
+        "B": ") Incident response plan",
+        "C": ") Disaster recovery plan",
+        "D": ") Occupant emergency plan"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Occupant Emergency Plan (OEP). The OEP is a document providing coordinated procedures for minimizing loss of life or injury and protecting property damage in response to a physical threat. It does not necessarily deal with business systems or IT system functionality, but rather focuses on personnel and property at a specific facility.\" Pg 666 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 718,
+      "question": "Disaster Recovery Plan emergency produces is a plan of action that commences immediately to prevent or minimize property damage and to:",
+      "options": {
+        "A": "Prevent interruption of service.",
+        "B": "Minimize embarrassment.",
+        "C": "Prevent loss of life.",
+        "D": "Evacuate the facility."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Protection of life is of the utmost importance and should be dealt with first before looking to save material objects. - Shon Harris All-in-one CISSP Certification Guide pg 625"
+    },
+    {
+      "id": 719,
+      "question": "What is the PRIMARY concern during a disaster?",
+      "options": {
+        "A": "Recover of the critical functions.",
+        "B": "Availability of a hot site.",
+        "C": "Acceptable outage duration.",
+        "D": "Personnel safety."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Personal safety goes way above and beyond all other things, unless you're a rescue worker, and even then safety is still priority #1. Recovering critical functions and down time are not the MOST important concerns; Data can be recovered, a potential life loss cannote be Making Personal safety of the utmost important."
+    },
+    {
+      "id": 720,
+      "question": "Which of the following elements is not included in a Public Key Infrastructure (PKI)?",
+      "options": {
+        "A": ") Timestamping",
+        "B": ") Lightweight Directory Access Protocol (LDAP)",
+        "C": ") Certificate revocation",
+        "D": ") Internet Key Exchange (IKE)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 721,
+      "question": "In a Public Key Infrastructure (PKI) context, which of the following is a primary concern with LDAP servers?",
+      "options": {
+        "A": ") Availability",
+        "B": ") Accountability",
+        "C": ") Confidentiality",
+        "D": ") Flexibility"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 722,
+      "question": "What is NOT true with pre shared key authentication within IKE/IPsec protocol:",
+      "options": {
+        "A": ") pre shared key authentication is normally based on simple passwords",
+        "B": ") needs a PKI to work",
+        "C": ") Only one preshared key for all VPN connections is needed",
+        "D": ") Costly key management on large user groups"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 723,
+      "question": "What is the role of IKE within the IPsec protocol:",
+      "options": {
+        "A": ") peer authentication and key exchange",
+        "B": ") data encryption",
+        "C": ") data signature",
+        "D": ") enforcing quality of service"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"In order to set up and manage Sas on the Internet, a standard format called the Internet Security Association and Key Management Protocol (ISAKMP) was established. ISAKMP provides for secure key exchange and data authentication. However, ISAKMP is independent of the authentication protocols, security protocols, and encryption algorithms. Strictly speaking, a combination of three protocols is used to define key management for IPSEC. These protocols are ISAKMP, Secure Key Exchange Mechanism (SKEME) and Oakley. When combined and applied to IPSEC, these protocols are called the Internet Key Exchange (IKE) protocol.\" Pg. 222 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 724,
+      "question": "In a Public Key Infrastructure, how are public keys published?",
+      "options": {
+        "A": ") They are sent via e-mail",
+        "B": ") Through digital certificates",
+        "C": ") They are sent by owners",
+        "D": ") They are not published"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 725,
+      "question": "Which of the following is defined as a key establishment protocol based on the Diffie-Hellman algorithm proposed for IPsec but superseded by IKE?",
+      "options": {
+        "A": ") Diffie-Hellman Key Exchange Protocol",
+        "B": ") Internet Security Association and Key Management Protocol (ISAKMP)",
+        "C": ") Simple Key-management for Internet Protocols (SKIP)",
+        "D": ") OAKLEY"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 726,
+      "question": "Which of the following defines the key exchange for Internet Protocol Security (IPSEC)?",
+      "options": {
+        "A": "Internet Security Association Key Management Protocol (ISAKMP)",
+        "B": "Internet Key Exchange (IKE)",
+        "C": "Security Key Exchange (SKE)",
+        "D": "Internet Communication Messaging Protocol (ICMP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Because Ipsec is a framework, it does not dictate what hashing and encryption algorithms are to be used or how keys are to be exchanged between devices. Key management can be handled through manual process or automated a key management protocol. The Internet Security Association and Key management Protocol (ISAKMP) is an authentication and key exchange architecture that is independent of the type of keying mechanisms used. Pg 577 Shon Harris All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 727,
+      "question": "A network of five nodes is using symmetrical keys to securely transmit data. How many new keys are required to re-establish secure communications to all nodes in the event there is a key compromise?",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "20",
+        "D": "25"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In a typical vpn using secret keys there would be one key at central office and the same key provided for each telecommuter, in this case 4. If the key was compromised, all 5 keys would have to be changed. \"Secret key cryptography is the type of encryption that is familiar to most people. In this type of cryptography, the sender and receiver both know a secret key. The sender encrypts the plaintext message with the secret key, and the receiver decrypts the message with the same secret key.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 194"
+    },
+    {
+      "id": 728,
+      "question": "What is the effective key size of DES?",
+      "options": {
+        "A": ") 56 bits",
+        "B": ") 64 bits",
+        "C": ") 128 bits",
+        "D": ") 1024 bits"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 729,
+      "question": "Matches between which of the following are important because they represent references from one relation to another and establish the connection among these relations?",
+      "options": {
+        "A": ") foreign key to primary key",
+        "B": ") foreign key to candidate key",
+        "C": ") candidate key to primary key",
+        "D": ") primary key to secondary key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 730,
+      "question": "Which of the following can best be defined as a key distribution protocol that uses hybrid encryption to convey session keys that are used to encrypt data in IP packets?",
+      "options": {
+        "A": ") Internet Security Association and Key Management Protocol (ISKAMP)",
+        "B": ") Simple Key-Management for Internet Protocols (SKIP)",
+        "C": ") Diffie-Hellman Key Distribution Protocol",
+        "D": ") IPsec Key Exchange (IKE)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 117 Krutz"
+    },
+    {
+      "id": 731,
+      "question": "What is the PRIMARY advantage of secret key encryption systems as compared with public key systems?",
+      "options": {
+        "A": "Faster speed encryption",
+        "B": "Longer key lengths",
+        "C": "Easier key management",
+        "D": "Can be implemented in software"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The major strength of symmetric key cryptography is the great speed at which it can operate. By the nature of the mathematics involved, symmetric key cryptography also naturally lends itself to hardware implementations, creating the opportunity for even higher-speed operations.\" Pg. 309 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 732,
+      "question": "In a cryptographic key distribution system, the master key is used to exchange?",
+      "options": {
+        "A": "Session keys",
+        "B": "Public keys",
+        "C": "Secret keys",
+        "D": "Private keys"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The Key Distribution Center (KDC) is the most import component within a Kerberos environment. The KDC holds all users' and services' cryptographic keys. It provides authentication services, as well as key distribution functionality. The clients and services trust the integrity of the KDC, and this trust is the foundation of Kerberos security.\" Pg. 148 Shon Harris CISSP All-In-One Certification Exam Guide 'The basic principles of Kerberos operation are as follows: 1.) The KDC knows the secret keys of all clients and servers on the network. 2.) The KDC initially exchanges information with the client and server by using these secret keys. 3.) Kerberos authenticates a client to a requested service on a server through TGS, and by using temporary symmetric session keys for communications between the client and KDC, the server and the KDC, and the client and server. 4.) Communication then takes place between the client and the server using those temporary session keys.\" Pg. 40 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 733,
+      "question": "Which Application Layer security protocol requires two pair of asymmetric keys and two digital certificates?",
+      "options": {
+        "A": ") PEM",
+        "B": ") S/HTTP",
+        "C": ") SET",
+        "D": ") SSL"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 734,
+      "question": "Which of the following can be defined as an attribute in one relation that has values matching the primary key in another relation?",
+      "options": {
+        "A": ") foreign key",
+        "B": ") candidate key",
+        "C": ") Primary key",
+        "D": ") Secondary key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 243 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 735,
+      "question": "What key size is used by the Clipper Chip?",
+      "options": {
+        "A": ") 40 bits",
+        "B": ") 56 bits",
+        "C": ") 64 bits",
+        "D": ") 80 bits"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Each Clipper Chip has a unique serial number and an 80-bit unique unit or secret key. The unit key is divided into tow parts and is stored at two separate organizations with the serial number that uniquely identifies that particular Clipper Chip.\" Pg 166 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 736,
+      "question": "What uses a key of the same length as the message?",
+      "options": {
+        "A": ") Running key cipher",
+        "B": ") One-time pad",
+        "C": ") Steganography",
+        "D": ") Cipher block chaining"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"A one-time pad is an extremely powerful type of substitution cipher. One-time pads use a different alphabet for each letter of the plaintext message. Normally, one-time pads are written as a very long series of numbers to be plugged into the function. The great advantage to one-time pads is that, when used properly, they are an unbreakable encryption scheme. There is no repeating pattern of alphabetic substitution, redering cryptanalytic efforts useless. However, several requirements must be met to ensure the integrity of the algorithm: The encryption key must be randomly generated. Using a phrase or a passage from a book would introduce the possibility of cryptanalysts breaking the code. The one-time pad must be physically secured against disclosure. If the enemy has a copy of the pad, they can easily decrypt the enciphered messages. Each one-time pad must be used only once. If pads are reused, cryptanalysts can compare similarities in multiple messages encrypted with the same pad and possibly determine the key values used. The key must be at least as long as the message to be encrypted. This is because each key element is used to encode only one character of the message. Pg. 304-305 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 737,
+      "question": "Which of the following statements related to a private key cryptosystem is FALSE?",
+      "options": {
+        "A": ") The encryption key should be secure",
+        "B": ") Data Encryption Standard (DES) is a typical private key cryptosystem",
+        "C": ") The key used for decryption is known to the sender",
+        "D": ") Two different keys are used for the encryption and decryption"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"In symmetric key cryptography, a single secret key is used between entities, wheareas in public key systems, each entity has different keys, or asymmetric keys.\" Pg 476 Shon Harris CISSP Certification All-in-One Exam Guide"
+    },
+    {
+      "id": 738,
+      "question": "Simple Key Management for Internet Protocols (SKIP) is similar to Secure Sockets Layer (SSL), except that it requires no prior communication in order to establish or exchange keys on a:",
+      "options": {
+        "A": ") Secure Private keyring basis",
+        "B": ") response-by-session basis",
+        "C": ") Remote Server basis",
+        "D": ") session-by-session basis"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 117 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 739,
+      "question": "A weak key of an encryption algorithm has which of the following properties?",
+      "options": {
+        "A": ") It is too short, and thus easily crackable",
+        "B": ") It facilitates attacks against the algorithm",
+        "C": ") It has much more zeroes than ones",
+        "D": ") It can only be used as a public key"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 740,
+      "question": "Security measures that protect message traffic independently on each communication path are called:",
+      "options": {
+        "A": "Link oriented",
+        "B": "Procedure oriented",
+        "C": "Pass-through oriented",
+        "D": "End-to-end oriented"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Link encryption encrypts all the data along a specific communication path like a satellite link, T3 line, or telephone circuit. Not only is the user information encrypted, but the header, trailers, addresses, and routing data hat are part of the packets are also encrypted. This provides extra protection against packet sniffers and eavesdroppers. - Shon Harris All-in-one CISSP Certification Guide pg 560"
+    },
+    {
+      "id": 741,
+      "question": "Who is responsible for the security and privacy of data during a transmission on a public communications link?",
+      "options": {
+        "A": "The carrier",
+        "B": "The sending",
+        "C": "The receiving party",
+        "D": "The local service provider"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The sender of an email is responsible for encryption if security is desired. A bank that sends data across web is responsible to utilize a secure protocol."
+    },
+    {
+      "id": 742,
+      "question": "Which of the following best provides e-mail message authenticity and confidentiality?",
+      "options": {
+        "A": ") Signing the message using the sender's public key and encrypting the message using the receiver's private key",
+        "B": ") Signing the message using the sender's private key and encrypting the message using the receiver's public key",
+        "C": ") Signing the message using the receiver's private key and encrypting the message using the sender's public key",
+        "D": ") Signing the message using the receiver's public key and encrypting the message with the sender's private key"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 743,
+      "question": "Cryptography does not help in:",
+      "options": {
+        "A": ") Detecting fraudulent insertion",
+        "B": ") Detecting fraudulent deletion",
+        "C": ") Detecting fraudulent modifications",
+        "D": ") Detecting fraudulent disclosure"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 744,
+      "question": "Which of the following is NOT a property of a one-way hash function?",
+      "options": {
+        "A": ") It converts a message of a fixed length into a message digest of arbitrary length",
+        "B": ") It is computationally infeasible to construct two different messages with the same digest",
+        "C": ") It converts a message of arbitrary length into a message digest of a fixed length",
+        "D": ") Given a digest value, it is computationally infeasible to find the corresponding message"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 745,
+      "question": "How much more secure is 56 bit encryption opposed to 40 bit encryption?",
+      "options": {
+        "A": ") 16 times",
+        "B": ") 256 times",
+        "C": ") 32768 times",
+        "D": ") 65,536 times"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "2 to the power of 40 = 1099511627776 2 to the power of 56 = 72057594037927936 72057594037927936 / 1099511627776 = 65,536"
+    },
+    {
+      "id": 746,
+      "question": "Which of the following statements is true about data encryption as a method of protecting data?",
+      "options": {
+        "A": ") It should sometimes be used for password files",
+        "B": ") It is usually easily administered",
+        "C": ") It makes few demands on system resources",
+        "D": ") It requires careful key Management"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Cryptography can be used as a security mechanism to provide confidentiality, integrity, and authentication, but not if the keys are compromised in any way. The keys can be captured, modified, corrupted, or disclosed to unauthorized individuals. Cryptography is based on a trust mode. Individuals trust each other to protect their own keys, they trust the administrator who is maintaining the keys, and they trust a server that holds, maintains and distributes the keys. Many administrators know that key management causes one of the biggest headaches in cryptographic implementation. There is more to key maintenance than using them to encrypt messages. The keys have to be distributed securely to the right entities and updated continuously. The keys need to be protected as they are being transmitted and while they are being stored on each workstation and server. The keys need to be generated, destroyed, and recovered properly, Key management can be handled through manual or automatic processes. Unfortunately, many companies use cryptographic keys, but rarely if ever change them. This is because of the hassle of key management and because the network administrator is already overtaxed with other tasks or does not realize the task actually needs to take place. The frequency of use of a cryptographic key can have a direct correlation to often the key should be changed. The more a key is used, the more likely it is to be captured and compromised. If a key is used infrequently, then this risk drops dramatically. The necessary level of security and the frequency of use can dictate the frequency of the key updates. Key management is the most challenging part of cryptography and also the most crucial. It is one thing to develop a very complicated and complex algorithm and key method, but if the keys are not securely stored and transmitted, it does not really matter how strong the algorithm is. Keeping keys secret is a challenging task.\" Pg 512-513 Shon Harris CISSP Certification All-In-One Exam Guide"
+    },
+    {
+      "id": 747,
+      "question": "The primary purpose for using one-way encryption of user passwords within a system is which of the following?",
+      "options": {
+        "A": ") It prevents an unauthorized person from trying multiple passwords in one logon attempt",
+        "B": ") It prevents an unauthorized person from reading or modifying the password list",
+        "C": ") It minimizes the amount of storage required for user passwords",
+        "D": ") It minimizes the amount of processing time used for encrypting password"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 748,
+      "question": "Which of the following is not a known type of Message Authentication Code (MAC)?",
+      "options": {
+        "A": ") Hash function-based MAC",
+        "B": ") Block cipher-based MAC",
+        "C": ") Signature-based MAC",
+        "D": ") Stream cipher-based MAC"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 749,
+      "question": "Which of the following was developed in order to protect against fraud in electronic fund transfers (EFT)?",
+      "options": {
+        "A": ") Secure Electronic Transaction (SET)",
+        "B": ") Message Authentication Code (MAC)",
+        "C": ") Cyclic Redundency Check (CRC)",
+        "D": ") Secure Hash Standard (SHS)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 218 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 750,
+      "question": "Where parties do not have a shared secret and large quantities of sensitive information must be passed, the most efficient means of transferring information is to use a hybrid encryption technique. What does this mean?",
+      "options": {
+        "A": ") Use of public key encryption to secure a secret key, and message encryption using the secret key",
+        "B": ") Use of the recipient's public key for encryption and decryption based on the recipient's private key",
+        "C": ") Use of software encryption assisted by a hardware encryption accelerator",
+        "D": ") Use of elliptic curve encryption"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

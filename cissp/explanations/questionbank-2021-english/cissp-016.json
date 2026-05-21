@@ -1,0 +1,765 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q751 - Q800",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 751,
+      "question": "One-way hash provides:",
+      "options": {
+        "A": ") Confidentiality",
+        "B": ") Availability",
+        "C": ") Integrity",
+        "D": ") Authentication"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Hash Functions ....how cryptosystems implement digital signatures to provide proof that a message originated from a particular user of a cryptosystem and to ensure that the message was not modified while in transit between the two parties.\" Pg. 292 Tittel: CISSP Study Guide Second Edition \"integrity A state characterized by the assurance that modifications are not made by unauthorized users and authorized users do not make unauthorized modifications.\" Pg. 616 Tittel: CISSP Study Guide Second Edition"
+    },
+    {
+      "id": 752,
+      "question": "What size is an MD5 message digest (hash)?",
+      "options": {
+        "A": ") 128 bits",
+        "B": ") 160 bits",
+        "C": ") 256 bits",
+        "D": ") 128 bytes"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"MD4 MD4 is a one-way hash function designed by Ron Rivest. It produces 128-bit hash, or message digest, values. It is used for high-speed computation in software implementations and is optimized for microprocessors. MD5 MD5 is the newer version of MD4. It still produces a 128-bit hash, but the algorithm is more complex, which makes it harder to break. MD5 added a fourth round of operations to be performed during the hashing functions and makes several of it mathematical operations carry out more steps or more complexity to provide a higher level of security. MD2 MD2 is also a 128-bit one-way hash designed by Ron Rivest. It is not necessarily any weaker than the previously mentioned hash functions, but is much slower. SHA SHA was designed by NIST and NSA to be used with DSS. The SHA was designed to be used with digital signatures and was developed when a more secure hashing algorithm was required for federal application. SHA produces a 160-bit hash value, or message digest. This is then inputted into the DSA, which computes the signature for a message. The message digest is signed instead of the whole message because it is a much quicker process. The sender computes a 160-bit hash value, encrypts it with his private key (signs it), appends it to the message, and sends it. The receiver decrypts the value with the sender's public key, runs the same hashing function, and compares the two values. If the values are the same, the receiver can be sure that the message has not been tampered with in transit. SHA is similar to MD4. It has some extra mathematical functions and produces a 160-bit hash instead of 128-bit, which makes it more resistant to brute force attacks, including birthday attacks. HAVAL HAVAL is a variable-length one-way hash function and is the modification of MD5. It processes message blocks twice the size of those used in MD5; thus it processes blocks of 1,024 bits. Pg. 508-509 Shon Harris CISSP Certification All-In-One Exam Guide"
+    },
+    {
+      "id": 753,
+      "question": "Which of the following is NOT a property of a one-way hash function?",
+      "options": {
+        "A": ") It converts a message of a fixed length into a message digest of arbitrary length.",
+        "B": ") It is computationally infeasible to construct two different messages with the same digest",
+        "C": ") It converts a message of arbitrary length into a message digest of a fixed length",
+        "D": ") Given a digest value, it is computationally infeasible to find the corresponding message"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 754,
+      "question": "Which of the following would best describe a Concealment cipher?",
+      "options": {
+        "A": ") Permutation is used, meaning that letters are scrambled",
+        "B": ") Every X number of words within a text, is a part of the real message",
+        "C": ") Replaces bits, characters, or blocks of characters with different bits, characters, or blocks.",
+        "D": ") Hiding data in another message so that the very existence of the data is concealed."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 468 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 755,
+      "question": "Which of the following ciphers is a subset of the Vignere polyalphabetic cipher?",
+      "options": {
+        "A": ") Caesar",
+        "B": ") Jefferson",
+        "C": ") Alberti",
+        "D": ") SIGABA"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The Caesar Cipher,...., is a simple substitution cipher that involves shifting the alphabet three positions to the right. The Caesar Cipher is a subset of the Vigenere polyalphabetic cipher. In the Caesar cipher, the message's characters and repetitions of the key are added together, modulo 26. In modulo 26, the letters A to Z of the alphabet are given a value of 0 to 25, respectively.\" Pg. 189 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 756,
+      "question": "Which of the following is not a property of the Rijndael block cipher algorithm?",
+      "options": {
+        "A": ") Resistance against all known attacks",
+        "B": ") Design simplicity",
+        "C": ") 512 bits maximum key size",
+        "D": ") Code compactness on a wide variety of platforms"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 757,
+      "question": "What are two types of ciphers?",
+      "options": {
+        "A": ") Transposition and Permutation",
+        "B": ") Transposition and Shift",
+        "C": ") Transposition and Substitution",
+        "D": ") Substitution and Replacement"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Classical Ciphers: Substitution Transposition (Permutation) Vernam (One-Time Pad) Book or Running Key Codes Steganography\" Pg 189-193 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 758,
+      "question": "Which one of the following, if embedded within the ciphertext, will decrease the likelihood of a message being replayed?",
+      "options": {
+        "A": "Stop bit",
+        "B": "Checksum",
+        "C": "Timestamp",
+        "D": "Digital signature"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "CBC is the CBC mode of some block cipher, HMAC is a keyed message digest, MD is a plain message digest, and timestamp is to protect against replay attacks. From the OpenSSL project http://www.mail-archive.com/openssl-users@openssl.org/msg23576.html"
+    },
+    {
+      "id": 759,
+      "question": "Which of the following statements pertaining to block ciphers is incorrect?",
+      "options": {
+        "A": ") it operates on fixed-size blocks of plaintext",
+        "B": ") it is more suitable for software than hardware implementation",
+        "C": ") Plain text is encrypted with a public key and decrypted with a private key",
+        "D": ") Block ciphers can be operated as a stream"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Strong and efficient block cryptosystems use random key values so an attacker cannot find a pattern as to which S-boxes are chosen and used.\" Pg. 481 Shon Harris CISSP Certification All-in-One Exam Guide Not A: \"When a block cipher algorithm is used for encryption and decryption purposes, the message is divided into blocks of bits. These blocks are then put through substitution, transposition, and other mathematical functions, on block at a time.\" Pg. 480 Shon Harris CISSP Certification All-in-One Exam Guide Not B: \"Block ciphers are easier to implement in software because they work with blocks of data that the software is used to work with.\" Pg 483 Shon Harris CISSP Certification All-in-One Exam Guide Not D: \"This encryption continues until the plaintext is exhausted.\" Pg. 196 Krutz The CISSP Prep Guide. Not A or D: \"When a block a block cipher algorithm is used for encryption and decryption purposes, the message is divided into blocks of bits. These blocks are then put through substitution, transposition, and other mathematical functions, one block at a time.\" Pg 480 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 760,
+      "question": "The repeated use of the algorithm to encipher a message consisting of many blocks is called",
+      "options": {
+        "A": "Cipher feedback",
+        "B": "Elliptical curve",
+        "C": "Cipher block chaining",
+        "D": "Triple DES"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"There are two main types of symmetric algorithms: stream and block ciphers. Like their names sound, block ciphers work on blocks of plaintext and ciphertext, whereas stream ciphers work on streams of plaintext and ciphertext, on bit or byte at a time. Pg 521. Shon Harris CISSP All-In-One Certification Exam Guide Cipher Block Chaining (CBC) operates with plaintext blocks of 64 bits. ....Note that in this mode, errors propogate.\" Pg 149 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 761,
+      "question": "When block chaining cryptography is used, what type of code is calculated and appended to the data to ensure authenticity?",
+      "options": {
+        "A": "Message authentication code.",
+        "B": "Ciphertext authentication code",
+        "C": "Cyclic redundancy check",
+        "D": "Electronic digital signature"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The original Answer was B. This is incorrect as cipthertext is the result not an authentication code. \"If meaningful plaintext is not automatically recognizable, a message authentication code (MAC) can be computed and appended to the message. The computation is a function of the entire message and a secret key; it is practically important to find another message with the same authenticator. The receiver checks the authenticity of the message by computing the MAC using the same secret key and then verifying that the computed value is the same as the one transmitted with the message. A MAC can be used to provide authenticity for unencrypted messages as well as for encrypted ones. The National Institute of Standards and Technology (NIST) has adopted a standard for computing a MAC. (It is found in Computer Data Authentication, Federal Information Processing Standards Publication (FIPS PUB) 113.)\" http://www.cccure.org/Documents/HISM/637-639.html from the Handbook of Information Security Management by Micki Krause"
+    },
+    {
+      "id": 762,
+      "question": "Which of the following statements pertaining to block ciphers is incorrect?",
+      "options": {
+        "A": ") It operates on fixed-size blocks of plaintext",
+        "B": ") It is more suitable for software than hardware implementations",
+        "C": ") Plain text is encrypted with a public key and decrypted with a private key",
+        "D": ") Block ciphers can be operated as a stream"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Strong and efficient block cryptosystems use random key values so an attacker cannot find a pattern as to which S-boxes are chosen and used.\" Pg. 481 Shon Harris CISSP Certification All-in-One Exam Guide Not A: \"When a block cipher algorithm is used for encryption and decryption purposes, the message is divided into blocks of bits. These blocks are then put through substitution, transposition, and other mathematical functions, on block at a time.\" Pg. 480 Shon Harris CISSP Certification All-in-One Exam Guide Not B: \"Block ciphers are easier to implement in software because they work with blocks of data that the software is used to work with.\" Pg 483 Shon Harris CISSP Certification All-in-One Exam Guide Not D: \"This encryption continues until the plaintext is exhausted.\" Pg. 196 Krutz The CISSP Prep Guide."
+    },
+    {
+      "id": 763,
+      "question": "Which of the following is a symmetric encryption algorithm?",
+      "options": {
+        "A": ") RSA",
+        "B": ") Elliptic Curve",
+        "C": ") RC5",
+        "D": ") El Gamal"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 764,
+      "question": "How many bits is the effective length of the key of the Data Encryption Standard Algorithm?",
+      "options": {
+        "A": ") 16",
+        "B": ") 32",
+        "C": ") 56",
+        "D": ") 64"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 765,
+      "question": "Compared to RSA, which of the following is true of elliptic curse cryptography?",
+      "options": {
+        "A": ") It has been mathematically proved to be the more secure",
+        "B": ") It has been mathematically proved to be less secure",
+        "C": ") It is believed to require longer keys for equivalent security",
+        "D": ") It is believed to require shorter keys for equivalent security"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "CISSP All-In-One - page 491: \"In most cases, the longer the key length, the more protection provided, but ECC can provide the same level of protection with a key size that is smaller than what RSA requires.\" CISSP Prep Guide (not Gold edition) - page 158: \"... smaller key sizes in the elliptic curve implementation can yield higher levels of security. For example, an elliptic curve key of 160 bits is equivalent to 1024-bit RSA key.\""
+    },
+    {
+      "id": 766,
+      "question": "Which of the following is not a one-way algorithm?",
+      "options": {
+        "A": ") MD2",
+        "B": ") RC2",
+        "C": ") SHA-1",
+        "D": ") DSA"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Not: A, C or D. \"Hash Functions SHA MD2 MD4 MD5\" Pg. 337- 340 Tittel: CISSP Study Guide DSA, Digital Signature Algorithm, is a approved standard for Digital Signatures that utilizes SHA-1 hashing function. Pg. 342-343 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 767,
+      "question": "A public key algorithm that does both encryption and digital signature is which of the following?",
+      "options": {
+        "A": ") RSA",
+        "B": ") DES",
+        "C": ") IDEA",
+        "D": ") DSS"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"RSA, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a public key algorithm that is the most popular when it comes to asymmetric algorithms. RSA is a worldwide de facto standard and can be used for digital signatures, key exchange, and encryption.\" Pg. 489 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 768,
+      "question": "Which of the following encryption algorithms does not deal with discrete logarithms?",
+      "options": {
+        "A": ") El Gamal",
+        "B": ") Diffie-Hellman",
+        "C": ") RSA",
+        "D": ") Elliptic Curve"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 769,
+      "question": "The RSA algorithm is an example of what type of cryptography?",
+      "options": {
+        "A": ") Asymmetric key",
+        "B": ") Symmetric key",
+        "C": ") Secret Key",
+        "D": ") Private Key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 770,
+      "question": "How many rounds are used by DES?",
+      "options": {
+        "A": ") 16",
+        "B": ") 32",
+        "C": ") 64",
+        "D": ") 48"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"When the DES algorithm is applied to data, it divides the message into blocks and operates on them one at a time. A block is made of 64 bits and is divided in half and each character is encrypted one at a time. The characters are put through 16 rounds of transposition and substitution functions. The order and type of transposition and substitution function depend on the value of the key that is inputted into the algorithm. The result is the 64-bit block of ciphertext.\" Pg. 526 Shon Harris: CISSSP All-In-One Certification Guide"
+    },
+    {
+      "id": 771,
+      "question": "Which of the following is the most secure form of triple-DES encryption?",
+      "options": {
+        "A": ") DES-EDE3",
+        "B": ") DES-EDE1",
+        "C": ") DES-EEE4",
+        "D": ") DES-EDE2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 772,
+      "question": "Which of the following algorithms does *NOT* provide hashing?",
+      "options": {
+        "A": ") SHA-1",
+        "B": ") MD2",
+        "C": ") RC4",
+        "D": ") MD5"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Hashed Algorithms SHA-1 HMAC-SHA-1 MD5 HMAC-MD5\" Pg 426 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 773,
+      "question": "Which of the following is unlike the other three?",
+      "options": {
+        "A": ") El Gamal",
+        "B": ") Teardrop",
+        "C": ") Buffer Overflow",
+        "D": ") Smurf"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 774,
+      "question": "Which of the following is not an encryption algorithm?",
+      "options": {
+        "A": ") Skipjack",
+        "B": ") SHA-1",
+        "C": ") Twofish",
+        "D": ") DEA"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "SHA-1 is a hash algorithm opposed to encryption algorithm. Reference: pg 293 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 775,
+      "question": "Which one of the following is an asymmetric algorithm?",
+      "options": {
+        "A": "Data Encryption Algorithm.",
+        "B": "Data Encryption Standard",
+        "C": "Enigma",
+        "D": "Knapsack"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Merkle-Hellman Knapsack is a Public Key Algorithm Pg 206 Krutz: CISSP Prep Guide: Gold Edition. Not A: \"DES describes the Data Encryption Algorithm (DEA) and is the name of the Federal Information Processing Standard (FIPS) 46-1 that was adopted in 1977...\" pg 195 Krutz: CISSP Prep Guide: Gold Edition. Not B: \"The best-known symmetric key system is probably the Data Encryption Standard (DES).\" pg 195 Krutz: CISSP Prep Guide: Gold Edition. Not C: \"The German military used a polyalphabetic substitution cipher machine called the Enigma as its principal encipherment system during World War II.\" Pg 185 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 776,
+      "question": "Which of the following is *NOT* a symmetric key algorithm?",
+      "options": {
+        "A": ") Blowfish",
+        "B": ") Digital Signature Standard (DSS)",
+        "C": ") Triple DES (3DES)",
+        "D": ") RC5"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 489 Shon Harris"
+    },
+    {
+      "id": 777,
+      "question": "Which of the following layers is not used by the Rijndael algorithm?",
+      "options": {
+        "A": ") Non-linear layer",
+        "B": ") Transposition layer",
+        "C": ") Key addition layer",
+        "D": ") The linear mixing layer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 201 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 778,
+      "question": "What is the basis for the Rivest-Shamir-Adelman (RSA) algorithm scheme?",
+      "options": {
+        "A": "Permutations",
+        "B": "Work factor",
+        "C": "Factorability",
+        "D": "Reversivibility"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "This algorithm is based on the difficulty of factoring a number, N, which is the product of two large prime numbers. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 204"
+    },
+    {
+      "id": 779,
+      "question": "Which of the following encryption algorithms does not deal with discrete logarithms?",
+      "options": {
+        "A": ") El Gamal",
+        "B": ") Diffie-Hellman",
+        "C": ") RSA",
+        "D": ") Elliptic Curve"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 416 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 780,
+      "question": "The RSA Algorithm uses which mathematical concept as the basis of its encryption?",
+      "options": {
+        "A": ") Geometry",
+        "B": ") Irrational numbers",
+        "C": ") PI (3.14159...)",
+        "D": ") Large prime numbers"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 781,
+      "question": "PGP provides which of the following?(Choose three)",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Accountability",
+        "C": "Accessibility",
+        "D": "Integrity",
+        "E": "Interest",
+        "F": "Non-repudiation",
+        "G": "Authenticity"
+      },
+      "answers": [
+        "A",
+        "D",
+        "G"
+      ],
+      "type": "multiple",
+      "explanation": "PGP provides confidentiality, integrity, and authenticity."
+    },
+    {
+      "id": 782,
+      "question": "PGP uses which of the following to encrypt data?",
+      "options": {
+        "A": ") An asymmetric scheme",
+        "B": ") A symmetric scheme",
+        "C": ") a symmetric key distribution system",
+        "D": ") An asymmetric key distribution"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 783,
+      "question": "Which of the following mail standards relies on a \"Web of Trust\"?",
+      "options": {
+        "A": ") Secure Multipurpose Internet Mail extensions (S/MIME)",
+        "B": ") Pretty Good Privacy (PGP)",
+        "C": ") MIME Object Security Services (MOSS)",
+        "D": ") Privacy Enhanced Mail (PEM)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"PGP does not use a hierarchy of Cas, or any type of formal trust certificates, but relies on a \"web of trust\" in its key management approach. Each user generates and distributes his or her public key, and users sign each other's public keys, which creates a community of users who trust each other. This is different than the CA approach where no one trusts each other, they only trust the CA."
+    },
+    {
+      "id": 784,
+      "question": "Which of the following offers confidentiality to an e-mail message?",
+      "options": {
+        "A": ") The sender encrypting it with it's private key",
+        "B": ") The sender encrypting it with it's public key",
+        "C": ") The sender encrypting it with it's receiver's public key",
+        "D": ") The sender encrypting it with the receiver's private key"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 785,
+      "question": "Which of the following items should not be retained in an E-mail directory?",
+      "options": {
+        "A": ") drafts of documents",
+        "B": ") copies of documents",
+        "C": ") permanent records",
+        "D": ") temporary documents"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 786,
+      "question": "In a Secure Electronic Transaction (SET), how many certificates are required for a payment gateway to support multiple acquires?",
+      "options": {
+        "A": "Two certificates for the gateway only.",
+        "B": "Two certificates for the gateway and two for the acquirers.",
+        "C": "Two certificates for each acquirer.",
+        "D": "Two certificates for the gateway and two for each acquirer."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "I think it may be D two for each acquirer. Which unless I read it wrong it means each person must have 2 certificates exchanged with the gateway. \"SET uses a des symmetric key system for encryption of the payment information and uses rsa for the symmetric key exchange and digital signatures. SET covers the end-to-end transaction from the cardholder to the financial institution\". -Ronald Krutz The CISSP PREP Guide (gold edition) pg 219-220 In the SET environment, there exists a hierarchy of Certificate Authorities. The SET protocol specifies a method of entity authentication referred to as trust chaining. This method entails the exchange of digital certificates and verification of the public keys by validating the digital signatures of the issuing C A. This trust chain method continues all the way up to the CA at the top of the hierarchy, which is referred to as the SET Root C A. The SET Root CAis owned and maintained by SET Secure Electronic Transaction LLC. http://setco.org/certificates.html"
+    },
+    {
+      "id": 787,
+      "question": "Which protocol makes use of an electronic wallet on a customer's PC and sends encrypted credit card information to merchant's Web server, which digitally signs it and sends it on to its processing bank?",
+      "options": {
+        "A": ") SSH",
+        "B": ") S/MIME",
+        "C": ") SET",
+        "D": ") SSL"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 788,
+      "question": "Which of the following best describes the Secure Electronic Transaction (SET) protocol?",
+      "options": {
+        "A": ") Originated by VISA and MasterCard as an Internet credit card protocol",
+        "B": ") Originated by VISA and MasterCard as an Internet credit card protocol using digital signatures",
+        "C": ") Originated by VISA and MasterCard as an Internet credit card protocol using the transport layer",
+        "D": ") Originated by VISA and MasterCard as an Internet credit card protocol using SSL"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 789,
+      "question": "Which of the following would best define the \"Wap Gap\" security issue?",
+      "options": {
+        "A": ") The processing capability gap between wireless devices and PC's",
+        "B": ") The fact that WTLS transmissions have to be decrypted at the carrier's WAP gateway to be re-encrypted with SSL for use over wired networks.",
+        "C": ") The fact that Wireless communications are far easier to intercept than wired communications",
+        "D": ") The inability of wireless devices to implement strong encryption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 790,
+      "question": "What encryption algorithm is best suited for communication with handheld wireless devices?",
+      "options": {
+        "A": ") ECC",
+        "B": ") RSA",
+        "C": ") SHA",
+        "D": ") RC4"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Eliptic curves are rich mathematical structures that have shown usefulness in many different types of applications. An Elliptic Curve Cryptosystem (ECC) provides much of the same functionality that RSA provides: digital signatures, secure key distribution, and encryption. One differing factor is ECC's efficiency. Some devices have limited processing capacity, storage, power supply, and bandwidth like wireless devices and cellular telephones. With these types of devices, efficiency of resource use is very important. ECC provides encryption functionality requiring a smaller percentage of resources required by RSA and other algorithms, so it is used in these types of devices. In most cases, the longer the key length, the protection provided, but ECC can provide the same level of protection with a key size that is smaller than what RSA requires. Because longer keys require more resources to perform mathematical tasks, the smaller keys used in ECC require fewer resources of the device.\" Pg. 491 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 791,
+      "question": "Which security measure BEST provides non-repudiation in electronic mail?",
+      "options": {
+        "A": "Digital signature",
+        "B": "Double length Key Encrypting Key (KEK)",
+        "C": "Message authentication",
+        "D": "Triple Data Encryption Standard (DES)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A tool used to provide the authentication of the sender of a message. It can verify the origin of the message along with the identity of the sender. IT is unique for every transaction and created with a private key. - Shon Harris All-in-one CISSP Certification Guide pg 930 \"Secure Multipurpose Internet Mail Extensions (S/MIME) offers authentication and privacy to e-mail through secured attachments. Authentication is provided through X.509 digital certificates. Privacy is provided through the use of Public Key Cryptography Standard (PKCS) Enryption. Two types of messages can be formed using S/MIME: signed messages and enveloped messages. A signed message provides integrity and sender authentication. An enveloped message provides ntegrity, sender authentication, and confidentiality.\" Pg 123 Tittle: CISSP Study Guide"
+    },
+    {
+      "id": 792,
+      "question": "Which of the following services is not provided by the digital signature standard (DSS)?",
+      "options": {
+        "A": ") Encryption",
+        "B": ") Integrity",
+        "C": ") Digital signature",
+        "D": ") Authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 793,
+      "question": "Public key cryptography provides integrity verification through the use of public key signature and?",
+      "options": {
+        "A": "Secure hashes",
+        "B": "Zero knowledge",
+        "C": "Private key signature",
+        "D": "Session key"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Pg 213 Krutz Gold Edition"
+    },
+    {
+      "id": 794,
+      "question": "Electronic signatures can prevent messages from being:",
+      "options": {
+        "A": ") Erased",
+        "B": ") Disclosed",
+        "C": ") Repudiated",
+        "D": ") Forwarded"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 795,
+      "question": "Why do vendors publish MD5 hash values when they provide software patches for their customers to download from the Internet?",
+      "options": {
+        "A": "Recipients can verify the software's integrity after downloading.",
+        "B": "Recipients can confirm the authenticity of the site from which they are downloading the patch.",
+        "C": "Recipients can request future updates to the software by using the assigned hash value.",
+        "D": "Recipients need the hash value to successfully activate the new software."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "If the two values are different, Maureen knows that the message was altered, either intentionally or unintentionally, and she discards the message...As stated in an earlier section, the goal of using a one-way hash function is to provide a fingerprint of the message. MD5 is the newer version of MD4. IT still produces a 128-bit hash, but the algorithm is a bit more complex to make it harder to break than MD4. The MD5 added a fourth round of operations to be performed during the hash functions and makes several of its mathematical operations carry steps or more complexity to provide a higher level of security . - Shon Harris All-in-one CISSP Certification Guide pg 182-185"
+    },
+    {
+      "id": 796,
+      "question": "What attribute is included in a X.509-certificate?",
+      "options": {
+        "A": ") Distinguished name of subject",
+        "B": ") Telephone number of the department",
+        "C": ") secret key of the issuing CA",
+        "D": ") the key pair of the certificate holder"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The key word is 'In create the certificate..\" Certificates that conform to X.509 contain the following data: Version of X.509 to which the certificate conforms; Serial number (from the certificate creator);Signature algorithm identifier (specifies the technique used by the certificate authority to digitally sign the contents of the certificate); Issuer name (identification of the certificate authority that issues the certificate) Validity period (specifies the dates and times - a starting date and time and an ending date and time - during which the certificate is valid); Subject's name (contains the distinguished name, or DN, of the entity that owns the public key contained in the certificate); Subject's key (the meat of the certificate - the actual public key of the certificate owner used to setup secure communications) pg 343-344 CISSP Study Guide byTittel"
+    },
+    {
+      "id": 797,
+      "question": "What is used to bind a document to it's creation at a particular time?",
+      "options": {
+        "A": ") Network Time Protocol (NTP)",
+        "B": ") Digital Signature",
+        "C": ") Digital Timestamp",
+        "D": ") Certification Authority (CA)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 798,
+      "question": "What attribute is included in a X-509-certificate?",
+      "options": {
+        "A": ") Distinguished name of the subject",
+        "B": ") Telephone number of the department",
+        "C": ") Secret key of the issuing CA",
+        "D": ") The key pair of the certificate holder"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Certificates that conform to X.509 contain the following data: Version of X.509 to which the certificate conforms Serial number Signature algorithm identifier Issuer name Validity period Subject's name (contains the distinguished name, or DN of the entity that owns the public key contained in the certificate) Subjects Public Key\" Pg. 297 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 799,
+      "question": "Which of the following standards concerns digital certificates?",
+      "options": {
+        "A": ") X.400",
+        "B": ") X.25",
+        "C": ") X.509",
+        "D": ") X.75"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 800,
+      "question": "What level of assurance for a digital certificate only requires an e-mail address?",
+      "options": {
+        "A": ") Level 0",
+        "B": ") Level 1",
+        "C": ") Level 2",
+        "D": ") Level 3"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

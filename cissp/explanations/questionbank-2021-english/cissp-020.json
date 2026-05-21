@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q951 - Q1000",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 951,
+      "question": "Which type of attack involves the alteration of a packet at the IP level to convince a system that it is communicating with a known entity in order to gain access to a system?",
+      "options": {
+        "A": ") TCP sequence number attack",
+        "B": ") IP spoofing attack",
+        "C": ") Piggybacking attack",
+        "D": ") Teardrop attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 952,
+      "question": "What attack takes advantage of operating system buffer overflows?",
+      "options": {
+        "A": "Spoofing",
+        "B": "Brute force",
+        "C": "DoS",
+        "D": "Exhaustive"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Denial of Service is an attack on the operating system or software using buffer overflows. The result is that the target is unable to reply to service requests. This is too a large an area of information to try to cover here, so I will limit my discussion to the types of denial of service (DoS) attacks:"
+    },
+    {
+      "id": 953,
+      "question": "What attack is primarily based on the fragmentation implementation of IP and large ICMP packet size?",
+      "options": {
+        "A": "Exhaustive",
+        "B": "Brute force",
+        "C": "Ping of Death",
+        "D": "Spoofing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Ping of Death -- This exploit is based on the fragmentation implementation of IP whereby large packets are reassembled and can cause machines to crash. 'Ping of Death takes advantage of the fact that it is possible to send an illegal ICMP Echo packet with more than the allowable 65, 507 octets of data because of the way fragmentation is performed. A temporary fix is block ping packets. Ideally, an engineer should secure TCP/IP from overflow when reconstructing IP fragments."
+    },
+    {
+      "id": 954,
+      "question": "Land attack attacks a target by:",
+      "options": {
+        "A": "Producing large volume of ICMP echos.",
+        "B": "Producing fragmented IP packets.",
+        "C": "Attacking an established TCP connection.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Land.c. attack -- Attacks an established TCP connection. A program sends a TCP SYN packet giving the target host address as both the sender and destination using the same port causing the OS to hang."
+    },
+    {
+      "id": 955,
+      "question": "What attack is primarily based on the fragmentation implementation of IP?",
+      "options": {
+        "A": "Teardrop",
+        "B": "Exhaustive",
+        "C": "Spoofing",
+        "D": "Brute force"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Teardrop attack - This is based on the fragmentation implementation of IP whereby reassembly problems can cause machines to crash. The attack uses a reassembly bug with overlapping fragments and causes systems to hang or crash. It works for any Internet Protocol type because it hits the IP layer itself. Engineers should turn off directed broadcast capability."
+    },
+    {
+      "id": 956,
+      "question": "What attack floods networks with broadcast traffic so that the network is congested?",
+      "options": {
+        "A": "Spoofing",
+        "B": "Teardrop",
+        "C": "Brute force",
+        "D": "SMURF"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: SMURF attack -- This attack floods networks with broadcast traffic so that the network is congested. The perpetrator sends a large number of spoofed ICMP (Internet Control Message Protocol) echo requests to broadcast addresses hoping packets will be sent to the spoofed addresses. You need to understand the OSI model and how protocols are transferred between layer 3 and layer 2 to understand this attack. The layer 2 will respond to the ICMP echo request with an ICMP echo reply each time, multiplying the traffic by the number of hosts involved. Engineers should turn off broadcast capability (if possible in your environment) to deter this kind of attack."
+    },
+    {
+      "id": 957,
+      "question": "What attack involves repeatedly sending identical e-message to a particular address?",
+      "options": {
+        "A": "SMURF",
+        "B": "Brute force",
+        "C": "Teardrop",
+        "D": "Spamming"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Spamming -- Involves repeatedly sending identical e-message to a particular address. It is a variant of bombing, and is made worse when the recipient replies -- i.e. recent cases where viruses or worms were attached to the e-mail message and ran a program that forwarded the message from the reader to any one on the user's distribution lists. This attack cannot be prevented, but you should ensure that entrance and exit of such mail is only through central mail hubs."
+    },
+    {
+      "id": 958,
+      "question": "A stack overflow attack that \"crashes\" a Transmission Control Protocol/Internet Protocol (TCP/IP) service daemon can result in a serious security breach because the",
+      "options": {
+        "A": "Process does not implement proper object reuse.",
+        "B": "Process is executed by a privileged entity.",
+        "C": "Network interface becomes promiscuous.",
+        "D": "Daemon can be replaced by a trojan horse."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 959,
+      "question": "The intrusion detection system at your site has detected Internet Protocol (IP) packets where the IP source address is the same as the destination address. This situation indicates",
+      "options": {
+        "A": "Misdirected traffic jammed to the internal network.",
+        "B": "A denial of service attack.",
+        "C": "An error in the internal address matrix.",
+        "D": "A hyper overflow in the IP stack."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"The Land denial of service attack causes many older operating systems (such as Windows NT 4, Windows 95, and SunOS 4.1.4) to freeze and behave in an unpredictable manner. It works by creating an artificial TCP packet that has the SYN flag set. The attacker set the destination IP address to the address of the victim machine and the destination port to an open port on that machine. Next, the attacker set the source IP address and source port to the same values as the destination IP address and port. When the targeted host receives this unusual packet, the operating system doesn't know how to process it and freezes, crashes, or behaves in an unusual manner as a result.\" Pg 237 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 960,
+      "question": "What type of attacks occurs when a rogue application has been planted on an unsuspecting user's workstation?",
+      "options": {
+        "A": "Physical attacks",
+        "B": "Logical attacks",
+        "C": "Trojan Horse attacks",
+        "D": "Social Engineering attacks"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Trojan Horse attacks - This attack involves a rogue, Trojan horse application that has been planted on an unsuspecting user's workstation. The Trojan horse waits until the user submits a valid PIN from a trusted application, thus enabling usage of the private key, and then asks the smartcard to digitally sign some rogue data. The operation completes but the user never knows that their private key was just used against their will."
+    },
+    {
+      "id": 961,
+      "question": "Man-in-the-middle attacks are a real threat to what type of communication?",
+      "options": {
+        "A": "Communication based on random challenge.",
+        "B": "Communication based on face to face contact.",
+        "C": "Communication based on token.",
+        "D": "Communication based on asymmetric encryption."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The weakest point in the communication based on asymmetric encryption is the knowledge about the real owners of keys. Somebody evil could generate a key pair, give the public key away and tell everybody, that it belongs to somebody else. Now, everyone believing it will use this key for encryption, resulting in the evil man being able to read the messages. If he encrypts the messages again with the public key of the real recipient, he will not be easily recognized. This sort of attack is called ``man-in-the-middle'' attack and can only be prevented by making sure, public keys really belong to the one being designated as owner."
+    },
+    {
+      "id": 962,
+      "question": "Which of the following threats is not addressed by digital signature and token technologies?",
+      "options": {
+        "A": ") Spoofing",
+        "B": ") replay attacks",
+        "C": ") password compromise",
+        "D": ") denial-of-service"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 963,
+      "question": "Which one of the following is concerned with masking the frequency, length, and origin-destination patterns of the communications between protocol entities?",
+      "options": {
+        "A": "Masking analysis",
+        "B": "Protocol analysis",
+        "C": "Traffic analysis",
+        "D": "Pattern analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Traffic analysis, which is sometimes called trend analysis, is a technique employed by an intruder that involves analyzing data characteristics (message length, message frequency, and so forth) and the patterns of transmissions (rather than any knowledge of the actual information transmitted) to infer information that is useful to an intruder) . -Ronald Krutz The CISSP PREP Guide (gold edition) pg 323"
+    },
+    {
+      "id": 964,
+      "question": "Which of the following would NOT be considered a Denial of Service Attack?",
+      "options": {
+        "A": ") Zone Transfer",
+        "B": ") Smurf",
+        "C": ") Syn Flood",
+        "D": ") TearDrop"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Zone transfer is method that DNS uses to transfer zone information between servers. In some un-secure DNS installations zone transfers are allowed to un-trusted DNS servers. This allows the hacker to determine internal host names and ip addresses to provide additional information for an attack."
+    },
+    {
+      "id": 965,
+      "question": "The connection using fiber optics from a phone company's branch office to local customers is which of the following?",
+      "options": {
+        "A": ") new loop",
+        "B": ") local loop",
+        "C": ") loopback",
+        "D": ") indigenous loop"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In telecommunications Telecommunication the local loop is the wiring between the central office and the customer's premises demarcation point. The telephony local loop connection is typically a copper twisted pair carrying current from the central office to the customer premises and back again. Individual local loop telephone lines are connected to the local central office or to a remote concentrator. Local loop connections can be used to carry a range of technologies, including: Analog Voice ISDN DSL"
+    },
+    {
+      "id": 966,
+      "question": "Which step ensures the confidentiality of a facsimile transmission?",
+      "options": {
+        "A": "Pre-schedule the transmission of the information.",
+        "B": "Locate the facsimile equipment in a private area.",
+        "C": "Encrypt the transmission.",
+        "D": "Phone ahead to the intended recipient."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 967,
+      "question": "Which one of the following could a company implement to help reduce PBX fraud?",
+      "options": {
+        "A": "Call vectoring",
+        "B": "Direct Inward System Access (DISA)",
+        "C": "Teleconferencing bridges",
+        "D": "Remote maintenance ports"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The potential for fraud to occur in voice telecommunications equipment is a serious threat. PBX's (Private Branch Exchange) are telephone switches used within state agencies to allow employees to make out-going and receive incoming phone calls. These PBX's can also provide connections for communications between personal computers and local and wide area networks. Security measures must be taken to avoid the possibility of theft of either phone service or information through the telephone systems. Direct Inward System Access (DISA) is the ability to call into a PBX, either on an 800 number or a local dial- in, and by using an authorization code, gain access to the long distance lines and place long distance calls through the PBX http://www.all.net/books/Texas/chap10.html"
+    },
+    {
+      "id": 968,
+      "question": "Phreakers are hackers who specialize in telephone fraud. What type of telephone fraud manipulates the line voltage to receive a toll-free call?",
+      "options": {
+        "A": ") Red boxes",
+        "B": ") Blue boxes",
+        "C": ") White boxes",
+        "D": ") Black boxes"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 969,
+      "question": "Which one of the following devices might be used to commit telecommunications fraud using the \"shoulder surfing\" technique?",
+      "options": {
+        "A": "Magnetic stripe copier",
+        "B": "Tone generator",
+        "C": "Tone recorder",
+        "D": "Video recorder"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 970,
+      "question": "What technique is used to prevent eavesdropping of digital cellular telephone conversations?",
+      "options": {
+        "A": "Encryption",
+        "B": "Authentication",
+        "C": "Call detail suppression",
+        "D": "Time-division multiplexing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The name \"TDMA\" is also used to refer to a specific second generation mobile phone standard - more properly referred to as IS-136, which uses the TDMA technique to timeshare the bandwidth of the carrier wave. It provides between 3 to 6 times the capacity of its predecessor AMPS, and also improved security and privacy. In the United States, for example, AT&T Wireless uses the IS-136 TDMA standard. Prior to the introduction of IS-136, there was another TDMA North American digital cellular standard called IS-54(which was also referred to just as \"TDMA\")."
+    },
+    {
+      "id": 971,
+      "question": "Which of the following is a telecommunication device that translates data from digital to analog form and back to digital?",
+      "options": {
+        "A": ") Multiplexer",
+        "B": ") Modem",
+        "C": ") Protocol converter",
+        "D": ") Concentrator"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 972,
+      "question": "Which of the following could lead to the conclusion that a disaster recovery plan may not be operational within the timeframe the business needs to recover?",
+      "options": {
+        "A": ")The alternate site is a warm site",
+        "B": ") Critical recovery priority levels are not defined",
+        "C": ") Offsite backups are located away from the alternate site",
+        "D": ") The alternate site is located 70 miles away from the primary site"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 973,
+      "question": "What are the four domains of communication in the disaster planning and recovery process?",
+      "options": {
+        "A": "Plan manual, plan communication, primer for survival, warning and alarms",
+        "B": "Plan communication, primer for survival, escalation, declaration",
+        "C": "Plan manual, warning and alarm, declaration, primer for survival",
+        "D": "Primer for survival, escalation, plan communication, warning and alarm"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 974,
+      "question": "The underlying reason for creating a disaster planning and recover strategy is to",
+      "options": {
+        "A": "Mitigate risks associated with disaster.",
+        "B": "Enable a business to continue functioning without impact.",
+        "C": "Protect the organization's people, place and processes.",
+        "D": "Minimize financial profile."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Disaster recovery has the goal of minimizing the effects of a disaster and taking the necessary steps to ensure that the resources, personnel, and business processes are able to resume operation in a timely manner.\" Pg 550 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 975,
+      "question": "Which of the following is not a direct benefit of successful Disaster Recovery Planning?",
+      "options": {
+        "A": ") Maintain Nance of Business Continuity",
+        "B": ") Protection of Critical Data",
+        "C": ") Increase in IS performance",
+        "D": ") Minimized Impact of a disaster"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 976,
+      "question": "Organizations should not view disaster recovery as which of the following?",
+      "options": {
+        "A": ") committed expense",
+        "B": ") discretionary expense",
+        "C": ") enforcement of legal statues",
+        "D": ") compliance with regulations"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 977,
+      "question": "Which of the following statements pertaining to disaster recovery is incorrect?",
+      "options": {
+        "A": ") A recovery team's primary task is to get the pre-defined critical business functions at the alternate backup processing site.",
+        "B": ") A salvage team's task is to ensure that the primary site returns to normal processing conditions",
+        "C": ") The disaster recovery plan should include how the company will return from the alternate site to the primary site",
+        "D": ") When returning to the primary site, the most critical applications should be brought back first"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 978,
+      "question": "Which of the following statements pertaining to dealing with the media after a disaster occurred and disturbed the organization's activities is incorrect?",
+      "options": {
+        "A": ") The CEO should always be the spokesperson for the company during a disaster",
+        "B": ") The disaster recovery plan must include how the media is to be handled during the disaster",
+        "C": ") The organization's spokesperson should report bad news before the press gets ahold of it through another channel",
+        "D": ") An emergency press conference site should be planned ahead"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 979,
+      "question": "What is a disaster recovery plan for a company's computer system usually focused on?",
+      "options": {
+        "A": ") Alternative procedures to process transactions",
+        "B": ") The probability that a disaster will occur",
+        "C": ") Strategic long-range planning",
+        "D": ") Availability of compatible equipment at a hot site"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 980,
+      "question": "What is the most critical piece to disaster recovery and continuity planning?",
+      "options": {
+        "A": ") Security Policy",
+        "B": ") Management Support",
+        "C": ") Availability of backup information processing facilities",
+        "D": ") Staff training"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 981,
+      "question": "Which of the following is the most important consideration in locating an alternate computing facility during the development of a disaster recovery plan?",
+      "options": {
+        "A": ") it is unlikely to be affected by the same contingency",
+        "B": ") it is close enough to become operation quickly",
+        "C": ") is it close enough to serve it's users",
+        "D": ") it is convenient to airports and hotels"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 982,
+      "question": "Which of the following are PRIMARY elements that are required when designing a Disaster Recovery Plan (DRP)?",
+      "options": {
+        "A": "Back-up procedures, off-site storage, and data recover.",
+        "B": "Steering committee, emergency response team, and reconstruction team.",
+        "C": "Impact assessment, recover strategy, and testing.",
+        "D": "Insurance coverage, alternate site, and manual procedures."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The most critical piece to disaster recovery and continuity planning is management support. They must be convinced of its necessity. Therefore, a business case must be made to obtain this support. The business case can include current vulnerabilities, regulatory and legal obligations, current status of recovery plans, and recommendations. Management will mostly concerned with cost/benefit issues, so several preliminary numbers will need to be gathered and potential losses estimated. - Shon Harris All-in-one CISSP Certification Guide pg 595 There are four major elements of the BCP process Scope and Plan Initiation - this phase marks the beginning of the BCP process. IT entails creating the scope and other elements needed to define the parameters of the plan. Business Impact Assessment - A BIA is a process used to help business units understand the impact of a disruptive event. This phase includes the execution of a vulnerability assessment Business Continuity Plan Development - This term refers to using the information collection in the BIA to develop the actual business continuity plan. This process includes the areas of plan implementation, plan testing, and ongoing plan maintenance. Plan Approval and Implementation - This process involves getting the final senior management signoff, creating enterprise-wide awareness of the plan, and implementing a maintenance procedure for updating the plan as needed. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 380-381"
+    },
+    {
+      "id": 983,
+      "question": "Emergency actions are taken at the incipient stage of a disaster with the objectives of preventing injuries or loss of life and of:",
+      "options": {
+        "A": ") determining the extent of property damage",
+        "B": ") protecting evidence",
+        "C": ") preventing looting and further damage",
+        "D": ") mitigating the damage to avoid the need for recovery"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 984,
+      "question": "Who should direct short-term recovery actions immediately following a disaster?",
+      "options": {
+        "A": ") Chief Information Officer",
+        "B": ") Chief Operating Officer",
+        "C": ") Disaster Recovery Manager",
+        "D": ") Chief Executive Officer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 985,
+      "question": "The environment that must be protected includes all personnel, equipment, data, communication devices, power supply and wiring. The necessary level of protection depends on the value of data, the computer systems, and the company assets within the facility. The value of these items can be determined by what type of analysis?",
+      "options": {
+        "A": ") Critical-channel analysis",
+        "B": ") Critical-route analysis",
+        "C": ") Critical-path analysis",
+        "D": ") Critical-conduit analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"The environment that must be protected through physical security controls includes all personnel, equipment, data, communication devices, power supplies, and wiring. The necessary level of protection depends on the value of the data, the computer systems, and the company assets within the facility. The value of these items can be determined by a critical-path analysis, which lists each piece of the infrastructure and what is necessary to keep those pieces healthy and operational.\" Pg 255 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 986,
+      "question": "Which of the following steps should be performed first in a business impact analysis (BIA)?",
+      "options": {
+        "A": ") Identify all business units within the organization",
+        "B": ") Evaluate the impact of the disruptive events",
+        "C": ") Estimate the Recovery Time Objectives (RTO)",
+        "D": ") Evaluate the criticality of business functions"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 987,
+      "question": "Which of the following steps it NOT one of the four steps of a Business Impact Analysis (BIA)?",
+      "options": {
+        "A": ") Notifying senior management",
+        "B": ") Gathering the needed assessment materials",
+        "C": ") Performing the vulnerability assessment",
+        "D": ") Analyzing the information compiled"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"A BIA generally takes the form of these four steps: 1.) Gathering the needed assessment materials 2.) Performing the vulnerability assessment 3.) Analyzing the information compiled 4.) Documenting the results and presenting recommendations\" Pg. 383 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 988,
+      "question": "What methodology is commonly used in Business Continuity Program?",
+      "options": {
+        "A": "Work Group Recovery",
+        "B": "Business Impact Analysis",
+        "C": "Qualitative Risk Analysis",
+        "D": "Quantitative Risk Analysis"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A BIA is performed at the beginning of disaster recovery and continuity planning to identify the areas that would suffer the greatest financial or operational loss in the event of a disaster or disruption. It identifies the company's critical systems needed for survival and estimates the outage time that can be tolerated by the company as a result of disaster or disruption. - Shon Harris All-in-one CISSP Certification Guide pg 597"
+    },
+    {
+      "id": 989,
+      "question": "Which of the following steps should be performed first in a business impact analysis (BIA)?",
+      "options": {
+        "A": ") Identify all business units within an organization",
+        "B": ") Evaluate the impact of disruptive events",
+        "C": ") Estimate the Recovery Time Objectives (RTO)",
+        "D": ") Evaluate the criticality of business functions"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The initial step of the BIA is identifying which business units are critical to continuing an acceptable level of operations.\" Pg 383 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 990,
+      "question": "Which is not one of the primary goals of BIA?",
+      "options": {
+        "A": ") Criticality Prioritization",
+        "B": ") Down time estimation",
+        "C": ") Determining requirements for critical business functions",
+        "D": ") Deciding on various test to be performed to validate Business Continuity Plan"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 991,
+      "question": "Which of the following is used to help business units understand the impact of a disruptive event?",
+      "options": {
+        "A": ") A risk analysis",
+        "B": ") A Business Impact assessment",
+        "C": ") A Vulnerability assessment",
+        "D": ") A disaster recovery plan"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"The purpose of a BIA is to create a document to be used to help understand what impact a disruptive event would have on the business.\" Pg 383 Krutz : CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 992,
+      "question": "A Business Impact Analysis (BIA) does not:",
+      "options": {
+        "A": ") Recommend the appropriate recovery solution",
+        "B": ") Determine critical and necessary business functions and their resource dependencies",
+        "C": ") Identify critical computer applications and the associated outage tolerance",
+        "D": ") Estimate the financial and operation impact of a disruption"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 993,
+      "question": "What assesses potential loss that could be caused by a disaster?",
+      "options": {
+        "A": ") The Business Assessment (BA)",
+        "B": ") The Business Impact Analysis (BIA)",
+        "C": ") The Risk Assessment (RA)",
+        "D": ") The Business Continuity Plan (BCP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 994,
+      "question": "During the course of a Business Impact Analysis (BIA) you will less likely:",
+      "options": {
+        "A": ") Estimate the financial and operational impact of a disruption",
+        "B": ") Identify regulatory exposure",
+        "C": ") Determine if functions Recovery Time Objective (RTO)",
+        "D": ") Determine the impact upon the organizations market share and corporate image"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 995,
+      "question": "Which of the following tasks is not usually part of a Business Impact Analysis (BIA)?",
+      "options": {
+        "A": ") Identify the type and quantity of resources required for recovery",
+        "B": ") Identify the critical processes and the dependencies between them",
+        "C": ") Identify organizational risks",
+        "D": ") Develop a mission statement"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 996,
+      "question": "Which of the following will a Business Impact Analysis (BIA) NOT identify?",
+      "options": {
+        "A": ") Areas that would suffer the greatest financial or operation loss in the event of a disaster",
+        "B": ") Systems critical to the survival of the enterprise",
+        "C": ") The names of individuals to be contacted during a disaster",
+        "D": ") The outage time that can be tolerated by the enterprise as a result of a disaster"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 997,
+      "question": "Which one the following is the primary goal of Business Continuity Planning?",
+      "options": {
+        "A": "Sustain the organization.",
+        "B": "Recover from a major data center outage.",
+        "C": "Test the ability to prevent major outages.",
+        "D": "Satisfy audit requirements."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Simply put, business continuity plans are created to prevent interruptions to normal business activity.-Ronald Krutz The CISSP PREP Guide (gold edition) pg 378"
+    },
+    {
+      "id": 998,
+      "question": "Most of unplanned downtime of information systems is attributed to which of the following?",
+      "options": {
+        "A": ") Hardware failure",
+        "B": ") Natural disaster",
+        "C": ") Human error",
+        "D": ") Software failure"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 999,
+      "question": "System reliability s increased by:",
+      "options": {
+        "A": ") A lower MTBF and a lower MTTR",
+        "B": ") A higher MTBF and a lower MTTR",
+        "C": ") A lower MTBF and a higher MTTR",
+        "D": ") A higher MTBF and a higher MTTR"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "One prefers to have a higher MTBF and a lower MTTR. \"Each device has a mean time between failure (MTBF) and a mean time to repair (MTTR). The MTBF estimate is used to determine the expected lifetime of a device or when an element within that device is expected to give out. The MTTR value is used to estimate the time it will take to repair the device and get it back into production.\" Pg 267 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1000,
+      "question": "Which of the following is NOT a major element of Business Continuity Planning?",
+      "options": {
+        "A": ") Creation of a BCP committee",
+        "B": ") Business Impact Assessment (BIA)",
+        "C": ") Business Continuity Plan Development",
+        "D": ") Scope plan initiation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

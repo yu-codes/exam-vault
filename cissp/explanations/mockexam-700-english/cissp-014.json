@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q651 - Q700",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 651,
+      "question": "Which of the following is used to create and modify the structure of your tables and other objects in the database?",
+      "options": {
+        "A": "SQL Data Definition Language (DDL)",
+        "B": "SQL Data Manipulation Language (DML)",
+        "C": "SQL Data Relational Language (DRL)",
+        "D": "SQL Data Identification Language (DIL)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Data Definition Language (DDL) is similar to a computer programming language and is used for defining data structures, such as database schemas, database tables, and other database objects. Incorrect Answers: B: The Data Manipulation Language (DML) is used to retrieve, insert and modify database data. These commands will be used by all database users during the routine operation of the database. C: The SQL language consists of three components: the Data Definition Language (DDL), the Data Manipulation Language (DML), and the Data Control Language (DCL). It does not contain a data relational language. D: The SQL language consists of three components: the Data Definition Language (DDL), the Data Manipulation Language (DML), and the Data Control Language (DCL). It does not contain a data identification language."
+    },
+    {
+      "id": 652,
+      "question": "SQL commands do not include which of the following?",
+      "options": {
+        "A": "Select, Update",
+        "B": "Grant, Revoke",
+        "C": "Delete, Insert",
+        "D": "Add, Relist"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "There is no Add command within the Structure Query Language (SQL). Instead the Insert command is used to add new data to the database. There is also no Relist command within SQL. Incorrect Answers: A: Select and Update are Data Manipulation Language (DML) commands. The Select statement is used to select data from a database while the Update statement is used to update existing records in a table. B: Grant and Revoke are Data Control Language (DCL) commands are used to enforce database security. The Grant statement is used to provide access or privileges on the database objects while the Revoke statement is used to remove those privileges. C: Delete and Insert are Data Manipulation Language (DML) commands. The Delete statement is used to remove data from a database while the Insert statement is used to add data to a table."
+    },
+    {
+      "id": 653,
+      "question": "Complex applications involving multimedia, computer aided design, video, graphics, and expert systems are more suited to which of the following database type?",
+      "options": {
+        "A": "Object-Oriented Databases (OODB)",
+        "B": "Object-Relational Databases",
+        "C": "Relational Databases",
+        "D": "Database management systems (DBMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An object-oriented database (OODB) has classes to define the attributes and procedures of its objects, which can be a variety of data types such as images, audio, documents, and video. This complex data is required for computer-aided design and imaging. Incorrect Answers: B: An object-relational database (ORD) is a relational database with a software front end that is written in an object-oriented programming language and is used with Object-Oriented Databases (OODB). It does not store data. C: A relational database organizes data into two-dimensional tables consisting of attributes (columns) and tuples (rows). It is not suited to storing complex data types such as video, graphics, etc. D: The database management system (DBMS) is a software suite that is used to manage access to the database and provides data integrity and redundancy. It is usually controlled by a database administrator."
+    },
+    {
+      "id": 654,
+      "question": "With regard to databases, which of the following has characteristics of ease of reusing code and analysis and reduced maintenance?",
+      "options": {
+        "A": "Object-Oriented Databases (OODB)",
+        "B": "Object-Relational Databases (ORDB)",
+        "C": "Relational Databases",
+        "D": "Database management systems (DBMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An object-oriented database (OODB) is more dynamic than a relational database as it stores data as objects. It allows object-oriented programming (OOP) code, including classes, to manipulate the objects. This also makes the reusing of code possible. Incorrect Answers: B: An object-relational database (ORD) is a relational database with a software front end that is written in an object-oriented programming language. This allows programmers to develop a front-end that incorporates the business logic procedures to be used by requesting applications and the data within the database. C: A relational database stores data in a two-dimensional table and uses query language, such as Structured Query Language (SQL), to access and manipulate that data. D: The database management system (DBMS) is a software suite that is used to manage access to the database and provides data integrity and redundancy. It is usually controlled by a database administrator."
+    },
+    {
+      "id": 655,
+      "question": "Which of the following is the marriage of object-oriented and relational technologies combining the attributes of both?",
+      "options": {
+        "A": "object-relational database",
+        "B": "object-oriented database",
+        "C": "object-linking database",
+        "D": "object-management database"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An object-relational database is described as is the marriage of object-oriented and relational technologies combining the attributes of both. An object-relational database (ORD) or object-relational database management system (ORDBMS) is a relational database with a software front end that is written in an object-oriented programming language. A relational database just holds data in static two-dimensional tables. When the data are accessed, some type of processing needs to be carried out on it—otherwise, there is really no reason to obtain the data. If we have a front end that provides the procedures (methods) that can be carried out on the data, then each and every application that accesses this database does not need to have the necessary procedures. This means that each and every application does not need to contain the procedures necessary to gain what it really wants from this database. Incorrect Answers: B: An object-oriented database is a database designed to handle a variety of data types (images, audio, documents, video). This is not what is described in the question. C: An object-linking database is not a valid database type. D: An object-management database is not a valid database type."
+    },
+    {
+      "id": 656,
+      "question": "What is used to hide data from unauthorized users by allowing a relation in a database to contain multiple tuples with the same primary keys with each instance distinguished by a security level?",
+      "options": {
+        "A": "Data mining",
+        "B": "Polyinstantiation",
+        "C": "Cell suppression",
+        "D": "Noise and perturbation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Polyinstantiation enables a table, which is also known as a relation, to contain multiple tuples with the same primary keys, with each instance distinguished by a security level. At a lower security level the tuple will not contain sensitive data and it will effectively be hidden from users who do not have the appropriate access permissions. Incorrect Answers: A: Data mining is the process of analyzing large amounts of data to determine patterns that would not previously be apparent. C: Cell suppression is a technique used to hide specific cells in a database that contain information that could be used in inference attacks. D: Noise and perturbation is a technique of inserting fake information in a database in an attempt to misdirect an attacker or create sufficient confuse that the actual attack will not be fruitful."
+    },
+    {
+      "id": 657,
+      "question": "Which of the following translates source code one command at a time for execution on a computer?",
+      "options": {
+        "A": "A translator",
+        "B": "An interpreter",
+        "C": "A compiler",
+        "D": "An assembler"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Interpreters translate one command at a time during run-time or execution time. Incorrect Answers: A: A translator converts source code to another format, which could be another high-level language, an intermediate language, or machine language. C: A compiler converts high-level language source code to the necessary a target language for specific processors to understand. D: An assembler converts assembly language source code into machine code that the computer understands."
+    },
+    {
+      "id": 658,
+      "question": "Which of the following is a Microsoft technology for communication among software components distributed across networked computers?",
+      "options": {
+        "A": "DDE",
+        "B": "OLE",
+        "C": "ODBC",
+        "D": "DCOM"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Component Object Model (COM) is a model that allows for interprocess communication within one application or between applications on the same computer system. The model was created by Microsoft and outlines standardized APIs, component naming schemes, and communication standards. So if I am a developer and I want my application to be able to interact with the Windows operating system and the different applications developed for this platform, I will follow the COM outlined standards. Distributed Component Object Model (DCOM) supports the same model for component interaction, and also supports distributed interprocess communication (IPC). COM enables applications to use components on the same systems, while DCOM enables applications to access objects that reside in different parts of a network. So this is how the client/server-based activities are carried out by COM-based operating systems and/or applications. Incorrect Answers: A: Dynamic Data Exchange (DDE) allows information to be shared or communicated between programs on one computer, not across networked computers. B: Object linking and embedding (OLE) provides a way for objects to be shared on a local personal computer and to use COM as their foundation. OLE enables objects—such as graphics, clipart, and spreadsheets—to be embedded into documents. This is not what is described in the question. C: Open Database Connectivity (ODBC) is an API that allows an application to communicate with a database, either locally or remotely. This is not what is described in the question."
+    },
+    {
+      "id": 659,
+      "question": "Which of the following statements relating to Distributed Computing Environment (DCE) is FALSE?",
+      "options": {
+        "A": "It is a layer of software that sits on the top of the network layer and provides services to the applications above it.",
+        "B": "It uses a Universal Unique Identifier (UUID) to uniquely identify users, resources and components.",
+        "C": "It provides the same functionality as DCOM, but it is more proprietary than DCOM.",
+        "D": "It is a set of management services with a communication layer based on RPC."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Distributed Computing Environment (DCE) does provide the same functionality as DCOM, but it is NOT more proprietary than DCOM. Distributed Computing Environment (DCE) is a standard developed by the Open Software Foundation (OSF), also called Open Group. It is a client/server framework that is available to many vendors to use within their products. This framework illustrates how various capabilities can be integrated and shared between heterogeneous systems. DCE provides a Remote Procedure Call (RPC) service, security service, directory service, time service, and distributed file support. It was one of the first attempts at distributed computing in the industry. DCE is a set of management services with a communications layer based on RPC. It is a layer of software that sits on the top of the network layer and provides services to the applications above it. DCE and Distributed Component Object Model (DCOM) offer much of the same functionality. DCOM, however, was developed by Microsoft and is more proprietary in nature. Incorrect Answers: A: It is true that DCE is a layer of software that sits on the top of the network layer and provides services to the applications above it. B: It is true that DCE uses a Universal Unique Identifier (UUID) to uniquely identify users, resources and components. D: It is true that DCE is a set of management services with a communication layer based on RPC."
+    },
+    {
+      "id": 660,
+      "question": "Which virus category has the capability of changing its own code, making it harder to detect by anti-virus software?",
+      "options": {
+        "A": "Stealth viruses",
+        "B": "Polymorphic viruses",
+        "C": "Trojan horses",
+        "D": "Logic bombs"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Polymorphic virus produces varied but operational copies of itself in an attempt to evade anti-virus software. Incorrect Answers: A: A stealth virus attempts to hide changes of the affected files but not itself. C: A Trojan horse is code that is disguised as a useful application but contains code that has a malicious or harmful purpose imbedded in it. D: A logic bomb executes a set of instructions when specific conditions are met."
+    },
+    {
+      "id": 661,
+      "question": "Why would a database be denormalized?",
+      "options": {
+        "A": "To ensure data integrity",
+        "B": "To increase processing efficiency",
+        "C": "To prevent duplication of data",
+        "D": "To save storage space"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The purpose of denormalization is to improve the read performance and processing efficiency of a database by adding redundant data or by grouping data. Incorrect Answers: A: The duplication of data creates a problem for data integrity as the data needs to be updated in numerous places. Normalization, which eliminates the duplication of data, improves data integrity. C: The purpose of normalization is to eliminate duplication of the data. All duplicated data items should be deleted and replaced by a pointer. Denormalization could reverse this process. It attempts to improve the read performance and processing efficiency of a database by adding redundant data or by grouping data. D: The purpose of denormalization is to improve the read performance and processing efficiency of a database by adding redundant data or by grouping data. This increases storage space consumption."
+    },
+    {
+      "id": 662,
+      "question": "Which of the following BEST explains why computerized information systems frequently fail to meet the needs of users?",
+      "options": {
+        "A": "Inadequate quality assurance (QA) tools.",
+        "B": "Constantly changing user needs.",
+        "C": "Inadequate user participation in defining the system's requirements.",
+        "D": "Inadequate project management."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The most important stages of developing computerized information systems (or any other system or software) are the early requirement gathering and design phases. If the needs of the users are not correctly determined, the system will not meet those needs. As end users will be the people using the system, they are will have the most valuable input into the system requirements definition. Inadequate user participation in defining the system's requirements can lead to a system design that does not meet the requirements of the users. Incorrect Answers: A: This question is asking for the BEST answer. Inadequate quality assurance (QA) tools may result in poor QA tests so floors in the system aren’t recognized. However, defining the system's requirements is the most important stage of the project. If this is not done correctly, then QA testing will have no effect on the suitability of the new system. B: Constantly changing user needs can be a hazard in a development project. However, this only has an effect if the users are involved in the design of the system. D: Inadequate project management generally leads to late or over-budget projects. Incorrectly determining the system requirements could be due to inadequate project management. However, Answer C is more specific to the cause of the problem."
+    },
+    {
+      "id": 663,
+      "question": "Which of the following is an advantage in using a bottom-up versus a top-down approach to software testing?",
+      "options": {
+        "A": "Interface errors are detected earlier.",
+        "B": "Errors in critical modules are detected earlier.",
+        "C": "Confidence in the system is achieved earlier.",
+        "D": "Major functions and processing are tested earlier."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Bottom Up Testing is an approach to integrated testing where the lowest level components are tested first, then used to facilitate the testing of higher level components. The process is repeated until the component at the top of the hierarchy is tested. With Bottom Up Testing critical modules can be tested first and the main advantage of this approach is that bugs are more easily found. All the bottom or low-level modules, procedures or functions are integrated and then tested. After the integration testing of lower level integrated modules, the next level of modules will be formed and can be used for integration testing. This approach is helpful only when all or most of the modules of the same development level are ready. This method also helps to determine the levels of software developed and makes it easier to report testing progress in the form of a percentage. Incorrect Answers: A: Interface modules are located at higher levels of the software design, not at the bottom levels. C: The major advantage of the top-down approach is that bugs are found earlier, not that confidence is achieved earlier. D: The major functions are not located at the bottom, and would not be tested earlier."
+    },
+    {
+      "id": 664,
+      "question": "Which of the following is an advantage of prototyping?",
+      "options": {
+        "A": "Prototype systems can provide significant time and cost savings.",
+        "B": "Change control is often less complicated with prototype systems.",
+        "C": "It ensures that functions or extras are not added to the intended system.",
+        "D": "Strong internal controls are easier to implement."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A sample of software code or a model (prototype) can be developed to explore a specific approach to a problem before investing expensive time and resources. A team can identify the usability and design problems while working with a prototype and adjust their approach as necessary. Within the software development industry three main prototype models have been invented and used. These are the rapid prototype, evolutionary prototype, and operational prototype. Incorrect Answers: B: Change control is not less complicated with prototype systems. C: Prototyping does nothing to ensure that functions or extras are not added to the intended system. D: Strong internal controls are not easier to implement with prototyping. Being a new/prototype system, strong internal controls are likely to be more difficult to implement than a non-prototype system."
+    },
+    {
+      "id": 665,
+      "question": "Why do buffer overflows happen? What is the main cause?",
+      "options": {
+        "A": "Because buffers can only hold so much data",
+        "B": "Because of improper parameter checking within the application",
+        "C": "Because they are an easy weakness to exploit",
+        "D": "Because of insufficient system memory"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In computer security and programming buffer overflow is a type of application error. The application's lack of proper checking of parameters causes the buffer overflow. A buffer overflow, or buffer overrun, is an anomaly where a program, while writing data to a buffer, overruns the buffer's boundary and overwrites adjacent memory locations. This is a special case of the violation of memory safety. Incorrect Answers: A: It is true that there is a limit of data that can be handled by a buffer, but this limit is not the cause of the overflow. B: Buffer overflows can be exploited, but the cause is a flaw in the program. The exploitation does not cause the overflow. D: Insufficient memory does not cause overflows. The overflow is caused by a flow in the application."
+    },
+    {
+      "id": 666,
+      "question": "What is called the number of columns in a table?",
+      "options": {
+        "A": "Schema",
+        "B": "Relation",
+        "C": "Degree",
+        "D": "Cardinality"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The number of columns in a database table (relation) is referred to as the degree. Incorrect Answers: A: Schema describes that structure of the database B: A database table is also referred to as a relation. D: Cardinality is the number of rows (tuples) in a database table (relation)."
+    },
+    {
+      "id": 667,
+      "question": "Which of the following would not correspond to the number of primary keys values found in a table in a relational database?",
+      "options": {
+        "A": "Degree",
+        "B": "Number of tuples",
+        "C": "Cardinality",
+        "D": "Number of rows"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The degree of a table represents the number of columns in a database table. This does not correspond to the number of primary key values in a table as each row must have a unique primary key. Incorrect Answers: B, D: A row in a database table is referred to as a tuple. Each row or tuple must have a unique primary key. Therefore, the number of rows or tuples will correspond to the number of primary keys values found in a table. D: Cardinality is the number of rows, also known as tuples, in a table. Each row or tuple must have a unique primary key. Therefore, the cardinality of a table will correspond to the number of primary keys values found in a table."
+    },
+    {
+      "id": 668,
+      "question": "Which of the following represents the best programming?",
+      "options": {
+        "A": "Low cohesion, low coupling",
+        "B": "Low cohesion, high coupling",
+        "C": "High cohesion, low coupling",
+        "D": "High cohesion, high coupling"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Cohesion reflects how many different types of tasks a module can carry out. If a module carries out only one task (i.e., subtraction) or several tasks that are very similar (i.e., subtract, add, multiply), it is described as having high cohesion, which is a good thing. The higher the cohesion, the easier it is to update or modify and not affect other modules that interact with it. This also means the module is easier to reuse and maintain because it is more straightforward when compared to a module with low cohesion. Coupling is a measurement that indicates how much interaction one module requires to carry out its tasks. If a module has low (loose) coupling, this means the module does not need to communicate with many other modules to carry out its job. High (tight) coupling means a module depends upon many other modules to carry out its tasks. Low coupling is more desirable because the modules are easier to understand, easier to reuse, and changes can take place and not affect many modules around it. Low coupling indicates that the programmer created a well-structured module. Incorrect Answers: A: With low cohesion it is harder to update a module of the program. B: With low cohesion it is harder to update a module of the program. High coupling would make the modules of the program harder to understand and harder to reuse. D: High coupling would make the modules of the program harder to understand and harder to reuse."
+    },
+    {
+      "id": 669,
+      "question": "Java is not:",
+      "options": {
+        "A": "Object-oriented.",
+        "B": "Distributed.",
+        "C": "Architecture Specific.",
+        "D": "Multithreaded."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "JAVA was developed so that the same program could be executed on multiple hardware and operating system platforms, it is not Architecture Specific. Incorrect Answers: A: JAVA is object-oriented as it works with classes and objects. B: JAVA was developed to be used in a distributed computing environment. D: JAVA is multi-threaded that is calls to subroutines as is the case with object-oriented programming."
+    },
+    {
+      "id": 670,
+      "question": "What are user interfaces that limit the functions that can be selected by a user called?",
+      "options": {
+        "A": "Constrained user interfaces",
+        "B": "Limited user interfaces",
+        "C": "Mini user interfaces",
+        "D": "Unlimited user interfaces"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Constrained user interfaces limit users’ access abilities by not allowing them to request certain functions or information, or to have access to specific system resources. Incorrect Answers: B: Limited user interfaces is not a valid term with regards to CISSP. C: Mini user interfaces are designed for hand-held devices like smartphones. D: Unlimited user interfaces are not a valid term with regards to CISSP."
+    },
+    {
+      "id": 671,
+      "question": "Buffer overflow and boundary condition errors are subsets of which of the following?",
+      "options": {
+        "A": "Race condition errors.",
+        "B": "Access validation errors.",
+        "C": "Exceptional condition handling errors.",
+        "D": "Input validation errors."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The buffer overflow is probably the most notorious of input validation mistakes. A buffer overflow is an example of boundary condition error where data is allowed to be written outside the allocated buffer. Incorrect Answers: A: Buffer overflow and boundary conditions errors are not race conditions errors. Race conditions exist when the design of a program puts it in a vulnerable condition before ensuring that those vulnerable conditions are mitigated. Examples include opening temporary files without first ensuring the files cannot be read, or written to, by unauthorized users or processes, and running in privileged mode or instantiating dynamic load library functions without first verifying that the dynamic load library path is secure. Either of these may allow an attacker to cause the program (with its elevated privileges) to read or write unexpected data or to perform unauthorized commands. B: Buffer overflow and boundary conditions errors are not access validation errors. An example of an access validation error would be when a process is denied access to an object. C: An example of exceptions handling error would be a division by zero. Buffer overflows and boundary conditions are not examples of exceptional conditions errors."
+    },
+    {
+      "id": 672,
+      "question": "Which of the following does not address Database Management Systems (DBMS) Security?",
+      "options": {
+        "A": "Perturbation",
+        "B": "Cell suppression",
+        "C": "Padded cells",
+        "D": "Partitioning"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A padded cell system is used in Intrusion Detection Systems (IDSs) and is similar to a honeypot. When an IDS detects an intruder, that intruder is automatically transferred to a padded cell. The padded cell has the look and layout of the actual network, but within the padded cell the intruder can neither perform malicious activities nor access any confidential data. Incorrect Answers: A: Noise and perturbation is a database security technique of inserting fake information in the database to misdirect an attacker or cause confusion on the part of the attacker that the actual attack will not be fruitful. B: Cell suppression is a database security technique used to hide specific cells in a database that contain information that could be used in inference attacks. D: Partitioning is a database security technique that involves dividing the database into different parts, which makes it much harder for an unauthorized individual to find connecting pieces of data that can be brought together and other information that can be deduced or uncovered."
+    },
+    {
+      "id": 673,
+      "question": "Which of the following phases of a software development life cycle normally addresses Due Care and Due Diligence?",
+      "options": {
+        "A": "Implementation",
+        "B": "System feasibility",
+        "C": "Product design",
+        "D": "Software plans and requirements"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Information security best practice is a consensus of the best way to protect the confidentiality, integrity, and availability of assets. Following best practices is a way to demonstrate due care and due diligence. Due Care and Due Diligence should therefore be a part of the Software plans and requirements phase. Note: Due care is doing what a reasonable person would do. It is sometimes called the “prudent man” rule. The term derives from “duty of care. Due diligence is the management of due care. Expecting your staff to keep their systems patched means you expect them to exercise due care. Verifying that your staff has patched their systems is an example of due diligence. Incorrect Answers: A: Due Care and Due Diligence would be a part of the requirements of a project, and not a part of the implementation phase. B: Due Care and Due Diligence would be a part of the requirements of a project, and not a part of the System feasibility phase. C: Due Care and Due Diligence would be a part of the requirements of a project, and not a part of the design phase."
+    },
+    {
+      "id": 674,
+      "question": "Which of the following phases of a software development life cycle normally incorporates the security specifications, determines access controls, and evaluates encryption options?",
+      "options": {
+        "A": "Detailed design",
+        "B": "Implementation",
+        "C": "Product design",
+        "D": "Software plans and requirements"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The design stage takes as its initial input the requirements identified in the approved requirements document, this would include security specifications. For each requirement, a set of one or more design elements will be produced as a result of interviews, workshops, and/or prototype efforts. Incorrect Answers: A: In the Systems Development Life Cycle (SDLC) model there is not Detailed Design just a Product Design or simply a Design phase. B: The security specifications are implemented in the implementation phase, but they are incorporated earlier in the product design phase. D: The security specifications are made in the Software plans and requirements phase, but incorporated in the product design phase."
+    },
+    {
+      "id": 675,
+      "question": "In a database management system (DBMS), what is the \"cardinality\"?",
+      "options": {
+        "A": "The number of rows in a relation.",
+        "B": "The number of columns in a relation.",
+        "C": "The set of allowable values that an attribute can take.",
+        "D": "The number of relations in a database."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In database design, the cardinality or fundamental principle of one data table with respect to another is a critical aspect. The relationship of one to the other must be precise and exact between each other in order to explain how each table links together. In the relational model, tables can be related as any of \"one-to-many\" or \"many-to-many.\" This is said to be the cardinality of a given table in relation to another. Incorrect Answers: B: The number of columns in a relation would be the size of the key. It is not the cardinality of the relation. C: Cardinality concerns the relation between two tables, not allowable attributes. D: Cardinality concerns one specific relation between two tables, not the number of relations in a database."
+    },
+    {
+      "id": 676,
+      "question": "Which of the following statements pertaining to software testing is incorrect?",
+      "options": {
+        "A": "Unit testing should be addressed and considered when the modules are being designed.",
+        "B": "Test data should be part of the specifications.",
+        "C": "Testing should be performed with live data to cover all possible situations.",
+        "D": "Test data generators can be used to systematically generate random test data that can be used to test programs."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Live data would cover less of the possible input data range compared to generated data. Incorrect Answers: A: Unit testing can start very early in development. After a programmer develops a component, or unit of code, it is tested with several different input values and in many different situations. The goal of this type of testing is to isolate each part of the software and show that the individual parts are correct. B: An important problem in testing is that of generating quality test data and is seen as an important step in reducing the cost of software testing. Test data should therefore be part of the specification. D: An important problem in testing is that of generating quality test data and is seen as an important step in reducing the cost of software testing. Hence, test data generation is an important part of software testing."
+    },
+    {
+      "id": 677,
+      "question": "Which of the following is less likely to be included in the change control sub-phase of the maintenance phase of a software product?",
+      "options": {
+        "A": "Estimating the cost of the changes requested",
+        "B": "Recreating and analyzing the problem",
+        "C": "Determining the interface that is presented to the user",
+        "D": "Establishing the priorities of requests"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "To determine the user interface would not be part of the change control phase. This would be done in an earlier phase. The change control analyst is responsible for approving or rejecting requests to make changes to the network, systems, or software. This role must make certain that the change will not introduce any vulnerability, that it has been properly tested, and that it is properly rolled out. The change control analyst needs to understand how various changes can affect security, interoperability, performance, and productivity. Incorrect Answers: A: Calculation the cost of the change should be a part of analyzing a change request. B: Testing is a part of change control. If a problem occurs during testing change control should recreate and analyze the problem. D: If there are multiple change requests then they must be prioritized in the change control phase."
+    },
+    {
+      "id": 678,
+      "question": "Sensitivity labels are an example of what application control type?",
+      "options": {
+        "A": "Preventive security controls",
+        "B": "Detective security controls",
+        "C": "Compensating administrative controls",
+        "D": "Preventive accuracy controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Sensitivity (Security) labels are attached to all objects; thus, every file, directory, and device has its own security label with its classification information. A user may have a security clearance of secret, and the data he requests may have a security label with the classification of top secret. In this case, the user will be denied (prevented) because his clearance is not equivalent or does not dominate (is not equal or higher than) the classification of the object. The terms “security labels” and “sensitivity labels” can be used interchangeably. Incorrect Answers: B: Sensitivity labels are preventive, not detective, as the label may prevent the user or process from accessing the resource. C: A compensating control is a data security measure that is designed to satisfy the requirement for some other security measure that is deemed too difficult or impractical to implement. Sensitive controls are preventive, not compensating. D: Sensitivity labels have nothing to do with accuracy. They are preventive."
+    },
+    {
+      "id": 679,
+      "question": "What is the act of obtaining information of a higher sensitivity by combining information from lower levels of sensitivity?",
+      "options": {
+        "A": "Polyinstantiation",
+        "B": "Inference",
+        "C": "Aggregation",
+        "D": "Data mining"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Aggregation is the act of combining information from separate sources. The combination of the data forms new information, which the subject does not have the necessary rights to access. The combined information has a sensitivity that is greater than that of the individual parts. Incorrect Answers: A: Polyinstantiation enables a table, which is also known as a relation, to contain multiple tuples with the same primary keys, with each instance distinguished by a security level. At a lower security level the tuple will not contain sensitive data and it will effectively be hidden from users who do not have the appropriate access permissions. B: Inference is the intended result of aggregation. The inference problem happens when a subject deduces the full story from the pieces he learned of through aggregation. This is seen when data at a lower security level indirectly portrays data at a higher level. D: Data mining is about finding new information in a lot of data. Sensitivity or security is not related to data mining."
+    },
+    {
+      "id": 680,
+      "question": "Which expert system operating mode allows determining if a given hypothesis is valid?",
+      "options": {
+        "A": "Blackboard",
+        "B": "Lateral chaining",
+        "C": "Forward chaining",
+        "D": "Backward chaining"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Backward chaining (or backward reasoning) is an inference method that can be described as working backward from the goal/hypothesis. It is used in automated theorem provers, inference engines, proof assistants and other artificial intelligence applications. Incorrect Answers: A: A blackboard system is an artificial intelligence application based on the blackboard architectural model, where a common knowledge base, the \"blackboard\", is iteratively updated by a diverse group of specialist knowledge sources, starting with a problem specification and ending with a solution. B: Lateral chaining is not one of the expert system operating modes. C: Forward chaining is the opposite of backward chaining. Forward chaining starts with the available data and uses inference rules to extract more data until a goal (hypothesis) is reached."
+    },
+    {
+      "id": 681,
+      "question": "Why does compiled code pose more of a security risk than interpreted code?",
+      "options": {
+        "A": "Because malicious code can be embedded in compiled code and be difficult to detect.",
+        "B": "If the executed compiled code fails, there is a chance it will fail insecurely.",
+        "C": "Because compilers are not reliable.",
+        "D": "There is no risk difference between interpreted code and compiled code."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Compiled code poses more of a security risk than interpreted code because of malicious code can be embedded in the compiled code and be difficult to detect. Incorrect Answers: B: Compiled code that fails would be an example of an application runtime error, which in itself is no security risk. C: Compilers are to be trusted. D: Compiled code is more of a security risk."
+    },
+    {
+      "id": 682,
+      "question": "Which of the following is not a defined maturity level within the Software Capability Maturity Model?",
+      "options": {
+        "A": "Repeatable",
+        "B": "Defined",
+        "C": "Managed",
+        "D": "Oriented"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The Software Capability Maturity Model (CMM) is based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes. It introduces five maturity levels that serve as a foundation for conducting continuous process improvement and as an ordinal scale for measuring the maturity of the organization involved in the software processes. CMM has Five Maturity Levels of Software Processes: The initial level: processes are disorganized, even chaotic. Success is likely to depend on individual efforts, and is not considered to be repeatable as processes would not be sufficiently defined and documented to allow them to be replicated. The repeatable or managed level: basic project management techniques are established, and successes could be repeated as the requisite processes would have been made established, defined, and documented. The defined level: an organization has developed its own standard software process through greater attention to documentation, standardization, and integration. The quantatively managed level: an organization monitors and controls its own processes through data collection and analysis. The optimized level: processes are constantly being improved through monitoring feedback from current processes and introducing innovative processes to better serve the organization's particular needs. There is thus no Oriented level. Incorrect Answers: A: The repeatable level is the second maturity level. At this level basic project management techniques are established, and successes could be repeated as the requisite processes would have been made established, defined, and documented. B: The defined level is the third maturity level. At this level an organization has developed its own standard software process through greater attention to documentation, standardization, and integration. C: The (quantatively) managed level is the fourth maturity level. At this level an organization monitors and controls its own processes through data collection and analysis."
+    },
+    {
+      "id": 683,
+      "question": "Which software development model is actually a meta-model that incorporates a number of the software development models?",
+      "options": {
+        "A": "The Waterfall model",
+        "B": "The modified Waterfall model",
+        "C": "The Spiral model",
+        "D": "The Critical Path Model (CPM)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The spiral model is a risk-driven process model generator for software projects. Thus, the incremental, waterfall, prototyping, and other process models are special cases of the spiral model that fit the risk patterns of certain projects. Incorrect Answers: A: The Waterfall model is a special case of the Spiral model, not the opposite way around. B: The modified Waterfall model is a special case of the Spiral model, not the opposite way around. D: A critical path model is not a meta-model. The critical path model requires you to establish the time frame for a project and schedule start and end times for each task in the project."
+    },
+    {
+      "id": 684,
+      "question": "Which of the following is used in database information security to hide information?",
+      "options": {
+        "A": "Inheritance",
+        "B": "Polyinstantiation",
+        "C": "Polymorphism",
+        "D": "Delegation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Polyinstantiation is a process of interactively producing more detailed versions of objects by populating variables with different values or other variables. It is often used to prevent inference attacks by hiding information. Incorrect Answers: A: Inheritance is not used to hide database information. Within object orientation programming inheritance is a mechanism for code reuse and to allow independent extensions of the original software via public classes and interfaces. C: Polymorphism is when different objects are given the same input and react differently. Polymorphism is not a way to hide database security information. D: Delegation is a concept within object-oriented programming. Delegation does not concern information security for database."
+    },
+    {
+      "id": 685,
+      "question": "Which model, based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes, introduced five levels with which the maturity of an organization involved in the software process is evaluated?",
+      "options": {
+        "A": "The Total Quality Model (TQM)",
+        "B": "The IDEAL Model",
+        "C": "The Software Capability Maturity Model",
+        "D": "The Spiral Model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Software Capability Maturity Model (CMM) is based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes. It introduces five maturity levels that serve as a foundation for conducting continuous process improvement and as an ordinal scale for measuring the maturity of the organization involved in the software processes. CMM has Five Maturity Levels of Software Processes: The initial level: processes are disorganized, even chaotic. Success is likely to depend on individual efforts, and is not considered to be repeatable as processes would not be sufficiently defined and documented to allow them to be replicated. The repeatable or managed level: basic project management techniques are established, and successes could be repeated as the requisite processes would have been made established, defined, and documented. The defined level: an organization has developed its own standard software process through greater attention to documentation, standardization, and integration. The quantatively managed level: an organization monitors and controls its own processes through data collection and analysis. The optimized level: processes are constantly being improved through monitoring feedback from current processes and introducing innovative processes to better serve the organization's particular needs. Incorrect Answers: A: Total Quality Management (TQM) is a management approach of an organization centered on quality, based on the participation of all its members and aiming at long term success through customer satisfaction. B: The Integrated Design, Evaluation, and Assessment of Loadings (IDEAL) model is a post-construction water quality model for designing storm water best management practices. It is not a software development model. D: The Spiral model uses an iterative approach to software development with an emphasis on risk analysis. The iterative approach allows new requirements to be addressed as they are uncovered. It is a good model for complex projects that have fluid requirements. The spiral model has four main phases: Planning Risk analysis: ensures that all issues are actively reviewed and analyzed. Development and testing: prototype testing takes place early in the development project, and feedback based upon these tests is integrated into the following iteration of steps. Evaluation: the customer evaluates the product in its current state and provides feedback, which is an input value for the following iteration of steps."
+    },
+    {
+      "id": 686,
+      "question": "Which of the following characteristics pertaining to databases is NOT true?",
+      "options": {
+        "A": "A data model should exist and all entities should have a significant name.",
+        "B": "Justifications must exist for normalized data.",
+        "C": "No NULLs should be allowed for primary keys.",
+        "D": "All relations must have a specific cardinality."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Data normalization is the process of reducing data to its canonical form. Database normalization is the process of organizing the fields and tables of a relational database to minimize redundancy and dependency. Justification is not a term that is used for normalized data. Incorrect Answers: A: A database model, such as a relational database model, is a type of data model that determines the logical structure of a database and fundamentally determines in which manner data can be stored, organized, and manipulated. Within a database model the entities must be named properly. C: A primary key cannot have a NULL value. D: A database relation could be either one-to-one, one-to-many, or many-to-many."
+    },
+    {
+      "id": 687,
+      "question": "Which of the following is best defined as a circumstance in which a collection of information items is required to be classified at a higher security level than any of the individual items that comprise it?",
+      "options": {
+        "A": "Aggregation",
+        "B": "Inference",
+        "C": "Clustering",
+        "D": "Collision"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Aggregation is the act of combining information from separate sources. The combination of the data forms new information, which the subject does not have the necessary rights to access. The combined information has a sensitivity that is greater than that of the individual parts. Thus the collection/aggregation of data should be classified at a higher security. Incorrect Answers: B: Inference is the intended result of aggregation. The inference problem happens when a subject deduces the full story from the pieces he learned of through aggregation. This is seen when data at a lower security level indirectly portrays data at a higher level. C: The term clustering does not apply here. D: The term collision does not apply here. In a computer system, a cluster is a group of servers and other resources that act like a single system and enable high availability."
+    },
+    {
+      "id": 688,
+      "question": "In which of the following cloud computing service model are applications hosted by the service provider and made available to the customers over a network?",
+      "options": {
+        "A": "Software as a service",
+        "B": "Data as a service",
+        "C": "Platform as a service",
+        "D": "Infrastructure as a service"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Software as a Service (SaaS) is a software distribution model in which applications are hosted by a vendor or service provider and made available to customers over a network, typically, the Internet. SaaS is closely related to the ASP (application service provider) and on demand computing software delivery models. For your exam you should know below information about Cloud Computing: Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model promotes availability and is composed of five essential characteristics, three service models, and four deployment models. Reference http://osarena.net/wp-content/uploads/2013/04/cloud-computing3.jpg Cloud computing service model Cloud computing service models Image Reference http://www.esri.com/news/arcwatch/0110/graphics/feature2.jpg Software as a Service (SaaS) Software as a Service (SaaS) is a software distribution model in which applications are hosted by a vendor or service provider and made available to customers over a network, typically, the Internet. SaaS is closely related to the ASP (application service provider) and on demand computing software delivery models. IDC identifies two slightly different delivery models for SaaS. The hosted application management (hosted AM) model is similar to ASP: a provider hosts commercially available software for customers and delivers it over the Web. In the software on demand model, the provider gives customers network- based access to a single copy of an application created specifically for SaaS distribution. Provider gives users access to specific application software (CRM, e-mail, games). The provider gives the customers network based access to a single copy of an application created specifically for SaaS distribution and use. Benefits of the SaaS model include: easier administration automatic updates and patch management compatibility: All users will have the same version of software. easier collaboration, for the same reason global accessibility. Platform as a Service (PaaS) Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity over the Internet. The service delivery model allows the customer to rent virtualized servers and associated services for running existing applications or developing and testing new ones. Cloud providers deliver a computing platform, which can include an operating system, database, and web server as a holistic execution environment. Where IaaS is the “raw IT network,” PaaS is the software environment that runs on top of the IT network. Platform as a Service (PaaS) is an outgrowth of Software as a Service (SaaS), a software distribution model in which hosted software applications are made available to customers over the Internet. PaaS has several advantages for developers. With PaaS, operating system features can be changed and upgraded frequently. Geographically distributed development teams can work together on software development projects. Services can be obtained from diverse sources that cross international boundaries. Initial and ongoing costs can be reduced by the use of infrastructure services from a single vendor rather than maintaining multiple hardware facilities that often perform duplicate functions or suffer from incompatibility problems. Overall expenses can also be minimized by unification of programming development efforts. On the downside, PaaS involves some risk of \"lock-in\" if offerings require proprietary service interfaces or development languages. Another potential pitfall is that the flexibility of offerings may not meet the needs of some users whose requirements rapidly evolve. Infrastructure as a Service (IaaS) Cloud providers offer the infrastructure environment of a traditional data center in an on- demand delivery method. Companies deploy their own operating systems, applications, and software onto this provided infrastructure and are responsible for maintaining them. Infrastructure as a Service is a provision model in which an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on a per-use basis. Incorrect Answers: B: Data Provided as a service rather than needing to be loaded and prepared on premises. C: Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity over the Internet. The service delivery model allows the customer to rent virtualized servers and associated services for running existing applications or developing and testing new ones. D: Infrastructure as a Service is a provision model in which an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on a per-use basis."
+    },
+    {
+      "id": 689,
+      "question": "Which of the following cloud computing service model provides a way to rent operating systems, storage and network capacity over the Internet?",
+      "options": {
+        "A": "Software as a service",
+        "B": "Data as a service",
+        "C": "Platform as a service",
+        "D": "Infrastructure as a service"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 690,
+      "question": "Which of the following cloud computing service model is a provision model in which an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components?",
+      "options": {
+        "A": "Software as a service",
+        "B": "Data as a service",
+        "C": "Platform as a service",
+        "D": "Infrastructure as a service"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 691,
+      "question": "Which of the following cloud deployment model operates solely for an organization?",
+      "options": {
+        "A": "Private Cloud",
+        "B": "Community Cloud",
+        "C": "Public Cloud",
+        "D": "Hybrid Cloud"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In Private cloud, the cloud infrastructure is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises. Private Cloud For your exam you should know below information about Cloud Computing deployment models: Private cloud The cloud infrastructure is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises. Community Cloud Private Cloud Image Reference - http://www.inflectionpoint.co.uk/Portals/5/VMware-vCloud.jpg Community Cloud The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises. Community Cloud Image Reference – http:// cloudcomputingksu.files.wordpress.com/2012/05/community- cloud.png Public Cloud The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. Public Cloud Image reference - http://definethecloud.files.wordpress.com/2010/04/image3.png Hybrid cloud The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds) hybrid cloud Image reference – http://www.virtualizationpractice.com/wp- content/uploads/2013/04/Hybrid-CloudComputing-Solution1.jpg Incorrect Answers: B: Community cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises. C: Public cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. D: Hybrid cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds)"
+    },
+    {
+      "id": 692,
+      "question": "Which of the following cloud deployment model can be shared by several organizations?",
+      "options": {
+        "A": "Private Cloud",
+        "B": "Community Cloud",
+        "C": "Public Cloud",
+        "D": "Hybrid Cloud"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 693,
+      "question": "Which of the following cloud deployment model is provisioned for open use by the general public?",
+      "options": {
+        "A": "Private Cloud",
+        "B": "Community Cloud",
+        "C": "Public Cloud",
+        "D": "Hybrid Cloud"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In Public cloud, the cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. For your exam you should know below information about Cloud Computing deployment models: Private cloud The cloud infrastructure is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises. Private Cloud Image Reference - http://www.inflectionpoint.co.uk/Portals/5/VMware-vCloud.jpg Community Cloud The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises. Community Cloud Image Reference – http:// cloudcomputingksu.files.wordpress.com/2012/05/community- cloud.png Public Cloud The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. Public Cloud Image reference – http:// definethecloud.files.wordpress.com/2010/04/image3.png Hybrid cloud The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds) hybrid cloud Image reference - http://www.virtualizationpractice.com/wp- content/uploads/2013/04/HybridCloud-Computing-Solution1.jpg Incorrect Answers: A: Private cloud infrastructure is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises. B: Community cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises. D: Hybrid cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds)"
+    },
+    {
+      "id": 694,
+      "question": "Of the various types of \"Hackers\" that exist, the ones who are not worried about being caught and spending time in jail and have a total disregard for the law or police force, are labeled as what type of hackers?",
+      "options": {
+        "A": "Suicide Hackers",
+        "B": "Black Hat Hackers",
+        "C": "White Hat Hackers",
+        "D": "Gray Hat Hackers"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Suicide Hackers are a type of hackers without fear, who disregard the authority, the police, or law. Suicide Hackers hack for a cause important to them and find the end goal more important than their individual freedom. The term \"Hacker\" originally meant a Unix computer enthusiast but has been villainized in the media as a \"Criminal Hacker\" for a mass audience. A hacker used to be known as a good person who would add functionality within software or would make things work better. To most people today \"Hacker\" means criminal \"Criminal Cracker\", it is synonymous with Cracker or someone who get access to a system without the owner authorization. As seen in news reports in 2011 and later hackers associated with the \"Anonymous\" movement have attacked finance and/or credit card companies, stolen enough information to make contributions to worthy charities on behalf of organizations they see as contrary to the public good. These sorts of attackers/ hackers could be considered suicide hackers. Some did get caught and prosecuted while carrying out their cause. Nobody can know if they knew their activities would land them in court and/or prison but they had to have known of the risk and proceeded anyway. Incorrect Answers: B: Black Hat hackers are also known as crackers and are merely hackers who \"violates computer security for little reason beyond maliciousness or for personal gain\". Black Hat Hackers are \"the epitome of all that the public fears in a computer criminal\". Black Hat Hackers break into secure networks to destroy data or make the network unusable for those who are authorized to use the network. C: White Hat Hackers are law-abiding, reputable experts defending assets and not breaking laws. A white hat hacker breaks security for nonmalicious reasons, for instance testing their own security system. The term \"white hat\" in Internet slang refers to an ethical hacker. This classification also includes individuals who perform penetration tests and vulnerability assessments within a contractual agreement. Often, this type of 'white hat' hacker is called an ethical hacker. The International Council of Electronic Commerce Consultants, also known as the ECCouncil has developed certifications, courseware, classes, and online training covering the diverse arena of Ethical Hacking. Note about White Hat: As reported by Adin Kerimov, a white hat would not be worried about going to jail as he is doing a test with authorization as well and he has a signed agreement. While this is a true point he BEST choice is Suicide Hackers for the purpose of the exam, a white hat hacker would not disregard law and the authority. D: Gray Hat Hackers work both offensively and defensively and can cross the border between legal/ethical behavior and illegal/unethical behavior. A grey hat hacker is a combination of a Black Hat and a White Hat Hacker. A Grey Hat Hacker may surf the internet and hack into a computer system for the sole purpose of notifying the administrator that their system has been hacked, for example. Then they may offer to repair their system for a small fee. OTHER TYPES OF HACKERS Elite hacker is a social status among hackers, elite is used to describe the most skilled. Newly discovered exploits will circulate among these hackers. Elite groups such as Masters of Deception conferred a kind of credibility on their members. Script kiddie A script kiddie(or skiddie) is a non-expert who breaks into computer systems by using pre-packaged automated tools written by others, usually with little understanding of the underlying concept—hence the term script (i.e. a prearranged plan or set of activities) kiddie (i.e. kid, child—an individual lacking knowledge and experience, immature). Often time they do not even understand how they are taken advantage of the system, they do not understand the weakness being exploited, all they know is how to use a tool that someone else has built. Neophyte A neophyte, \"n00b\", or \"newbie\" is someone who is new to hacking or phreaking and has almost no knowledge or experience of the workings of technology, and hacking. Hacktivist A hacktivist is a hacker who utilizes technology to announce a social, ideological, religious, or political message. In general, most hacktivism involves website defacement or denial-of-service attacks."
+    },
+    {
+      "id": 695,
+      "question": "Which of the following is NOT a transaction redundancy implementation?",
+      "options": {
+        "A": "on-site mirroring",
+        "B": "Electronic Vaulting",
+        "C": "Remote Journaling",
+        "D": "Database Shadowing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 696,
+      "question": "Which of the following items is NOT a benefit of cold sites?",
+      "options": {
+        "A": "No resource contention with other organization",
+        "B": "Quick Recovery",
+        "C": "A secondary location is available to reconstruct the environment",
+        "D": "Low Cost"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 697,
+      "question": "Which of the following is NOT a common category/classification of threat to an IT system?",
+      "options": {
+        "A": "Human",
+        "B": "Natural",
+        "C": "Technological",
+        "D": "Hackers"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Hackers are classified as a human threat and not a classification by itself. All the other answers are incorrect. Threats result from a variety of factors, although they are classified in three types: Natural (e.g., hurricane, tornado, flood and fire), human (e.g. operator error, sabotage, malicious code) or technological (e.g. equipment failure, software error, telecommunications network outage, electric power failure)."
+    },
+    {
+      "id": 698,
+      "question": "Which of the following teams should NOT be included in an organization's contingency plan?",
+      "options": {
+        "A": "Damage assessment team",
+        "B": "Hardware salvage team",
+        "C": "Tiger team",
+        "D": "Legal affairs team"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 699,
+      "question": "Which of the following statements pertaining to a Criticality Survey is incorrect?",
+      "options": {
+        "A": "It is implemented to gather input from all personnel that is going to be part of the recovery teams.",
+        "B": "The purpose of the survey must be clearly stated.",
+        "C": "Management's approval should be obtained before distributing the survey.",
+        "D": "Its intent is to find out what services and systems are critical to keeping the organization in business."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Criticality Survey is implemented through a standard questionnaire to gather input from the most knowledgeable people. Not all personnel that is going to be part of recovery teams is necessarily able to help in identifying critical functions of the organization. The intent of such a survey is to identify the services and systems that are critical to the organization. Having a clearly stated purpose for the survey helps in avoiding misinterpretations. Management's approval of the survey should be obtained before distributing it."
+    },
+    {
+      "id": 700,
+      "question": "System reliability is increased by:",
+      "options": {
+        "A": "A lower MTBF and a lower MTTR.",
+        "B": "A higher MTBF and a lower MTTR.",
+        "C": "A lower MTBF and a higher MTTR.",
+        "D": "A higher MTBF and a higher MTTR."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In general, reliability (systemic def.) is the ability of a person or system to perform and maintain its functions in routine circumstances, as well as hostile or unexpected circumstances. Mean-time-between failure (MTBF) is the average length of time the hardware is functional without failure. Mean-time-to-repair is the amount of time it takes to repair and resume normal operation after a failure has occurred. Having a higher MTBF and a lower MTTR will increase the reliability of a piece of equipment, thus the system's overall reliability."
+    }
+  ]
+}

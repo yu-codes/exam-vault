@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q601 - Q650",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 601,
+      "question": "Which of the following is not concerned with configuration management?",
+      "options": {
+        "A": ") Hardware",
+        "B": ") Software",
+        "C": ") Documentation",
+        "D": ") They all are concerned with configuration management"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 602,
+      "question": "Configuration Management controls what?",
+      "options": {
+        "A": ") Auditing of changes to the Trusted Computing Base",
+        "B": ") Control of changes to the Trusted Computing Base",
+        "C": ") Changes in the configuration access to the Trusted Computing Base",
+        "D": ") Auditing and controlling any changes to the Trusted Computing Base"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Official Definition of Configuration Management Identifying, controlling, accounting for and auditing changes made to the baseline TCB, which includes changes to hardware, software, and firmware. A System that will control changes and test documentation through the operational life cycle of a system.\" Pg 698 Shon Harris: All-in-One CISSP Certification \"[B3] The security administrator role is clearly defined, and the system must be able to recover from failures without its security level being compromised.\" Pg. 226 Shon Harris CISSP All-In-One Exam Guide"
+    },
+    {
+      "id": 603,
+      "question": "In addition to ensuring that changes to the computer system take place in an identifiable and controlled environment, configuration management provides assurance that future changes:",
+      "options": {
+        "A": "The application software cannot bypass system security features.",
+        "B": "Do not adversely affect implementation of the security policy.",
+        "C": "To do the operating system are always subjected to independent validation and verification.",
+        "D": "In technical documentation maintain an accurate description of the Trusted Computer Base."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"The primary security goal of configuration management is to ensure that changes to the system do not unintentionally diminish security.\" Pg 306 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 604,
+      "question": "Which set of principal tasks constitutes configuration management?",
+      "options": {
+        "A": "Program management, system engineering, and quality assurance.",
+        "B": "Requirements verification, design, and system integration and testing.",
+        "C": "Independent validation and verification of the initial and subsequent baseline.",
+        "D": "Identification, control, status accounting, and auditing of changes."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Configuration management is the process of tracking and approving changes to a system. It involves identifying, controlling, and auditing all changes made to the system. Pg. 223 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 605,
+      "question": "If the computer system being used contains confidential information, users must not:",
+      "options": {
+        "A": "Leave their computer without first logging off.",
+        "B": "Share their desks.",
+        "C": "Encrypt their passwords.",
+        "D": "Communicate"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: If the computer system being used or to which a user is connected contains sensitive or confidential information, users must not leave their computer, terminal, or workstation without first logging off. Users should be reminded frequently to follow this rule."
+    },
+    {
+      "id": 606,
+      "question": "Separation of duties is valuable in deterring:",
+      "options": {
+        "A": "DoS",
+        "B": "external intruder",
+        "C": "fraud",
+        "D": "trojan house"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Separation of duties is considered valuable in deterring fraud since fraud can occur if an opportunity exists for collaboration between various jobs related capabilities. Separation of duty requires that for particular sets of transactions, no single individual be allowed to execute all transactions within the set. The most commonly used examples are the separate transactions needed to initiate a payment and to authorize a payment. No single individual should be capable of executing both transactions."
+    },
+    {
+      "id": 607,
+      "question": "What principle requires that for particular sets of transactions, no single individual be allowed to execute all transactions within the set?",
+      "options": {
+        "A": "Use of rights",
+        "B": "Balance of power",
+        "C": "Separation of duties",
+        "D": "Fair use"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Separation of duties is considered valuable in deterring fraud since fraud can occur if an opportunity exists for collaboration between various jobs related capabilities. Separation of duty requires that for particular sets of transactions, no single individual be allowed to execute all transactions within the set. The most commonly used examples are the separate transactions needed to initiate a payment and to authorize a payment. No single individual should be capable of executing both transactions."
+    },
+    {
+      "id": 608,
+      "question": "Separation of duty can be:",
+      "options": {
+        "A": "Dynamic only",
+        "B": "Encrypted",
+        "C": "Static only",
+        "D": "Static or dynamic"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Separation of duty can be either static or dynamic. Compliance with static separation requirements can be determined simply by the assignment of individuals to roles and allocation of transactions to roles. The more difficult case is dynamic separation of duty where compliance with requirements can only be determined during system operation. The objective behind dynamic separation of duty is to allow more flexibility in operations."
+    },
+    {
+      "id": 609,
+      "question": "What is the company benefit, in terms of risk, for people taking a vacation of a specified minimum length?",
+      "options": {
+        "A": "Reduces stress levels, thereby lowering insurance claims.",
+        "B": "Improves morale, thereby decreasing errors.",
+        "C": "Increases potential for discovering frauds.",
+        "D": "Reduces dependence on critical individuals."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Mandatory vacations are another type of administrative control that may sound a bit odd at first. Chapter 3 touches on reasons to make sure that employees take their vacations; this has to do with being able to identify fraudulent activities and enable job rotation to take place. - Shon Harris All-in-one CISSP Certification Guide pg 810"
+    },
+    {
+      "id": 610,
+      "question": "Which of the following would be less likely to prevent an employee from reporting an incident?",
+      "options": {
+        "A": ") They are afraid of being pulled into something they don't want to be involved with",
+        "B": ") The process of reporting incidents is centralized",
+        "C": ") They are afraid of being accused of something they didn't do",
+        "D": ") They are unaware of the company's security policies and procedures"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Reference: ALL-IN-ONE CISSP Third Edition by Shon Harris Pg 783."
+    },
+    {
+      "id": 611,
+      "question": "Employee involuntary termination processing should include",
+      "options": {
+        "A": "A list of all passwords used by the individual.",
+        "B": "A report on outstanding projects.",
+        "C": "The surrender of any company identification.",
+        "D": "Signing a non-disclosure agreement."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Before the employee is released, all organization-specific identification, access, or security badges as well as cards, keys, and access tokens should be collected.\" Pg. 173 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 612,
+      "question": "Which trusted facility management concept implies that two operators must review and approve the work of each other?",
+      "options": {
+        "A": ") Two-man control",
+        "B": ") Dual control",
+        "C": ") Double control",
+        "D": ") Segregation control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"In the concept of two-man control, two operators review and approve the work of each other. The purpose of two-man control is to provide accountability and to minimize fraud in highly sensitive or high-risk transactions. The concept of dual control means that both operators are needed to complete a sensitive task.\" Pg. 303 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 613,
+      "question": "When two operators review and approve the work of each other, this is known as?",
+      "options": {
+        "A": ") Dual control",
+        "B": ") Two-man control",
+        "C": ") Two-fold control",
+        "D": ") Twin control"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 614,
+      "question": "What security procedure forces an operator into collusion with an operator of a different category to have access to unauthorized data?",
+      "options": {
+        "A": ") Enforcing regular password changes",
+        "B": ") Management monitoring of audit logs",
+        "C": ") Limiting the specific accesses of operations personnel",
+        "D": ") Job rotation of people through different assignments"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 615,
+      "question": "Which of the following user items can be shared?",
+      "options": {
+        "A": "Password",
+        "B": "Home directory",
+        "C": "None of the choices."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Each user assigned directory (home directory) is not to be shared with others. None of the choices is correct."
+    },
+    {
+      "id": 616,
+      "question": "What should you do to the user accounts as soon as employment is terminated?",
+      "options": {
+        "A": "Disable the user accounts and erase immediately the data kept.",
+        "B": "Disable the user accounts and have the data kept for a specific period of time.",
+        "C": "None of the choices.",
+        "D": "Maintain the user accounts and have the data kept for a specific period of time."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A record of user logins with time and date stamps must be kept. User accounts shall be disabled and data kept for a specified period of time as soon as employment is terminated. All users must log on to gain network access."
+    },
+    {
+      "id": 617,
+      "question": "What is the main objective of proper separation of duties?",
+      "options": {
+        "A": ") To prevent employees from disclosing sensitive information",
+        "B": ") To ensure access controls are in place",
+        "C": ") To ensure that no single individual can compromise a system",
+        "D": ") To ensure that audit trails are not tampered with"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Separation of duties (also called segregation of duties) assigns parts of tasks to different personnel. Thus if no single person has total control of the system's security mechanisms, the theory is that no single person can completely compromise the system.\" Pg. 303 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 618,
+      "question": "What are the benefits of job rotation?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "Trained backup in case of emergencies.",
+        "C": "Protect against fraud.",
+        "D": "Cross training to employees."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Job assignments should be changed periodically so that it is more difficult for users to collaborate to exercise complete control of a transaction and subvert it for fraudulent purposes. This principle is effective when used in conjunction with a separation of duties. Problems in effectively rotating duties usually appear in organizations with limited staff resources and inadequate training programs. Rotation pf duties will protect you against fraud; provide cross training to you employees, as well as assuring trained backup in case of emergencies."
+    },
+    {
+      "id": 619,
+      "question": "Which of the following control pairing include organizational policies and procedures, pre-employment background checks, strict hiring practices, employment agreements, friendly and unfriendly employee termination procedures, vacation scheduling, labeling of sensitive materials, increased supervision, security awareness training, behavior awareness, and sign-up procedures to obtain access to information systems and networks in?",
+      "options": {
+        "A": ") Preventive/Administrative Pairing",
+        "B": ") Preventive/Technical Pairing",
+        "C": ") Preventive/Physical Pairing",
+        "D": ") Detective/Administrative Pairing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 620,
+      "question": "Which of the following are functions that are compatible in a properly segregated environment?",
+      "options": {
+        "A": ") Application programming and computer operation",
+        "B": ") Systems programming and job control analysis",
+        "C": ") Access authorization and database administration",
+        "D": ") Systems development and systems maintenance"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 621,
+      "question": "Which of the following are functions that are compatible in a properly segregated environment?",
+      "options": {
+        "A": ") Security administration and quality assurance",
+        "B": ") Security administration and data entry",
+        "C": ") Security administration and application programming",
+        "D": ") Application programming and data entry"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Security Administration and Quality Assurance are the most similar tasks. Administrative Management: Administrative management is a very important piece of operational security. One aspect of administrative management is dealing with personnel issues. This includes separation of duties and job rotation. The objective of separation of duties is to ensure that one person acting alone cannot compromise the company's security in any way. High-risk activities should be broken up into different parts and distributed to different individuals. This way the company does not need to put a dangerously high level of trust on certain individuals and if fraud were to take place, collusion would need to be committed, meaning more than one person would have to be involved in the fraudulent activity. Separation of duties also helps to prevent many different types of mistakes that can take place if one person is performing a task from the beginning to the end. For instance, a programmer should not be the one to test her own code. A different person with a different job and agenda should perform functionality and integrity testing on the programmer's code because the programmer may have a focused view of what the program is supposed to accomplish and only test certain functions, input values, and in certain environments. Another example of separation of duties is the difference between the functions of a computer operator versus the functions of a system administrator. There must be clear cut lines drawn between system administrator duties and computer operator duties. This will vary from environment to environment and will depend on the level of security required within the environment. The system administrators usually have responsibility of performing backups and recovery procedures, setting permissions, adding and removing users, setting user clearance, and developing user profiles. The computer operator on the other hand, may be allowed to install software, set an initial password, alter desktop configurations, and modify certain system parameters. The computer operator should not be able to modify her own security profile, add and remove users globally, or set user security clearance. This would breach the concept of separation of duties. Pg 808-809 Shon Harris: All-In-One CISSP Certification"
+    },
+    {
+      "id": 622,
+      "question": "Which of the following are functions that are compatible in a properly segregated environment?",
+      "options": {
+        "A": ") Data entry and job scheduling",
+        "B": ") Database administration and systems security",
+        "C": ") Systems analyst and application programming",
+        "D": ") Security administration and systems programming"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The two most similar jobs are Data Entry and Job Scheduling, so they need not be segregated. Administrative Management: Administratative management is a very important piece of operational security. One aspect of administrative management is dealing with personnel issues. This includes separation of duties and job rotation. The objective of separation of duties is to ensure that one person acting alone cannot compromise the company's security in any way. High-risk activities should be broken up into different parts and distributed to different individuals. This way the company does not need to put a dangerously high level of trust on certain individuals and if fraud were to take place, collusion would need to be committed, meaning more than one person would have to be involved in the fraudulent activity. Separation of duties also helps to prevent many different types of mistakes that can take place if one person is performing a task from the beginning to the end. For instance, a programmer should not be the one to test her own code. A different person with a different job and agenda should perform functionality and integrity testing on the programmer's code because the programmer may have a focused view of what the program is supposed to accomplish and only test certain functions, input values, and in certain environments. Another example of separation of duties is the difference between the functions of a computer operator versus the functions of a system administrator. There must be clear cut lines drawn between system administrator duties and computer operator duties. This will vary from environment to environment and will depend on the level of security required within the environment. The system administrators usually have responsibility of performing backups and recovery procedures, setting permissions, adding and removing users, setting user clearance, and developing user profiles. The computer operator on the other hand, may be allowed to install software, set an initial password, alter desktop configurations, and modify certain system parameters. The computer operator should not be able to modify her own security profile, add and remove users globally, or set user security clearance. This would breach the concept of separation of duties. Pg 808-809 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 623,
+      "question": "Which of the following are functions that are compatible in a properly segregated environment?",
+      "options": {
+        "A": ") Application programming and computer operation",
+        "B": ") Systems programming and job control analysis",
+        "C": ") Access authorization and database administration",
+        "D": ") System development and systems maintenance"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Access Authorization and Database Administration are the most similar tasks of all the choices so they need not be separated. Administrative Management: Administratative management is a very important piece of operational security. One aspect of administrative management is dealing with personnel issues. This includes separation of duties and job rotation. The objective of separation of duties is to ensure that one person acting alone cannot compromise the company's security in any way. High-risk activities should be broken up into different parts and distributed to different individuals. This way the company does not need to put a dangerously high level of trust on certain individuals and if fraud were to take place, collusion would need to be committed, meaning more than one person would have to be involved in the fraudulent activity. Separation of duties also helps to prevent many different types of mistakes that can take place if one person is performing a task from the beginning to the end. For instance, a programmer should not be the one to test her own code. A different person with a different job and agenda should perform functionality and integrity testing on the programmer's code because the programmer may have a focused view of what the program is supposed to accomplish and only test certain functions, input values, and in certain environments. Another example of separation of duties is the difference between the functions of a computer operator versus the functions of a system administrator. There must be clear cut lines drawn between system administrator duties and computer operator duties. This will vary from environment to environment and will depend on the level of security required within the environment. The system administrators usually have responsibility of performing backups and recovery procedures, setting permissions, adding and removing users, setting user clearance, and developing user profiles. The computer operator on the other hand, may be allowed to install software, set an initial password, alter desktop configurations, and modify certain system parameters. The computer operator should not be able to modify her own security profile, add and remove users globally, or set user security clearance. This would breach the concept of separation of duties. Pg 808-809 Shon Harris: All-In-One CISSP Certification"
+    },
+    {
+      "id": 624,
+      "question": "Controls are implemented to:",
+      "options": {
+        "A": ") eliminate risk and reduce potential for loss",
+        "B": ") mitigate risk and eliminate the potential for loss",
+        "C": ") mitigate risk and reduce the potential for loss",
+        "D": ") eliminate risk and eliminate the potential for loss"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 625,
+      "question": "A timely review of system access audit records would be an example of which of the basic security functions?",
+      "options": {
+        "A": ") avoidance",
+        "B": ") deterrence",
+        "C": ") prevention",
+        "D": ") detection"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 626,
+      "question": "A security control should",
+      "options": {
+        "A": "Allow for many exceptions.",
+        "B": "Cover all contingencies.",
+        "C": "Not rely on the security of its mechanism.",
+        "D": "Change frequently."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 627,
+      "question": "What set of principles is the basis for information systems controls?",
+      "options": {
+        "A": "Authentication, audit trails, and awareness briefings",
+        "B": "Individual accountability, auditing, and separation of duties",
+        "C": "Need to know, identification, and authenticity",
+        "D": "Audit trails, limited tenure, and awareness briefings"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"In addition to the CIA Triad, there is a plethora of other security-related concepts, principles, and tenants that should be considered and addressed when designing a security policy and deploying a security solution. This section discusses privacy, identification, authentication, authorization, accountability, nonrepudiation, and auditing.\" Pg. 133 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 628,
+      "question": "An audit trail is a category of what control?",
+      "options": {
+        "A": "System, Manual",
+        "B": "Detective, Technical",
+        "C": "User, Technical",
+        "D": "Detective, Manual"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Technical Controls warn of technical Access Control violations. Under this category you would find the following: Audit trails Violation reports Intrusion detection system Honeypot"
+    },
+    {
+      "id": 629,
+      "question": "An IDS is a category of what control?",
+      "options": {
+        "A": "Detective, Manual",
+        "B": "Detective, Technical",
+        "C": "User, Technical",
+        "D": "System, Manual"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Technical Controls warn of technical Access Control violations. Under this category you would find the following: Audit trails Violation reports Intrusion detection system Honeypot"
+    },
+    {
+      "id": 630,
+      "question": "Technical controls such as encryption and access control can be built into the operating system, be software applications, or can be supplemental hardware/software units. Such controls, also known as logical controls, represent which pairing?",
+      "options": {
+        "A": ") Preventive/Administrative Pairing",
+        "B": ") Preventive/Technical Pairing",
+        "C": ") Preventive/Physical Pairing",
+        "D": ") Detective/Technical Pairing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 631,
+      "question": "Which one of the following can be identified when exceptions occur using operations security detective controls?",
+      "options": {
+        "A": "Unauthorized people seeing confidential reports.",
+        "B": "Unauthorized people destroying confidential reports.",
+        "C": "Authorized operations people performing unauthorized functions.",
+        "D": "Authorized operations people not responding to important console messages."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "C is the one that makes the most sence. [Operation Security] Detective Controls are used to detect an error once it has occurred. Unlike preventative controls, these controls operate after the fact and can be used to track an unauthorized transaction for prosecution, or to lessen an error's impact on the system by identifying it quickly. An example of this type of control is an audit trail. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 299"
+    },
+    {
+      "id": 632,
+      "question": "Which of the following is not an example of an operation control?",
+      "options": {
+        "A": ") backup and recovery",
+        "B": ") audit trails",
+        "C": ") contingency planning",
+        "D": ") operations procedures"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Operation controls are the mechanisms and daily procedures that provide protection for systems.\" When designing a protection scheme for resources, it is important to keep the following aspects or elements of the IT infrastructure in mind: Communication hardware/software Boundary devices Processing equipment Password files Application program libraries Application source code Vendor software Operating System System Utilities Directories and address tables Proprietary packages Main storage Removable storage Sensitive/critical data System logs/audit trails Violation reports Backup files and media Sensitive forms and printouts Isolated devices, such as printers and faxes Telephone network\" Pg 406-407 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 633,
+      "question": "Which of the following is not an example of an operational control?",
+      "options": {
+        "A": ") backup and recovery",
+        "B": ") audit trails",
+        "C": ") contingency planning",
+        "D": ") operations procedures"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Audit Trails are under Operations Security Auditing opposed to Operations Security Operations Controls. \"Operations Controls embody the day-to-day procedures used to protect computer operations. The concepts of resource protection, hardware/software control, and privileged entity must be understood by the CISSP candidate.\" Pg. 311 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 634,
+      "question": "Access control allows you to exercise directing influence over which of the following aspects of a system?",
+      "options": {
+        "A": "Behavior, user, and content provider.",
+        "B": "Behavior, use, and content.",
+        "C": "User logs and content.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access control is the collection of mechanisms that permits managers of a system to exercise a directing or restraining influence over the behavior, use, and content of a system. It permits management to specify what users can do, which resources they can access, and what operations they can perform on a system."
+    },
+    {
+      "id": 635,
+      "question": "____________ is the means by which the ability to do something with a computer resource is explicitly enabled or restricted.",
+      "options": {
+        "A": "Access control",
+        "B": "Type of access",
+        "C": "System resource",
+        "D": "Work permit"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access is the ability to do something with a computer resource (e.g., use, change, or view). Access control is the means by which the ability is explicitly enabled or restricted in some way (Usually through physical and system-based controls). Computer-based access controls can prescribe not only who or what process may have access to a specific system resource, but also the type of access that is permitted. These controls may be implemented in the computer system or in external devices."
+    },
+    {
+      "id": 636,
+      "question": "The ability to do something with a computer resource can be explicitly enabled or restricted through:",
+      "options": {
+        "A": "Physical and system-based controls.",
+        "B": "Theoretical and system-based controls.",
+        "C": "Mental and system-based controls.",
+        "D": "Physical and trap-based controls."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access is the ability to do something with a computer resource (e.g., use, change, or view). Access control is the means by which the ability is explicitly enabled or restricted in some way (Usually through physical and system-based controls). Computer-based access controls can prescribe not only who or what process may have access to a specific system resource, but also the type of access that is permitted. These controls may be implemented in the computer system or in external devices."
+    },
+    {
+      "id": 637,
+      "question": "The main categories of access control do NOT include:",
+      "options": {
+        "A": "Administrative Access Control",
+        "B": "Logical Access Control",
+        "C": "Random Access Control",
+        "D": "Physical Access Control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are several different categories of access control. The main categories are: --Physical Access Control --Administrative Access Control --Logical Access Control --Data Access Control"
+    },
+    {
+      "id": 638,
+      "question": "You have very strict Physical Access controls. At the same time you have loose Logical Access Controls. What is true about this setting?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "It can 100% secure your environment.",
+        "C": "It may secure your environment.",
+        "D": "It may not secure your environment."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access control is a bit like the four legs of a chair. Each of the legs must be equal or else an imbalance will be created. If you have very strict Physical Access controls but very poor Logical Access Controls then you may not succeed in securing your environment."
+    },
+    {
+      "id": 639,
+      "question": "Which of the following is not a detective technical control?",
+      "options": {
+        "A": "Intrusion detection system",
+        "B": "Violation reports",
+        "C": "Honeypot",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Technical Controls warn of technical Access Control violations. Under this category you would find the following: Audit trails Violation reports Intrusion detection system Honeypot"
+    },
+    {
+      "id": 640,
+      "question": "A business continuity plan is an example of which of the following?",
+      "options": {
+        "A": ") Corrective Control",
+        "B": ") Detective Control",
+        "C": ") Preventive Control",
+        "D": ") Compensating Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 641,
+      "question": "________ Technical Controls warn of technical Access Control violations.",
+      "options": {
+        "A": "Elusive",
+        "B": "Descriptive",
+        "C": "Corrective",
+        "D": "Detective"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Technical Controls warn of technical Access Control violations. Under this category you would find the following: Audit trails Violation reports Intrusion detection system Honeypot"
+    },
+    {
+      "id": 642,
+      "question": "A two factor authentication method is considered a:",
+      "options": {
+        "A": "Technical control",
+        "B": "Patching control",
+        "C": "Corrective control",
+        "D": "Logical control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: By technical controls we mean some or all of the following: Access Control software Antivirus Software Passwords Smart Cards Encryption Call-back systems Two factor authentication"
+    },
+    {
+      "id": 643,
+      "question": "Which of the following are NOT considered technical controls?",
+      "options": {
+        "A": "Access Control software",
+        "B": "Man trap",
+        "C": "Passwords",
+        "D": "Antivirus Software"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: By technical controls we mean some or all of the following: Access Control software Antivirus Software Passwords Smart Cards Encryption Call-back systems Two factor authentication"
+    },
+    {
+      "id": 644,
+      "question": "___________________ are the technical ways of restricting who or what can access system resources.",
+      "options": {
+        "A": "Preventive Manual Controls",
+        "B": "Detective Technical Controls",
+        "C": "Preventive Circuit Controls",
+        "D": "Preventive Technical Controls"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive Technical Controls are the technical ways of restricting who or what can access system resources and what type of access is permitted. Its purpose is to protect the OS and other systems from unauthorized modification or manipulation. It is usually built into an operating system, or it can be a part of an application or program, or an add-on security package, or special components to regulate communication between computers. It also protects the integrity and availability by limiting the number of users and/or processes. These controls also protect confidential information from being disclosed to unauthorized persons."
+    },
+    {
+      "id": 645,
+      "question": "Which of the following is not a form of detective administrative control?",
+      "options": {
+        "A": ") Rotation of duties",
+        "B": ") Required vacations",
+        "C": ") Separation of duties",
+        "D": ") Security reviews and audits"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 646,
+      "question": "Preventive Technical Controls are usually built:",
+      "options": {
+        "A": "By using MD5.",
+        "B": "Into an operating system.",
+        "C": "By security officer.",
+        "D": "By security administrator."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive Technical Controls are the technical ways of restricting who or what can access system resources and what type of access is permitted. Its purpose is to protect the OS and other systems from unauthorized modification or manipulation. It is usually built into an operating system, or it can be a part of an application or program, or an add-on security package, or special components to regulate communication between computers. It also protects the integrity and availability by limiting the number of users and/or processes. These controls also protect confidential information from being disclosed to unauthorized persons."
+    },
+    {
+      "id": 647,
+      "question": "Preventive Technical Controls cannot:",
+      "options": {
+        "A": "Protect the OS from unauthorized modification.",
+        "B": "Protect confidential information from being disclosed to unauthorized persons.",
+        "C": "Protect the OS from unauthorized manipulation.",
+        "D": "Protect users from being monitored."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive Technical Controls are the technical ways of restricting who or what can access system resources and what type of access is permitted. Its purpose is to protect the OS and other systems from unauthorized modification or manipulation. It is usually built into an operating system, or it can be a part of an application or program, or an add-on security package, or special components to regulate communication between computers. It also protects the integrity and availability by limiting the number of users and/or processes. These controls also protect confidential information from being disclosed to unauthorized persons."
+    },
+    {
+      "id": 648,
+      "question": "How do Preventive Technical Controls protect system integrity and availability?",
+      "options": {
+        "A": "By limiting the number of threads only.",
+        "B": "By limiting the number of system variables.",
+        "C": "By limiting the number of function calls only.",
+        "D": "By limiting the number of users and/or processes."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive Technical Controls are the technical ways of restricting who or what can access system resources and what type of access is permitted. Its purpose is to protect the OS and other systems from unauthorized modification or manipulation. It is usually built into an operating system, or it can be a part of an application or program, or an add-on security package, or special components to regulate communication between computers. It also protects the integrity and availability by limiting the number of users and/or processes. These controls also protect confidential information from being disclosed to unauthorized persons."
+    },
+    {
+      "id": 649,
+      "question": "Which of the following is NOT a type of access control?",
+      "options": {
+        "A": "Intrusive",
+        "B": "Deterrent",
+        "C": "Detective",
+        "D": "Preventive"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    },
+    {
+      "id": 650,
+      "question": "As a type of access control, which of the following asks for avoiding occurrence?",
+      "options": {
+        "A": "Preventive",
+        "B": "Deterrent",
+        "C": "Intrusive",
+        "D": "Detective"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    }
+  ]
+}

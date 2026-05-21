@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q451 - Q500",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 451,
+      "question": "To ensure integrity, a payroll application program may record transactions in the appropriate accounting period by using",
+      "options": {
+        "A": "Application checkpoints",
+        "B": "Time and date stamps",
+        "C": "Accrual journal entries",
+        "D": "End of period journals"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 452,
+      "question": "What ensures that the control mechanisms correctly implement the security policy for the entire life cycle of an information system?",
+      "options": {
+        "A": ") Accountability controls",
+        "B": ") Mandatory access controls",
+        "C": ") Assurance procedures",
+        "D": ") Administrative controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Assurance procedures ensure that the control mechanisms correctly implement the security policy for the entire life cycle of an information system. Pg 33 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 453,
+      "question": "Development staff should:",
+      "options": {
+        "A": ") Implement systems",
+        "B": ") Support production data",
+        "C": ") Perform unit testing",
+        "D": ") Perform acceptance testing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 454,
+      "question": "Which of the following is not used as a cost estimating technique during the project planning stage?",
+      "options": {
+        "A": ") Delphi technique",
+        "B": ") Expert Judgment",
+        "C": ") Program Evaluation Review Technique (PERT) charts",
+        "D": ") Function points (FP)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Methods and techniques for cost estimation: Experts' evaluation Delphi Bottom-up approaches Empirical models COCOMO Function Points Combining Methods\""
+    },
+    {
+      "id": 455,
+      "question": "Which of the following methodologies is appropriate for planning and controlling activities and resources in a system project?",
+      "options": {
+        "A": ") Gantt charts",
+        "B": ") Program evaluation review technique (PERT)",
+        "C": ") Critical path methodology (CPM)",
+        "D": ") Function point analysis (FP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Gantt chart is a popular type of bar chart showing the interrelationships of how projects, schedules, and other time-related systems progress over time. Not B: Program Evaluation and Review Technique - (PERT) A method used to size a software product and calculate the Standard Deviation (SD) for risk assessment. The PERT equation (beta distribution) estimates the Equivalent Delivered Source Instructions (EDSIs) and the SD based on the analyst's estimates of the lowest possible size, the most likely size, and the highest possible size of each computer program component (CPC). http://computing-dictionary.thefreedictionary.com/"
+    },
+    {
+      "id": 456,
+      "question": "Which of the following is an advantage of using a high-level programming language?",
+      "options": {
+        "A": ") It decreases the total amount of code writters",
+        "B": ") It allows programmers to define syntax",
+        "C": ") It requires programmer-controlled storage management",
+        "D": ") It enforces coding standards"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 457,
+      "question": "The design phase in a system development life cycle includes all of the following EXCEPT",
+      "options": {
+        "A": "Determining sufficient security controls.",
+        "B": "Conducting a detailed design review.",
+        "C": "Developing an operations and maintenance manual.",
+        "D": "Developing a validation, verification, and testing plan."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Systems Development Life Cycle Conceptual Defintion Functional Requirements Determination Protection Specifications Development Design Review Code Review Walk-Through System Test Review Certification and Accreditation Maintenance Pg 224-228 Tittel: CISSP Study Guide."
+    },
+    {
+      "id": 458,
+      "question": "By far, the largest security exposure in application system development relates to",
+      "options": {
+        "A": "Maintenance and debugging hooks.",
+        "B": "Deliberate compromise.",
+        "C": "Change control.",
+        "D": "Errors and lock of training"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Maintenance hook - instructions within a program's code that enable the developer or maintainer to enter the program without having to go through the usual access control and authentication processes. They should be removed from the code before being released for production; otherwise, they can cause serious security risks. They are also referred to as trapdoors. - Shon Harris All-in-one CISSP Certification Guide pg 933"
+    },
+    {
+      "id": 459,
+      "question": "Which of the following is a 5th Generation Language?",
+      "options": {
+        "A": ") LISP",
+        "B": ") BASIC",
+        "C": ") NATURAL",
+        "D": ") Assembly Language"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 460,
+      "question": "When considering the IT Development Life-Cycle, security should be:",
+      "options": {
+        "A": ") Mostly considered during the initiation phase.",
+        "B": ") Mostly considered during the development phase.",
+        "C": ") Treated as an integral part of the overall system design.",
+        "D": ") Add once the design is completed."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 461,
+      "question": "Which of the following represents the best programming?",
+      "options": {
+        "A": ") Low cohesion, low coupling",
+        "B": ") Low cohesion, high coupling",
+        "C": ") High cohesion, low coupling",
+        "D": ") High cohesion, high coupling"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 462,
+      "question": "The INITIAL phase of the system development life cycle would normally include",
+      "options": {
+        "A": "Cost-benefit analysis",
+        "B": "System design review",
+        "C": "Executive project approval",
+        "D": "Project status summary"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Project management is an important part of product development and security management is an important part of project management. - Shon Harris All-in-one CISSP Certification Guide pg 732"
+    },
+    {
+      "id": 463,
+      "question": "Which of the following computer design approaches is based on the fact that in earlier technologies, the instruction fetch was the longest part of the cycle?",
+      "options": {
+        "A": ") Pipelining",
+        "B": ") Reduced Instruction Set Computers (RISC)",
+        "C": ") Complex Instruction Set Computers (CISC)",
+        "D": ") Scolar processors"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 255 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 464,
+      "question": "Which one of the following tests determines whether the content of data within an application program falls within predetermined limits?",
+      "options": {
+        "A": "Parity check",
+        "B": "Reasonableness check",
+        "C": "Mathematical accuracy check",
+        "D": "Check digit verification"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reasonableness check: A test to determine whether a value conforms to specified criteria. Note: A reasonableness check can be used to eliminate questionable data points from subsequent processing."
+    },
+    {
+      "id": 465,
+      "question": "Buffer overflow and boundary condition errors are subsets of:",
+      "options": {
+        "A": ") Race condition errors",
+        "B": ") Access validation errors",
+        "C": ") Exceptional condition handling errors",
+        "D": ") Input validation errors"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 466,
+      "question": "Which of the following statements pertaining to software testing approaches is correct?",
+      "options": {
+        "A": ") A bottom-up approach allows interface errors to be detected earlier",
+        "B": ") A top-down approach allows errors in critical modules to be detected earlier",
+        "C": ") The test plan and results should be retained as part of the system's permanent documentation",
+        "D": ") Black box testing is predicated on a close examination of procedural detail"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 467,
+      "question": "Which of the following phases of a system development life-cycle is most concerned with authenticating users and processes to ensure appropriate access control decisions?",
+      "options": {
+        "A": ") Development/acquisition",
+        "B": ") Implementation",
+        "C": ") Operation/Maintenance",
+        "D": ") Initiation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 468,
+      "question": "Which of the following would be the most serious risk where a systems development life cycle methodology is inadequate?",
+      "options": {
+        "A": ") The project will be completed late",
+        "B": ") The project will exceed the cost estimates",
+        "C": ") The project will be incompatible with existing systems",
+        "D": ") The project will fail to meet business and user needs"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 469,
+      "question": "Which of the following would best describe the difference between white-box testing and black-box testing?",
+      "options": {
+        "A": ") White-box testing is performed by an independent programmer team",
+        "B": ") Black-box testing uses the bottom-up approach",
+        "C": ") White-box testing examines the program internal logical structure",
+        "D": ") Black-box testing involves the business units"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 470,
+      "question": "Which of the following refers to the work product satisfying the real-world requirements and concepts?",
+      "options": {
+        "A": ") validation",
+        "B": ") verification",
+        "C": ") concurrence",
+        "D": ") accuracy"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 820 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 471,
+      "question": "Which model, based on the premise that the quality of a software product is a direct function of the quality of it's associated software development and maintenance processes, introduced five levels with which the maturity of an organization involved in the software process is evaluated?",
+      "options": {
+        "A": ") The total Quality Model (TQM)",
+        "B": ") The IDEAL Model",
+        "C": ") The Software Capability Maturity Model",
+        "D": ") The Spiral Model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 472,
+      "question": "Which of the following would provide the best stress testing environment?",
+      "options": {
+        "A": ") Test environment using test data",
+        "B": ") Test environment using live workloads",
+        "C": ") Production environment using test data",
+        "D": ") Production environment using live workloads"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 473,
+      "question": "In a change control environment, which one of the following REDUCES the assurance of proper changes to source programs in production status?",
+      "options": {
+        "A": "Authorization of the change.",
+        "B": "Testing of the change.",
+        "C": "Programmer access.",
+        "D": "Documentation of the change."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I think I am going to disagree with the original answer (B testing of the change) here. The question has REDUCES the assurance. \"Personnel separate from the programmers should conduct this testing.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 345"
+    },
+    {
+      "id": 474,
+      "question": "Why should batch files and scripts be stored in a protected area?",
+      "options": {
+        "A": ") Because of the least privilege concept",
+        "B": ") Because they cannot be accessed by operators",
+        "C": ") Because they may contain credentials",
+        "D": ") Because of the need-to-know concept"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 475,
+      "question": "The PRIMARY purpose of operations security is",
+      "options": {
+        "A": "Protect the system hardware from environment damage.",
+        "B": "Monitor the actions of vendor service personnel.",
+        "C": "Safeguard information assets that are resident in the system.",
+        "D": "Establish thresholds for violation detection and logging."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I think A or C could be the answers. I am leaning towards the C answer but use your best judgment. \"Operations Security can be described as the controls over the hardware in a computing facility, the data media used in a facility, and the operators using these resources in a facility...A Cissp candidate will be expected to know the resources that must be protected, the privileges that must be restricted, the control mechanisms that are available, the potential for access abuse, the appropriate controls, and the principles of good practice.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 297"
+    },
+    {
+      "id": 476,
+      "question": "Which of the following is not a component of a Operations Security \"triples\"?",
+      "options": {
+        "A": ") Asset",
+        "B": ") Threat",
+        "C": ") Vulnerability",
+        "D": ") Risk"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 298 Krutz: CISSP Study Guide: Gold Edition"
+    },
+    {
+      "id": 477,
+      "question": "A periodic review of user account management should not determine:",
+      "options": {
+        "A": ") Conformity with the concept of least privilege",
+        "B": ") Whether active accounts are still being used",
+        "C": ") Strength of user-chosen passwords",
+        "D": ") Whether management authorizations are up-to-date"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 478,
+      "question": "Which of the following functions is less likely to be performed by a typical security administrator?",
+      "options": {
+        "A": ") Setting user clearances and initial passwords",
+        "B": ") Adding and removing system users",
+        "C": ") Setting or changing file sensitivity labels",
+        "D": ") Reviewing audit data"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 479,
+      "question": "Who is responsible for setting user clearances to computer-based information?",
+      "options": {
+        "A": ") Security administrators",
+        "B": ") Operators",
+        "C": ") Data owners",
+        "D": ") Data custodians"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 480,
+      "question": "Who is the individual permitted to add users or install trusted programs?",
+      "options": {
+        "A": "Database Administrator",
+        "B": "Computer Manager",
+        "C": "Security Administrator",
+        "D": "Operations Manager"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Typical system administrator or enhanced operator functions can include the following Installing system software Starting up (booting) and shutting down a system Adding and removing system users Performing back-ups and recovery Handling printers and managing print queues -Ronald Krutz The CISSP PREP Guide (gold edition) pg 305-304"
+    },
+    {
+      "id": 481,
+      "question": "In Unix, which file is required for you to set up an environment such that every used on the other host is a trusted user that can log into this host without authentication?",
+      "options": {
+        "A": "/etc/shadow",
+        "B": "/etc/host.equiv",
+        "C": "/etc/passwd",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The /etc/hosts.equiv file is saying that every user on the other host is a trusted user and allowed to log into this host without authentication (i.e. NO PASSWORD). The only thing that must exist for a user to log in to this system is an /etc/passwd entry by the same login name the user is currently using. In other words, if there is a user trying to log into this system whose login name is \"bhope\", then there must be a \"bhope\" listed in the /etc/passwd file."
+    },
+    {
+      "id": 482,
+      "question": "For what reason would a network administrator leverage promiscuous mode?",
+      "options": {
+        "A": "To screen out all network errors that affect network statistical information.",
+        "B": "To monitor the network to gain a complete statistical picture of activity.",
+        "C": "To monitor only unauthorized activity and use.",
+        "D": "To capture only unauthorized internal/external use."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 483,
+      "question": "Which of the following questions is less likely to help in assessing controls over hardware and software maintenance?",
+      "options": {
+        "A": ") In access to all program libraries restricted and controlled?",
+        "B": ") Are integrity verification programs used by applications to look for evidences of data tampering, errors, and omissions?",
+        "C": ") Is there version control?",
+        "D": ") Are system components tested, documented, and approved prior to promotion to production?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 484,
+      "question": "Which of the following correctly describe \"good\" security practice?",
+      "options": {
+        "A": "Accounts should be monitored regularly.",
+        "B": "You should have a procedure in place to verify password strength.",
+        "C": "You should ensure that there are no accounts without passwords.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In many organizations accounts are created and then nobody ever touches those accounts again. This is a very poor security practice. Accounts should be monitored regularly, you should look at unused accounts and you should have a procedure in place to ensure that departing employees have their rights revoke prior to leaving the company. You should also have a procedure in place to verify password strength or to ensure that there are no accounts without passwords."
+    },
+    {
+      "id": 485,
+      "question": "Access to the _________ account on a Unix server must be limited to only the system administrators that must absolutely have this level of access.",
+      "options": {
+        "A": "Superuser of inetd.",
+        "B": "Manager or root.",
+        "C": "Fsf or root",
+        "D": "Superuser or root."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access to the superuser or root account on a server must be limited to only the system administrators that must absolutely have this level of access. Use of programs such as SUDO is recommended to give limited and controlled root access to administrators that have a need for such access."
+    },
+    {
+      "id": 486,
+      "question": "Which of the following files should the security administrator be restricted to READ only access?",
+      "options": {
+        "A": ") Security parameters",
+        "B": ") User passwords",
+        "C": ") User profiles",
+        "D": ") System log"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 487,
+      "question": "Root login should only be allowed via:",
+      "options": {
+        "A": "Rsh",
+        "B": "System console",
+        "C": "Remote program",
+        "D": "VNC"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The root account must be the only account with a user ID of 0 (zero) that has open access to the UNIX shell. It must not be possible for root to sign on directly except at the system console. All other access to the root account must be via the 'su' command."
+    },
+    {
+      "id": 488,
+      "question": "What does \"System Integrity\" mean?",
+      "options": {
+        "A": ") The software of the system has been implemented as designed.",
+        "B": ") Users can't tamper with processes they do not own",
+        "C": ") Hardware and firmware have undergone periodic testing to verify that they are functioning properly",
+        "D": ") Design specifications have been verified against the formal top-level specification"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 489,
+      "question": "Operations Security seeks to primarily protect against which of the following?",
+      "options": {
+        "A": ") object reuse",
+        "B": ") facility disaster",
+        "C": ") compromising emanations",
+        "D": ") asset threats"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 490,
+      "question": "In order to avoid mishandling of media or information, you should consider using:",
+      "options": {
+        "A": "Labeling",
+        "B": "Token",
+        "C": "Ticket",
+        "D": "SLL"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In order to avoid mishandling of media or information, proper labeling must be used. All tape, floppy disks, and other computer storage media containing sensitive information must be externally marked with the appropriate sensitivity classification. All tape, floppy disks, and other computer storage media containing unrestricted information must be externally marked as such. All printed copies, printouts, etc., from a computer system must be clearly labeled with the proper classification."
+    },
+    {
+      "id": 491,
+      "question": "In order to avoid mishandling of media or information, which of the following should be labeled?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "Printed copies",
+        "C": "Tape",
+        "D": "Floppy disks"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In order to avoid mishandling of media or information, proper labeling must be used. All tape, floppy disks, and other computer storage media containing sensitive information must be externally marked with the appropriate sensitivity classification. All tape, floppy disks, and other computer storage media containing unrestricted information must be externally marked as such. All printed copies, printouts, etc., from a computer system must be clearly labeled with the proper classification. As a rule of thumb, you should have an indication of the classification of the document. The classification is based on the sensitivity of information. It is usually marked at the minimum on the front and back cover, title, and first pages."
+    },
+    {
+      "id": 492,
+      "question": "Compact Disc (CD) optical media types is used more often for:",
+      "options": {
+        "A": ") very small data sets",
+        "B": ") very small files data sets",
+        "C": ") larger data sets",
+        "D": ") very aggregated data sets"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 493,
+      "question": "At which temperature does damage start occurring to magnetic media?",
+      "options": {
+        "A": ") 100 degrees",
+        "B": ") 125 degrees",
+        "C": ") 150 degrees",
+        "D": ") 175 degrees"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 494,
+      "question": "Which of the following statements pertaining to air conditioning for an information processing facility is correct?",
+      "options": {
+        "A": ") The AC units must be controllable from outside the area",
+        "B": ") The AC units must keep negative pressure in the room so that smoke and other gases are forced out of the room",
+        "C": ") The AC units must be n the same power source as the equipment in the room to allow for easier shutdown",
+        "D": ") The AC units must be dedicated to the information processing facilities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 495,
+      "question": "Removing unnecessary processes, segregating inter-process communications, and reducing executing privileges to increase system security is commonly called",
+      "options": {
+        "A": "Hardening",
+        "B": "Segmenting",
+        "C": "Aggregating",
+        "D": "Kerneling"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "What is hardening? Naturally, there is more than one definition, but in general, one tightens control using policies which affect authorization, authentication and permissions. Nothing happens by default. You only give out permission after thinking about it, something like \"deny all\" to everyone, then \"allow\" with justification. Shut off everything, then only turn on that which must be turned on. It is not unlike locking every single door, window and access point in your house, then unlocking only those that need to be. It is quite common for users to take all the defaults when their new system gets turned on making for instant vulnerability. A major problem is trying to figure out where all those details are that need to be turned off, without making the system unusable."
+    },
+    {
+      "id": 496,
+      "question": "RAID levels 3 and 5 run:",
+      "options": {
+        "A": ") faster on hardware",
+        "B": ") slower on hardware",
+        "C": ") faster on software",
+        "D": ")at the same speed on software and hardware"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 497,
+      "question": "Which of the following RAID levels functions as a single virtual disk?",
+      "options": {
+        "A": ") RAID Level 7",
+        "B": ") RAID Level 5",
+        "C": ") RAID Level 10",
+        "D": ") RAID Level 2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 498,
+      "question": "Which of the following takes the concept of RAID 1 (mirroring) and applies it to a pair of servers?",
+      "options": {
+        "A": ") A redundant server implementation",
+        "B": ") A redundant client implementation",
+        "C": ") A redundant guest implementation",
+        "D": ") A redundant host implementation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 499,
+      "question": "Which of the following enables the drive array to continue to operate if any disk or any path to any disk fails?",
+      "options": {
+        "A": ") RAID Level 7",
+        "B": ") RAID Level 1",
+        "C": ") RAID Level 2",
+        "D": ") RAID Level 5"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"RAID Level 7 is a variation of RAID 5 wherein the array functions as a single virtual disk in the hardware. This is sometimes simulated by software running over a RAID level 5 hardware implementation, which enables the drive array to continue to operate if any disk or any path to any disk fails. It also provides parity protection.\" Pg 91 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 500,
+      "question": "Depending upon the volume of data that needs to be copied, full backups to tape can take:",
+      "options": {
+        "A": ") an incredible amount of time",
+        "B": ") a credible amount of time",
+        "C": ") an ideal amount of time",
+        "D": ") an exclusive amount of time"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

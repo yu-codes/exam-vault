@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1151 - Q1200",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1151,
+      "question": "Which mechanism complements an IDS?",
+      "options": {
+        "A": "Activating the built in VPN capabilities",
+        "B": "Configuring built in alerts",
+        "C": "All of the above",
+        "D": "None of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A network security engineer or other security personal must configure the IDS to detect alerts for specified security events, so the IDS will log the threat event. An IDS can either be a Network or Host based. Both have default settings and allow the administrator to configure triggers for alerts."
+    },
+    {
+      "id": 1152,
+      "question": "A programmer creates a virus producing tool in order to test the performance of a new virus diction product.",
+      "options": {
+        "A": "This is ethical because it was created to test and enhance the performance of a virus protection tool",
+        "B": "It's unethical because the virus creating tool may become available to the public.",
+        "C": "All of the above",
+        "D": "None of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As a CISSP, one needs to discourage unsafe practices and/or bad practices, and preserve and strengthen the integrity of the public infrastructures. See \"All-in-One Exam Guide\" Third Edition by Shon Harris page 753 or www.isc2.org."
+    },
+    {
+      "id": 1153,
+      "question": "In a discretionary mode, which of the following entities is authorized to grant information access to other people?",
+      "options": {
+        "A": "Manager",
+        "B": "Group leader",
+        "C": "Security manager",
+        "D": "User"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Discretionary control is the most common type of access control mechanism implemented in computer systems today. The basis of this kind of security is that an individual user, or program operating on the user's behalf, is allowed to specify explicitly the types of access other users (or programs executing on their behalf) may have to information under the user's control. Discretionary security differs from mandatory security in that it implements the access control decisions of the user. Mandatory controls are driven by the results of a comparison between the user's trust level or clearance and the sensitivity designation of the information."
+    },
+    {
+      "id": 1154,
+      "question": "Which DES mode of operation is best suited for database encryption?",
+      "options": {
+        "A": "Cipher Block Chaining (CBC) mode",
+        "B": "Cycling Redundancy Checking (CRC) mode",
+        "C": "Electronic Code Book (ECB) mode",
+        "D": "Cipher Feedback (CFB) mode"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The DES algorithm in Electronic Codebook (ECB) mode is used for DEK and MIC encryption when symmetric key management is employed. The character string \"DES-ECB\" within an encapsulated PEM header field indicates use of this algorithm/mode combination. A compliant PEM implementation supporting symmetric key management shall support this algorithm/mode combination. This mode of DES encryption is the best suited for database encryption because of its low overhead. ECB Mode has some weakness, here they are: 1. ECB Mode encrypts a 64-bit block independently of all other 64-bit blocks 2. Given the same key, identical plaintext will encrypt the same way 3. Data compression prior to ECB can help (as with any mode) 4. Fixed block size of 64 bits therefore incomplete block must be padded"
+    },
+    {
+      "id": 1155,
+      "question": "Within the realm of IT security, which of the following combinations best defines risk?",
+      "options": {
+        "A": "Threat coupled with a breach.",
+        "B": "Threat coupled with a vulnerability.",
+        "C": "Vulnerability coupled with an attack.",
+        "D": "Threat coupled with a breach of security."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the main concept, when we talk about a possible risk we always have a possible vulnerability in the system attacked. This vulnerability can make a threat to be successful. We can say that the level of risk can be measures through the level of vulnerabilities in our current systems and the ability of the attackers to exploit them to make a threat successful."
+    },
+    {
+      "id": 1156,
+      "question": "Which of the following would be the best reason for separating the test and development environments?",
+      "options": {
+        "A": "To restrict access to systems under test.",
+        "B": "To control the stability of the test environment.",
+        "C": "To segregate user and development staff.",
+        "D": "To secure access to systems under development."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the right answer, with a separation of the two environments (Test and development), we can get a more stable and more \"in control\" environment, Since we are making tests in the development environment, we don't want our production processes there, we don't want to experiment things in our production processes. With a separation of the environments we can get a more risk free production environment and more control and flexibility over the test environment for the developers."
+    },
+    {
+      "id": 1157,
+      "question": "Which of the following statements pertaining to dealing with the media after a disaster occurred and disturbed the organizations activities is incorrect?",
+      "options": {
+        "A": "The CEO should always be the spokesperson for the company during a disaster.",
+        "B": "The disaster recover plan must include how the media is to be handled during the disaster.",
+        "C": "The organization's spokesperson should report bad news before the press gets a hold of it through another channel.",
+        "D": "An emergency press conference site should be planned ahead."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not a good practice, we cannot involves the CEO of the company to deal with the media in every case we have a disaster, depending on the severity of the disaster we can make the CEO talk, but the best practice in the real world is to have a well-known person with that role, with special speaking capabilities and knowledge about press methods. In general, the CEO always gets news of what happened, and he decides the company politics, then another designed employee (Usually from the disaster recovery team) deals with the media."
+    },
+    {
+      "id": 1158,
+      "question": "Which Orange book security rating introduces security labels?",
+      "options": {
+        "A": "C2",
+        "B": "B1",
+        "C": "B2",
+        "D": "B3"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Class (B1) or \"Labeled Security Protection\" systems require all the features required for class (C2). In addition, an informal statement of the security policy model, data labeling, and mandatory access control over named subjects and objects must be present. The capability must exist for accurately labeling exported information. Any flaws identified by testing must be removed."
+    },
+    {
+      "id": 1159,
+      "question": "A Business Impact Analysis (BIA) does not:",
+      "options": {
+        "A": "Recommend the appropriate recovery solution.",
+        "B": "Determine critical and necessary business functions and their resource dependencies.",
+        "C": "Identify critical computer applications and the associated outage tolerance.",
+        "D": "Estimate the financial impact of a disruption."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Remember that when we talk about a BIA (Business Impact Analysis), we are analyzing and identifying possible issues about our infrastructure, in this kind of analysis we don't make suggestions about what to do to recover from them. This is not an action plan, It's an analysis about the business, the process that it relays on, the level of the systems and a estimative of the financial impact, or in other words, how much many we loose with our systems down."
+    },
+    {
+      "id": 1160,
+      "question": "Which access control model enables the owner of the resource to specify what subjects can access specific resources?",
+      "options": {
+        "A": "Discretionary Access Control",
+        "B": "Mandatory Access Control",
+        "C": "Sensitive Access Control",
+        "D": "Role-based Access Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Discretionary Access Control (DAC) is used to control access by restricting a subject's access to an object. It is generally used to limit a user's access to a file. In this type of access control it is the owner of the file who controls other users' accesses to the file. Using a DAC mechanism allows users control over access rights to their files. When these rights are managed correctly, only those users specified by the owner may have some combination of read, write, execute, etc. permissions to the file."
+    },
+    {
+      "id": 1161,
+      "question": "What type of cable is used with 100Base-TX Fast Ethernet?",
+      "options": {
+        "A": "Fiber-optic cable",
+        "B": "Four pairs of Category 3, 4 or 5 unshielded twisted-par (UTP) wires.",
+        "C": "Two pairs of Category 5 unshielded twisted-pair (UTP) or Category 1 shielded twisted-pair (STP) wires.",
+        "D": "RG.58 cable."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: 100BaseTX is a 100-Mbps baseband Fast Ethernet specification using two pairs of either UTP or STP wiring. The first pair of wires is used to receive data; the second is used to transmit. To guarantee proper signal timing, a 100BaseTX segment cannot exceed 100 meters in length. This specification of Ethernet is based on the IEEE 802.3 standard."
+    },
+    {
+      "id": 1162,
+      "question": "Which of the following best describes the Secure Electronic Transaction (SET) protocol?",
+      "options": {
+        "A": "Originated by VISA and MasterCard as an Internet credit card protocol.",
+        "B": "Originated by VISA and MasterCard as an Internet credit card protocol using digital signatures.",
+        "C": "Originated by VISA and MasterCard as an Internet credit card protocol using the transport layer.",
+        "D": "Originated by VISA and MasterCard as an Internet credit card protocol using SSL."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This protocol was created by VISA and MasterCard as a common effort to make the buying process over the Internet secure through the distribution line of those companies. It is located in layer 7 of the OSI model. SET uses a system of locks and keys along with certified account IDs for both consumers and merchants. Then, through a unique process of \"encrypting\" or scrambling the information exchanged between the shopper and the online store, SET ensures a payment process that is convenient, private and most of all secure. Specifically, SET: 1. Establishes industry standards to keep your order and payment information confidential. 2. Increases integrity for all transmitted data through encryption. 3. Provides authentication that a cardholder is a legitimate user of a branded payment card account. 4. Provides authentication that a merchant can accept branded payment card transactions through its relationship with an acquiring financial institution. 5. Allows the use of the best security practices and system design techniques to protect all legitimate parties in an electronic commerce transaction. The SET process relies strongly on the use of certificates and digital signatures for the process of authentication and integrity of the information."
+    },
+    {
+      "id": 1163,
+      "question": "At which of the following phases of a software development life cycle are security and access controls normally designed?",
+      "options": {
+        "A": "Coding",
+        "B": "Product design",
+        "C": "Software plans and requirements",
+        "D": "Detailed design"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Security controls and access controls are normally designed in the \"Detailed\" phase of design. In this phase you have the design of many of the security features of your development like authentication, confidentiality functionality, non repudiation capabilities. In this phase you can also define what is going to be the access control method for the software, we can make it discretionary (less restrictive), mandatory (more restrictive), role based and others."
+    },
+    {
+      "id": 1164,
+      "question": "Which type of control would password management classify as?",
+      "options": {
+        "A": "Compensating control",
+        "B": "Detective control",
+        "C": "Preventive control",
+        "D": "Technical control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive technical controls are used to prevent unauthorized personnel or programs from gaining remote access to computing resources. Examples of these controls include: Access control software. Antivirus software. Library control systems. Password and Password management Smart cards. Encryption. Dial-up access control and callback sytems About Passwords: Passwords are used to verify that the user of an ID is the owner of the ID. The ID-password combination is unique to each user and therefore provides a means of holding users accountable for their activity on the system. Fixed passwords that are used for a defined period of time are often easy for hackers to compromise; therefore, great care must be exercised to ensure that these passwords do not appear in any dictionary. Fixed passwords are often used to control access to specific data bases. In this use, however, all persons who have authorized access to the data base use the same password; therefore, no accountability can be achieved. Currently, dynamic or one-time passwords, which are different for each log-on, are preferred over fixed passwords. Dynamic passwords are created by a token that is programmed to generate passwords randomly. The management of those passwords is part of Preventive control."
+    },
+    {
+      "id": 1165,
+      "question": "Due are is not related to:",
+      "options": {
+        "A": "Good faith",
+        "B": "Prudent man",
+        "C": "Profit",
+        "D": "Best interest"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is obviously a term not related to Profit, a \"due\" is not going to give us profit, its going to give us the opposite. Its always a good practice to pay your due. This can be learned in the real life. A Prudent man always pays its due, also a Good faith men pays them. This term is not related to profit."
+    },
+    {
+      "id": 1166,
+      "question": "Which of the following is not an Orange Book-defined life cycle assurance requirement?",
+      "options": {
+        "A": "Security testing",
+        "B": "Design specification and testing",
+        "C": "Trusted distribution",
+        "D": "System integrity"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Life cycle assurance is more than configuration management. Reference: \"Operational assurance focuses on the basic features and architecture of a system that lend themselves to supporting security. There are five requirements or elements of operation assurance: * System architecture * System integrity * Covert channel analysis * Trusted facility management * Trusted Recovery Life cycle assurance focuses on the controls and standards that are necessary for designing, building, and maintaining a system. The following are the four requirements or elements of life cycle assurance: * Security testing * Design specification and testing * Configuration Management * Trusted distribution\" Pg 398 Tittel"
+    },
+    {
+      "id": 1167,
+      "question": "What is another name for the Orange Book?",
+      "options": {
+        "A": "The Trusted Computer System Evaluation Criteria (TCSEC)",
+        "B": "The Trusted Computing Base (TCB)",
+        "C": "The Information Technology Security Evaluation Criteria (ITSEC)",
+        "D": "The Common Criteria"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Trusted Computer System Evaluation Criteria (TCSEC) is a collection of criteria used to grade or rate the security offered by a computer system product. The TCSEC is sometimes referred to as \"the Orange Book\" because of its orange cover. The current version is dated 1985 (DOD 5200.28-STD, Library No.S225,711) The TCSEC, its interpretations and guidelines all have different color covers, and are sometimes known as the \"Rainbow Series\"."
+    },
+    {
+      "id": 1168,
+      "question": "A password that is the same for each log-on session is called a?",
+      "options": {
+        "A": "\"one-time password\"",
+        "B": "\"two-time password\"",
+        "C": "static password",
+        "D": "dynamic password"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A Static password is one that remains the same until its changed. Its like the password that we use in the operating systems, you set it, and then you always use the same password to logon to the system for the time of the session. This password will give us access to the system and will be the vehicle to create our access token in a successful way to get our privileges. A one-time password is only valid for one use, dynamic ones change every certain condition is met, and two-time passwords can only be used two times. We can provide certain times of access with this kind of passwords."
+    },
+    {
+      "id": 1169,
+      "question": "Which of the following backup methods is most appropriate for off-site archiving?",
+      "options": {
+        "A": "Incremental backup method.",
+        "B": "Off-site backup method.",
+        "C": "Full backup method.",
+        "D": "Differential backup method."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since we want to maintain the backups offsite, its always better to send FULL-Backups because they contain a consistent base of the system. We perform the beginning of a restore through a full backup. Remember that the backups stored offsite are in most cases in a secure place, full backup in there are a best practice for any network administrator. With incremental or differential backups we don't have all we need to restore a system to a consistent state. We need to start from the full backup. \"Offsite Backup\" is not a valid backup method."
+    },
+    {
+      "id": 1170,
+      "question": "Which of the following is not a weakness of symmetric cryptography?",
+      "options": {
+        "A": "Limited security",
+        "B": "Key distribution",
+        "C": "Speed",
+        "D": "Scalability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In secret key cryptography, a single key is used for both encryption and decryption. The sender uses the key (or some set of rules) to encrypt the plaintext and sends the cipher text to the receiver. The receiver applies the same key (or rule set) to decrypt the message and recover the plaintext. Because a single key is used for both functions, secret key cryptography is also called symmetric encryption. With this form of cryptography, it is obvious that the key must be known to both the sender and the receiver ; that in fact, is the secret. The biggest difficulty with this approach, of course, is the distribution of the key. Symmetric encryption is around 1000 times faster than Asymmetric encryption, the second is commonly used just to encrypt the keys for Symmetric Cryptography."
+    },
+    {
+      "id": 1171,
+      "question": "Which of the following is not a defined layer in the TCP/IP protocol model?",
+      "options": {
+        "A": "Application layer",
+        "B": "Session layer",
+        "C": "Internet layer",
+        "D": "Network access layer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The TCP/IP reference model is the network model used in the current Internet architecture. It has its origins back in the 1960's with the grandfather of the Internet, the ARPANET. This was a research network sponsored by the Department of Defense in the United States. The reference model was named after two of its main protocols, TCP (Transmission Control Protocol) and IP (Internet Protocol). They choose to build a packet-switched network based on a connectionless internet layer. Here is a representation of it: \"The TCP/IP Protocol Model is similar to the OSI model, but it defines only the following four layers instead of seven: Application Layer. Consists of the applications and processes that use the network. Host-to-Host Transport Layer. Provides end-to-end data delivery service to the Application Layer. Internet Layer. Defines the IP datagram and handles the routing of data across networks. Network Access or Link Layer. Consists of routines for accessing physical networks and the electrical connection.\" Pg 112 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 1172,
+      "question": "Rewritable and erasable (CDR/W) optical disk are sometimes used for backups that require short time storage for changeable data, but require?",
+      "options": {
+        "A": "Faster file access than tape.",
+        "B": "Slower file access than tape.",
+        "C": "Slower file access than drive.",
+        "D": "Slower file access than scale."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, when we use optical media like CD´s to make our backups we need a constant throughput on the file access and data transfer inside the disk because of the risk to get a buffer overrun error in the CD writer. If the buffer user by the CD burner is empty and the Hard disk does not provide data for that time, the Backup will be unsuccessful. This can be solved with a Technology known as \"Burn Proof\"."
+    },
+    {
+      "id": 1173,
+      "question": "Which one of the following is not a primary component or aspect of firewall systems?",
+      "options": {
+        "A": "Protocol filtering",
+        "B": "Packet switching",
+        "C": "Rule enforcement engine",
+        "D": "Extended logging capability"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not a main function of a firewall, packet switching is a main feature of a Switch (working only in the layer 2 of the OSI model). Firewall are network security devices that can function through layer 2 to layer 7 of the OSI model. They usually include rule engine that enforce the enterprise security policy of the company. They provide protocol filtering to enforce our requirements through the forwarded or deny of traffic. They also provide logging capabilities so we can analyze what is happening in a very low level in our network."
+    },
+    {
+      "id": 1174,
+      "question": "What are database views used for?",
+      "options": {
+        "A": "To ensure referential integrity.",
+        "B": "To allow easier access to data in a database.",
+        "C": "To restrict user access to data in a database.",
+        "D": "To provide audit trails."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Through the use of a view we can provide security for the organization restricting users access to certain data or to the real tables containing the information in our database. For example, we can create a view that brings data from 3 tables, only showing 2 of the 4 columns in each. Instead of giving access to the tables that contain the information, we give access to the view, so the user can access this fixed information but does not have privileges over the tables containing it. This provides security."
+    },
+    {
+      "id": 1175,
+      "question": "Which of the following Common Data Network Services is used to send and receive email internally or externally through an email gateway device?",
+      "options": {
+        "A": "File services",
+        "B": "Mail services",
+        "C": "Print services",
+        "D": "Client/Server services"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This functionality is provided through mail services, this service permits collaboration between users in an internal and external level. We usually use two protocols, \"SMTP\" in port TCP 25 to send the emails and \"POP3\" in port TCP 110 to receive them. Currently there is another protocol that is gaining popularity, it is \"IMAP4\". Print services are used for printing documents and file services are used to share and access files and folders inside the infrastructure."
+    },
+    {
+      "id": 1176,
+      "question": "Intrusion detection has which of the following sets of characteristics.",
+      "options": {
+        "A": "It is adaptive rather than preventive.",
+        "B": "It is administrative rather than preventive.",
+        "C": "It is disruptive rather than preventative.",
+        "D": "It is detective rather than preventative."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is one of the features of intrusion detections, instead of being pro-active, it has a reactive behavior. When we set an IDS system inside of our network or hosts, the IDS agent is constantly monitoring in real time what activities are being performed in the infrastructure. If the IDS founds a malicious activity taking place it can take actions against it like disabling interfaces, alerting the administrators or sending network attacks to the source to put it out of service. As a difference to the detective behavior of IDS, we can also increase the security with practices like hardening our systems ,this is considered a preventive practice."
+    },
+    {
+      "id": 1177,
+      "question": "Which type of password provides maximum security because a new password is required for each now log-on is defined to as?",
+      "options": {
+        "A": "One-time or dynamic password",
+        "B": "Cognitive password",
+        "C": "Static password",
+        "D": "Pass phrase"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"One-time\" or \"dynamic\" password technology concept is having your remote host already know a password that is not going to go over insecure channels and when you connect, you get a challenge. You take the challenge information and password and plug it into an algorithm which generates the response that should get the same answer if the password is the same on the both sides. Therefore the password never goes over the network, nor is the same challenge used twice. Unlike SecurID or SNK, with S/key you do not share a secret with the host. Other one time password technology is card systems where each user gets a card that generates numbers that allow access to their account. Without the card, it is improbable to guess the numbers."
+    },
+    {
+      "id": 1178,
+      "question": "They in form of credit card-size memory cards or smart cards, or those resembling small calculators, are used to supply static and dynamic passwords are called?",
+      "options": {
+        "A": "Token Ring",
+        "B": "Tokens",
+        "C": "Token passing networks",
+        "D": "Coupons"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Tokens are usually used to provide authentication through \"What we have\", is most commonly implemented to provide two-factor authentication. For example, SecurID requires two pieces of information, a password and a token. The token is usually generated by the SecurID token - a small electronic device that users keep with them that display a new number every 60 seconds. Combining this number with the users password allows the SecurID server to determine whatever or not the user should be granted access."
+    },
+    {
+      "id": 1179,
+      "question": "Which of the following uses a directed graph to specify the rights that a subject can transfer to an object, or that a subject can take from another subject?",
+      "options": {
+        "A": "Take-Grant model",
+        "B": "Access Matrix model",
+        "C": "Biba model",
+        "D": "Bell-Lapadula model"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Take-Grant System is a model that helps in determining the protection rights (e.g., read or write) in a computer system. The Take-Grant system was introduced by Jones, Lipton, and Snyder to show that it is possible to decide on the safety of a computer system even when the number of subjects and objects are very large, or unbound. This can be accomplished in linear time based on the initial size of the system. The take-grant system models a protection system which consists of a set of states and state transitions. A directed graph shows the connections between the nodes of this system. These nodes are representative of the subjects or objects of the model. The directed edges between the nodes represent the rights that one node has over the linked node."
+    },
+    {
+      "id": 1180,
+      "question": "Which of the following is the BEST way to prevent software license violations?",
+      "options": {
+        "A": "Implementing a corporate policy on copyright infringements and software use.",
+        "B": "Requiring that all PCs be diskless workstations.",
+        "C": "Installing metering software on the LAN so applications can be accessed through the metered software.",
+        "D": "Regularly scanning used PCs to ensure that unauthorized copies of software have not been loaded on the PC."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since its impossible to control all the efforts of the users to install software without the proper licenses in their PC´s (Specially downloaded from the Internet), the best way to prevent licenses violations is through regular audit to every single user PC to see what's the installed programs are and what's the nature of them (Shareware, freeware, licensed). We cant use LAN monitoring software because not all the applications are network enabled, also, there is usually a policy about software installation, but the users do not rely on them many times. It also a very nice practice to punish the users making software license violations."
+    },
+    {
+      "id": 1181,
+      "question": "Zip/Jaz drives, SyQuest, and Bemoulli boxes are very transportable and are often the standard for?",
+      "options": {
+        "A": "Data exchange in many businesses.",
+        "B": "Data change in many businesses.",
+        "C": "Data compression in many businesses.",
+        "D": "Data interchange in many businesses."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the primary use of this kind of devices, since they are very portable (a medium-size external box) and they provide standard interfaces to the PC, they are usually used in data exchange because of their high capacity in comparison to the 3.5 floppy diskettes. We can make changes in the media used by this devices, but is not their primary use. Compression is not the best feature of this devices, their usually depend on File system compression. Absolutely, the best use of this boxes is for data exchange."
+    },
+    {
+      "id": 1182,
+      "question": "What are two types of system assurance?",
+      "options": {
+        "A": "Operational Assurance and Architecture Assurance.",
+        "B": "Design Assurance and Implementation Assurance.",
+        "C": "Architecture Assurance and Implementation Assurance.",
+        "D": "Operational Assurance and Life-Cycle Assurance."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Software Systems Quality Assurance (SQA) is defined as a planned and systematic approach to the evaluation of the quality of and adherence to software product standards, processes, andprocedures. SQA includes the process of assuring that standards and procedures are established and are followed throughout the software acquisition life cycle. Compliance with agreed-upon standards and procedures is evaluated through process monitoring, product evaluation, and audits. Software development and control processes should include quality assurance approval points, where an SQA evaluation of the product may be done in relation to the applicable standards. The 2 types available are : Operational assurance (that specified that the operation compiles with the required) and Life-Cycle assurance (that specifies that the system has passed through all the Software life-cycle)."
+    },
+    {
+      "id": 1183,
+      "question": "Why does compiled code pose more risk than interpreted code?",
+      "options": {
+        "A": "Because malicious code can be embedded in the compiled code and can be difficult to detect.",
+        "B": "Because the browser can safely execute all interpreted applets.",
+        "C": "Because compilers are not reliable.",
+        "D": "It does not. Interpreted code poses more risk than compiled code."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since the compiled code has already been translated to binary language (the language understanded natively by the computers), its very difficult for us (the humans) to detect malicious code inside an application, this is because its not apparently visible, you have to find that malicious code through the behavior of the program. Instead, when we talk about Interpreted code, we use a language interpreter, that is a piece of software that allows the end-user to write a program in some human-readable language, and have this program executed directly by the interpreter. This is in contrast to language compilers, that translate the human-readable code into machine-readable code, so that the end-user can execute the machine-readable code at a later time.This is far more easier to detect malicious code inside the programs, you just need to see what piece of code produced the undesired action."
+    },
+    {
+      "id": 1184,
+      "question": "Which model, based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes, introduced five levels with which the maturity of an organization involved in the software process is evaluated?",
+      "options": {
+        "A": "The Total Quality Model (TQM)",
+        "B": "The IDEAL Model",
+        "C": "The Software Capability Maturity Model",
+        "D": "The Spiral Model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Capability Maturity Model for Software describes the principles and practices underlying software process maturity and is intended to help software organizations improve the maturity of their software processes in terms of an evolutionary path from ad hoc, chaotic processes to mature, disciplined software processes. The CMM is organized into five maturity levels:1) Initial. The software process is characterized as ad hoc, and occasionally even chaotic. Few processes are defined, and success depends on individual effort and heroics.2) Repeatable. Basic project management processes are established to track cost, schedule, and functionality. The necessary process discipline is in place to repeat earlier successes on projects with similar applications.3)Defined. The software process for both management and engineering activities is documented, standardized, and integrated into a standard software process for the organization. All projects use an approved, tailored version of the organization's standard software process for developing and maintaining software.4) Managed. Detailed measures of the software process and product quality are collected. Both the software process and products are quantitatively understood and controlled.5) Optimizing. Continuous process improvement is enabled by quantitative feedback from the process and from piloting innovative ideas and technologies."
+    },
+    {
+      "id": 1185,
+      "question": "Phreakers are hackers who specialize in telephone fraud. What type of telephone fraud simulates the tones of coins being deposited into a payphone?",
+      "options": {
+        "A": "Red Boxes",
+        "B": "Blue Boxes",
+        "C": "White Boxes",
+        "D": "Black Boxes"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Red box basically simulates the sounds of coins being dropped into the coin slot of a payphone. The traditional Red Box consisting of a pair of Wien-bridge oscillators with the timing controlled by 555 timer chips.The Blue Box, The mother of all boxes, The first box in history, which started the whole phreaking scene. Invented by John Draper (aka \"Captain Crunch\") in the early 60s, who discovered that by sending a tone of 2600Hz over the telephone lines of AT&T, it was possible to make free calls.A Black Box is a device that is hooked up to your phone that fixes your phone so that when you get a call, the caller doesn't get charged for the call. This is good for calls up to 1/2 hour, after 1/2 hour the Phone Co. gets suspicious, and then you can guess what happens.The White Box turns a normal touch tone keypad into a portable unit. This kind of box can be commonly found in a phone shop."
+    },
+    {
+      "id": 1186,
+      "question": "What is the proper term to refer to a single unit of Ethernet data?",
+      "options": {
+        "A": "Ethernet segment",
+        "B": "Ethernet datagram",
+        "C": "Ethernet frame",
+        "D": "Ethernet packet"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Ethernet traffic is transported in units of a frame, where each frame has a definite beginning and end. Here is an Ethernet frame: In this picture we define: 1. Preamble Field used for synchronization, 64-bits 2. Destination Address Ethernet address of the destination host, 48-bits 3. Source Address Ethernet address of the source host, 48-bits 4. Type of data encapsulated, e.g. IP, ARP, RARP, etc, 16-bits. 5. Data Field Data area, 46-1500 bytes, which has Destination Address Internet address of destination host Source Address Internet address of source host 6. CRC Cyclical Redundancy Check, used for error detection"
+    },
+    {
+      "id": 1187,
+      "question": "Which of the following represents an ALE calculation?",
+      "options": {
+        "A": "Singe loss expectancy x annualized rate of occurrence.",
+        "B": "Gross loss expectancy x loss frequency.",
+        "C": "Actual replacement cost - proceeds of salvage.",
+        "D": "Asset value x loss expectancy."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: ALE (Annualized Loss Expectancy) calculations are a component of every risk analysis process. ALE calculations when done properly portray risk accurately. ALE calculations provide meaningful cost/benefit analysis. ALE calculations are used to: 1. Identify risks 2. Plan budgets for information risk management 3. Calculate loss expectancy in annualized terms SLE x ARO = ALE"
+    },
+    {
+      "id": 1188,
+      "question": "IF an operating system permits executable objects to be used simultaneously by multiple users without a refresh of the objects, what security problem is most likely to exist?",
+      "options": {
+        "A": "Disclosure of residual data.",
+        "B": "Unauthorized obtaining of a privileged execution state.",
+        "C": "Data leakage through covert channels.",
+        "D": "Denial of service through a deadly embrace."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is a well known issue knew by many programmers, since the operating system is allowing the executables to be used by many users in different sessions at the same time, and there is not refreshing every certain time, there will be a disclosure of residual data. To fix this we need to get sure that objects are refreshed frequently, for added security its better an OS that does not allow the use of an executable object by many users at the same time."
+    },
+    {
+      "id": 1189,
+      "question": "Tape arrays use a large device with multiple (sometimes 32 or 64) tapes that are configured as a?",
+      "options": {
+        "A": "Single array",
+        "B": "Dual array",
+        "C": "Triple array",
+        "D": "Quadruple array"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the function of a tape robot/changer working on a media library / jukebox. We can get as many as 32 / 64 or even more tapes action as a single logical unit. You can have a robot that changes and retrieves the different tapes when they are needed, so you see the whole bunch of tapes as it's a single logical storage solution for you. This kind of solutions are very expensive."
+    },
+    {
+      "id": 1190,
+      "question": "Why would anomaly detection IDSs often generate a large number of false positives?",
+      "options": {
+        "A": "Because they can only identify correctly attacks they already know about.",
+        "B": "Because they are application-based are more subject to attacks.",
+        "C": "Because they cant identify abnormal behavior.",
+        "D": "Because normal patterns of user and system behavior can vary wildly."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: One of the most obvious reasons why false alarms occur is because tools are stateless. To detect an intrusion, simple pattern matching of signatures is often insufficient. However, that's what most tools do. Then, if the signature is not carefully designed, there will be lots of matches. For example, tools detect attacks in sendmail by looking for the words \"DEBUG\" or \"WIZARD\" as the first word of a line. If this is in the body of the message, it's in fact innocuous, but if the tool doesn't differentiate between the header and the body of the mail, then a false alarm is generated. Finally, there are many events happening in the course of the normal life of any system or network that can be mistaken for attacks. A lot of sysadmin activity can be catalogued as anomalous. Therefore, a clear correlation between attack data and administrative data should be established to cross-check that everything happening on a system is actually desired. Normal patterns and user activities are usually confused with attacks by IDS devices, its expected that the 2nd generations IDS systems will decrease the percent of false positives."
+    },
+    {
+      "id": 1191,
+      "question": "According to private sector data classification levels, how would salary levels and medical information be classified?",
+      "options": {
+        "A": "Public",
+        "B": "Sensitive",
+        "C": "Private",
+        "D": "Confidential"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: According to the classification levels of the private sector, this information is classified as Private because this information is from a personal nature. There is no need for other employees to see details about your health or you salary range, this can lead to internal problems inside the company, problems like jealous employees."
+    },
+    {
+      "id": 1192,
+      "question": "Which of the following is used in database information security to hide information?",
+      "options": {
+        "A": "Inheritance",
+        "B": "Polyinstantiation",
+        "C": "Polymorphism",
+        "D": "Delegation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Polyinstantiation represents an environment characterized by information stored in more than one location in the database. This permits a security model with multiple levels-of-view and authorization. The current problem with polyinstantiation is ensuring the integrity of the information in the database. Without an effective method for the simultaneous updating of all occurrences of the same data element - integrity cannot be guaranteed."
+    },
+    {
+      "id": 1193,
+      "question": "Which of the following evaluates the product against the specification?",
+      "options": {
+        "A": "Verification",
+        "B": "Validation",
+        "C": "Concurrence",
+        "D": "Accuracy"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the proper term, \"Verification\", this term is used when we are making a comparison of a product against a specification. For example, you can have a product that is build on open standards, you can have a proof of that by making a \"verification\" of it against the standards or specifications included in those."
+    },
+    {
+      "id": 1194,
+      "question": "Application Level Firewalls are commonly a host computer running proxy server software, which makes a?",
+      "options": {
+        "A": "Proxy Client",
+        "B": "Proxy Session",
+        "C": "Proxy System",
+        "D": "Proxy Server"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A proxy server is a server that sits between a client and server application, such as a Web browser and a source web server. It intercepts all requests to the real server to see if it can fulfill the requests itself. If not, it forwards the request to the original source web server. Firewalls usually provides this kind of services to have more control over user request and allow / deny the traffic of those through the gateway. At this time the most common Proxy server is for HTTP protocol, we can also have proxies for SMTP and FTP."
+    },
+    {
+      "id": 1195,
+      "question": "What attack involves the perpetrator sending spoofed packet(s) with the SYN flag set to the victim's machine on any open port that is listening?",
+      "options": {
+        "A": "Bonk attack",
+        "B": "Land attack",
+        "C": "Teardrop attack",
+        "D": "Smurf attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Land attack involves the perpetrator sending spoofed packet(s) with the SYN flag set to the victim's machine on any open port that is listening. If the packet(s) contain the same destination and source IP address as the host, the victim's machine could hang or reboot. In addition, most systems experience a total freeze up, where as CTRL-ALT-DELETE fails to work, the mouse and keyboard become non operational and the only method of correction is to reboot via a reset button on the system or by turning the machine off. Vulnerable Systems: This will affect almost all Windows 95, Windows NT, Windows for Workgroups systems that are not properly patched and allow Net Bios over TCP/IP. In addition, machines running services such as HTTP, FTP, Identd, etc that do not filter packet(s), that contain the same source / destination IP address, can still be vulnerable to attack through those ports. Prevention: This attack can be prevented for open / listening ports by filtering inbound packets containing the same source / destination IP address at the router or firewall level. For most home users not running a lot of services, and for those who use IRC, disabling the Identd server within their client will stop most attacks since the identd service (113) is becoming the most attacked service/port."
+    },
+    {
+      "id": 1196,
+      "question": "The beginning and the end of each transfer during asynchronous communication data transfer are marked by?",
+      "options": {
+        "A": "Start and Stop bits.",
+        "B": "Start and End bits.",
+        "C": "Begin and Stop bits.",
+        "D": "Start and Finish bits."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The ASYNCHRONOUS (ASYNC) format for data transmission is a procedure or protocol in which each information CHARACTER or BYTE is individually synchronized or FRAMED by the use of Start and Stop Elements, also referred to as START BITS and STOP BITS. The Asynchronous Transmission Format is also known as START-STOP mode or CHARACTER mode. Each character or byte is framed as a separate and independent unit of DATA that may be transmitted and received at irregular and independent time intervals. The characters or bytes may also be transmitted as a contiguous stream or series of characters."
+    },
+    {
+      "id": 1197,
+      "question": "Most of unplanned downtime of information systems is attributed to which of the following?",
+      "options": {
+        "A": "Hardware failure",
+        "B": "Natural disaster",
+        "C": "Human error",
+        "D": "Software failure"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is what the static's says. Most of the downtime is cause of unexpected hardware failure. Commonly you just replace the FRU (Field replazable unit) when they fail. Usually a well written software does not fail if the hardware is running correctly. The human errors are controllable and natural disasters are not very often. Hardware failure is very common, it's a good practice to have spare disks, NIC and any other hardware FRU´s in your company to minimize the downtime with quick replacements."
+    },
+    {
+      "id": 1198,
+      "question": "Raid that functions as part of the operating system on the file server",
+      "options": {
+        "A": "Software implementation",
+        "B": "Hardware implementation",
+        "C": "Network implementation",
+        "D": "Netware implementation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This kind of RAID is totally depended on the operating system, this is because the server does not have any special hardware - RAID controller in the board. This kind of RAID implementation usually degrades performance because it takes many CPU cycles. A very common example of software RAID is the support for it on Windows 2000 Server, where you can create RAID 0,1 and 5 through heterogeneous disks, you can even make a RAID between one SCSI and one EIDE disk. The software implementation is hardware independent always that the disks are recognized by the Operating System."
+    },
+    {
+      "id": 1199,
+      "question": "During which phase of an IT system life cycle are security requirements developed?",
+      "options": {
+        "A": "Operation",
+        "B": "Initiation",
+        "C": "Development",
+        "D": "Implementation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The System Development Life Cycle is the process of developing information systems through investigation, analysis, design, implementation, and maintenance. The System Development Life Cycle (SDLC) is also known as Information Systems Development or Application Development. If you take a look at the standard IT system life cycle chart, you will see that everything that deals with security requirements is done at the \"development\" stage. In this stage you can create the access controls, the form of authentication to use and all the other security requirements."
+    },
+    {
+      "id": 1200,
+      "question": "Ensuring that printed reports reach proper users and that receipts are signed before releasing sensitive documents are examples of?",
+      "options": {
+        "A": "Deterrent controls",
+        "B": "Output controls",
+        "C": "Information flow controls",
+        "D": "Asset controls"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since we want to deal with printer reports, we are talking about output controls, Why, because printer produce output, and we can control it. As a best practice you can have people dedicated in the company to receive the different print jobs in the printing center, and people that takes care of the confidential information requiring a signature from the sender stating that the document was delivered to the owner in a timely and secure fashion."
+    }
+  ]
+}

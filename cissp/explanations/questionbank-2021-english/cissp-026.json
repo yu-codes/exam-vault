@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1251 - Q1300",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1251,
+      "question": "A contingency plan should address?",
+      "options": {
+        "A": "Potential risks",
+        "B": "Residual risks",
+        "C": "Identified risks",
+        "D": "All of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, as stated in CISSP documentation, you should address any possible \"Residual Risk\" at your contingency plan to minimize business impact when you are in a downtime situation. The identified Risks and the Potential Risks are not identified there, they are identified earlier."
+    },
+    {
+      "id": 1252,
+      "question": "In the OSI/ISO model, at what level is SET (SECURE ELECTRONIC TRANSACTION PROTOCOL) provided?",
+      "options": {
+        "A": "Application",
+        "B": "Network",
+        "C": "Presentation",
+        "D": "Session"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This protocol was created by VISA and MasterCard as a common effort to make the buying process over the Internet secure through the distribution line of those companies. It is located in layer 7 of the OSI model, the application layer. SET uses a system of locks and keys along with certified account IDs for both consumers and merchants. Then, through a unique process of \"encrypting\" or scrambling the information exchanged between the shopper and the online store, SET ensures a payment process that is convenient, private and most of all secure."
+    },
+    {
+      "id": 1253,
+      "question": "A packet filtering firewall looks at the data packet to get information about the source and destination addresses of an incoming packet, the session's communications protocol (TCP, UDP or ICMP), and the source destination application port for the?",
+      "options": {
+        "A": "Desired service",
+        "B": "Dedicated service",
+        "C": "Delayed service",
+        "D": "Distributed service."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, the packets filters show the desired service port (Remember that they are layer 3 devices), this is because you can have many different referenced port number in the destination port field of the different packets. You have to look for the well-known port numbers of the service desired. For example, look in port 80 for HTTP and port 21 for FTP. This is the correct terminology, see the features of Packet Filters in your CISSP documentation."
+    },
+    {
+      "id": 1254,
+      "question": "Packet Filtering Firewalls system is considered a?",
+      "options": {
+        "A": "First generation firewall.",
+        "B": "Second generation firewall.",
+        "C": "Third generation firewall.",
+        "D": "Fourth generation firewall."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Firewall technology is a young but quickly maturing industry. The first generation of firewall architectures has been around almost as long as routers, first appearing around 1985 and coming out of Cisco's IOSsoftware division. These firewalls are called packet filter firewalls. However, the first paper describing the screening process used by packet filter firewalls did not appear until 1988, when Jeff Mogul from Digital Equipment Corporation published his studies. At this time we are in the Fourth generation of firewall devices and software."
+    },
+    {
+      "id": 1255,
+      "question": "When should a post-mortem review meeting be held after an intrusion has been properly taken care of?",
+      "options": {
+        "A": "Within the first three months after the investigation of the intrusion is completed.",
+        "B": "Within the first week after prosecution of intruders have taken place, whether successful or not.",
+        "C": "Within the first month after the investigation of the intrusion is completed.",
+        "D": "Within the first week of completing the investigation of the intrusion."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As stated in CISSP documentation, you should make post mortem review meetings after taking care of the intrusion, and no more than one week after the facts. Its not a good practice to wait more than this time, it's a matter of common sense too, three months, one month, 2 weeks, its too much time."
+    },
+    {
+      "id": 1256,
+      "question": "Which of the following can be used as a covert channel?",
+      "options": {
+        "A": "Storage and timing.",
+        "B": "Storage and low bits.",
+        "C": "Storage and permissions.",
+        "D": "Storage and classification."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Those are the proper elements, you can use these two to achieve a covert channel. Low bits is not a term related to covert channels. Permissions are related to authentication, they do not achieve what the question wants. Also, classification is could not selected as a correct choice. Check your official CISSP documentation to see what can be used as a covert channel. \"An active variation on eavesdropping is called Covert Channel eavesdropping, which consists of using a hidden unauthorized network connection to communicate unauthorized information. A Covert Storage Channel operates by writing information to storage by one process and then reading by using another process from a different security level. A Covert Timing Channel signals information to another process by modulating its own resource use to affect the response time of another.\" Pg. 101 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 1257,
+      "question": "Which software development model is actually a meta-model that incorporates a number of the software development models?",
+      "options": {
+        "A": "The Waterfall model.",
+        "B": "The modified Waterfall model.",
+        "C": "The Spiral model.",
+        "D": "The Critical Patch Model (CPM)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The spiral model for software engineering has evolved to encompass the best features of the classic waterfall model, while at the same time adding an element known as risk analysis. The spiral model is more appropriate for large, industrial software projects and has four main blocks/quadrants. Each release or version of the software requires going through new planning, risk analysis, engineering and customer evaluation phases and this is illustrated in the model by the spiral evolution outwards from the center. For each new release of a software product, a risk analysis audit should be performed to decide whether the new objectives can be completed within budget (time and costs), and decisions have to be made about whether to proceed. The level of planning and customer evaluation is missing from the waterfall model which is mainly concerned with small software programs. The spiral model also illustrated the evolutionary development of software where a solution may be initially proposed which is very basic (first time round the loop) and then later releases add new features and possibly a more elaborate GUI."
+    },
+    {
+      "id": 1258,
+      "question": "What is not true with pre-shared key authentication within IKE / IPsec protocol:",
+      "options": {
+        "A": "Pre-shared key authentication is normally based on simple passwords.",
+        "B": "Needs a PKI to work.",
+        "C": "Only one preshared key for all VPN connections is needed.",
+        "D": "Costly key management on large user groups."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Pre-Shared Secret is usually used when both ends of the VPN lacks access to a compatible certificate server. Once you have defined all the endpoints in your VPN, you can establish a password that is used to authenticate the other end of the connection, this is the Pre-Shared secret. Since you are using Pre-Shared key because you don't have an available / compatible certificate server, IPSEC and IKE do not need to use PKI in this case (that actually provides the certificate server infrastructure)."
+    },
+    {
+      "id": 1259,
+      "question": "Which question is NOT true concerning Application Control?",
+      "options": {
+        "A": "It limits end users of applications in such a way that only particular screens are visible.",
+        "B": "Only specific records can be requested choice.",
+        "C": "Particular uses of the application can be recorded for audit purposes.",
+        "D": "Is non-transparent to the endpoint applications so changes are needed to the applications involved."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Application control provides a transparent feeling to endpoint applications when changes are needed, this is one of the features of it. With application control you can audit certain use of the applications involved and only specify record of your choice. There is also the possibility to limit the end users applications to provide access to only certain screens. Check your CISSP documentation about Application Control."
+    },
+    {
+      "id": 1260,
+      "question": "In order to ensure the privacy and integrity of the data, connections between firewalls over public networks should use?",
+      "options": {
+        "A": "Screened subnets",
+        "B": "Digital certificates",
+        "C": "Encrypted Virtual Private Networks",
+        "D": "Encryption"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the correct answer, since firewall does not mean \"VPN\" we have to select \"Encrypted Virtual Private Networks\". With a VPN and encryption we can provide secure communication in a transparent way for the users between the endpoints achieving \"Confidentiality\". This confidentiality is achieved through encryption, and this encryption relies on encryption algorithms like AES, DES, CAST and others. Screened Subnet are not related to secure data over public networks, it's a place to put our network services accessible from the outside. Digital certificates do not provide confidentiality, they only provide integrity."
+    },
+    {
+      "id": 1261,
+      "question": "What is necessary for a subject to have write access to an object in a Multi-Level Security Policy?",
+      "options": {
+        "A": "The subject's sensitivity label must dominate the object's sensitivity label.",
+        "B": "The subject's sensitivity label subordinates the object's sensitivity label.",
+        "C": "The subject's sensitivity label is subordinated by the object's sensitivity label.",
+        "D": "The subject's sensitivity label is dominated by the object's sensitivity label."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1262,
+      "question": "What best describes a scenario when an employee has been shaving off pennies from multiple accounts and depositing the funds into his own ban account?",
+      "options": {
+        "A": "Data fiddling",
+        "B": "Data diddling",
+        "C": "Data hiding",
+        "D": "Data masking"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This kind of an attack involves altering the raw data just before it is processed by a computer and then changing it back after the processing is completed. This kind of attack was used in the past to make what is stated in the question, steal small quantities of money and transfer them to the attackers account. See \"Data deddling crimes\" on the Web. The most correct answer is 'Salami', but since that is not an option the most correct answer is data diddling. \"A salami attack is committing several small crimes with the hope that the overall larger crime will go unnoticed. ....An example would be if an employee altered a banking software program to subtract 5 cents from each of the bank's customers' accounts once a month and moved this amount to the employee's bank account. If this happened to all of the bank's 50,000 customer accounts, the intruder could make up to $ 30,000 a year. Data diddling refers to the alteration of existing data. Many times this modification happens before it is entered into an application or as soon as it completes processing and is outputted from an application. There was an incident in 1997, in Maryland, where a Taco Bell employee was sentenced to ten years in jail because he reprogrammed the drive-up window cash register to ring up ever 42.99 order as one penny. He collected the full amount from the customer, put the penny in the till, and pocketed the other $2.98. He made $3600 before his arrest.\" Pg. 602-603 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 1263,
+      "question": "Which of the following is unlike the other three?",
+      "options": {
+        "A": "El Gamal",
+        "B": "Teardrop",
+        "C": "Buffer Overflow",
+        "D": "Smurf"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Options B, C and D are all Denial of Service attacks. El Gamal is the Diffie-Hellman key exchange algorithm and is usually described as an active exchange of keys by two parties. The buffer overflow attack objective is consume the available memory for the TCP/IP protocol stack to make the machine crash. Teardrop and Smurf are DoS attacks that make use of spoofing."
+    },
+    {
+      "id": 1264,
+      "question": "Phreakers are hackers who specialize in telephone fraud. What type of telephone fraud manipulates the line voltage to receive a tool-free call?",
+      "options": {
+        "A": "Red Boxes",
+        "B": "Blue Boxes",
+        "C": "White Boxes",
+        "D": "Black Boxes"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A Black Box is a device that is hooked up to your phone that fixes your phone so that when you get a call, the caller doesn't get charged for the call. This is good for calls up to 1/2 hour, after 1/2 hour the Phone Co. gets suspicious, and then you can guess what happens. The Red box basically simulates the sounds of coins being dropped into the coin slot of a payphone. The traditional Red Box consisting of a pair of Wien-bridge oscillators with the timing controlled by 555 timer chips. The Blue Box, The mother of all boxes, The first box in history, which started the whole phreaking scene. Invented by John Draper (aka \"Captain Crunch\") in the early 60s, who discovered that by sending a tone of 2600Hz over the telephone lines of AT&T, it was possible to make free calls. The White Box turns a normal touch tone keypad into a portable unit. This kind of box can be commonly found in a phone shop."
+    },
+    {
+      "id": 1265,
+      "question": "Which of the following groups represents the leading source of computer crime losses?",
+      "options": {
+        "A": "Hackers",
+        "B": "Industrial saboteurs",
+        "C": "Foreign intelligence officers",
+        "D": "Employees"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This can be checked at the computer crime static's on the web. Most of the attacks, actually 70% of them, come from inside the company, and 80% of them from employees of it. This is a reality, when we protect our infrastructure be sure to give great importance to internal security, we don't when is one of the company employees going to make a strike. Hackers are also important, but less than our own employees."
+    },
+    {
+      "id": 1266,
+      "question": "Which of the following steps should be performed first in a business impact analysis (BIA)?",
+      "options": {
+        "A": "Identify all business units within the organization.",
+        "B": "Evaluate the impact of disruptive events.",
+        "C": "Estimate the Recovery Time Objectives (RTO).",
+        "D": "Evaluate the criticality of business functions."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Remember that when we talk about a BIA (Business Impact Analysis), we are analyzing and identifying possible issues about our infrastructure. It's an analysis about the business, the process that it relays on, the level of the systems and a estimative of the financial impact, or in other words, how much many we loose with our systems down. The first step on it should always be the identifying of the business units in the company. You can then go to other requirements like estimate losses and downtime costs."
+    },
+    {
+      "id": 1267,
+      "question": "Which of the following embodies all the detailed actions that personnel are required to follow?",
+      "options": {
+        "A": "Standards",
+        "B": "Guidelines",
+        "C": "Procedures",
+        "D": "Baselines"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As stated in the dictionary, here are 3 definitions of procedure: 1. A manner of proceeding; a way of performing or effecting something: standard procedure. 2. A series od steps taken to accomplish an end: a medical procedure; evacuation procedures. 3. A set of established forms or methods for conducting the affairs of an organized body such as a business, club, or government. Its pretty visible that this is the term we are looking for as stated in the questions, you can check your CISSP documentation too."
+    },
+    {
+      "id": 1268,
+      "question": "Immune to the effects of electromagnetic interference (EMI) and therefore has a much longer effective usable length (up to two kilometers in some cases) is?",
+      "options": {
+        "A": "Coaxial cable",
+        "B": "Twisted Pair cable",
+        "C": "Axial cable",
+        "D": "Fiber Optic cable"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since fiber optics does not use electrical signals to transmit the information (it uses lights that goes through the mirrored silvered cable from source to end), its not affected by EMI (Electro Magnetic Interference) like other copper transmission methods like 10base5 and 10base2, therefore EMI does not affect the possible transmission distance. Fiber optics can have a great distance between end points, much greater than the copper transmission methods. Examples of Fiber optics standards are: 100BaseFX and 1000BaseFX."
+    },
+    {
+      "id": 1269,
+      "question": "Which of the following is the most reliable, secure means of removing data from magnetic storage media such as a magnetic tape, or cassette?",
+      "options": {
+        "A": "Degaussing",
+        "B": "Parity Bit Manipulation",
+        "C": "Certification",
+        "D": "Buffer overflow"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: An alternating current (AC) bulk eraser (degausser) is used for complete erasure of data and other signal on magnetic media. Degaussing is a process where magnetic media is exposed to a powerful, alternating magnetic field. Degaussing removes any previously written data, leaving the media in a magnetically randomized (blank) state. The degausser must subject the media to an alternating magnetic field of sufficient intensity to saturate the media and then by slowly withdrawing or reducing the field leaves the magnetic media in a magnetically neutral state."
+    },
+    {
+      "id": 1270,
+      "question": "Which of the following is an advantage of prototyping?",
+      "options": {
+        "A": "Prototype systems can provide significant time and cost savings.",
+        "B": "Change control is often less complicated with prototype systems.",
+        "C": "It ensures that functions or extras are not added to the intended system.",
+        "D": "Strong internal controls are easier to implement."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Prototype Phase is also called the \"Proof of Concept\" Phase. Whether it's called one or the other depends on what the creator is trying to \"prove.\" If the main deliverable of the Phase includes a working version of the product's technical features, it's a \"prototype.\" If the main deliverable just looks like it has the product's technical features, then it's a \"proof of concept.\" Prototypes can save time and money because you can test some functionality earlier in the process. You don't have to make the whole final product to begin testing it."
+    },
+    {
+      "id": 1271,
+      "question": "The IS security analyst's participation in which of the following system development life cycle phases provides maximum benefit to the organization?",
+      "options": {
+        "A": "System requirements definition.",
+        "B": "System design.",
+        "C": "Program development.",
+        "D": "Program testing."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1272,
+      "question": "Controls are implemented to?",
+      "options": {
+        "A": "Eliminate risk and reduce the potential for loss.",
+        "B": "Mitigate risk and eliminate the potential for loss.",
+        "C": "Mitigate risk and reduce the potential for loss.",
+        "D": "Eliminate risk and eliminate the potential for loss."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: That's the essence of Controls, you put them in your environment to minimize the impact of a potential loss, with them you can also mitigate the risk and obtain the first through this. Controls are a very good practice to secure an environment, they should be considered by any security professional, CISSP or not, the risk should be minimized as much as you can."
+    },
+    {
+      "id": 1273,
+      "question": "A circuit level gateway is ________ when compared to an application level firewall.",
+      "options": {
+        "A": "Easier to maintain.",
+        "B": "More difficult to maintain.",
+        "C": "More secure.",
+        "D": "Slower"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since circuit level gateways are not as high in the OSI model for the inspection as Application level firewalls, they are easier to maintain and configure. Application layer firewalls are up to layer 7 of the OSI model and provide a great bunch of options and complex configurations. Application layer firewalls are more secure than circuit level gateway because they can track and analyze information up to layer 7, a drawback to this, is that this functionality makes them slower."
+    },
+    {
+      "id": 1274,
+      "question": "In IPSec, if the communication mode is gateway-gateway or host-gateway:",
+      "options": {
+        "A": "Only tunnel mode can be used.",
+        "B": "Only transport mode can be used.",
+        "C": "Encapsulating Security Payload (ESP) authentication must be used.",
+        "D": "Both tunnel and transport mode can be used."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: ESP or Encrypted Security Payload, is a header that when its added to an IP datagram, protects the confidentiality, integrity and authenticity of the data. AH and ESP can be used separately or together. As defined by the IETF, IPSec transport mode can only be used when both the source and destination systems understand IPSEC. In most cases you deploy IPSEC in tunnel mode. In this transport mode (gateway to gateway and gateway to host) you must use ESP for authentication."
+    },
+    {
+      "id": 1275,
+      "question": "Which integrity model defines a constrained data item, an integrity verification procedure and a transformation procedure?",
+      "options": {
+        "A": "The Take-Grant model",
+        "B": "The Biba integrity model",
+        "C": "The Clark Wilson integrity model",
+        "D": "The Bell-LaPadula integrity model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Clark-Wilson model was developed to address security issues in commercial environments. The model uses two categories of mechanisms to realize integrity: well-formed transactions and separation of duty. It defines a constraint data item, a integrity verification and a transformation of that object. A possible way to represent a constraint that only certain trusted programs can modify objects is using application:checksum condition, where the checksum ensures authenticity of the application. Another way is using application:endorser condition, which indicates that a valid certificate, stating that the application has been endorsed by the specified endorser, must be presented. Static separation of duty is enforced by the security administrator when assigning group membership. Dynamic separation of duty enforces control over how permissions are used at the access time"
+    },
+    {
+      "id": 1276,
+      "question": "Which of the following rules pertaining to a Business Continuity Plan/Disaster Recovery Plan is incorrect?",
+      "options": {
+        "A": "In order to facilitate recover, a single plan should cover all locations.",
+        "B": "There should be requirements for to form a committee to decide a course of action. These decisions should be made ahead of time and incorporated into the plan.",
+        "C": "In its procedures and tasks, the plan should refer to functions, not specific individuals.",
+        "D": "Critical vendors should be contacted ahead of time to validate equipment can be obtained in a timely manner."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not the best practice, even more for the CISSP exam. Continuity / recovery plans should be make for every location in separate. This is because when there is a disaster, Its not usually in all the different locations, its better to have one plan for each of it so you can use and follow only the plan of the affected site and don't bother the other ones."
+    },
+    {
+      "id": 1277,
+      "question": "What are suitable protocols for securing VPN connections?",
+      "options": {
+        "A": "S/MIME and SSH",
+        "B": "TLS and SSL",
+        "C": "IPsec and L2TP",
+        "D": "PKCS# and X.509"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Both of them can be used to create and secure VPN's. The Layer 2 Tunnel Protocol (L2TP) is an emerging Internet Engineering Task Force (IETF) standard that combines the best features of two existing tunneling protocols: Cisco's Layer 2 Forwarding (L2F) and Microsoft's Point-to-Point Tunneling Protocol (PPTP). L2TP is an extension to the Point-to-Point Protocol (PPP), which is an important component for VPNs. VPNs allow users and telecommuters to connect to their corporate intranets or extranets. IPSec is a series of guidelines for the protection of Internet Protocol (IP) communications. It specifies ways for securing private information transmitted over public networks. Services supported by IPSec include confidentiality (encryption), authenticity (proof of sender), integrity (detection of data tampering) and replay protection (defense against unauthorized re-sending of data). It work on layer 3 of the OSI model and is the most common protocols used to create VPNs."
+    },
+    {
+      "id": 1278,
+      "question": "Which of the following questions is less likely to help in assessing identification and authentication controls?",
+      "options": {
+        "A": "Is a current list maintained and approved of authorized users and their access?",
+        "B": "Are passwords changed at least every ninety days or earlier if needed?",
+        "C": "Are inactive user identifications disabled after a specified period of time?",
+        "D": "Is there a process for reporting incidents?"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: We just some common sense to answer this question correctly, why are we going to ask about process reporting for incidents?, does is help relating to identification and authentication?, I don't think so. There are other more interesting questions, password deal with authentication, inactive user Ids are also related to identification. But the most important to me, know if there is a list with authorized users and their current access, this can help you to identify unauthorized activities."
+    },
+    {
+      "id": 1279,
+      "question": "The primary purpose for using one-way encryption of user passwords within a system is which of the following?",
+      "options": {
+        "A": "It prevents an unauthorized person from trying multiple passwords in one logon attempt.",
+        "B": "It prevents an unauthorized person from reading or modifying the password list.",
+        "C": "It minimizes the amount of storage required for user passwords.",
+        "D": "It minimizes the amount of processing time used for encrypting passwords."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This kind of encryption flavor increases security for passwords, if you use a one way encryption algorithm, you know that the encryption is not reversible, you cannot get the original value that you provided as a password from the resulting hash with any key or algorithm. This increase security in the way that when a person see the password list, it will only see the hash values and cannot read the original password or modify them without getting corruption."
+    },
+    {
+      "id": 1280,
+      "question": "The security of a computer application is most effective and economical in which of the following cases?",
+      "options": {
+        "A": "The system is optimized prior to the addition of security.",
+        "B": "The system is procured off-the-shelf.",
+        "C": "The system is customized to meet the specific security threat.",
+        "D": "The system is designed originally to provide the necessary security."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is very obvious, if your system is designed from the ground up to provide security, its going to be cheaper and more effective at the end, because you don't need re-analysis, re-coding, and re-structure of the internal code of the computer application. If you don't address security at the beginning you will also need to spend time and money reviewing the code to try to put the security infrastructure in some place of it."
+    },
+    {
+      "id": 1281,
+      "question": "In the following choices there is one that is a typical biometric characteristics that is not used to uniquely authenticate an individual's identity?",
+      "options": {
+        "A": "Retina scans",
+        "B": "Iris scans",
+        "C": "Palm scans",
+        "D": "Skin scans"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Answer A, B and C can be used to uniquely identify a person, but in the case of the Skin, there are no unique characteristics that can differentiate two distinct individuals in an acceptable accurate way. In the case of the IRIS and the Retina, there are not two of them equal. In the case of the palm, every person has different marks on it. The skin is common to all and does not have specific textures or marks to make it unique in comparison to another individual."
+    },
+    {
+      "id": 1282,
+      "question": "Which of the following proves or disproves a specific act though oral testimony based on information gathered through the witness's five senses?",
+      "options": {
+        "A": "Direct evidence",
+        "B": "Circumstantial evidence",
+        "C": "Conclusive evidence",
+        "D": "Corroborative evidence"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As stated in the CISSP documentation, \"If you want to make achieve the validation or revalidation of the oral testimony of a witness, you need to provide physical, direct evidence to backup your statements and override the five senses of an oral testimony\". Circumstantial or Corroborative evidence is not enough in this case, we need direct, relevant evidence backing up the facts."
+    },
+    {
+      "id": 1283,
+      "question": "Which of the following would be defined as an absence of safeguard that could be exploited?",
+      "options": {
+        "A": "A threat",
+        "B": "A vulnerability",
+        "C": "A risk",
+        "D": "An exposure"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In IT, a vulnerability is the weakness of a System to be exploited and corrupted by a security hole. There is always a risk that our systems been vulnerable, with security we cannot make the risk to be 0%, but we can decrease the possibility of a threat becoming in a successful attack through one of those vulnerabilities. There is no system without vulnerabilities, we need to patch our systems frequently to reduce the risk of a threat through a vulnerability of one of our systems."
+    },
+    {
+      "id": 1284,
+      "question": "Which of the following is a LAN transmission protocol?",
+      "options": {
+        "A": "Ethernet",
+        "B": "Ring topology",
+        "C": "Unicast",
+        "D": "Polling"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"LAN Transmission Methods. LAN data is transmitted from the sender to one or more receiving stations using either a unicast, multicast, or broadcast transmission.\" pg 528 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 1285,
+      "question": "Why would a database be denormalized?",
+      "options": {
+        "A": "To ensure data integrity.",
+        "B": "To increase processing efficiency.",
+        "C": "To prevent duplication of data.",
+        "D": "To save storage space."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Denormalization is the process of attempting to optimize the performance of data storage by adding redundant data. It is necessary because current DBMSs are not fully relational. A fully relational DBMS would be able to preserve full normalization at the logical level, while allowing it to be mapped to performance-tuned physical level. Database designers often justify denormalization on performance issues, but they should note that logical denormalization can easily break the consistency of the database, one of the all-important ACID properties. However, a designer can achieve the performance benefits while retraining consistency by performing denormalization at a physical level; such denormalization is often called caching."
+    },
+    {
+      "id": 1286,
+      "question": "Under \"Named Perils\" form of Property insurance",
+      "options": {
+        "A": "Burden of proof that particular loss is covered is on Insurer.",
+        "B": "Burden of proof that particular loss is not covered is on Insurer.",
+        "C": "Burden of proof that particular loss is covered is on Insured.",
+        "D": "Burden of proof that particular loss is not covered is on Insured."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Here is something on \"Named Perils\" for your understanding: \"Named Perils is a formal and specific listing of perils covered in a policy providing property insurance. A policy covering for damage by fire is said to cover for \"the named peril\" of fire\". As you can see, Answer C is correct."
+    },
+    {
+      "id": 1287,
+      "question": "The following is not true:",
+      "options": {
+        "A": "Since the early days of mankind humans have struggled with the problems of protecting assets.",
+        "B": "The addition of a PIN keypad to the card reader was a solution to unreported card or lost card problem.",
+        "C": "There has never been of problem of lost keys.",
+        "D": "Human guard is an inefficient and sometimes ineffective method of protecting resources."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is absolutely false, this problem can be seen almost anywhere. There have always been trouble with the lost of keys. Some of those looses are more important than others, its not the same to lost the key of the company safe box, that lost the key of you locker with that contains your shoes. This is obviously an incorrect statement, answer C is the one in here. \"Unfortunately, using security guards is not a perfect solution. There are numerous disadvantages to deploying, maintaining, and relying upon security guards. Not all environments and facilities support security guards. This may be due actual human incompatibility with the layout, design, location, and construction of the facility. Not all security guards are themselves reliable. Prescreening, bonding, and training does not guarantee that you won't end up with an ineffective and unreliable security guard.\" Pg 646 Tittel: CISSP Guide."
+    },
+    {
+      "id": 1288,
+      "question": "Which of the following statements pertaining to software testing approaches is correct?",
+      "options": {
+        "A": "A bottom-up approach allows interface errors to be detected earlier.",
+        "B": "A top-down approach allows errors in critical modules to be detected earlier.",
+        "C": "The test plan and results should be retained as part of the system's permanent documentation.",
+        "D": "Black box testing is predicted on a close examination of procedural detail."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is an absolute best practice in the software testing field, you should always have to keep all your testing approaches with the results as part of the product documentation. This can help you in the case you have problems with some tasks or components of the software in the future, you can check back your testing and results and see if the system was making the tasks correctly and if anything changed from that environment."
+    },
+    {
+      "id": 1289,
+      "question": "Which Orange Book evaluation level is described as \"Structured Protection\"?",
+      "options": {
+        "A": "A1",
+        "B": "B3",
+        "C": "B2",
+        "D": "B1"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Class B2 corresponds to Structured Protection. Division B - Mandatory Protection Mandatory access is enforced by the use of security labels. The architecture is based on the Bell-LaPadula security model and evidence of the reference monitor enforcement must be available. B1: Labeled Security Each data object must contain a classification label and each subject must have a clearance label. When a subject attempts to access an object, the system must compare the subject and the object's security labels to ensure the requested actions are acceptable. Data leaving the system must also contain an accurate security label. The security policy is based on an informal statement and the design specifications are reviewed and verified. It is intended for environments that handle classified data. B2: Structured Protection The security policy is clearly defined and documented and the system design and implementation is subjected to more thorough review and testing procedures. This class requires more stringent authentication mechanisms and well-defined interfaces between layers. Subject and devices require labels, and the system must not allow covert channels. A trusted path for logon and authentication processes must be in place, which means there are no trapdoors. There is a separation of operator and administration functions within the system to provide more trusted and protected operational functionality. Distinct address spaces must be provided to isolated processes, and a covert channel analysis is conducted. This class adds assurance by adding requirements to the design of the system. The environment that would require B2 systems could process sensitive data that requires a higher degree of security. This environment would require systems that are relatively resistant to penetration and compromise. B3 Security Domains In this class, more granularity is provided in each protects mechanism and the programming code that is not necessary to support the security is excluded. The design and implementation should not provide too much complexity because as the complexity of a system increases, the ability of the individuals who need to test, maintain, and configure it reduces; thus, the overall security can be threatened. The reference monitor components must be small enough to test properly and be tamperproof. The security administrator role is clearly defined and the system must be able to recover from failures without its security level being compromised. When the system starts up and loads its operating system and components, it must be done in an initial secure state to ensure any weakness of the system cannon be taken advantage of in this slice of time. An environment that requires B3 systems is a highly secured environment that processes very sensitive information. It requires systems that are highly resistant to penetration. Note: In class (B2) systems, the TCB is based on a clearly defined and documented formal security policy model that requires the discretionary and mandatory access control enforcement found in class (B1) systems be extended to all subjects and objects in the ADP system. In addition, covert channels are addressed. The TCB must be carefully structured into protection-critical and non-protection-critical elements. Class B corresponds to \"Structured Protection\" inside the Orange Book."
+    },
+    {
+      "id": 1290,
+      "question": "Which of the following questions should any user not be able to answer regarding their organization information security policy?",
+      "options": {
+        "A": "Who is involved in establishing the security policy?",
+        "B": "Where is the organization security policy defined?",
+        "C": "What are the actions that need to be performed in case of a disaster?",
+        "D": "Who is responsible for monitoring compliance to the organization security policy?"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: According to CISSP documentation, the actual definition and procedures defined inside an organization disaster recovery policy are of private nature. Only people working in the company and with a role inside it should know about those procedures. Its not a good practice to be divulgating Disaster recovery procedures to external people. Many times external people need to know who is involved in it, and who is responsible. This could be the case of a vendor providing replacement equipment in case of disaster."
+    },
+    {
+      "id": 1291,
+      "question": "RAID Level 1 mirrors the data from one disk to set of disks using which of the following techniques?",
+      "options": {
+        "A": "Copying the data onto another disk or set of disks.",
+        "B": "Moving the data onto another disk or set of disks.",
+        "C": "Establishing dual connectivity to another disk or set of disks.",
+        "D": "Establishing dual addressing to another disk or set of disks."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: RAID 1 or Mirroring is a technique in which data is written to two duplicate disks simultaneously through a copy process. This way if one of the disk drives fails, the system can instantly switch to the other disk without any loss of data or service. Disk mirroring is used commonly in on-line database systems where it's critical that the data be accessible at all times. RAID means \"Redundant Array of Inexpensive Disks\"."
+    },
+    {
+      "id": 1292,
+      "question": "Which type of firewall can be used to track connectionless protocols such as UDP and RPC?",
+      "options": {
+        "A": "Statefull inspection firewalls",
+        "B": "Packet filtering firewalls",
+        "C": "Application level firewalls",
+        "D": "Circuit level firewalls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Here are some characteristics of Statefull Inspection technology on Firewalls: 1. Scan information from all layers in the packet. 2. Save state information derived from previous communications, such as the outgoing Port command of an FTP session, so that incoming data communication can be verified against it. 3. Provides tracking support for connectionless protocols through the use of session state databases. 4. Allow state information derived from other applications access through the firewall for authorized services only, such as previously authenticated users. 5. Evaluate and manipulate flexible expressions based on communication and application derived state information."
+    },
+    {
+      "id": 1293,
+      "question": "Which of the following items should not be retained in an E-mail directory?",
+      "options": {
+        "A": "Drafts of documents.",
+        "B": "Copies of documents.",
+        "C": "Permanent records.",
+        "D": "Temporary documents."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is another matter of common sense, the CISSP exam has many situations like this. Its not a good practice to have Permanent documents in your e-mail, this is because you don't know if your -mail is always backed up, and maybe the document must be available in a corporate repository. There is not problem to have Copies, draft or temporary documents in your e-mail. The important ones for the company are the Permanent documents."
+    },
+    {
+      "id": 1294,
+      "question": "Which of the following department managers would be best suited to oversee the development of an information security policy?",
+      "options": {
+        "A": "Information systems",
+        "B": "Human resources",
+        "C": "Business operations",
+        "D": "Security administration"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: He is the most appropriate manager, this is because he know the inns and outs of the business processes inside the company. Remember that he manages the business operations, and are those operations the ones that make the company live and generate the revenue. He knows who should access what and when. Security administrators develop the policy with the information provided by persons like the Business operations manager. Human Resources is not appropriate in this case, and the Information systems manager know about the technology, but not the business needs of the company."
+    },
+    {
+      "id": 1295,
+      "question": "Which of the following countermeasures is not appropriate for war dialing attacks?",
+      "options": {
+        "A": "Monitoring and auditing for such activity.",
+        "B": "Disabling call forwarding.",
+        "C": "Making sure only necessary phone numbers are made public.",
+        "D": "Using completely different numbers for voice and data accesses."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: War dialing, or scanning, has been a common activity in the computer underground and computer security industry for decades. Hollywood made war dialing popular with the 1983 movie, War Games, in which a teenager searching for a videogame company ultimately uncovers a government nuclear war warning system. The act of war dialing is extremely simple - a host computer dials a given range of telephone numbers using a modem. Every telephone number that answers with a modem and successfully connects to the host is stored in a log. Disabling call forwarding is not a useful countermeasure because it's the attacker machine the one who connects to the attacked system and forwarding is not an issue inside the attack. Answer A, C and D can be used as countermeasures to harder the war dial attack."
+    },
+    {
+      "id": 1296,
+      "question": "Which of the following tools is less likely to be used by a hacker?",
+      "options": {
+        "A": "I0phtcrack",
+        "B": "Tripwire",
+        "C": "Crack",
+        "D": "John the Ripper"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Tripwire is a tool that checks to see what has changed on your system. The program monitors key attributes of files that should not change, including binary signature, size, expected change of size, etc. The hard part is doing it the right way, balancing security, maintenance, and functionality. This tool is not usually used by hackers to attack, its usually used to defend against hackers attacks. L0phtcrack is a hacker utility to get passwords, Crack and John the Ripper are also password crackers."
+    },
+    {
+      "id": 1297,
+      "question": "Which of the following logical access exposures involves changing data before, or as it is entered into the computer?",
+      "options": {
+        "A": "Data diddling",
+        "B": "Salami techniques",
+        "C": "Trojan horses",
+        "D": "Viruses"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This kind of attack involves altering the raw data just before it is processed by a computer and then changing it back after the processing is completed. This kind of attack was used in the past to steal small quantities of money and transfer them to the attackers account, there are many other uses too. Trojan horses open ports without the user knowledge to permit remote control and a Virus is a malicious piece of code that executed inside your computer."
+    },
+    {
+      "id": 1298,
+      "question": "Which of the following computer aided software engineering (CASE) products is used for developing detailed designs, such as screen and report layouts?",
+      "options": {
+        "A": "Lower CASE",
+        "B": "Middle CASE",
+        "C": "Upper CASE",
+        "D": "I-CASE"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the proper name, you can search for \"Middle CASE\" on the Internet. \"Middle CASE\" its a CASE flavor and UML design tool that provides the required functionality like screen and report layouts and detailed designs. There are many well known vendors providing this kind of tools for the development process of Software."
+    },
+    {
+      "id": 1299,
+      "question": "What is called the number of columns in a table?",
+      "options": {
+        "A": "Schema",
+        "B": "Relation",
+        "C": "Degree",
+        "D": "Cardinality"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In database terminology, is the same to say that the number of Degrees is \"X\" and that the number of columns is \"X\" inside a Table. This question is just trying to test our knowledge of rare, difficult to fin terminology. You can check this in the knowledgebase of Oracle. When we talk about degrees, we are just talking about columns. The schema is the structure of the database, and the relations are the way each table relates to others."
+    },
+    {
+      "id": 1300,
+      "question": "Which of the following is the most reliable authentication device?",
+      "options": {
+        "A": "Variable callback system",
+        "B": "Smart Card system",
+        "C": "Fixed callback system",
+        "D": "Combination of variable and fixed callback system."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The smart card, an intelligent token, is a credit card sized plastic card embedded with an integrated circuit chip. It provides not only memory capacity, but computational capability as well. The self-containment of smart card makes it resistant to attack as it does not need to depend upon potentially vulnerable external resources. Because of this characteristic, smart cards are often used in different applications which require strong security protection and authentication. Option B is the most correct option, this is because Callback systems are not considered very reliable in the CISSP examination, Smart cards can also provide 2 mode authentication. \"Caller ID and callback options are great, but they are usually not practical because they require users to call in from a static phone number each time they access the network. Most users are accessing the network remotely because they are on the road and moving from place to place.\" Pg. 428 Shon Harris: All-In-One CISSP Certification Guide."
+    }
+  ]
+}

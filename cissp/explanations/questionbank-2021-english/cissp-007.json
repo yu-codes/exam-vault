@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q301 - Q350",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 301,
+      "question": "What is the PRIMARY advantage of using a separate authentication server (e.g., Remote Access Dial-In User System, Terminal Access Controller Access Control System) to authenticate dial-in users?",
+      "options": {
+        "A": "Single user logons are easier to manage and audit.",
+        "B": "Each session has a unique (one-time) password assigned to it.",
+        "C": "Audit and access information are not kept on the access server.",
+        "D": "Call-back is very difficult to defeat."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: TACACS integrates the authentication and authorization processes. XTACACS keeps the authentication, authorization and accounting processes separate. TACACS+ improves XTACACS by adding two-factor authentication. - Ed Tittle CISSP Study Guide (sybex) pg 745"
+    },
+    {
+      "id": 302,
+      "question": "Within the Open Systems Interconnection (OSI) Reference Model, authentication addresses the need for a network entity to verify both",
+      "options": {
+        "A": "The identity of a remote communicating entity and the authenticity of the source of the data that are received.",
+        "B": "The authenticity of a remote communicating entity and the path through which communications are received.",
+        "C": "The location of a remote communicating entity and the path through which communications are received.",
+        "D": "The identity of a remote communicating entity and the level of security of the path through which data are received."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: OSI model needs to know the source of the data and that it is who it says it is. Path it the data take is not cared about unless source routing is used. The level of security is not cared about inherently by the receiving node (in general) unless configured. A is the best option in this question."
+    },
+    {
+      "id": 303,
+      "question": "Which of the following is the most reliable authentication device?",
+      "options": {
+        "A": ") Variable callback system",
+        "B": ") Smart card system",
+        "C": ") fixed callback system",
+        "D": ") Combination of variable and fixed callback system"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 304,
+      "question": "Which of the following are proprietarily implemented by CISCO?",
+      "options": {
+        "A": "RADIUS+",
+        "B": "TACACS",
+        "C": "XTACACS and TACACS+",
+        "D": "RADIUS"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Cisco implemented an enhanced version of TACACS, known as XTACACS (extended TACACS), which was also compatible with TACACS. It allowed for UDP and TCP encoding. XTACACS contained several improvements: It provided accounting functionality to track length of login and which hosts a user connected to, and it also separated the authentication, authorization, and accounting processes such that they could be independently implemented. None of the three functions are mandatory. XTACACS is described in RFC 1492. TACACS+ is the latest Cisco implementation. It is best described as XTACACS with improved attribute control (authorization) and accounting."
+    },
+    {
+      "id": 305,
+      "question": "What is a protocol used for carrying authentication, authorization, and configuration information between a Network Access Server and a shared Authentication Server?",
+      "options": {
+        "A": "IPSec",
+        "B": "RADIUS",
+        "C": "L2TP",
+        "D": "PPTP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: RADIUS is a protocol for carrying authentication, authorization, and configuration information between a Network Access Server, which desires to authenticate its links and a shared Authentication Server. RADIUS is a standard published in RFC2138 as mentioned above."
+    },
+    {
+      "id": 306,
+      "question": "RADIUS is defined by which RFC?",
+      "options": {
+        "A": "2168",
+        "B": "2148",
+        "C": "2138",
+        "D": "2158"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: RADIUS is a protocol for carrying authentication, authorization, and configuration information between a Network Access Server, which desires to authenticate its links and a shared Authentication Server. RADIUS is a standard published in RFC2138 as mentioned above."
+    },
+    {
+      "id": 307,
+      "question": "In a RADIUS architecture, which of the following acts as a client?",
+      "options": {
+        "A": "A network Access Server.",
+        "B": "None of the choices.",
+        "C": "The end user.",
+        "D": "The authentication server."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A Network Access Server (NAS) operates as a client of RADIUS. The client is responsible for passing user information to designated RADIUS servers, and then acting on the response, which is returned."
+    },
+    {
+      "id": 308,
+      "question": "In a RADIUS architecture, which of the following can ac as a proxy client?",
+      "options": {
+        "A": "The end user.",
+        "B": "A Network Access Server.",
+        "C": "The RADIUS authentication server.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A RADIUS server can act as a proxy client to other RADIUS servers or other kinds of authentication servers."
+    },
+    {
+      "id": 309,
+      "question": "Which of the following statements pertaining to RADIUS is incorrect?",
+      "options": {
+        "A": ") A RADIUS server can act as a proxy server, forwarding client requests to other authentication domains.",
+        "B": ") Most of RADIUS clients have a capability to query secondary RADIUS servers for redundancy",
+        "C": ") Most RADIUS servers have built-in database connectivity for billing and reporting purposes",
+        "D": ") Most RADIUS servers can work with DIAMETER servers."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 310,
+      "question": "Which of the following is the weakest authentication mechanism?",
+      "options": {
+        "A": ") Passphrases",
+        "B": ") Passwords",
+        "C": ") One-time passwords",
+        "D": ") Token devices"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 311,
+      "question": "What is the PRIMARY use of a password?",
+      "options": {
+        "A": ") Allow access to files",
+        "B": ") Identify the user",
+        "C": ") Authenticate the user",
+        "D": ") Segregate various user's accesses"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 312,
+      "question": "Software generated passwords have what drawbacks?",
+      "options": {
+        "A": "Passwords are not easy to remember.",
+        "B": "Password are too secure.",
+        "C": "None of the choices.",
+        "D": "Passwords are unbreakable."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords generated by a software package or some operating systems. These password generators are good at producing unique and hard to guess passwords, however you must ensure that they are not so hard that people can't remember them. If you force your users to write their passwords down then you are defeating the purpose of having strong password management."
+    },
+    {
+      "id": 313,
+      "question": "What are the valid types of one time password generator?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "Transaction synchronous",
+        "C": "Synchronous/PIN synchronous",
+        "D": "Asynchronous/PIN asynchronous"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: One-time Passwords are changed after every use. Handheld password generator (tokens) 3 basic types: Synchronous/PIN synchronous, Transaction synchronous, Asynchronous/PIN asynchronous."
+    },
+    {
+      "id": 314,
+      "question": "Which of the following will you consider as most secure?",
+      "options": {
+        "A": "Password",
+        "B": "One time password",
+        "C": "Login phrase",
+        "D": "Login ID"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Each time the user logs in, the token generates a unique password that is synchronized with the network server. If anyone tries to reuse this dynamic password, access is denied, the event is logged and the network remains secure."
+    },
+    {
+      "id": 315,
+      "question": "What type of password makes use of two totally unrelated words?",
+      "options": {
+        "A": "Login phrase",
+        "B": "One time password",
+        "C": "Composition",
+        "D": "Login ID"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Usage of two totally unrelated words or a series of unrelated characters, such as pizza!wood for example. Such a password is easy to remember but very hard to guess. It would require a cracker quite a bit of time to do a brute force attack on a password that is that long and that uses an extended character as well."
+    },
+    {
+      "id": 316,
+      "question": "Which of the following is the correct account policy you should follow?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "All active accounts must have a password.",
+        "C": "All active accounts must have a long and complex pass phrase.",
+        "D": "All inactive accounts must have a password."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: All active accounts must have a password. Unless you are using an application or service designed to be accessed without the need of a proper ID and password. Such service must however be monitored by other means (not a recommended practicE.)"
+    },
+    {
+      "id": 317,
+      "question": "Which of the following are the advantages of using passphrase?",
+      "options": {
+        "A": "Difficult to crack using brute force.",
+        "B": "Offers numerous characters.",
+        "C": "Easier to remember.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The use of passphrases is a good way of having very strong passwords. A passphrase is easier to remember, it offers numerous characters, and it is almost impossible to crack using brute force with today's processing power. An example of a passphrase could be: \"Once upon a time in the CISSP world\""
+    },
+    {
+      "id": 318,
+      "question": "Which of the following are the correct guidelines of password deployment?",
+      "options": {
+        "A": "Passwords must be masked.",
+        "B": "All of the choices.",
+        "C": "Password must have a minimum of 8 characters.",
+        "D": "Password must contain a mix of both alphabetic and non-alphabetic characters."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords must not be displayed in plain text while logging on. Passwords must be masked. Password must have a minimum of 8 characters. Password must contain a mix of both alphabetic and non-alphabetic characters. Passwords must be kept private, e.g. not shared, coded into programs, or written down."
+    },
+    {
+      "id": 319,
+      "question": "Why would a 16 characters password not desirable?",
+      "options": {
+        "A": "Hard to remember",
+        "B": "Offers numerous characters.",
+        "C": "Difficult to crack using brute force.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: When the password is too hard to memorize, the user will actually write it down, which is totally insecure and unacceptable."
+    },
+    {
+      "id": 320,
+      "question": "Which of the following is NOT a good password deployment guideline?",
+      "options": {
+        "A": "Passwords must not be he same as user id or login id.",
+        "B": "Password aging must be enforced on all systems.",
+        "C": "Password must be easy to memorize.",
+        "D": "Passwords must be changed at least once every 60 days, depending on your environment."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords must be changed at least once every 60 days (depending on your environment). Password aging or expiration must be enforced on all systems. Upon password expiration, if the password is not changed, only three grace logins must be allowed then the account must be disable until reset by an administrator or the help desk. Password reuse is not allowed (rotating passwords)."
+    },
+    {
+      "id": 321,
+      "question": "Routing password can be restricted by the use of:",
+      "options": {
+        "A": "Password age",
+        "B": "Password history",
+        "C": "Complex password",
+        "D": "All of the choices"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords must be changed at least once every 60 days (depending on your environment). Password aging or expiration must be enforced on all systems. Upon password expiration, if the password is not changed, only three grace logins must be allowed then the account must be disable until reset by an administrator or the help desk. Password reuse is not allowed (rotating passwords)."
+    },
+    {
+      "id": 322,
+      "question": "What should you do immediately if the root password is compromised?",
+      "options": {
+        "A": "Change the root password.",
+        "B": "Change all passwords.",
+        "C": "Increase the value of password age.",
+        "D": "Decrease the value of password history."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: All passwords must be changed if the root password is compromised or disclosure is suspected. (This is a separate case; the optimal solution would be to reload the compromised computer. A computer that has been downgraded can never be upgraded to higher security level)"
+    },
+    {
+      "id": 323,
+      "question": "Which of the following is the most secure way to distribute password?",
+      "options": {
+        "A": "Employees must send in an email before obtaining a password.",
+        "B": "Employees must show up in person and present proper identification before obtaining a password.",
+        "C": "Employees must send in a signed email before obtaining a password.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Employees must show up in person and present proper identification before obtaining a new or changed password (depending on your policy). After three unsuccessful attempts to enter a password, the account will be locked and only an administrator or the help desk can reactivate the involved user ID."
+    },
+    {
+      "id": 324,
+      "question": "Which of the following does not apply to system-generated passwords?",
+      "options": {
+        "A": ") Passwords are harder to remember for users",
+        "B": ") If the password-generating algorithm gets to be known, the entire system is in jeopardy",
+        "C": ") Passwords are more vulnerable to brute force and dictionary attacks.",
+        "D": ") Passwords are harder to guess for attackers"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 325,
+      "question": "Passwords can be required to change monthly, quarterly, or any other intervals:",
+      "options": {
+        "A": ") depending on the criticality of the information needing protection",
+        "B": ") depending on the criticality of the information needing protection and the password's frequency of use",
+        "C": ") depending on the password's frequency of use",
+        "D": ") not depending on the criticality of the information needing protection but depending on the password's frequency of use"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 326,
+      "question": "In SSL/TLS protocol, what kind of authentication is supported?",
+      "options": {
+        "A": ") Peer-to-peer authentication",
+        "B": ") Only server authentication (optional)",
+        "C": ") Server authentication (mandatory) and client authentication (optional)",
+        "D": ") Role based authentication scheme"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"The server sends a message back to the client indicating that a secure session needs to be established, and the client sends it security parameters. The server compares those security parameters to its own until it finds a match. This is the handshaking phase. The server authenticates to the client by sending it a digital certificate, and if the client decides to trust the server the process continues. The server can require the client to send over a digital certificate for mutual authentication, but that is rare.\" Pg. 523 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 327,
+      "question": "Which of the following correctly describe the difference between identification and authentication?",
+      "options": {
+        "A": "Authentication is a means to verify who you are, while identification is what you are authorized to perform.",
+        "B": "Identification is a means to verify who you are, while authentication is what you are authorized to perform.",
+        "C": "Identification is another name of authentication.",
+        "D": "Identification is the child process of authentication."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Identification is a means to verify who you are. Authentication is what you are authorized to perform, access, or do. User identification enables accountability. It enables you to trace activities to individual users that may be held responsible for their actions. Identification usually takes the form of Logon ID or User ID. Some of the Logon ID characteristics are: they must be unique, not shared, and usually non descriptive of job function."
+    },
+    {
+      "id": 328,
+      "question": "Identification establishes:",
+      "options": {
+        "A": "Authentication",
+        "B": "Accountability",
+        "C": "Authorization",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Identification is a means to verify who you are. Authentication is what you are authorized to perform, access, or do. User identification enables accountability. It enables you to trace activities to individual users that may be held responsible for their actions. Identification usually takes the form of Logon ID or User ID. Some of the Logon ID characteristics are: they must be unique, not shared, and usually non descriptive of job function."
+    },
+    {
+      "id": 329,
+      "question": "Identification usually takes the form of:",
+      "options": {
+        "A": "Login ID.",
+        "B": "User password.",
+        "C": "None of the choices.",
+        "D": "Passphrase"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Identification is a means to verify who you are. Authentication is what you are authorized to perform, access, or do. User identification enables accountability. It enables you to trace activities to individual users that may be held responsible for their actions. Identification usually takes the form of Logon ID or User ID. Some of the Logon ID characteristics are: they must be unique, not shared, and usually non descriptive of job function"
+    },
+    {
+      "id": 330,
+      "question": "What is called the act of a user professing an identity to a system, usually in the form of a log-on ID?",
+      "options": {
+        "A": ") Authentication",
+        "B": ") Identification",
+        "C": ") Integrity",
+        "D": ") Confidentiality"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Identification is the act of a user professing an identity to a system, usually in the form of a logon ID to the system.\" Pg 49 Krutz The CISSP Prep Guide. \"Identification describes a method of ensuring that a subject (user, program, or process) is the entity it claims to be. Identification can be provided with the use of a username or account number. To be properly authenticated, the subject is usually required to provide a second piece to the credential set. This piece could be a password, passphrase, cryptographic key, personal identification number (PIN), anatomical attribute, or token.\" Pg 110 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 331,
+      "question": "What is called the verification that the user's claimed identity is valid and is usually implemented through a user password at log-on time?",
+      "options": {
+        "A": ") Authentication",
+        "B": ") Identification",
+        "C": ") Integrity",
+        "D": ") Confidentiality"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 332,
+      "question": "Identification and authentication are the keystones of most access control systems. Identification establishes:",
+      "options": {
+        "A": ") user accountability for the actions on the system",
+        "B": ") top management accountability for the actions on the system",
+        "C": ") EDP department accountability for the actions of users on the system",
+        "D": ") authentication for actions on the system"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 333,
+      "question": "Which one of the following authentication mechanisms creates a problem for mobile users?",
+      "options": {
+        "A": ") address-based mechanism",
+        "B": ") reusable password mechanism",
+        "C": ") one-time password mechanism",
+        "D": ") challenge response mechanism"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 334,
+      "question": "Which of the following centralized access control mechanisms is not appropriate for mobile workers access the corporate network over analog lines?",
+      "options": {
+        "A": ") TACACS",
+        "B": ") Call-back",
+        "C": ") CHAP",
+        "D": ") RADIUS"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 335,
+      "question": "Authentication is typically based upon:",
+      "options": {
+        "A": "Something you have.",
+        "B": "Something you know.",
+        "C": "Something you are.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Authentication is a means of verifying the eligibility of an entity to receive specific categories of information. The entity could be individual user, machine, or software component. Authentication is typically based upon something you know, something you have, or something you are."
+    },
+    {
+      "id": 336,
+      "question": "A password represents:",
+      "options": {
+        "A": "Something you have.",
+        "B": "Something you know.",
+        "C": "All of the choices.",
+        "D": "Something you are."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The canonical example of something you know is a password or pass phrase. You might type or speak the value. A number of schemes are possible for obtaining what you know. It might be assigned to you, or you may have picked the value yourself. Constraints may exist regarding the form the value can take, or the alphabet from which you are allowed to construct the value might be limited to letters only. If you forget the value, you may not be able to authenticate yourself to the system."
+    },
+    {
+      "id": 337,
+      "question": "A smart card represents:",
+      "options": {
+        "A": "Something you are.",
+        "B": "Something you know.",
+        "C": "Something you have.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Another form of authentication requires possession of something such as a key, a smart card, a disk, or some other device. Whatever form it takes, the authenticating item should be difficult to duplicate and may require synchronization with systems other than the one to which you are requesting access. Highly secure environments may require you to possess multiple things to guarantee authenticity."
+    },
+    {
+      "id": 338,
+      "question": "Which of the following is the most commonly used check on something you know?",
+      "options": {
+        "A": "One time password",
+        "B": "Login phrase",
+        "C": "Retinal",
+        "D": "Password"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords even though they are always mentioned as being unsecured, necessary evils, that put your infrastructure at risk, are still commonly used and will probably be used for quite a few years. Good passwords can provide you with a good first line of defense. Passwords are based on something the user knows. They are used to authenticate users before they can access specific resources."
+    },
+    {
+      "id": 339,
+      "question": "Retinal scans check for:",
+      "options": {
+        "A": "Something you are.",
+        "B": "Something you have.",
+        "C": "Something you know.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Something you are is really a special case of something you have. The usual examples given include fingerprint, voice, or retinal scans."
+    },
+    {
+      "id": 340,
+      "question": "What type of authentication takes advantage of an individuals unique physical characteristics in order to authenticate that persons identity?",
+      "options": {
+        "A": "Password",
+        "B": "Token",
+        "C": "Ticket Granting",
+        "D": "Biometric"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Biometric authentication systems take advantage of an individual's unique physical characteristics in order to authenticate that person's identity. Various forms of biometric authentication include face, voice, eye, hand, signature, and fingerprint, each have their own advantages and disadvantages. When combined with the use of a PIN it can provide two factors authentication."
+    },
+    {
+      "id": 341,
+      "question": "What is called an automated means of identifying or authenticating the identity of a living person based on physiological or behavioral characteristics?",
+      "options": {
+        "A": ") Biometrics",
+        "B": ") Micrometrics",
+        "C": ") Macrometrics",
+        "D": ") MicroBiometrics"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 342,
+      "question": "Which of the following forms of authentication would most likely apply a digital signature algorithm to every bit of data that is sent from the claimant to the verifier?",
+      "options": {
+        "A": ") Dynamic authentication",
+        "B": ") Continuous authentication",
+        "C": ") Encrypted authentication",
+        "D": ") Robust authentication"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The correct answer is C. Unable to find any references to continuous encryption. \"A digital signature is the encrypted hash value of a message.\" Pg 550 Shon Harris: CISSP All-In-One Certification Exam Guide. \"There are other options to improve the security offered by password authentication: Use the strongest form of one-way encryption available for password storage. Never allow passwords to be transmitted in clear text or with weak encryption.\" Pg. 9 Tittel: CISSP Study Guide \"[Kerberos] A complicated exchange of tickets (i.e., cryptographic messages) between the client, the server, and the TGS is used to prove identity and provide authentication between the client and server. This allows the client to request resources from the server while having full assurance that both entities are who they claim to be. The exchange of encrypted tickets also ensures that no logon credentials, session keys, or authentication messages are ever transmitted in the clear text.\" Pg 14 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 343,
+      "question": "In which situation would TEMPEST risks and technologies be of MOST interest?",
+      "options": {
+        "A": "Where high availability is vital.",
+        "B": "Where the consequences of disclose are very high.",
+        "C": "Where countermeasures are easy to implement",
+        "D": "Where data base integrity is crucial"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Emanation eavesdropping. Receipt and display of information, which is resident on computers or terminals, through the interception of radio frequency (RF) signals generated by those computers or terminals. The U.S. government established a program called TEMPEST that addressed this problem by requiring a shielding and other emanation-reducing mechanisms to be employed on computers processing sensitive and classified government information. . -Ronald Krutz The CISSP PREP Guide (gold edition) pg 416"
+    },
+    {
+      "id": 344,
+      "question": "Which one of the following addresses the protection of computers and components from electromagnetic emissions?",
+      "options": {
+        "A": "TEMPEST",
+        "B": "ISO 9000",
+        "C": "Hardening",
+        "D": "IEEE 802.2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Receipt and Display of information, which is resident on computers or terminals, thorugh the interception of Radio Frequency (RF) signals generated by those computers or terminals. The U.S. government established a program called Tempest that addressed this problem by requiring shielding and other emanation-reducing mechanisms to be employed on computers processing sensitive and classified government information. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 416"
+    },
+    {
+      "id": 345,
+      "question": "Monitoring electromagnetic pulse emanations from PCs and CRTs provides a hacker with that significant advantage?",
+      "options": {
+        "A": "Defeat the TEMPEST safeguard",
+        "B": "Bypass the system security application.",
+        "C": "Gain system information without trespassing",
+        "D": "Undetectable active monitoring."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Tempest equipment is implemented to prevent intruders from picking up information through the airwaves with listening devices. - Shon Harris All-in-one CISSP Certification Guide pg 192. In Harris's other book CISSP PASSPORT, she talks about tempest in terms of spy movies and how a van outside is listening or monitoring to the activities of someone. This lends credence to the answer of C (trespassing) but I think D is more correct. In that all the listener must do is listen to the RF. Use your best judgment based on experience and knowledge."
+    },
+    {
+      "id": 346,
+      "question": "What name is given to the study and control of signal emanations from electrical and electromagnetic equipment?",
+      "options": {
+        "A": "EMI",
+        "B": "Cross Talk",
+        "C": "EMP",
+        "D": "TEMPEST"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 347,
+      "question": "TEMPEST addresses",
+      "options": {
+        "A": "The vulnerability of time-dependent transmissions.",
+        "B": "Health hazards of electronic equipment.",
+        "C": "Signal emanations from electronic equipment.",
+        "D": "The protection of data from high energy attacks."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Tempest is the study and control of spurious electrical signals that are emitted by electrical equipment.\" Pg 167 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 348,
+      "question": "Which one of the following is the MOST solid defense against interception of a network transmission?",
+      "options": {
+        "A": "Frequency hopping",
+        "B": "Optical fiber",
+        "C": "Alternate routing",
+        "D": "Encryption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "An alternative to conductor-based network cabling is fiber-optic cable. Fiber-optic cables transmit pulses of light rather than electricity. This has the advantage of being extremely fast and near impervious to tapping. Pg 85 Tittel: CISSP Study Guide."
+    },
+    {
+      "id": 349,
+      "question": "Which of the following media is MOST resistant to tapping?",
+      "options": {
+        "A": ") Microwave",
+        "B": ") Twisted pair",
+        "C": ") Coaxial cable",
+        "D": ") Fiber optic"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 350,
+      "question": "What type of wiretapping involves injecting something into the communications?",
+      "options": {
+        "A": "Aggressive",
+        "B": "Captive",
+        "C": "Passive",
+        "D": "Active"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Most communications are vulnerable to some type of wiretapping or eavesdropping. It can usually be done undetected and is referred to as a passive attack versus an active attack. - Shon Harris All-in-one CISSP Certification Guide pg 649 \"(I) An attack that intercepts and accesses data and other information contained in a flow in a communication system. (C) Although the term originally referred to making a mechanical connection to an electrical conductor that links two nodes, it is now used to refer to reading information from any sort of medium used for a link or even directly from a node, such as gateway or subnetwork switch. (C) \"Active wiretapping\" attempts to alter the data or otherwise affect the flow; \"passive wiretapping\" only attempts to observe the flow and gain knowledge of information it contains. (See: active attack, end-to-end encryption, passive attack.)\" http://www.linuxsecurity.com/dictionary/dict-455.html"
+    }
+  ]
+}

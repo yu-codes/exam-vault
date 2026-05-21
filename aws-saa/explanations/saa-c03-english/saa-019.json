@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-english",
+    "file": "saa-019.json",
+    "question_range": "Q901-Q912",
+    "total_questions": 12
+  },
+  "questions": [
+    {
+      "id": 901,
+      "type": "single",
+      "question": "A company is migrating a new application from an on-premises data center to a new VPC in the AWS Cloud. The company has multiple AWS accounts and VPCs that share many subnets and applications. The company wants to have fine-grained access control for the new application. The company wants to ensure that all network resources across accounts and VPCs that are granted permission to access the new application can access the application. Which solution will meet these requirements?",
+      "options": {
+        "A": "Set up a VPC peering connection for each VPC that needs access to the new application VPC. Update route tables in each VPC to enable connectivity.",
+        "B": "Deploy a transit gateway in the account that hosts the new application. Share the transit gateway with each account that needs to connect to the application. Update route tables in the VPC that hosts the new application and in the transit gateway to enable connectivity.",
+        "C": "Use an AWS PrivateLink endpoint service to make the new application accessible to other VPCs. Control access to the application by using an endpoint policy.",
+        "D": "Use an Application Load Balancer (ALB) to expose the new application to the internet. Configure authentication and authorization processes to ensure that only specified VPCs can access the application."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "A. VPC peering: Creates a fully meshed architecture, which is complex to manage for multiple VPCs.\nB. Transit gateway: Simplifies network management by connecting multiple VPCs and on-premises\nnetworks via a central hub.\nC. PrivateLink: Restricts communication to the application endpoint but may not allow full VPC\nconnectivity.\nD. ALB with internet exposure: Not secure or specific to private network communication.\nReference: AWS Transit Gateway"
+    },
+    {
+      "id": 902,
+      "type": "single",
+      "question": "A company is creating an application. The company stores data from tests of the application in multiple on-premises locations. The company needs to connect the on-premises locations to VPCs in an AWS Region in the AWS Cloud. The number of accounts and VPCs will increase during the next year. The network architecture must simplify the administration of new connections and must provide the ability to scale. Which solution will meet these requirements with the LEAST administrative overhead?",
+      "options": {
+        "A": "Create a peering connection between the VPCs. Create a VPN connection between the VPCs and the on-premises locations.",
+        "B": "Launch an Amazon EC2 instance. On the instance, include VPN software that uses a VPN connection to connect all VPCs and on-premises locations.",
+        "C": "Create a transit gateway. Create VPC attachments for the VPC connections. Create VPN attachments for the on-premises connections.",
+        "D": "Create an AWS Direct Connect connection between the on-premises locations and a central VPC. Connect the central VPC to other VPCs by using peering connections."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A. VPC peering + VPN: Not scalable for multiple VPCs and accounts.\nB. EC2 with VPN software: Requires manual setup and high administrative overhead.\nC. Transit gateway: Simplifies connection management across VPCs and on-premises locations.\nD. Direct Connect with central VPC: Limits scalability and requires additional peering connections.\nReference: AWS Transit Gateway"
+    },
+    {
+      "id": 903,
+      "type": "single",
+      "question": "A company is enhancing the security of its AWS environment, where the company stores a significant amount of sensitive customer dat a. The company needs a solution that automatically identifies and classifies sensitive data that is stored in multiple Amazon S3 buckets. The solution must automatically respond to data breaches and alert the company's security team through email immediately when noncompliant data is found. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use Amazon GuardDuty. Configure an AWS Lambda function to route alerts to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the security team to the SNS topic.",
+        "B": "Use Amazon GuardDuty. Configure an AWS Lambda function to route alerts to an Amazon Simple Queue Service (Amazon SQS) queue. Configure a second Lambda function to periodically poll the SQS queue and to send emails to the security team by using Amazon Simple Email Service (Amazon SES).",
+        "C": "Use Amazon Macie. Integrate Amazon EventBridge with Macie, and configure EventBridge to send alerts to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the security team to the SNS topic.",
+        "D": "Use Amazon Macie. Integrate Amazon EventBridge with Macie, and configure EventBridge to route alerts to an Amazon Simple Queue Service (Amazon SQS) queue. Configure an AWS Lambda function to periodically poll the SQS queue and to send alerts to the security team by using Amazon Simple Email Service (Amazon SES)."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A & B. GuardDuty: Designed for threat detection, not for identifying or classifying sensitive data in S3\nbuckets.\nC . Macie with EventBridge + SNS: Automatically identifies sensitive data, triggers alerts, and uses\nSNS for immediate notification via email.\nD . Macie with EventBridge + SQS: Introduces latency due to periodic polling and adds unnecessary\ncomplexity.\nReference: Amazon Macie, Amazon EventBridge"
+    },
+    {
+      "id": 904,
+      "type": "single",
+      "question": "An ecommerce company is planning to migrate an on-premises Microsoft SQL Server database to the AWS Cloud. The company needs to migrate the database to SQL Server Always On availability groups. The cloud-based solution must be highly available. Options:",
+      "options": {
+        "A": "Deploy three Amazon EC2 instances with SQL Server across three Availability Zones. Attach one Amazon Elastic Block Store (Amazon EBS) volume to the EC2 instances.",
+        "B": "Migrate the database to Amazon RDS for SQL Server. Configure a Multi-AZ deployment and read replicas.",
+        "C": "Deploy three Amazon EC2 instances with SQL Server across three Availability Zones. Use Amazon FSx for Windows File Server as the storage tier.",
+        "D": "Deploy three Amazon EC2 instances with SQL Server across three Availability Zones. Use Amazon S3 as the storage tier."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A . EC2 with EBS: Does not support SQL Server Always On availability groups effectively.\nB. RDS Multi-AZ: Provides high availability but does not support SQL Server Always On availability\ngroups.\nC . EC2 with FSx for Windows: Best solution for SQL Server Always On as FSx provides shared storage\ncompatible with SQL Server clustering.\nD . EC2 with S3: S3 is not suitable for SQL Server storage.\nReference: Amazon FSx for Windows"
+    },
+    {
+      "id": 905,
+      "type": "single",
+      "question": "A company is developing a highly available natural language processing (NLP) application. The application handles large volumes of concurrent requests. The application performs NLP tasks such as entity recognition, sentiment analysis, and key phrase extraction on text data. The company needs to store data that the application processes in a highly available and scalable database. Options:",
+      "options": {
+        "A": "Create an Amazon API Gateway REST API endpoint to handle incoming requests. Configure the REST API to invoke an AWS Lambda function for each request. Configure the Lambda function to call Amazon Comprehend to perform NLP tasks on the text data. Store the processed data in Amazon DynamoDB.",
+        "B": "Create an Amazon API Gateway HTTP API endpoint to handle incoming requests. Configure the HTTP API to invoke an AWS Lambda function for each request. Configure the Lambda function to call Amazon Translate to perform NLP tasks on the text data. Store the processed data in Amazon ElastiCache.",
+        "C": "Create an Amazon SQS queue to buffer incoming requests. Deploy the NLP application on Amazon EC2 instances in an Auto Scaling group. Use Amazon Comprehend to perform NLP tasks. Store the processed data in an Amazon RDS database.",
+        "D": "Create an Amazon API Gateway WebSocket API endpoint to handle incoming requests. Configure the WebSocket API to invoke an AWS Lambda function for each request. Configure the Lambda function to call Amazon Textract to perform NLP tasks on the text data. Store the processed data in Amazon ElastiCache."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A . API Gateway + DynamoDB: Provides high scalability, low latency, and seamless integration with\nAmazon Comprehend for NLP tasks.\nB . HTTP API + Translate + ElastiCache: Translate is not relevant for NLP tasks like sentiment analysis\nor entity recognition. ElastiCache is unsuitable for permanent storage.\nC . SQS + EC2 + RDS: Increases complexity and operational overhead. RDS may not scale effectively\nfor high concurrent loads.\nD . WebSocket API + Textract: Textract is irrelevant for NLP tasks. WebSocket API is not the optimal\nchoice for this use case.\nReference: Amazon Comprehend, Amazon DynamoDB"
+    },
+    {
+      "id": 906,
+      "type": "single",
+      "question": "A company has developed an API using an Amazon API Gateway REST API and AWS Lambda functions. The API serves static and dynamic content to users worldwide. The company wants to decrease the latency of transferring content for API requests. Options:",
+      "options": {
+        "A": "Deploy the REST API as an edge-optimized API endpoint. Enable caching. Enable content encoding in the API definition to compress the application data in transit.",
+        "B": "Deploy the REST API as a Regional API endpoint. Enable caching. Enable content encoding in the API definition to compress the application data in transit.",
+        "C": "Deploy the REST API as an edge-optimized API endpoint. Enable caching. Configure reserved concurrency for the Lambda functions.",
+        "D": "Deploy the REST API as a Regional API endpoint. Enable caching. Configure reserved concurrency for the Lambda functions."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A . Edge-optimized API + Caching: Reduces latency by using Amazon CloudFront for edge locations\nand enables caching for dynamic content. Compression reduces data transfer latency.\nB . Regional API + Caching: Increases latency for global users due to the lack of edge locations.\nC . Edge-optimized API + Reserved Concurrency: Reserved concurrency ensures Lambda availability\nbut does not address latency for dynamic content.\nD . Regional API + Reserved Concurrency: Lacks edge optimization, increasing latency for global\nusers.\nReference: Amazon API Gateway"
+    },
+    {
+      "id": 907,
+      "type": "single",
+      "question": "A gaming company is building an application that uses a database to store user dat a. The company wants the database to have an active-active configuration that allows data writes to a secondary AWS Region. The database must achieve a sub-second recovery point objective (RPO). Options:",
+      "options": {
+        "A": "Deploy an Amazon ElastiCache (Redis OSS) cluster. Configure a global data store for disaster recovery. Configure the ElastiCache cluster to cache data from an Amazon RDS database that is deployed in the primary Region.",
+        "B": "Deploy an Amazon DynamoDB table in the primary Region and the secondary Region. Configure Amazon DynamoDB Streams to invoke an AWS Lambda function to write changes from the table in the primary Region to the table in the secondary Region.",
+        "C": "Deploy an Amazon Aurora MySQL database in the primary Region. Configure a global database for the secondary Region.",
+        "D": "Deploy an Amazon DynamoDB table in the primary Region. Configure global tables for the secondary Region."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "A . ElastiCache: Provides in-memory caching, not suitable for persistent, scalable databases.\nB . DynamoDB Streams + Lambda: Manages replication manually, increasing latency and operational\ncomplexity.\nC . Aurora Global Database: Provides high availability but does not support active-active\nconfiguration.\nD . DynamoDB Global Tables: Provides active-active configuration and sub-second RPO.\nReference: Amazon DynamoDB Global Tables"
+    },
+    {
+      "id": 908,
+      "type": "single",
+      "question": "A company wants to implement a data lake in the AWS Cloud. The company must ensure that only specific teams have access to sensitive data in the data lake. The company must have row-level access control for the data lake. Options:",
+      "options": {
+        "A": "Use Amazon RDS to store the data. Use IAM roles and permissions for data governance and access control.",
+        "B": "Use Amazon Redshift to store the data. Use IAM roles and permissions for data governance and access control.",
+        "C": "Use Amazon S3 to store the data. Use AWS Lake Formation for data governance and access control.",
+        "D": "Use AWS Glue Catalog to store the data. Use AWS Glue DataBrew for data governance and access control."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Detailed\nA . RDS: Suitable for relational databases but does not provide native support for data lakes or row-\nlevel access.\nB . Redshift: Primarily for analytics, not designed for large-scale data lake governance.\nC . S3 + Lake Formation: Provides native support for data lakes with granular access control, including\nrow-level permissions.\nD . Glue Catalog + DataBrew: Focused on data preparation and metadata management, not row-level\naccess control.\nReference: AWS Lake Formation"
+    },
+    {
+      "id": 909,
+      "type": "single",
+      "question": "A company hosts a multi-tier inventory reporting application on AWS. The company needs a cost- effective solution to generate inventory reports on demand. Admin users need to have the ability to generate new reports. Reports take approximately 5-10 minutes to finish. The application must send reports to the email address of the admin user who generates each report. Options:",
+      "options": {
+        "A": "Use Amazon Elastic Container Service (Amazon ECS) to host the report generation code. Use an Amazon API Gateway HTTP API to invoke the code. Use Amazon Simple Email Service (Amazon SES) to send the reports to admin users.",
+        "B": "Use Amazon EventBridge to invoke a scheduled AWS Lambda function to generate the reports. Use Amazon Simple Notification Service (Amazon SNS) to send the reports to admin users.",
+        "C": "Use Amazon Elastic Kubernetes Service (Amazon EKS) to host the report generation code. Use an Amazon API Gateway REST API to invoke the code. Use Amazon Simple Notification Service (Amazon SNS) to send the reports to admin users.",
+        "D": "Create an AWS Lambda function to generate the reports. Use a function URL to invoke the function. Use Amazon Simple Email Service (Amazon SES) to send the reports to admin users."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Detailed\nA . ECS + API Gateway: Overly complex and costly for an on-demand, intermittent workload.\nB . EventBridge + SNS: EventBridge schedules are unnecessary for on-demand generation.\nC . EKS + API Gateway: Overkill for this use case, with high operational overhead.\nD . Lambda + SES: Most cost-effective and efficient solution for generating and emailing reports on\ndemand.\nReference: AWS Lambda, Amazon SES"
+    },
+    {
+      "id": 910,
+      "type": "single",
+      "question": "A company that has multiple AWS accounts maintains an on-premises Microsoft Active Directory. The company needs a solution to implement Single Sign-On for its employees. The company wants to use AWS IAM Identity Center. The solution must meet the following requirements: Allow users to access AWS accounts and third-party applications by using existing Active Directory credentials. Enforce multi-factor authentication (MFA) to access AWS accounts. Centrally manage permissions to access AWS accounts and applications. Options:",
+      "options": {
+        "A": "Create an IAM identity provider for Active Directory in each AWS account. Ensure that Active Directory users and groups access AWS accounts directly through IAM roles. Use IAM Identity Center to enforce MFA in each account for all users.",
+        "B": "Use AWS Directory Service to create a new AWS Managed Microsoft AD Active Directory. Configure IAM Identity Center in each account to use the new AWS Managed Microsoft AD Active Directory as the identity source. Use IAM Identity Center to enforce MFA for all users.",
+        "C": "Use IAM Identity Center with the existing Active Directory as the identity source. Enforce MFA for all users. Use AWS Organizations and Active Directory groups to manage access permissions for AWS accounts and application access.",
+        "D": "Use AWS Lambda functions to periodically synchronize Active Directory users and groups with IAM users and groups in each AWS account. Use IAM roles and policies to manage application access. Create a second Lambda function to enforce MFA."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Detailed\nA . IAM identity provider: Does not support centralized management across multiple accounts.\nB . AWS Managed AD: Unnecessary if an on-premises Active Directory already exists.\nC . IAM Identity Center + Existing AD: Best approach to integrate existing Active Directory for SSO,\nwith MFA and centralized permissions.\nD . Lambda for synchronization: Adds complexity and does not leverage IAM Identity Center\ncapabilities.\nReference: AWS IAM Identity Center"
+    },
+    {
+      "id": 911,
+      "type": "multiple",
+      "question": "A company runs an order management application on AWS. The application allows customers to place orders and pay with a credit card. The company uses an Amazon CloudFront distribution to deliver the application. A security team has set up logging for all incoming requests. The security team needs a solution to generate an alert if any user modifies the logging configuration. Options (Select TWO):",
+      "options": {
+        "A": "Configure an Amazon EventBridge rule that is invoked when a user creates or modifies a CloudFront distribution. Add the AWS Lambda function as a target of the EventBridge rule.",
+        "B": "Create an Application Load Balancer (ALB). Enable AWS WAF rules for the ALB. Configure an AWS Config rule to detect security violations.",
+        "C": "Create an AWS Lambda function to detect changes in CloudFront distribution logging. Configure the Lambda function to use Amazon Simple Notification Service (Amazon SNS) to send notifications to the security team.",
+        "D": "Set up Amazon GuardDuty. Configure GuardDuty to monitor findings from the CloudFront distribution. Create an AWS Lambda function to address the findings.",
+        "E": "Create a private API in Amazon API Gateway. Use AWS WAF rules to protect the private API from common security problems."
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "Detailed\nA . EventBridge Rule: Detects modifications to CloudFront distributions in real time and triggers the\nLambda function for further action.\nB . ALB + Config: Focuses on ALB security violations, not relevant for CloudFront logging changes.\nC . Lambda + SNS: Provides real-time notifications about changes in logging configuration.\nD . GuardDuty: Focuses on threat detection, not logging configuration changes.\nE . API Gateway + WAF: Unrelated to CloudFront logging changes.\nReference: Amazon EventBridge, Amazon SNS"
+    },
+    {
+      "id": 912,
+      "type": "single",
+      "question": "A company has a three-tier environment on AWS that ingests sensor data from its users' devices The traffic flows through a Network Load Balancer (NIB) then to Amazon EC2 instances for the web tier and finally to EC2 instances for the application tier that makes database calls What should a solutions architect do to improve the security of data in transit to the web tier?",
+      "options": {
+        "A": "Configure a TLS listener and add the server certificate on the NLB",
+        "B": "Configure AWS Shield Advanced and enable AWS WAF on the NLB",
+        "C": "Change the load balancer to an Application Load Balancer and attach AWS WAF to it",
+        "D": "Encrypt the Amazon Elastic Block Store (Amazon EBS) volume on the EC2 instances using AWS Key Management Service (AWS KMS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A: How do you protect your data in transit?\nBest Practices:\nImplement secure key and certificate management: Store encryption keys and certificates securely\nand rotate them at appropriate time intervals while applying strict access control; for example, by\nusing a certificate management service, such as AWS Certificate Manager (ACM).\nEnforce encryption in transit: Enforce your defined encryption requirements based on appropriate\nstandards and recommendations to help you meet your organizational, legal, and compliance\nrequirements.\nAutomate detection of unintended data access: Use tools such as GuardDuty to automatically detect\nattempts to move data outside of defined boundaries based on data classification level, for example,\nto detect a trojan that is copying data to an unknown or untrusted network using the DNS protocol.\nAuthenticate network communications: Verify the identity of communications by using protocols\nthat support authentication, such as Transport Layer Security (TLS) or IPsec.\n\nThank You for Purchasing SAA-C03 PDF\nDownload Free Practice Test Demo from Here:\nTest Your Preparation with\nPractice Exam Software\nUse Coupon “20OFF” for extra 20% discount on purchase of\nPractice Test Software. Practice Exam Software helps you validate\nyour preparation in simulated exam environment."
+    }
+  ]
+}

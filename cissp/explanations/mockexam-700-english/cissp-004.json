@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q151 - Q200",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 151,
+      "question": "Which of the following questions is LESS likely to help in assessing physical access controls?",
+      "options": {
+        "A": "Does management regularly review the list of persons with physical access to sensitive facilities?",
+        "B": "Is the operating system configured to prevent circumvention of the security software and application controls?",
+        "C": "Are keys or other access devices needed to enter the computer room and media library?",
+        "D": "Are visitors to sensitive areas signed in and escorted?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Configuring an operating system to prevent circumvention of the security software and application controls is an example of configuring technical controls, not physical controls. Controls are put into place to reduce the risk an organization faces, and they come in three main flavors: administrative, technical, and physical. Administrative controls are commonly referred to as “soft controls” because they are more management-oriented. Examples of administrative controls are security documentation, risk management, personnel security, and training. Technical controls (also called logical controls) are software or hardware components, as in firewalls, IDS, encryption, identification and authentication mechanisms. And physical controls are items put into place to protect facility, personnel, and resources. Examples of physical controls are security guards, locks, fencing, and lighting. Incorrect Answers: A: Physical access to facilities is a physical control. Asking about regularly reviews of the list of persons with physical access to sensitive facilities will help in assessing physical access controls. Therefore, this answer is incorrect. C: Keys and access devices are examples of physical controls. Asking if they are required to enter the computer room and media library will help in assessing physical access controls. Therefore, this answer is incorrect. D: Escorting a visitor is an example of a physical control. Asking if this is required to enter sensitive areas will help in assessing physical access controls. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 152,
+      "question": "Which of the following protection devices is used for spot protection within a few inches of the object, rather than for overall room security monitoring?",
+      "options": {
+        "A": "Wave pattern motion detectors",
+        "B": "Capacitance detectors",
+        "C": "Field-powered devices",
+        "D": "Audio detectors"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A capacitance detector, emits a measurable magnetic field. The detector monitors this magnetic field, and an alarm sounds if the field is disrupted. These devices are usually used to protect specific objects (artwork, cabinets, or a safe) versus protecting a whole room or area. An electrostatic IDS creates an electrostatic magnetic field, which is just an electric field associated with static electric charges. All objects have a static electric charge. They are all made up of many subatomic particles, and when everything is stable and static, these particles constitute one holistic electric charge. This means there is a balance between the electric capacitance and inductance. Now, if an intruder enters the area, his subatomic particles will mess up this balance in the electrostatic field, causing a capacitance change, and an alarm will sound. Incorrect Answers: A: Wave pattern motion detectors are used overall room security monitoring. Therefore, this answer is incorrect. C: Field-powered devices are not intrusion detection devices. Field-powered device refers to a type of system-sensing proximity card. Therefore, this answer is incorrect. D: Audio detectors are used overall room security monitoring. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 153,
+      "question": "Which of the following Kerberos components holds all users' and services' cryptographic keys?",
+      "options": {
+        "A": "The Key Distribution Service",
+        "B": "The Authentication Service",
+        "C": "The Key Distribution Center",
+        "D": "The Key Granting Service"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Key Distribution Center (KDC) is the most important component within a Kerberos environment as it holds all users’ and services’ secret keys. Incorrect Answers: A: Key Distribution Service is not a valid Kerberos term. B: The authentication service is a part of the KDC that authenticates a principal. It does not hold all users' and services' cryptographic keys D: Key Granting Service is not a valid Kerberos term."
+    },
+    {
+      "id": 154,
+      "question": "There are parallels between the trust models in Kerberos and Public Key Infrastructure (PKI). When we compare them side by side, Kerberos tickets correspond most closely to which of the following?",
+      "options": {
+        "A": "public keys",
+        "B": "private keys",
+        "C": "public-key certificates",
+        "D": "private-key certificates"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Public Key describes a system that uses certificates or the underlying public key cryptography on which the system is based. In the traditional public key model, clients are issued credentials or \"certificates\" by a Certificate Authority (CA). The CA is a trusted third party. Public key certificates contain the user's name, the expiration date of the certificate etc. The most common certificate format is X.509. Public key credentials in the form of certificates and public-private key pairs can provide a strong distributed authentication system. The Kerberos and public key trust models are very similar. A Kerberos ticket is analogous to a public key certificate (a Kerberos ticket is supplied to provide access to resources). However, Kerberos tickets usually have lifetimes measured in days or hours rather than months or years. Incorrect Answers: A: Kerberos tickets do not actually contain public keys. They use symmetric cryptography which uses one shared key instead of asymmetric cryptography which uses public-private key pairs. B: Kerberos tickets do not contain private keys. They use symmetric cryptography which uses one shared key instead of asymmetric cryptography which uses public-private key pairs. D: Private-key certificates are always kept by the authentication provider; they are never distributed to subjects that require access to resources. The public key is given to the subject to provide access to a resource in a similar way to a Kerberos ticket."
+    },
+    {
+      "id": 155,
+      "question": "Physical security is accomplished through proper facility construction, fire and water protection, anti-theft mechanisms, intrusion detection systems, and security procedures that are adhered to and enforced. Which of the following is NOT a component that achieves this type of security?",
+      "options": {
+        "A": "Administrative control mechanisms",
+        "B": "Integrity control mechanisms",
+        "C": "Technical control mechanisms",
+        "D": "Physical control mechanisms"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Integrity controls are not one of the three defined security control types. Controls are put into place to reduce the risk an organization faces, and they come in three main flavors: administrative, technical, and physical. Administrative controls are commonly referred to as “soft controls” because they are more management-oriented. Examples of administrative controls are security documentation, risk management, personnel security, and training. Technical controls (also called logical controls) are software or hardware components, as in firewalls, IDS, encryption, identification and authentication mechanisms. And physical controls are items put into place to protect facility, personnel, and resources. Examples of physical controls are security guards, locks, fencing, and lighting. Incorrect Answers: A: Security procedures are an example of administrative controls. Therefore, this answer is incorrect. C: An intrusion detection system is an example of technical controls. Therefore, this answer is incorrect. D: The facility construction, fire and water protection are examples of physical controls. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 156,
+      "question": "Which of the following is TRUE about digital certificate?",
+      "options": {
+        "A": "It is the same as digital signature proving Integrity and Authenticity of the data",
+        "B": "Electronic credential proving that the person the certificate was issued to is who they claim to be.",
+        "C": "You can only get digital certificate from Verisign, RSA if you wish to prove the key belong to a specific user.",
+        "D": "Can't contain geography data such as country for example."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Each person who wants to participate in a PKI requires a digital certificate, which is a credential that contains the public key for that individual along with other identifying information. The certificate is created and signed (digital signature) by a trusted third party, which is a certificate authority (CA). When the CA signs the certificate, it binds the individual’s identity to the public key, and the CA takes liability for the authenticity of that individual. It is this trusted third party (the CA) that allows people who have never met to authenticate to each other and to communicate in a secure method. If Kevin has never met Dave but would like to communicate securely with him, and they both trust the same CA, then Kevin could retrieve Dave’s digital certificate and start the process. Incorrect Answers: A: A digital certificate is not the same as a digital signature proving Integrity and Authenticity of the data. A digital certificate binds a key to an identity. C: It is not true that you can only get a digital certificate from Verisign, RSA if you wish to prove the key belong to a specific user; you can get a digital certificate from any CA. The CA needs to be trusted however for the certificate to be effective. The CA can be one of many ‘public’ CAs or it can be part of a private PKI. D: A digital certificate can contain geography data such as country for example."
+    },
+    {
+      "id": 157,
+      "question": "What kind of encryption technology does SSL utilize?",
+      "options": {
+        "A": "Secret or Symmetric key",
+        "B": "Hybrid (both Symmetric and Asymmetric)",
+        "C": "Public Key",
+        "D": "Private Key"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "SSL uses asymmetric encryption to securely share a key. That key is then used for symmetric encryption to encrypt the data. IPsec and SSL use asymmetric encryption to establish the encryption protocol when the session starts and then to securely exchange a private key used during the session. This private key is similar to the single secret key used in symmetric encryption. Asymmetric encryption uses a key pair -- both a public and a private one -- for encryption. The sender uses the receiver's public key to encrypt the data and the receiver uses their private key to decrypt it. The transmission is secure because the recipient always has the private key in their possession and never exposes it by sending it over a public connection, such as the Internet. There is a catch to using asymmetric encryption. It runs about 1,000 times slower than symmetric encryption and eats up just as much processing power, straining already overburdened servers. That means asymmetric encryption is only used (by IPsec and SSL) to create an initial and secure encrypted connection to exchange a private key. Then, that key is used to create a shared secret, or session key, that is only good during the session when the two hosts are connected. Incorrect Answers: A: SSL uses both symmetric and asymmetric encryption, not just symmetric encryption. C: SSL does not use only public key encryption; shared key (symmetric) encryption is also used. D: SSL does not use private key encryption. Initially, encryption is performed using public keys and decryption is performed using private keys (asymmetric). Then both encryption and decryption are performed using a shared key (symmetric)."
+    },
+    {
+      "id": 158,
+      "question": "What is the name of a one way transformation of a string of characters into a usually shorter fixed-length value or key that represents the original string? Such a transformation cannot be reversed.",
+      "options": {
+        "A": "One-way hash",
+        "B": "DES",
+        "C": "Transposition",
+        "D": "Substitution"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone. These one-way hash functions have been called \"the workhorses of modern cryptography\". The input data is often called the message, and the hash value is often called the message digest or simply the digest. The ideal cryptographic hash function has four main properties: it is easy to compute the hash value for any given message it is infeasible to generate a message from its hash it is infeasible to modify a message without changing the hash it is infeasible to find two different messages with the same hash. Most cryptographic hash functions are designed to take a string of any length as input and produce a fixed-length hash value. Incorrect Answers: B: Data Encryption Standard (DES) is a symmetric block cipher. Data encrypted using DES can be decrypted using the symmetric key. C: A transposition cipher does not replace the original text with different text, but rather moves the original values around. This encryption can be reversed and does not produce a fixed length output. D: A substitution cipher replaces bits, characters, or blocks of characters with different bits, characters, or blocks. This encryption can be reversed and does not produce a fixed length output."
+    },
+    {
+      "id": 159,
+      "question": "Which of the following is NOT an asymmetric key algorithm?",
+      "options": {
+        "A": "RSA",
+        "B": "Elliptic Curve Cryptosystem (ECC)",
+        "C": "El Gamal",
+        "D": "Data Encryption Standard (DES)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Data Encryption Standard (DES) is not an asymmetric key algorithm; it’s a symmetric key algorithm. DES is a symmetric block encryption algorithm. When 64-bit blocks of plaintext go in, 64-bit blocks of ciphertext come out. It is also a symmetric algorithm, meaning the same key is used for encryption and decryption. It uses a 64-bit key: 56 bits make up the true key, and 8 bits are used for parity. When the DES algorithm is applied to data, it divides the message into blocks and operates on them one at a time. The blocks are put through 16 rounds of transposition and substitution functions. The order and type of transposition and substitution functions depend on the value of the key used with the algorithm. The result is 64-bit blocks of ciphertext. Incorrect Answers: A: RSA is an asymmetric key algorithm. B: Elliptic Curve Cryptosystem (ECC) is an asymmetric key algorithm. C: El Gamal is an asymmetric key algorithm."
+    },
+    {
+      "id": 160,
+      "question": "Which of the following is NOT a symmetric key algorithm?",
+      "options": {
+        "A": "Blowfish",
+        "B": "Digital Signature Standard (DSS)",
+        "C": "Triple DES (3DES)",
+        "D": "RC5"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Digital Signature Standard (DSS) is not a symmetric key algorithm; it is an asymmetric key algorithm. Because digital signatures are so important in proving who sent which messages, the U.S. government decided to establish standards pertaining to their functions and acceptable use. In 1991, NIST proposed a federal standard called the Digital Signature Standard (DSS). It was developed for federal departments and agencies, but most vendors also designed their products to meet these specifications. The federal government requires its departments to use DSA, RSA, or the elliptic curve digital signature algorithm (ECDSA) and SHA. SHA creates a 160-bit message digest output, which is then inputted into one of the three mentioned digital signature algorithms. SHA is used to ensure the integrity of the message, and the other algorithms are used to digitally sign the message. This is an example of how two different algorithms are combined to provide the right combination of security services. RSA and DSA are the best known and most widely used digital signature algorithms. DSA was developed by the NSA. Unlike RSA, DSA can be used only for digital signatures, and DSA is slower than RSA in signature verification. RSA can be used for digital signatures, encryption, and secure distribution of symmetric keys. Incorrect Answers: A: Blowfish is a block symmetric cipher that uses 64-bit block sizes and variable-length keys. C: Triple DES is a symmetric cipher that applies DES three times to each block of data during the encryption process. D: RC5 is a block symmetric cipher that uses variable block sizes (32, 64, 128) and variable-length key sizes (0–2040)."
+    },
+    {
+      "id": 161,
+      "question": "Which of the following asymmetric encryption algorithms is based on the difficulty of factoring LARGE numbers?",
+      "options": {
+        "A": "El Gamal",
+        "B": "Elliptic Curve Cryptosystems (ECCs)",
+        "C": "RSA",
+        "D": "International Data Encryption Algorithm (IDEA)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RSA is derived from the last names of its inventors, Rivest, Shamir, and Addleman. This algorithm is based on the difficulty of factoring a number, N, which is the product of two large prime numbers. These numbers may be 200 digits each. Thus, the difficulty in obtaining the private key from the public key is a hard, one-way function that is equivalent to the difficulty of finding the prime factors of N. In RSA, public and private keys are generated as follows: Choose two large prime numbers, p and q, of equal length, compute p3q 5 n, which is the public modulus. Choose a random public key, e, so that e and (p – 1)(q – 1) are relatively prime. Compute e x d = 1 mod (p – 1)(q – 1), where d is the private key. Thus, d = e–1 mod [(p – 1)(q – 1)] From these calculations, (d, n) is the private key and (e, n) is the public key. Incorrect Answers: A: El Gamal is based not on the difficulty of factoring large numbers but on calculating discrete logarithms in a finite field. B: Elliptic Curve Cryptosystems (ECCs) are not based on the difficulty of factoring large numbers. D: International Data Encryption Algorithm (IDEA) is not based on the difficulty of factoring large numbers."
+    },
+    {
+      "id": 162,
+      "question": "The Diffie-Hellman algorithm is primarily used to provide which of the following?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Key Agreement",
+        "C": "Integrity",
+        "D": "Non-repudiation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Diffie–Hellman key exchange (D–H) is a specific method of securely exchanging cryptographic keys over a public channel and was one of the first public-key protocols as originally conceptualized by Ralph Merkle. D–H is one of the earliest practical examples of public key exchange implemented within the field of cryptography. Traditionally, secure encrypted communication between two parties required that they first exchange keys by some secure physical channel, such as paper key lists transported by a trusted courier. The Diffie–Hellman key exchange method allows two parties that have no prior knowledge of each other to jointly establish a shared secret key over an insecure channel. This key can then be used to encrypt subsequent communications using a symmetric key cipher. Incorrect Answers: A: The Diffie-Hellman algorithm is not primarily used to provide confidentiality. C: The Diffie-Hellman algorithm is not primarily used to provide integrity. D: The Diffie-Hellman algorithm is not primarily used to provide non-repudiation."
+    },
+    {
+      "id": 163,
+      "question": "FIPS-140 is a standard for the security of which of the following?",
+      "options": {
+        "A": "Cryptographic service providers",
+        "B": "Smartcards",
+        "C": "Hardware and software cryptographic modules",
+        "D": "Hardware security modules"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The National Institute of Standards and Technology (NIST) issues the 140 Publication Series to coordinate the requirements and standards for cryptographic modules which include both hardware and software components for use by departments and agencies of the United States federal government. FIPS 140 does not purport to provide sufficient conditions to guarantee that a module conforming to its requirements is secure, still less that a system built using such modules is secure. The requirements cover not only the cryptographic modules themselves but also their documentation and (at the highest security level) some aspects of the comments contained in the source code. Incorrect Answers: A: FIPS-140 is not a standard for cryptographic service providers. B: FIPS-140 is not a standard for smartcards. D: FIPS-140 is not a standard for hardware security modules."
+    },
+    {
+      "id": 164,
+      "question": "Which of the following can best define the \"revocation request grace period\"?",
+      "options": {
+        "A": "The period of time allotted within which the user must make a revocation request upon a revocation reason",
+        "B": "Minimum response time for performing a revocation by the CA",
+        "C": "Maximum response time for performing a revocation by the CA",
+        "D": "Time period between the arrival of a revocation request and the publication of the revocation information"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Occasionally, a certificate authority needs to revoke a certificate. This might occur for one of the following reasons: The certificate was compromised. The certificate was erroneously issued. The details of the certificate changed. The security association changed. The revocation request grace period is the maximum response time within which a CA will perform any requested revocation. This is defined in the certificate practice statement (CPS). The CPS states the practices a CA employs when issuing or managing certificates. Incorrect Answers: A: The revocation request grace period is not the period of time allotted within which the user must make a revocation request upon a revocation reason. B: The revocation request grace period is the maximum response time, not the minimum response time within which a CA will perform any requested revocation. D: The revocation request grace period is not the period of time between the arrival of a revocation request and the publication of the revocation information. Publication of a certificate revocation list does not always happen as soon as a certificate has been revoked."
+    },
+    {
+      "id": 165,
+      "question": "Which is NOT a suitable method for distributing certificate revocation information?",
+      "options": {
+        "A": "CA revocation mailing list",
+        "B": "Delta CRL",
+        "C": "OCSP (online certificate status protocol)",
+        "D": "Distribution point CRL"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A CA revocation mailing list is NOT a suitable method for distributing certificate revocation information. There are several mechanisms to represent revocation information; RFC 2459 defines one such method. This method involves each CA periodically issuing a signed data structure called a certificate revocation list (CRL). A CRL is a time stamped list identifying revoked certificates, which is signed by a CA and made freely available in a public repository. There are several types of CRLs: full CRLs (also known as base CRLs), delta CRLs, and CRL Distribution Points (CDPs). Full CRLs contain the status of all certificates. Delta CRLs contain only the status of all certificates that have changed status between the issuance the last Base CRL. CRL Distribution Point (CDP) is a certificate extension that indicates where the certificate revocation list for a CA can be retrieved. This extension can contain multiple HTTP, FTP, File or LDAP URLs for the retrieval of the CRL. Online Certificate Status Protocol (OCSP) is a protocol that allows real-time validation of a certificate's status by having the CryptoAPI make a call to an OCSP responder and the OCSP responder providing an immediate validation of the revocation status for the presented certificate. Typically, the OCSP responder uses CRLs for retrieving certificate status information. Incorrect Answers: B: A Delta CRL is a suitable method for distributing certificate revocation information. C: OCSP (online certificate status protocol) is a suitable method for distributing certificate revocation information. D: Distribution point CRL is a suitable method for distributing certificate revocation information."
+    },
+    {
+      "id": 166,
+      "question": "Which encryption algorithm is BEST suited for communication with handheld wireless devices?",
+      "options": {
+        "A": "ECC (Elliptic Curve Cryptosystem)",
+        "B": "RSA",
+        "C": "SHA",
+        "D": "RC4"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Elliptic curves are rich mathematical structures that have shown usefulness in many different types of applications. An elliptic curve cryptosystem (ECC) provides much of the same functionality RSA provides: digital signatures, secure key distribution, and encryption. One differing factor is ECC’s efficiency. ECC is more efficient than RSA and any other asymmetric algorithm. Some devices have limited processing capacity, storage, power supply, and bandwidth, such as wireless devices and cellular telephones. With these types of devices, efficiency of resource use is very important. ECC provides encryption functionality, requiring a smaller percentage of the resources compared to RSA and other algorithms, so it is used in these types of devices. In most cases, the longer the key, the more protection that is provided, but ECC can provide the same level of protection with a key size that is shorter than what RSA requires. Because longer keys require more resources to perform mathematical tasks, the smaller keys used in ECC require fewer resources of the device. Incorrect Answers: B: RSA is less efficient than ECC which makes RSA less suited for communication with handheld wireless devices. C: SHA is a hashing algorithm; it is not an encryption algorithm suited for communication with handheld wireless devices. D: RC4 is a symmetric algorithm whereas ECC is asymmetric which makes ECC more suited for communication with handheld wireless devices."
+    },
+    {
+      "id": 167,
+      "question": "Which of the following keys has the SHORTEST lifespan?",
+      "options": {
+        "A": "Secret key",
+        "B": "Public key",
+        "C": "Session key",
+        "D": "Private key"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A session key is a single-use symmetric key that is used to encrypt messages between two users during a single communication session. If Tanya has a symmetric key she uses to always encrypt messages between Lance and herself, then this symmetric key would not be regenerated or changed. They would use the same key every time they communicated using encryption. However, using the same key repeatedly increases the chances of the key being captured and the secure communication being compromised. If, on the other hand, a new symmetric key were generated each time Lance and Tanya wanted to communicate, it would be used only during their one dialogue and then destroyed. If they wanted to communicate an hour later, a new session key would be created and shared. A session key provides more protection than static symmetric keys because it is valid for only one session between two computers. If an attacker were able to capture the session key, she would have a very small window of time to use it to try to decrypt messages being passed back and forth. Incorrect Answers: A: A secret key is static in nature. It has no fixed lifespan and is used until someone decides to change the key. Session keys are used for single communication sessions so they have a much shorter lifespan. B: A public key is issued by a CA and typically has a lifespan of one or two years. Session keys are used for single communication sessions so they have a much shorter lifespan. D: A private key is issued by a CA and typically has a lifespan of one or two years. Session keys are used for single communication sessions so they have a much shorter lifespan."
+    },
+    {
+      "id": 168,
+      "question": "What is the RESULT of a hash algorithm being applied to a message?",
+      "options": {
+        "A": "A digital signature",
+        "B": "A ciphertext",
+        "C": "A message digest",
+        "D": "A plaintext"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone. The input data is often called the message, and the hash value is often called the message digest or simply the digest. Incorrect Answers: A: To create a digital signature, a message digest is calculated (by the hash algorithm being applied to the message) then it is encrypted with the sender’s private key. However, the digital signature is not the direct output of the hash algorithm being applied to the message. B: A ciphertext is the output of an encryption algorithm, not a hash algorithm being applied to data. D: A plaintext is the message ‘before’ the hash algorithm is applied to the message; it is the input to the hash algorithm, not the output."
+    },
+    {
+      "id": 169,
+      "question": "Secure Sockets Layer (SSL) uses a Message Authentication Code (MAC) for what purpose?",
+      "options": {
+        "A": "Message non-repudiation.",
+        "B": "Message confidentiality.",
+        "C": "Message interleave checking.",
+        "D": "Message integrity."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), both of which are frequently referred to as 'SSL', are cryptographic protocols designed to provide communications security over a computer network. The connection is reliable because each message transmitted includes a message integrity check using a message authentication code to prevent undetected loss or alteration of the data during transmission. A message authentication code (MAC) is a short piece of information used to authenticate a message—in other words, to provide integrity and authenticity assurances on the message. Integrity assurances detect accidental and intentional message changes, while authenticity assurances affirm the message's origin. A MAC algorithm, sometimes called a keyed (cryptographic) hash function (however, cryptographic hash function is only one of the possible ways to generate MACs), accepts as input a secret key and an arbitrary-length message to be authenticated, and outputs a MAC (sometimes known as a tag). The MAC value protects both a message's data integrity as well as its authenticity, by allowing verifiers (who also possess the secret key) to detect any changes to the message content. Incorrect Answers: A: Secure Sockets Layer (SSL) does not use a Message Authentication Code (MAC) for message non-repudiation. B: Secure Sockets Layer (SSL) does not use a Message Authentication Code (MAC) for message confidentiality; it uses symmetric cryptography for that. C: Secure Sockets Layer (SSL) does not use a Message Authentication Code (MAC) for message interleave checking."
+    },
+    {
+      "id": 170,
+      "question": "Which of the following services is NOT provided by the digital signature standard (DSS)?",
+      "options": {
+        "A": "Encryption",
+        "B": "Integrity",
+        "C": "Digital signature",
+        "D": "Authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Digital signatures do not provide encryption. The purpose of digital signatures is to detect unauthorized modifications of data, and to authenticate the identity of the signatories and non-repudiation. These functions are accomplished by generating a block of data that is usually smaller than the size of the original data. This smaller block of data is bound to the original data and to the identity of the sender. This binding verifies the integrity of data and provides non-repudiation. To quote the National Institute Standards and Technology (NIST) Digital Signature Standard (DSS): Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed data can use a digital signature in proving to a third party that the signature was in fact generated by the signatory. Incorrect Answers: B: Digital signatures do provide integrity. C: The digital signature standard (DSS) as its name suggests is all about digital signatures. D: Digital signatures do provide authentication."
+    },
+    {
+      "id": 171,
+      "question": "What can be defined as an instance of two different keys generating the same ciphertext from the same plaintext?",
+      "options": {
+        "A": "Key collision",
+        "B": "Key clustering",
+        "C": "Hashing",
+        "D": "Ciphertext collision"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In cryptography, key clustering is said to occur when two different keys generate the same ciphertext from the same plaintext, using the same cipher algorithm. A good cipher algorithm, using different keys on the same plaintext, should generate a different ciphertext, irrespective of the key length. Incorrect Answers: A: Key collision is not the correct term to describe an instance of two different keys generating the same ciphertext from the same plaintext. C: Hashing is the transformation of a string of characters into a usually shorter fixed-length value or key that represents the original string. This is not what is described in the question. D: Ciphertext collision is not the correct term to describe an instance of two different keys generating the same ciphertext from the same plaintext."
+    },
+    {
+      "id": 172,
+      "question": "Which of the following is TRUE about link encryption?",
+      "options": {
+        "A": "Each entity has a common key with the destination node.",
+        "B": "Encrypted messages are only decrypted by the final node.",
+        "C": "This mode does not provide protection if anyone of the nodes along the transmission path is compromised.",
+        "D": "Only secure nodes are used in this type of transmission."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "With Link Encryption each entity has keys in common with its two neighboring nodes in the transmission chain. Thus, a node receives the encrypted message from its predecessor (the neighboring node), decrypts it, and then re-encrypts it with another key that is common to the successor node. Then, the encrypted message is sent on to the successor node where the process is repeated until the final destination is reached. Obviously, this mode does not provide protection if the nodes along the transmission path can be compromised. Incorrect Answers: A: It is not true that each entity has a common key with the destination node. Each entity has keys in common with only its two neighboring nodes. B: It is not true that encrypted messages are only decrypted by the final node. Every node in the chain (except the original sending node) decrypts the message. D: It is not true that only secure nodes are used in this type of transmission. The data is encrypted for security; the nodes themselves can be insecure."
+    },
+    {
+      "id": 173,
+      "question": "What uses a key of the same length as the message where each bit or character from the plaintext is encrypted by a modular addition?",
+      "options": {
+        "A": "Running key cipher",
+        "B": "One-time pad",
+        "C": "Steganography",
+        "D": "Cipher block chaining"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked if used correctly. In this technique, a plaintext is paired with a random secret key (also referred to as a one-time pad). Then, each bit or character of the plaintext is encrypted by combining it with the corresponding bit or character from the pad using modular addition. If the key is truly random, is at least as long as the plaintext, is never reused in whole or in part, and is kept completely secret, then the resulting ciphertext will be impossible to decrypt or break. However, practical problems have prevented one-time pads from being widely used. The \"pad\" part of the name comes from early implementations where the key material was distributed as a pad of paper, so that the top sheet could be easily torn off and destroyed after use. The one-time pad has serious drawbacks in practice because it requires: Truly random (as opposed to pseudorandom) one-time pad values, which is a non-trivial requirement. Secure generation and exchange of the one-time pad values, which must be at least as long as the message. (The security of the one-time pad is only as secure as the security of the one-time pad exchange). Careful treatment to make sure that it continues to remain secret, and is disposed of correctly preventing any reuse in whole or part—hence \"one time\". Because the pad, like all shared secrets, must be passed and kept secure, and the pad has to be at least as long as the message, there is often no point in using one-time padding, as one can simply send the plain text instead of the pad (as both can be the same size and have to be sent securely). Distributing very long one-time pad keys is inconvenient and usually poses a significant security risk. The pad is essentially the encryption key, but unlike keys for modern ciphers, it must be extremely long and is much too difficult for humans to remember. Storage media such as thumb drives, DVD-Rs or personal digital audio players can be used to carry a very large one-time-pad from place to place in a non-suspicious way, but even so the need to transport the pad physically is a burden compared to the key negotiation protocols of a modern public-key cryptosystem, and such media cannot reliably be erased securely by any means short of physical destruction (e.g., incineration). The key material must be securely disposed of after use, to ensure the key material is never reused and to protect the messages sent. Because the key material must be transported from one endpoint to another, and persist until the message is sent or received, it can be more vulnerable to forensic recovery than the transient plaintext it protects. Incorrect Answers: A: Running key cipher does not use a key of the same length as the message. C: Steganography is a method of hiding data in another media type so the very existence of the data is concealed. This is not what is described in the question. D: Cipher block chaining is an encryption method where each block of text, the key, and the value based on the previous block are processed in the algorithm and applied to the next block of text. This is not what is described in the question."
+    },
+    {
+      "id": 174,
+      "question": "Guards are appropriate whenever the function required by the security program involves which of the following?",
+      "options": {
+        "A": "The use of discriminating judgment",
+        "B": "The use of physical force",
+        "C": "The operation of access control devices",
+        "D": "The need to detect unauthorized access"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Guards are appropriate whenever immediate discriminating judgement is required by the security entity. Guards are the oldest form of security surveillance. Guards still have a very important primary function in the physical security process, particularly in perimeter control. Because of a human's ability to adjust to rapidly changing conditions, to learn and alter recognizable patterns, and to respond to various conditions in the environment, a guard can make determinations that hardware or automated security devices cannot make. Incorrect Answers: B: The use of physical force is not the most appropriate reason to use security guards. Therefore, this answer is incorrect. C: The operation of access control devices typically does not require the use of security guards. Most access control devices are automatic electrical and mechanical devices that unlock and lock doors as required. Therefore, this answer is incorrect. D: Security guards are not required to detect unauthorized access. There are many systems that can detect unauthorized access such as motion sensors etc. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 175,
+      "question": "What is the maximum number of different keys that can be used when encrypting with Triple DES?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Triple DES (3DES) can use a maximum of three keys. 3DES can work in different modes, and the mode chosen dictates the number of keys used and what functions are carried out: DES-EEE3 Uses three different keys for encryption, and the data are encrypted, encrypted, encrypted. DES-EDE3 Uses three different keys for encryption, and the data are encrypted, decrypted, encrypted. DES-EEE2 The same as DES-EEE3, but uses only two keys, and the first and third encryption processes use the same key. DES-EDE2 The same as DES-EDE3, but uses only two keys, and the first and third encryption processes use the same key. Incorrect Answers: A: A maximum of 3, not 1 different keys can be used when encrypting with Triple DES. B: A maximum of 3, not 2 different keys can be used when encrypting with Triple DES. D: A maximum of 3, not 4 different keys can be used when encrypting with Triple DES."
+    },
+    {
+      "id": 176,
+      "question": "What algorithm has been selected as the AES algorithm, replacing the DES algorithm?",
+      "options": {
+        "A": "RC6",
+        "B": "Twofish",
+        "C": "Rijndael",
+        "D": "Blowfish"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "After DES was used as an encryption standard for over 20 years and it was cracked in a relatively short time once the necessary technology was available, NIST decided a new standard, the Advanced Encryption Standard (AES), needed to be put into place. In January 1997, NIST announced its request for AES candidates and outlined the requirements in FIPS PUB 197. AES was to be a symmetric block cipher supporting key sizes of 128, 192, and 256 bits. The following five algorithms were the finalists: MARS Developed by the IBM team that created Lucifer RC6 Developed by RSA Laboratories Serpent Developed by Ross Anderson, Eli Biham, and Lars Knudsen Twofish Developed by Counterpane Systems Rijndael Developed by Joan Daemen and Vincent Rijmen Out of these contestants, Rijndael was chosen. The block sizes that Rijndael supports are 128, 192, and 256 bits. Rijndael works well when implemented in software and hardware in a wide range of products and environments. It has low memory requirements and has been constructed to easily defend against timing attacks. Rijndael was NIST’s choice to replace DES. It is now the algorithm required to protect sensitive but unclassified U.S. government information. Incorrect Answers: A: RC6 was a finalist; however, Rijndael was selected by NIST as the AES algorithm. B: Twofish was a finalist; however, Rijndael was selected by NIST as the AES algorithm. B: Blowfish was not selected by NIST as the AES algorithm."
+    },
+    {
+      "id": 177,
+      "question": "Which of the following is a symmetric encryption algorithm?",
+      "options": {
+        "A": "RSA",
+        "B": "Elliptic Curve",
+        "C": "RC5",
+        "D": "El Gamal"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RC5 is a symmetric-key block cipher notable for its simplicity. Designed by Ronald Rivest in 1994, RC stands for \"Rivest Cipher\", or alternatively, \"Ron's Code\". The Advanced Encryption Standard (AES) candidate RC6 was based on RC5. RC5 has a variety of parameters it can use for block size, key size, and the number of rounds used. It was created by Ron Rivest and analyzed by RSA Data Security, Inc. The block sizes used in this algorithm are 32, 64, or 128 bits, and the key size goes up to 2,048 bits. The number of rounds used for encryption and decryption is also variable. The number of rounds can go up to 255. Incorrect Answers: A: RSA is an asymmetric key algorithm. B: Elliptic Curve Cryptosystem (ECC) is an asymmetric key algorithm. D: El Gamal is an asymmetric key algorithm."
+    },
+    {
+      "id": 178,
+      "question": "Which of the following protocols would BEST mitigate threats of sniffing attacks on web application traffic?",
+      "options": {
+        "A": "SSL or TLS",
+        "B": "802.1X",
+        "C": "ARP Cache Security",
+        "D": "SSH - Secure Shell"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "SSL and TLS encrypt web application traffic to mitigate threats of sniffing attacks. The SSL protocol was developed by Netscape in 1994 to secure Internet client-server transactions. The SSL protocol authenticates the server to the client using public key cryptography and digital certificates. In addition, this protocol also provides for optional client to server authentication. It supports the use of RSA public key algorithms, IDEA, DES and 3DES private key algorithms, and the MD5 hash function. Web pages using the SSL protocol start with HTTPs. SSL 3.0 and its successor, the Transaction Layer Security (TLS) 1.0 protocol are defacto standards. TLS implements confidentiality, authentication, and integrity above the Transport Layer, and it resides between the application and TCP layer. Thus, TLS, as with SSL, can be used with applications such as Telnet, FTP, HTTP, and email protocols. Both SSL and TLS use certificates for public key verification that are based on the X.509 standard. Incorrect Answers: B: The 802.1X standard is a port-based network access control that ensures a user cannot make a full network connection until he is properly authenticated. 802.1X is not used to encrypt web application traffic. C: ARP Cache Security can prevent ARP Cache poisoning attacks. However, it is not used to encrypt web application traffic. D: SSH (Secure Shell) is a set of protocols that are primarily used for remote access over a network by establishing an encrypted tunnel between an SSH client and an SSH server. SSH is not used to encrypt web application traffic."
+    },
+    {
+      "id": 179,
+      "question": "What type of key would you find within a browser's list of trusted root CAs?",
+      "options": {
+        "A": "Private key",
+        "B": "Symmetric key",
+        "C": "Recovery key",
+        "D": "Public key"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "In cryptography, a public key certificate (also known as a digital certificate or identity certificate) is an electronic document used to prove ownership of a public key. The certificate includes information about the key, information about its owner's identity, and the digital signature of an entity that has verified the certificate's contents are correct. If the signature is valid, and the person examining the certificate trusts the signer, then they know they can use that key to communicate with its owner. In a typical public-key infrastructure (PKI) scheme, the signer is a certificate authority (CA), usually a company which charges customers to issue certificates for them. If you trust the Root CA, you’ll trust all certificates issued by the CA. All web browsers come with an extensive built-in list of trusted root certificates, many of which are controlled by organizations that may be unfamiliar to the user. The built-in list of trusted root certificates is a collection of Public Key certificates from the CAs. Incorrect Answers: A: The private key is always retained by the owner (in this case, a CA); it is never distributed. B: You would not find a symmetric key within a browser's list of trusted root CAs. C: You would not find a recovery key within a browser's list of trusted root CAs."
+    },
+    {
+      "id": 180,
+      "question": "Where in a PKI infrastructure is a list of revoked certificates stored?",
+      "options": {
+        "A": "CRL",
+        "B": "Registration Authority",
+        "C": "Recovery Agent",
+        "D": "Key escrow"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In a Public Key Infrastructure (PKI), the revocation of a certificate is dealt with by the certificate authority (CA). The revoked certificate information is stored on a certificate revocation list (CRL). Incorrect Answers: B: The registration authority (RA) executes the certification registration tasks. It does not, however, store a list of revoked certificates. C: Key recovery agent is one of the intended purposes of digital certificates. It does not, however, store a list of revoked certificates. D: Key escrow is a process or entity that can recover lost or corrupted cryptographic keys. It does not, however, store a list of revoked certificates."
+    },
+    {
+      "id": 181,
+      "question": "The equation used to calculate the total number of symmetric keys (K) needed for a group of users (N) to communicate securely with each other is given by which of the following?",
+      "options": {
+        "A": "K(N – 1)/ 2",
+        "B": "N(K – 1)/ 2",
+        "C": "K(N + 1)/ 2",
+        "D": "N(N – 1)/ 2"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The equation employed to determine the required number of symmetric keys is N(N – 1)/2. Incorrect Answers: A, B, C: These equations are not valid for calculating the required number of symmetric keys."
+    },
+    {
+      "id": 182,
+      "question": "In which mode of DES, will a block of plaintext and a key always give the same ciphertext?",
+      "options": {
+        "A": "Electronic Code Book (ECB)",
+        "B": "Output Feedback (OFB)",
+        "C": "Counter Mode (CTR)",
+        "D": "Cipher Feedback (CFB)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Electronic Code Book (ECB) is the “native” mode of DES and is a block cipher. ECB is best suited for use with small amounts of data. It is usually applied to encrypt initialization vectors or encrypting keys. ECB is applied to 64-bit blocks of plaintext, and it produces corresponding 64-bit blocks of ciphertext. Electronic Code Book (ECB) mode operates like a code book. A 64-bit data block is entered into the algorithm with a key, and a block of ciphertext is produced. For a given block of plaintext and a given key, the same block of ciphertext is always produced. Incorrect Answers: B: The DES Output Feedback Mode (OFB) is also a stream cipher that generates the ciphertext key by XORing the plaintext with a key stream. OFB mode is not the mode described in the question. C: Counter Mode (CTR) is very similar to OFB mode, but instead of using a randomly unique IV value to generate the keystream values, this mode uses an IV counter that increments for each plaintext block that needs to be encrypted. CTR mode is not the mode described in the question. D: The Cipher Feedback Mode (CFB) of DES is a stream cipher where the ciphertext is used as feedback into the key generation source to develop the next key stream. CFB mode is not the mode described in the question."
+    },
+    {
+      "id": 183,
+      "question": "Which of the following would best describe certificate path validation?",
+      "options": {
+        "A": "Verification of the validity of all certificates of the certificate chain to the root certificate",
+        "B": "Verification of the integrity of the associated root certificate",
+        "C": "Verification of the integrity of the concerned private key",
+        "D": "Verification of the revocation status of the concerned certificate"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The certification path validation algorithm is the algorithm which verifies that a given certificate path is valid under a given public key infrastructure (PKI). A path starts with the Subject certificate and proceeds through a number of intermediate certificates up to a trusted root certificate, typically issued by a trusted Certification Authority (CA). Path validation is necessary for a relying party to make an informed trust decision when presented with any certificate that is not already explicitly trusted. For example, in a hierarchical PKI, a certificate chain starting with a web server certificate might lead to a small CA, then to an intermediate CA, then to a large CA whose trust anchor is present in the relying party's web browser. Incorrect Answers: B: Certificate path validation is not verification of the integrity of the associated root certificate. C: Certificate path validation is not verification of the integrity of the concerned private key. D: Certificate path validation is not verification of the revocation status of the concerned certificate; this is a Certificate Revocation Check."
+    },
+    {
+      "id": 184,
+      "question": "What is the name for a substitution cipher that shifts the alphabet by 13 places?",
+      "options": {
+        "A": "Caesar cipher",
+        "B": "Polyalphabetic cipher",
+        "C": "ROT13 cipher",
+        "D": "Transposition cipher"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "ROT13 was an encryption method that is similar to Caesar cipher, but instead of shifting 3 spaces in the alphabet it shifted 13 spaces. Incorrect Answers: A: Caesar cipher shifts three spaces. B: A polyalphabetic cipher makes use of more than one alphabet. D: Transposition cyphers moves the original values around."
+    },
+    {
+      "id": 185,
+      "question": "Which of the following standards concerns digital certificates?",
+      "options": {
+        "A": "X.400",
+        "B": "X.25",
+        "C": "X.509",
+        "D": "X.75"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "X.509 specifies standard formats for public key certificates and attribute certificates, which are digital certificates. Incorrect Answers: A: X.400 is a group of ITU-T Recommendations that define standards for Data Communication Networks for email. B: X.25 is an ITU-T standard protocol suite for packet switched wide area network (WAN) communication. C: X.75 is an International Telecommunication Union (ITU) standard that specifies the interface for interconnecting two X.25 networks."
+    },
+    {
+      "id": 186,
+      "question": "Which fire class can water be most appropriate for?",
+      "options": {
+        "A": "Class A fires",
+        "B": "Class B fires",
+        "C": "Class C fires",
+        "D": "Class D fires"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Class A fires can be extinguished with water. Class A fire extinguishers use water or foam. Class A fires involve “common combustibles”; these are ordinary combustible materials, such as cloth, wood, paper, and many plastics. Incorrect Answers: B: You cannot use water on a Class B fire. A Class B fire is a flammable liquid fire such as gasoline, oil or lacquers. Therefore, this answer is incorrect. C: You cannot use water on a Class C fire. Class C fires are Electrical fires. Therefore, this answer is incorrect. D: You cannot use water on a Class D fire. A Class D fire is combustible metals such as magnesium or potassium. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 187,
+      "question": "What is the effective key size of DES?",
+      "options": {
+        "A": "56 bits",
+        "B": "64 bits",
+        "C": "128 bits",
+        "D": "1024 bits"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "DES makes use of a 64-bit key, of which 56 bits represents the true key, and the remaining 8 bits are used for parity. Incorrect Answers: B: DES does make use of a 64-bit key, but the effective key size is 56 bits. C: International Data Encryption Algorithm (IDEA) produces key that is 128 bits long. D: RC5 support variable-length key sizes ranging from 0-2040."
+    },
+    {
+      "id": 188,
+      "question": "Which of the following offers confidentiality to an e-mail message?",
+      "options": {
+        "A": "The sender encrypting it with its private key.",
+        "B": "The sender encrypting it with its public key.",
+        "C": "The sender encrypting it with the receiver's public key.",
+        "D": "The sender encrypting it with the receiver's private key."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A message encrypted using a public key can only be decrypted using the corresponding private key. The receiver should be the only person in possession of the recipient’s private key. The recipient’s public key can be freely distributed. Therefore, if the sender encrypts a message with the recipient’s pubic key, the sender will know that the recipient is the ONLY person who can decrypt the message. This ensures the confidentiality of the message. Incorrect Answers: A: A public key can be freely distributed. If the sender encrypts a message with his private key, ANYONE in possession of the sender’s public key could decrypt the message. This offers no confidentiality. B: A message encrypted using a public key can only be decrypted using the corresponding private key. If the sender encrypts a message with his public key, only the sender would be able to decrypt it as he is the only person in possession of the private key that corresponds to his public key. D: The receiver should be the only person in possession of the recipient’s private key. The sender should never be in possession of the receiver’s private key."
+    },
+    {
+      "id": 189,
+      "question": "Which of the following is not a DES mode of operation?",
+      "options": {
+        "A": "Cipher block chaining",
+        "B": "Electronic code book",
+        "C": "Input feedback",
+        "D": "Cipher feedback"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "DES modes include the following: Electronic Code Book (ECB) Cipher Block Chaining (CBC) Cipher Feedback (CFB) Output Feedback (OFB) Counter Mode (CTR) Input feedback is not a DES mode. Incorrect Answers: A, B, & D: Cipher block chaining, Electronic code book, and Cipher feedback are modes of DES."
+    },
+    {
+      "id": 190,
+      "question": "What size is an MD5 message digest (hash)?",
+      "options": {
+        "A": "128 bits",
+        "B": "160 bits",
+        "C": "256 bits",
+        "D": "128 bytes"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "MD5 generates a 128-bit hash. Incorrect Options: B: SHA generates a 160-bit hash value. C: SHA-256 generates a 256-bit value. D: MD5 generates a 128-bit, not a 128 byte, hash."
+    },
+    {
+      "id": 191,
+      "question": "Which of the following service is not provided by a public key infrastructure (PKI)?",
+      "options": {
+        "A": "Access control",
+        "B": "Integrity",
+        "C": "Authentication",
+        "D": "Reliability"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "PKI provides the confidentiality, access control, integrity, authentication, and nonrepudiation security services. Reliability is not included. Incorrect Options: A, B, & C: Access control, integrity, and authentication are security services provided by public key infrastructure (PKI)"
+    },
+    {
+      "id": 192,
+      "question": "In a Public Key Infrastructure, how are public keys published?",
+      "options": {
+        "A": "They are sent via e-mail.",
+        "B": "Through digital certificates.",
+        "C": "They are sent by owners.",
+        "D": "They are not published."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The main role of the CA is to digitally sign and publish the public key bound to a given user by issuing digital certificates which certifies the ownership of a public key by the named subject of the certificate. Incorrect Options: A: The main role of the CA is to digitally sign and publish the public key bound to a given user, so it is not sent via e-mail. C: The main role of the CA is to digitally sign and publish the public key bound to a given user, so they are not sent by owners. D: The main role of the CA is to digitally sign and publish the public key bound to a given user. Clearly they are published."
+    },
+    {
+      "id": 193,
+      "question": "Which of the following BEST describes a function relying on a shared secret key that is used along with a hashing algorithm to verify the integrity of the communication content as well as the sender?",
+      "options": {
+        "A": "Message Authentication Code - MAC",
+        "B": "PAM - Pluggable Authentication Module",
+        "C": "NAM - Negative Acknowledgement Message",
+        "D": "Digital Signature Certificate"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Message Authentication Code (MAC) is a keyed cryptographic hash function that is used for data integrity and data origin authentication. Incorrect Answers: B: A pluggable authentication module (PAM) is used to integrate multiple low-level authentication schemes into a high-level application programming interface (API). C: A Negative Acknowledgement Message is a protocol message that is sent in many communications protocols to negatively acknowledge or reject a previously received message, or to show some kind of error. D: Digital Signature Certificate is an invalid term. Digital signatures and digital certificates are two different security measures."
+    },
+    {
+      "id": 194,
+      "question": "Which answer BEST describes a secure cryptoprocessor that can be used to store cryptographic keys, passwords or certificates in a component located on the motherboard of a computer?",
+      "options": {
+        "A": "TPM - Trusted Platform Module",
+        "B": "TPM - Trusted Procedure Module",
+        "C": "Smart Card",
+        "D": "Enigma Machine"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Trusted Platform Module (TPM) is a microchip installed on the motherboard of modern computers. TPM is dedicated to executing security functions that include the storage and processing of symmetric and asymmetric keys, hashes, and digital certificates. Incorrect Answers: B: Trusted Procedure Module is not a valid term. C: A smart card is not located on the motherboard of a computer. D: The Enigma machines were a series of electro-mechanical rotor cipher machines developed and used to protect commercial, diplomatic and military communication."
+    },
+    {
+      "id": 195,
+      "question": "Which of the following statements pertaining to stream ciphers is TRUE?",
+      "options": {
+        "A": "A stream cipher is a type of asymmetric encryption algorithm.",
+        "B": "A stream cipher generates what is called a keystream.",
+        "C": "A stream cipher is slower than a block cipher.",
+        "D": "A stream cipher is not appropriate for hardware-based encryption."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A stream cipher is a symmetric key cipher where plaintext digits are combined with a pseudorandom cipher digit stream (keystream). In a stream cipher each plaintext digit is encrypted one at a time with the corresponding digit of the keystream, to give a digit of the ciphertext stream. Since encryption of each digit is dependent on the current state of the cipher, so it is also known as state cipher. In practice, a digit is typically a bit and the combining operation an exclusive-or (XOR). The pseudorandom keystream is typically generated serially from a random seed value using digital shift registers. The seed value serves as the cryptographic key for decrypting the ciphertext stream. Stream ciphers typically execute at a higher speed than block ciphers and have lower hardware complexity. However, stream ciphers can be susceptible to serious security problems if used incorrectly; in particular, the same starting state (seed) must never be used twice. Incorrect Answers: A: A stream cipher is not a type of asymmetric encryption algorithm; it is a symmetric key cipher. C: A stream cipher is not slower than a block cipher; it is faster. D: Stream ciphers require a lot of randomness and encrypt individual bits at a time. This requires more processing power than block ciphers require, which is why stream ciphers are better suited to be implemented at the hardware level."
+    },
+    {
+      "id": 196,
+      "question": "Which of the following statements pertaining to block ciphers is NOT true?",
+      "options": {
+        "A": "It operates on fixed-size blocks of plaintext.",
+        "B": "It is more suitable for software than hardware implementations.",
+        "C": "Plain text is encrypted with a public key and decrypted with a private key.",
+        "D": "Some Block ciphers can operate internally as a stream."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "It is not true that plain text is encrypted with a public key and decrypted with a private key with a block cipher. Block ciphers use symmetric keys. In cryptography, a block cipher is a deterministic algorithm operating on fixed-length groups of bits, called blocks, with an unvarying transformation that is specified by a symmetric key. Block ciphers are important elementary components in the design of many cryptographic protocols, and are widely used to implement encryption of bulk data. Stream ciphers represent a different approach to symmetric encryption from block ciphers. Block ciphers operate on large blocks of digits with a fixed, unvarying transformation. This distinction is not always clear-cut: in some modes of operation, a block cipher primitive is used in such a way that it acts effectively as a stream cipher. Incorrect Answers: A: It is true that a block cipher operates on fixed-size blocks of plaintext. B: Stream ciphers require a lot of randomness and encrypt individual bits at a time. This requires more processing power than block ciphers require, which is why stream ciphers are better suited to be implemented at the hardware level. Because block ciphers do not require as much processing power, they can be easily implemented at the software level. D: It is true that some Block ciphers can operate internally as a stream."
+    },
+    {
+      "id": 197,
+      "question": "Cryptography does NOT help in:",
+      "options": {
+        "A": "detecting fraudulent insertion.",
+        "B": "detecting fraudulent deletion.",
+        "C": "detecting fraudulent modification.",
+        "D": "detecting fraudulent disclosure."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Cryptography can prevent unauthorized users from being able to read or modify the data. However, it cannot prevent someone deleting the encrypted data. Modern cryptography concerns itself with the following four objectives: 1. Confidentiality (the information cannot be understood by anyone for whom it was unintended) 2. Integrity (the information cannot be altered in storage or transit between sender and intended receiver without the alteration being detected) 3. Non-repudiation (the creator/sender of the information cannot deny at a later stage his or her intentions in the creation or transmission of the information) 4. Authentication (the sender and receiver can confirm each other’s identity and the origin/destination of the information. Incorrect Answers: A: Integrity means that the information cannot be altered in storage or transit. This also means that the data is protected against fraudulent insertion. C: Integrity means that the information cannot be altered in storage or transit. This also means that the data is protected against fraudulent modification. D: Confidentiality ensures that the necessary level of secrecy is enforced at each junction of data processing and prevents unauthorized disclosure."
+    },
+    {
+      "id": 198,
+      "question": "What is the difference between the OCSP (Online Certificate Status Protocol) and a Certificate Revocation List (CRL)?",
+      "options": {
+        "A": "The OCSP (Online Certificate Status Protocol) provides real-time certificate checks and a Certificate Revocation List (CRL) has a delay in the updates.",
+        "B": "The OCSP (Online Certificate Status Protocol) is a proprietary certificate mechanism developed by Microsoft and a Certificate Revocation List (CRL) is an open standard.",
+        "C": "The OCSP (Online Certificate Status Protocol) is used only by Active Directory and a Certificate Revocation List (CRL) is used by Certificate Authorities",
+        "D": "The OCSP (Online Certificate Status Protocol) is a way to check the attributes of a certificate and a Certificate Revocation List (CRL) is used by Certificate Authorities."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The CA is responsible for creating and handing out certificates, maintaining them, and revoking them if necessary. Revocation is handled by the CA, and the revoked certificate information is stored on a certificate revocation list (CRL). This is a list of every certificate that has been revoked. This list is maintained and updated periodically. Online Certificate Status Protocol (OCSP) is being used more and more rather than the cumbersome CRL approach. When using just a CRL, the user’s browser must either check a central CRL to find out if the certification has been revoked or the CA has to continually push out CRL values to the clients to ensure they have an updated CRL. If OCSP is implemented, it does this work automatically in the background. It carries out real-time validation of a certificate and reports back to the user whether the certificate is valid, invalid, or unknown. OCSP checks the CRL that is maintained by the CA. So the CRL is still being used, but now we have a protocol developed specifically to check the CRL during a certificate validation process. Incorrect Answers: B: The OCSP (Online Certificate Status Protocol) is not a proprietary certificate mechanism developed by Microsoft; it is an open standard. C: The OCSP (Online Certificate Status Protocol) is not used only by Active Directory. D: The OCSP (Online Certificate Status Protocol) is not a way to check the attributes of a certificate; it is a way to check the revocation status of a certificate."
+    },
+    {
+      "id": 199,
+      "question": "Which of the following is BEST at defeating frequency analysis?",
+      "options": {
+        "A": "Substitution cipher",
+        "B": "Polyalphabetic cipher",
+        "C": "Transposition cipher",
+        "D": "Ceasar cipher"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A polyalphabetic cipher makes use of more than one alphabet to conquer frequency analysis. Incorrect Answers: A, C: Substitution and transposition ciphers are susceptible to attacks that perform frequency analysis. D: The Ceasar Cipher is a type of substitution cipher."
+    },
+    {
+      "id": 200,
+      "question": "A code, as is pertains to cryptography:",
+      "options": {
+        "A": "is a generic term for encryption.",
+        "B": "is specific to substitution ciphers.",
+        "C": "deals with linguistic units.",
+        "D": "is specific to transposition ciphers."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Historically, a code refers to a cryptosystem that deals with linguistic units: words, phrases, sentences, and so forth. For example, the word “OCELOT” might be the ciphertext for the entire phrase “TURN LEFT 90 DEGREES,” the word “LOLLIPOP” might be the ciphertext for “TURN RIGHT 90 DEGREES”. Codes are only useful for specialized circumstances where the message to transmit has an already defined equivalent ciphertext word. Incorrect Answers: A: A code is not a generic term for encryption. B: A code is not specific to substitution ciphers. D: A code is not a specific to transposition ciphers."
+    }
+  ]
+}

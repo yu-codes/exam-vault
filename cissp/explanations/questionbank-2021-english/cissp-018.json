@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q851 - Q900",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 851,
+      "question": "In the OSI/ISO model, at what layer are some of the SLIP, CSLIP, PPP control functions are provided?",
+      "options": {
+        "A": ") Link",
+        "B": ") Transport",
+        "C": ") Presentation",
+        "D": ") Application"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 852,
+      "question": "The OSI model contains seven layers. TCP/IP is generally accepted as having how many layers?",
+      "options": {
+        "A": ") four",
+        "B": ") five",
+        "C": ") six",
+        "D": ") eight"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The TCP/IP Protocol Model is similar to the OSI model, but it defines only the following four layers instead of seven: Application Layer, Host-to-Host Transport Layer, Internet Layer, Network Access or Link Layer. Pg. 84 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 853,
+      "question": "Which of the following layers provides end-to-end service?",
+      "options": {
+        "A": ") Network Layer",
+        "B": ") Link Layer",
+        "C": ") Transport Layer",
+        "D": ") Presentation Layer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Session services located in the Transport Layer both segment and reassemble the data from upper-layer applications and unite it onto the same data stream, which provides end-to-end data transport services and establishes a logical connection between the sending host and destination host on a network. Pg. 82 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 854,
+      "question": "Both TCP and UDP use port numbers of what length?",
+      "options": {
+        "A": ") 32 bits",
+        "B": ") 16 bits",
+        "C": ") 8 bits",
+        "D": ") 4 bits"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 855,
+      "question": "Which one of the following is an effective communications error-control technique usually implemented in software?",
+      "options": {
+        "A": "Redundancy check",
+        "B": "Packet filtering",
+        "C": "Packet checksum",
+        "D": "Bit stuffing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 856,
+      "question": "What is the proper term to refer to a single unit of TCP data at the transport layer?",
+      "options": {
+        "A": ") TCP segment",
+        "B": ") TCP datagram",
+        "C": ") TCP frame",
+        "D": ") TCP packet"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The data package created at the transport layer, which encapsulates the Application layer message is called a segment if it comes from TCP/IP.\" Pg. 27 Pg. 55 Casad: Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 857,
+      "question": "Each data packet is assigned the IP address of the sender and the IP address of the:",
+      "options": {
+        "A": ") recipient",
+        "B": ") host",
+        "C": ") node",
+        "D": ") network"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 858,
+      "question": "Both TCP and UDP use port numbers of what length?",
+      "options": {
+        "A": ") 32 bits",
+        "B": ") 16 bits",
+        "C": ") 8 bits",
+        "D": ") 4 bits"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "2 to 16th power = 65,536 \"TCP and UDP each have 65,536 ports\". Pg 75 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 859,
+      "question": "Which of the following type of packets can *easily* be denied with a stateful packet filter?",
+      "options": {
+        "A": ") ICMP",
+        "B": ") TCP",
+        "C": ") UDP",
+        "D": ") IP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 860,
+      "question": "Which ports are the \"Register ports\", registered by the IANA?",
+      "options": {
+        "A": ") Ports 128 to 255",
+        "B": ") Ports 1024 to 49151",
+        "C": ") Ports 1023 to 65535",
+        "D": ") Ports 1024 to 32767"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"The User (Registered) Ports are those from 1024 through 49151.\" http://www.iana.org/numbers.htm#P"
+    },
+    {
+      "id": 861,
+      "question": "What protocol was UDP based and mainly intended to provide validation of dial up user login passwords?",
+      "options": {
+        "A": "PPTP",
+        "B": "L2TP",
+        "C": "IPSec",
+        "D": "TACACS"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The original TACACS protocol was developed by BBN for MILNET. It was UDP based and mainly intended to provide validation of dial up user login passwords. The TACACS protocol was formally specified, but the spec is not generally available."
+    },
+    {
+      "id": 862,
+      "question": "On which port is POP3 usually run?",
+      "options": {
+        "A": ") 110",
+        "B": ") 109",
+        "C": ") 139",
+        "D": ") 119"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 863,
+      "question": "The primary function of this protocol is to send messages between network devices regarding the health of the network:",
+      "options": {
+        "A": ") Internet Control Message Protocol (ICMP)",
+        "B": ") Reverse Address Resolution Protocol (RARP)",
+        "C": ") Address Resolution Protocol (AR)",
+        "D": ") Internet Protocol (IP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 864,
+      "question": "Telnet and rlogin use which protocol?",
+      "options": {
+        "A": ") UDP",
+        "B": ") SNMP",
+        "C": ") TCP",
+        "D": ") IGP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 865,
+      "question": "The IP header contains a protocol field. If this file contains the value of 2, what type of data is contained within the IP datagram?",
+      "options": {
+        "A": ") TCP",
+        "B": ") ICMP",
+        "C": ") UDP",
+        "D": ") IGMP"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 866,
+      "question": "The IP header contains a protocol field. If this field contains the value of 17, what type of data is contained within the ip datagram?",
+      "options": {
+        "A": ") TCP",
+        "B": ") ICMP",
+        "C": ") UDP",
+        "D": ") IGMP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "ICMP = 1 TCP = 6 UDP = 17 Pg. 55 Casad: Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 867,
+      "question": "Why do some sites choose not to implement Trivial File Transfer Protocol (TFTP)?",
+      "options": {
+        "A": ") list restrictions",
+        "B": ") inherent security risks",
+        "C": ") user authentication requirement",
+        "D": ") directory restriction"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 868,
+      "question": "The IP header contains a protocol field. If this field contains the value of 6, what type of data is contained within the ip datagram?",
+      "options": {
+        "A": ") TCP",
+        "B": ") ICMP",
+        "C": ") UDP",
+        "D": ") IGMP"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "ICMP = 1 TCP = 6 UDP = 17 Pg. 55 Casad: Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 869,
+      "question": "Which of the following is not a basic security service defined by the OSI?",
+      "options": {
+        "A": ") Routing control",
+        "B": ") Authentication",
+        "C": ") Data Confidentiality",
+        "D": ") Logging and monitoring"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 870,
+      "question": "Which of the following is not an OSI architecture-defined broad category of security standards?",
+      "options": {
+        "A": ") Security techniques standards",
+        "B": ") Layer security protocol standards",
+        "C": ") Application-specific security",
+        "D": ") Firewall security standards"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 871,
+      "question": "Which one of the following is the Open Systems Interconnection (OSI) protocol for message handling?",
+      "options": {
+        "A": "X.25",
+        "B": "X.400",
+        "C": "X.500",
+        "D": "X.509"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "An ISO and ITU standard for addressing and transporting e-mail messages. It conforms to layer 7 of the OSI model and supports several types of transport mechanisms, including Ethernet, X.25, TCP/IP, and dial-up lines. - http://www.webopedia.com/TERM/X/X_400.html"
+    },
+    {
+      "id": 872,
+      "question": "The IP header contains a protocol field. If this field contains the value of 1, what type of data is contained within the IP datagram?",
+      "options": {
+        "A": ") TCP",
+        "B": ") ICMP",
+        "C": ") UDP",
+        "D": ") IGMP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "ICMP = 1 TCP = 6 UDP = 17 Pg. 55 Casad: Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 873,
+      "question": "Which of the following is true?",
+      "options": {
+        "A": ") TCP is connection-oriented. UDP is not",
+        "B": ") UDP provides for Error Correction. TCP does not.",
+        "C": ") UDP is useful for longer messages",
+        "D": ") UDP guarantees delivers of data. TCP does not guarantee delivery of data."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 874,
+      "question": "What works as an E-mail message transfer agent?",
+      "options": {
+        "A": ") SMTP",
+        "B": ") SNMP",
+        "C": ") S-RPC",
+        "D": ") S/MIME"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 875,
+      "question": "A common way to create fault tolerance with leased lines is to group several T-1's together with an inverse multiplexer placed:",
+      "options": {
+        "A": ") at one end of the connection",
+        "B": ") at both ends of the connection",
+        "C": ") somewhere between both end points",
+        "D": ") in the middle of the connection"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 876,
+      "question": "Several methods provide telecommunications continuity, which of the following is a method of routing traffic through split cable or duplicate cable facilities?",
+      "options": {
+        "A": ") diverse routing",
+        "B": ") alternative routing",
+        "C": ") last mile circuit protection",
+        "D": ") long haul network diversity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 877,
+      "question": "Which of the following is the primary security feature of a proxy server?",
+      "options": {
+        "A": ") Client hiding",
+        "B": ") URL blocking",
+        "C": ") Route blocking",
+        "D": ") Content filtering"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 878,
+      "question": "Which of the following Common Data Network Services is used to send and receive email internally or externally through an email gateway device?",
+      "options": {
+        "A": ") File services",
+        "B": ") Mail services",
+        "C": ") Print Services",
+        "D": ") Client/Server services"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 879,
+      "question": "Which one of the following is a technical solution for the quality of service, speed, and security problems facing the Internet?",
+      "options": {
+        "A": "Random Early Detection (RED) queuing",
+        "B": "Multi-protocol label-switching (MPLS)",
+        "C": "Public Key Cryptography Standard (PKCS)",
+        "D": "Resource Reservation Protocol (RSVP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The original answer to this question was RED however I think this is incorrect because of this reason. Both Red and MPLS deal with qos/cos issues, there by increasing speed. Mpls more so the RED. However I have not been able to find any documents that state RED is a security implementation while MPLS is heavy used in the ISP VPN market. See this link for MPLS security http://www.nwfusion.com/research/2001/0521feat2.html Below are the link that are formation of the ration for this answer of B (MPLS) Congestion avoidance algorithm in which a small percentage of packets are dropped when congestion is detected and before the queue in question overflows completely http://www.cisco.com/univercd/cc/td/doc/cisintwk/ita/r12.htm Multiprotocol Label Switching. Switching method that forwards IP traffic using a label. This label instructs the routers and the switches in the network where to forward the packets based on preestablished IP routing information http://www.cisco.com/univercd/cc/td/doc/cisintwk/ita/m12.htm Resource Reservation Protocol. Protocol that supports the reservation of resources across an IP network. Applications running on IP end systems can use RSVP to indicate to other nodes the nature (bandwidth, jitter, maximum burst, and so on) of the packet streams they want to receive. RSVP depends on IPv6. Also known as Resource Reservation Setup Protocol. http://www.cisco.com/univercd/cc/td/doc/cisintwk/ita/r12.htm Random Early Detection (RED) is the recommended approach for queue congestion management in routers (Braden et al., 1998). Although in its basic form RED can be implemented in a relatively short C program, as the speed of ports and the number of queues per port increase, the implementation moves more and more into hardware. Different vendors choose different ways to implement and support RED in their silicon implementations. The degree of programmability, the number of queues, the granularity among queues, and the calculation methods of the RED parameters all vary from implementation to implementation. Some of these differences are irrelevant to the behavior of the algorithm-and hence to the resulting network behavior. Some of the differences, however, may result in a very different behavior of the RED algorithm-and hence of the network efficiency. http://www.cisco.com/en/US/products/hw/routers/ps167/products_white_paper09186a0080091fe4.shtml Based on label swapping, a single forwarding mechanism provides opportunities for new control paradigms and applications. MPLS Label Forwarding is performed with a label lookup for an incoming label, which is then swapped with the outgoing label and finally sent to the next hop. Labels are imposed on the packets only once at the edge of the MPLS network and removed at the other end. These labels are assigned to packets based on groupings or forwarding equivalence classes (FECs). Packets belonging to the same FEC get similar treatment. The label is added between the Layer 2 and the Layer 3 header (in a packet environment) or in the virtual path identifier/virtual channel identifier (VPI/VCI) field (in ATM networks). The core network merely reads labels, applies appropriate services, and forwards packets based on the labels. This MPLS lookup and forwarding scheme offers the ability to explicitly control routing based on destination and source addresses, allowing easier introduction of new IP services. http://www.cisco.com/warp/public/cc/pd/iosw/prodlit/xlsw_ds.htm"
+    },
+    {
+      "id": 880,
+      "question": "How do you distinguish between a bridge and a router?",
+      "options": {
+        "A": "The router connects two networks at the data-link layer, while bridge connects two networks at the network layer",
+        "B": "The bridge connects two networks at the data-link layer, while router connects two networks at the network layer",
+        "C": "It is not possible to distinguish them. They have the same funcationality."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 881,
+      "question": "Why should you avoid having two routers connect your trusted internal LAN to your demilitarized zone?",
+      "options": {
+        "A": ") Network congestion might cause the routers to pass data from your private network through the demilitarized zone",
+        "B": ") This provides attackers with multiple paths to access your trusted network",
+        "C": ") There is a substantial increase in cost with only a nominal increase in security",
+        "D": ") You may overlook an attack on one of your routers because your data still teaches the outside world from your other router"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 882,
+      "question": "In the days before CIDR (Classless Internet Domain Routing), networks were commonly organized by classes. Which of the following would have been true of a Class B network?",
+      "options": {
+        "A": ") The first bit of the ip address would be set to zero",
+        "B": ") The first bit of the ip address would be set to one and the second bit set to zero",
+        "C": ") The first two bits of an ip address would be set to one, and the third bit set to zero",
+        "D": ") The first three bits of the ip address would be set to one"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 883,
+      "question": "Which of the following is an ip address that is private (i.e. reserved for internal networks, and not a valid address to use on the internet)?",
+      "options": {
+        "A": ") 172.5.42.5",
+        "B": ") 172.76.42.5",
+        "C": ") 172.90.42.5",
+        "D": ") 172.16.42.5"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The Internet Assigned Numbers Authority (IANA) has reserved the following three blocks of the IP address space for private Internets - 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255- that are known as \"global non-routable addresses.\"\" Pg. 94 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 884,
+      "question": "Which of the following is an ip address that is private (i.e. reserved for internal networks, and not a valid address to use on the internet)?",
+      "options": {
+        "A": ") 10.0.42.5",
+        "B": ") 11.0.42.5",
+        "C": ") 12.0.42.5",
+        "D": ") 13.0.42.5"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Internet Assigned Numbers Authority (IANA) has reserved the following three blocks of the IP address space for private Internets - 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255- that are known as \"global non-routable addresses.\"\" Pg. 94 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 885,
+      "question": "Which of the following is an ip address that is private (i.e. reserved for internal networks, and not a valid address to use on the internet)?",
+      "options": {
+        "A": ") 172.12.42.5",
+        "B": ") 172.140.42.5",
+        "C": ") 172.31.42.5",
+        "D": ") 172.15.45.5"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Internet Assigned Numbers Authority (IANA) has reserved the following three blocks of the IP address space for private Internets - 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255- that are known as \"global non-routable addresses.\"\" Pg. 94 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 886,
+      "question": "In the days before CIDR (Classless Internet Domain Routing), networks were commonly organized by classes. Which of the following would have been true of a Class C network?",
+      "options": {
+        "A": ") The first bit of the ip address would be set to zero",
+        "B": ") The first bit of the ip address would be set to one and the second bit set to zero",
+        "C": ") The first two bits of the ip address would be set to one, and the third bit set to zero",
+        "D": ") The first three bits of the ip address would be set to one"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Pg. 80 Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 887,
+      "question": "Which of the following is an ip address that is private (i.e. reserved for internal networks, and not a valid address to use on the Internet)?",
+      "options": {
+        "A": ") 192.168.42.5",
+        "B": ") 192.166.42.5",
+        "C": ") 192.175.42.5",
+        "D": ") 172.1.42.5"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 888,
+      "question": "How long are IPv4 addresses:",
+      "options": {
+        "A": ") 32 bits long",
+        "B": ") 64 bits long",
+        "C": ") 128 bits long",
+        "D": ") 16 bits long"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Ipv4 user 32 bits for addresses, and Ipv6 user 128 bits; thus v6 provide more possible addresses to work with.\" Pg 331 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 889,
+      "question": "ARP and RARP map between which of the following?",
+      "options": {
+        "A": ") DNS addresses and IP addresses",
+        "B": ") 32-bit hardware addresses and 48-bit IPv6 addresses",
+        "C": ") 32-bit hardware addresses and 48-bit IPv4 addresses",
+        "D": ") 32-bit addresses in IPv4 and 48-bit hardware addresses"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "An Ethernet address is a 48-bit address that is hard-wired into the NIC of the network node. ARP matches up the 32-bit IP address with this hardware address, which is technically referred to as the Media Access Control (MAC) address or the physical address. Pg. 87 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 890,
+      "question": "Which protocol matches an Ethernet address to an Internet Protocol (IP) address?",
+      "options": {
+        "A": ") Address Resolution Protocol (ARP)",
+        "B": ") Reverse Address Resolution Protocol (RARP)",
+        "C": ") Internet Control Message Protocol (ICMP)",
+        "D": ") User Datagram Protocol (UDP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"As with ARP, Reverse Address Resolution Protocol (RARP) frames go to all systems on the subnet, but only the RARP server responds. Once the RARP server receives this request, it looks in its table to see which IP address matches the broadcast hardware address. The server then sends a message back to the requesting computer that contains its IP address. The system now has an IP address and can function on the network.\" Pg 357 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 891,
+      "question": "In a typical firewall configuration, what is the central host in organization's network security?",
+      "options": {
+        "A": "Stateful",
+        "B": "Screen",
+        "C": "Gateway",
+        "D": "Bastion"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Bastion Host: A system that has been hardened to resist attack at some critical point of entry, and which is installed on a network in such a way that it is expected to come under attack. Bastion hosts are often components of firewalls, or may be 'outside\" Web servers or public access systems. Generally, a bastion host is running some form of general purpose operating system (e.g., LNIX, VMS, WNT, etC.) rather than a ROM-based or firmware operating system. http://www.securesynergy.com/library/articles/it_glossary/glossary_b.php"
+    },
+    {
+      "id": 892,
+      "question": "Which one of the following describes a bastion host?",
+      "options": {
+        "A": "A physically shielded computer located in a data center or vault.",
+        "B": "A computer which maintains important data about the network.",
+        "C": "A computer which plays a critical role in a firewall configuration.",
+        "D": "A computer used to monitor the vulnerability of a network."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A bastion host or screened host is just a firewall system logically positioned between a private network and an untrusted network. - Ed Tittle CISSP Study Guide (sybex) pg 93"
+    },
+    {
+      "id": 893,
+      "question": "Which of the following statements pertaining to firewalls is incorrect?",
+      "options": {
+        "A": ") Firewalls should not run NIS (Network Information Systems)",
+        "B": ") Firewalls should mount files systems via NFS",
+        "C": ") All system logs on the firewall should log to a separate host",
+        "D": ") Compilers should be deleted from the firewall"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 894,
+      "question": "Which is the MAIN advantage of having an application gateway?",
+      "options": {
+        "A": "To perform change control procedures for applications.",
+        "B": "To provide a means for applications to move into production.",
+        "C": "To log and control incoming and outgoing traffic.",
+        "D": "To audit and approve changes to applications."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"An application-level gateway firewall is also called a proxy firewall. A proxy is a mechanism that copies packets from one network into another; the copy process also changes the sources and destination address to protect the identity of the internal or private network. An application-level gateway firewall filters traffic based on the Internet service (i.e., application) used to transmit or receive the data.\" - Shon Harris All-in-one CISSP Certification Guide pg 92"
+    },
+    {
+      "id": 895,
+      "question": "Which process on a firewall makes permit/deny forwarding decisions based solely on address and service port information?",
+      "options": {
+        "A": "Circuit Proxy",
+        "B": "Stateful Packet Inspection Proxy",
+        "C": "Application Proxy",
+        "D": "Transparency Proxy"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Circuit-level proxy creates a circuit between the client computer and the server. It does not understand or care about the higher-level issues that an application-level proxy deals with. It knows the source and destinations addresses and makes access decisions based on this information...IT looks at the data within the packet header versus the data within the payload of the packet. It does not know if the contents within the packet are actually safe or not. - Shon Harris All-in-one CISSP Certification Guide pg 419-420"
+    },
+    {
+      "id": 896,
+      "question": "A proxy based firewall has which one of the following advantages over a firewall employing stateful packet inspection?",
+      "options": {
+        "A": "It has a greater throughput.",
+        "B": "It detects intrusion faster.",
+        "C": "It has greater network isolation.",
+        "D": "It automatically configures the rule set."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 897,
+      "question": "Firewalls filter incoming traffic according to",
+      "options": {
+        "A": "The packet composition.",
+        "B": "A security policy.",
+        "C": "Stateful packet rules.",
+        "D": "A security process."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 898,
+      "question": "Application Level Firewalls create:",
+      "options": {
+        "A": ") a real circuit between the workstation client and the server",
+        "B": ") a virtual circuit between the workstation client and the server",
+        "C": ") a imaginary circuit between the workstation guest and the server",
+        "D": ") a temporary circuit between the workstation host and the server"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 899,
+      "question": "Which of the following is the biggest concern with firewall security?",
+      "options": {
+        "A": ") Internal hackers",
+        "B": ") Complex configuration rules leading to misconfiguration",
+        "C": ") Buffer overflows",
+        "D": ") Distributed denial of service (DDOS) attacks"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 900,
+      "question": "Which of the following is true of network security?",
+      "options": {
+        "A": ") A firewall is not a necessity in today's connected world",
+        "B": ") A firewall is a necessity in today's connected world",
+        "C": ") A whitewall is a necessity in today's connected world",
+        "D": ") A black firewall is a necessity in today's connected world"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

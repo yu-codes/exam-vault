@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q101 - Q150",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 101,
+      "question": "A server farm is an example of:",
+      "options": {
+        "A": ") Server clustering",
+        "B": ") Redundant servers",
+        "C": ") Multiple servers",
+        "D": ") Server fault tolerance"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 102,
+      "question": "In which state must a computer system operate to process input/output instructions?",
+      "options": {
+        "A": "User mode",
+        "B": "Stateful inspection",
+        "C": "Interprocess communication",
+        "D": "Supervisor mode"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A computer is in a supervisory state when it is executing these privileged instructions. (privileged instructions are executed by the system administrator or by an individual who is authorized to use those instructions.) . -Ronald Krutz The CISSP PREP Guide (gold edition) pg 254-255"
+    },
+    {
+      "id": 103,
+      "question": "What should be the size of a Trusted Computer Base?",
+      "options": {
+        "A": "Small - in order to permit it to be implemented in all critical system components without using excessive resources.",
+        "B": "Small - in order to facilitate the detailed analysis necessary to prove that it meets design requirements.",
+        "C": "Large - in order to accommodate the implementation of future updates without incurring the time and expense of recertification.",
+        "D": "Large - in order to enable it to protect the potentially large number of resources in a typical commercial system environment."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"It must be small enough to be able to be tested and verified in a complete and comprehensive manner.\" Shon Harris All-In-One CISSP Certification Guide pg. 232-233."
+    },
+    {
+      "id": 104,
+      "question": "Which one of the following are examples of security and controls that would be found in a \"trusted\" application system?",
+      "options": {
+        "A": "Data validation and reliability",
+        "B": "Correction routines and reliability",
+        "C": "File integrity routines and audit trail",
+        "D": "Reconciliation routines and data labels"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I have no specific reference for this question but the major resources hammer that there needs to be methods to check the data for correctness."
+    },
+    {
+      "id": 105,
+      "question": "Which of the following is an operating system security architecture that provides flexible support for security policies?",
+      "options": {
+        "A": "OSKit",
+        "B": "LOMAC",
+        "C": "SE Linux",
+        "D": "Flask"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Flask is an operating system security architecture that provides flexible support for security policies. The architecture was prototyped in the Fluke research operating system. Several of the Flask interfaces and components were then ported from the Fluke prototype to the OSKit. The Flask architecture is now being implemented in the Linux operating system (Security-Enhanced Linux) to transfer the technology to a larger developer and user community."
+    },
+    {
+      "id": 106,
+      "question": "Which of the following statements pertaining to the security kernel is incorrect?",
+      "options": {
+        "A": ") It is made up of mechanisms that fall under the TCB and implements and enforces the reference monitor concept.",
+        "B": ") It must provide isolation for the processes carrying out the reference monitor concept and they must be tamperproof",
+        "C": ") It must be small enough to be able to be tested and verified in a complete and comprehensive manner",
+        "D": ") Is an access control concept, not an actual physical component"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 107,
+      "question": "What is a PRIMARY reason for designing the security kernel to be as small as possible?",
+      "options": {
+        "A": "The operating system cannot be easily penetrated by users.",
+        "B": "Changes to the kernel are not required as frequently.",
+        "C": "Due to its compactness, the kernel is easier to formally verify.",
+        "D": "System performance and execution are enhanced."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I disagree with the original answer which was B (changes to the kernel) and think it is C (Due to its compactness). However, use your best judgment based on knowledge and experience. Below is why I think it is C. \"There are three main requirements of the security kernel: It must provide isolation for the processes carrying out the reference monitor concept and they must be tamperproof. The reference monitor must be invoked for every access attempt and must be impossible to circumvent. Thus the reference monitor must be implemented in a complete and foolproof way. à It must be small enough to be able to be tested and verified in a complete and comprehensive manner.\" - Shon Harris All-in-one CISSP Certification Guide pg 232-233"
+    },
+    {
+      "id": 108,
+      "question": "Which of the following implements the authorized access relationship between subjects and objects of a system?",
+      "options": {
+        "A": "Security model",
+        "B": "Reference kernel",
+        "C": "Security kernel",
+        "D": "Information flow model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 109,
+      "question": "The concept that all accesses must be meditated, protected from modification, and verifiable as correct is the concept of",
+      "options": {
+        "A": "Secure model",
+        "B": "Security locking",
+        "C": "Security kernel",
+        "D": "Secure state"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A security kernel is defined as the hardware, firmware, and software elements of a trusted computing base that implements the reference monitor concept. A reference monitor is a system component that enforces access controls on an object. Therefore, the reference monitor concept is an abstract machine that mediates all access of subjects to objects. The Security Kernel must: Mediate all accesses Be protected from modification Be verified as correct. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 262"
+    },
+    {
+      "id": 110,
+      "question": "What is an error called that causes a system to be vulnerable because of the environment in which it is installed?",
+      "options": {
+        "A": ") Configuration error",
+        "B": ") Environmental error",
+        "C": ") Access validation error",
+        "D": ") Exceptional condition handling error"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 111,
+      "question": "Which of the following ensures that security is not breached when a system crash or other system failure occurs?",
+      "options": {
+        "A": ") trusted recovery",
+        "B": ") hot swappable",
+        "C": ") redundancy",
+        "D": ") secure boot"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Trusted Recovery When an operating system or application crashes or freezes, it should not put the sytem in any time of secure state.\" Pg 762 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 112,
+      "question": "What type of subsystem is an application program that operates outside the operating system and carries out functions for a group of users, maintains some common data for all users in the group, and protects the data from improper access by users in the group?",
+      "options": {
+        "A": "Prevented subsystem",
+        "B": "Protected subsystem",
+        "C": "File subsystem",
+        "D": "Directory subsystem"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 113,
+      "question": "A 'Pseudo flaw' is which of the following?",
+      "options": {
+        "A": ") An apparent loophole deliberately implanted in an operating system",
+        "B": ") An omission when generating Pseudo-code",
+        "C": ") Used for testing for bounds violations in application programming",
+        "D": ") A Normally generated page fault causing the system halt"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 114,
+      "question": "Which of the following yellow-book defined types of system recovery happens after a system fails in an uncrontrolled manner in response to a TCB or media failure and the system cannot be brought to a consistent state?",
+      "options": {
+        "A": ") Recovery restart",
+        "B": ") System reboot",
+        "C": ") Emergency system restart",
+        "D": ") System Cold start"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"Emergency system restart is done after a system fails in an uncontrolled manner in response to a TCB or media failure. In such cases, TCB and user objects on nonvolatile storage belonging to processes active at the time of TCB or media failure may be left in an inconsistent state. The system enters maintenance mode, recovery is performed automatically, and the system restarts with no user processes in progress after bringing up the system in a consistent state.\""
+    },
+    {
+      "id": 115,
+      "question": "Which one of the following describes a reference monitor?",
+      "options": {
+        "A": "Access control concept that refers to an abstract machine that mediates all accesses to objects by subjects.",
+        "B": "Audit concept that refers to monitoring and recording of all accesses to objects by subjects.",
+        "C": "Identification concept that refers to the comparison of material supplied by a user with its reference profile.",
+        "D": "Network control concept that distributes the authorization of subject accesses to objects."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A reference monitor is a system component that enforces access controls on an object. Therefore, the reference monitor concept is an abstract machine that mediates all access of subjects to objects -Ronald Krutz The CISSP PREP Guide (gold edition) pg 262"
+    },
+    {
+      "id": 116,
+      "question": "What can best be described as an abstract machine which must mediate all access to subjects to objects?",
+      "options": {
+        "A": ") A security domain",
+        "B": ") The reference monitor",
+        "C": ") The security kernel",
+        "D": ") The security perimeter"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 882 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 117,
+      "question": "What is the PRIMARY component of a Trusted Computer Base?",
+      "options": {
+        "A": "The computer hardware",
+        "B": "The security subsystem",
+        "C": "The operating system software",
+        "D": "The reference monitor"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"The security kernel is made up of hardware, software, and firmware components that fall within the TCB and implements and enforces the reference monitor concept. The security kernel mediates all access and functions between subjects and objects. The security kernel is the core of the TCB and is the most commonly used approach to building trusted computing systems. There are three main requirements of the security kernel: It must provide isolation for the processes carrying out the reference monitor concept, and the processes must be tamperproof. It must be invoked for every access attempt and must be impossible to circumvent. Thus, the security kernel must be implemented in a complete and foolproof way. It must be samall enough to be able to be tested and verified in a complete and comprehensive manner. These are the requirements of the reference monitor; therefor,they are the requirements of the components that provide and enforce the reference monitor concept-the security kernel.\" - Shon Harris, \"CISSP All-in-One Exam Guide\", 3rd Ed, p"
+    },
+    {
+      "id": 118,
+      "question": "Which of the following is best defined as a mode of system termination that automatically leaves system processes and components in a secure state when a failure occurs or is detected in the system?",
+      "options": {
+        "A": ") Fail proof",
+        "B": ") Fail soft",
+        "C": ") Fail safe",
+        "D": ") Fail resilient"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 119,
+      "question": "LOMAC uses what Access Control method to protect the integrity of processes and data?",
+      "options": {
+        "A": "Linux based EFS.",
+        "B": "Low Water-Mark Mandatory Access Control.",
+        "C": "Linux based NFS.",
+        "D": "High Water-Mark Mandatory Access Control."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: LOMAC is a security enhancement for Linux that uses Low Water-Mark Mandatory Access Control to protect the integrity of processes and data from viruses, Trojan horses, malicious remote users and compromised root daemons. LOMAC is implemented as a loadable kernel module - no kernel recompilations or changes to existing applications are required. Although not all the planned features are currently implemented, it presently provides sufficient protection to thwart script-kiddies, and is stable enough for everyday use."
+    },
+    {
+      "id": 120,
+      "question": "On Linux, LOMAC is implemented as:",
+      "options": {
+        "A": "Virtual addresses",
+        "B": "Registers",
+        "C": "Kernel built in functions",
+        "D": "Loadable kernel module"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: LOMAC is a security enhancement for Linux that uses Low Water-Mark Mandatory Access Control to protect the integrity of processes and data from viruses, Trojan horses, malicious remote users and compromised root daemons. LOMAC is implemented as a loadable kernel module - no kernel recompilations or changes to existing applications are required. Although not all the planned features are currently implemented, it presently provides sufficient protection to thwart script-kiddies, and is stable enough for everyday use. \"Security Kernel - The hardware, firmware, and software elements of a trusted computing base (TCB) that implements the reference monitor concept. It must mediate all accesses between subjects and objects, be protected from modification, and be verifiable as correct.\" - Shon Harris All-in-one CISSP Certification Guide pg 355"
+    },
+    {
+      "id": 121,
+      "question": "LOMAC is a security enhancement for what operating system?",
+      "options": {
+        "A": "Linux",
+        "B": "Netware",
+        "C": "Solaris"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: LOMAC is a security enhancement for Linux that uses Low Water-Mark Mandatory Access Control to protect the integrity of processes and data from viruses, Trojan horses, malicious remote users and compromised root daemons. LOMAC is implemented as a loadable kernel module - no kernel recompilations or changes to existing applications are required. Although not all the planned features are currently implemented, it presently provides sufficient protection to thwart script-kiddies, and is stable enough for everyday use."
+    },
+    {
+      "id": 122,
+      "question": "What was introduced for circumventing difficulties in classic approaches to computer security by limiting damages produces by malicious programs?",
+      "options": {
+        "A": "Integrity-preserving",
+        "B": "Ref Mon",
+        "C": "Integrity-monitoring",
+        "D": "Non-Interference"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"reference monitor ... mediates all access subjects have to objects ... protect the objects from unauthorized access and destructive modification\" , Ibid p 273 Reference monitor is part of the TCB concept Not D: \"noninterference ... is implemented to ensure that any actions that take place at a higher security level do not affect ... actions that take place at a lower level\", Harris, 3rd Ed, p 290. It is part of the information flow model."
+    },
+    {
+      "id": 123,
+      "question": "A feature deliberately implemented in an operating system as a trap for intruders is called a:",
+      "options": {
+        "A": "Trap door",
+        "B": "Trojan horse",
+        "C": "Pseudo flaw",
+        "D": "Logic bomb"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"An apparent loophole deliberately implanted in an operating system program as a trap for intruders.\" As defined by the Aqua Book NCSC-TG-004 a pseudo-flaw is an apparent loophole deliberately implanted in an operating system program as a trap for intruders. Answer from http://www.cccure.org"
+    },
+    {
+      "id": 124,
+      "question": "Fault tolerance countermeasures are designed to combat threats to",
+      "options": {
+        "A": ") an uninterruptible power supply",
+        "B": ") backup and retention capability",
+        "C": ") design reliability",
+        "D": ") data integrity"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 125,
+      "question": "A 'Psuedo flaw' is which of the following?",
+      "options": {
+        "A": ") An apparent loophole deliberately implanted in an operating system program as a trap for intruders",
+        "B": ") An omission when generating Psuedo-code",
+        "C": ") Used for testing for bounds violations in application programming",
+        "D": ") A normally generated page fault causing the system to halt"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 126,
+      "question": "What Distributed Computing Environment (DCE) component provides a mechanism to ensure that services are made available only to properly designated parties?",
+      "options": {
+        "A": "Directory Service",
+        "B": "Remote Procedure Call Service",
+        "C": "Distributed File Service",
+        "D": "Authentication and Control Service"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A directory service has a hierarchical database of users, computers, printers, resources, and attributes of each. The directory is mainly used for lookup operations, which enable users to track down resources and other users...The administrator can then develop access control, security, and auditing policies that dictate who can access these objects, how the objects can be accessed, and audit each of these actions. - Shon Harris All-in-one CISSP Certification Guide pg 436-437"
+    },
+    {
+      "id": 127,
+      "question": "What can be accomplished by storing on each subject a list of rights the subject has for every object?",
+      "options": {
+        "A": "Object",
+        "B": "Capabilities",
+        "C": "Key ring",
+        "D": "Rights"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Capabilities are accomplished by storing on each subject a list of rights the subject has for every object. This effectively gives each user a key ring. To remove access to a particular object, every user (subject) that has access to it must be \"touched\". A touch is an examination of a user's rights to that object and potentially removal of rights. This brings back the problem of sweeping changes in access rights."
+    },
+    {
+      "id": 128,
+      "question": "In the Information Flow Model, what relates two versions of the same object?",
+      "options": {
+        "A": "Flow",
+        "B": "State",
+        "C": "Transformation",
+        "D": "Successive points"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A flow is a type of dependency that relates two versions of the same object, and thus the transformation of one state of that object into another, at successive points in time."
+    },
+    {
+      "id": 129,
+      "question": "What is a security requirement that is unique to Compartmented Mode Workstations (CMW)?",
+      "options": {
+        "A": ") Sensitivity Labels",
+        "B": ") Object Labels",
+        "C": ") Information Labels",
+        "D": ") Reference Monitors"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 130,
+      "question": "The Common Criteria (CC) represents requirements for IT security of a product or system under which distinct categories?",
+      "options": {
+        "A": "Functional and assurance",
+        "B": "Protocol Profile (PP) and Security Target (ST)",
+        "C": "Targets of Evaluation (TOE) and Protection Profile (PP)",
+        "D": "Integrity and control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Like other evaluation criteria before it, Common Criteria works to answer two basic and general questions about products being evaluated: what does it do (functionality), and how sure are you of that (assurance)?\" pg 232 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 131,
+      "question": "What are the assurance designators used in the Common Criteria (CC)?",
+      "options": {
+        "A": "EAL 1, EAL 2, EAL 3, EAL 4, EAL 5, EAL 6, and EAL 7",
+        "B": "A1, B1, B2, B3, C2, C1, and D",
+        "C": "E0, E1, E2, E3, E4, E5, and E6",
+        "D": "AD0, AD1, AD2, AD3, AD4, AD5, and AD6"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Original Answer was C. This is wrong in my view as the original answer confused ITSEC with the CC per the following The Common criteria terminology for the degree of examination of the product to be tested is the Evaluation Assurance level (EAL). EALs range from EA1 (functional testing to EA7 (detailed testing and formal design verification). -Ronald Krutz The CISSP PREP Guide (gold edition) pg 266-267 Note that Shon Harris All-in-one CISSP Certification Guide uses EAL (not just EA). EALs are combinations of assurance components. They also can be conveniently compared to TSCEC and ITSEC. Like these security evaluation criteria, EALs are scaled with from EAL1 through EAL7. Other EALs exist, but EAL 7 is the highest with international recognition. - Roberta Bragg Cissp Certification Training Guide (que) pg 368 ITSEC separately evaluates functionality and assurance, and it includes 10 functionality classes (f), eight assurance levels (q), seven levels of correctness (e), and eight basic security functions in its criteria. ). -Ronald Krutz The CISSP PREP Guide (gold edition) pg 266"
+    },
+    {
+      "id": 132,
+      "question": "Which of the following uses protection profiles and security targets?",
+      "options": {
+        "A": ") ITSEC",
+        "B": ") TCSEC",
+        "C": ") CTCPEC",
+        "D": ") International Standard 15408"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"For historical and continuity purposes, ISO has accepted the continued use of the term \"Common Criteria\" (CC) within this document, while recognizing the official ISO name for the new IS 15408 is \"Evaluation Criteria for Information Technology Security.\" Pg. 552 Krutz: The CISSP Prep Guide: Gold Edition \"The Common Criteria define a Protection Profile (PP), which is an implementation-independent specification of the security requirements and protections of a product that could be built. The Common Criteria terminology for the degree of examination of the product to be tested is the Evaluation Assurance Level (EAL). EALs range from EA1 (functional testing) to EA7 (detailed testing and formal design verification). The Common Criteria TOE refers to the product to be tested. A Security Target (ST) is a listing of the security claims for a particular IT security product. Also, the Common Criteria describe an intermediate grouping of security requirement components as a package.\" Pg. 266-267 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 133,
+      "question": "According to Common Criteria, what can be described as an intermediate combination of security requirement components?",
+      "options": {
+        "A": ") Protection profile (PP)",
+        "B": ") Security target (ST)",
+        "C": ") Package",
+        "D": ") The Target of Evaluation (TOE)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"The Common Criteria define a Protection Profile (PP), which is an implementation-independent specification of the security requirements and protections of a product that should be built. The Common Criteria terminology for the degree of examination of the product to be tested is the Evaluation Assurance Level (EAL.) EALs range from EA1 (functional testing() to EA7 (detailed testing and formal design verification). The Common Criteria TOE refers to the product to be tested. A Security Target (ST) is a listing of the security claims for a particular IT security product. Also, the Common Criteria describe an intermedicate grouping of security requirement components as a package.\" Pg. 266- 267 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 134,
+      "question": "The Common Criteria construct which allows prospective consumers or developers to create standardized sets of security requirements to meet there needs is",
+      "options": {
+        "A": "a Protection Profile (PP).",
+        "B": "a Security Target (ST).",
+        "C": "an evaluation Assurance Level (EAL).",
+        "D": "a Security Functionality Component Catalog (SFCC)."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Protection Profiles: The Common Criteria uses protection profiles to evaluate products. The protection profile contains the set of security requirements, their meaning and reasoning, and the corresponding EAL rating. The profile describes the environmental assumptions, the objectives, and functional and assurance level expectations. Each relevant threat is listed along with how it is to be controlled by specific objectives. It also justifies the assurance level and requirements for the strength of each protection mechanism. The protection profile provides a means for the consumer, or others, to identify specific security needs ;p this is the security problems to be conquered. EAL: An evaluation is carried out on a product and is assigned an evaluation assurance level (EAL) The thoroughness and stringent testing increases in detailed-oriented tasks as the levels increase. The Common Criteria has seven aassurance levels. The ranges go from EAL1, where the functionality testing takes place, to EAL7,where thorough testing is performed and the system is verified. All-In-One CISSP Certification Exam Guide by Shon Harris pg. 262 Note: \"The Common Criteria defines a Protection Profile (PP), which is an implementation-independent specification of the security requirements and protections of a product that could be built. The Common Criteria terminology for the degree of examination of the product to be tested is the Evaluation Assurance Level (EAL). EALs range from EA1 (functional testing) to EA7 (detailed testing and formal design verification). The Common Criteria TOE [target of evaluation] refers to the product to be tested. A Security Target (ST) is a listing of the security claims for a particular IT security product.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 266-267"
+    },
+    {
+      "id": 135,
+      "question": "The Information Technology Security Evaluation Criteria (ITSEC) was written to address which of the following that the Orange Book did not address?",
+      "options": {
+        "A": ") integrity and confidentiality",
+        "B": ") confidentiality and availability",
+        "C": ") integrity and availability",
+        "D": ") none of the above"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"ITSEC TCSEC (Orange Book) E0 D F1+E1 C1 F2+E2 C2 F3+E3 B1 F4+E4 B2 F5+E5 B3 F5+E6 A1 F6=Systems that provide high integrity F7=Systems that provide high availability F8=Systems that provide data integrity during communication F9=Systems that provide high confidentiality F10=Networks with high demands on confidentiality and integrity\" Pg. 230 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 136,
+      "question": "Which of the following was developed by the National Computer Security Center (NCSC)?",
+      "options": {
+        "A": ") TCSEC",
+        "B": ") ITSEC",
+        "C": ") DITSCAP",
+        "D": ") NIACAP"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 129 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 137,
+      "question": "The Trusted Computer Security Evaluation Criteria (TBSEC) provides",
+      "options": {
+        "A": "a basis for assessing the effectiveness of security controls built into automatic data-processing system products",
+        "B": "a system analysis and penetration technique where specifications and document for the system are analyzed.",
+        "C": "a formal static transition model of computer security policy that describes a set of access control rules.",
+        "D": "a means of restricting access to objects based on the identity of subjects and groups to which they belong."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "TBSEC provides guidelines to be used with evaluating a security product. The TBSEC guidelines address basic security functionality and allow evaluators to measure and rate the functionality of a system and how trustworthy it is. Functionality and assurance are combined and not separated, as in criteria developed later. TCSEC guidelines can be used for evaluating vendor products or by vendors to design necessary functionality into new products. CISSP Study Guide by Tittel pg. 413."
+    },
+    {
+      "id": 138,
+      "question": "Which Orange Book evaluation level is described as \"Verified Design\"?",
+      "options": {
+        "A": ") A1",
+        "B": ") B3",
+        "C": ") B2",
+        "D": ") B1"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 139,
+      "question": "Which of the following classes is defined in the TCSEC (Orange Book) as mandatory protection?",
+      "options": {
+        "A": ") B",
+        "B": ") A",
+        "C": ") C",
+        "D": ") D"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 140,
+      "question": "Which Orange Book security rating requires that formal techniques are used to prove the equivalence between the TCB specifications and the security policy model?",
+      "options": {
+        "A": ") B2",
+        "B": ") B3",
+        "C": ") A1",
+        "D": ") A2"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: Pg 226 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 141,
+      "question": "According to the Orange Book, which security level is the first to require trusted recovery?",
+      "options": {
+        "A": ") A1",
+        "B": ") B2",
+        "C": ") B3",
+        "D": ") B1"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Trusted recovery is required only for B3 and A1 level systems.\" Pg 305 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 142,
+      "question": "According to the Orange Book, which security level is the first to require a system to protect against covert timing channels?",
+      "options": {
+        "A": ") A1",
+        "B": ") B3",
+        "C": ") B2",
+        "D": ") B1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A B2 system mustmeet all the requirement of a B1 system and support hierarchical devices labels, trusted path communications between the user and the system, and covert channel analysis. Exam Cram 2pg 103 and ALL-IN-ONE CISSP Third Edition by Shon Harris pg 304. The key to this question is knowingthe difference between various system ratings and keeping in mind a higher ratedsystem have all of the same security implementations as a lower rated system. In this case both B3 and A1 systems supportcovert channelanalysis, but it isimplementedfor B2 systems."
+    },
+    {
+      "id": 143,
+      "question": "Which of the following is not an Orange Book-defined operational assurance requirement?",
+      "options": {
+        "A": ") System architecture",
+        "B": ") Trusted facility management",
+        "C": ") Configuration management",
+        "D": ") Covert channel analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 144,
+      "question": "Which of the following is least likely to be found in the Orange Book?",
+      "options": {
+        "A": ") Security policy",
+        "B": ") Documentation",
+        "C": ") Accountability",
+        "D": ") Networks and network components"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 145,
+      "question": "According to the Orange Book, which security level is the first to require a system to support separate operator and system administrator rules?",
+      "options": {
+        "A": ") A1",
+        "B": ") B1",
+        "C": ") B2",
+        "D": ") B3"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 146,
+      "question": "Which of the following is not an Orange book-defined life cycle assurance requirement?",
+      "options": {
+        "A": ") Security testing",
+        "B": ") Design specification and testing",
+        "C": ") Trusted distribution",
+        "D": ") System integrity"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Systems Integrity is a part of operational assurance opposed to life cycle assurance. \"The operational assurance requirements specified in the Orange Book are as follows: System Architecture System integrity Covert channel analysis Trusted facility management Trusted recovery The life cycle assurance requirements specified in the Orange Book are as follows: Security testing Design specification and testing Configuration Management Trusted Distribution\" Pg. 301 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 147,
+      "question": "At what Trusted Computer Security Evaluation Criteria (TCSEC) or Information Technology Security Evaluation Criteria (ITSEC) security level are database elements FIRST required to have security labels?",
+      "options": {
+        "A": "A1/E6",
+        "B": "B1/E3",
+        "C": "B2/E4",
+        "D": "C2/E2"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"B1: Labeled Security Each data object must contain a classification label and each subject must have a clearance label. When a subject attempts to access an object, the system must compare the subject and object's security labels to ensure the requested actions are acceptable. Data leaving the system must also contain an accurate security label. The security policy is based on an informal statement and the design specifications are reviewed and verified. It is intended for environments that require systems to handle classified data.\" \" pg. 224-226 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 148,
+      "question": "Which of the following statements pertaining to the Trusted Computer System Evaluation Criteria (TCSEC) is incorrect?",
+      "options": {
+        "A": ") With TCSEC, functionality and assurance are evaluated separately.",
+        "B": ") TCSEC provides a means to evaluate the trustworthiness of an information system",
+        "C": ") The Orange Book does not cover networks and communications",
+        "D": ") Database management systems are not covered by the TCSEC"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 149,
+      "question": "Which of the following is the lowest TCSEC class wherein the systems must support separate operator and system administrator roles?",
+      "options": {
+        "A": ") B2",
+        "B": ") B1",
+        "C": ") A1",
+        "D": ") A2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 129 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 150,
+      "question": "Which TCSEC (Orange Book) level requires the system to clearly identify functions of security administrator to perform security-related functions?",
+      "options": {
+        "A": ") C2",
+        "B": ") B1",
+        "C": ") B2",
+        "D": ") B3"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "B1: Labeled Security Each data object must contain a classification label and each subject must have a clearance label. When a subject attempts to access an object, the system must compare the subject and object's security labels to ensure the requested actions are acceptable. Data leaving the system must also contain an accurate security label. The security policy is based on an informal statement and the design specifications are reviewed and verified. It is intended for environments that require systems to handle classified data. B2: Structured Protection The security policy is clearly defined and documented, and the system design and implementation are subjected to more thorough review and testing procedures. This class requires more stringent authentication mechanisms and well-defined interfaces among layers. Subjects and devices require labels, and the system must not allow covert channels. A trusted path for logon and authentication processes must be in place, which means there are no trapdoors. A trusted path means that the subject is communicating directly with the application or operating system. There is no way to circumvent or compromise this communication channel. There is a separation of operator and administration functions within the system to provide more trusted and protected operational functionality. Distinct address spaces must be provided to isolate processes, and a covert channel analysis is conducted. This class adds assurance by adding requirements to the design of the system. The environment that would require B2 systems could process sensitive data that require a higher degree of security. This environment would require systems that are relatively resistant to penetration and compromise. (A trusted path means that the user can be sure that he is talking to a genuine copy of the operating system.) B3: Security Domains In this class, more granularity is provided in each protection mechanism, and the programming code that is not necessary to support the security policy is exclude. The design and implementation should not provide too much complexity because as the complexity of a system increases, the ability of the individual who need to test, maintain, and configure it reduces; thus, the overall security can be threatened. The reference monitor components must be small enough to test properly and be tamperproof. The security administrator role is clearly defined, and the system must be able to recover from failures without it security level being compromised. When the system starts up and loads it operating system and components, it must be done in an initial secure state to ensure that any weakness of the system cannot be taken advantage of in this slice of time. \" pg. 226 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    }
+  ]
+}

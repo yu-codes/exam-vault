@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-english",
+    "file": "saa-015.json",
+    "question_range": "Q701-Q750",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 701,
+      "type": "single",
+      "question": "A company has migrated a fleet of hundreds of on-premises virtual machines (VMs) to Amazon EC2 instances. The instances run a diverse fleet of Windows Server versions along with several Linux distributions. The company wants a solution that will automate inventory and updates of the operating systems. The company also needs a summary of common vulnerabilities of each instance for regular monthly reviews. What should a solutions architect recommend to meet these requirements?",
+      "options": {
+        "A": "Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Configure AWS Security Hub to produce monthly reports.",
+        "B": "Set up AWS Systems Manager Patch Manager to manage all the EC2 instances Deploy Amazon Inspector, and configure monthly reports",
+        "C": "Set up AWS Shield Advanced, and configure monthly reports Deploy AWS Config to automate patch installations on the EC2 instances",
+        "D": "Set up Amazon GuardDuty in the account to monitor all EC2 instances Deploy AWS Config to automate patch installations on the EC2 instances."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to automate inventory and updates of diverse\nOS versions on EC2 instances and summarize common vulnerabilities for monthly reviews.\nAnalysis of Options:\nSystems Manager Patch Manager and Security Hub: Patch Manager automates patching, but Security\nHub is more focused on compliance and security posture rather than inventory and vulnerability\nmanagement.\nSystems Manager Patch Manager and Amazon Inspector: Patch Manager automates OS updates, and\nAmazon Inspector provides vulnerability assessments, making this a comprehensive solution for the\nrequirements.\nAWS Shield Advanced and AWS Config: Shield Advanced is for DDoS protection, not suitable for OS\npatch management and vulnerability reporting.\nAmazon GuardDuty and AWS Config: GuardDuty is for threat detection and monitoring, not\nspecifically for patch management and vulnerability assessments.\nBest Solution:\nSystems Manager Patch Manager and Amazon Inspector: This combination automates OS updates\nand provides detailed vulnerability assessments, meeting both the inventory and security reporting\nneeds effectively.\nReference:\nAWS Systems Manager Patch Manager\nAmazon Inspector"
+    },
+    {
+      "id": 702,
+      "type": "multiple",
+      "question": "A company wants to use Amazon Elastic Container Service (Amazon ECS) to run its on-premises application in a hybrid environment The application currently runs on containers on premises. The company needs a single container solution that can scale in an on-premises, hybrid, or cloud environment The company must run new application containers in the AWS Cloud and must use a load balancer for HTTP traffic. Which combination of actions will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Set up an ECS cluster that uses the AWS Fargate launch type for the cloud application containers Use an Amazon ECS Anywhere external launch type for the on-premises application containers.",
+        "B": "Set up an Application Load Balancer for cloud ECS services",
+        "C": "Set up a Network Load Balancer for cloud ECS services.",
+        "D": "Set up an ECS cluster that uses the AWS Fargate launch type Use Fargate for the cloud application containers and the on-premises application containers.",
+        "E": "Set up an ECS cluster that uses the Amazon EC2 launch type for the cloud application containers. Use Amazon ECS Anywhere with an AWS Fargate launch type for the on-premises application containers."
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The company needs a container solution that can scale across on-\npremises, hybrid, and cloud environments, with a load balancer for HTTP traffic.\nAnalysis of Options:\nFargate Launch Type and ECS Anywhere: Using Fargate for cloud-based containers and ECS Anywhere\nfor on-premises containers provides a unified management experience across environments without\nneeding to manage infrastructure.\nApplication Load Balancer: Suitable for HTTP traffic and can distribute requests to the ECS services,\nensuring scalability and performance.\nNetwork Load Balancer: Typically used for TCP/UDP traffic, not specifically optimized for HTTP traffic.\nEC2 Launch Type for ECS and ECS Anywhere with Fargate: Involves managing infrastructure for EC2\ninstances, increasing operational overhead.\nBest Combination of Solutions:\nECS with Fargate Launch Type and ECS Anywhere: This provides flexibility and scalability across\nhybrid environments with minimal operational overhead.\nApplication Load Balancer: Optimized for HTTP traffic, ensuring efficient load distribution and scaling\nfor the ECS services.\nReference:\nAmazon ECS on AWS Fargate\nAmazon ECS Anywhere\nApplication Load Balancer"
+    },
+    {
+      "id": 703,
+      "type": "single",
+      "question": "A company is migrating its workloads to AWS. The company has sensitive and critical data in on- premises relational databases that run on SQL Server instances. The company wants to use the AWS Cloud to increase security and reduce operational overhead for the databases. Which solution will meet these requirements?",
+      "options": {
+        "A": "Migrate the databases to Amazon EC2 instances. Use an AWS Key Management Service (AWS KMS) AWS managed key for encryption.",
+        "B": "Migrate the databases to a Multi-AZ Amazon RDS for SQL Server DB instance Use an AWS Key Management Service (AWS KMS) AWS managed key for encryption.",
+        "C": "Migrate the data to an Amazon S3 bucket Use Amazon Macie to ensure data security",
+        "D": "Migrate the databases to an Amazon DynamoDB table. Use Amazon CloudWatch Logs to ensure data security"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to migrate sensitive and critical data from on-\npremises SQL Server databases to AWS, aiming to increase security and reduce operational\noverhead.\nAnalysis of Options:\nEC2 Instances with KMS: Running SQL Server on EC2 provides control but requires significant\noperational overhead for management, backups, patching, and high availability.\nMulti-AZ Amazon RDS for SQL Server with KMS: Amazon RDS for SQL Server offers managed database\nservices, reducing operational overhead. Multi-AZ deployment provides high availability, and KMS\nencryption ensures data security.\nAmazon S3 and Macie: S3 is not a suitable replacement for relational databases, and Macie is used\nfor data security and compliance but not for database operations.\nAmazon DynamoDB and CloudWatch Logs: DynamoDB is a NoSQL database and does not support\nSQL Server workloads directly. CloudWatch Logs are used for monitoring, not for ensuring database\nsecurity.\nBest Solution:\nMulti-AZ Amazon RDS for SQL Server with KMS: This solution meets the requirements for security,\nhigh availability, and reduced operational overhead by using a managed database service with\nencryption.\nReference:\nAmazon RDS for SQL Server\nAWS Key Management Service (KMS)"
+    },
+    {
+      "id": 704,
+      "type": "single",
+      "question": "A company uses 50 TB of data for reporting The company wants to move this data from on premises to AWS A custom application in the company's data center runs a weekly data transformation job The company plans to pause the application until the data transfer is complete and needs to begin the transfer process as soon as possible The data center does not have any available network bandwidth for additional workloads. A solutions architect must transfer the data and must configure the transformation job to continue to run in the AWS Cloud. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use AWS DataSync to move the data Create a custom transformation job by using AWS Glue.",
+        "B": "Order an AWS Snowcone device to move the data Deploy the transformation application to the device.",
+        "C": "Order an AWS Snowball Edge Storage Optimized device. Copy the data to the device. Create a custom transformation Job by using AWS Glue.",
+        "D": "Order an AWS Snowball Edge Storage Optimized device that includes Amazon EC2 compute Copy the data to the device Create a new EC2 instance on AWS to run the transformation application."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to transfer 50 TB of data to AWS with minimal\noperational overhead and no available network bandwidth for the transfer. The transformation job\nmust continue running in the AWS Cloud.\nAnalysis of Options:\nAWS DataSync and AWS Glue: DataSync is suitable for online data transfer, but there is no available\nnetwork bandwidth. AWS Glue can be used for data transformation but does not solve the\nbandwidth issue.\nAWS Snowcone: Snowcone is a smaller device suitable for smaller data transfers, and deploying the\ntransformation application on it may not be feasible for 50 TB of data.\nAWS Snowball Edge Storage Optimized with Glue: This device is designed for large data transfers.\nCopying the data to the device is straightforward, and AWS Glue can handle data transformation in\nthe cloud.\nAWS Snowball Edge Storage Optimized with EC2: This involves setting up EC2 instances for\ntransformation, adding operational complexity compared to using AWS Glue.\nBest Solution:\nAWS Snowball Edge Storage Optimized with AWS Glue: This provides the least operational overhead\nfor transferring large amounts of data and setting up the transformation job in the cloud.\nReference:\nAWS Snowball Edge\nAWS Glue"
+    },
+    {
+      "id": 705,
+      "type": "single",
+      "question": "A company has an on-premises business application that generates hundreds of files each day. These files are stored on an SMB file share and require a low-latency connection to the application servers. A new company policy states all application-generated files must be copied to AWS. There is already a VPN connection to AWS. The application development team does not have time to make the necessary code modifications to move the application to AWS Which service should a solutions architect recommend to allow the application to copy files to AWS?",
+      "options": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon FSx for Windows File Server",
+        "C": "AWS Snowball",
+        "D": "AWS Storage Gateway"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to copy files generated by an on-premises\napplication to AWS without modifying the application code. The files are stored on an SMB file share\nand require a low-latency connection to the application servers.\nAnalysis of Options:\nAmazon Elastic File System (EFS): EFS is designed for Linux-based workloads and does not natively\nsupport SMB file shares.\nAmazon FSx for Windows File Server: FSx supports SMB file shares but would require changes to the\napplication or additional infrastructure to connect on-premises systems.\nAWS Snowball: Suitable for large data transfers but not for continuous, low-latency file copying.\nAWS Storage Gateway: Provides a hybrid cloud storage solution, supporting SMB file shares and\nenabling seamless copying of files to AWS without requiring changes to the application.\nBest Solution:\nAWS Storage Gateway: This service meets the requirement for a low-latency, seamless file transfer\nsolution from on-premises to AWS without modifying the application code.\nReference:\nAWS Storage Gateway\nAmazon FSx for Windows File Server"
+    },
+    {
+      "id": 706,
+      "type": "single",
+      "question": "A company wants to migrate an application to AWS. The company wants to increase the application's current availability The company wants to use AWS WAF in the application's architecture. Which solution will meet these requirements?",
+      "options": {
+        "A": "Create an Auto Scaling group that contains multiple Amazon EC2 instances that host the application across two Availability Zones. Configure an Application Load Balancer (ALB) and set the Auto Scaling group as the target. Connect a WAF to the ALB.",
+        "B": "Create a cluster placement group that contains multiple Amazon EC2 instances that hosts the application Configure an Application Load Balancer and set the EC2 instances as the targets. Connect a WAF to the placement group.",
+        "C": "Create two Amazon EC2 instances that host the application across two Availability Zones. Configure the EC2 instances as the targets of an Application Load Balancer (ALB). Connect a WAF to the ALB.",
+        "D": "Create an Auto Scaling group that contains multiple Amazon EC2 instances that host the application across two Availability Zones. Configure an Application Load Balancer (ALB) and set the Auto Scaling group as the target Connect a WAF to the Auto Scaling group."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company wants to migrate an application to AWS, increase its\navailability, and use AWS WAF in the architecture.\nAnalysis of Options:\nAuto Scaling group with ALB and WAF: This option provides high availability by distributing instances\nacross multiple Availability Zones. The ALB ensures even traffic distribution, and AWS WAF provides\nsecurity at the application layer.\nCluster placement group with ALB and WAF: Cluster placement groups are for low-latency\nnetworking within a single AZ, which does not provide the high availability across AZs.\nTwo EC2 instances with ALB and WAF: This setup provides some availability but does not scale\nautomatically, missing the benefits of an Auto Scaling group.\nAuto Scaling group with WAF directly: AWS WAF cannot be directly connected to an Auto Scaling\ngroup; it needs to be attached to an ALB, CloudFront distribution, or API Gateway.\nBest Solution:\nAuto Scaling group with ALB and WAF: This configuration ensures high availability, scalability, and\nsecurity, meeting all the requirements effectively.\nReference:\nAmazon EC2 Auto Scaling\nApplication Load Balancer\nAWS WAF"
+    },
+    {
+      "id": 707,
+      "type": "single",
+      "question": "A company runs a stateful production application on Amazon EC2 instances The application requires at least two EC2 instances to always be running. A solutions architect needs to design a highly available and fault-tolerant architecture for the application. The solutions architect creates an Auto Scaling group of EC2 instances. Which set of additional steps should the solutions architect take to meet these requirements?",
+      "options": {
+        "A": "Set the Auto Scaling group's minimum capacity to two. Deploy one On-Demand Instance in one Availability Zone and one On-Demand Instance in a second Availability Zone.",
+        "B": "Set the Auto Scaling group's minimum capacity to four Deploy two On-Demand Instances in one Availability Zone and two On-Demand Instances in a second Availability Zone",
+        "C": "Set the Auto Scaling group's minimum capacity to two. Deploy four Spot Instances in one Availability Zone.",
+        "D": "Set the Auto Scaling group's minimum capacity to four Deploy two On-Demand Instances in one Availability Zone and two Spot Instances in a second Availability Zone."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The application is stateful and requires at least two EC2 instances to\nbe running at all times, with a highly available and fault-tolerant architecture.\nAnalysis of Options:\nMinimum capacity of two with instances in separate AZs: Ensures high availability by distributing\ninstances across multiple AZs, fulfilling the requirement of always having two instances running.\nMinimum capacity of four: Provides redundancy but is more than what is required and increases cost\nwithout additional benefit.\nSpot Instances: Not suitable for a stateful application requiring guaranteed availability, as Spot\nInstances can be terminated at any time.\nCombination of On-Demand and Spot Instances: Mixing instance types might provide cost savings but\ndoes not ensure the required availability for a stateful application.\nBest Solution:\nMinimum capacity of two with instances in separate AZs: This setup ensures high availability and\nmeets the requirement with the least cost and complexity.\nReference:\nAmazon EC2 Auto Scaling\nHigh Availability for Amazon EC2"
+    },
+    {
+      "id": 708,
+      "type": "single",
+      "question": "A company manages a data lake in an Amazon S3 bucket that numerous applications access The S3 bucket contains a unique prefix for each application The company wants to restrict each application to its specific prefix and to have granular control of the objects under each prefix. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Create dedicated S3 access points and access point policies for each application.",
+        "B": "Create an S3 Batch Operations job to set the ACL permissions for each object in the S3 bucket",
+        "C": "Replicate the objects in the S3 bucket to new S3 buckets for each application. Create replication rules by prefix",
+        "D": "Replicate the objects in the S3 bucket to new S3 buckets for each application Create dedicated S3 access points for each application"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company wants to restrict each application to its specific prefix\nin an S3 bucket and have granular control over the objects under each prefix.\nAnalysis of Options:\nDedicated S3 Access Points: Provides a scalable and flexible way to manage access to S3 buckets,\nallowing specific policies to be attached to each access point, thereby controlling access at the prefix\nlevel.\nS3 Batch Operations: Suitable for large-scale changes but involves more operational overhead and\ndoes not dynamically control future access.\nReplication to new S3 buckets: Involves unnecessary duplication of data and increased storage costs,\nand operational overhead for managing multiple buckets.\nCombination of replication and access points: Adds unnecessary complexity and overhead compared\nto using access points directly.\nBest Solution:\nDedicated S3 Access Points: This provides the least operational overhead while meeting the\nrequirements for prefix-level access control and granular management.\nReference:\nAmazon S3 Access Points"
+    },
+    {
+      "id": 709,
+      "type": "multiple",
+      "question": "A company has released a new version of its production application The company's workload uses Amazon EC2. AWS Lambd a. AWS Fargate. and Amazon SageMaker. The company wants to cost optimize the workload now that usage is at a steady state. The company wants to cover the most services with the fewest savings plans. Which combination of savings plans will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Purchase an EC2 Instance Savings Plan for Amazon EC2 and SageMaker.",
+        "B": "Purchase a Compute Savings Plan for Amazon EC2. Lambda, and SageMaker",
+        "C": "Purchase a SageMaker Savings Plan",
+        "D": "Purchase a Compute Savings Plan for Lambda, Fargate, and Amazon EC2",
+        "E": "Purchase an EC2 Instance Savings Plan for Amazon EC2 and Fargate"
+      },
+      "answers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The company wants to cost-optimize their workload that uses EC2,\nLambda, Fargate, and SageMaker, covering the most services with the fewest savings plans.\nAnalysis of Options:\nEC2 Instance Savings Plan: Limited to EC2 and SageMaker, missing coverage for Lambda and Fargate.\nCompute Savings Plan: Provides the most flexibility, covering a broad range of compute services,\nincluding EC2, Lambda, Fargate, and SageMaker.\nSageMaker Savings Plan: Specifically for SageMaker, missing coverage for EC2, Lambda, and Fargate.\nCombination of plans: The Compute Savings Plan is versatile and can be combined to cover different\nservices efficiently.\nBest Solution:\nCompute Savings Plan for EC2, Lambda, and SageMaker: Covers the primary compute services\nefficiently.\nCompute Savings Plan for Lambda, Fargate, and EC2: Covers the remaining services, ensuring broad\ncoverage with minimal plans.\nReference:\nAWS Savings Plans\nCompute Savings Plans"
+    },
+    {
+      "id": 710,
+      "type": "single",
+      "question": "A company is designing an event-driven order processing system Each order requires multiple validation steps after the order is created. An independent AWS Lambda function performs each validation step. Each validation step is independent from the other validation steps Individual validation steps need only a subset of the order event information. The company wants to ensure that each validation step Lambda function has access to only the information from the order event that the function requires The components of the order processing system should be loosely coupled to accommodate future business changes. Which solution will meet these requirements?",
+      "options": {
+        "A": "Create an Amazon Simple Queue Service (Amazon SQS> queue for each validation step. Create a new Lambda function to transform the order data to the format that each validation step requires and to publish the messages to the appropriate SQS queues Subscribe each validation step Lambda function to its corresponding SQS queue",
+        "B": "Create an Amazon Simple Notification Service {Amazon SNS) topic. Subscribe the validation step Lambda functions to the SNS topic. Use message body filtering to send only the required data to each subscribed Lambda function.",
+        "C": "Create an Amazon EventBridge event bus. Create an event rule for each validation step Configure the input transformer to send only the required data to each target validation step Lambda function.",
+        "D": "Create an Amazon Simple Queue Service {Amazon SQS) queue Create a new Lambda function to subscribe to the SQS queue and to transform the order data to the format that each validation step requires. Use the new Lambda function to perform synchronous invocations of the validation step Lambda functions in parallel on separate threads."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Understanding the Requirement: The order processing system requires multiple independent\nvalidation steps, each handled by separate Lambda functions, with each function accessing only the\nsubset of order information it needs. The system should be loosely coupled to accommodate future\nchanges.\nAnalysis of Options:\nAmazon SQS with a new Lambda function for transformation: This involves additional complexity in\ncreating and managing multiple SQS queues and an extra Lambda function for data transformation.\nAmazon SNS with message filtering: While SNS supports message filtering, it is more suited for\npub/sub messaging patterns rather than event-driven processing requiring fine-grained control over\nthe data sent to each function.\nAmazon EventBridge with input transformers: EventBridge is designed for event-driven\narchitectures, allowing for fine-grained control with input transformers that can modify and filter the\nevent data sent to each target Lambda function, ensuring each function receives only the necessary\ninformation.\nSQS with synchronous Lambda invocations: This approach adds unnecessary complexity with\nsynchronous invocations and is not ideal for an event-driven, loosely coupled architecture.\nBest Solution:\nAmazon EventBridge with input transformers: This option provides the most flexible, scalable, and\nloosely coupled architecture, enabling each Lambda function to receive only the required subset of\ndata.\nReference:\nAmazon EventBridge\nEventBridge Input Transformer"
+    },
+    {
+      "id": 711,
+      "type": "single",
+      "question": "A large international university has deployed all of its compute services in the AWS Cloud These services include Amazon EC2. Amazon RDS. and Amazon DynamoDB. The university currently relies on many custom scripts to back up its infrastructure. However, the university wants to centralize management and automate data backups as much as possible by using AWS native options. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use third-party backup software with an AWS Storage Gateway tape gateway virtual tape library.",
+        "B": "Use AWS Backup to configure and monitor all backups for the services in use",
+        "C": "Use AWS Config to set lifecycle management to take snapshots of all data sources on a schedule.",
+        "D": "Use AWS Systems Manager State Manager to manage the configuration and monitoring of backup tasks."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The university wants to centralize management and automate\nbackups for its AWS services (EC2, RDS, and DynamoDB), reducing reliance on custom scripts.\nAnalysis of Options:\nThird-party backup software with AWS Storage Gateway: This solution introduces external\ndependencies and adds complexity compared to using native AWS services.\nAWS Backup: Provides a centralized, fully managed service to automate and manage backups across\nvarious AWS services, including EC2, RDS, and DynamoDB.\nAWS Config: Primarily used for compliance and configuration monitoring, not for backup\nmanagement.\nAWS Systems Manager State Manager: Useful for configuration management but not specifically\ndesigned for managing backups.\nBest Solution:\nAWS Backup: This service offers the necessary functionality to centralize and automate backups,\nproviding a streamlined and integrated solution with minimal effort.\nReference:\nAWS Backup"
+    },
+    {
+      "id": 712,
+      "type": "single",
+      "question": "A company stores several petabytes of data across multiple AWS accounts The company uses AWS Lake Formation to manage its data lake The company's data science team wants to securely share selective data from its accounts with the company’s engineering team for analytical purposes. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Copy the required data to a common account. Create an 1AM access role in that account Grant access by specifying a permission policy that includes users from the engineering team accounts as trusted entities.",
+        "B": "Use the Lake Formation permissions Grant command in each account where the data is stored to allow the required engineering team users to access the data.",
+        "C": "Use AWS Data Exchange to privately publish the required data to the required engineering team accounts",
+        "D": "Use Lake Formation tag-based access control to authorize and grant cross-account permissions for the required data to the engineering team accounts"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The data science team needs to securely share selective data with\nthe engineering team across multiple AWS accounts with minimal operational overhead.\nAnalysis of Options:\nCopy data to a common account: Involves data duplication and increased storage costs, and requires\nmanaging additional permissions.\nLake Formation permissions Grant command: This method can be effective but may involve\nsignificant operational overhead if managing permissions across multiple accounts and datasets\nmanually.\nAWS Data Exchange: Designed for sharing data externally or between organizations, which adds\nunnecessary complexity for internal sharing within the same organization.\nLake Formation tag-based access control: Provides a scalable and efficient way to manage access\npermissions based on tags, allowing fine-grained control and simplified management across\naccounts.\nBest Solution:\nLake Formation tag-based access control: This solution meets the requirements with the least\noperational overhead, allowing efficient management of cross-account permissions and secure data\nsharing.\nReference:\nAWS Lake Formation\nTag-based access control"
+    },
+    {
+      "id": 713,
+      "type": "single",
+      "question": "A company stores sensitive data in Amazon S3 A solutions architect needs to create an encryption solution The company needs to fully control the ability of users to create, rotate, and disable encryption keys with minimal effort for any data that must be encrypted. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use default server-side encryption with Amazon S3 managed encryption keys (SSE-S3) to store the sensitive data",
+        "B": "Create a customer managed key by using AWS Key Management Service (AWS KMS). Use the new key to encrypt the S3 objects by using server-side encryption with AWS KMS keys (SSE-KMS).",
+        "C": "Create an AWS managed key by using AWS Key Management Service {AWS KMS) Use the new key to encrypt the S3 objects by using server-side encryption with AWS KMS keys (SSE-KMS).",
+        "D": "Download S3 objects to an Amazon EC2 instance. Encrypt the objects by using customer managed keys. Upload the encrypted objects back into Amazon S3."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to control the creation, rotation, and disabling\nof encryption keys for data stored in S3 with minimal effort.\nAnalysis of Options:\nSSE-S3: Provides server-side encryption using S3 managed keys but does not offer full control over\nkey management.\nCustomer managed key with AWS KMS (SSE-KMS): Allows the company to fully control key creation,\nrotation, and disabling, providing a high level of security and compliance.\nAWS managed key with AWS KMS (SSE-KMS): While it provides some control, it does not offer the\nsame level of granularity as customer-managed keys.\nEC2 instance encryption and re-upload: This approach is operationally intensive and does not\nleverage AWS managed services for efficient key management.\nBest Solution:\nCustomer managed key with AWS KMS (SSE-KMS): This solution meets the requirement for full\ncontrol over encryption keys with minimal operational overhead, leveraging AWS managed services\nfor secure key management.\nReference:\nAWS Key Management Service (KMS)\nAmazon S3 Encryption"
+    },
+    {
+      "id": 714,
+      "type": "single",
+      "question": "A company runs an application that uses Amazon RDS for PostgreSQL The application receives traffic only on weekdays during business hours The company wants to optimize costs and reduce operational overhead based on this usage. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use the Instance Scheduler on AWS to configure start and stop schedules.",
+        "B": "Turn off automatic backups. Create weekly manual snapshots of the database.",
+        "C": "Create a custom AWS Lambda function to start and stop the database based on minimum CPU utilization.",
+        "D": "Purchase All Upfront reserved DB instances"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company wants to optimize costs and reduce operational\noverhead for an RDS for PostgreSQL database that only needs to be active during business hours on\nweekdays.\nAnalysis of Options:\nInstance Scheduler on AWS: Allows for automated start and stop schedules based on specified times,\nideal for resources only needed during certain hours. This directly optimizes costs by running the\ndatabase only when needed.\nTurn off automatic backups and create weekly snapshots: Does not address the requirement of\nreducing operational overhead and optimizing runtime costs.\nCustom Lambda function: This could work but adds unnecessary complexity compared to using the\nInstance Scheduler.\nAll Upfront Reserved DB Instances: While this reduces costs, it does not optimize for usage patterns\nthat require the database only during specific hours.\nBest Solution:\nInstance Scheduler on AWS: This option effectively manages the database runtime based on the\nspecified schedule, reducing costs and operational overhead.\nReference:\nInstance Scheduler on AWS"
+    },
+    {
+      "id": 715,
+      "type": "single",
+      "question": "A company recently migrated its web application to the AWS Cloud The company uses an Amazon EC2 instance to run multiple processes to host the application. The processes include an Apache web server that serves static content The Apache web server makes requests to a PHP application that uses a local Redis server for user sessions. The company wants to redesign the architecture to be highly available and to use AWS managed solutions Which solution will meet these requirements?",
+      "options": {
+        "A": "Use AWS Elastic Beanstalk to host the static content and the PHP application. Configure Elastic Beanstalk to deploy its EC2 instance into a public subnet Assign a public IP address.",
+        "B": "Use AWS Lambda to host the static content and the PHP application. Use an Amazon API Gateway REST API to proxy requests to the Lambda function. Set the API Gateway CORS configuration to respond to the domain name. Configure Amazon ElastiCache for Redis to handle session information",
+        "C": "Keep the backend code on the EC2 instance. Create an Amazon ElastiCache for Redis cluster that has Multi-AZ enabled Configure the ElastiCache for Redis cluster in cluster mode Copy the frontend resources to Amazon S3 Configure the backend code to reference the EC2 instance",
+        "D": "Configure an Amazon CloudFront distribution with an Amazon S3 endpoint to an S3 bucket that is configured to host the static content. Configure an Application Load Balancer that targets an Amazon Elastic Container Service (Amazon ECS) service that runs AWS Fargate tasks for the PHP application. Configure the PHP application to use an Amazon ElastiCache for Redis cluster that runs in multiple Availability Zones"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to redesign the architecture to be highly\navailable and use AWS managed solutions for hosting a web application with static content, PHP\napplication, and Redis for user sessions.\nAnalysis of Options:\nAWS Elastic Beanstalk: Suitable for simplifying deployment but may not provide the desired flexibility\nand control for complex architectures.\nAWS Lambda and API Gateway: Not ideal for hosting a stateful PHP application and handling static\ncontent. Adding complexity without significant benefit.\nEC2 instance with ElastiCache and S3: Provides some high availability but involves managing EC2\ninstances, which increases operational overhead.\nCloudFront with S3, ALB, ECS with Fargate, and ElastiCache: This solution leverages fully managed\nAWS services for each component, ensuring high availability and scalability.\nBest Solution:\nCloudFront with S3, ALB, ECS with Fargate, and ElastiCache: This combination of services meets the\nrequirements for a highly available and managed solution, ensuring optimal performance and\nminimal operational overhead.\nReference:\nAmazon CloudFront\nAmazon S3\nAmazon ECS with Fargate\nAmazon ElastiCache for Redis"
+    },
+    {
+      "id": 716,
+      "type": "single",
+      "question": "A company has an application that customers use to upload images to an Amazon S3 bucket Each night, the company launches an Amazon EC2 Spot Fleet that processes all the images that the company received that day. The processing for each image takes 2 minutes and requires 512 MB of memory. A solutions architect needs to change the application to process the images when the images are uploaded Which change will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Use S3 Event Notifications to write a message with image details to an Amazon Simple Queue Service (Amazon SQS) queue. Configure an AWS Lambda function to read the messages from the queue and to process the images",
+        "B": "Use S3 Event Notifications to write a message with image details to an Amazon Simple Queue Service (Amazon SQS) queue Configure an EC2 Reserved Instance to read the messages from the queue and to process the images.",
+        "C": "Use S3 Event Notifications to publish a message with image details to an Amazon Simple Notification Service (Amazon SNS) topic. Configure a container instance in Amazon Elastic Container Service (Amazon ECS) to subscribe to the topic and to process the images.",
+        "D": "Use S3 Event Notifications to publish a message with image details to an Amazon Simple Notification Service (Amazon SNS) topic. to subscribe to the topic and to process the images."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to process images as they are uploaded to S3\nin a cost-effective manner, currently using an EC2 Spot Fleet for nightly processing.\nAnalysis of Options:\nS3 Event Notifications to SQS and Lambda: This setup allows for event-driven processing with\nLambda, which scales automatically based on the number of messages in the queue. It is cost-\neffective as Lambda charges are based on the compute time used.\nS3 Event Notifications to SQS and EC2 Reserved Instance: Involves managing EC2 instances, which\nadds operational overhead and is less cost-effective.\nS3 Event Notifications to SNS and ECS: More complex and potentially less cost-effective compared to\nusing Lambda for simple processing tasks.\nS3 Event Notifications to SNS: Requires additional configuration and management to process\nmessages.\nBest Solution:\nS3 Event Notifications to SQS and Lambda: This option is the most cost-effective and scalable,\nleveraging AWS managed services with minimal operational overhead.\nReference:\nAmazon S3 Event Notifications\nAmazon SQS\nAWS Lambda"
+    },
+    {
+      "id": 717,
+      "type": "single",
+      "question": "A solutions architect is creating an application. The application will run on Amazon EC2 instances in private subnets across multiple Availability Zones in a VPC. The EC2 instances will frequently access large files that contain confidential information. These files are stored in Amazon S3 buckets for processing. The solutions architect must optimize the network architecture to minimize data transfer costs. What should the solutions architect do to meet these requirements?",
+      "options": {
+        "A": "Create a gateway endpoint for Amazon S3 in the VPC. In the route tables for the private subnets, add an entry for the gateway endpoint",
+        "B": "Create a single NAT gateway in a public subnet. In the route tables for the private subnets, add a default route that points to the NAT gateway",
+        "C": "Create an AWS PrivateLink interface endpoint for Amazon S3 in the VPC. In the route tables for the private subnets, add an entry for the interface endpoint.",
+        "D": "Create one NAT gateway for each Availability Zone in public subnets. In each of the route labels for the private subnets, add a default route that points lo the NAT gateway in the same Availability Zone"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The application running on EC2 instances in private subnets needs\nfrequent access to large confidential files stored in S3, minimizing data transfer costs.\nAnalysis of Options:\nGateway Endpoint for S3: Provides a secure, scalable, and cost-effective way for instances in private\nsubnets to access S3 without using the internet or NAT gateways, thus minimizing data transfer costs.\nSingle NAT Gateway: Incurs additional costs for data transfer through the NAT gateway, which is not\ncost-effective.\nPrivateLink Interface Endpoint for S3: Primarily used for accessing AWS services over a private\nconnection but is more complex and costly compared to a gateway endpoint for S3.\nMultiple NAT Gateways: Increases costs significantly and adds complexity without offering the cost\nbenefits of a gateway endpoint.\nBest Solution:\nGateway Endpoint for S3: This solution provides the required access with the least data transfer costs\nand minimal complexity.\nReference:\nVPC Endpoints for Amazon S3\nGateway Endpoints"
+    },
+    {
+      "id": 718,
+      "type": "single",
+      "question": "A company hosts an application on Amazon EC2 On-Demand Instances in an Auto Scaling group. Application peak hours occur at the same time each day. Application users report slow application performance at the start of peak hours. The application performs normally 2-3 hours after peak hours begin. The company wants to ensure that the application works properly at the start o* peak hours. Which solution will meet these requirements?",
+      "options": {
+        "A": "Configure an Application Load Balancer to distribute traffic properly to the Instances.",
+        "B": "Configure a dynamic scaling policy for the Auto Scaling group to launch new instances based on memory utilization",
+        "C": "Configure a dynamic scaling policy for the Auto Scaling group to launch new instances based on CPU utilization.",
+        "D": "Configure a scheduled scaling policy for the Auto Scaling group to launch new instances before peak hours."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The application experiences slow performance at the start of peak\nhours, but normalizes after a few hours. The goal is to ensure proper performance at the beginning\nof peak hours.\nAnalysis of Options:\nApplication Load Balancer: Ensures proper traffic distribution but does not address the need to have\nsufficient instances running at the start of peak hours.\nDynamic Scaling Policy Based on Memory or CPU Utilization: While dynamic scaling reacts to usage\nmetrics, it may not preemptively scale in anticipation of peak hours, leading to delays as new\ninstances are launched and become available.\nScheduled Scaling Policy: This allows the Auto Scaling group to launch instances ahead of time,\nensuring that enough instances are available and ready to handle the increased load right at the start\nof peak hours.\nBest Solution:\nScheduled Scaling Policy: This approach ensures that new instances are launched and ready before\npeak hours begin, addressing the slow performance issue at the start of peak periods.\nReference:\nScheduled Scaling for Amazon EC2 Auto Scaling"
+    },
+    {
+      "id": 719,
+      "type": "single",
+      "question": "A company has a web application in the AWS Cloud and wants to collect transaction data in real time. The company wants to prevent data duplication and does not want to manage infrastructure. The company wants to perform additional processing on the data after the data is collected. Which solution will meet these requirements?",
+      "options": {
+        "A": "Configure an Amazon Simple Queue Service (Amazon SOS) FIFO queue. Configure an AWS Lambda function with an event source mapping for the FIFO queue to process the data.",
+        "B": "Configure an Amazon Simple Queue Service (Amazon SQS) FIFO queue Use an AWS Batch job to remove duplicate data from the queue Configure an AWS Lambda function to process the data.",
+        "C": "Use Amazon Kinesis Data Streams to send the Incoming transaction data to an AWS Batch job that removes duplicate data. Launch an Amazon EC2 instance that runs a custom script lo process the data.",
+        "D": "Set up an AWS Step Functions state machine to send incoming transaction data to an AWS Lambda function to remove duplicate data. Launch an Amazon EC2 instance that runs a custom script to process the data."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to collect transaction data in real time, avoid\ndata duplication, and perform additional processing without managing infrastructure.\nAnalysis of Options:\nSQS FIFO Queue with Lambda: Ensures data is processed in order and prevents duplication. Lambda\nhandles processing without the need to manage servers.\nSQS FIFO Queue with AWS Batch: While this ensures no duplicates, it introduces additional\ncomplexity and management overhead with AWS Batch.\nKinesis Data Streams with AWS Batch and EC2: Involves more components and infrastructure\nmanagement, which is against the requirement of not wanting to manage infrastructure.\nStep Functions with Lambda and EC2: Involves setting up multiple services and still requires\nmanaging EC2 instances, increasing complexity.\nBest Solution:\nSQS FIFO Queue with Lambda: This combination ensures real-time data processing, prevents\nduplication, and minimizes infrastructure management, meeting all requirements efficiently.\nReference:\nAmazon SQS FIFO Queues\nAWS Lambda and SQS Integration"
+    },
+    {
+      "id": 720,
+      "type": "single",
+      "question": "A company uses AWS to host its public ecommerce website. The website uses an AWS Global Accelerator accelerator for traffic from the internet. Tt\\e Global Accelerator accelerator forwards the traffic to an Application Load Balancer (ALB) that is the entry point for an Auto Scaling group. The company recently identified a ODoS attack on the website. The company needs a solution to mitigate future attacks. Which solution will meet these requirements with the LEAST implementation effort?",
+      "options": {
+        "A": "Configure an AWS WAF web ACL for the Global Accelerator accelerator to block traffic by using rate-based rules.",
+        "B": "Configure an AWS Lambda function to read the ALB metrics to block attacks by updating a VPC network ACL.",
+        "C": "Configure an Ama7on CloudFront distribution in front of the Global Accelerator accelerator"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to mitigate DDoS attacks on its website, which\nuses AWS Global Accelerator to route traffic to an Application Load Balancer (ALB).\nAnalysis of Options:\nAWS WAF on Global Accelerator: Allows for centralized protection and can block traffic based on\nrate-based rules, effectively mitigating DDoS attacks with minimal implementation effort.\nLambda Function and VPC Network ACL: Requires custom implementation and ongoing\nmanagement, increasing complexity and effort.\nAWS WAF on ALB: Provides protection but involves additional configuration and management at the\nALB level.\nCloudFront Distribution in front of Global Accelerator: Adds unnecessary complexity and changes the\ncurrent traffic flow setup.\nBest Solution:\nAWS WAF on Global Accelerator: This provides the required protection with the least\nimplementation effort, ensuring effective DDoS mitigation and maintaining the existing architecture.\nReference:\nAWS WAF\nUsing AWS WAF with AWS Global Accelerator"
+    },
+    {
+      "id": 721,
+      "type": "single",
+      "question": "A company runs an application on Amazon EC2 Instances in a private subnet. The application needs to store and retrieve data in Amazon S3 buckets. According to regulatory requirements, the data must not travel across the public internet. What should a solutions architect do to meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Deploy a NAT gateway to access the S3 buckets.",
+        "B": "Deploy AWS Storage Gateway to access the S3 buckets.",
+        "C": "Deploy an S3 interface endpoint to access the S3 buckets.",
+        "D": "Deploy an S3 gateway endpoint to access the S3 buckets."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The application running in a private subnet needs to store and\nretrieve data from S3 without data traveling over the public internet.\nAnalysis of Options:\nNAT Gateway: Allows private subnets to access the internet but incurs additional costs and still\nroutes traffic through the public internet.\nAWS Storage Gateway: Provides hybrid cloud storage solutions but is not the most cost-effective for\ndirect S3 access from within the VPC.\nS3 Interface Endpoint: Provides private access to S3 but is generally used for specific use cases where\nmore granular control is required, which might be overkill and more expensive.\nS3 Gateway Endpoint: Provides private, cost-effective access to S3 from within the VPC without\nrouting traffic through the public internet.\nBest Solution:\nS3 Gateway Endpoint: This option meets the requirements for secure, private access to S3 from a\nprivate subnet most cost-effectively.\nReference:\nAmazon VPC Endpoints\nGateway Endpoints"
+    },
+    {
+      "id": 722,
+      "type": "single",
+      "question": "A development team uses multiple AWS accounts for its development, staging, and production environments. Team members have been launching large Amazon EC2 instances that are underutilized. A solutions architect must prevent large instances from being launched in all accounts. How can the solutions architect meet this requirement with the LEAST operational overhead?",
+      "options": {
+        "A": "Update the 1AM policies to deny the launch of large EC2 instances. Apply the policies to all users.",
+        "B": "Define a resource in AWS Resource Access Manager that prevents the launch of large EC2 instances.",
+        "C": "Create an (AM role in each account that denies the launch of large EC2 instances. Grant the developers 1AM group access to the role.",
+        "D": "Create an organization in AWS Organizations in the management account with the default policy. Create a service control policy (SCP) that denies the launch of large EC2 Instances, and apply it to the AWS accounts."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The development team needs to prevent the launch of large EC2\ninstances across multiple AWS accounts used for development, staging, and production\nenvironments.\nAnalysis of Options:\nIAM Policies: Would need to be applied individually to each user in every account, leading to\nsignificant operational overhead.\nAWS Resource Access Manager: Used for sharing resources, not for enforcing restrictions on resource\ncreation.\nIAM Role in Each Account: Requires creating and managing roles in each account, leading to higher\noperational overhead compared to using a centralized approach.\nService Control Policy (SCP) with AWS Organizations: Provides a centralized way to enforce policies\nacross multiple AWS accounts, ensuring that large EC2 instances cannot be launched in any account.\nBest Solution:\nService Control Policy (SCP) with AWS Organizations: This solution offers the least operational\noverhead by allowing centralized management and enforcement of policies across all accounts,\neffectively preventing the launch of large EC2 instances.\nReference:\nAWS Organizations and SCPs"
+    },
+    {
+      "id": 723,
+      "type": "single",
+      "question": "A company is developing an application to support customer demands. The company wants to deploy the application on multiple Amazon EC2 Nitro-based instances within the same Availability Zone. The company also wants to give the application the ability to write to multiple block storage volumes in multiple EC2 Nitro-based instances simultaneously to achieve higher application availability. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use General Purpose SSD (gp3) EBS volumes with Amazon Elastic Block Store (Amazon EBS) Multi- Attach.",
+        "B": "Use Throughput Optimized HDD (st1) EBS volumes with Amazon Elastic Block Store (Amazon EBS) Multi-Attach",
+        "C": "Use Provisioned IOPS SSD (io2) EBS volumes with Amazon Elastic Block Store (Amazon EBS) Multi- Attach.",
+        "D": "Use General Purpose SSD (gp2) EBS volumes with Amazon Elastic Block Store (Amazon E8S) Multi- Attach."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Understanding the Requirement: The application needs to write to multiple block storage volumes in\nmultiple EC2 Nitro-based instances simultaneously to achieve higher availability.\nAnalysis of Options:\nGeneral Purpose SSD (gp3) with Multi-Attach: Supports Multi-Attach but does not provide the highest\nperformance required for critical applications.\nThroughput Optimized HDD (st1) with Multi-Attach: Not suitable for applications requiring high\nperformance and low latency.\nProvisioned IOPS SSD (io2) with Multi-Attach: Provides high performance and durability, suitable for\napplications requiring simultaneous writes and high availability.\nGeneral Purpose SSD (gp2) with Multi-Attach: Similar to gp3 but with less flexibility and\nperformance.\nBest Solution:\nProvisioned IOPS SSD (io2) with Multi-Attach: This solution ensures the highest performance and\navailability for the application by allowing multiple EC2 instances to attach to and write to the same\nEBS volume simultaneously.\nReference:\nAmazon EBS Multi-Attach\nProvisioned IOPS SSD (io2)"
+    },
+    {
+      "id": 724,
+      "type": "single",
+      "question": "An online photo-sharing company stores Hs photos in an Amazon S3 bucket that exists in the us- west-1 Region. The company needs to store a copy of all new photos in the us-east-1 Region. Which solution will meet this requirement with the LEAST operational effort?",
+      "options": {
+        "A": "Create a second S3 bucket in us-east-1. Use S3 Cross-Region Replication to copy photos from the existing S3 bucket to the second S3 bucket.",
+        "B": "Create a cross-origin resource sharing (CORS) configuration of the existing S3 bucket. Specify us- east-1 in the CORS rule's AllowedOngm element.",
+        "C": "Create a second S3 bucket in us-east-1 across multiple Availability Zones. Create an S3 Lifecycle rule to save photos into the second S3 bucket,",
+        "D": "Create a second S3 bucket In us-east-1. Configure S3 event notifications on object creation and update events to Invoke an AWS Lambda function to copy photos from the existing S3 bucket to the second S3 bucket."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to store a copy of all new photos in the us-east-\n1 Region from an S3 bucket in the us-west-1 Region.\nAnalysis of Options:\nCross-Region Replication: Automatically replicates objects across regions with minimal operational\neffort once configured.\nCORS Configuration: Used for allowing resources on a web page to be requested from another\ndomain, not for replication.\nS3 Lifecycle Rule: Manages the transition of objects between storage classes within the same bucket,\nnot for cross-region replication.\nS3 Event Notifications with Lambda: Requires additional configuration and management compared\nto Cross-Region Replication.\nBest Solution:\nS3 Cross-Region Replication: This solution provides an automated and efficient way to replicate\nobjects to another region, meeting the requirement with the least operational effort.\nReference:\nAmazon S3 Cross-Region Replication"
+    },
+    {
+      "id": 725,
+      "type": "single",
+      "question": "A company wants to build a logging solution for its multiple AWS accounts. The company currently stores the logs from all accounts in a centralized account. The company has created an Amazon S3 bucket in the centralized account to store the VPC flow logs and AWS CloudTrail logs. All logs must be highly available for 30 days for frequent analysis, retained tor an additional 60 days tor backup purposes, and deleted 90 days after creation. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Transition objects to the S3 Standard storage class 30 days after creation. Write an expiration action that directs Amazon S3 to delete objects after 90 days.",
+        "B": "Transition objects lo the S3 Standard-Infrequent Access (S3 Standard-IA) storage class 30 days after creation Move all objects to the S3 Glacier Flexible Retrieval storage class after 90 days. Write an expiration action that directs Amazon S3 to delete objects after 90 days.",
+        "C": "Transition objects to the S3 Glacier Flexible Retrieval storage class 30 days after creation. Write an expiration action that directs Amazon S3 to delete objects alter 90 days.",
+        "D": "Transition objects to the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class 30 days after creation. Move all objects to the S3 Glacier Flexible Retrieval storage class after 90 days. Write an expiration action that directs Amazon S3 to delete objects after 90 days."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Understanding the Requirement: The company needs logs to be highly available for 30 days for\nfrequent analysis, retained for an additional 60 days for backup, and deleted after 90 days.\nAnalysis of Options:\nTransition to S3 Standard after 30 days: Keeps logs in the same high-availability storage, not cost-\neffective.\nTransition to S3 Standard-IA, then Glacier Flexible Retrieval after 90 days: Adds unnecessary cost and\ncomplexity since objects need to be accessible for only 30 days and then retained for 60 days.\nTransition to Glacier Flexible Retrieval after 30 days: Not suitable for frequent access required in the\nfirst 30 days.\nTransition to S3 One Zone-IA after 30 days, then Glacier Flexible Retrieval: Provides cost-effective\nstorage for infrequently accessed logs after the initial 30-day period, then moves to the cheapest\nlong-term storage before deletion.\nBest Solution:\nTransition to S3 One Zone-IA after 30 days, then Glacier Flexible Retrieval: This solution meets the\nrequirements for high availability, cost-effective storage for backup, and scheduled deletion with the\nleast cost.\nReference:\nAmazon S3 Storage Classes\nManaging your storage lifecycle"
+    },
+    {
+      "id": 726,
+      "type": "single",
+      "question": "A company runs an application in a VPC with public and private subnets. The VPC extends across multiple Availability Zones. The application runs on Amazon EC2 instances in private subnets. The application uses an Amazon Simple Queue Service (Amazon SOS) queue. A solutions architect needs to design a secure solution to establish a connection between the EC2 instances and the SOS queue Which solution will meet these requirements?",
+      "options": {
+        "A": "Implement an interface VPC endpoint tor Amazon SOS. Configure the endpoint to use the private subnets. Add to the endpoint a security group that has an inbound access rule that allows traffic from the EC2 instances that are in the private subnets.",
+        "B": "Implement an interface VPC endpoint tor Amazon SOS. Configure the endpoint to use the public subnets. Attach to the interface endpoint a VPC endpoint policy that allows access from the EC2 Instances that are in the private subnets.",
+        "C": "Implement an interface VPC endpoint for Ama7on SOS. Configure the endpoint to use the public subnets Attach an Amazon SOS access policy to the interface VPC endpoint that allows requests from only a specified VPC endpoint.",
+        "D": "Implement a gateway endpoint tor Amazon SOS. Add a NAT gateway to the private subnets. Attach an 1AM role to the EC2 Instances that allows access to the SOS queue."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The application running on EC2 instances in private subnets needs\nto securely connect to an Amazon SQS queue without exposing traffic to the public internet.\nAnalysis of Options:\nInterface VPC Endpoint in Private Subnets: Allows private, secure connectivity to SQS without using\nthe public internet. Configuring security groups ensures controlled access from EC2 instances.\nInterface VPC Endpoint in Public Subnets: Not necessary for private EC2 instances and exposes\nadditional security risks.\nGateway Endpoint: Gateway endpoints are not supported for SQS; they are used for services like S3\nand DynamoDB.\nNAT Gateway with IAM Role: Increases costs and complexity compared to using an interface VPC\nendpoint directly.\nBest Solution:\nInterface VPC Endpoint in Private Subnets: This option ensures secure, private connectivity to SQS,\nmeeting the requirement with minimal complexity and optimal security.\nReference:\nVPC Endpoints\nAmazon SQS and VPC Endpoints"
+    },
+    {
+      "id": 727,
+      "type": "single",
+      "question": "A company deploys Amazon EC2 instances that run in a VPC. The EC2 instances load source data into Amazon S3 buckets so that the data can be processed in the future. According to compliance laws, the data must not be transmitted over the public internet. Servers in the company's on-premises data center will consume the output from an application that runs on the LC2 instances. Which solution will meet these requirements?",
+      "options": {
+        "A": "Deploy an interface VPC endpoint for Amazon EC2. Create an AWS Site-to-Site VPN connection between the company and the VPC.",
+        "B": "Deploys gateway VPC endpoint for Amazon S3 Set up an AWS Direct Connect connection between the on-premises network and the VPC.",
+        "C": "Set up on AWS Transit Gateway connection from the VPC to the S3 buckets. Create an AWS Site-to- Site VPN connection between the company and the VPC.",
+        "D": "Set up proxy EC2 instances that have routes to NAT gateways. Configure the proxy EC2 instances lo fetch S3 data and feed the application instances."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: EC2 instances need to upload data to S3 without using the public\ninternet, and on-premises servers need to consume this data.\nAnalysis of Options:\nInterface VPC Endpoint for EC2: Not relevant for accessing S3.\nGateway VPC Endpoint for S3 and Direct Connect: Provides private connectivity from EC2 instances to\nS3 and from on-premises to AWS, ensuring compliance with the requirement to avoid public\ninternet.\nTransit Gateway and Site-to-Site VPN: Adds unnecessary complexity and does not provide the same\nlevel of performance as Direct Connect.\nProxy EC2 Instances with NAT Gateways: Increases complexity and costs compared to a direct\nconnection using VPC endpoints and Direct Connect.\nBest Solution:\nGateway VPC Endpoint for S3 and Direct Connect: This solution ensures secure, private data transfer\nboth within AWS and between on-premises and AWS, meeting the compliance requirements\neffectively.\nReference:\nAmazon VPC Endpoints for S3\nAWS Direct Connect"
+    },
+    {
+      "id": 728,
+      "type": "single",
+      "question": "A company uses Amazon FSx for NetApp ONTAP in its primary AWS Region for CIFS and NFS file shares. Applications that run on Amazon EC2 instances access the file shares The company needs a storage disaster recovery (OR) solution in a secondary Region. The data that is replicated in the secondary Region needs to be accessed by using the same protocols as the primary Region. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Create an AWS Lambda function lo copy the data to an Amazon S3 bucket. Replicate the S3 bucket (o the secondary Region.",
+        "B": "Create a backup of the FSx for ONTAP volumes by using AWS Backup. Copy the volumes to the secondary Region. Create a new FSx for ONTAP instance from the backup.",
+        "C": "Create an FSx for ONTAP instance in the secondary Region. Use NetApp SnapMirror to replicate data from the primary Region to the secondary Region.",
+        "D": "Create an Amazon Elastic File System (Amazon EFS) volume. Migrate the current data to the volume. Replicate the volume to the secondary Region."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Understanding the Requirement: The company needs a disaster recovery solution for FSx for NetApp\nONTAP in a secondary region, accessible using the same protocols (CIFS and NFS).\nAnalysis of Options:\nLambda Function and S3: Involves copying data to S3, which changes the access protocols and\nincreases operational overhead.\nAWS Backup: Suitable for backup and restore but not for real-time or near-real-time replication for\ndisaster recovery.\nFSx for ONTAP with SnapMirror: SnapMirror provides efficient replication between ONTAP instances,\nmaintaining access protocols and requiring minimal operational overhead.\nAmazon EFS: Does not support CIFS and requires migrating data, increasing complexity and changing\naccess protocols.\nBest Solution:\nFSx for ONTAP with SnapMirror: This solution ensures seamless disaster recovery with the same\naccess protocols and minimal operational overhead.\nReference:\nAmazon FSx for NetApp ONTAP\nNetApp SnapMirror"
+    },
+    {
+      "id": 729,
+      "type": "single",
+      "question": "A company's web application consists of multiple Amazon EC2 instances that run behind an Application Load Balancer in a VPC. An Amazon RDS for MySQL DB instance contains the data The company needs the ability to automatically detect and respond to suspicious or unexpected behavior in its AWS environment. The company already has added AWS WAF to its architecture. What should a solutions architect do next to protect against threats?",
+      "options": {
+        "A": "Use Amazon GuardDuty to perform threat detection. Configure Amazon EventBridge to filter for GuardDuty findings and to Invoke an AWS Lambda function to adjust the AWS WAF rules.",
+        "B": "Use AWS Firewall Manager to perform threat detection. Configure Amazon EventBridge to filter for Firewall Manager findings and to invoke an AWS Lambda function to adjust the AWS WAF web ACL",
+        "C": "Use Amazon Inspector to perform threat detection and lo update the AWS WAF rules. Create a VPC network ACL to limit access to the web application.",
+        "D": "Use Amazon Macie to perform threat detection and to update the AWS WAF rules. Create a VPC network ACL to limit access to the web application."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to automatically detect and respond to\nsuspicious or unexpected behavior in its AWS environment, beyond the existing AWS WAF setup.\nAnalysis of Options:\nAmazon GuardDuty: Provides continuous monitoring and threat detection across AWS accounts and\nresources, including integration with AWS WAF for automated response.\nAWS Firewall Manager: Manages firewall rules across multiple accounts but is more focused on\ncentral management than threat detection.\nAmazon Inspector: Focuses on security assessments and vulnerability management rather than real-\ntime threat detection.\nAmazon Macie: Primarily used for data security and privacy, not comprehensive threat detection.\nBest Solution:\nAmazon GuardDuty with EventBridge and Lambda: This combination ensures continuous threat\ndetection and automated response by updating AWS WAF rules based on GuardDuty findings.\nReference:\nAmazon GuardDuty\nAmazon EventBridge\nAWS Lambda"
+    },
+    {
+      "id": 730,
+      "type": "single",
+      "question": "A company's near-real-time streaming application is running on AWS. As the data is ingested, a Job runs on the data and takes 30 minutes to complete. The workload frequently experiences high latency due to large amounts of incoming dat a. A solutions architect needs to design a scalable and serverless solution to enhance performance. Which combination of steps should the solutions architect take? (Select TWO.)",
+      "options": {
+        "A": "Use Amazon Kinesis Data Firehose to Ingest the data.",
+        "B": "Use AWS Lambda with AWS Step Functions to process the data.",
+        "C": "Use AWS Database Migration Service (AWS DMS) to ingest the data",
+        "D": "Use Amazon EC2 instances in an Auto Seating group to process the data.",
+        "E": "Use AWS Fargate with Amazon Elastic Container Service (Amazon ECS) to process the data."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to design a scalable and serverless solution for\na near-real-time streaming application that experiences high latency due to large amounts of\nincoming data. The job processing takes about 30 minutes.\nAnalysis of Options:\nAmazon Kinesis Data Firehose: Provides a fully managed service for real-time data streaming and\ningestion, allowing for seamless data delivery to destinations such as Amazon S3, Redshift, and\nElasticsearch.\nAWS Lambda with AWS Step Functions: While suitable for orchestration and lightweight processing,\nLambda might not handle long-running jobs (max 15 minutes execution limit) efficiently.\nAWS DMS: Primarily used for database migration, not for real-time data ingestion in this context.\nAmazon EC2 in Auto Scaling Group: Provides scalability but involves managing servers, which is not\nserverless and adds operational overhead.\nAWS Fargate with ECS: Offers a serverless compute engine for containers, allowing easy scaling and\nmanagement without managing the underlying infrastructure.\nBest Solution:\nAmazon Kinesis Data Firehose: For ingesting the streaming data efficiently.\nAWS Fargate with ECS: For processing the data in a scalable and serverless manner.\nReference:\nAmazon Kinesis Data Firehose\nAWS Fargate"
+    },
+    {
+      "id": 731,
+      "type": "single",
+      "question": "A company uses an Amazon CloudFront distribution to serve content pages for its website. The company needs to ensure that clients use a TLS certificate when accessing the company's website. The company wants to automate the creation and renewal of the Tl S certificates. Which solution will meet these requirements with the MOST operational efficiency?",
+      "options": {
+        "A": "Use a CloudFront security policy lo create a certificate.",
+        "B": "Use a CloudFront origin access control (OAC) to create a certificate.",
+        "C": "Use AWS Certificate Manager (ACM) to create a certificate. Use DNS validation for the domain.",
+        "D": "Use AWS Certificate Manager (ACM) to create a certificate. Use email validation for the domain."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to ensure clients use a TLS certificate when\naccessing the website and automate the creation and renewal of TLS certificates.\nAnalysis of Options:\nCloudFront Security Policy: Not applicable for creating certificates.\nCloudFront Origin Access Control (OAC): Controls access to origins, not relevant for TLS certificate\ncreation.\nAWS Certificate Manager (ACM) with DNS Validation: Provides automated certificate management,\nincluding creation and renewal, with minimal manual intervention. DNS validation is automated and\ndoes not require manual intervention as email validation does.\nAWS Certificate Manager (ACM) with Email Validation: Requires manual intervention to approve\nvalidation emails, which increases operational effort.\nBest Solution:\nAWS Certificate Manager (ACM) with DNS Validation: Ensures automated and efficient certificate\nmanagement with the least operational effort.\nReference:\nAWS Certificate Manager (ACM)\nDNS Validation in ACM"
+    },
+    {
+      "id": 732,
+      "type": "single",
+      "question": "A company's solutions architect is designing an AWS multi-account solution that uses AWS Organizations. The solutions architect has organized the company's accounts into organizational units (OUs). The solutions architect needs a solution that will identify any changes to the OU hierarchy. The solution also needs to notify the company's operations team of any changes. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Provision the AWS accounts by using AWS Control Tower. Use account drift notifications to Identify the changes to the OU hierarchy.",
+        "B": "Provision the AWS accounts by using AWS Control Tower. Use AWS Config aggregated rules to identify the changes to the OU hierarchy.",
+        "C": "Use AWS Service Catalog to create accounts in Organizations. Use an AWS CloudTrail organization trail to identify the changes to the OU hierarchy.",
+        "D": "Use AWS CloudFormation templates to create accounts in Organizations. Use the drift detection operation on a stack to identify the changes to the OU hierarchy."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Understanding the Requirement: The company needs to monitor and notify changes to the OU\nhierarchy with minimal operational overhead.\nAnalysis of Options:\nAWS Control Tower with Account Drift Notifications: AWS Control Tower provides automated account\nprovisioning and governance, including drift detection and notifications for changes in the OU\nhierarchy.\nAWS Control Tower with AWS Config: AWS Config provides resource configuration tracking but is\nmore complex compared to drift notifications directly available in Control Tower.\nAWS Service Catalog with CloudTrail: While CloudTrail tracks changes, setting up notification\nmechanisms involves more operational overhead.\nAWS CloudFormation with Drift Detection: Suitable for tracking configuration changes but less\nefficient for monitoring OU hierarchy changes compared to Control Tower's built-in features.\nBest Solution:\nAWS Control Tower with Account Drift Notifications: Provides a streamlined and efficient way to\ndetect and notify changes in the OU hierarchy with minimal operational overhead.\nReference:\nAWS Control Tower\nAWS Control Tower Drift Detection"
+    },
+    {
+      "id": 733,
+      "type": "single",
+      "question": "A company is building a web application that serves a content management system. The content management system runs on Amazon EC2 instances behind an Application Load Balancer (Al B). The FC? instances run in an Auto Scaling group across multiple Availability 7ones. Users are constantly adding and updating files, blogs and other website assets in the content management system. A solutions architect must implement a solution in which all the EC2 Instances share up-to-date website content with the least possible lag time. Which solution meets these requirements?",
+      "options": {
+        "A": "Update the EC2 user data in the Auto Scaling group lifecycle policy to copy the website assets from the EC2 instance that was launched most recently. Configure the ALB to make changes to the website assets only in the newest EC2 instance.",
+        "B": "Copy the website assets to an Amazon Elastic File System (Amazon EFS) file system. Configure each EC2 instance to mount the EFS file system locally. Configure the website hosting application to reference the website assets that are stored in the EFS file system.",
+        "C": "Copy the website assets to an Amazon S3 bucket. Ensure that each EC2 Instance downloads the website assets from the S3 bucket to the attached Amazon Elastic Block Store (Amazon EBS) volume. Run the S3 sync command once each hour to keep files up to date.",
+        "D": "Restore an Amazon Elastic Block Store (Amazon EBS) snapshot with the website assets. Attach the EBS snapshot as a secondary EBS volume when a new CC2 instance is launched. Configure the website hosting application to reference the website assets that are stored in the secondary EDS volume."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirement: The company needs all EC2 instances to share up-to-date website\ncontent with minimal lag time, running behind an Application Load Balancer.\nAnalysis of Options:\nEC2 User Data with ALB: Complex and not scalable as it requires updating each instance manually.\nAmazon EFS: Provides a scalable, shared file storage solution that can be mounted by multiple EC2\ninstances, ensuring all instances have access to the same up-to-date content.\nAmazon S3 with EC2 Sync: Involves periodic synchronization which introduces lag and complexity.\nAmazon EBS Snapshots: Not suitable for dynamic and frequent updates required by a content\nmanagement system.\nBest Solution:\nAmazon EFS: Ensures all EC2 instances have access to a consistent and up-to-date set of website\nassets with minimal lag time, meeting the requirements effectively.\nReference:\nAmazon Elastic File System (EFS)\nMounting EFS File Systems on EC2 Instances"
+    },
+    {
+      "id": 734,
+      "type": "single",
+      "question": "A company needs to optimize the cost of its Amazon EC2 Instances. The company also needs to change the type and family of its EC2 instances every 2-3 months. What should the company do lo meet these requirements?",
+      "options": {
+        "A": "Purchase Partial Upfront Reserved Instances tor a 3-year term.",
+        "B": "Purchase a No Upfront Compute Savings Plan for a 1-year term.",
+        "C": "Purchase All Upfront Reserved Instances for a 1 -year term.",
+        "D": "Purchase an All Upfront EC2 Instance Savings Plan for a 1-year term."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Understanding the Requirements: The company needs to optimize costs and has the flexibility to\nchange EC2 instance types and families frequently (every 2-3 months).\nSavings Plans Overview: Savings Plans offer significant savings over On-Demand pricing, with the\nflexibility to use any instance type and family within a region.\nNo Upfront Compute Savings Plan: This plan allows for cost optimization without any upfront\npayment, offering flexibility to change instance types and families.\nTerm Selection: A 1-year term is appropriate for balancing cost savings and flexibility given the\nfrequent changes in instance types.\nConclusion: A No Upfront Compute Savings Plan for a 1-year term provides the needed flexibility and\ncost savings without the commitment and inflexibility of Reserved Instances.\nReference\nAWS Savings Plans: AWS Savings Plans\nAWS Cost Management Documentation: AWS Cost Management"
+    },
+    {
+      "id": 735,
+      "type": "multiple",
+      "question": "A company uses a Microsoft SOL Server database. The company's applications are connected to the database. The company wants to migrate to an Amazon Aurora PostgreSQL database with minimal changes to the application code. Which combination of steps will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Use the AWS Schema Conversion Tool <AWS SCT) to rewrite the SOL queries in the applications.",
+        "B": "Enable Babelfish on Aurora PostgreSQL to run the SQL queues from the applications.",
+        "C": "Migrate the database schema and data by using the AWS Schema Conversion Tool (AWS SCT) and AWS Database Migration Service (AWS DMS).",
+        "D": "Use Amazon RDS Proxy to connect the applications to Aurora PostgreSQL",
+        "E": "Use AWS Database Migration Service (AWS DMS) to rewrite the SOI queries in the applications"
+      },
+      "answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The goal is to migrate from Microsoft SQL Server to Amazon Aurora\nPostgreSQL with minimal application code changes.\nBabelfish for Aurora PostgreSQL: Babelfish allows Aurora PostgreSQL to understand SQL Server\nqueries natively, reducing the need for application code changes.\nAWS Schema Conversion Tool (SCT): This tool helps in converting the database schema from SQL\nServer to PostgreSQL.\nAWS Database Migration Service (DMS): DMS can be used to migrate data from SQL Server to Aurora\nPostgreSQL seamlessly.\nCombined Approach: Enabling Babelfish addresses the SQL query compatibility, while SCT and DMS\nhandle the schema and data migration.\nReference\nBabelfish for Aurora PostgreSQL: Babelfish Documentation\nAWS SCT and DMS: AWS Database Migration Service"
+    },
+    {
+      "id": 736,
+      "type": "single",
+      "question": "A company uses Amazon RDS with default backup settings for Its database tier The company needs to make a dally backup of the database to meet regulatory requirements. The company must retain the backups (or 30 days. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Write an AWS Lambda function to create an RDS snapshot every day.",
+        "B": "Modify the RDS database lo have a retention period of 30 days for automated backups.",
+        "C": "Use AWS Systems Manager Maintenance Windows to modify the RDS backup retention period.",
+        "D": "Create a manual snapshot every day by using the AWS CLI. Modify the RDS backup retention period."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Current Backup Settings: By default, Amazon RDS creates automated backups with a retention period\nof 7 days.\nRegulatory Requirements: The requirement is to retain daily backups for 30 days.\nAdjusting Retention Period: You can modify the RDS instance settings to increase the automated\nbackup retention period to 30 days.\nOperational Overhead: This solution is the simplest as it leverages existing automated backups and\nrequires minimal intervention.\nImplementation: The change can be made via the AWS Management Console, AWS CLI, or AWS\nSDKs.\nReference\nAmazon RDS Backups: Amazon RDS Documentation"
+    },
+    {
+      "id": 737,
+      "type": "single",
+      "question": "A company is migrating a document management application to AWS. The application runs on Linux servers. The company will migrate the application to Amazon EC2 instances in an Auto Scaling group. The company stores 7 TiB of documents in a shared storage file system. An external relational database tracks the documents. Documents are stored once and can be retrieved multiple times for reference at any time. The company cannot modify the application during the migration. The storage solution must be highly available and must support scaling over time. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Deploy an EC2 instance with enhanced networking as a shared NFS storage system. Export the NFS share. Mount the NFS share on the EC2 instances in the Auto Scaling group.",
+        "B": "Create an Amazon S3 bucket that uses the S3 Standard-Infrequent Access (S3 Standard-IA) storage class Mount the S3 bucket on the EC2 instances in the Auto Scaling group.",
+        "C": "Deploy an SFTP server endpoint by using AWS Transfer for SFTP and an Amazon S3 bucket. Configure the EC2 instances in the Auto Scaling group to connect to the SFTP server.",
+        "D": "Create an Amazon.. System (Amazon fcFS) file system with mount points in multiple Availability Zones. Use the bFS Stondard-intrcqucnt Access (Standard-IA) storage class. Mount the NFS share on the EC2 instances in the Auto Scaling group."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Requirement Analysis: The company needs highly available, scalable storage for a document\nmanagement application without modifying the application during migration.\nEFS Overview: Amazon EFS provides scalable file storage that can be mounted concurrently on\nmultiple EC2 instances across different Availability Zones.\nEFS Standard-IA: Using the Standard-IA storage class helps reduce costs for infrequently accessed\ndata while maintaining high availability and scalability.\nImplementation:\nCreate an EFS file system.\nConfigure mount targets in multiple Availability Zones to ensure high availability.\nMount the EFS file system on EC2 instances in the Auto Scaling group.\nConclusion: This solution meets the high availability, scalability, and cost-effectiveness requirements\nwithout needing application modifications.\nReference\nAmazon EFS: Amazon EFS Documentation\nEFS Storage Classes: Amazon EFS Storage Classes"
+    },
+    {
+      "id": 738,
+      "type": "single",
+      "question": "A company uses an Amazon Aurora PostgreSQL provisioned cluster with its application. The application's peak traffic occurs several times a day for periods of 30 minutes to several hours. The database capacity is provisioned to handle peak traffic from the application, but the database has wasted capacity during non-peak hours. The company wants to reduce the database costs. Which solution will meet these requirements with the LEAST operational effort?",
+      "options": {
+        "A": "Set up an Amazon CloudWatch alarm to monitor database utilization. Scale up or scale down the database capacity based on the amount of traffic.",
+        "B": "Migrate the database to Amazon EC2 instances in on Auto Scaling group. Increase or decrease the number of instances based on the amount of traffic.",
+        "C": "Migrate the database to an Amazon Aurora Serverless DB cluster to scale up or scale down the capacity based on the amount of traffic.",
+        "D": "Schedule an AWS Lambda function to provision the required database capacity at the start of each day. Schedule another Lambda function to reduce the capacity at the end of each day."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The database experiences peak traffic multiple times a day but has wasted\ncapacity during non-peak hours. The goal is to reduce costs with minimal operational effort.\nAurora Serverless Overview: Aurora Serverless automatically adjusts database capacity based on\ncurrent demand, scaling up during peak times and scaling down during non-peak times.\nCost Efficiency: Aurora Serverless charges only for the capacity used, which is more cost-effective\nthan provisioning for peak traffic.\nOperational Efficiency: Aurora Serverless eliminates the need for manual scaling or scheduling\nLambda functions for capacity management.\nImplementation: Migrate the database from the provisioned Aurora PostgreSQL cluster to an Aurora\nServerless cluster.\nReference\nAmazon Aurora Serverless: Aurora Serverless Documentation"
+    },
+    {
+      "id": 739,
+      "type": "single",
+      "question": "A solutions architect is designing an asynchronous application to process credit card data validation requests for a bank. The application must be secure and be able to process each request at least once. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Use AWS Lambda event source mapping. Set Amazon Simple Queue Service (Amazon SQS) standard queues as the event source. Use AWS Key Management Service (SSE-KMS) for encryption. Add the kms:Decrypt permission for the Lambda execution role.",
+        "B": "Use AWS Lambda event source mapping. Use Amazon Simple Queue Service (Amazon SQS) FIFO queues as the event source. Use SQS managed encryption keys (SSE-SQS) for encryption. Add the encryption key invocation permission for the Lambda function.",
+        "C": "Use the AWS Lambda event source mapping. Set Amazon Simple Queue Service (Amazon SQS) FIFO queues as the event source. Use AWS KMS keys (SSE-KMS). Add the kms:Decrypt permission for the Lambda execution role.",
+        "D": "Use the AWS Lambda event source mapping. Set Amazon Simple Queue Service (Amazon SQS) standard queues as the event source. Use AWS KMS keys (SSE-KMS) for encryption. Add the encryption key invocation permission for the Lambda function."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Requirement Analysis: The application must process each credit card data validation request at least\nonce, securely and cost-effectively.\nSQS FIFO Queues: Ensures that each message is processed exactly once and in the exact order sent.\nAWS Lambda: Using Lambda for event-driven processing ensures scalability and cost-efficiency.\nSSE-SQS: Provides encryption at rest using SQS-managed keys, simplifying encryption management.\nImplementation:\nSet up SQS FIFO queues as the event source for Lambda.\nEnable SSE-SQS for encryption.\nEnsure the Lambda execution role has the necessary permissions to use the encryption keys.\nConclusion: This combination meets the requirements of security, exact-once processing, and cost-\neffectiveness.\nReference\nAmazon SQS: Amazon SQS Documentation\nAWS Lambda with SQS: Using AWS Lambda with Amazon SQS"
+    },
+    {
+      "id": 740,
+      "type": "single",
+      "question": "A company has an internal application that runs on Amazon EC2 instances in an Auto Scaling group. The EC2 instances are compute optimized and use Amazon Elastic Block Store (Amazon EBS) volumes. The company wants to identify cost optimizations across the EC2 instances, the Auto Scaling group, and the EBS volumes. Which solution will meet these requirements with the MOST operational efficiency?",
+      "options": {
+        "A": "Create a new AWS Cost and Usage Report. Search the report for cost recommendations for the EC2 instances, the Auto Scaling group, and the EBS volumes.",
+        "B": "Create new Amazon CloudWatch billing alerts. Check the alert statuses for cost recommendations for the EC2 instances, the Auto Scaling group, and the EBS volumes.",
+        "C": "Configure AWS Compute Optimizer for cost recommendations for the EC2 instances, the Auto Scaling group, and the EBS volumes.",
+        "D": "Configure AWS Compute Optimizer for cost recommendations for the EC2 instances. Create a new AWS Cost and Usage Report. Search the report for cost recommendations for the Auto Scaling group and the EBS volumes."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The company wants to identify cost optimizations for EC2 instances, the Auto\nScaling group, and EBS volumes with high operational efficiency.\nAWS Compute Optimizer: This service provides actionable recommendations to help optimize your\nAWS resources, including EC2 instances, Auto Scaling groups, and EBS volumes.\nCost Recommendations: Compute Optimizer analyzes the utilization of resources and provides\nspecific recommendations for rightsizing or optimizing the configurations.\nOperational Efficiency: Using Compute Optimizer automates the process of identifying cost-saving\nopportunities, reducing the need for manual analysis.\nImplementation:\nEnable AWS Compute Optimizer for your AWS account.\nReview the recommendations provided for EC2 instances, Auto Scaling groups, and EBS volumes.\nConclusion: This solution provides a comprehensive, automated approach to identifying cost\noptimizations with minimal operational effort.\nReference\nAWS Compute Optimizer: AWS Compute Optimizer Documentation"
+    },
+    {
+      "id": 741,
+      "type": "single",
+      "question": "A company uses GPS trackers to document the migration patterns of thousands of sea turtles. The trackers check every 5 minutes to see if a turtle has moved more than 100 yards (91.4 meters). If a turtle has moved, its tracker sends the new coordinates to a web application running on three Amazon EC2 instances that are in multiple Availability Zones in one AWS Region. Jgpently. the web application was overwhelmed while processing an unexpected volume of tracker dat a. Data was lost with no way to replay the events. A solutions ftitect must prevent this problem from happening again and needs a solution with the least operational overhead. at should the solutions architect do to meet these requirements?",
+      "options": {
+        "A": "Create an Amazon S3 bucket to store the data. Configure the application to scan for new data in the bucket for processing.",
+        "B": "Create an Amazon API Gateway endpoint to handle transmitted location coordinates. Use an AWS Lambda function to process each item concurrently.",
+        "C": "Create an Amazon Simple Queue Service (Amazon SOS) queue to store the incoming data. Configure the application to poll for new messages for processing.",
+        "D": "Create an Amazon DynamoDB table to store transmitted location coordinates. Configure the application to query the table for new data for processing. Use TTL to remove data that has been processed."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The application was overwhelmed with unexpected data volume, leading to\ndata loss and the need for a replay mechanism.\nAmazon SQS Overview: SQS is a fully managed message queuing service that decouples and scales\nmicroservices, distributed systems, and serverless applications.\nData Decoupling: By using an SQS queue, the application can store incoming tracker data reliably and\nprocess it asynchronously, preventing data loss.\nImplementation:\nCreate an SQS queue.\nModify the web application to send incoming data to the SQS queue.\nConfigure the application instances to poll the SQS queue and process the messages.\nConclusion: This solution meets the requirements with minimal operational overhead, ensuring data\nis not lost and can be processed at the application’s own pace.\nReference\nAmazon SQS: Amazon SQS Documentation"
+    },
+    {
+      "id": 742,
+      "type": "single",
+      "question": "A solutions architect is creating an application that will handle batch processing of large amounts of dat a. The input data will be held in Amazon S3 and the ou data will be stored in a different S3 bucket. For processing, the application will transfer the data over the network between multiple Amazon EC2 instances. What should the solutions architect do to reduce the overall data transfer costs?",
+      "options": {
+        "A": "Place all the EC2 instances in an Auto Scaling group.",
+        "B": "Place all the EC2 instances in the same AWS Region.",
+        "C": "Place all the EC2 instances in the same Availability Zone.",
+        "D": "Place all the EC2 instances in private subnets in multiple Availability Zones."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The application involves batch processing of large data transfers between EC2\ninstances.\nData Transfer Costs: Data transfer within the same Availability Zone (AZ) is typically free, while cross-\nAZ transfers incur additional costs.\nImplementation:\nLaunch all EC2 instances within the same Availability Zone.\nEnsure the instances are part of the same subnet to facilitate seamless data transfer.\nConclusion: Placing all EC2 instances in the same AZ reduces data transfer costs significantly without\naffecting the application’s functionality.\nReference\nAWS Pricing: AWS Data Transfer Pricing"
+    },
+    {
+      "id": 743,
+      "type": "multiple",
+      "question": "A company regularly uploads GB-sized files to Amazon S3. After Ihe company uploads the files, the company uses a fleet of Amazon EC2 Spot Instances to transcode the file format. The company needs to scale throughput when the company uploads data from the on-premises data center to Amazon S3 and when Ihe company downloads data from Amazon S3 to the EC2 instances. gUkicn solutions will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Use the S3 bucket access point instead of accessing the S3 bucket directly.",
+        "B": "Upload the files into multiple S3 buckets.",
+        "C": "Use S3 multipart uploads.",
+        "D": "Fetch multiple byte-ranges of an object in parallel. fe",
+        "E": "Add a random prefix to each object when uploading the files."
+      },
+      "answers": [
+        "C",
+        "D"
+      ],
+      "explanation": "Requirement Analysis: The company needs to scale throughput for uploading large files to S3 and\ndownloading them to EC2 instances.\nS3 Multipart Uploads: This method allows for the parallel upload of parts of a file, improving upload\nefficiency and reliability.\nParallel Fetching: Fetching multiple byte-ranges in parallel from S3 improves download performance.\nImplementation:\nFor uploads, use the S3 multipart upload API to upload files in parallel.\nFor downloads, use the S3 API to request multiple byte-ranges concurrently.\nConclusion: These solutions effectively scale throughput and improve the performance of both\nuploads and downloads.\nReference\nS3 Multipart Upload: Amazon S3 Multipart Upload\nParallel Fetching: S3 Byte-Range Fetches"
+    },
+    {
+      "id": 744,
+      "type": "single",
+      "question": "A company is creating a prototype of an ecommerce website on AWS. The website consists of an Application Load Balancer, an Auto Scaling group of Amazon EC2 instances for web servers, and an Amazon RDS for MySQL DB instance that runs with the Single-AZ configuration. The website is slow to respond during searches of the product catalog. The product catalog is a group of tables in the MySQL database that the company does not ate frequently. A solutions architect has determined that the CPU utilization on the DB instance is high when product catalog searches occur. What should the solutions architect recommend to improve the performance of the website during searches of the product catalog?",
+      "options": {
+        "A": "Migrate the product catalog to an Amazon Redshift database. Use the COPY command to load the product catalog tables.",
+        "B": "Implement an Amazon ElastiCache for Redis cluster to cache the product catalog. Use lazy loading to populate the cache.",
+        "C": "Add an additional scaling policy to the Auto Scaling group to launch additional EC2 instances when database response is slow.",
+        "D": "Turn on the Multi-AZ configuration for the DB instance. Configure the EC2 instances to throttle the product catalog queries that are sent to the database."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Requirement Analysis: The product catalog search is causing high CPU utilization on the MySQL DB\ninstance, slowing down the website.\nElastiCache Overview: Amazon ElastiCache for Redis can be used to cache frequently accessed data,\nreducing load on the database.\nLazy Loading: This caching strategy loads data into the cache only when it is requested, improving\nresponse times for repeated queries.\nImplementation:\nSet up an ElastiCache for Redis cluster.\nModify the application to check the cache before querying the database.\nUse lazy loading to populate the cache on cache misses.\nConclusion: This approach reduces database load and improves website performance during product\ncatalog searches.\nReference\nAmazon ElastiCache: ElastiCache Documentation\nCaching Strategies: ElastiCache Caching Strategies"
+    },
+    {
+      "id": 745,
+      "type": "multiple",
+      "question": "A media company has a multi-account AWS environment in the us-east-1 Region. The company has an Amazon Simple Notification Service {Amazon SNS) topic in a production account that publishes performance metrics. The company has an AWS Lambda function in an administrator account to process and analyze log data. The Lambda function that is in the administrator account must be invoked by messages from the SNS topic that is in the production account when significant metrics tM* reported. Which combination of steps will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Create an IAM resource policy for the Lambda function that allows Amazon SNS to invoke the function. Implement an Amazon Simple Queue Service (Amazon SQS) queue in the administrator account to buffer messages from the SNS topic that is in the production account. Configure the SOS queue to invoke the Lambda function.",
+        "B": "Create an IAM policy for the SNS topic that allows the Lambda function to subscribe to the topic.",
+        "C": "Use an Amazon EventBridge rule in the production account to capture the SNS topic notifications. Configure the EventBridge rule to forward notifications to the Lambda function that is in the administrator account.",
+        "D": "Store performance metrics in an Amazon S3 bucket in the production account. Use Amazon Athena to analyze the metrics from the administrator account."
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "Requirement Analysis: The Lambda function in the administrator account needs to process messages\nfrom an SNS topic in the production account.\nIAM Policy for SNS Topic: Allows the Lambda function to subscribe and be invoked by the SNS topic.\nSQS Queue for Buffering: Using an SQS queue provides reliable message delivery and buffering\nbetween SNS and Lambda, ensuring all messages are processed.\nImplementation:\nCreate an SQS queue in the administrator account.\nSet an IAM policy to allow the Lambda function to subscribe to and be invoked by the SNS topic.\nConfigure the SNS topic to send messages to the SQS queue.\nSet up the SQS queue to trigger the Lambda function.\nConclusion: This solution ensures reliable message delivery and processing with appropriate\npermissions.\nReference\nAmazon SNS: Amazon SNS Documentation\nAmazon SQS: Amazon SQS Documentation\nAWS Lambda: AWS Lambda Documentation"
+    },
+    {
+      "id": 746,
+      "type": "single",
+      "question": "A company runs a self-managed Microsoft SOL Server on Amazon EC2 instances and Amazon Elastic Block Store (Amazon EBS). Daily snapshots are taken of the EBS volumes. Recently, all the company's EBS snapshots were accidentally deleted while running a snapshot cleaning script that deletes all expired EBS snapshots. A solutions architect needs to update the architecture to prevent data loss without retaining EBS snapshots indefinitely. Which solution will meet these requirements with the LEAST development effort?",
+      "options": {
+        "A": "Change the 1AM policy of the user to deny EBS snapshot deletion.",
+        "B": "Copy the EBS snapshots to another AWS Region after completing the snapshots daily.",
+        "C": "Create a 7-day EBS snapshot retention rule in Recycle Bin and apply the rule for all snapshots.",
+        "D": "Copy EBS snapshots to Amazon S3 Standard-Infrequent Access (S3 Standard-IA)."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The goal is to prevent accidental deletion of EBS snapshots while avoiding\nindefinite retention.\nRecycle Bin for EBS Snapshots: AWS Recycle Bin allows for retention rules that prevent immediate\ndeletion of snapshots, providing a safety net against accidental deletions.\nRetention Rule: A 7-day retention rule ensures snapshots are not permanently deleted immediately,\ngiving time to recover from accidental deletions.\nImplementation:\nEnable Recycle Bin in your AWS account.\nCreate a retention rule that specifies a 7-day period for EBS snapshots.\nApply this rule to all EBS snapshots.\nConclusion: This solution provides an automated way to prevent data loss from accidental deletions\nwith minimal development effort.\nReference\nAWS Recycle Bin: AWS Recycle Bin Documentation"
+    },
+    {
+      "id": 747,
+      "type": "single",
+      "question": "A video game company is deploying a new gaming application to its global users. The company requires a solution that will provide near real-time reviews and rankings of the players. A solutions architect must design a solution to provide fast access to the dat a. The solution must also ensure the data persists on disks in the event that the company restarts the application. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Configure an Amazon CloudFront distribution with an Amazon S3 bucket as the origin. Store the player data in the S3 bucket.",
+        "B": "Create Amazon EC2 instances in multiple AWS Regions. Store the player data on the EC2 instances. Configure Amazon Route 53 with geolocation records to direct users to the closest EC2 instance.",
+        "C": "Deploy an Amazon ElastiCache for Redis cluster. Store the player data in the ElastiCache cluster.",
+        "D": "Deploy an Amazon ElastiCache for Memcached cluster. Store the player data in the ElastiCache cluster."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Requirement Analysis: The application needs near real-time access to data, persistence, and minimal\noperational overhead.\nElastiCache for Redis: Provides in-memory data storage with persistence, supporting fast access and\ndurability.\nOperational Overhead: Managed service reduces the burden of setup, maintenance, and scaling.\nImplementation:\nDeploy an ElastiCache for Redis cluster.\nConfigure Redis to persist data to disk using AOF (Append-Only File) or RDB (Redis Database Backup)\nsnapshots.\nConclusion: ElastiCache for Redis meets the requirements for fast access, data persistence, and low\noperational overhead.\nReference\nAmazon ElastiCache: ElastiCache for Redis Documentation"
+    },
+    {
+      "id": 748,
+      "type": "single",
+      "question": "A company hosts its core network services, including directory services and DNS, in its on-premises data center. The data center is connected to the AWS Cloud using AWS Direct Connect (DX). Additional AWS accounts are planned that will require quick, cost-effective, and consistent access to these network services. What should a solutions architect implement to meet these requirements with the LEAST amount of operational overhead?",
+      "options": {
+        "A": "Create a DX connection in each new account. Route the network traffic to the on-premises servers.",
+        "B": "Configure VPC endpoints in the DX VPC for all required services. Route the network traffic to the on-premises servers.",
+        "C": "Create a VPN connection between each new account and the DX VPC. Route the network traffic to the on-premises servers.",
+        "D": "Configure AWS Transit Gateway between the accounts. Assign DX to the transit gateway and route network traffic to the on-premises servers."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Requirement Analysis: Need quick, cost-effective, and consistent access to on-premises network\nservices from multiple AWS accounts.\nAWS Transit Gateway: Centralizes and simplifies network management by connecting VPCs and on-\npremises networks.\nDirect Connect Integration: Assigning DX to the transit gateway ensures consistent and high-\nperformance connectivity.\nOperational Overhead: Minimal because Transit Gateway simplifies routing and management.\nImplementation:\nSet up AWS Transit Gateway.\nConnect new AWS accounts to the Transit Gateway.\nRoute traffic through Transit Gateway to on-premises servers via Direct Connect.\nConclusion: This solution provides a scalable, cost-effective, and low-overhead method to meet\nconnectivity requirements.\nReference\nAWS Transit Gateway: AWS Transit Gateway Documentation"
+    },
+    {
+      "id": 749,
+      "type": "single",
+      "question": "A company's software development team needs an Amazon RDS Multi-AZ cluster. The RDS cluster will serve as a backend for a desktop client that is deployed on premises. The desktop client requires direct connectivity to the RDS cluster. The company must give the development team the ability to connect to the cluster by using the client when the team is in the office. Which solution provides the required connectivity MOST securely?",
+      "options": {
+        "A": "Create a VPC and two public subnets. Create the RDS cluster in the public subnets. Use AWS Site- to-Site VPN with a customer gateway in the company's office.",
+        "B": "Create a VPC and two private subnets. Create the RDS cluster in the private subnets. Use AWS Site- to-Site VPN with a customer gateway in the company's office.",
+        "C": "Create a VPC and two private subnets. Create the RDS cluster in the private subnets. Use RDS security groups to allow the company's office IP ranges to access the cluster.",
+        "D": "Create a VPC and two public subnets. Create the RDS cluster in the public subnets. Create a cluster user for each developer. Use RDS security groups to allow the users to access the cluster."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Requirement Analysis: Need secure, direct connectivity from an on-premises client to an RDS cluster,\naccessible only when in the office.\nVPC with Private Subnets: Ensures the RDS cluster is not publicly accessible, enhancing security.\nSite-to-Site VPN: Provides secure, encrypted connection between on-premises office and AWS VPC.\nImplementation:\nCreate a VPC with two private subnets.\nLaunch the RDS cluster in the private subnets.\nSet up a Site-to-Site VPN connection with a customer gateway in the office.\nConclusion: This setup ensures secure and direct connectivity with minimal exposure, meeting the\nrequirement for secure access from the office.\nReference\nAWS Site-to-Site VPN: AWS Site-to-Site VPN Documentation\nAmazon RDS: Amazon RDS Documentation"
+    },
+    {
+      "id": 750,
+      "type": "single",
+      "question": "A social media company wants to store its database of user profiles, relationships, and interactions in the AWS Cloud. The company needs an application to monitor any changes in the database. The application needs to analyze the relationships between the data entities and to provide recommendations to users. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use Amazon Neptune to store the information. Use Amazon Kinesis Data Streams to process changes in the database.",
+        "B": "Use Amazon Neptune to store the information. Use Neptune Streams to process changes in the database.",
+        "C": "Use Amazon Quantum Ledger Database (Amazon QLDB) to store the information. Use Amazon Kinesis Data Streams to process changes in the database.",
+        "D": "Use Amazon Quantum Ledger Database (Amazon QLDB) to store the information. Use Neptune Streams to process changes in the database."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Amazon Neptune: Neptune is a fully managed graph database service that is optimized for storing\nand querying highly connected data. It supports both property graph and RDF graph models, making\nit suitable for applications that need to analyze relationships between data entities.\nNeptune Streams: Neptune Streams captures changes to the graph and streams these changes to\nother AWS services. This is useful for applications that need to monitor and respond to changes in\nreal-time, such as providing recommendations based on user interactions and relationships.\nLeast Operational Overhead: Using Neptune Streams directly with Amazon Neptune ensures that the\nsolution is tightly integrated, reducing the need for additional components and minimizing\noperational overhead. This integration simplifies the architecture by eliminating the need for a\nseparate service like Kinesis for change processing.\nReference:\nAmazon Neptune Documentation\nNeptune Streams Documentation"
+    }
+  ]
+}

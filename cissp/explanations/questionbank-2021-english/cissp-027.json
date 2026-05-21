@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1301 - Q1350",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1301,
+      "question": "Which of the following firewall rules is less likely to be found on a firewall installed between and organization internal network and the Internet?",
+      "options": {
+        "A": "Permit all traffic to and from local host.",
+        "B": "Permit all inbound ssh traffic",
+        "C": "Permit all inbound tcp connections.",
+        "D": "Permit all syslog traffic to log-server.abc.org."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Option \"C\" is a very bad practice in a firewall connecting one of its interfaces to a public network like Internet. Since in that rule you are allowing all inbound TCP traffic, the hackers can send all the attacks they want to any TCP port, they can make port scanning, Syn Attacks, and many other dangerous DoS activities to our private network. Permit the traffic from local host is a best practice, our firewall is the local host. Permit SSH (Secure Shell) is also good because this protocol use cryptography."
+    },
+    {
+      "id": 1302,
+      "question": "The Internet can be utilized by either?",
+      "options": {
+        "A": "Public or private networks (with a Virtual Private Networks).",
+        "B": "Private or public networks (with a Virtual Private Networks).",
+        "C": "Home or private networks (with a Virtual Private Networks).",
+        "D": "Public or home networks (with a Virtual Private Networks)."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, you can utilize Internet from a Private network and get access through an access translation method that gives you a valid IP address to make the request. Or you can access the Internet directly from a routable, public IP address contained in a public network. To increase security, you can create VPN´s to pass information between two endpoints with confidentiality through the Internet."
+    },
+    {
+      "id": 1303,
+      "question": "This backup method must be made regardless of whether Differential or Incremental methods are used.",
+      "options": {
+        "A": "Full Backup Method",
+        "B": "Incremental backup method",
+        "C": "Differential backup method",
+        "D": "Tape backup method"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since the \"Full\" backup method provides a baseline for our systems for Restore, the full backup must be done at least once regardless of the method you are using. Its very common to use full backups in combination with incremental or differential ones to decrease the backup time (however you increment the restore time), but there is no way to maintain a system only with incremental or differential backups. You always need to begin from your restore baseline, the Full Backup."
+    },
+    {
+      "id": 1304,
+      "question": "Why do buffer overflows happen?",
+      "options": {
+        "A": "Because buffers can only hold so much data.",
+        "B": "Because input data is not checked for appropriate length at time of input.",
+        "C": "Because they are an easy weakness to exploit.",
+        "D": "Because of insufficient system memory."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1305,
+      "question": "Which of the following should not be performed by an operator?",
+      "options": {
+        "A": "Mounting disk or tape",
+        "B": "Backup and recovery",
+        "C": "Data entry",
+        "D": "Handling hardware"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is very obvious, the operators are responsible of making operative tasks that deals with the hardware and software implementations, they can handle the hardware and put t in condition for the user, be in charge of the backup and restore procedures and Mounting the disk or tapes for the backup. Those are all common tasks. When we talk about the data entry, is the user who has to make does, If the operator do that too, what is the user going to do?"
+    },
+    {
+      "id": 1306,
+      "question": "What security model is dependant on security labels?",
+      "options": {
+        "A": "Discretionary access control",
+        "B": "Label-based access control",
+        "C": "Mandatory access control",
+        "D": "Non-discretionary access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy. This kind of access control method is based on Security labels. It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden)."
+    },
+    {
+      "id": 1307,
+      "question": "Detection capabilities of Host-based ID systems are limited by the incompleteness of which of the following?",
+      "options": {
+        "A": "Audit log capabilities",
+        "B": "Event capture capabilities",
+        "C": "Event triage capabilities",
+        "D": "Audit notification capabilities"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is one of the weakest point of IDS systems installed on the individual hosts. Since much of the malicious activity could be circulating through the network, and this kind of IDS usually have small logging capabilities and of local nature. So any activity happening in the network could go unnoticed, and intrusions can't be tracked as in depth as we could with an enterprise IDS solution providing centralized logging capabilities."
+    },
+    {
+      "id": 1308,
+      "question": "Computer crime is generally made possible by which of the following?",
+      "options": {
+        "A": "The perpetrator obtaining training & special knowledge.",
+        "B": "Victim carelessness.",
+        "C": "Collusion with others in information processing",
+        "D": "System design flaws."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is a real problem, nobody thinks that can be victim of a computer crime until it is. There is a big problem relating to the people thinking about this kind of attacks. Computer crimes can be very important and can make great damage to enterprises. Computer Crime will decrease once people begin to think about the Risks and begin to protect their systems from the most common attacks."
+    },
+    {
+      "id": 1309,
+      "question": "The structures, transmission methods, transport formats, and security measures that are used to provide integrity, availability, authentication, and confidentiality for transmissions over private and public communications networks and media includes?",
+      "options": {
+        "A": "The Telecommunications and Network Security domain.",
+        "B": "The Telecommunications and Netware Security domain.",
+        "C": "The Technical communications and Network Security domain.",
+        "D": "The Telnet and Network Security domain."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is pretty straight forward. The four principal pillars of computer security: integrity, authentication, confidentiality and availability are all part of the network security and telecommunication domain. Why? Because those pillars deal with that. We provide integrity through digital signatures, authentication through passwords, confidentiality through encryption and availability by fault tolerance and disaster recovery. All of those are networking and telecommunication components."
+    },
+    {
+      "id": 1310,
+      "question": "Which of the following is the lowest TCSEC class where in the system must protected against covert storage channels (but not necessarily covert timing channels)?",
+      "options": {
+        "A": "B2",
+        "B": "B1",
+        "C": "B3",
+        "D": "A1"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The B2 class referenced in the orange book is the formal security policy model based on device labels that can use DAC (Discretionary access controls) and MAC (Mandatory Access Controls). It provides functionality about covert channel control. It does not require covert timing channels. You can review the B2 section of the Orange Book."
+    },
+    {
+      "id": 1311,
+      "question": "Which type of control is concerned with avoiding occurrences of risks?",
+      "options": {
+        "A": "Deterrent controls",
+        "B": "Detective controls",
+        "C": "Preventive controls",
+        "D": "Compensating controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Preventive controls deals with the avoidance of risk through the diminution of probabilities. Is like the example we read earlier about the dogs. Just to remember, Since we want to prevent something from happening, we can go out and buy some Guard dogs to make the job. You are buying them because you want to prevent something from happening. The intruder will see the dogs and will maybe go back, this prevents an attack, this dogs are a form of preventive control."
+    },
+    {
+      "id": 1312,
+      "question": "The basic function of an FRDS is to?",
+      "options": {
+        "A": "Protect file servers from data loss and a loss of availability due to disk failure.",
+        "B": "Persistent file servers from data gain and a gain of availability due to disk failure.",
+        "C": "Prudent file servers from data loss and a loss of acceptability due to disk failure.",
+        "D": "Packet file servers from data loss and a loss of accountability due to disk failure."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: FRDS systems will give us the functionality to protect our servers from disk failure an allow us to have highly available file services in our production servers. FRDS provides high availability against many types of disk failures and well known problems, if one disk goes down, the others still work providing no downtime. FRDS solutions are the preferred way to protect file servers against data corruption and loss. You can see more about FRDS in the Internet, search \"FRDS System\"."
+    },
+    {
+      "id": 1313,
+      "question": "Which of the following protocols does not operate at the data link layer (layer 2)?",
+      "options": {
+        "A": "PPP",
+        "B": "RARP",
+        "C": "L2F",
+        "D": "ICMP"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Internet Control Message Protocol. ICMP is used for diagnostics in the network. The Unix program, ping, uses ICMP messages to detect the status of other hosts in the net. ICMP messages can either be queries (in the case of ping) or error reports, such as when a network is unreachable. This protocol resides in layer 3 of the OSI model (Network layer)."
+    },
+    {
+      "id": 1314,
+      "question": "This tape format can be used to backup data systems in addition to its original intended audio used by:",
+      "options": {
+        "A": "Digital Audio tape (DAT)",
+        "B": "Digital video tape (DVT)",
+        "C": "Digital Casio Tape (DCT)",
+        "D": "Digital Voice Tape (DVT)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Digital Audio Tape (DAT or R-DAT) is a signal recording and playback medium introduced by Sony in 1987. In appearance it is similar to a compact audio cassette, using 1/8\" magnetic tape enclosed in a protective shell, but is roughly half the size at 73 mm x 54 mm x 10.5 mm. As the name suggests the recording is digital rather than analog, DAT converting and recording at the same rate as a CD (44.1 kHz sampling rate and 16 bits quantization) without data compression. This means that the entire input signal is retained. If a digital source is copied then the DAT will produce an exact clone. The format was designed for audio use, but through an ISO standard it has been adopted for general data storage, storing from 4 to 40 GB on a 120 meter tape depending on the standard and compression (DDS-1 to DDS-4). It is, naturally, sequential-access media and is commonly used for backups. Due to the higher requirements for integrity in data backups a computer-grade DAT was introduced."
+    },
+    {
+      "id": 1315,
+      "question": "By examining the \"state\" and \"context\" of the incoming data packets, it helps to track the protocols that are considered \"connectionless\", such as UDP-based applications and Remote Procedure Calls (RPC). This type of firewall system is used in?",
+      "options": {
+        "A": "First generation firewall systems.",
+        "B": "Second generation firewall systems.",
+        "C": "Third generation firewall systems.",
+        "D": "Fourth generation firewall systems."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Statefull inspection is a third generation firewall technology designed to be aware of, and inspect, not only the information being received, but the dynamic connection and transmission state of the information being received. Control decisions are made by analyzing and utilizing the following: Communication Information, Communication derived state, Application derived state and information manipulation. Here are some characteristics of Statefull Inspection technology on Firewalls: 1. Scan information from all layers in the packet. 2. Save state information derived from previous communications, such as the outgoing Port command of an FTP session, so that incoming data communication can be verified against it. 3. Provides tracking support for connectionless protocols through the use of session state databases. 4. Allow state information derived from other applications access through the firewall for authorized services only, such as previously authenticated users. 5. Evaluate and manipulate flexible expressions based on communication and application derived state information."
+    },
+    {
+      "id": 1316,
+      "question": "Guards are appropriate whenever the function required by the security program involves which of the following?",
+      "options": {
+        "A": "The use of discriminating judgment.",
+        "B": "The use of physical force.",
+        "C": "The operation of access control devices.",
+        "D": "The need to detect unauthorized access."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the correct answer, we don't have guards only to use physical force, that is not the real functionality of them if your security policy is well oriented. They are not only there to operate control devices and to detect unauthorized access, as stated in CISSP documentation, the appropriate function of a guard inside a security program is the use of discriminating judgment."
+    },
+    {
+      "id": 1317,
+      "question": "A server cluster looks like a?",
+      "options": {
+        "A": "Single server from the user's point of view.",
+        "B": "Dual server from the user's point of view.",
+        "C": "Tripe server from the user's point of view.",
+        "D": "Quardle server from the user's point of view."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A \"Cluster\" is a grouping of machines running certain services providing high availability and fault tolerance fro them. In other words, they are grouped together as a means of fail over support. From the users view, a cluster is a single server, but its only a logical one, you can have an array of 4 server in cluster all with the same IP address (/achieving correct resolution through ARP), there is no difference for the client."
+    },
+    {
+      "id": 1318,
+      "question": "Which of the following are functions that are compatible in a properly segregated environment?",
+      "options": {
+        "A": "Application programming and computer operation.",
+        "B": "System programming and job control analysis.",
+        "C": "Access authorization and database administration.",
+        "D": "System development and systems maintenance."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: If you think about it, System development and system maintenance are perfectly compatible, you can develop in the systems for certain time, and when it time for a maintenance, you stop the development process an make the maintenance. It's a pretty straight forward process. The other answer do not provide the simplicity and freedom of this option."
+    },
+    {
+      "id": 1319,
+      "question": "Encryption is applicable to all of the following OSI/ISO layers except:",
+      "options": {
+        "A": "Network layer",
+        "B": "Physical layer",
+        "C": "Session layer",
+        "D": "Data link layer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Physical Layer describes the physical properties of the various communications media, as well as the electrical properties and interpretation of the exchanged signals. Ex: this layer defines the size of Ethernet coaxial cable, the type of BNC connector used, and the termination method. You cannot encrypt nothing at this layer because its physical, it is not protocol / software based. Network, Data link and transport layer supports encryption."
+    },
+    {
+      "id": 1320,
+      "question": "The Computer Security Policy Model the Orange Book is based on is which of the following?",
+      "options": {
+        "A": "Bell-LaPadula",
+        "B": "Data Encryption Standard",
+        "C": "Kerberos",
+        "D": "Tempest"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Following the publication of the Anderson report, considerable research was initiated into formal models of security policy requirements and of the mechanisms that would implement and enforce those policy models as a security kernel. Prominent among these efforts was the ESD-sponsored development of the Bell and LaPadula model, an abstract formal treatment of DoD security policy.[2] Using mathematics and set theory, the model precisely defines the notion of secure state, fundamental modes of access, and the rules for granting subjects specific modes of access to objects. Finally, a theorem is proven to demonstrate that the rules are security-preserving operations, so that the application of any sequence of the rules to a system that is in a secure state will result in the system entering a new state that is also secure. This theorem is known as the Basic Security Theorem."
+    },
+    {
+      "id": 1321,
+      "question": "Which type of attack would a competitive intelligence attack best classify as?",
+      "options": {
+        "A": "Business attack",
+        "B": "Intelligence attack",
+        "C": "Financial attack",
+        "D": "Grudge attack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since we are talking about a competitive intelligence attack, we can classify it as a Business attack because it is disrupting business activities. Intelligence attacks are one of the most commonly used to hurt a company where more it hurts, in its information. To see more about competitive intelligence attacks you can take a look at some CISSP study guide. It could be the CISSP gold edition guide. \"Military and intelligence attacks are launched primarily to obtain secret and restricted information from law enforcement or military and technological research sources. Business attacks focus on illegally obtaining an organization's confidential information. Financial attacks are carried out to unlawfully obtain money or services. Grudge attacks are attacks that are carried out to damage an organization or a person.\" Pg. 616 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 1322,
+      "question": "Which of the following is responsible for the most security issues?",
+      "options": {
+        "A": "Outside espionage",
+        "B": "Hackers",
+        "C": "Personnel",
+        "D": "Equipment failure"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As I stated earlier in the comments, the great part of the attacks to companies comes from the personnel. Hackers are out there and attack some targets, but should never forget that your worst enemy can be inside of your company. Is for that that we usually implement IDS and profundity security. It's a very good practice to install Host based IDS to limit the ability of internal attackers through the machines. Another problem with personal is the ignorance, there are time that they just don't know what they are doing, and certainly are violating the security policy."
+    },
+    {
+      "id": 1323,
+      "question": "Which of the following goals is NOT a goal of Problem Management?",
+      "options": {
+        "A": "To eliminate all problems.",
+        "B": "To reduce failures to a manageable level.",
+        "C": "To prevent the occurrence or re-occurrence of a problem.",
+        "D": "To mitigate the negative impact of problems on computing services and resources."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not possible, nobody can eliminate all problems, only god can, this is a reality and Problem Management Gurus know that. With problem management we can reduce failures, prevent reoccurrence of problems and mitigate negative impact as much as we can, but we cannot eliminate all problems, this is not a perfect world."
+    },
+    {
+      "id": 1324,
+      "question": "Examples of types of physical access controls include all except which of the following?",
+      "options": {
+        "A": "badges",
+        "B": "locks",
+        "C": "guards",
+        "D": "passwords"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A password is not a physical thing, it's a logical one. You can control physical access with armed guards, by locking doors and using badges to open doors, but you can't relate password to a physical environment. Just to remember, Passwords are used to verify that the user of an ID is the owner of the ID. The ID-password combination is unique to each user and therefore provides a means of holding users accountable for their activity on the system. They are related to software, not to hardware."
+    },
+    {
+      "id": 1325,
+      "question": "Which of the following statements pertaining to the (ISC)2 Code of Ethics is incorrect?",
+      "options": {
+        "A": "All information systems security professionals who are certified by (ISC)2 recognize that such a certification is a privilege that must be both earned and maintained.",
+        "B": "All information systems security professionals who are certified by (ISC)2 shall provide diligent and competent service to principals.",
+        "C": "All information systems security professionals who are certified by (ISC)2 shall discourage such behavior as associating or preparing to associate with criminals or criminal behavior.",
+        "D": "All information systems security professionals who are certified by (ISC)2 shall promote the understanding and acceptance of prudent information security measures."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not one of the statements of the ISC2 code of Ethics, ISC2 certified people is free to get in association with any person and any party they want. ISC2 thinks that their certified people must have liberty of choice in their associations. However ISC2 ask the certified professionals to promote the certification and the understanding and acceptance of security measures, they also ask the certified people to provide competent services and be proud of their exclusive ISC2 certified professional status. I think is very fair, you are free to who where you want, with the people you want, but always be proud of your certification and your skills as a security professional. Code from ISC web site. \"All information systems security professionals who are certified by (ISC)2 recognize that such certification is a privilege that must be both earned and maintained. In support of this principle, all Certified Information Systems Security Professionals (CISSPs) commit to fully support this Code of Ethics. CISSPs who intentionally or knowingly violate any provision of the Code will be subject to action by a peer review panel, which may result in the revocation of certification. There are only four mandatory canons in the code. By necessity such high-level guidance is not intended to substitute for the ethical judgment of the professional. Additional guidance is provided for each of the canons. While this guidance may be considered by the Board in judging behavior, it is advisory rather than mandatory. It is intended to help the professional in identifying and resolving the inevitable ethical dilemmas that will confront him/her. Code of Ethics Preamble: * Safety of the commonwealth, duty to our principals, and to each other requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior. * Therefore, strict adherence to this code is a condition of certification. Code of Ethics Canons: * Protect society, the commonwealth, and the infrastructure. * Act honorably, honestly, justly, responsibly, and legally. * Provide diligent and competent service to principals. * Advance and protect the profession. The following additional guidance is given in furtherance of these goals. Objectives for Guidance In arriving at the following guidance, the committee is mindful of its responsibility to: * Give guidance for resolving good v. good and bad v. bad dilemmas. * To encourage right behavior such as: * Research * Teaching * Identifying, mentoring, and sponsoring candidates for the profession * Valuing the certificate * To discourage such behavior as: * Raising unnecessary alarm, fear, uncertainty, or doubt * Giving unwarranted comfort or reassurance * Consenting to bad practice * Attaching weak systems to the public net * Professional association with non-professionals * Professional recognition of or association with amateurs * Associating or appearing to associate with criminals or criminal behavior However, these objecttives are provided for information only; the professional is not required or expected to agree with them. In resolving the choices that confront him, the professional should keep in mind that the following guidance is advisory only. Compliance with the guidance is neither necessary nor sufficient for ethical conduct. Compliance with the preamble and canons is mandatory. Conflicts between the canons should be resolved in the order of the canons. The canons are not equal and conflicts between them are not intended to create ethical binds. Protect society, the commonwealth, and the infrastructure * Promote and preserve public trust and confidence in information and systems. * Promote the understanding and acceptance of prudent information security measures. * Preserve and strengthen the integrity of the public infrastructure. * Discourage unsafe practice. Act honorably, honestly, justly, responsibly, and legally * Tell the truth; make all stakeholders aware of your actions on a timely basis. * Observe all contracts and agreements, express or implied. * Treat all constituents fairly. In resolving conflicts, consider public safety and duties to principals, individuals, and the profession in that order. * Give prudent advice; avoid raising unnecessary alarm or giving unwarranted comfort. Take care to be truthful, objective, cautious, and within your competence. * When resolving differing laws in different jurisdictions, give preference to the laws of the jurisdiction in which you render your service. Provide diligent and competent service to principals * Preserve the value of their systems, applications, and information. * Respect their trust and the privileges that they grant you. * Avoid conflicts of interest or the appearance thereof. * Render only those services for which you are fully competent and qualified. Advance and protect the profession * Sponsor for professional advancement those best qualified. All other things equal, prefer those who are certified and who adhere to these canons. Avoid professional association with those whose practices or reputation might diminish the profession. * Take care not to injure the reputation of other professionals through malice or indifference. Maintain your competence; Keep your skills and Knowledge current. Give generously of your time and knowledge in training others."
+    },
+    {
+      "id": 1326,
+      "question": "Which DES modes can best be used for authentication?",
+      "options": {
+        "A": "Cipher Block Chaining and Electronic Code Book.",
+        "B": "Cipher Block Chaining and Output Feedback.",
+        "C": "Cipher Block Chaining and Cipher Feedback.",
+        "D": "Output Feedback and Electronic Code Book."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Cipher Block Chaining (CBC) uses feedback to feed the result of encryption back into the encryption of the next block. The plain-text is XOR'ed with the previous cipher-text block before it is encrypted. The encryption of each block depends on all the previous blocks. This requires that the decryption side processes all encrypted blocks sequentially. This mode requires a random initialization vector which is XOR'ed with the first data block before it is encrypted. The initialization vector does not have to be kept secret. The initialization vector should be a random number (or a serial number), to ensure that each message is encrypted uniquely. In the Cipher Feedback Mode (CFB) is data encrypted in units smaller than the block size. This mode can be used to encrypt any number of bits e.g. single bits or single characters (bytes) before sending across an insecure data link. Both of those method can be best used to provide user authentication capabilities."
+    },
+    {
+      "id": 1327,
+      "question": "In the OSI / ISO model, at what layer are some of the SLIP, CSLIP, PPP control functions are provided?",
+      "options": {
+        "A": "Link",
+        "B": "Transport",
+        "C": "Presentation",
+        "D": "Application"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Data Link layer takes raw data from the physical layer and gives it logical structure. This logic includes information about where the data is meant to go, which computer sends the data, and the overall validity of the bytes sent. The Data Link layer also controls functions of logical network topologies and physical addressing as well as data transmission synchronization and corrections. SLIP, CSLIP and PPP provide control functions at the Data Link Layer (layer 2 of the OSI model)."
+    },
+    {
+      "id": 1328,
+      "question": "Which of the following best describes the purpose of debugging programs?",
+      "options": {
+        "A": "To generate random data that can be used to test programs before implementing them",
+        "B": "To ensure that program coding flaws are detected and corrected.",
+        "C": "To protect, during the programming phase, valid changes from being overwritten by other changes.",
+        "D": "To compare source code versions before transferring to the test environment."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A bug is a coding error in a computer program. The process of finding bugs before program final users is called debugging. Debugging starts after the code is first written and continues in successive stage as code is combined with other units of programming to form a software product, such as an operating system or application. The main reason to debug is to detect and correct errors in the program."
+    },
+    {
+      "id": 1329,
+      "question": "With RAID Level 5 the spare drives that replace the failed drives are usually hot swappable, meaning the can be replaced on the server while the?",
+      "options": {
+        "A": "System is up and running.",
+        "B": "System is down and running.",
+        "C": "System is in-between and running.",
+        "D": "System is centre and running."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, since RAID 5 uses parity to provide fault tolerance through the array, once of the disk in it can become corrupted, and you usually can just take it out without turning off the system (Hot SWAP) and plug a spare disk on the bay. Then the array will automatically begin to reconstruct the information in the new disk with the parity contained through the other disks in the array. This Hot Swap capability is usually present in enterprise servers that require high availability."
+    },
+    {
+      "id": 1330,
+      "question": "What is the process that RAID Level 0 uses as it creates one large disk by using several disks?",
+      "options": {
+        "A": "Striping",
+        "B": "Mirroring",
+        "C": "Integrating",
+        "D": "Clustering"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the correct term, with stripping RAID 0 can evenly distribute the information through the disk that form the array in a transparent way for the final user. With RAID 0 you can be writing to 12 disk simultaneously and you see them as only one large logical partition. This level of RAID does not provide fault tolerance but provides an increase in performance because you are writing and reading from many disks and heads. An example of this stripping is the software version that comes with Windows 2000, it supports up to 32 disks."
+    },
+    {
+      "id": 1331,
+      "question": "Which of the following is used to create and delete views and relations within tables?",
+      "options": {
+        "A": "SQL Data Definition Language",
+        "B": "SQL Data Manipulation Language",
+        "C": "SQL Data Relational Language",
+        "D": "SQL Data Identification Language"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: SQL supports the data definition language (DDL) for creating, altering, and deleting tables and indexes. SQL does not permit metadata object names to be represented by parameters in DDL statements. With this language you can create many of the objects used in SQL, this language is standard and is supported by most database vendors in its standard form. Many of them also extends its functionality for proprietary products."
+    },
+    {
+      "id": 1332,
+      "question": "Which division of the Orange Book deals with discretionary protection (need-to-know)?",
+      "options": {
+        "A": "D",
+        "B": "C",
+        "C": "B",
+        "D": "A"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The C division of the Orange Book deals discretionary (need-to-know) protection and, through the inclusion of audit capabilities, for accountability of subjects and the actions they initiate. This information can be checked in the orange book. Just make a search online through it with the words \"discretionary protection\"."
+    },
+    {
+      "id": 1333,
+      "question": "The Diffie-Hellman algorithm is used for?",
+      "options": {
+        "A": "Encryption",
+        "B": "Digital signature",
+        "C": "Key exchange",
+        "D": "Non-repudiation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Diffie Hellman is a Key exchange algorithm, its strength its in the difficulty of computing discrete logarithms in a finite field generated by a large primary number. Although RSA and Diffie Hellman are similar in mathematical theory, their implementation is somewhat different. This algorithm has been released to the public. It's the primary alternative to the RSA algorithm for key exchange."
+    },
+    {
+      "id": 1334,
+      "question": "Primary run when time and tape space permits, and is used for the system archive or baselined tape sets is the?",
+      "options": {
+        "A": "Full backup method.",
+        "B": "Incremental backup method.",
+        "C": "Differential backup method.",
+        "D": "Tape backup method."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Full\" backup method provides a baseline for our systems for Restore; the full backup must be done at least once regardless of the method you are using to make backups. It's very common to use full backups in combination with incremental or differential ones to decrease the backup time (however you increment the restore time with incremental and differential) because it takes the largest time to complete. You always need to begin a system restoration from your baseline, and this baseline is the Full Backup."
+    },
+    {
+      "id": 1335,
+      "question": "Which of the following teams should not be included in an organization's contingency plan?",
+      "options": {
+        "A": "Damage assessment team.",
+        "B": "Hardware salvage team.",
+        "C": "Tiger team.",
+        "D": "Legal affairs team."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In the computer industry, a tiger team is a group of programmers or users who volunteer or are hired to expose errors or security holes in new software or to find out why a computer network's security is being broken. In hiring or recruiting volunteers for a tiger team, some software developers advise others to be sure that tiger team members don't include crackers, who might use their special knowledge of the software to disable or compromise it in the future. We don't need a tiger team inside our contingency plan, however, we do need someone to assest the damage, the hardware and legal affairs."
+    },
+    {
+      "id": 1336,
+      "question": "When an organization takes reasonable measures to ensure that it took precautions to protect its network and resources is called:",
+      "options": {
+        "A": "Reasonable Action",
+        "B": "Security Mandate",
+        "C": "Due Care",
+        "D": "Prudent Countermeasures"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Due care are the steps taken to show it has taken responsibility for its actions."
+    },
+    {
+      "id": 1337,
+      "question": "What two things below are associated with security policy?(Choose Two)",
+      "options": {
+        "A": "Support of upper management",
+        "B": "Support of department managers",
+        "C": "Are tactical in nature",
+        "D": "Are strategic in nature",
+        "E": "Must be developed after procedures",
+        "F": "Must be developed after guidelines"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: Policies are written as a broad overview and require the support of upper management. After the development and approval of policies, guidelines and procedures may be written."
+    },
+    {
+      "id": 1338,
+      "question": "Total risk is equal to:(Choose All That Apply)",
+      "options": {
+        "A": "Threat",
+        "B": "Vulnerability",
+        "C": "Frequency",
+        "D": "Asset value",
+        "E": "Asset loss"
+      },
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: Total risk = asset value * vulnerability * threats"
+    },
+    {
+      "id": 1339,
+      "question": "Government data classifications include which of the following:(Choose three)",
+      "options": {
+        "A": "Open",
+        "B": "Unclassified",
+        "C": "Confidential",
+        "D": "Private",
+        "E": "Secret",
+        "F": "Top Secret"
+      },
+      "answers": [
+        "B",
+        "C",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: One of the most common systems used to classify information is the one developed within the US Department of Defense. These include: unclassified, sensitive, confidential, secret, and top secret."
+    },
+    {
+      "id": 1340,
+      "question": "Job rotation is important because:",
+      "options": {
+        "A": "It insures your employees are cross-trained.",
+        "B": "It increases job satisfaction.",
+        "C": "It reduces the opportunity for fraud"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Job rotation is tightly tied to the principle of least privilege. It is an effective security control."
+    },
+    {
+      "id": 1341,
+      "question": "Your co-worker is studying for the CISSP exam and has come to you with a question. What is ARP poisoning?",
+      "options": {
+        "A": "Flooding of a switched network",
+        "B": "A denial of service that uses the DNS death ping",
+        "C": "Turning of IP to MAC resolution",
+        "D": "Inserting a bogus IP and MAC address in the ARP table",
+        "E": "Modifying a DNS record"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: ARP poisoning is a masquerading attack where the attacker inserts a bogus IP and MAC address in a victims ARP table or into the table of a switch. This has the effect of redirecting traffic to the attacker and not to the intended computer."
+    },
+    {
+      "id": 1342,
+      "question": "What is the best description for CHAP Challenge Handshake Authentication Protocol?",
+      "options": {
+        "A": "Passwords are sent in clear text",
+        "B": "Passwords are not sent in clear text",
+        "C": "Passwords are not used, a digital signature is sent",
+        "D": "It is substandard to PAP",
+        "E": "It was used with PS2's and has been discontinued"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords are not sent in clear text. The server performing the authentication sends a challenge value and the user types in the password. The password is used to encrypt the challenge value then is sent back to the authentication server."
+    },
+    {
+      "id": 1343,
+      "question": "CSMA/CD computers cannot communicate without a token.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: CSMA/CD computers do not use a token. It is the media access method used in Ethernet."
+    },
+    {
+      "id": 1344,
+      "question": "__________ sends out a message to all other computers indicating it is going to send out data.",
+      "options": {
+        "A": "CSMA/CD",
+        "B": "CSMA/CA",
+        "C": "CSMA/HB",
+        "D": "PPP",
+        "E": "SLIP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: CSMA/CA sends out a message to all other computers indicating it is going to send out data. CSMA/CA or token ring networking uses this approach to reduce the amount of data collisions. Note: When computers use the carrier sense multiple access with collision detection (CSMA/CD) protocols, they monitor the transmission activity, or carrier activity, on the wire so that they can determine when would be the best time to transmit data. Carrier sense multiple access with collision avoidance (CSMA/CA) is an access method where each computer signals its intent to transmit data before it actually does so. pg 390-391 Shon Harris All-In-One CISSP Certification"
+    },
+    {
+      "id": 1345,
+      "question": "Which of the following best describes ISDN BRI(Choose two)",
+      "options": {
+        "A": "2 B channels",
+        "B": "4 B channels",
+        "C": "23 B channels",
+        "D": "1 D channel",
+        "E": "2 D channels"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: ISDN BRI has 2 B and 1 D channels"
+    },
+    {
+      "id": 1346,
+      "question": "The top speed of ISDN BRI is 256 KBS.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The top speed of ISDN BRI is 128 KBS. Its two primary channels are each capable of carrying 64 KBS so the combined top speed is 128 KBS."
+    },
+    {
+      "id": 1347,
+      "question": "Which of the following should NOT be implemented to protect PBX's?(Choose all that apply)",
+      "options": {
+        "A": "Change default passwords and configurations",
+        "B": "Make sure that maintenance modems are on 24/7",
+        "C": "Review telephone bill regularly",
+        "D": "Block remote calling after business hours",
+        "E": "Post PBX configuration and specs on the company website"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: Many vendors have maintenance modems that vendors can use to troubleshoot systems and provide updates. They should normally be turned off. Also information about the system should not be posted on the website and should be closely guarded."
+    },
+    {
+      "id": 1348,
+      "question": "Which of the following best describes the difference between a circuit based and application based firewall?",
+      "options": {
+        "A": "Application based is more flexible and handles more protocols",
+        "B": "Circuit based provides more security",
+        "C": "Application based builds a state table",
+        "D": "Circuit based looks at IP addresses and ports",
+        "E": "Circuit based firewalls are only found in Cisco routers"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Circuit based look only at IP address and ports, whereas application based dig much deeper into the packet. This makes it more secure."
+    },
+    {
+      "id": 1349,
+      "question": "_________ is the fraudulent use of telephone services.",
+      "options": {
+        "A": "Rolling",
+        "B": "Warzing",
+        "C": "Wardriving",
+        "D": "Wardialing",
+        "E": "Phreaking"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Phreaking is the fraudulent use of telephone services."
+    },
+    {
+      "id": 1350,
+      "question": "What is another name for a VPN?",
+      "options": {
+        "A": "Firewall",
+        "B": "Tunnel",
+        "C": "Packet switching",
+        "D": "Pipeline",
+        "E": "Circuit switching"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A VPN creates a secure tunnel through an insecure network."
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q101 - Q150",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 101,
+      "question": "Which of the following is responsible for MOST of the security issues?",
+      "options": {
+        "A": "Outside espionage",
+        "B": "Hackers",
+        "C": "Personnel",
+        "D": "Equipment failure"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Personnel represent the leading source of computer crime losses. This can be through hardware theft, data theft, physical damage and interruptions to services. Laptop theft is increasing at incredible rates each year. They have been stolen for years, but in the past they were stolen mainly to sell the hardware. Now laptops are also being stolen to gain sensitive data for identity theft crimes. Since employees use laptops as they travel, they may have extremely sensitive company or customer data on their systems that can easily fall into the wrong hands. Incorrect Answers: A: Losses caused by industrial outside espionage can be high. However, this is very rare in comparison to losses caused by personnel. B: Losses caused by hackers can be high. However, this is rare in comparison to losses caused by personnel. D: Equipment failure can be a cause of security issues. However, security issues caused by personnel are more common."
+    },
+    {
+      "id": 102,
+      "question": "Which of the following is the most costly countermeasure to reducing physical security risks?",
+      "options": {
+        "A": "Procedural Controls",
+        "B": "Hardware Devices",
+        "C": "Electronic Systems",
+        "D": "Security Guards"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "One drawback of security guards is that the cost of maintaining a guard function either internally or through an external service is expensive. With common physical security risk countermeasures such as door entry control systems or perimeter fencing, there is typically a one-off cost when the countermeasure is implemented. With security guards, you have the ongoing cost of paying the salary of the security guard. Incorrect Answers: A: Procedural controls consist of approved written policies, procedures, standards and guidelines. The cost of implement procedural controls is not more costly than the ongoing costs associated with security guards. Therefore, this answer is incorrect. B: Hardware Devices typically have a one-off cost when they are implemented and they may have a small cost for maintenance. However, this cost not more costly than the ongoing costs associated with security guards. Therefore, this answer is incorrect. C: Electronic Systems typically have a one-off cost when they are implemented and they may have a small cost for maintenance. However, this cost not more than the ongoing costs associated with security guards. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 103,
+      "question": "Which one of the following authentication mechanisms creates a problem for mobile users?",
+      "options": {
+        "A": "Mechanisms based on IP addresses",
+        "B": "Mechanism with reusable passwords",
+        "C": "One-time password mechanism.",
+        "D": "Challenge response mechanism."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Authentication mechanisms based on IP addresses are useful if a user has a fixed IP address. This could be a fixed IP address at work or even a fixed IP address at home. With authentication mechanisms based on IP addresses, a user can access a resource only from a defined IP address. However, authentication mechanisms based on IP addresses are a problem for mobile users. This is because mobile users will connect to different networks on their travels such as different WiFi networks or different mobile networks. This means that the public IP address that the mobile user will be connecting from will change frequently. Incorrect Answers: B: Authentication mechanisms with reusable passwords are not a problem for mobile users. As long as the mobile user knows the password, he can access the resource. C: One-time password authentication mechanisms are not a problem for mobile users. The mobile user will have a token device that provides the one-time password which will enable the user to access the resource. D: Challenge response authentication mechanisms are not a problem for mobile users. As long as the user has network connectivity to the authenticating server (usually over the Internet) the challenge-response authentication will succeed."
+    },
+    {
+      "id": 104,
+      "question": "In what type of attack does an attacker try, from several encrypted messages, to figure out the key used in the encryption process?",
+      "options": {
+        "A": "Known-plaintext attack",
+        "B": "Ciphertext-only attack",
+        "C": "Chosen-Ciphertext attack",
+        "D": "Plaintext-only attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In this question, the attacker is trying to obtain the key from several “encrypted messages”. When the attacker has only encrypted messages to work from, this is known as a Ciphertext-only attack. Cryptanalysis is the act of obtaining the plaintext or key from the ciphertext. Cryptanalysis is used to obtain valuable information and to pass on altered or fake messages in order to deceive the original intended recipient. This attempt at “cracking” the cipher is also known as an attack. The following are example of some common attacks: Chosen Ciphertext. Portions of the ciphertext are selected for trial decryption while having access to the corresponding decrypted plaintext Known Plaintext. The attacker has a copy of the plaintext corresponding to the ciphertext Chosen Plaintext. Chosen plaintext is encrypted and the output ciphertext is obtained Ciphertext Only. Only the ciphertext is available Incorrect Answers: A: With a Known Plaintext attack, the attacker has a copy of the plaintext corresponding to the ciphertext. This is not what is described in the question. C: With a Chosen-Ciphertext attack, the attacker has a copy of the plaintext corresponding to the ciphertext. This is not what is described in the question. D: With a Plaintext-only attack, the attacker does not have the encrypted messages as stated in the question."
+    },
+    {
+      "id": 105,
+      "question": "The RSA algorithm is an example of what type of cryptography?",
+      "options": {
+        "A": "Asymmetric Key.",
+        "B": "Symmetric Key.",
+        "C": "Secret Key.",
+        "D": "Private Key."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RSA is a public key algorithm that is an example of asymmetric key algorithms. RSA is used for encryption, digital signatures, and key distribution. Incorrect Answers: B: RSA is not an example of symmetric key algorithms. C: Secret Key cryptography is an encryption system where a common key is used to encrypt and decrypt the message. This is not the case in RSA. D: RSA uses Private Keys for decryption, but it is not an example of Private Key cryptography."
+    },
+    {
+      "id": 106,
+      "question": "What algorithm was DES derived from?",
+      "options": {
+        "A": "Twofish.",
+        "B": "Skipjack.",
+        "C": "Brooks-Aldeman.",
+        "D": "Lucifer."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Lucifer was adopted and modified by the U.S. National Security Agency (NSA) to establish the U.S. Data Encryption Standard (DES) in 1976. Incorrect Answers: A: Twofish is a symmetric block cipher, which was a candidate for being the basis of the Advanced Encryption Standard (AES). B: Skipjack is an algorithm that was used by Clipper Chip, which was used in the Escrowed Encryption Standard (EES). C: Brooks-Aldeman is not a valid algorithm."
+    },
+    {
+      "id": 107,
+      "question": "What is a characteristic of using the Electronic Code Book mode of DES encryption?",
+      "options": {
+        "A": "A given block of plaintext and a given key will always produce the same ciphertext.",
+        "B": "Repetitive encryption obscures any repeated patterns that may have been present in the plaintext.",
+        "C": "Individual characters are encoded by combining output from earlier encryption routines with plaintext.",
+        "D": "The previous DES output is used as input."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "With Electronic Code Book (ECB) Mode, a 64-bit data block is entered into the algorithm with a key, and a block of ciphertext is produced. The same block of ciphertext will always result from a given block of plaintext and a given key. Incorrect Answers: B: This option refers to Cipher Block Chaining (CBC). C: This option is not a characteristic of using the Electronic Code Book mode of DES encryption, as ECB allows for ciphertext to be produced from a given block of plaintext and a given key. D: This option refers to Cipher Block Chaining (CBC)."
+    },
+    {
+      "id": 108,
+      "question": "Where parties do not have a shared secret and large quantities of sensitive information must be passed, the most efficient means of transferring information is to use Hybrid Encryption Methods. What does this mean?",
+      "options": {
+        "A": "Use of public key encryption to secure a secret key, and message encryption using the secret key.",
+        "B": "Use of the recipient's public key for encryption and decryption based on the recipient's private key.",
+        "C": "Use of software encryption assisted by a hardware encryption accelerator.",
+        "D": "Use of elliptic curve encryption."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "For large quantities of sensitive information, symmetric key encryption (using a secret key) is more efficient. Public key cryptography uses two keys (public and private) generated by an asymmetric algorithm for protecting encryption keys and key distribution, and a secret key is generated by a symmetric algorithm and used for bulk encryption. Then there is a hybrid use of the two different algorithms: asymmetric and symmetric. Each algorithm has its pros and cons, so using them together can be the best of both worlds. In the hybrid approach, the two technologies are used in a complementary manner, with each performing a different function. A symmetric algorithm creates keys used for encrypting bulk data, and an asymmetric algorithm creates keys used for automated key distribution. When a symmetric key is used for bulk data encryption, this key is used to encrypt the message you want to send. When your friend gets the message you encrypted, you want him to be able to decrypt it, so you need to send him the necessary symmetric key to use to decrypt the message. You do not want this key to travel unprotected, because if the message were intercepted and the key were not protected, an evildoer could intercept the message that contains the necessary key to decrypt your message and read your information. If the symmetric key needed to decrypt your message is not protected, there is no use in encrypting the message in the first place. So we use an asymmetric algorithm to encrypt the symmetric key. Why do we use the symmetric key on the message and the asymmetric key on the symmetric key? The reason is that the asymmetric algorithm takes longer because the math is more complex. Because your message is most likely going to be longer than the length of the key, we use the faster algorithm (symmetric) on the message and the slower algorithm (asymmetric) on the key. Incorrect Answers: B: For large quantities of sensitive information, symmetric key encryption (using a secret key) is more efficient. Using public and private keys for encryption and decryption is asymmetric key encryption. C: Software encryption is not an answer on its own. We need to determine what type of software encryption to use. D: Elliptical curve cryptography (ECC) is a public key encryption technique. Symmetric key encryption is more efficient for large amounts of data."
+    },
+    {
+      "id": 109,
+      "question": "Public Key Infrastructure (PKI) uses asymmetric key encryption between parties. The originator encrypts information using the intended recipient's \"public\" key in order to get confidentiality of the data being sent. The recipients use their own \"private\" key to decrypt the information. The \"Infrastructure\" of this methodology ensures that:",
+      "options": {
+        "A": "The sender and recipient have reached a mutual agreement on the encryption key exchange that they will use.",
+        "B": "The channels through which the information flows are secure.",
+        "C": "The recipient's identity can be positively verified by the sender.",
+        "D": "The sender of the message is the only other person with access to the recipient's private key."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "When information is encrypted using a public key, it can only be decrypted by using the associated private key. As the recipient is the only person with the private key, the recipient is the only person who can decrypt the message. This provides a form of authentication in that the recipient's identity can be positively verified by the sender. If the receiver replies to the message, the sender knows that the intended recipient received the message."
+    },
+    {
+      "id": 110,
+      "question": "Kerberos depends upon what encryption method?",
+      "options": {
+        "A": "Public Key cryptography.",
+        "B": "Secret Key cryptography.",
+        "C": "El Gamal cryptography.",
+        "D": "Blowfish cryptography."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "During the Kerberos Authentication Process, the user and the KDC share a secret key, while the service and the KDC share a different secret key. Kerberos is, therefore, dependent on Secret Key cryptography. Incorrect Answers: A: Kerberos is dependent on Secret Key cryptography, not Public Key cryptography. C: El Gamal is a public key algorithm that can be used for digital signatures, encryption, and key exchange. Kerberos is not, however, dependent on it. D: Blowfish is a block cipher that works on 64-bit blocks of data. Kerberos is not, however, dependent on it."
+    },
+    {
+      "id": 111,
+      "question": "Which of the following statements is TRUE about data encryption as a method of protecting data?",
+      "options": {
+        "A": "It should sometimes be used for password files",
+        "B": "It is usually easily administered",
+        "C": "It makes few demands on system resources",
+        "D": "It requires careful key management"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The main challenge brought by improved security is that introducing encryption software also introduces management complexity, and in particular this means dealing with encryption keys. An encryption key applies a set of complex algorithms to data and translates it into streams of seemingly random alphanumeric characters. There are two main types – private key (or symmetric) encryption and public key (or asymmetric) encryption. In symmetric encryption, all users have access to one private key, which is used to encrypt and decrypt data held in storage media such as backup tapes and disk drives. Although considered generally secure, the downside is that there is only one key, which has to be shared with others to perform its function. Asymmetric encryption comprises two elements: a public key to encrypt data and a private key to decrypt data. The public key is used by the owner to encrypt information and can be given to third parties running a compatible application to enable them to send encrypted messages back. Managing encryption keys effectively is vital. Unless the creation, secure storage, handling and deletion of encryption keys is carefully monitored, unauthorized parties can gain access to them and render them worthless. And if a key is lost, the data it protects becomes impossible to retrieve. Incorrect Answers: A: Data encryption should not ‘sometimes’ be used for password files; it should always be used. B: It is not true that data encryption is usually easily administered; it is complicated. C: It is not true that data encryption makes few demands on system resources; encrypting data requires significant processing power."
+    },
+    {
+      "id": 112,
+      "question": "Which type of algorithm is considered to have the highest strength per bit of key length of any of the asymmetric algorithms?",
+      "options": {
+        "A": "Rivest, Shamir, Adleman (RSA)",
+        "B": "El Gamal",
+        "C": "Elliptic Curve Cryptography (ECC)",
+        "D": "Advanced Encryption Standard (AES)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Elliptic curves are rich mathematical structures that have shown usefulness in many different types of applications. An elliptic curve cryptosystem (ECC) provides much of the same functionality RSA provides: digital signatures, secure key distribution, and encryption. One differing factor is ECC’s efficiency. ECC is more efficient than RSA and any other asymmetric algorithm. Some devices have limited processing capacity, storage, power supply, and bandwidth, such as wireless devices and cellular telephones. With these types of devices, efficiency of resource use is very important. ECC provides encryption functionality, requiring a smaller percentage of the resources compared to RSA and other algorithms, so it is used in these types of devices. In most cases, the longer the key, the more protection that is provided, but ECC can provide the same level of protection with a key size that is shorter than what RSA requires. Because longer keys require more resources to perform mathematical tasks, the smaller keys used in ECC require fewer resources of the device. Incorrect Answers: A: Elliptic Curve Cryptography (ECC) has a higher strength per bit of key length than RSA. B: Elliptic Curve Cryptography (ECC) has a higher strength per bit of key length than El Gamal. D: Elliptic Curve Cryptography (ECC) has a higher strength per bit of key length than AES."
+    },
+    {
+      "id": 113,
+      "question": "How many bits is the effective length of the key of the Data Encryption Standard algorithm?",
+      "options": {
+        "A": "168",
+        "B": "128",
+        "C": "56",
+        "D": "64"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Data Encryption Standard (DES) has had a long and rich history within the computer community. NIST invited vendors to submit data encryption algorithms to be used as a cryptographic standard. IBM had already been developing encryption algorithms to protect financial transactions. In 1974, IBM’s 128-bit algorithm, named Lucifer, was submitted and accepted. The NSA modified this algorithm to use a key size of 64 bits (with 8 bits used for parity, resulting in an effective key length of 56 bits) instead of the original 128 bits, and named it the Data Encryption Algorithm (DEA). NOTE DEA is the algorithm that fulfills DES, which is really just a standard. So DES is the standard and DEA is the algorithm, but in the industry we usually just refer to it as DES. The CISSP exam may refer to the algorithm by either name, so remember both. Incorrect Answers: A: The Data Encryption Standard algorithm has an effective key length of 56 bits, not 168 bits. B: The Data Encryption Standard algorithm has an effective key length of 56 bits, not 128 bits. D: The Data Encryption Standard algorithm has an effective key length of 56 bits, not 64 bits."
+    },
+    {
+      "id": 114,
+      "question": "The primary purpose for using one-way hashing of user passwords within a password file is which of the following?",
+      "options": {
+        "A": "It prevents an unauthorized person from trying multiple passwords in one logon attempt.",
+        "B": "It prevents an unauthorized person from reading the password.",
+        "C": "It minimizes the amount of storage required for user passwords.",
+        "D": "It minimizes the amount of processing time used for encrypting passwords."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A one-way hash function performs a mathematical encryption operation on a password that cannot be reversed. This prevents an unauthorized person from reading the password. Some systems and applications send passwords over the network in cleartext, but a majority of them do not anymore. Instead, the software performs a one-way hashing function on the password and sends only the resulting value to the authenticating system or service. The authenticating system has a file containing all users’ password hash values, not the passwords themselves, and when the authenticating system is asked to verify a user’s password, it compares the hashing value sent to what it has in its file. Incorrect Answers: A: One-way hashing of user passwords does not prevent an unauthorized person from trying multiple passwords in one logon attempt. This is not the purpose of one-way hashing. C: One-way hashing of user passwords does not minimize the amount of storage required for user passwords; it increases it because a hashed password is typically much longer than the password itself. D: One-way hashing of user passwords does not minimize the amount of processing time used for encrypting passwords."
+    },
+    {
+      "id": 115,
+      "question": "Which of the following issues is not addressed by digital signatures?",
+      "options": {
+        "A": "nonrepudiation",
+        "B": "authentication",
+        "C": "data integrity",
+        "D": "denial-of-service"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Digital signatures offer no protection against denial-of-service attacks. A denial-of-service (DoS) is any type of attack where the attackers (hackers) attempt to prevent legitimate users from accessing the service. In a DoS attack, the attacker usually sends excessive messages asking the network or server to authenticate requests that have invalid return addresses. The network or server will not be able to find the return address of the attacker when sending the authentication approval, causing the server to wait before closing the connection. When the server closes the connection, the attacker sends more authentication messages with invalid return addresses. Hence, the process of authentication and server wait will begin again, keeping the network or server busy. A digital signature is a hash value that has been encrypted with the sender’s private key. If Kevin wants to ensure that the message he sends to Maureen is not modified and he wants her to be sure it came only from him, he can digitally sign the message. This means that a one-way hashing function would be run on the message, and then Kevin would encrypt that hash value with his private key. When Maureen receives the message, she will perform the hashing function on the message and come up with her own hash value. Then she will decrypt the sent hash value (digital signature) with Kevin’s public key. She then compares the two values, and if they are the same, she can be sure the message was not altered during transmission. She is also sure the message came from Kevin because the value was encrypted with his private key. The hashing function ensures the integrity of the message, and the signing of the hash value provides authentication and nonrepudiation. Incorrect Answers: A: Digital signatures can be used to address the issue of nonrepudiation. B: Digital signatures can be used to address the issue of authentication. D: Digital signatures can be used to address the issue of data integrity."
+    },
+    {
+      "id": 116,
+      "question": "Brute force attacks against encryption keys have increased in potency because of increased computing power. Which of the following is often considered a good protection against the brute force cryptography attack?",
+      "options": {
+        "A": "The use of good key generators.",
+        "B": "The use of session keys.",
+        "C": "Nothing can defend you against a brute force crypto key attack.",
+        "D": "Algorithms that are immune to brute force key attacks."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A session key is a single-use symmetric key that is used to encrypt messages between two users during a communication session. If Tanya has a symmetric key she uses to always encrypt messages between Lance and herself, then this symmetric key would not be regenerated or changed. They would use the same key every time they communicated using encryption. However, using the same key repeatedly increases the chances of the key being captured and the secure communication being compromised. If, on the other hand, a new symmetric key were generated each time Lance and Tanya wanted to communicate, it would be used only during their one dialogue and then destroyed. If they wanted to communicate an hour later, a new session key would be created and shared. A session key provides more protection than static symmetric keys because it is valid for only one session between two computers. If an attacker were able to capture the session key, she would have a very small window of time to use it to try to decrypt messages being passed back and forth. Incorrect Answers: A: A strong encryption key offers no protection against brute force attacks. If the same key is always used, once an attacker obtains the key, he would be able to decrypt the data. C: It is not true that nothing can defend you against a brute force crypto key attack. Using a different key every time is a good defense. D: There are no algorithms that are immune to brute force key attacks. This is why it is a good idea to use a different key every time."
+    },
+    {
+      "id": 117,
+      "question": "The Data Encryption Standard (DES) encryption algorithm has which of the following characteristics?",
+      "options": {
+        "A": "64 bits of data input results in 56 bits of encrypted output",
+        "B": "128 bit key with 8 bits used for parity",
+        "C": "64 bit blocks with a 64 bit total key length",
+        "D": "56 bits of data input results in 56 bits of encrypted output"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "DES is a symmetric block encryption algorithm. When 64-bit blocks of plaintext go in, 64-bit blocks of ciphertext come out. It is also a symmetric algorithm, meaning the same key is used for encryption and decryption. It uses a 64-bit key: 56 bits make up the true key, and 8 bits are used for parity. When the DES algorithm is applied to data, it divides the message into blocks and operates on them one at a time. The blocks are put through 16 rounds of transposition and substitution functions. The order and type of transposition and substitution functions depend on the value of the key used with the algorithm. The result is 64-bit blocks of ciphertext Incorrect Answers: A: When 64-bit blocks of plaintext go in, 64-bit blocks of encrypted data come out. B: DES uses a 64-bit key (not 128-bit): 56 bits make up the true key, and 8 bits are used for parity. D: DES uses 64-bit blocks, not 56-bit."
+    },
+    {
+      "id": 118,
+      "question": "PGP uses which of the following to encrypt data?",
+      "options": {
+        "A": "An asymmetric encryption algorithm",
+        "B": "A symmetric encryption algorithm",
+        "C": "A symmetric key distribution system",
+        "D": "An X.509 digital certificate"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Pretty Good Privacy (PGP) was designed by Phil Zimmerman as a freeware e-mail security program and was released in 1991. It was the first widespread public key encryption program. PGP is a complete cryptosystem that uses cryptographic protection to protect e-mail and files. It can use RSA public key encryption for key management and use IDEA symmetric cipher for bulk encryption of data, although the user has the option of picking different types of algorithms for these functions. PGP can provide confidentiality by using the IDEA encryption algorithm, integrity by using the MD5 hashing algorithm, authentication by using the public key certificates, and nonrepudiation by using cryptographically signed messages. PGP uses its own type of digital certificates rather than what is used in PKI, but they both have similar purposes. Incorrect Answers: A: PGP uses a symmetric encryption algorithm, not an asymmetric encryption algorithm to encrypt data. C: PGP does not use a symmetric ‘key distribution system’ to encrypt data. D: An X.509 digital certificate is used in asymmetric cryptography. PGP does not use asymmetric cryptography."
+    },
+    {
+      "id": 119,
+      "question": "A public key algorithm that does both encryption and digital signature is which of the following?",
+      "options": {
+        "A": "RSA",
+        "B": "DES",
+        "C": "IDEA",
+        "D": "Diffie-Hellman"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RSA, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a public key algorithm that is the most popular when it comes to asymmetric algorithms. RSA is a worldwide de facto standard and can be used for digital signatures, key exchange, and encryption. It was developed in 1978 at MIT and provides authentication as well as key encryption. One advantage of using RSA is that it can be used for encryption and digital signatures. Using its one-way function, RSA provides encryption and signature verification, and the inverse direction performs decryption and signature generation. Incorrect Answers: B: DES is a symmetric block encryption algorithm. It is not a public key algorithm. C: IDEA is a symmetric block encryption algorithm. It is not a public key algorithm. D: Diffie-Hellman is used for key distribution. It is not what is described in the question."
+    },
+    {
+      "id": 120,
+      "question": "Which of the following is NOT true of Secure Sockets Layer (SSL)?",
+      "options": {
+        "A": "By convention it uses 's-http://' instead of 'http://'.",
+        "B": "Is the predecessor to the Transport Layer Security (TLS) protocol.",
+        "C": "It was developed by Netscape.",
+        "D": "It is used for transmitting private information, data, and documents over the Internet."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "By convention Secure Sockets Layer (SSL) uses “https://”. It does not use “s-http://”. Incorrect Answers: B: It is true that Secure Sockets Layer (SSL) is the predecessor to the Transport Layer Security (TLS) protocol. C: It is true that Secure Sockets Layer (SSL) was developed by Netscape. D: It is true that Secure Sockets Layer (SSL) is used for transmitting private information, data, and documents over the Internet."
+    },
+    {
+      "id": 121,
+      "question": "The Physical Security domain focuses on three areas that are the basis to physically protecting enterprise's resources and sensitive information. Which of the following is NOT one of these areas?",
+      "options": {
+        "A": "Threats",
+        "B": "Countermeasures",
+        "C": "Vulnerabilities",
+        "D": "Risks"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "“Risks” is not one of the three areas that the Physical Security domain focuses on. The Physical Security domain addresses the threats, vulnerabilities, and countermeasures that can be utilized to physically protect an enterprise’s resources and sensitive information. These resources include personnel, the facility in which they work, and the data, equipment, support systems, and media with which they work. Physical security often refers to the measures taken to protect systems, buildings, and their related supporting infrastructure against threats that are associated with the physical environment. Incorrect Answers: A: Threats is one of the three areas that the Physical Security domain focuses on. Therefore, this answer is incorrect. B: Countermeasures is one of the three areas that the Physical Security domain focuses on. Therefore, this answer is incorrect. C: Vulnerabilities is one of the three areas that the Physical Security domain focuses on. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 122,
+      "question": "Which of the following identifies the encryption algorithm selected by NIST for the new Advanced Encryption Standard?",
+      "options": {
+        "A": "Twofish",
+        "B": "Serpent",
+        "C": "RC6",
+        "D": "Rijndael"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "After DES was used as an encryption standard for over 20 years and it was cracked in a relatively short time once the necessary technology was available, NIST decided a new standard, the Advanced Encryption Standard (AES), needed to be put into place. In January 1997, NIST announced its request for AES candidates and outlined the requirements in FIPS PUB 197. AES was to be a symmetric block cipher supporting key sizes of 128, 192, and 256 bits. The following five algorithms were the finalists: MARS Developed by the IBM team that created Lucifer RC6 Developed by RSA Laboratories Serpent Developed by Ross Anderson, Eli Biham, and Lars Knudsen Twofish Developed by Counterpane Systems Rijndael Developed by Joan Daemen and Vincent Rijmen Out of these contestants, Rijndael was chosen. The block sizes that Rijndael supports are 128, 192, and 256 bits. Rijndael works well when implemented in software and hardware in a wide range of products and environments. It has low memory requirements and has been constructed to easily defend against timing attacks. Rijndael was NIST’s choice to replace DES. It is now the algorithm required to protect sensitive but unclassified U.S. government information. Incorrect Answers: A: Twofish was a finalist; however, Rijndael was selected by NIST for the new Advanced Encryption Standard. B: Serpent was a finalist; however, Rijndael was selected by NIST for the new Advanced Encryption Standard. C: RC6 was a finalist; however, Rijndael was selected by NIST for the new Advanced Encryption Standard."
+    },
+    {
+      "id": 123,
+      "question": "Compared to RSA, which of the following is true of Elliptic Curve Cryptography (ECC)?",
+      "options": {
+        "A": "It has been mathematically proved to be more secure.",
+        "B": "It has been mathematically proved to be less secure.",
+        "C": "It is believed to require longer key for equivalent security.",
+        "D": "It is believed to require shorter keys for equivalent security."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Elliptic curves are rich mathematical structures that have shown usefulness in many different types of applications. An elliptic curve cryptosystem (ECC) provides much of the same functionality RSA provides: digital signatures, secure key distribution, and encryption. One differing factor is ECC’s efficiency. ECC is more efficient than RSA and any other asymmetric algorithm. Some devices have limited processing capacity, storage, power supply, and bandwidth, such as wireless devices and cellular telephones. With these types of devices, efficiency of resource use is very important. ECC provides encryption functionality, requiring a smaller percentage of the resources compared to RSA and other algorithms, so it is used in these types of devices. In most cases, the longer the key, the more protection that is provided, but ECC can provide the same level of protection with a key size that is shorter than what RSA requires. Because longer keys require more resources to perform mathematical tasks, the smaller keys used in ECC require fewer resources of the device. Incorrect Answers: A: ECC is not more secure than RSA; it just requires a shorter key length to provide equivalent security. B: ECC is not less secure than RSA; it just requires a shorter key length to provide equivalent security. C: ECC requires a shorter key length to provide equivalent security."
+    },
+    {
+      "id": 124,
+      "question": "Which of the following algorithms does NOT provide hashing?",
+      "options": {
+        "A": "SHA-1",
+        "B": "MD2",
+        "C": "RC4",
+        "D": "MD5"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RC4 is a stream cipher; it does not provide hashing. RC4 is one of the most commonly implemented stream ciphers. It has a variable key size, is used in the SSL protocol, and was (improperly) implemented in the 802.11 WEP protocol standard. RC4 was developed in 1987 by Ron Rivest and was considered a trade secret of RSA Data Security, Inc., until someone posted the source code on a mailing list. Since the source code was released nefariously, the stolen algorithm is sometimes implemented and referred to as ArcFour or ARC4 because the title RC4 is trademarked. The algorithm is very simple, fast, and efficient, which is why it became so popular. But because it has a low diffusion rate, it is subject to modification attacks. This is one reason that the new wireless security standard (IEEE 802.11i) moved from the RC4 algorithm to the AES algorithm. Incorrect Answers: A: SHA (Secure Hash Algorithm) produces a 160-bit hash value, or message digest. SHA was improved upon and renamed SHA-1. B: MD2 (Message Digest 2) is a one-way hash function designed by Ron Rivest that creates a 128-bit message digest value. D: MD5 (Message Digest 5) was also created by Ron Rivest and is the newer version of MD4. It still produces a 128-bit hash, but the algorithm is more complex, which makes it harder to break."
+    },
+    {
+      "id": 125,
+      "question": "Which of the following protocols that provide integrity and authentication for IPSec, can also provide non-repudiation in IPSec?",
+      "options": {
+        "A": "Authentication Header (AH)",
+        "B": "Encapsulating Security Payload (ESP)",
+        "C": "Secure Sockets Layer (SSL)",
+        "D": "Secure Shell (SSH-2)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "IPSec is a standard that provides encryption, access control, non-repudiation, and authentication of messages over an IP. The two main protocols of IPSec are the Authentication Header (AH) and the Encapsulating Security Payload (ESP.) The AH provides integrity, authentication, and non-repudiation. An ESP primarily provides encryption, but it can also provide limited authentication. Incorrect Answers: B: ESP provides encryption; it does not provide integrity, authentication or non-repudiation. C: Secure Sockets Layer (SSL) is not part of IPSec. D: Secure Shell (SSH-2) is not part of IPSec."
+    },
+    {
+      "id": 126,
+      "question": "Which of the following is a cryptographic protocol and infrastructure developed to send encrypted credit card numbers over the Internet?",
+      "options": {
+        "A": "Secure Electronic Transaction (SET)",
+        "B": "MONDEX",
+        "C": "Secure Shell (SSH-2)",
+        "D": "Secure Hypertext Transfer Protocol (S-HTTP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Secure Electronic Transaction (SET) is a security technology proposed by Visa and MasterCard to allow for more secure credit card transaction possibilities than what is currently available. SET has been waiting in the wings for full implementation and acceptance as a standard for quite some time. Although SET provides an effective way of transmitting credit card information, businesses and users do not see it as efficient because it requires more parties to coordinate their efforts, more software installation and configuration for each entity involved, and more effort and cost than the widely used SSL method. SET is a cryptographic protocol and infrastructure developed to send encrypted credit card numbers over the Internet. The following entities would be involved with a SET transaction, which would require each of them to upgrade their software, and possibly their hardware: Issuer (cardholder’s bank) The financial institution that provides a credit card to the individual. Cardholder The individual authorized to use a credit card. Merchant The entity providing goods. Acquirer (merchant’s bank) The financial institution that processes payment cards. Payment gateway This processes the merchant payment. It may be an acquirer. Incorrect Answers: B: MONDEX is a payment system that uses currency stored on smart cards. This is not what is described in the question. C: Secure Shell (SSH-2) was not developed to send encrypted credit card numbers over the Internet. D: Secure Hypertext Transfer Protocol (S-HTTP) is an early standard for encrypting HTTP documents. S-HTTP was overtaken by SSL. This is not what is described in the question."
+    },
+    {
+      "id": 127,
+      "question": "Which of the following cryptographic attacks describes when the attacker has a copy of the plaintext and the corresponding ciphertext?",
+      "options": {
+        "A": "known plaintext",
+        "B": "brute force",
+        "C": "ciphertext only",
+        "D": "chosen plaintext"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Cryptanalysis is the act of obtaining the plaintext or key from the ciphertext. Cryptanalysis is used to obtain valuable information and to pass on altered or fake messages in order to deceive the original intended recipient. This attempt at “cracking” the cipher is also known as an attack. The following are example of some common attacks: Brute Force. Trying every possible combination of key patterns — the longer the key length, the more difficult it is to find the key with this method Known Plaintext. The attacker has a copy of the plaintext corresponding to the ciphertext Chosen Plaintext. Chosen plaintext is encrypted and the output ciphertext is obtained Ciphertext Only. Only the ciphertext is available Incorrect Answers: B: A Brute Force attack involves trying every possible combination of key patterns. This is not what is described in the question. C: With a Ciphertext Only attack, only the ciphertext is available. The plaintext is not available. D: In a Chosen Plaintext attack, chosen plaintext is encrypted and the output ciphertext is obtained. This is not what is described in the question."
+    },
+    {
+      "id": 128,
+      "question": "Which of the following is NOT a true statement regarding the implementation of the 3DES modes?",
+      "options": {
+        "A": "DES-EEE1 uses one key",
+        "B": "DES-EEE2 uses two keys",
+        "C": "DES-EEE3 uses three keys",
+        "D": "DES-EDE2 uses two keys"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "It is not true that DES-EEE1 uses one key. 3DES can work in different modes, and the mode chosen dictates the number of keys used and what functions are carried out: DES-EEE3 uses three different keys for encryption, and the data are encrypted, encrypted, encrypted. DES-EDE3 uses three different keys for encryption, and the data are encrypted, decrypted, encrypted. DES-EEE2 is the same as DES-EEE3, but uses only two keys, and the first and third encryption processes use the same key. DES-EDE2 is the same as DES-EDE3, but uses only two keys, and the first and third encryption processes use the same key. Incorrect Answers: B: It is true that DES-EEE2 uses two keys. C: It is true that DES-EEE3 uses three keys. D: It is true that DES-EDE2 uses two keys."
+    },
+    {
+      "id": 129,
+      "question": "Which one of the following is a key agreement protocol used to enable two entities to agree and generate a session key (secret key used for one session) over an insecure medium without any prior secrets or communications between the entities? The negotiated key will subsequently be used for message encryption using Symmetric Cryptography.",
+      "options": {
+        "A": "RSA",
+        "B": "PKI",
+        "C": "Diffie_Hellmann",
+        "D": "3DES"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Diffie–Hellman key exchange (D–H) is a specific method of securely exchanging cryptographic keys over a public channel and was one of the first public-key protocols as originally conceptualized by Ralph Merkle. D–H is one of the earliest practical examples of public key exchange implemented within the field of cryptography. Traditionally, secure encrypted communication between two parties required that they first exchange keys by some secure physical channel, such as paper key lists transported by a trusted courier. The Diffie–Hellman key exchange method allows two parties that have no prior knowledge of each other to jointly establish a shared secret key over an insecure channel. This key can then be used to encrypt subsequent communications using a symmetric key cipher. Incorrect Answers: A: RSA is not the key agreement protocol described in the question. B: PKI is not the key agreement protocol described in the question. D: 3DES is not the key agreement protocol described in the question."
+    },
+    {
+      "id": 130,
+      "question": "Which of the following ciphers is a subset on which the Vigenere polyalphabetic cipher was based on?",
+      "options": {
+        "A": "Caesar",
+        "B": "The Jefferson disks",
+        "C": "Enigma",
+        "D": "SIGABA"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Julius Caesar (100–44 B.C.) developed a simple method of shifting letters of the alphabet. He simply shifted the alphabet by three positions. Today, this technique seems too simplistic to be effective, but in the time of Julius Caesar, not very many people could read in the first place, so it provided a high level of protection. The Caesar cipher is an example of a monoalphabetic cipher. Once more people could read and reverse-engineer this type of encryption process, the cryptographers of that day increased the complexity by creating polyalphabetic ciphers. In the 16th century in France, Blaise de Vigenere developed a polyalphabetic substitution cipher for Henry III. This was based on the Caesar cipher, but it increased the difficulty of the encryption and decryption process Incorrect Answers: B: The Vigenere polyalphabetic cipher is based on the Caesar cipher, not the Jefferson disks. C: The Vigenere polyalphabetic cipher is based on the Caesar cipher, not Enigma. D: The Vigenere polyalphabetic cipher is based on the Caesar cipher, not SIGABA."
+    },
+    {
+      "id": 131,
+      "question": "In a known plaintext attack, the cryptanalyst has knowledge of which of the following?",
+      "options": {
+        "A": "the ciphertext and the key",
+        "B": "the plaintext and the secret key",
+        "C": "both the plaintext and the associated ciphertext of several messages",
+        "D": "the plaintext and the algorithm"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Cryptanalysis is the act of obtaining the plaintext or key from the ciphertext. Cryptanalysis is used to obtain valuable information and to pass on altered or fake messages in order to deceive the original intended recipient. This attempt at “cracking” the cipher is also known as an attack. In a Known Plaintext attack, the attacker has both the plaintext and the associated ciphertext of several messages. Incorrect Answers: A: In a known plaintext attack, the attacker does not have the key. B: In a known plaintext attack, the attacker does not have the secret key. D: In a known plaintext attack, the attacker does not have the algorithm. Krutz, Ronald L. and Russel Dean Vines, The CISSP Prep Guide: Mastering the Ten Domains of Computer Security, John Wiley & Sons, New York, 2001, p. 154"
+    },
+    {
+      "id": 132,
+      "question": "What is the length of an MD5 message digest?",
+      "options": {
+        "A": "128 bits",
+        "B": "160 bits",
+        "C": "256 bits",
+        "D": "varies depending upon the message size."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "MD5 is a message digest algorithm that was developed by Ronald Rivest in 1991. MD5 takes a message of an arbitrary length and generates a 128-bit message digest. In MD5, the message is processed in 512-bit blocks in four distinct rounds. Incorrect Answers: B: MD5 generates a 128-bit message digest, not 160-bit. C: MD5 generates a 128-bit message digest, not 256-bit. D: MD5 generates a 128-bit message digest regardless of the message size. Krutz, Ronald L. and Russel Dean Vines, The CISSP Prep Guide: Mastering the Ten Domains of Computer Security, John Wiley & Sons, New York, 2001, p. 153"
+    },
+    {
+      "id": 133,
+      "question": "The Secure Hash Algorithm (SHA-1) creates:",
+      "options": {
+        "A": "a fixed length message digest from a fixed length input message.",
+        "B": "a variable length message digest from a variable length input message.",
+        "C": "a fixed length message digest from a variable length input message.",
+        "D": "a variable length message digest from a fixed length input message."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "SHA-1 was designed by NSA and published by NIST to be used with the Digital Signature Standard (DSS). The Secure Hash Algorithm (SHA-1) computes a fixed length message digest from a variable length input message. This message digest is then processed by the DSA to either generate or verify the signature. SHA-1 produces a message digest of 160 bits when any message less than 264 bits is used as an input. SHA-1 has the following properties: It is computationally infeasible to find a message that corresponds to a given message digest. It is computationally infeasible to find two different messages that produce the same message digest. For SHA-1, the length of the message is the number of bits in a message. Padding bits are added to the message to make the total length of the message, including padding, a multiple of 512. Incorrect Answers: A: SHA-1 creates a fixed length message digest from a variable length input message, not from a fixed length input message. B: SHA-1 creates a fixed length message digest, not a variable length message digest. D: SHA-1 creates a fixed length message digest, not a variable length message digest. The fixed length message digest is created from a variable length input message, not from a fixed length input message."
+    },
+    {
+      "id": 134,
+      "question": "The RSA Algorithm uses which mathematical concept as the basis of its encryption?",
+      "options": {
+        "A": "Geometry",
+        "B": "16-round ciphers",
+        "C": "PI (3.14159...)",
+        "D": "Two large prime numbers"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "RSA is derived from the last names of its inventors, Rivest, Shamir, and Addleman. This algorithm is based on the difficulty of factoring a number, N, which is the product of two large prime numbers. These numbers may be 200 digits each. Thus, the difficulty in obtaining the private key from the public key is a hard, one-way function that is equivalent to the difficulty of finding the prime factors of N. In RSA, public and private keys are generated as follows: Choose two large prime numbers, p and q, of equal length, compute p3q 5 n, which is the public modulus. Choose a random public key, e, so that e and (p – 1)(q – 1) are relatively prime. Compute e x d = 1 mod (p – 1)(q – 1), where d is the private key. Thus, d = e–1 mod [(p – 1)(q – 1)] From these calculations, (d, n) is the private key and (e, n) is the public key. Incorrect Answers: A: The RSA Algorithm does not use Geometry as the basis of its encryption. B: The RSA Algorithm does not use 16-round ciphers as the basis of its encryption. C: The RSA Algorithm does not use PI as the basis of its encryption."
+    },
+    {
+      "id": 135,
+      "question": "The Clipper Chip utilizes which concept in public key cryptography?",
+      "options": {
+        "A": "Substitution",
+        "B": "Key Escrow",
+        "C": "An undefined algorithm",
+        "D": "Super strong encryption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The Clipper chip was a chipset that was developed and promoted by the United States National Security Agency (NSA) as an encryption device, with a built-in backdoor, intended to be adopted by telecommunications companies for voice transmission. It was announced in 1993 and by 1996 was entirely defunct. The Clipper chip used a data encryption algorithm called Skipjack to transmit information and the Diffie-Hellman key exchange-algorithm to distribute the cryptokeys between the peers. At the heart of the concept was key escrow. In the factory, any new telephone or other device with a Clipper chip would be given a cryptographic key, that would then be provided to the government in escrow. If government agencies \"established their authority\" to listen to a communication, then the key would be given to those government agencies, who could then decrypt all data transmitted by that particular telephone. The newly formed Electronic Frontier Foundation preferred the term \"key surrender\" to emphasize what they alleged was really occurring. Incorrect Answers: A: Substitution is not the concept used by the Clipper Chip. C: Clipper chip does not use an undefined algorithm although the Skipjack algorithm was initially classed as ‘Secret’ by the NSA. D: The Clipper chip does not use ‘Super Strong’ encryption. The encryption key was 80-bit."
+    },
+    {
+      "id": 136,
+      "question": "Which of the following are suitable protocols for securing VPN connections at the lower layers of the OSI model?",
+      "options": {
+        "A": "S/MIME and SSH",
+        "B": "TLS and SSL",
+        "C": "IPsec and L2TP",
+        "D": "PKCS#10 and X.509"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Layer 2 Tunneling Protocol (L2TP) is a combination of PPTP and the earlier Layer 2 Forwarding Protocol (L2F) that works at the Data Link Layer like PPTP. It has become an accepted tunneling standard for VPNs. IPSec operates at the Network Layer and it enables multiple and simultaneous tunnels. IPSec has the functionality to encrypt and authenticate IP data. It is built into the new IPv6 standard, and is used as an add-on to the current IPv4. While PPTP and L2TP are aimed more at dial-up VPNs, IPSec focuses more on network-to- network connectivity. Incorrect Answers: A: S/MIME and SSH run in the application layer (layer 7) of the OSI model. This is the highest level, not a lower level. B: TLS runs in layer 6 of the OSI model and SSL runs in layer 4. L2TP and IPSEC run in layers 2 and 3 respectively. D: PKCS#10 and X.509 alone do not provide VPN connections; they are used by other protocols."
+    },
+    {
+      "id": 137,
+      "question": "What is the role of IKE within the IPsec protocol?",
+      "options": {
+        "A": "peer authentication and key exchange",
+        "B": "data encryption",
+        "C": "data signature",
+        "D": "enforcing quality of service"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The main protocols that make up the IPSec suite and their basic functionality are as follows: Authentication Header (AH) provides data integrity, data origin authentication, and protection from replay attacks. Encapsulating Security Payload (ESP) provides confidentiality, data-origin authentication, and data integrity. Internet Security Association and Key Management Protocol (ISAKMP) provides a framework for security association creation and key exchange. Internet Key Exchange (IKE) provides authenticated keying material for use with ISAKMP Incorrect Answers: B: The IPsec protocol uses Encapsulating Security Payload (ESP) for encryption, not IKE. C: The IPSec protocol uses data signatures to provide data integrity. IKE is not used for signing the data packets. D: The IPsec protocol does not enforce quality of service."
+    },
+    {
+      "id": 138,
+      "question": "In which phase of Internet Key Exchange (IKE) protocol is peer authentication performed?",
+      "options": {
+        "A": "Pre Initialization Phase",
+        "B": "Phase 1",
+        "C": "Phase 2",
+        "D": "No peer authentication is performed"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "When two computers (peers) use IPsec to communicate, they create two kinds of security associations. In the first, called main mode or phase one, the peers mutually authenticate themselves to each other, thus establishing trust between the computers. In the second, called quick mode or phase two, the peers will negotiate the particulars of the security association, including how they will digitally sign and encrypt traffic between them. Incorrect Answers: A: The phase in which peer authentication is performed is not known as the Pre Initialization Phase. C: Peer authentication is performed in phase 1, not phase 2. D: It is not true that no peer authentication is performed."
+    },
+    {
+      "id": 139,
+      "question": "What is NOT an authentication method within IKE and IPsec?",
+      "options": {
+        "A": "CHAP",
+        "B": "Pre shared key",
+        "C": "certificate based authentication",
+        "D": "Public key authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "CHAP (Challenge Handshake Authentication Protocol) is not used within IKE and IPSec. Internet Key Exchange (IKE or IKEv2) is the protocol used to set up a security association (SA) in the IPsec protocol suite. IKE builds upon the Oakley protocol and ISAKMP. IKE uses X.509 certificates for authentication - either pre-shared or distributed using DNS and a Diffie–Hellman key exchange - to set up a shared session secret from which cryptographic keys are derived. IKE phase one's purpose is to establish a secure authenticated communication channel by using the Diffie–Hellman key exchange algorithm to generate a shared secret key to encrypt further IKE communications. This negotiation results in one single bi-directional ISAKMP Security Association (SA). The authentication can be performed using either pre-shared key (shared secret), signatures, or public key encryption. Incorrect Answers: B: Pre-shared key is an authentication method that can be used within IKE and IPsec. C: Certificate-based authentication is an authentication method that can be used within IKE and IPsec. D: Public key authentication is an authentication method that can be used within IKE and IPsec."
+    },
+    {
+      "id": 140,
+      "question": "What is NOT true with pre shared key authentication within IKE / IPsec protocol?",
+      "options": {
+        "A": "Pre shared key authentication is normally based on simple passwords",
+        "B": "Needs a Public Key Infrastructure (PKI) to work",
+        "C": "IKE is used to setup Security Associations",
+        "D": "IKE builds upon the Oakley protocol and the ISAKMP protocol."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A pre-shared key is simply a string of characters known to both parties. When configuring a VPN using IPSec with pre-shared keys for authentication, the pre- shared key is entered into the configuration of the VPN device at each end of the VPN. IKE can use certificate-based authentication using certificates from a PKI or it can use pre-shared keys. When using pre-shared keys, you do not need a PKI. Incorrect Answers: A: It is true that pre-shared key authentication is normally based on simple passwords. C: It is true that IKE is used to setup Security Associations. D: It is true that IKE builds upon the Oakley protocol and the ISAKMP protocol."
+    },
+    {
+      "id": 141,
+      "question": "In a hierarchical PKI the highest CA is regularly called Root CA, it is also referred to by which one of the following term?",
+      "options": {
+        "A": "Subordinate CA",
+        "B": "Top Level CA",
+        "C": "Big CA",
+        "D": "Master CA"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Public key infrastructure (PKI) consists of programs, data formats, procedures, communication protocols, security policies, and public key cryptographic mechanisms working in a comprehensive manner to enable a wide range of dispersed people to communicate in a secure and predictable fashion. In other words, a PKI establishes a level of trust within an environment. PKI is an ISO authentication framework that uses public key cryptography and the X.509 standard. Each person who wants to participate in a PKI requires a digital certificate, which is a credential that contains the public key for that individual along with other identifying information. The certificate is created and signed (digital signature) by a trusted third party, which is a certificate authority (CA). The certificate authority (CA) is the entity that issues the certificates. CA’s are often organized into hierarchies with the root CA at the top of the hierarchy and intermediate or subordinate CA’s below the root. As the root CA is ‘top of the tree’, it is often referred to as the Top-Level CA. Incorrect Answers: A: A Subordinate CA is below the root or top-level CA. C: A Root CA is not known as a Big CA. D: A Root CA is not known as a Master CA."
+    },
+    {
+      "id": 142,
+      "question": "What is the primary role of cross certification?",
+      "options": {
+        "A": "Creating trust between different PKIs",
+        "B": "Build an overall PKI hierarchy",
+        "C": "set up direct trust to a second root CA",
+        "D": "Prevent the nullification of user certificates by CA certificate revocation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "More and more organizations are setting up their own internal PKIs. When these independent PKIs need to interconnect to allow for secure communication to take place (either between departments or between different companies), there must be a way for the two root CAs to trust each other. The two CAs do not have a CA above them they can both trust, so they must carry out cross certification. A cross certification is the process undertaken by CAs to establish a trust relationship in which they rely upon each other’s digital certificates and public keys as if they had issued them themselves. When this is set up, a CA for one company can validate digital certificates from the other company and vice versa. Incorrect Answers: B: Building an overall PKI hierarchy is not the primary purpose of cross certification. Cross certification is used to create a trust between different PKIs or PKI hierarchies. C: Cross certification does not set up a direct trust to a second root CA; it creates trusts between two PKIs (this includes all CA’s in each hierarchy). D: Preventing the nullification of user certificates by CA certificate revocation is not the purpose of cross certification. Certificate revocation should nullify user certificates or at least render them untrusted."
+    },
+    {
+      "id": 143,
+      "question": "What kind of encryption is realized in the S/MIME-standard?",
+      "options": {
+        "A": "Asymmetric encryption scheme",
+        "B": "Password based encryption scheme",
+        "C": "Public key based, hybrid encryption scheme",
+        "D": "Elliptic curve based encryption"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Secure MIME (S/MIME) is a standard for encrypting and digitally signing electronic mail and for providing secure data transmissions. S/MIME extends the MIME standard by allowing for the encryption of e-mail and attachments. The encryption and hashing algorithms can be specified by the user of the mail package, instead of having it dictated to them. S/MIME follows the Public Key Cryptography Standards (PKCS). S/MIME provides confidentiality through encryption algorithms, integrity through hashing algorithms, authentication through the use of X.509 public key certificates, and nonrepudiation through cryptographically signed message digests. A user that sends a message with confidential information can keep the contents private while it travels to its destination by using message encryption. For message encryption, a symmetric algorithm (DES, 3DES, or in older implementations RC2) is used to encrypt the message data. The key used for this process is a one-time bulk key generated at the email client. The recipient of the encrypted message needs the same symmetric key to decrypt the data, so the key needs to be communicated to the recipient in a secure manner. To accomplish that, an asymmetric key algorithm (RSA or Diffie-Hellman) is used to encrypt and securely exchange the symmetric key. The key used for this part of the message encryption process is the recipient’s public key. When the recipient receives the encrypted message, he will use his private key to decrypt the symmetric key, which in turn is used to decrypt the message data. As you can see, this type of message encryption uses a hybrid system, which means it uses both symmetric and asymmetric algorithms. The reason for not using the public key system to encrypt the data directly is that it requires a lot of CPU resources; symmetric encryption is much faster than asymmetric encryption. Only the content of a message is encrypted; the header of the message is not encrypted so mail gateways can read addressing information and forward the message accordingly. Incorrect Answers: A: The S/MIME-standard does not use asymmetric encryption to encrypt the message; for message encryption, a symmetric algorithm is used. Asymmetric encryption is used to encrypt the symmetric key. B: The S/MIME-standard does not use a password based encryption scheme. D: The S/MIME-standard does not use Elliptic curve based encryption."
+    },
+    {
+      "id": 144,
+      "question": "What is the main problem of the renewal of a root CA certificate?",
+      "options": {
+        "A": "It requires key recovery of all end user keys",
+        "B": "It requires the authentic distribution of the new root CA certificate to all PKI participants",
+        "C": "It requires the collection of the old root CA certificates from all the users",
+        "D": "It requires issuance of the new root CA certificate"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Every entity (user, computer, application, network device) that has a certificate from a PKI trusts other entities with certificates issued by the same PKI because they all trust the root Certificate Authority (CA). This trust is ensured because every entity has a copy of the root CA’s public certificate. If you want to change or renew the root CA certificate, to maintain the trust, the new certificate must be distributed to every entity that has a certificate from the PKI. Incorrect Answers: A: Renewing a root CA certificate does not require key recovery of all end user keys. C: Renewing a root CA certificate does not require the collection of the old root CA certificates from all the users; the root certificates will just be invalid because they will be out-of-date. D: Issuance of the new root CA certificate is not a problem; it is not a difficult procedure. The distribution of the certificate to all PKI participants is more of a challenge."
+    },
+    {
+      "id": 145,
+      "question": "Critical areas should be lighted:",
+      "options": {
+        "A": "Eight feet high and two feet out.",
+        "B": "Eight feet high and four feet out.",
+        "C": "Ten feet high and four feet out.",
+        "D": "Ten feet high and six feet out."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Critical areas should be lighted eight feet high and two feet out. The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and use two foot-candles, which is a unit that represents the illumination power of an individual light. Incorrect Answers: A: Critical areas should be lighted eight feet high and two feet out, not eight feet high and four feet out. Therefore, this answer is incorrect. B: Critical areas should be lighted eight feet high and two feet out, not ten feet high and four feet out. Therefore, this answer is incorrect. D: Critical areas should be lighted eight feet high and two feet out, not ten feet high and six feet out. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 146,
+      "question": "What attribute is included in a X.509-certificate?",
+      "options": {
+        "A": "Distinguished name of the subject",
+        "B": "Telephone number of the department",
+        "C": "secret key of the issuing CA",
+        "D": "the key pair of the certificate holder"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An X.509 certificate contains information about the identity to which a certificate is issued and the identity that issued it. Standard information in an X.509 certificate includes: Version – which X.509 version applies to the certificate (which indicates what data the certificate must include) Serial number – the identity creating the certificate must assign it a serial number that distinguishes it from other certificates Algorithm information – the algorithm used by the issuer to sign the certificate Issuer distinguished name – the name of the entity issuing the certificate Validity period of the certificate – start/end date and time Subject distinguished name – the name of the identity the certificate is issued to Subject public key information – the public key associated with the identity Extensions (optional) Incorrect Answers: B: The telephone number of the department is not included in an X509 certificate. C: The secret key of the issuing CA is not included in an X509 certificate. The secret key is the private key which is never distributed. D: The key pair of the certificate holder is not included in an X509 certificate. A key pair includes a private key which is kept private."
+    },
+    {
+      "id": 147,
+      "question": "Which of the following choices is a valid Public Key Cryptography Standard (PKCS) addressing RSA?",
+      "options": {
+        "A": "PKCS #17799",
+        "B": "PKCS-RSA",
+        "C": "PKCS#1",
+        "D": "PKCS#11"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In cryptography, PKCS #1 is the first of a family of standards called Public-Key Cryptography Standards (PKCS), published by RSA Laboratories. It provides the basic definitions of and recommendations for implementing the RSA algorithm for public-key cryptography. It defines the mathematical properties of public and private keys, primitive operations for encryption and signatures, secure cryptographic schemes, and related ASN.1 syntax representations. Incorrect Answers: A: PKCS #17799 is not a valid Public Key Cryptography Standard (PKCS) addressing RSA. B: PKCS-RSA is not a valid Public Key Cryptography Standard (PKCS) addressing RSA. D: PKCS#11 is not a valid Public Key Cryptography Standard (PKCS) addressing RSA."
+    },
+    {
+      "id": 148,
+      "question": "The environment that must be protected includes all personnel, equipment, data, communication devices, power supply and wiring. The necessary level of protection depends on the value of the data, the computer systems, and the company assets within the facility. The value of these items can be determined by what type of analysis?",
+      "options": {
+        "A": "Critical-channel analysis",
+        "B": "Covert channel analysis",
+        "C": "Critical-path analysis",
+        "D": "Critical-conduit analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The value of items to be protected can be determined by a critical-path analysis. The critical-path analysis lists all pieces of an environment and how they interact. Incorrect Answers: A: Critical-channel analysis is not the correct term for the analysis described in the question. Therefore, this answer is incorrect. B: A covert channel is a way for an entity to receive information in an unauthorized manner. Covert channel analysis is used to determine where covert channels exist. This is not the analysis described in the question. Therefore, this answer is incorrect. D: Critical-conduit analysis is not the correct term for the analysis described in the question. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 149,
+      "question": "The DES algorithm is an example of what type of cryptography?",
+      "options": {
+        "A": "Secret Key",
+        "B": "Two-key",
+        "C": "Asymmetric Key",
+        "D": "Public Key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "DES is a symmetric algorithm. This means that the same key is used for encryption and decryption. This is also a definition for Secret Key cryptography. Incorrect Answers: B: This is not a valid cryptography term. C: DES is a symmetric algorithm, and can therefore not be an example of Asymmetric Key cryptography. D: Public Key cryptography makes use of asymmetric key algorithms, whereas DES is a symmetric algorithm."
+    },
+    {
+      "id": 150,
+      "question": "Which of the following encryption methods is known to be unbreakable?",
+      "options": {
+        "A": "Symmetric ciphers.",
+        "B": "DES codebooks.",
+        "C": "One-time pads.",
+        "D": "Elliptic Curve Cryptography."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The one-time pad encryption scheme is considered unbreakable only if: The pad is used only one time. The pad is as long as the message. The pad is securely distributed and protected at its destination. The pad is made up of truly random values. Incorrect Answers: A, B: Symmetric ciphers and DES electronic code books are part of symmetric encryption, which are susceptible to brute force and cryptanalysis attacks. D: Elliptic curve cryptography is not known to be unbreakable, as it is susceptible to a modified Shor's algorithm for solving the discrete logarithm problem on elliptic curves."
+    }
+  ]
+}

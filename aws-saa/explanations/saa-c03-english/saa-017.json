@@ -1,0 +1,769 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-english",
+    "file": "saa-017.json",
+    "question_range": "Q801-Q850",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 801,
+      "type": "single",
+      "question": "A company is implementing a new application on AWS. The company will run the application on multiple Amazon EC2 instances across multiple Availability Zones within multiple AWS Regions. The application will be available through the internet. Users will access the application from around the world. The company wants to ensure that each user who accesses the application is sent to the EC2 instances that are closest to the user's location. Which solution will meet these requirements?",
+      "options": {
+        "A": "Implement an Amazon Route 53 geolocation routing policy. Use an internet-facing Application Load Balancer to distribute the traffic across all Availability Zones within the same Region.",
+        "B": "Implement an Amazon Route 53 geoproximity routing policy. Use an internet-facing Network Load Balancer to distribute the traffic across all Availability Zones within the same Region.",
+        "C": "Implement an Amazon Route 53 multivalue answer routing policy Use an internet-facing Application Load Balancer to distribute the traffic across all Availability Zones within the same Region.",
+        "D": "Implement an Amazon Route 53 weighted routing policy. Use an internet-facing Network Load Balancer to distribute the traffic across all Availability Zones within the same Region."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "The requirement is to route users to the nearest AWS Region where the application is deployed. The\nbest solution is to use Amazon Route 53 with a geolocation routing policy, which routes traffic based\non the geographic location of the user making the request.\nGeolocation Routing: This routing policy ensures that users are directed to the resources (in this case,\nEC2 instances) that are geographically closest to them, thereby reducing latency and improving the\nuser experience.\nApplication Load Balancer (ALB): Within each Region, an internet-facing Application Load Balancer\n(ALB) is used to distribute incoming traffic across multiple EC2 instances in different Availability\nZones. ALBs are designed to handle HTTP/HTTPS traffic and provide advanced features like content-\nbased routing, SSL termination, and user authentication.\nWhy Not Other Options?:\nOption B (Geoproximity + NLB): Geoproximity routing is similar but more complex as it requires fine-\ntuning the proximity settings. A Network Load Balancer (NLB) is better suited for TCP/UDP traffic\nrather than HTTP/HTTPS.\nOption C (Multivalue Answer Routing + ALB): Multivalue answer routing does not direct traffic based\non user location but rather returns multiple values and lets the client choose. This does not meet the\nrequirement for geographically routing users.\nOption D (Weighted Routing + NLB): Weighted routing splits traffic based on predefined weights and\ndoes not consider the user's geographic location. NLB is not ideal for this scenario due to its focus on\nlower-level protocols.\nAWS Reference:\nAmazon Route 53 Routing Policies - Detailed explanation of the various routing policies available in\nRoute 53, including geolocation.\nElastic Load Balancing - Information on the different types of load balancers in AWS and when to use\nthem."
+    },
+    {
+      "id": 802,
+      "type": "single",
+      "question": "A company recently migrated a monolithic application to an Amazon EC2 instance and Amazon RDS. The application has tightly coupled modules. The existing design of the application gives the application the ability to run on only a single EC2 instance. The company has noticed high CPU utilization on the EC2 instance during peak usage times. The high CPU utilization corresponds to degraded performance on Amazon RDS for read requests. The company wants to reduce the high CPU utilization and improve read request performance. Which solution will meet these requirements?",
+      "options": {
+        "A": "Resize the EC2 instance to an EC2 instance type that has more CPU capacity. Configure an Auto Scaling group with a minimum and maximum size of 1. Configure an RDS read replica for read requests.",
+        "B": "Resize the EC2 instance to an EC2 instance type that has more CPU capacity. Configure an Auto Scaling group with a minimum and maximum size of 1. Add an RDS read replica and redirect all read/write traffic to the replica.",
+        "C": "Configure an Auto Scaling group with a minimum size of 1 and maximum size of 2. Resize the RDS DB instance to an instance type that has more CPU capacity.",
+        "D": "Resize the EC2 instance to an EC2 instance type that has more CPU capacity Configure an Auto Scaling group with a minimum and maximum size of 1. Resize the RDS DB instance to an instance type that has more CPU capacity."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "To address the high CPU utilization on the EC2 instance and the degraded performance of Amazon\nRDS for read requests, the solution involves two key actions: resizing the EC2 instance and leveraging\nAmazon RDS read replicas.\nResizing the EC2 Instance: The first step is to resize the EC2 instance to a type with more CPU capacity\nto handle the higher computational demands during peak usage times. This helps to alleviate the\nimmediate pressure on the CPU.\nAuto Scaling Group with a Size of 1: Although the application can only run on a single EC2 instance\ndue to its monolithic nature, creating an Auto Scaling group with a minimum and maximum size of 1\nensures that the instance is automatically restarted or replaced in case of failure, maintaining high\navailability.\nRDS Read Replica: Configuring an RDS read replica allows the application to offload read requests to a\nseparate instance, thus reducing the load on the primary RDS instance. This improves the\nperformance of read operations, which were previously bottlenecked due to the high CPU usage on\nthe EC2 instance.\nWhy Not Other Options?:\nOption B: Redirecting all traffic to the RDS read replica is not recommended because replicas are\nmeant for read traffic only, not for write operations. This could lead to data consistency issues.\nOption C: Increasing the RDS instance type capacity helps, but it doesn’t address the high CPU usage\non the EC2 instance, nor does it provide a solution for scaling reads.\nOption D: While resizing both the EC2 and RDS instances increases their capacities, it doesn’t address\nthe specific need to offload read traffic from the primary RDS instance.\nAWS Reference:\nAmazon RDS Read Replicas - Explains how to create and use read replicas to offload read traffic from\nthe primary database instance.\nResizing Your EC2 Instance - Guidance on resizing EC2 instances to meet workload demands."
+    },
+    {
+      "id": 803,
+      "type": "single",
+      "question": "A company is building an application on AWS that connects to an Amazon RDS database. The company wants to manage the application configuration and to securely store and retrieve credentials for the database and other services. Which solution will meet these requirements with the LEAST administrative overhead?",
+      "options": {
+        "A": "Use AWS AppConfig to store and manage the application configuration. Use AWS Secrets Manager to store and retrieve the credentials.",
+        "B": "Use AWS Lambda to store and manage the application configuration. Use AWS Systems Manager Parameter Store to store and retrieve the credentials.",
+        "C": "Use an encrypted application configuration file Store the file in Amazon S3 for the application configuration. Create another S3 file to store and retrieve the credentials.",
+        "D": "Use AWS AppConfig to store and manage the application configuration. Use Amazon RDS to store and retrieve the credentials."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution meets the company's requirements with minimal administrative overhead and ensures\nsecurity and ease of management.\nAWS AppConfig: AWS AppConfig is a service designed to manage application configuration in a\nsecure and validated way. It allows you to deploy configurations safely and quickly without affecting\nthe application's performance or availability.\nAWS Secrets Manager: AWS Secrets Manager is specifically designed to manage, retrieve, and rotate\ncredentials for databases and other services. It integrates seamlessly with AWS services like Amazon\nRDS, making it an ideal solution for securely storing and retrieving database credentials. Secrets\nManager also provides automatic rotation of credentials, reducing the operational burden.\nWhy Not Other Options?:\nOption B (AWS Lambda + Parameter Store): While AWS Lambda can be used for managing\nconfigurations and AWS Systems Manager Parameter Store can store credentials, this approach\ninvolves more manual setup and does not offer the same level of integrated management and\nsecurity as AppConfig and Secrets Manager.\nOption C (Encrypted S3 Configuration File): Storing configuration and credentials in S3 files involves\nmore manual management and security considerations, increasing the administrative overhead.\nOption D (AppConfig + RDS for credentials): RDS is not designed for storing application credentials;\nit's better suited for managing database instances and their configurations.\nAWS Reference:\nAWS AppConfig - Describes how to use AWS AppConfig for managing application configurations.\nAWS Secrets Manager - Provides details on securely storing and retrieving credentials using AWS\nSecrets Manager."
+    },
+    {
+      "id": 804,
+      "type": "single",
+      "question": "A company stores data in an on-premises Oracle relational database. The company needs to make the data available in Amazon Aurora PostgreSQL for analysis The company uses an AWS Site-to-Site VPN connection to connect its on-premises network to AWS. The company must capture the changes that occur to the source database during the migration to Aurora PostgreSQL. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use the AWS Schema Conversion Tool (AWS SCT) to convert the Oracle schema to Aurora PostgreSQL schema. Use the AWS Database Migration Service (AWS DMS) full-load migration task to migrate the data.",
+        "B": "Use AWS DataSync to migrate the data to an Amazon S3 bucket. Import the S3 data to Aurora PostgreSQL by using the Aurora PostgreSQL aws_s3 extension.",
+        "C": "Use the AWS Schema Conversion Tool (AWS SCT) to convert the Oracle schema to Aurora PostgreSQL schema. Use AWS Database Migration Service (AWS DMS) to migrate the existing data and replicate the ongoing changes.",
+        "D": "Use an AWS Snowball device to migrate the data to an Amazon S3 bucket. Import the S3 data to Aurora PostgreSQL by using the Aurora PostgreSQL aws_s3 extension."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "For the migration of data from an on-premises Oracle database to Amazon Aurora PostgreSQL, this\nsolution effectively handles schema conversion, data migration, and ongoing data replication.\nAWS Schema Conversion Tool (SCT): SCT is used to convert the Oracle database schema to a format\ncompatible with Aurora PostgreSQL. This tool automatically converts the database schema and code\nobjects, like stored procedures, to the target database engine.\nAWS Database Migration Service (DMS): DMS is employed to perform the data migration. It supports\nboth full-load migrations (for initial data transfer) and continuous replication of ongoing changes\n(Change Data Capture, or CDC). This ensures that any updates to the Oracle database during the\nmigration are captured and applied to the Aurora PostgreSQL database, minimizing downtime.\nWhy Not Other Options?:\nOption A (SCT + DMS full-load only): This option does not capture ongoing changes, which is crucial\nfor a live database migration to ensure data consistency.\nOption B (DataSync + S3): AWS DataSync is more suited for file transfers rather than database\nmigrations, and it doesn’t support ongoing change replication.\nOption D (Snowball + S3): Snowball is typically used for large-scale data transfers that don’t require\ncontinuous synchronization, making it less suitable for this scenario where ongoing changes must be\ncaptured.\nAWS Reference:\nAWS Schema Conversion Tool - Guidance on using SCT for database schema conversions.\nAWS Database Migration Service - Detailed documentation on using DMS for data migrations and\nongoing replication."
+    },
+    {
+      "id": 805,
+      "type": "single",
+      "question": "A financial services company plans to launch a new application on AWS to handle sensitive financial transactions. The company will deploy the application on Amazon EC2 instances. The company will use Amazon RDS for MySQL as the database. The company's security policies mandate that data must be encrypted at rest and in transit. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Configure encryption at rest for Amazon RDS for MySQL by using AWS KMS managed keys. Configure AWS Certificate Manager (ACM) SSL/TLS certificates for encryption in transit.",
+        "B": "Configure encryption at rest for Amazon RDS for MySQL by using AWS KMS managed keys. Configure IPsec tunnels for encryption in transit",
+        "C": "Implement third-party application-level data encryption before storing data in Amazon RDS for MySQL. Configure AWS Certificate Manager (ACM) SSL/TLS certificates for encryption in transit.",
+        "D": "Configure encryption at rest for Amazon RDS for MySQL by using AWS KMS managed keys Configure a VPN connection to enable private connectivity to encrypt data in transit."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution provides encryption at rest and in transit with the least operational overhead while\nadhering to the company’s security policies.\nEncryption at Rest: Amazon RDS for MySQL can be configured to encrypt data at rest by using AWS\nKey Management Service (KMS) managed keys. This encryption is applied automatically to all data\nstored on disk, including backups, read replicas, and snapshots. This solution requires minimal\noperational overhead because AWS manages the encryption and key management process.\nEncryption in Transit: AWS Certificate Manager (ACM) allows you to provision, manage, and deploy\nSSL/TLS certificates seamlessly. These certificates can be used to encrypt data in transit by\nconfiguring the MySQL instance to use SSL/TLS for connections. This setup ensures that data is\nencrypted between the application and the database, protecting it from interception during\ntransmission.\nWhy Not Other Options?:\nOption B (IPsec tunnels): While IPsec tunnels encrypt data in transit, they are more complex to\nmanage and require additional configuration and maintenance, leading to higher operational\noverhead.\nOption C (Third-party application-level encryption): Implementing application-level encryption adds\ncomplexity, requires code changes, and increases operational overhead.\nOption D (VPN for encryption): A VPN solution for encrypting data in transit is unnecessary and adds\nadditional complexity without providing any benefit over SSL/TLS, which is simpler to implement and\nmanage.\nAWS Reference:\nAmazon RDS Encryption - Information on how to configure and use encryption for Amazon RDS.\nAWS Certificate Manager (ACM) - Details on using ACM to manage SSL/TLS certificates for securing\ndata in transit."
+    },
+    {
+      "id": 806,
+      "type": "multiple",
+      "question": "A startup company is hosting a website for its customers on an Amazon EC2 instance. The website consists of a stateless Python application and a MySQL database. The website serves only a small amount of traffic. The company is concerned about the reliability of the instance and needs to migrate to a highly available architecture. The company cannot modify the application code. Which combination of actions should a solutions architect take to achieve high availability for the website? (Select TWO.)",
+      "options": {
+        "A": "Provision an internet gateway in each Availability Zone in use.",
+        "B": "Migrate the database to an Amazon RDS for MySQL Multi-AZ DB instance.",
+        "C": "Migrate the database to Amazon DynamoDB. and enable DynamoDB auto scaling.",
+        "D": "Use AWS DataSync to synchronize the database data across multiple EC2 instances.",
+        "E": "Create an Application Load Balancer to distribute traffic to an Auto Scaling group of EC2 instances that are distributed across two Availability Zones."
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "explanation": "To achieve high availability for the website, two key actions should be taken:\nAmazon RDS for MySQL Multi-AZ: By migrating the database to an RDS for MySQL Multi-AZ\ndeployment, the database becomes highly available. Multi-AZ provides automatic failover from the\nprimary database to a standby replica in another Availability Zone, ensuring database availability\neven in the case of an AZ failure.\nApplication Load Balancer and Auto Scaling: Deploying an Application Load Balancer (ALB) in front of\nthe EC2 instances ensures that traffic is evenly distributed across the instances. Configuring an Auto\nScaling group to run EC2 instances across multiple Availability Zones ensures that the application\nremains available even if one instance or one AZ becomes unavailable. This setup enhances fault\ntolerance and improves reliability.\nWhy Not Other Options?:\nOption A (Internet Gateway per AZ): Internet Gateways are region-wide resources and do not need\nto be provisioned per Availability Zone. This option does not contribute to high availability.\nOption C (DynamoDB + Auto Scaling): DynamoDB would require changes to the application code to\nswitch from MySQL, which is not possible per the question's constraints.\nOption D (DataSync): AWS DataSync is used for data transfer and synchronization, not for achieving\nhigh availability for a database.\nAWS Reference:\nAmazon RDS Multi-AZ Deployments - Explanation of how Multi-AZ deployments work in Amazon\nRDS.\nApplication Load Balancing - Details on how to configure and use ALB for distributing traffic across\nmultiple instances."
+    },
+    {
+      "id": 807,
+      "type": "single",
+      "question": "A company has stored millions of objects across multiple prefixes in an Amazon S3 bucket by using the Amazon S3 Glacier Deep Archive storage class. The company needs to delete all data older than 3 years except for a subset of data that must be retained. The company has identified the data that must be retained and wants to implement a serverless solution. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use S3 Inventory to list all objects. Use the AWS CLI to create a script that runs on an Amazon EC2 instance that deletes objects from the inventory list.",
+        "B": "Use AWS Batch to delete objects older than 3 years except for the data that must be retained",
+        "C": "Provision an AWS Glue crawler to query objects older than 3 years. Save the manifest file of old objects. Create a script to delete objects in the manifest.",
+        "D": "Enable S3 Inventory. Create an AWS Lambda function to filter and delete objects. Invoke the Lambda function with S3 Batch Operations to delete objects by using the inventory reports."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "To meet the requirement of deleting objects older than 3 years while retaining certain data, this\nsolution leverages serverless technologies to minimize operational overhead.\nS3 Inventory: S3 Inventory provides a flat file that lists all the objects in an S3 bucket and their\nmetadata, which can be configured to include data such as the last modified date. This inventory can\nbe generated daily or weekly.\nAWS Lambda Function: A Lambda function can be created to process the S3 Inventory report,\nfiltering out the objects that need to be retained and identifying those that should be deleted.\nS3 Batch Operations: S3 Batch Operations can execute tasks such as object deletion at scale. By\ninvoking the Lambda function through S3 Batch Operations, you can automate the process of\ndeleting the identified objects, ensuring that the solution is serverless and requires minimal\noperational management.\nWhy Not Other Options?:\nOption A (AWS CLI script on EC2): Running a script on an EC2 instance adds unnecessary operational\noverhead and is not serverless.\nOption B (AWS Batch): AWS Batch is designed for running large-scale batch computing workloads,\nwhich is overkill for this scenario.\nOption C (AWS Glue + script): AWS Glue is more suited for ETL tasks, and this approach would add\nunnecessary complexity compared to the serverless Lambda solution.\nAWS Reference:\nAmazon S3 Inventory - Information on how to set up and use S3 Inventory.\nS3 Batch Operations - Documentation on how to perform bulk operations on S3 objects using S3\nBatch Operations."
+    },
+    {
+      "id": 808,
+      "type": "single",
+      "question": "A company runs several websites on AWS for its different brands Each website generates tens of gigabytes of web traffic logs each day. A solutions architect needs to design a scalable solution to give the company's developers the ability to analyze traffic patterns across all the company's websites. This analysis by the developers will occur on demand once a week over the course of several months. The solution must support queries with standard SQL. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Store the logs in Amazon S3. Use Amazon Athena for analysis.",
+        "B": "Store the logs in Amazon RDS. Use a database client for analysis.",
+        "C": "Store the logs in Amazon OpenSearch Service. Use OpenSearch Service for analysis.",
+        "D": "Store the logs in an Amazon EMR cluster. Use a supported open-source framework for SQL-based analysis."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution is the most cost-effective and scalable for analyzing large amounts of web traffic logs.\nAmazon S3: Storing the logs in Amazon S3 is highly scalable, durable, and cost-effective. S3 is\ndesigned to handle large-scale data storage, which is ideal for storing tens of gigabytes of log data\ngenerated daily by multiple websites.\nAmazon Athena: Athena is a serverless, interactive query service that allows you to analyze data in\nS3 using standard SQL. It works directly with the data stored in S3, so there’s no need to load the data\ninto a database, which saves on costs and reduces complexity. Athena charges based on the amount\nof data scanned by queries, making it a cost-effective solution for on-demand analysis that only\noccurs once a week.\nWhy Not Other Options?:\nOption B (Amazon RDS): Storing logs in a relational database like Amazon RDS would be more\nexpensive due to the storage and I/O costs associated with RDS. Additionally, it would require more\nmanagement overhead.\nOption C (Amazon OpenSearch Service): OpenSearch is a good option for full-text search and\nanalytics on log data, but it might be more costly and complex to manage compared to the simplicity\nand cost-effectiveness of Athena for periodic SQL-based queries.\nOption D (Amazon EMR): While EMR can handle large-scale data processing, it involves more\noperational overhead and might be overkill for the type of ad-hoc, SQL-based analysis required here.\nAdditionally, EMR costs can be higher due to the need to maintain a cluster.\nAWS Reference:\nAmazon S3 - Information on how to store and manage data in Amazon S3.\nAmazon Athena - Documentation on using Amazon Athena for querying data stored in S3 using SQL."
+    },
+    {
+      "id": 809,
+      "type": "single",
+      "question": "A company is migrating a legacy application from an on-premises data center to AWS. The application relies on hundreds of cron Jobs that run between 1 and 20 minutes on different recurring schedules throughout the day. The company wants a solution to schedule and run the cron jobs on AWS with minimal refactoring. The solution must support running the cron jobs in response to an event in the future. Which solution will meet these requirements?",
+      "options": {
+        "A": "Create a container image for the cron jobs. Use Amazon EventBridge Scheduler to create a recurring schedule. Run the cron job tasks as AWS Lambda functions.",
+        "B": "Create a container image for the cron jobs. Use AWS Batch on Amazon Elastic Container Service (Amazon ECS) with a scheduling policy to run the cron jobs.",
+        "C": "Create a container image for the cron jobs. Use Amazon EventBridge Scheduler to create a recurring schedule Run the cron job tasks on AWS Fargate.",
+        "D": "Create a container image for the cron jobs. Create a workflow in AWS Step Functions that uses a Wait state to run the cron jobs at a specified time. Use the RunTask action to run the cron job tasks on AWS Fargate."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "This solution is the most suitable for running cron jobs on AWS with minimal refactoring, while also\nsupporting the possibility of running jobs in response to future events.\nContainer Image for Cron Jobs: By containerizing the cron jobs, you can package the environment\nand dependencies required to run the jobs, ensuring consistency and ease of deployment across\ndifferent environments.\nAmazon EventBridge Scheduler: EventBridge Scheduler allows you to create a recurring schedule\nthat can trigger tasks (like running your cron jobs) at specific times or intervals. It provides fine-\ngrained control over scheduling and integrates seamlessly with AWS services.\nAWS Fargate: Fargate is a serverless compute engine for containers that removes the need to\nmanage EC2 instances. It allows you to run containers without worrying about the underlying\ninfrastructure. Fargate is ideal for running jobs that can vary in duration, like cron jobs, as it scales\nautomatically based on the task's requirements.\nWhy Not Other Options?:\nOption A (Lambda): While AWS Lambda could handle short-running cron jobs, it has limitations in\nterms of execution duration (maximum of 15 minutes) and might not be suitable for jobs that run up\nto 20 minutes.\nOption B (AWS Batch on ECS): AWS Batch is more suitable for batch processing and workloads that\nrequire complex job dependencies or orchestration, which might be more than what is needed for\nsimple cron jobs.\nOption D (Step Functions with Wait State): While Step Functions provide orchestration capabilities,\nthis approach would introduce unnecessary complexity and overhead compared to the\nstraightforward scheduling with EventBridge and running on Fargate.\nAWS Reference:\nAmazon EventBridge Scheduler - Details on how to schedule tasks using Amazon EventBridge\nScheduler.\nAWS Fargate - Information on how to run containers in a serverless manner using AWS Fargate."
+    },
+    {
+      "id": 810,
+      "type": "single",
+      "question": "A solutions architect needs to connect a company's corporate network to its VPC to allow on- premises access to its AWS resources. The solution must provide encryption of all traffic between the corporate network and the VPC at the network layer and the session layer. The solution also must provide security controls to prevent unrestricted access between AWS and the on-premises systems. Which solution meets these requirements?",
+      "options": {
+        "A": "Configure AWS Direct Connect to connect to the VPC. Configure the VPC route tables to allow and deny traffic between AWS and on premises as required.",
+        "B": "Create an 1AM policy to allow access to the AWS Management Console only from a defined set of corporate IP addresses Restrict user access based on job responsibility by using an 1AM policy and roles",
+        "C": "Configure AWS Site-to-Site VPN to connect to the VPC. Configure route table entries to direct traffic from on premises to the VPC. Configure instance security groups and network ACLs to allow only required traffic from on premises.",
+        "D": "Configure AWS Transit Gateway to connect to the VPC. Configure route table entries to direct traffic from on premises to the VPC. Configure instance security groups and network ACLs to allow only required traffic from on premises."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "This solution meets the requirements of providing encryption at both the network and session layers\nwhile also allowing for controlled access between on-premises systems and AWS resources.\nAWS Site-to-Site VPN: This service allows you to establish a secure and encrypted connection\nbetween your on-premises network and AWS VPC over the internet or via AWS Direct Connect. The\nVPN encrypts data at the network layer (IPsec) as it travels between the corporate network and AWS.\nRouting and Security Controls: By configuring route table entries, you can ensure that only the traffic\nintended for AWS resources is directed to the VPC. Additionally, by setting up security groups and\nnetwork ACLs, you can further restrict and control which traffic is allowed to communicate with the\ninstances within your VPC. This approach provides the necessary security to prevent unrestricted\naccess, aligning with the company’s security policies.\nWhy Not Other Options?:\nOption A (AWS Direct Connect): While Direct Connect provides a private connection, it does not\ninherently provide encryption. Additional steps would be required to encrypt traffic, and it doesn’t\naddress the session layer encryption.\nOption B (IAM policies for Console access): This option does not meet the requirement for network-\nlevel encryption and security between the corporate network and the VPC.\nOption D (AWS Transit Gateway): Although Transit Gateway can help in managing multiple\nconnections, it doesn’t directly provide encryption at the network layer. You would still need to\nconfigure a VPN or use other methods for encryption.\nAWS Reference:\nAWS Site-to-Site VPN - Overview of AWS Site-to-Site VPN capabilities, including encryption.\nSecurity Groups and Network ACLs - Information on configuring security groups and network ACLs to\ncontrol traffic."
+    },
+    {
+      "id": 811,
+      "type": "single",
+      "question": "A company runs a Node.js function on a server in its on-premises data center. The data center stores data in a PostgreSQL database. The company stores the credentials in a connection string in an environment variable on the server. The company wants to migrate its application to AWS and to replace the Node.js application server with AWS Lambd a. The company also wants to migrate to Amazon RDS for PostgreSQL and to ensure that the database credentials are securely managed. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Store the database credentials as a parameter in AWS Systems Manager Parameter Store. Configure Parameter Store to automatically rotate the secrets every 30 days. Update the Lambda function to retrieve the credentials from the parameter.",
+        "B": "Store the database credentials as a secret in AWS Secrets Manager. Configure Secrets Manager to automatically rotate the credentials every 30 days Update the Lambda function to retrieve the credentials from the secret.",
+        "C": "Store the database credentials as an encrypted Lambda environment variable. Write a custom Lambda function to rotate the credentials. Schedule the Lambda function to run every 30 days.",
+        "D": "Store the database credentials as a key in AWS Key Management Service (AWS KMS). Configure automatic rotation for the key. Update the Lambda function to retrieve the credentials from the KMS key."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWS Secrets Manager is designed specifically to securely store and manage sensitive information\nsuch as database credentials. It integrates seamlessly with AWS services like Lambda and RDS, and it\nprovides automatic credential rotation with minimal operational overhead.\nAWS Secrets Manager: By storing the database credentials in Secrets Manager, you ensure that the\ncredentials are securely stored, encrypted, and managed. Secrets Manager provides a built-in\nmechanism to automatically rotate credentials at regular intervals (e.g., every 30 days), which helps\nin maintaining security best practices without requiring additional manual intervention.\nLambda Integration: The Lambda function can be easily configured to retrieve the credentials from\nSecrets Manager using the AWS SDK, ensuring that the credentials are accessed securely at runtime.\nWhy Not Other Options?:\nOption A (Parameter Store with Rotation): While Parameter Store can store parameters securely,\nSecrets Manager is more tailored for secrets management and automatic rotation, offering more\nfeatures and less operational overhead.\nOption C (Encrypted Lambda environment variable): Storing credentials directly in Lambda\nenvironment variables, even when encrypted, requires custom code to manage rotation, which\nincreases operational complexity.\nOption D (KMS with automatic rotation): KMS is for managing encryption keys, not for storing and\nrotating secrets like database credentials. This option would require more custom implementation to\nmanage credentials securely.\nAWS Reference:\nAWS Secrets Manager - Detailed documentation on how to store, manage, and rotate secrets using\nAWS Secrets Manager.\nUsing Secrets Manager with AWS Lambda - Guidance on integrating Secrets Manager with Lambda\nfor secure credential management."
+    },
+    {
+      "id": 812,
+      "type": "single",
+      "question": "A company wants to standardize its Amazon Elastic Block Store (Amazon EBS) volume encryption strategy. The company also wants to minimize the cost and configuration effort required to operate the volume encryption check. Which solution will meet these requirements?",
+      "options": {
+        "A": "Write API calls to describe the EBS volumes and to confirm the EBS volumes are encrypted. Use Amazon EventBridge to schedule an AWS Lambda function to run the API calls.",
+        "B": "Write API calls to describe the EBS volumes and to confirm the EBS volumes are encrypted. Run the API calls on an AWS Fargate task.",
+        "C": "Create an AWS Identity and Access Management (1AM) policy that requires the use of tags on EBS volumes. Use AWS Cost Explorer to display resources that are not properly tagged. Encrypt the untagged resources manually.",
+        "D": "Create an AWS Config rule for Amazon EBS to evaluate if a volume is encrypted and to flag the volume if it is not encrypted."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your\nAWS resources. By creating a Config rule, you can automatically check whether your Amazon EBS\nvolumes are encrypted and flag those that are not, with minimal cost and configuration effort.\nAWS Config Rule: AWS Config provides managed rules that you can use to automatically check the\ncompliance of your resources against predefined or custom criteria. In this case, you would create a\nrule to evaluate EBS volumes and determine if they are encrypted. If a volume is not encrypted, the\nrule will flag it, allowing you to take corrective action.\nOperational Overhead: This approach significantly reduces operational overhead because once the\nrule is in place, it continuously monitors your EBS volumes for compliance, and there’s no need for\nmanual checks or custom scripting.\nWhy Not Other Options?:\nOption A (Lambda with API calls and EventBridge): While this can work, it involves writing and\nmaintaining custom code, which increases operational overhead compared to using a managed AWS\nConfig rule.\nOption B (API calls on Fargate): Running API calls on Fargate is more complex and costly compared to\nusing AWS Config, which provides a simpler, managed solution.\nOption C (IAM policy with Cost Explorer): This option does not directly enforce encryption\ncompliance and involves manual intervention, making it less efficient and more prone to errors.\nAWS Reference:\nAWS Config Rules - Overview of AWS Config rules and how they can be used to evaluate resource\nconfigurations.\nAmazon EBS Encryption - Information on how to manage and enforce encryption for EBS volumes."
+    },
+    {
+      "id": 813,
+      "type": "single",
+      "question": "A company has migrated several applications to AWS in the past 3 months. The company wants to know the breakdown of costs for each of these applications. The company wants to receive a regular report that Includes this Information. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Use AWS Budgets to download data for the past 3 months into a csv file. Look up the desired information.",
+        "B": "Load AWS Cost and Usage Reports into an Amazon RDS DB instance. Run SQL queries to gel the desired information.",
+        "C": "Tag all the AWS resources with a key for cost and a value of the application's name. Activate cost allocation tags Use Cost Explorer to get the desired information.",
+        "D": "Tag all the AWS resources with a key for cost and a value of the application's name. Use the AWS Billing and Cost Management console to download bills for the past 3 months. Look up the desired information."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "This solution is the most cost-effective and efficient way to break down costs per application.\nTagging Resources: By tagging all AWS resources with a specific key (e.g., \"cost\") and a value\nrepresenting the application's name, you can easily identify and categorize costs associated with\neach application. This tagging strategy allows for granular tracking of costs within AWS.\nActivating Cost Allocation Tags: Once tags are applied to resources, you need to activate cost\nallocation tags in the AWS Billing and Cost Management console. This ensures that the costs\nassociated with each tag are included in your billing reports and can be used for cost analysis.\nAWS Cost Explorer: Cost Explorer is a powerful tool that allows you to visualize, understand, and\nmanage your AWS costs and usage over time. You can filter and group your cost data by the tags\nyou’ve applied to resources, enabling you to easily see the cost breakdown for each application. Cost\nExplorer also supports generating regular reports, which can be scheduled and emailed to\nstakeholders.\nWhy Not Other Options?:\nOption A (AWS Budgets): AWS Budgets is more focused on setting cost and usage thresholds and\nmonitoring them, rather than providing detailed cost breakdowns by application.\nOption B (Load Cost and Usage Reports into RDS): This approach is less cost-effective and involves\nmore operational overhead, as it requires setting up and maintaining an RDS instance and running\nSQL queries.\nOption D (AWS Billing and Cost Management Console): While you can download bills, this method is\nmore manual and less dynamic compared to using Cost Explorer with activated tags.\nAWS Reference:\nAWS Tagging Strategies - Overview of how to use tagging to organize and track AWS resources.\nAWS Cost Explorer - Details on how to use Cost Explorer to analyze costs."
+    },
+    {
+      "id": 814,
+      "type": "single",
+      "question": "A company is migrating its on-premises Oracle database to an Amazon RDS for Oracle database. The company needs to retain data for 90 days to meet regulatory requirements. The company must also be able to restore the database to a specific point in time for up to 14 days. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Create Amazon RDS automated backups. Set the retention period to 90 days.",
+        "B": "Create an Amazon RDS manual snapshot every day. Delete manual snapshots that are older than 90 days.",
+        "C": "Use the Amazon Aurora Clone feature for Oracle to create a point-in-time restore. Delete clones that are older than 90 days",
+        "D": "Create a backup plan that has a retention period of 90 days by using AWS Backup for Amazon RDS."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "AWS Backup is the most appropriate solution for managing backups with minimal operational\noverhead while meeting the regulatory requirement to retain data for 90 days and enabling point-in-\ntime restore for up to 14 days.\nAWS Backup: AWS Backup provides a centralized backup management solution that supports\nautomated backup scheduling, retention management, and compliance reporting across AWS\nservices, including Amazon RDS. By creating a backup plan, you can define a retention period (in this\ncase, 90 days) and automate the backup process.\nPoint-in-Time Restore (PITR): Amazon RDS supports point-in-time restore for up to 35 days with\nautomated backups. By using AWS Backup in conjunction with RDS, you ensure that your backup\nstrategy meets the requirement for restoring data to a specific point in time within the last 14 days.\nWhy Not Other Options?:\nOption A (RDS Automated Backups): While RDS automated backups support PITR, they do not\ndirectly support retention beyond 35 days without manual intervention.\nOption B (Manual Snapshots): Manually creating and managing snapshots is operationally intensive\nand less automated compared to AWS Backup.\nOption C (Aurora Clones): Aurora Clone is a feature specific to Amazon Aurora and is not applicable\nto Amazon RDS for Oracle.\nAWS Reference:\nAWS Backup - Overview of AWS Backup and its capabilities.\nAmazon RDS Automated Backups - Information on how RDS automated backups work and their\nlimitations."
+    },
+    {
+      "id": 815,
+      "type": "single",
+      "question": "A company is building an application in the AWS Cloud. The application is hosted on Amazon EC2 instances behind an Application Load Balancer (ALB). The company uses Amazon Route 53 for the DNS. The company needs a managed solution with proactive engagement to detect against DDoS attacks. Which solution will meet these requirements?",
+      "options": {
+        "A": "Enable AWS Config. Configure an AWS Config managed rule that detects DDoS attacks.",
+        "B": "Enable AWS WAF on the ALB Create an AWS WAF web ACL with rules to detect and prevent DDoS attacks. Associate the web ACL with the ALB.",
+        "C": "Store the ALB access logs in an Amazon S3 bucket. Configure Amazon GuardDuty to detect and take automated preventative actions for DDoS attacks.",
+        "D": "Subscribe to AWS Shield Advanced. Configure hosted zones in Route 53 Add ALB resources as protected resources."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "AWS Shield Advanced is designed to provide enhanced protection against DDoS attacks with\nproactive engagement and response capabilities, making it the best solution for this scenario.\nAWS Shield Advanced: This service provides advanced protection against DDoS attacks. It includes\ndetailed attack diagnostics, 24/7 access to the AWS DDoS Response Team (DRT), and financial\nprotection against DDoS-related scaling charges. Shield Advanced also integrates with Route 53 and\nthe Application Load Balancer (ALB) to ensure comprehensive protection for your web applications.\nRoute 53 and ALB Protection: By adding your Route 53 hosted zones and ALB resources to AWS Shield\nAdvanced, you ensure that these components are covered under the enhanced protection plan.\nShield Advanced actively monitors traffic and provides real-time attack mitigation, minimizing the\nimpact of DDoS attacks on your application.\nWhy Not Other Options?:\nOption A (AWS Config): AWS Config is a configuration management service and does not provide\nDDoS protection or detection capabilities.\nOption B (AWS WAF): While AWS WAF can help mitigate some types of attacks, it does not provide\nthe comprehensive DDoS protection and proactive engagement offered by Shield Advanced.\nOption C (GuardDuty): GuardDuty is a threat detection service that identifies potentially malicious\nactivity within your AWS environment, but it is not specifically designed to provide DDoS protection.\nAWS Reference:\nAWS Shield Advanced - Overview of AWS Shield Advanced and its DDoS protection capabilities.\nIntegrating AWS Shield Advanced with Route 53 and ALB - Detailed guidance on how to protect\nRoute 53 and ALB with AWS Shield Advanced."
+    },
+    {
+      "id": 816,
+      "type": "single",
+      "question": "A company has an employee web portal. Employees log in to the portal to view payroll details. The company is developing a new system to give employees the ability to upload scanned documents for reimbursement. The company runs a program to extract text-based data from the documents and attach the extracted information to each employee's reimbursement IDs for processing. The employee web portal requires 100% uptime. The document extract program runs infrequently throughout the day on an on-demand basis. The company wants to build a scalable and cost-effective new system that will require minimal changes to the existing web portal. The company does not want to make any code changes. Which solution will meet these requirements with the LEAST implementation effort?",
+      "options": {
+        "A": "Run Amazon EC2 On-Demand Instances in an Auto Scaling group for the web portal. Use an AWS Lambda function to run the document extract program. Invoke the Lambda function when an employee uploads a new reimbursement document.",
+        "B": "Run Amazon EC2 Spot Instances in an Auto Scaling group for the web portal. Run the document extract program on EC2 Spot Instances Start document extract program instances when an employee uploads a new reimbursement document.",
+        "C": "Purchase a Savings Plan to run the web portal and the document extract program. Run the web portal and the document extract program in an Auto Scaling group.",
+        "D": "Create an Amazon S3 bucket to host the web portal. Use Amazon API Gateway and an AWS Lambda function for the existing functionalities. Use the Lambda function to run the document extract program. Invoke the Lambda function when the API that is associated with a new document upload is called."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution offers the most scalable and cost-effective approach with minimal changes to the\nexisting web portal and no code modifications.\nAmazon EC2 On-Demand Instances in an Auto Scaling Group: Running the web portal on EC2 On-\nDemand instances ensures 100% uptime and scalability. The Auto Scaling group will maintain the\ndesired number of instances, automatically scaling up or down as needed, ensuring high availability\nfor the employee web portal.\nAWS Lambda for Document Extraction: Lambda is a serverless compute service that allows you to\nrun code in response to events without provisioning or managing servers. By using Lambda to run\nthe document extraction program, you can trigger the function whenever an employee uploads a\ndocument. This approach is cost-effective since you only pay for the compute time used by the\nLambda function.\nNo Code Changes Required: This solution integrates with the existing infrastructure with minimal\nimplementation effort and does not require any modifications to the web portal's code.\nWhy Not Other Options?:\nOption B (Spot Instances): Spot Instances are not suitable for workloads requiring 100% uptime, as\nthey can be terminated by AWS with short notice.\nOption C (Savings Plan): A Savings Plan could reduce costs but does not address the requirement for\nrunning the document extraction program efficiently or without code changes.\nOption D (S3 with API Gateway and Lambda): This would require significant changes to the existing\nweb portal setup, including moving the portal to S3 and reconfiguring its architecture, which\ncontradicts the requirement of minimal implementation effort and no code changes.\nAWS Reference:\nAmazon EC2 Auto Scaling - Information on how to use Auto Scaling for EC2 instances.\nAWS Lambda - Overview of AWS Lambda and its use cases."
+    },
+    {
+      "id": 817,
+      "type": "single",
+      "question": "An ecommerce company wants a disaster recovery solution for its Amazon RDS DB instances that run Microsoft SQL Server Enterprise Edition. The company's current recovery point objective (RPO) and recovery time objective (RTO) are 24 hours. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Create a cross-Region read replica and promote the read replica to the primary instance",
+        "B": "Use AWS Database Migration Service (AWS DMS) to create RDS cross-Region replication.",
+        "C": "Use cross-Region replication every 24 hours to copy native backups to an Amazon S3 bucket",
+        "D": "Copy automatic snapshots to another Region every 24 hours."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "This solution is the most cost-effective and meets the RPO and RTO requirements of 24 hours.\nAutomatic Snapshots: Amazon RDS automatically creates snapshots of your DB instance at regular\nintervals. By copying these snapshots to another AWS Region every 24 hours, you ensure that you\nhave a backup available in a different geographic location, providing disaster recovery capability.\nRPO and RTO: Since the company’s RPO and RTO are both 24 hours, copying snapshots daily to\nanother Region is sufficient. In the event of a disaster, you can restore the DB instance from the most\nrecent snapshot in the target Region.\nWhy Not Other Options?:\nOption A (Cross-Region Read Replica): This could provide a faster recovery time but is more costly\ndue to the ongoing replication and resource usage in another Region.\nOption B (DMS Cross-Region Replication): While effective for continuous replication, it introduces\ncomplexity and cost that isn’t necessary given the 24-hour RPO/RTO.\nOption C (Cross-Region Native Backup Copy): This involves more manual steps and doesn’t offer as\nstraightforward a solution as automated snapshot copying.\nAWS Reference:\nAmazon RDS Automated Backups and Snapshots - Details on automated backups and snapshots in\nRDS.\nCopying an Amazon RDS DB Snapshot - How to copy DB snapshots to another Region."
+    },
+    {
+      "id": 818,
+      "type": "single",
+      "question": "An ecommerce company runs Its application on AWS. The application uses an Amazon Aurora PostgreSQL cluster in Multi-AZ mode for the underlying database. During a recent promotional campaign, the application experienced heavy read load and write load. Users experienced timeout issues when they attempted to access the application. A solutions architect needs to make the application architecture more scalable and highly available. Which solution will meet these requirements with the LEAST downtime?",
+      "options": {
+        "A": "Create an Amazon EventBndge rule that has the Aurora cluster as a source. Create an AWS Lambda function to log the state change events of the Aurora cluster. Add the Lambda function as a target for the EventBndge rule Add additional reader nodes to fail over to.",
+        "B": "Modify the Aurora cluster and activate the zero-downtime restart (ZDR) feature. Use Database Activity Streams on the cluster to track the cluster status.",
+        "C": "Add additional reader instances to the Aurora cluster Create an Amazon RDS Proxy target group for the Aurora cluster.",
+        "D": "Create an Amazon ElastiCache for Redis cache. Replicate data from the Aurora cluster to Redis by using AWS Database Migration Service (AWS DMS) with a write-around approach."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "This solution directly addresses the scalability and high availability requirements with minimal\ndowntime.\nAdditional Reader Instances: Adding more reader instances to the Aurora cluster will distribute the\nread load, improving the performance of the application under heavy read traffic. Aurora reader\ninstances automatically replicate the data from the writer instance, enabling you to scale out read\noperations.\nAmazon RDS Proxy: RDS Proxy improves database availability by managing database connections\nmore efficiently and providing a connection pool. This reduces the overhead on the Aurora cluster\nduring peak loads, further enhancing performance and availability without requiring changes to the\napplication code.\nWhy Not Other Options?:\nOption A (EventBridge and Lambda): This doesn’t directly address the performance and availability\nissues. Logging state changes and adding reader nodes on failure events doesn’t provide proactive\nscalability.\nOption B (Zero-Downtime Restart and Activity Streams): Zero-Downtime Restart (ZDR) is useful for\nminimizing downtime during maintenance but doesn’t directly improve scalability. Database Activity\nStreams are more for security monitoring than for performance enhancement.\nOption D (ElastiCache for Redis): While adding a caching layer can help with read performance, it\nintroduces complexity and may not be necessary if additional reader instances can handle the load.\nAWS Reference:\nAmazon Aurora Scaling - Information on scaling Aurora clusters with reader instances.\nAmazon RDS Proxy - Details on how RDS Proxy can improve database performance and availability."
+    },
+    {
+      "id": 819,
+      "type": "single",
+      "question": "A company is developing a new application that uses a relational database to store user data and application configurations. The company expects the application to have steady user growth. The company expects the database usage to be variable and read-heavy, with occasional writes. The company wants to cost-optimize the database solution. The company wants to use an AWS managed database solution that will provide the necessary performance. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Deploy the database on Amazon RDS. Use Provisioned IOPS SSD storage to ensure consistent performance for read and write operations.",
+        "B": "Deploy the database on Amazon Aurora Serveriess to automatically scale the database capacity based on actual usage to accommodate the workload.",
+        "C": "Deploy the database on Amazon DynamoDB. Use on-demand capacity mode to automatically scale throughput to accommodate the workload.",
+        "D": "Deploy the database on Amazon RDS Use magnetic storage and use read replicas to accommodate the workload"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Amazon Aurora Serverless is a cost-effective, on-demand, autoscaling configuration for Amazon\nAurora. It automatically adjusts the database's capacity based on the current demand, which is ideal\nfor workloads with variable and unpredictable usage patterns. Since the application is expected to be\nread-heavy with occasional writes and steady growth, Aurora Serverless can provide the necessary\nperformance without requiring the management of database instances.\nCost-Optimization: Aurora Serverless only charges for the database capacity you use, making it a\nmore cost-effective solution compared to always running provisioned database instances, especially\nfor workloads with fluctuating demand.\nScalability: It automatically scales database capacity up or down based on actual usage, ensuring that\nyou always have the right amount of resources available.\nPerformance: Aurora Serverless is built on the same underlying storage as Amazon Aurora, providing\nhigh performance and availability.\nWhy Not Other Options?:\nOption A (RDS with Provisioned IOPS SSD): While Provisioned IOPS SSD ensures consistent\nperformance, it is generally more expensive and less flexible compared to the autoscaling nature of\nAurora Serverless.\nOption C (DynamoDB with On-Demand Capacity): DynamoDB is a NoSQL database and may not be\nthe best fit for applications requiring relational database features.\nOption D (RDS with Magnetic Storage and Read Replicas): Magnetic storage is outdated and generally\nslower. While read replicas help with read-heavy workloads, the overall performance might not be\noptimal, and magnetic storage doesn’t provide the necessary performance.\nAWS Reference:\nAmazon Aurora Serverless - Information on how Aurora Serverless works and its use cases.\nAmazon Aurora Pricing - Details on the cost-effectiveness of Aurora Serverless."
+    },
+    {
+      "id": 820,
+      "type": "single",
+      "question": "A company is running a media store across multiple Amazon EC2 instances distributed across multiple Availability Zones in a single VPC. The company wants a high-performing solution to share data between all the EC2 instances, and prefers to keep the data within the VPC only. What should a solutions architect recommend?",
+      "options": {
+        "A": "Create an Amazon S3 bucket and call the service APIs from each instance's application.",
+        "B": "Create an Amazon S3 bucket and configure all instances to access it as a mounted volume.",
+        "C": "Configure an Amazon Elastic Block Store (Amazon EBS) volume and mount it across all instances.",
+        "D": "Configure an Amazon Elastic File System (Amazon EFS) file system and mount It across all instances."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Amazon Elastic File System (EFS) is a managed file storage service that can be mounted across\nmultiple EC2 instances. It provides a scalable and high-performing solution to share data among\ninstances within a VPC.\nHigh Performance: EFS provides scalable performance for workloads that require high throughput\nand IOPS. It is particularly well-suited for applications that need to share data across multiple\ninstances.\nEase of Use: EFS can be easily mounted on multiple instances across different Availability Zones,\nproviding a shared file system accessible to all the instances within the VPC.\nSecurity: EFS can be configured to ensure that data remains within the VPC, and it supports\nencryption at rest and in transit.\nWhy Not Other Options?:\nOption A (Amazon S3 bucket with APIs): While S3 is excellent for object storage, it is not a file system\nand does not provide the low-latency access required for shared data between instances.\nOption B (S3 bucket as a mounted volume): S3 is not designed to be mounted as a file system, and\nthis approach would introduce unnecessary complexity and latency.\nOption C (EBS volume shared across instances): EBS volumes cannot be attached to multiple\ninstances simultaneously. It is not designed to be shared across instances like EFS.\nAWS Reference:\nAmazon EFS - Overview of Amazon EFS and its features.\nBest Practices for Amazon EFS - Recommendations for using EFS with multiple instances."
+    },
+    {
+      "id": 821,
+      "type": "single",
+      "question": "A company currently runs an on-premises stock trading application by using Microsoft Windows Server. The company wants to migrate the application to the AWS Cloud. The company needs to design a highly available solution that provides low-latency access to block storage across multiple Availability Zones. Which solution will meet these requirements with the LEAST implementation effort?",
+      "options": {
+        "A": "Configure a Windows Server cluster that spans two Availability Zones on Amazon EC2 instances. Install the application on both cluster nodes. Use Amazon FSx for Windows File Server as shared storage between the two cluster nodes.",
+        "B": "Configure a Windows Server cluster that spans two Availability Zones on Amazon EC2 instances. Install the application on both cluster nodes Use Amazon Elastic Block Store (Amazon EBS) General Purpose SSD (gp3) volumes as storage attached to the EC2 instances. Set up application-level replication to sync data from one EBS volume in one Availability Zone to another EBS volume in the second Availability Zone.",
+        "C": "Deploy the application on Amazon EC2 instances in two Availability Zones Configure one EC2 instance as active and the second EC2 instance in standby mode. Use an Amazon FSx for NetApp ONTAP Multi-AZ file system to access the data by using Internet Small Computer Systems Interface (iSCSI) protocol.",
+        "D": "Deploy the application on Amazon EC2 instances in two Availability Zones. Configure one EC2 instance as active and the second EC2 instance in standby mode. Use Amazon Elastic Block Store (Amazon EBS) Provisioned IOPS SSD (io2) volumes as storage attached to the EC2 instances. Set up Amazon EBS level replication to sync data from one io2 volume in one Availability Zone to another io2 volume in the second Availability Zone."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution is designed to provide high availability and low-latency access to block storage across\nmultiple Availability Zones with minimal implementation effort.\nWindows Server Cluster Across AZs: Configuring a Windows Server Failover Cluster (WSFC) that\nspans two Availability Zones ensures that the application can failover from one instance to another in\ncase of a failure, meeting the high availability requirement.\nAmazon FSx for Windows File Server: FSx for Windows File Server provides fully managed Windows\nfile storage that is accessible via the SMB protocol, which is suitable for Windows-based applications.\nIt offers high availability and can be used as shared storage between the cluster nodes, ensuring that\nboth nodes have access to the same data with low latency.\nWhy Not Other Options?:\nOption B (EBS with application-level replication): This requires complex configuration and\nmanagement, as EBS volumes cannot be directly shared across AZs. Application-level replication is\nmore complex and prone to errors.\nOption C (FSx for NetApp ONTAP with iSCSI): While this is a viable option, it introduces additional\ncomplexity with iSCSI and requires more specialized knowledge for setup and management.\nOption D (EBS with EBS-level replication): EBS-level replication is not natively supported across AZs,\nand setting up a custom replication solution would increase the implementation effort.\nAWS Reference:\nAmazon FSx for Windows File Server - Overview and benefits of using FSx for Windows File Server.\nWindows Server Failover Clustering on AWS - Guide on setting up a Windows Server cluster on AWS."
+    },
+    {
+      "id": 822,
+      "type": "single",
+      "question": "A company is designing an application on AWS that processes sensitive dat a. The application stores and processes financial data for multiple customers. To meet compliance requirements, the data for each customer must be encrypted separately at rest by using a secure, centralized key management solution. The company wants to use AWS Key Management Service (AWS KMS) to implement encryption. Which solution will meet these requirements with the LEAST operational overhead'?",
+      "options": {
+        "A": "Generate a unique encryption key for each customer. Store the keys in an Amazon S3 bucket. Enable server-side encryption.",
+        "B": "Deploy a hardware security appliance in the AWS environment that securely stores customer- provided encryption keys. Integrate the security appliance with AWS KMS to encrypt the sensitive data in the application.",
+        "C": "Create a single AWS KMS key to encrypt all sensitive data across the application.",
+        "D": "Create separate AWS KMS keys for each customer's data that have granular access control and logging enabled."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "This solution meets the requirement of encrypting each customer’s data separately with the least\noperational overhead by leveraging AWS Key Management Service (KMS).\nSeparate AWS KMS Keys: By creating separate KMS keys for each customer, you can ensure that each\ncustomer’s data is encrypted with a unique key. This approach satisfies the compliance requirement\nfor separate encryption and provides fine-grained control over access to the keys.\nGranular Access Control: AWS KMS allows you to define key policies and use IAM policies to grant\nspecific permissions to the keys. This ensures that only authorized users or services can access the\nkeys, thereby maintaining the principle of least privilege.\nLogging and Monitoring: AWS KMS integrates with AWS CloudTrail, which logs all key usage and\nmanagement activities. This provides an audit trail that is essential for meeting compliance\nrequirements.\nWhy Not Other Options?:\nOption A (Store keys in S3): Storing keys in S3 is not recommended because it does not provide the\nsame level of security, access control, or integration with AWS services as KMS does.\nOption B (Hardware security appliance): Deploying a hardware security appliance adds significant\noperational overhead and complexity, which is unnecessary given that KMS already provides a secure\nand centralized key management solution.\nOption C (Single KMS key for all data): Using a single KMS key does not meet the requirement of\nencrypting each customer's data separately.\nAWS Reference:\nAWS Key Management Service (KMS) - Overview of KMS, its features, and best practices for key\nmanagement.\nUsing AWS KMS for Multi-Tenant Applications - Guidance on how to design applications using KMS\nfor multi-tenancy."
+    },
+    {
+      "id": 823,
+      "type": "single",
+      "question": "A company is building a cloud-based application on AWS that will handle sensitive customer dat a. The application uses Amazon RDS for the database. Amazon S3 for object storage, and S3 Event Notifications that invoke AWS Lambda for serverless processing. The company uses AWS 1AM Identity Center to manage user credentials. The development, testing, and operations teams need secure access to Amazon RDS and Amazon S3 while ensuring the confidentiality of sensitive customer data. The solution must comply with the principle of least privilege. Which solution meets these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use 1AM roles with least privilege to grant all the teams access. Assign 1AM roles to each team with customized 1AM policies defining specific permission for Amazon RDS and S3 object access based on team responsibilities.",
+        "B": "Enable 1AM Identity Center with an Identity Center directory. Create and configure permission sets with granular access to Amazon RDS and Amazon S3. Assign all the teams to groups that have specific access with the permission sets.",
+        "C": "Create individual 1AM users for each member in all the teams with role-based permissions. Assign the 1AM roles with predefined policies for RDS and S3 access to each user based on user needs. Implement 1AM Access Analyzer for periodic credential evaluation.",
+        "D": "Use AWS Organizations to create separate accounts for each team. Implement cross-account 1AM roles with least privilege Grant specific permission for RDS and S3 access based on team roles and responsibilities."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "This solution allows for secure and least-privilege access with minimal operational overhead.\nIAM Identity Center: AWS IAM Identity Center (formerly AWS SSO) enables you to centrally manage\naccess to multiple AWS accounts and applications. By using IAM Identity Center, you can assign\npermission sets that define what users or groups can access, ensuring that only necessary\npermissions are granted.\nPermission Sets: Permission sets in IAM Identity Center allow you to define granular access controls\nfor specific services, such as Amazon RDS and S3. You can tailor these permissions to meet the needs\nof different teams, adhering to the principle of least privilege.\nGroup Management: By assigning users to groups and associating those groups with specific\npermission sets, you reduce the complexity and overhead of managing individual IAM roles and\npolicies. This method also simplifies compliance and audit processes.\nWhy Not Other Options?:\nOption A (IAM roles): While IAM roles can provide least-privilege access, managing multiple roles\nand policies across teams increases operational overhead compared to using IAM Identity Center.\nOption C (Individual IAM users): Managing individual IAM users and roles can be cumbersome and\ndoes not scale well compared to group-based management in IAM Identity Center.\nOption D (AWS Organizations with cross-account roles): Creating separate accounts and cross-\naccount roles adds unnecessary complexity and overhead for this use case, where IAM Identity\nCenter provides a more straightforward solution.\nAWS Reference:\nAWS IAM Identity Center - Overview and best practices for using IAM Identity Center.\nManaging Access Permissions Using IAM Identity Center - Guide on creating and managing\npermission sets for secure access."
+    },
+    {
+      "id": 824,
+      "type": "single",
+      "question": "A company has applications that run in an organization in AWS Organizations. The company outsources operational support of the applications. The company needs to provide access for the external support engineers without compromising security. The external support engineers need access to the AWS Management Console. The external support engineers also need operating system access to the company's fleet of Amazon EC2 instances that run Amazon Linux in private subnets. Which solution will meet these requirements MOST securely?",
+      "options": {
+        "A": "Confirm that AWS Systems Manager Agent (SSM Agent) is installed on all instances. Assign an instance profile with the necessary policy to connect to Systems Manager. Use AWS 1AM Identity Center to provide the external support engineers console access. Use Systems Manager Session Manager to assign the required permissions.",
+        "B": "Confirm that AWS Systems Manager Agent {SSM Agent) is installed on all instances. Assign an instance profile with the necessary policy to connect to Systems Manager. Use Systems Manager Session Manager to provide local 1AM user credentials in each AWS account to the external support engineers for console access.",
+        "C": "Confirm that all instances have a security group that allows SSH access only from the external support engineers source IP address ranges. Provide local 1AM user credentials in each AWS account to the external support engineers for console access. Provide each external support engineer an SSH key pair to log in to the application instances.",
+        "D": "Create a bastion host in a public subnet. Set up the bastion host security group to allow access from only the external engineers' IP address ranges Ensure that all instances have a security group that allows SSH access from the bastion host. Provide each external support engineer an SSH key pair to log in to the application instances. Provide local account 1AM user credentials to the engineers for console access."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution provides the most secure access for external support engineers with the least exposure\nto potential security risks.\nAWS Systems Manager (SSM) and Session Manager: Systems Manager Session Manager allows\nsecure and auditable access to EC2 instances without the need to open inbound SSH ports or manage\nSSH keys. This reduces the attack surface significantly. The SSM Agent must be installed and\nconfigured on all instances, and the instances must have an instance profile with the necessary IAM\npermissions to connect to Systems Manager.\nIAM Identity Center: IAM Identity Center provides centralized management of access to the AWS\nManagement Console for external support engineers. By using IAM Identity Center, you can control\nconsole access securely and ensure that external engineers have the appropriate permissions based\non their roles.\nWhy Not Other Options?:\nOption B (Local IAM user credentials): This approach is less secure because it involves managing local\nIAM user credentials and does not leverage the centralized management and security benefits of\nIAM Identity Center.\nOption C (Security group with SSH access): Allowing SSH access opens up the infrastructure to\npotential security risks, even when restricted by IP addresses. It also requires managing SSH keys,\nwhich can be cumbersome and less secure.\nOption D (Bastion host): While a bastion host can secure SSH access, it still requires managing SSH\nkeys and opening ports. This approach is less secure and more operationally intensive compared to\nusing Session Manager.\nAWS Reference:\nAWS Systems Manager Session Manager - Documentation on using Session Manager for secure\ninstance access.\nAWS IAM Identity Center - Overview of IAM Identity Center and its capabilities for managing user\naccess."
+    },
+    {
+      "id": 825,
+      "type": "single",
+      "question": "A solutions architect needs to host a high performance computing (HPC) workload in the AWS Cloud. The workload will run on hundreds of Amazon EC2 instances and will require parallel access to a shared file system to enable distributed processing of large datasets. Datasets will be accessed across multiple instances simultaneously. The workload requires access latency within 1 ms. After processing has completed, engineers will need access to the dataset for manual postprocessing. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use Amazon Elastic File System (Amazon EFS) as a shared fie system. Access the dataset from Amazon EFS.",
+        "B": "Mount an Amazon S3 bucket to serve as the shared file system. Perform postprocessing directly from the S3 bucket.",
+        "C": "Use Amazon FSx for Lustre as a shared file system. Link the file system to an Amazon S3 bucket for postprocessing.",
+        "D": "Configure AWS Resource Access Manager to share an Amazon S3 bucket so that it can be mounted to all instances for processing and postprocessing."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon FSx for Lustre is the ideal solution for high-performance computing (HPC) workloads that\nrequire parallel access to a shared file system with low latency. FSx for Lustre is designed specifically\nto meet the needs of such workloads, offering sub-millisecond latencies, which makes it well-suited\nfor the 1 ms latency requirement mentioned in the question.\nHere is why FSx for Lustre is the best fit:\nParallel File System: FSx for Lustre is a parallel file system that can scale across hundreds of Amazon\nEC2 instances, providing high throughput and low-latency access to data. It is optimized for\nprocessing large datasets in parallel, which is essential for HPC workloads.\nLow Latency: FSx for Lustre is capable of providing access latencies well within 1 ms, making it ideal\nfor performance-sensitive workloads like HPC.\nSeamless Integration with Amazon S3: FSx for Lustre can be linked to an Amazon S3 bucket. This\nintegration allows data to be imported from S3 into FSx for Lustre before the workload begins and\nexported back to S3 after processing. This feature is crucial for manual postprocessing because it\nenables engineers to access the dataset in S3 after processing.\nPerformance: FSx for Lustre is built for workloads that require high performance, such as machine\nlearning, analytics, media processing, and financial simulations, which are typical for HPC\nenvironments.\nIn contrast:\nAmazon EFS (Option A): While EFS provides shared file storage and scales across multiple EC2\ninstances, it does not offer the same level of performance or sub-millisecond latencies as FSx for\nLustre. EFS is more suited for general-purpose workloads, not high-performance computing.\nMounting S3 as a file system (Option B and D): S3 is object storage, not a file system designed for\nlow-latency access and parallel processing. Mounting S3 buckets directly or using AWS Resource\nAccess Manager to share the bucket would not meet the low-latency (1 ms) or performance\nrequirements needed for HPC workloads.\nTherefore, Amazon FSx for Lustre (Option C) is the most appropriate and verified solution for this\nscenario.\nAWS Reference:\nAmazon FSx for Lustre\nBest Practices for High Performance Computing (HPC)\nAmazon FSx and Amazon S3 Integration"
+    },
+    {
+      "id": 826,
+      "type": "single",
+      "question": "A company is building a new furniture inventory application. The company has deployed the application on a fleet of Amazon EC2 instances across multiple Availability Zones. The EC2 instances run behind an Application Load Balancer (ALB) in their VPC. A solutions architect has observed that incoming traffic seems to favor one EC2 instance, resulting in latency for some requests. What should the solutions architect do to resolve this issue?",
+      "options": {
+        "A": "Disable session affinity (sticky sessions) on the ALB.",
+        "B": "Replace the ALB with a Network Load Balancer.",
+        "C": "Increase the number of EC2 instances in each Availability Zone.",
+        "D": "Adjust the frequency of the health checks on the ALB's target group."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "The issue described in the question, where incoming traffic seems to favor one EC2 instance, is often\ncaused by session affinity (also known as sticky sessions) being enabled on the Application Load\nBalancer (ALB). When session affinity is enabled, the ALB routes requests from the same client to the\nsame EC2 instance. This can cause an imbalance in traffic distribution, leading to performance\nbottlenecks on certain instances while others remain underutilized.\nTo resolve this issue, disabling session affinity ensures that the ALB distributes incoming traffic evenly\nacross all EC2 instances, allowing better load distribution and reducing latency. The ALB will rely on\nits round-robin or least outstanding requests algorithm (depending on the configuration) to\ndistribute traffic more evenly across instances.\nOption B (Network Load Balancer): The NLB is designed for Layer 4 (TCP) traffic and low latency use\ncases, but it is not needed here as the problem is with load balancing logic at the application layer\n(Layer 7). The ALB is more appropriate for HTTP/HTTPS traffic.\nOption C (Increase EC2 Instances): Adding more EC2 instances does not solve the root issue of\nuneven traffic distribution.\nOption D (Health Check Frequency): Adjusting health check frequency won't address the imbalance\ncaused by session affinity.\nAWS Reference:\nApplication Load Balancer Sticky Sessions"
+    },
+    {
+      "id": 827,
+      "type": "single",
+      "question": "A company hosts its multi-tier, public web application in the AWS Cloud. The web application runs on Amazon EC2 instances, and its database runs on Amazon RDS. The company is anticipating a large increase in sales during an upcoming holiday weekend. A solutions architect needs to build a solution to analyze the performance of the web application with a granularity of no more than 2 minutes. What should the solutions architect do to meet this requirement?",
+      "options": {
+        "A": "Send Amazon CloudWatch logs to Amazon Redshift. Use Amazon QuickSight to perform further analysis.",
+        "B": "Enable detailed monitoring on all EC2 instances. Use Amazon CloudWatch metrics to perform further analysis.",
+        "C": "Create an AWS Lambda function to fetch EC2 logs from Amazon CloudWatch Logs. Use Amazon CloudWatch metrics to perform further analysis.",
+        "D": "Send EC2 logs to Amazon S3. Use Amazon Redshift to fetch togs from the S3 bucket to process raw data tor further analysis with Amazon QuickSight."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "To analyze the performance of the web application with granularity of no more than 2 minutes,\nenabling detailed monitoring on EC2 instances is the best solution. By default, CloudWatch provides\nmetrics at a 5-minute interval. Enabling detailed monitoring allows you to collect metrics at 1-minute\nintervals, which will give you the level of granularity you need to analyze performance during peak\ntraffic.\nAmazon CloudWatch metrics can then be used to analyze CPU utilization, memory usage, disk I/O,\nand network throughput, among other performance-related metrics, at the desired granularity.\nOption A: Sending CloudWatch logs to Redshift for analysis is unnecessary and overcomplicated for\nsimple performance analysis, which can be done using CloudWatch metrics alone.\nOption C: Fetching EC2 logs via Lambda adds complexity, and CloudWatch metrics already provide\nthe required data for performance analysis.\nOption D: Sending logs to S3 and using Redshift for analysis is also more complex than necessary for\nsimple performance monitoring.\nAWS Reference:\nMonitoring Amazon EC2 with CloudWatch\nAmazon CloudWatch Detailed Monitoring"
+    },
+    {
+      "id": 828,
+      "type": "single",
+      "question": "A solutions architect is designing an application that helps users fill out and submit registration forms. The solutions architect plans to use a two-tier architecture that includes a web application server tier and a worker tier. The application needs to process submitted forms quickly. The application needs to process each form exactly once. The solution must ensure that no data is lost. Which solution will meet these requirements?",
+      "options": {
+        "A": "Use an Amazon Simple Queue Service {Amazon SQS) FIFO queue between the web application server tier and the worker tier to store and forward form data.",
+        "B": "Use an Amazon API Gateway HTTP API between the web application server tier and the worker tier to store and forward form data.",
+        "C": "Use an Amazon Simple Queue Service (Amazon SQS) standard queue between the web application server tier and the worker tier to store and forward form data.",
+        "D": "Use an AWS Step Functions workflow. Create a synchronous workflow between the web application server tier and the worker tier that stores and forwards form data."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "To process each form exactly once and ensure no data is lost, using an Amazon SQS FIFO (First-In-\nFirst-Out) queue is the most appropriate solution. SQS FIFO queues guarantee that messages are\nprocessed in the exact order they are sent and ensure that each message is processed exactly once.\nThis ensures data consistency and reliability, both of which are crucial for processing user-submitted\nforms without data loss.\nSQS acts as a buffer between the web application server and the worker tier, ensuring that submitted\nforms are stored reliably and forwarded to the worker tier for processing. This also decouples the\napplication, improving its scalability and resilience.\nOption B (API Gateway): API Gateway is better suited for API management rather than acting as a\nmessage queue for form processing.\nOption C (SQS Standard Queue): While SQS Standard queues offer high throughput, they do not\nguarantee exactly-once processing or the strict ordering needed for this use case.\nOption D (Step Functions): Step Functions are useful for orchestrating workflows but add\nunnecessary complexity for simple message queuing and form processing.\nAWS Reference:\nAmazon SQS FIFO Queues\nDecoupling Application Tiers Using Amazon SQS"
+    },
+    {
+      "id": 829,
+      "type": "single",
+      "question": "A company has a large data workload that runs for 6 hours each day. The company cannot lose any data while the process is running. A solutions architect is designing an Amazon EMR cluster configuration to support this critical data workload. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Configure a long-running cluster that runs the primary node and core nodes on On-Demand Instances and the task nodes on Spot Instances.",
+        "B": "Configure a transient cluster that runs the primary node and core nodes on On-Demand Instances and the task nodes on Spot Instances.",
+        "C": "Configure a transient cluster that runs the primary node on an On-Demand Instance and the core nodes and task nodes on Spot Instances.",
+        "D": "Configure a long-running cluster that runs the primary node on an On-Demand Instance, the core nodes on Spot Instances, and the task nodes on Spot Instances."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "For cost-effectiveness and high availability in Amazon EMR workloads, the best approach is to\nconfigure a transient cluster (which runs for the duration of the job and then terminates) with On-\nDemand Instances for the primary and core nodes, and Spot Instances for the task nodes. Here's why:\nPrimary and core nodes on On-Demand Instances: These nodes are critical because they manage the\ncluster and store data on HDFS. Running them on On-Demand Instances ensures stability and that no\ndata is lost, as Spot Instances can be interrupted.\nTask nodes on Spot Instances: Task nodes handle additional processing and can be used with Spot\nInstances to reduce costs. Spot Instances are much cheaper but can be interrupted, which is fine for\nnon-critical tasks as the framework can handle retries.\nA transient cluster is more cost-effective than a long-running cluster for workloads that only run for 6\nhours a day. Transient clusters automatically terminate after the workload completes, saving costs by\nnot keeping the cluster running when it's not needed.\nOption A: A long-running cluster may result in unnecessary costs when the cluster isn't being used.\nOption C: Running core nodes on Spot Instances risks data loss if the Spot Instances are interrupted,\nviolating the requirement for zero data loss.\nOption D: Running both core and task nodes on Spot Instances is highly risky for data-critical\nworkloads.\nAWS Reference:\nAmazon EMR Cluster Management\nUsing Spot Instances in EMR"
+    },
+    {
+      "id": 830,
+      "type": "single",
+      "question": "A company runs an application that stores and shares photos. Users upload the photos to an Amazon S3 bucket. Every day, users upload approximately 150 photos. The company wants to design a solution that creates a thumbnail of each new photo and stores the thumbnail in a second S3 bucket. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Configure an Amazon EventBridge scheduled rule to invoke a scrip! every minute on a long- running Amazon EMR cluster. Configure the script to generate thumbnails for the photos that do not have thumbnails. Configure the script to upload the thumbnails to the second S3 bucket.",
+        "B": "Configure an Amazon EventBridge scheduled rule to invoke a script every minute on a memory- optimized Amazon EC2 instance that is always on. Configure the script to generate thumbnails for the photos that do not have thumbnails. Configure the script to upload the thumbnails to the second S3 bucket.",
+        "C": "Configure an S3 event notification to invoke an AWS Lambda function each time a user uploads a new photo to the application. Configure the Lambda function to generate a thumbnail and to upload the thumbnail to the second S3 bucket.",
+        "D": "Configure S3 Storage Lens to invoke an AWS Lambda function each time a user uploads a new photo to the application. Configure the Lambda function to generate a thumbnail and to upload the thumbnail to a second S3 bucket."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "The most cost-effective and scalable solution for generating thumbnails when photos are uploaded\nto an S3 bucket is to use S3 event notifications to trigger an AWS Lambda function. This approach\navoids the need for a long-running EC2 instance or EMR cluster, making it highly cost-effective\nbecause Lambda only charges for the time it takes to process each event.\nS3 Event Notifications: Automatically triggers the Lambda function when a new photo is uploaded to\nthe S3 bucket.\nAWS Lambda: A serverless compute service that scales automatically and only charges for execution\ntime, which makes it the most economical choice when dealing with periodic events like photo\nuploads.\nThe Lambda function can generate the thumbnail and upload it to a second S3 bucket, fulfilling the\nrequirement efficiently.\nOption A and Option B (EMR or EC2 with scheduled scripts)**: These are less cost-effective as they\ninvolve continuously running infrastructure, which incurs unnecessary costs.\nOption D (S3 Storage Lens): S3 Storage Lens is a tool for storage analytics and is not designed for\nevent-based photo processing.\nAWS Reference:\nAmazon S3 Event Notifications\nAWS Lambda Pricing"
+    },
+    {
+      "id": 831,
+      "type": "single",
+      "question": "A company uses Amazon RDS (or PostgreSQL to run its applications in the us-east-1 Region. The company also uses machine learning (ML) models to forecast annual revenue based on neat real- time reports. The reports are generated by using the same RDS for PostgreSQL database. The database performance slows during business hours. The company needs to improve database performance. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Create a cross-Region read replica. Configure the reports to be generated from the read replica.",
+        "B": "Activate Multi-AZ DB instance deployment for RDS for PostgreSQL. Configure the reports to be generated from the standby database.",
+        "C": "Use AWS Data Migration Service (AWS DMS) to logically replicate data lo a new database. Configure the reports to be generated from the new database.",
+        "D": "Create a read replica in us-east-1. Configure the reports to be generated from the read replica."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "To improve the performance of the primary RDS PostgreSQL database during business hours and\nreduce the load, the best solution is to create a read replica in the same region (us-east-1). This will\noffload the read-heavy operations (like generating reports) to the replica, reducing the burden on the\nprimary instance, which improves overall performance. Additionally, read replicas provide near real-\ntime replication, making them ideal for real-time reporting use cases.\nOption A (cross-Region read replica): This adds unnecessary latency for real-time reporting and\nincreased costs due to cross-region data transfer.\nOption B (Multi-AZ): Multi-AZ deployments are for high availability and disaster recovery but won’t\noffload the read traffic, as the standby database cannot serve read requests.\nOption C (AWS DMS replication): This adds complexity and is not as cost-effective as using an RDS\nread replica for the same region.\nAWS Reference:\nAmazon RDS Read Replicas\nAmazon RDS Performance Best Practices"
+    },
+    {
+      "id": 832,
+      "type": "single",
+      "question": "A company has developed a non-production application that is composed of multiple microservices for each of the company's business units. A single development team maintains all the microservices. The current architecture uses a static web frontend and a Java-based backend that contains the application logic. The architecture also uses a MySQL database that the company hosts on an Amazon EC2 instance. The company needs to ensure that the application is secure and available globally. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use Amazon CloudFront and AWS Amplify to host the static web frontend. Refactor the microservices to use AWS Lambda functions that the microservices access by using Amazon API Gateway. Migrate the MySQL database to an Amazon EC2 Reserved Instance.",
+        "B": "Use Amazon CloudFront and Amazon S3 to host the static web frontend. Refactor the microservices to use AWS Lambda functions that the microservices access by using Amazon API Gateway. Migrate the MySQL database to Amazon RDS for MySQL.",
+        "C": "Use Amazon CloudFront and Amazon S3 to host the static web frontend. Refactor the microservices to use AWS Lambda functions that are in a target group behind a Network Load Balancer. Migrate the MySQL database to Amazon RDS for MySQL.",
+        "D": "Use Amazon S3 to host the static web frontend. Refactor the microservices to use AWS Lambda functions that are in a target group behind an Application Load Balancer. Migrate the MySQL database to an Amazon EC2 Reserved Instance."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "This solution offers the least operational overhead while meeting the security and global availability\nrequirements:\nAmazon CloudFront and S3: Hosting the static frontend on S3 and serving it via CloudFront provides\nlow-latency global distribution, high availability, and security. S3 is a cost-effective and serverless\noption for hosting static assets, and CloudFront ensures that the application is cached closer to the\nusers, reducing latency globally.\nAWS Lambda and API Gateway: Refactoring the microservices to use Lambda functions with API\nGateway allows for a fully serverless, scalable, and highly available backend. This reduces the need\nfor managing EC2 instances, as Lambda automatically scales to meet demand and only charges for\nthe actual usage.\nRDS for MySQL: Migrating the MySQL database from an EC2 instance to Amazon RDS significantly\nreduces operational overhead. RDS manages backups, patching, and scaling, and it offers high\navailability options (e.g., Multi-AZ).\nOption A and D involve using EC2 Reserved Instances for the database, which requires more\noperational maintenance than using RDS.\nOption C suggests using a Network Load Balancer with Lambda, which adds unnecessary complexity\nfor this use case.\nAWS Reference:\nAmazon S3 and CloudFront Integration\nAWS Lambda with API Gateway\nAmazon RDS for MySQL"
+    },
+    {
+      "id": 833,
+      "type": "single",
+      "question": "A company is designing a new internal web application in the AWS Cloud. The new application must securely retrieve and store multiple employee usernames and passwords from an AWS managed service. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Store the employee credentials in AWS Systems Manager Parameter Store. Use AWS Cloud Formation and the BatchGetSecretValue API to retrieve usernames and passwords from Parameter Store.",
+        "B": "Store the employee credentials in AWS Secrets Manager. Use AWS Cloud Formation and AWS Batch with the BatchGetSecretValue API to retrieve the usernames and passwords from Secrets Manager.",
+        "C": "Store the employee credentials in AWS Systems Manager Parameter Store. Use AWS Cloud Formation and AWS Batch with the BatchGetSecretValue API to retrieve the usernames and passwords from Parameter Store.",
+        "D": "Store the employee credentials in AWS Secrets Manager. Use AWS Cloud Formation and the BatchGetSecretValue API to retrieve the usernames and passwords from Secrets Manager."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "AWS Secrets Manager is the best solution for securely storing and managing sensitive information,\nsuch as usernames and passwords. Secrets Manager provides automatic rotation, fine-grained access\ncontrol, and encryption of credentials. It is designed to integrate easily with other AWS services, such\nas CloudFormation, to automate the retrieval of secrets via the BatchGetSecretValue API.\nSecrets Manager has a lower operational overhead than manually managing credentials, and it offers\nfeatures like automatic secret rotation that reduce the need for human intervention.\nOption A and C (Parameter Store): While Systems Manager Parameter Store can store secrets,\nSecrets Manager provides more specialized capabilities for securely managing and rotating\ncredentials with less operational overhead.\nOption B and C (AWS Batch): Introducing AWS Batch unnecessarily complicates the solution. Secrets\nManager already provides simple API calls for retrieving secrets without needing an additional\nservice.\nAWS Reference:\nAWS Secrets Manager\nSecrets Manager with CloudFormation"
+    },
+    {
+      "id": 834,
+      "type": "multiple",
+      "question": "A company hosts an application on AWS. The application gives users the ability to upload photos and store the photos in an Amazon S3 bucket. The company wants to use Amazon CloudFront and a custom domain name to upload the photo files to the S3 bucket in the eu-west-1 Region. Which solution will meet these requirements? (Select TWO.)",
+      "options": {
+        "A": "Use AWS Certificate Manager (ACM) to create a public certificate in the us-east-1 Region. Use the certificate in CloudFront",
+        "B": "Use AWS Certificate Manager (ACM) to create a public certificate in eu-west-1. Use the certificate in CloudFront.",
+        "C": "Configure Amazon S3 to allow uploads from CloudFront. Configure S3 Transfer Acceleration.",
+        "D": "Configure Amazon S3 to allow uploads from CloudFront origin access control (OAC).",
+        "E": "Configure Amazon S3 to allow uploads from CloudFront. Configure an Amazon S3 website endpoint."
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "To upload photos to an S3 bucket using Amazon CloudFront with a custom domain name, the\nfollowing components are required:\nACM in us-east-1 (Option A): When using CloudFront with HTTPS, the SSL/TLS certificate must be\ncreated in the us-east-1 Region. AWS Certificate Manager (ACM) handles the provisioning,\nmanagement, and renewal of public certificates, making this a cost-effective and low-maintenance\nsolution.\nS3 Transfer Acceleration (Option C): Transfer Acceleration allows faster uploads to S3 from\nCloudFront by routing traffic through AWS’s edge locations. This significantly speeds up the data\nupload process, especially for users that are geographically distant from the S3 bucket's region.\nOption B (ACM in eu-west-1): CloudFront only supports certificates created in us-east-1.\nOption D and E (OAC and website endpoint): These are not ideal for handling secure uploads or\nefficient data transfers in this case.\nAWS Reference:\nUsing ACM with CloudFront\nAmazon S3 Transfer Acceleration"
+    },
+    {
+      "id": 835,
+      "type": "single",
+      "question": "A company maintains its accounting records in a custom application that runs on Amazon EC2 instances. The company needs to migrate the data to an AWS managed service for development and maintenance of the application dat a. The solution must require minimal operational support and provide immutable, cryptographically verifiable logs of data changes. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Copy the records from the application into an Amazon Redshift cluster.",
+        "B": "Copy the records from the application into an Amazon Neptune cluster.",
+        "C": "Copy the records from the application into an Amazon Timestream database.",
+        "D": "Copy the records from the application into an Amazon Quantum Ledger Database (Amazon QLDB) ledger."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Amazon QLDB is the most cost-effective and suitable service for maintaining immutable,\ncryptographically verifiable logs of data changes. QLDB provides a fully managed ledger database\nwith a built-in cryptographic hash chain, making it ideal for recording changes to accounting records,\nensuring data integrity and security.\nQLDB reduces operational overhead by offering fully managed services, so there’s no need for server\nmanagement, and it’s built specifically to ensure immutability and verifiability, making it the best fit\nfor the given requirements.\nOption A (Redshift): Redshift is designed for analytics and not for immutable, cryptographically\nverifiable logs.\nOption B (Neptune): Neptune is a graph database, which is not suitable for this use case.\nOption C (Timestream): Timestream is a time series database optimized for time-stamped data, but it\ndoes not provide immutable or cryptographically verifiable logs.\nAWS Reference:\nAmazon QLDB\nHow QLDB Works"
+    },
+    {
+      "id": 836,
+      "type": "single",
+      "question": "A company hosts a video streaming web application in a VPC. The company uses a Network Load Balancer (NLB) to handle TCP traffic for real-time data processing. There have been unauthorized attempts to access the application. The company wants to improve application security with minimal architectural change to prevent unauthorized attempts to access the application. Which solution will meet these requirements?",
+      "options": {
+        "A": "Implement a series of AWS WAF rules directly on the NLB to filter out unauthorized traffic.",
+        "B": "Recreate the NLB with a security group to allow only trusted IP addresses.",
+        "C": "Deploy a second NLB in parallel with the existing NLB configured with a strict IP address allow list.",
+        "D": "Use AWS Shield Advanced to provide enhanced DDoS protection and prevent unauthorized access attempts."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 837,
+      "type": "single",
+      "question": "A company runs its workloads on Amazon Elastic Container Service (Amazon ECS). The container images that the ECS task definition uses need to be scanned for Common Vulnerabilities and Exposures (CVEs). New container images that are created also need to be scanned. Which solution will meet these requirements with the FEWEST changes to the workloads?",
+      "options": {
+        "A": "Use Amazon Elastic Container Registry (Amazon ECR) as a private image repository to store the container images. Specify scan on push filters for the ECR basic scan.",
+        "B": "Store the container images in an Amazon S3 bucket. Use Amazon Macie to scan the images. Use an S3 Event Notification to initiate a Made scan for every event with an s3:ObjeclCreated:Put event type",
+        "C": "Deploy the workloads to Amazon Elastic Kubernetes Service (Amazon EKS). Use Amazon Elastic Container Registry (Amazon ECR) as a private image repository. Specify scan on push filters for the ECR enhanced scan.",
+        "D": "Store the container images in an Amazon S3 bucket that has versioning enabled. Configure an S3 Event Notification for s3:ObjectCrealed:* events to invoke an AWS Lambda function. Configure the Lambda function to initiate an Amazon Inspector scan."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 838,
+      "type": "single",
+      "question": "A company has an application that runs on an Amazon Elastic Kubernetes Service (Amazon EKS) cluster on Amazon EC2 instances. The application has a U1 that uses Amazon DynamoDB and data services that use Amazon S3 as part of the application deployment. The company must ensure that the EKS Pods for the U1 can access only Amazon DynamoDB and that the EKS Pods for the data services can access only Amazon S3. The company uses AWS Identity and Access Management |IAM). Which solution meets these requirements?",
+      "options": {
+        "A": "Create separate 1AM policies (or Amazon S3 and DynamoDB access with the required permissions. Attach both 1AM policies to the EC2 instance profile. Use role-based access control (RBAC) to control access to Amazon S3 or DynamoDB (or the respective EKS Pods.",
+        "B": "Create separate 1AM policies (or Amazon S3 and DynamoDB access with the required permissions. Attach the Amazon S3 1AM policy directly to the EKS Pods (or the data services and the DynamoDB policy to the EKS Pods for the U1.",
+        "C": "Create separate Kubernetes service accounts for the U1 and data services to assume an 1AM role. Attach the Amazon S3 Full Access policy to the data services account and the AmazonDynamoDBFullAccess policy to the U1 service account.",
+        "D": "Create separate Kubernetes service accounts for the U1 and data services to assume an 1AM role. Use 1AM Role for Service Accounts (IRSA) to provide access to the EKS Pods for the U1 to Amazon S3 and the EKS Pods for the data services to DynamoDB."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 839,
+      "type": "single",
+      "question": "A company needs to give a globally distributed development team secure access to the company's AWS resources in a way that complies with security policies. The company currently uses an on-premises Active Directory for internal authentication. The company uses AWS Organizations to manage multiple AWS accounts that support multiple projects. The company needs a solution to integrate with the existing infrastructure to provide centralized identity management and access control. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Set up AWS Directory Service to create an AWS managed Microsoft Active Directory on AWS. Establish a trust relationship with the on-premises Active Directory. Use 1AM roles that are assigned to Active Directory groups to access AWS resources within the company's AWS accounts.",
+        "B": "Create an 1AM user for each developer. Manually manage permissions for each 1AM user based on each user's involvement with each project. Enforce multi-factor authentication (MFA) as an additional layer of security.",
+        "C": "Use AD Connector in AWS Directory Service to connect to the on-premises Active Directory. Integrate AD Connector with AWS 1AM Identity Center. Configure permissions sets to give each AD group access to specific AWS accounts and resources.",
+        "D": "Use Amazon Cognito to deploy an identity federation solution. Integrate the identity federation solution with the on-premises Active Directory. Use Amazon Cognito to provide access tokens for developers to access AWS accounts and resources."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Using AD Connector with AWS IAM Identity Center (formerly AWS Single Sign-On) allows the\ncompany to leverage its existing on-premises Active Directory for centralized identity management\nand access control. AD Connector acts as a proxy to the on-premises AD without requiring additional\ninfrastructure or complex setup. This solution integrates seamlessly with AWS, allowing the\ndevelopment team to use their existing AD credentials to access AWS resources across multiple\naccounts managed by AWS Organizations. The permissions for AWS resources can be managed\ncentrally through IAM Identity Center by configuring permission sets.\nThis solution provides:\nLeast operational overhead: AD Connector is fully managed, and IAM Identity Center allows\ncentralized management of permissions across accounts.\nSecure access: The solution complies with security policies by using existing AD authentication\nmechanisms.\nOption A (AWS Managed AD): Setting up a fully managed AWS AD and establishing a trust is more\ncomplex and involves additional operational overhead.\nOption B (IAM Users): Manually managing IAM users and permissions is less scalable and increases\noperational complexity.\nOption D (Cognito): Amazon Cognito is more suited for user-facing applications rather than internal\nidentity management for AWS resources.\nAWS Reference:\nAD Connector with IAM Identity Center\nAWS IAM Identity Center"
+    },
+    {
+      "id": 840,
+      "type": "multiple",
+      "question": "A company wants to improve the availability and performance of its hybrid application. The application consists of a stateful TCP-based workload hosted on Amazon EC2 instances in different AWS Regions and a stateless UDP-based workload hosted on premises. Which combination of actions should a solutions architect take to improve availability and performance? (Select TWO.)",
+      "options": {
+        "A": "Create an accelerator using AWS Global Accelerator. Add the load balancers as endpoints.",
+        "B": "Create an Amazon CloudFront distribution with an origin that uses Amazon Route 53 latency- based routing to route requests to the load balancers.",
+        "C": "Configure two Application Load Balancers in each Region. The first will route to the EC2 endpoints. and the second will route lo the on-premises endpoints.",
+        "D": "Configure a Network Load Balancer in each Region to address the EC2 endpoints. Configure a Network Load Balancer in each Region that routes to the on-premises endpoints.",
+        "E": "Configure a Network Load Balancer in each Region to address the EC2 endpoints. Configure an Application Load Balancer in each Region that routes to the on-premises endpoints."
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "explanation": "For improving availability and performance of the hybrid application, the following solutions are\noptimal:\nAWS Global Accelerator (Option A): Global Accelerator provides high availability and improves\nperformance by using the AWS global network to route user traffic to the nearest healthy endpoint\n(across AWS Regions). By adding the Network Load Balancers as endpoints, Global Accelerator\nensures that traffic is routed efficiently to the closest endpoint, improving both availability and\nperformance.\nNetwork Load Balancer (Option D): The stateful TCP-based workload hosted on Amazon EC2\ninstances and the stateless UDP-based workload hosted on-premises are best served by Network\nLoad Balancers (NLBs). NLBs are designed to handle TCP and UDP traffic with ultra-low latency and\ncan route traffic to both EC2 and on-premises endpoints.\nOption B (CloudFront and Route 53): CloudFront is better suited for HTTP/HTTPS workloads, not for\nTCP/UDP-based applications.\nOption C (ALB): Application Load Balancers do not support the stateless UDP-based workload,\nmaking NLBs the better choice for both TCP and UDP.\nAWS Reference:\nAWS Global Accelerator\nNetwork Load Balancer"
+    },
+    {
+      "id": 841,
+      "type": "single",
+      "question": "A company runs a production database on Amazon RDS for MySQL. The company wants to upgrade the database version for security compliance reasons. Because the database contains critical data, the company wants a quick solution to upgrade and test functionality without losing any data. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Create an RDS manual snapshot. Upgrade to the new version of Amazon RDS for MySQL.",
+        "B": "Use native backup and restore. Restore the data to the upgraded new version of Amazon RDS for MySQL.",
+        "C": "Use AWS Database Migration Service (AWS DMS) to replicate the data to the upgraded new version of Amazon RDS for MySQL.",
+        "D": "Use Amazon RDS Blue/Green Deployments to deploy and test production changes."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Amazon RDS Blue/Green Deployments is the ideal solution for upgrading the database version with\nminimal operational overhead and no data loss. Blue/Green Deployments allows you to create a\nseparate, fully managed \"green\" environment with the upgraded database version. You can test the\nnew version in the green environment while the \"blue\" environment continues serving production\ntraffic. Once testing is complete, you can seamlessly switch traffic to the green environment without\ndowntime.\nThis solution provides:\nFast, non-disruptive upgrade: Traffic is only switched to the new environment after testing, ensuring\nzero data loss.\nMinimal operational overhead: AWS handles the infrastructure management, reducing manual\nintervention.\nOption A (Manual snapshot): This requires manual intervention and involves more operational\noverhead.\nOption B (Native backup/restore): This approach is more labor-intensive and slower than Blue/Green\nDeployments.\nOption C (DMS): AWS DMS adds unnecessary complexity for a simple version upgrade when\nBlue/Green Deployments can handle the task more efficiently.\nAWS Reference:\nAmazon RDS Blue/Green Deployments"
+    },
+    {
+      "id": 842,
+      "type": "single",
+      "question": "A digital image processing company wants to migrate its on-premises monolithic application to the AWS Cloud. The company processes thousands of images and generates large files as part of the processing workflow. The company needs a solution to manage the growing number of image processing jobs. The solution must also reduce the manual tasks in the image processing workflow. The company does not want to manage the underlying infrastructure of the solution. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use Amazon Elastic Container Service (Amazon ECS) with Amazon EC2 Spot Instances to process the images. Configure Amazon Simple Queue Service (Amazon SQS) to orchestrate the workflow. Store the processed files in Amazon Elastic File System (Amazon EFS)",
+        "B": "Use AWS Batch jobs to process the images. Use AWS Step Functions to orchestrate the workflow. Store the processed files in an Amazon S3 bucket.",
+        "C": "Use AWS Lambda functions and Amazon EC2 Spot Instances lo process the images. Store the processed files in Amazon FSx.",
+        "D": "Deploy a group of Amazon EC2 instances to process the images. Use AWS Step Functions to orchestrate the workflow. Store the processed files in an Amazon Elastic Block Store (Amazon EBS) volume."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "For processing thousands of images and generating large files while minimizing manual tasks and\noperational overhead, using AWS Batch is the best solution. AWS Batch allows you to run large-scale,\nparallel, and managed batch computing jobs without needing to manage the underlying\ninfrastructure.\nAWS Batch: Automates the image processing jobs, dynamically allocating the necessary resources\nbased on the job requirements, which reduces operational overhead.\nAWS Step Functions: Orchestrates the entire image processing workflow, ensuring that tasks are\nexecuted in the correct sequence, improving manageability.\nAmazon S3: Stores the processed files, providing scalable and cost-effective storage.\nOption A (ECS with EC2 Spot Instances): While cost-effective, managing ECS and Spot Instances\ninvolves more operational effort.\nOption C (Lambda with EC2 Spot): Lambda functions have size and duration limitations, making them\nless suited for large image processing tasks.\nOption D (EC2 with Step Functions): Managing EC2 instances involves more overhead than using AWS\nBatch.\nAWS Reference:\nAWS Batch\nAWS Step Functions"
+    },
+    {
+      "id": 843,
+      "type": "single",
+      "question": "A company is developing an application in the AWS Cloud. The application's HTTP API contains critical information that is published in Amazon API Gateway. The critical information must be accessible from only a limited set of trusted IP addresses that belong to the company's internal network. Which solution will meet these requirements?",
+      "options": {
+        "A": "Set up an API Gateway private integration to restrict access to a predefined set ot IP addresses.",
+        "B": "Create a resource policy for the API that denies access to any IP address that is not specifically allowed.",
+        "C": "Directly deploy the API in a private subnet. Create a network ACL. Set up rules to allow the traffic from specific IP addresses.",
+        "D": "Modify the security group that is attached to API Gateway to allow inbound traffic from only the trusted IP addresses."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "Amazon API Gateway supports resource policies, which allow you to control access to your API by\nspecifying the IP addresses or ranges that can access the API. By creating a resource policy that\nexplicitly denies access to any IP address outside the allowed set, you can ensure that only trusted IP\naddresses (such as those from your internal network) can access the critical information in your API.\nThis approach provides fine-grained access control without the need for additional infrastructure or\ncomplex configurations.\nOption A (Private integration): API Gateway private integrations are for creating private APIs that are\nonly accessible within a VPC, but this solution is about restricting access to certain IP addresses.\nOption C (Private subnet and ACLs): Deploying the API in a private subnet and using network ACLs\nadds unnecessary complexity and isn't the best fit for HTTP APIs.\nOption D (Security group): API Gateway doesn't have a security group because it isn't a resource\ninside a VPC. Instead, resource policies are the correct mechanism for controlling IP-based access.\nAWS Reference:\nControlling Access to API Gateway with Resource Policies"
+    },
+    {
+      "id": 844,
+      "type": "single",
+      "question": "A company runs its databases on Amazon RDS for PostgreSQL. The company wants a secure solution to manage the master user password by rotating the password every 30 days. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Use Amazon EventBridge to schedule a custom AWS Lambda function to rotate the password every 30 days.",
+        "B": "Use the modlfy-db-instance command in the AWS CLI to change the password.",
+        "C": "Integrate AWS Secrets Manager with Amazon RDS for PostgreSQL to automate password rotation.",
+        "D": "Integrate AWS Systems Manager Parameter Store with Amazon RDS for PostgreSQL to automate password rotation."
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWS Secrets Manager can integrate directly with Amazon RDS for automatic and seamless password\nrotation. Secrets Manager handles the complexity of password management, including generating\nstrong passwords and rotating them at a defined interval (e.g., every 30 days). It also automatically\nupdates the connection information for RDS, minimizing operational overhead.\nOption A (Lambda with EventBridge): While possible, this requires custom coding and operational\nmanagement of Lambda, which introduces additional complexity.\nOption B (Manual password change): Using the modify-db-instance command requires manual\nintervention and is not automated, leading to more operational effort.\nOption D (Parameter Store): Systems Manager Parameter Store is less specialized for password\nmanagement than Secrets Manager and does not have built-in automated rotation for RDS\ncredentials.\nAWS Reference:\nAWS Secrets Manager Rotation for RDS"
+    },
+    {
+      "id": 845,
+      "type": "single",
+      "question": "A company wants to implement new security compliance requirements for its development team to limit the use of approved Amazon Machine Images (AMIs). The company wants to provide access to only the approved operating system and software for all its Amazon EC2 instances. The company wants the solution to have the least amount of lead time for launching EC2 instances. Which solution will meet these requirements?",
+      "options": {
+        "A": "Create a portfolio by using AWS Service Catalog that includes only EC2 instances launched with approved AMIs. Ensure that all required software is preinstalled on the AMIs. Create the necessary permissions for developers to use the portfolio.",
+        "B": "Create an AMI that contains the approved operating system and software by using EC2 Image Builder. Give developers access to that AMI to launch the EC2 instances.",
+        "C": "Create an AMI that contains the approved operating system Tell the developers to use the approved AMI Create an Amazon EventBridge rule to run an AWS Systems Manager script when a new EC2 instance is launched. Configure the script to install the required software from a repository.",
+        "D": "Create an AWS Config rule to detect the launch of EC2 instances with an AMI that is not approved. Associate a remediation rule to terminate those instances and launch the instances again with the approved AMI. Use AWS Systems Manager to automatically install the approved software on the launch of an EC2 instance."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "AWS Service Catalog is designed to allow organizations to manage a catalog of approved products\n(including AMIs) that users can deploy. By creating a portfolio that contains only EC2 instances\nlaunched with preapproved AMIs, the company can enforce compliance with the approved operating\nsystem and software for all EC2 instances. Service Catalog also streamlines the process of launching\nEC2 instances, reducing the lead time while ensuring that developers use only the approved\nconfigurations.\nOption B (EC2 Image Builder): While EC2 Image Builder helps in creating and managing AMIs, it\ndoesn't provide the enforcement mechanism that Service Catalog does.\nOption C (EventBridge rule and Systems Manager script): This solution is reactive and involves more\noperational complexity compared to Service Catalog.\nOption D (AWS Config rule): This option is reactive (it terminates non-compliant instances after\nlaunch) and introduces additional operational overhead.\nAWS Reference:\nAWS Service Catalog"
+    },
+    {
+      "id": 846,
+      "type": "single",
+      "question": "A company needs a solution to automate email ingestion. The company needs to automatically parse email messages, look for email attachments, and save any attachments to an Amazon S3 bucket in near real time. Email volume varies significantly from day to day. Which solution will meet these requirements?",
+      "options": {
+        "A": "Set up email receiving in Amazon Simple Email Service {Amazon SES). Create a rule set and a receipt rule. Create an AWS Lambda function that Amazon SES can invoke to process the email bodies and attachments.",
+        "B": "Set up email content filtering in Amazon Simple Email Service (Amazon SES). Create a content filtering rule based on sender, recipient, message body, and attachments.",
+        "C": "Set up email receiving in Amazon Simple Email Service (Amazon SES). Configure Amazon SES and S3 Event Notifications to process the email bodies and attachments.",
+        "D": "Create an AWS Lambda function to process the email bodies and attachments. Use Amazon EventBridge to invoke the Lambda function. Configure an EventBridge rule to listen for incoming emails."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon SES (Simple Email Service) allows for the automatic ingestion of incoming emails. By setting\nup email receiving in SES and creating a rule set with a receipt rule, you can configure SES to invoke\nan AWS Lambda function whenever an email is received. The Lambda function can then process the\nemail body and attachments, saving any attachments to an Amazon S3 bucket. This solution is highly\nscalable, cost-effective, and provides near real-time processing of emails with minimal operational\noverhead.\nOption B (Content filtering): This only filters emails based on content and does not provide the\nfunctionality to save attachments to S3.\nOption C (S3 Event Notifications): While SES can store emails in S3, SES with Lambda offers more\nflexibility for processing attachments in real-time.\nOption D (EventBridge rule): EventBridge cannot directly listen for incoming emails, making this\nsolution incorrect.\nAWS Reference:\nReceiving Email with Amazon SES\nInvoking Lambda from SES"
+    },
+    {
+      "id": 847,
+      "type": "single",
+      "question": "A company tracks customer satisfaction by using surveys that the company hosts on its website. The surveys sometimes reach thousands of customers every hour. Survey results are currently sent in email messages to the company so company employees can manually review results and assess customer sentiment. The company wants to automate the customer survey process. Survey results must be available for the previous 12 months. Which solution will meet these requirements in the MOST scalable way?",
+      "options": {
+        "A": "Send the survey results data to an Amazon API Gateway endpoint that is connected to an Amazon Simple Queue Service (Amazon SQS) queue. Create an AWS Lambda function to poll the SQS queue, call Amazon Comprehend for sentiment analysis, and save the results to an Amazon DynamoDB table. Set the TTL for all records to 365 days in the future.",
+        "B": "Send the survey results data to an API that is running on an Amazon EC2 instance. Configure the API to store the survey results as a new record in an Amazon DynamoDB table, call Amazon Comprehend for sentiment analysis, and save the results in a second DynamoDB table. Set the TTL for all records to 365 days in the future.",
+        "C": "Write the survey results data to an Amazon S3 bucket. Use S3 Event Notifications to invoke an AWS Lambda function to read the data and call Amazon Rekognition for sentiment analysis. Store the sentiment analysis results in a second S3 bucket. Use S3 Lifecycle policies on each bucket to expire objects after 365 days.",
+        "D": "Send the survey results data to an Amazon API Gateway endpoint that is connected to an Amazon Simple Queue Service (Amazon SQS) queue. Configure the SQS queue to invoke an AWS Lambda function that calls Amazon Lex for sentiment analysis and saves the results to an Amazon DynamoDB table. Set the TTL for all records to 365 days in the future."
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "This solution is the most scalable and efficient way to handle large volumes of survey data while\nautomating sentiment analysis:\nAPI Gateway and SQS: The survey results are sent to API Gateway, which forwards the data to an SQS\nqueue. SQS can handle large volumes of messages and ensures that messages are not lost.\nAWS Lambda: Lambda is triggered by polling the SQS queue, where it processes the survey data.\nAmazon Comprehend: Comprehend is used for sentiment analysis, providing insights into customer\nsatisfaction.\nDynamoDB with TTL: Results are stored in DynamoDB with a Time to Live (TTL) attribute set to expire\nafter 365 days, automatically removing old data and reducing storage costs.\nOption B (EC2 API): Running an API on EC2 requires more maintenance and scalability management\ncompared to API Gateway.\nOption C (S3 and Rekognition): Amazon Rekognition is for image and video analysis, not sentiment\nanalysis.\nOption D (Amazon Lex): Amazon Lex is used for building conversational interfaces, not sentiment\nanalysis.\nAWS Reference:\nAmazon Comprehend for Sentiment Analysis\nAmazon SQS\nDynamoDB TTL"
+    },
+    {
+      "id": 848,
+      "type": "single",
+      "question": "An online gaming company is transitioning user data storage to Amazon DynamoDB to support the company's growing user base. The current architecture includes DynamoDB tables that contain user profiles, achievements, and in-game transactions. The company needs to design a robust, continuously available, and resilient DynamoDB architecture to maintain a seamless gaming experience for users. Which solution will meet these requirements MOST cost-effectively?",
+      "options": {
+        "A": "Create DynamoDB tables in a single AWS Region. Use on-demand capacity mode. Use global tables to replicate data across multiple Regions.",
+        "B": "Use DynamoDB Accelerator (DAX) to cache frequently accessed data. Deploy tables in a single AWS Region and enable auto scaling. Configure Cross-Region Replication manually to additional Regions.",
+        "C": "Create DynamoDB tables in multiple AWS Regions. Use on-demand capacity mode. Use DynamoDB Streams for Cross-Region Replication between Regions.",
+        "D": "Use DynamoDB global tables for automatic multi-Region replication. Deploy tables in multiple AWS Regions. Use provisioned capacity mode. Enable auto scaling."
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "DynamoDB Global Tables provide a fully managed, multi-region, and multi-master database solution\nthat allows you to deploy DynamoDB tables in multiple AWS Regions. This ensures high availability\nand resiliency across different geographical locations, providing a seamless gaming experience for\nusers. Using provisioned capacity mode with auto-scaling ensures cost-efficiency by scaling up or\ndown based on actual demand.\nOption A: While on-demand capacity mode is flexible, provisioned capacity with auto-scaling is more\ncost-effective for predictable workloads.\nOption B (DAX): DAX improves read performance, but it doesn't provide the multi-region replication\nneeded for high availability and resiliency.\nOption C: DynamoDB Streams with manual cross-region replication adds more complexity and\noperational overhead compared to Global Tables.\nAWS Reference:\nDynamoDB Global Tables"
+    },
+    {
+      "id": 849,
+      "type": "single",
+      "question": "A logistics company is creating a data exchange platform to share shipment status information with shippers. The logistics company can see all shipment information and metadat a. The company distributes shipment data updates to shippers. Each shipper should see only shipment updates that are relevant to their company. Shippers should not see the full detail that is visible to the logistics company. The company creates an Amazon Simple Notification Service (Amazon SNS) topic for each shipper to share data. Some shippers use a mobile app to submit shipment status updates. The company needs to create a data exchange platform that provides each shipper specific access to the data that is relevant to their company. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": {
+        "A": "Ingest the shipment updates from the mobile app into Amazon Simple Queue Service (Amazon SQS). Publish the updates to the SNS topic. Apply a filter policy to rewrite the body of each message.",
+        "B": "Ingest the shipment updates from the mobile app into Amazon Simple Queue Service (Amazon SQS). Use an AWS Lambda function to consume the updates from Amazon SQS and rewrite the body of each message. Publish the updates to the SNS topic.",
+        "C": "Ingest the shipment updates from the mobile app into a second SNS topic. Publish the updates to the shipper SNS topic. Apply a filter policy to rewrite the body of each message.",
+        "D": "Ingest the shipment updates from the mobile app into Amazon Simple Queue Service (Amazon SQS). Filter and rewrite the messages in Amazon EventBridge Pipes. Publish the updates to the SNS topic."
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "The best solution is to use Amazon SQS to receive updates from the mobile app and process them\nwith an AWS Lambda function. The Lambda function can rewrite the message body as necessary for\neach shipper and then publish the updates to the appropriate SNS topic for distribution. This setup\nensures that each shipper receives only the relevant data and minimizes operational overhead by\nusing managed services.\nOption A (SNS filter policy): SNS does not have the capability to rewrite message bodies before\nforwarding.\nOption C (Second SNS topic): Using an additional SNS topic adds unnecessary complexity without\nsolving the message rewriting requirement.\nOption D (EventBridge Pipes): EventBridge Pipes is more complex than necessary for this use case,\nand Lambda can handle the logic more efficiently.\nAWS Reference:\nAmazon SQS\nAmazon SNS with Lambda"
+    },
+    {
+      "id": 850,
+      "type": "multiple",
+      "question": "A company recently launched a new application for its customers. The application runs on multiple Amazon EC2 instances across two Availability Zones. End users use TCP to communicate with the application. The application must be highly available and must automatically scale as the number of users increases. Which combination of steps will meet these requirements MOST cost-effectively? (Select TWO.)",
+      "options": {
+        "A": "Add a Network Load Balancer in front of the EC2 instances.",
+        "B": "Configure an Auto Scaling group for the EC2 instances.",
+        "C": "Add an Application Load Balancer in front of the EC2 instances.",
+        "D": "Manually add more EC2 instances for the application.",
+        "E": "Add a Gateway Load Balancer in front of the EC2 instances."
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "For an application requiring TCP communication and high availability:\nNetwork Load Balancer (NLB) is the best choice for load balancing TCP traffic because it is designed\nfor handling high-throughput, low-latency connections.\nAuto Scaling group ensures that the application can automatically scale based on demand, adding or\nremoving EC2 instances as needed, which is crucial for handling user growth.\nOption C (Application Load Balancer): ALB is primarily for HTTP/HTTPS traffic, not ideal for TCP.\nOption D (Manual scaling): Manually adding instances does not provide the automation or scalability\nrequired.\nOption E (Gateway Load Balancer): GLB is used for third-party virtual appliances, not for direct\napplication load balancing.\nAWS Reference:\nNetwork Load Balancer\nAuto Scaling Group"
+    }
+  ]
+}

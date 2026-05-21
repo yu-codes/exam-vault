@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q1 - Q50",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Valuable paper insurance coverage does cover damage to which of the following?",
+      "options": {
+        "A": "Inscribed, printed and Written documents",
+        "B": "Manuscripts",
+        "C": "Records",
+        "D": "Money and Securities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Valuable paper insurance coverage provides protection for inscribed, printed, and written documents and manuscripts and other printed business records. However, it does Cover damage to paper money and printed security certificates. Incorrect Answers: A: Valuable paper insurance coverage provides protection for inscribed, printed, and written documents. B: Valuable paper insurance coverage provides protection for manuscripts. C: Valuable paper insurance coverage provides protection for printed business records."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following statements pertaining to a security policy is NOT true?",
+      "options": {
+        "A": "Its main purpose is to inform the users, administrators and managers of their obligatory requirements for protecting technology and information assets.",
+        "B": "It specifies how hardware and software should be used throughout the organization.",
+        "C": "It needs to have the acceptance and support of all levels of employees within the organization in order for it to be appropriate and effective.",
+        "D": "It must be flexible to the changing environment."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The attributes of a security policy include the following: Its main purpose is to inform the users, administrators and managers of their obligatory requirements for protecting technology and information assets. It needs to have the acceptance and support of all levels of employees within the organization in order for it to be appropriate and effective. It must be flexible to the changing environment. A security policy does not specify how hardware and software should be used throughout the organization. This is the purpose of an Acceptable Use Policy. Incorrect Answers: A: The main purpose of a security policy is to inform the users, administrators and managers of their obligatory requirements for protecting technology and information assets. C: A security policy does to have the acceptance and support of all levels of employees within the organization in order for it to be appropriate and effective. D: A security policy must be flexible to the changing environment."
+    },
+    {
+      "id": 3,
+      "question": "If your property Insurance has Actual Cash Valuation (ACV) clause, your damaged property will be compensated based on:",
+      "options": {
+        "A": "Value of item on the date of loss",
+        "B": "Replacement with a new item for the old one regardless of condition of lost item",
+        "C": "Value of item one month before the loss",
+        "D": "Value of item on the date of loss plus 10 percent"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In the property and casualty insurance industry, Actual Cash Value (ACV) is a method of valuing insured property, or the value computed by that method. ACV is computed by subtracting depreciation from replacement cost on the date of the loss. The depreciation is usually calculated by establishing a useful life of the item determining what percentage of that life remains. This percentage multiplied by the replacement cost equals the ACV. Incorrect Answers: B: Using Actual Cash Valuation you would not receive a new item as a replacement for the old damaged item. C: You would receive the calculated value of item on the exact date of the loss, not of the value one month before the loss. D: You would receive the calculated value of item on the date of loss only. You would not receive an additional 10%."
+    },
+    {
+      "id": 4,
+      "question": "The preliminary steps to security planning include all of the following EXCEPT which of the following?",
+      "options": {
+        "A": "Establish objectives.",
+        "B": "List planning assumptions.",
+        "C": "Establish a security audit function.",
+        "D": "Determine alternate courses of action"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A security policy is an overall general statement produced by senior management (or a selected policy board or committee) that dictates what role security plays within the organization. A security policy can be an organizational policy, an issue-specific policy, or a system-specific policy. In an organizational security policy, management establishes how a security program will be set up, lays out the program’s goals, assigns responsibilities, shows the strategic and tactical value of security, and outlines how enforcement should be carried out. Security planning should include establishing objectives, listing assumptions and determining alternate courses of action. Security planning does not include establishing a security audit function. Auditing security is performed to ensure that the security measures implemented as described in the security plan are effective. Incorrect Answers: A: Security planning should include establishing objectives. B: Security planning should include listing assumptions. D: Security planning should include determining alternate courses of action."
+    },
+    {
+      "id": 5,
+      "question": "Step-by-step instructions used to satisfy control requirements are called a:",
+      "options": {
+        "A": "policy.",
+        "B": "standard.",
+        "C": "guideline.",
+        "D": "procedure."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Procedures are detailed step-by-step tasks that should be performed to achieve a certain goal. The steps can apply to users, IT staff, operations staff, security members, and others who may need to carry out specific tasks. Many organizations have written procedures on how to install operating systems, configure security mechanisms, implement access control lists, set up new user accounts, assign computer privileges, audit activities, destroy material, report incidents, and much more. Procedures are considered the lowest level in the documentation chain because they are closest to the computers and users (compared to policies) and provide detailed steps for configuration and installation issues. Procedures spell out how the policy, standards, and guidelines will actually be implemented in an operating environment. Incorrect Answers: A: A policy is defined as a high-level document that outlines senior management’s security directives. This is not what is described in the question. B: Standards are compulsory rules indicating how hardware and software should be implemented, used, and maintained. This is not what is described in the question. C: Guidelines are recommended actions and operational guides for users, IT staff, operations staff, and others when a specific standard does not apply. This is not what is described in the question."
+    },
+    {
+      "id": 6,
+      "question": "One purpose of a security awareness program is to modify:",
+      "options": {
+        "A": "employee's attitudes and behaviors towards enterprise's security posture.",
+        "B": "management's approach towards enterprise's security posture.",
+        "C": "attitudes of employees with sensitive data.",
+        "D": "corporate attitudes about safeguarding data."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "For an organization to achieve the desired results of its security program, it must communicate the what, how, and why of security to its employees. Security- awareness training should be comprehensive, tailored for specific groups, and organization-wide. The goal is for each employee to understand the importance of security to the company as a whole and to each individual. Expected responsibilities and acceptable behaviors must be clarified, and noncompliance repercussions, which could range from a warning to dismissal, must be explained before being invoked. Security- awareness training is performed to modify employees’ behavior and attitude toward security. This can best be achieved through a formalized process of security- awareness training. Incorrect Answers: B: It is not the purpose of security awareness training to modify management's approach towards enterprise's security posture. C: It is not the purpose of security awareness training to modify attitudes of employees with sensitive data only. It should apply to all employees. D: It is not the purpose of security awareness training to modify corporate attitudes about safeguarding data."
+    },
+    {
+      "id": 7,
+      "question": "What is a security policy?",
+      "options": {
+        "A": "High level statements on management's expectations that must be met in regards to security",
+        "B": "A policy that defines authentication to the network.",
+        "C": "A policy that focuses on ensuring a secure posture and expresses management approval. It explains in detail how to implement the requirements.",
+        "D": "A statement that focuses on the authorization process for a system"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A security policy is an overall general statement produced by senior management (or a selected policy board or committee) that dictates what role security plays within the organization. Fundamentally important to any security program’s success is the senior management’s high-level statement of commitment to the information security policy process, and a senior management’s understanding of how important security controls and protections are to the enterprise’s continuity. Senior management must be aware of the importance of security implementation to preserve the organization’s viability (and for their own “Due Care” protection), and must publicly support that process throughout the enterprise. Incorrect Answers: B: A security policy is not policy that defines authentication to the network. A security policy is not that specific. C: A security policy does not explain in detail how to implement the requirements; it is a high-level statement. D: A security policy is not a statement that focuses on the authorization process for a system. A security policy is not that specific."
+    },
+    {
+      "id": 8,
+      "question": "The end result of implementing the principle of least privilege means which of the following?",
+      "options": {
+        "A": "Users would get access to only the info for which they have a need to know",
+        "B": "Users can access all systems.",
+        "C": "Users get new privileges added when they change positions.",
+        "D": "Authorization creep."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. Incorrect Answers: B: Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. Not all users in an organization requires access to all systems. C: The principle of least privilege would require that the rights required for the position be closely evaluated and where possible rights revoked. D: Authorization creep occurs when users are given additional rights with new positions and responsibilities. The principle of least privilege should actually prevent authorization creep."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following exemplifies proper separation of duties?",
+      "options": {
+        "A": "Operators are not permitted modify the system time.",
+        "B": "Programmers are permitted to use the system console.",
+        "C": "Console operators are permitted to mount tapes and disks.",
+        "D": "Tape operators are permitted to use the system console."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Changing the system time would cause logged events to have the wrong time. An operator could commit fraud and cover his tracks by changing the system time to make it appear as the events happened at a different time. Ensuring that operators are not permitted modify the system time (another person would be required to modify the system time) is an example of separation of duties. The objective of separation of duties is to ensure that one person acting alone cannot compromise the company’s security in any way. High-risk activities should be broken up into different parts and distributed to different individuals or departments. That way, the company does not need to put a dangerously high level of trust in certain individuals. For fraud to take place, collusion would need to be committed, meaning more than one person would have to be involved in the fraudulent activity Job rotation in the workplace is a system where employees work at several jobs in a business, performing each job for a relatively short period of time. Incorrect Answers: B: Programmers being permitted to use the system console is not an example of separation of duties. Separation of duties requires that another person is required to do something thus reducing the chance of fraud. C: Console operators being permitted to mount tapes and disks is not an example of separation of duties. Separation of duties requires that another person is required to do something thus reducing the chance of fraud. D: Tape operators being permitted to use the system console is not an example of separation of duties. Separation of duties requires that another person is required to do something thus reducing the chance of fraud."
+    },
+    {
+      "id": 10,
+      "question": "An access control policy for a bank teller is an example of the implementation of which of the following?",
+      "options": {
+        "A": "Rule-based policy",
+        "B": "Identity-based policy",
+        "C": "User-based policy",
+        "D": "Role-based policy"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Role-based access control is a model where access to resources is determined by job role rather than by user account. In this question, a bank teller is a job role. Therefore, an access control policy for a bank teller is a role-based policy. Within an organization, roles are created for various job functions. The permissions to perform certain operations are assigned to specific roles. Members or staff (or other system users) are assigned particular roles, and through those role assignments acquire the computer permissions to perform particular computer-system functions. Since users are not assigned permissions directly, but only acquire them through their role (or roles), management of individual user rights becomes a matter of simply assigning appropriate roles to the user's account; this simplifies common operations, such as adding a user, or changing a user's department. Incorrect Answers: A: With Rule-Based Access Control, access is allowed or denied to resources based on a set of rules. The rules could be membership of a group, time of day etc. This model is not used to provide access to resources to someone performing a job role such as a bank teller. B: Bank Teller is a job role, not an identity. In an identity-based policy, access to resources is determined by the identity of the user, not the role of the user. C: A user-based policy would be similar to an identity-based policy whereby access to resources is determined by who the user is, not what role the user performs."
+    },
+    {
+      "id": 11,
+      "question": "At which of the Orange Book evaluation levels is configuration management required?",
+      "options": {
+        "A": "C1 and above.",
+        "B": "C2 and above.",
+        "C": "B1 and above.",
+        "D": "B2 and above."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Configuration management consists of identifying, controlling, accounting for, and auditing all changes made to a particular system or equipment during its life cycle. In particular, as related to equipment used to process classified information, equipment can be identified in categories of COMSEC, TEMPEST, or as a Trusted Computer Base (TCB). The Trusted Computer System Evaluation Criteria (TCSEC) requires all changes to the TCB for classes B2 through A1 be controlled by configuration management. Incorrect Answers: A: Configuration management is not required at level C1. B: Configuration management is not required at level C2. C: Configuration management is not required at level B1."
+    },
+    {
+      "id": 12,
+      "question": "Which type of security control is also known as \"Logical\" control?",
+      "options": {
+        "A": "Physical",
+        "B": "Technical",
+        "C": "Administrative",
+        "D": "Risk"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Technical controls, which are also known as logical controls, are software or hardware components such as firewalls, IDS, encryption, identification and authentication mechanisms. Incorrect Answers: A: Physical controls are not known as logical controls, they are objects put into place to protect facility, personnel, and resources. C: Administrative controls are usually referred to as soft controls, not logical controls. D: Risk is not a valid security control type."
+    },
+    {
+      "id": 13,
+      "question": "Which Security and Audit Framework has been adopted by some organizations working towards Sarbanes-Oxley Section 404 compliance?.",
+      "options": {
+        "A": "Committee of Sponsoring Organizations of the Treadway Commission (COSO)",
+        "B": "BIBA",
+        "C": "National Institute of Standards and Technology Special Publication 800-66 (NIST SP 800-66)",
+        "D": "CCTA Risk Analysis and Management Method (CRAMM)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "COSO is a model for corporate governance, and CobiT is a model for IT governance. COSO deals more at the strategic level, while CobiT focuses more at the operational level. You can think of CobiT as a way to meet many of the COSO objectives, but only from the IT perspective. COSO deals with non-IT items also, as in company culture, financial accounting principles, board of director responsibility, and internal communication structures. COSO was formed to provide sponsorship for the National Commission on Fraudulent Financial Reporting, an organization that studies deceptive financial reports and what elements lead to them. There have been laws in place since the 1970s that basically state that it was illegal for a corporation to cook its books (manipulate its revenue and earnings reports), but it took the Sarbanes-Oxley Act (SOX) of 2002 to really put teeth into those existing laws. SOX is a U.S. federal law that, among other things, could send executives to jail if it was discovered that their company was submitting fraudulent accounting findings to the Security Exchange Commission (SEC). SOX is based upon the COSO model, so for a corporation to be compliant with SOX, it has to follow the COSO model. Companies commonly implement ISO/IEC 27000 standards and CobiT to help construct and maintain their internal COSO structure. Incorrect Answers: B: BIBA is not required by organizations working towards Sarbanes-Oxley Section 404 compliance. C: National Institute of Standards and Technology Special Publication 800-66 (NIST SP 800-66) is not required by organizations working towards Sarbanes-Oxley Section 404 compliance. D: CCTA Risk Analysis and Management Method (CRAMM) is not required by organizations working towards Sarbanes-Oxley Section 404 compliance."
+    },
+    {
+      "id": 14,
+      "question": "The Widget Company decided to take their company public and while they were in the process of doing so had an external auditor come and look at their company. As part of the external audit they brought in a technology expert, who incidentally was a new CISSP. The auditor's expert asked to see their last risk analysis from the technology manager. The technology manager did not get back to him for a few days and then the Chief Financial Officer gave the auditors a 2 page risk assessment that was signed by both the Chief Financial Officer and the Technology Manager. While reviewing it, the auditor noticed that only parts of their financial data were being backed up on site and nowhere else; the Chief Financial Officer accepted the risk of only partial financial data being backed up with no off-site copies available. Who owns the risk with regards to the data that is being backed up and where it is stored?",
+      "options": {
+        "A": "Only the Chief Financial Officer",
+        "B": "Only the most Senior Management such as the Chief Executive Officer",
+        "C": "Both the Chief Financial Officer and Technology Manager",
+        "D": "Only The Technology Manager"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The chief financial officer (CFO) is a member of the board. The board members are responsible for setting the organization’s strategy and risk appetite (how much risk the company should take on). In this question, the Chief Financial Officer accepted the risk of only partial financial data being backed up with no off-site copies available. The Chief Financial Officer therefore owns the risk. Incorrect Answers: B: The most Senior Management such as the Chief Executive Officer does not own the risk. The Chief Financial Officer is responsible for company finances and accepted the risk. This means that the CFO owns the risk, not the CEO. C: The Technology Manager signed the risk assessment but he did not accept the risk. D: The Technology Manager signed the risk assessment but he did not accept the risk."
+    },
+    {
+      "id": 15,
+      "question": "The control measures that are intended to reveal the violations of security policy using software and hardware are associated with:",
+      "options": {
+        "A": "preventive/physical.",
+        "B": "detective/technical.",
+        "C": "detective/physical.",
+        "D": "detective/administrative."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The detective/technical controls help to identify an incident’s activities and potentially an intruder using software or hardware components, which include Audit logs and IDS. Incorrect Answers: A: Preventive/physical controls are meant to discourage a potential attacker using items put into place to protect facility, personnel, and resources. These items include locks, badge systems, security guards, biometric system, and mantrap doors. C: The detective/physical controls helps to identify an incident’s activities and potentially an intruder using items put into place to protect facility, personnel, and resources. These items include motion detectors and closed-circuit TVs. D: The detective/administrative controls helps to identify an incident’s activities and potentially an intruder using management-oriented controls, which include monitoring and supervising, job rotation, and investigations."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following steps is NOT one of the eight detailed steps of a Business Impact Assessment (BIA)?",
+      "options": {
+        "A": "Notifying senior management of the start of the assessment.",
+        "B": "Creating data gathering techniques.",
+        "C": "Identifying critical business functions.",
+        "D": "Calculating the risk for each different business function."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Notifying senior management of the start of the assessment is not one of the eight steps in the BIA process. Note: The steps of a Business Impact Assessment are: Step 1: Determine information gathering techniques. Step 2: Select interviewees (i.e. stakeholders.) Step 3: Customize questionnaire to gather economic and operational impact information. Step 4: Analyze collected impact information. Step 5: Determine time-critical business systems. Step 6: Determine maximum tolerable downtimes (MTD). Step 7: Prioritize critical business systems based on MTD. Step 8: Document findings and report recommendations. Incorrect Answers: B: Creating data gathering techniques is the first step in the BIA process. C: Identifying critical business functions is the fifth step in the BIA process. D: Calculating the risk for each different business function is the sixth step in the BIA process."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following provides enterprise management with a prioritized list of time-critical business processes, and estimates a recovery time objective for each of the time critical processes and the components of the enterprise that support those processes?",
+      "options": {
+        "A": "Business Impact Assessment",
+        "B": "Current State Assessment",
+        "C": "Risk Mitigation Assessment.",
+        "D": "Business Risk Assessment."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Business Impact Assessment (BIA) is an analysis that identifies the resources that are critical to an organization’s ongoing viability and the threats posed to those resources. It also assesses the likelihood that each threat will actually occur and the impact those occurrences will have on the business. Identification of priorities is the first step of the business impact assessment process. Incorrect Answers: B: Current State Assessment is related to future business planning needs. It is concerned with recovery time of critical business processes. C: Risk Mitigation Assessment is concerned with recovery time objectives. The Business Impact Assessment addresses the recovery time. D: Business Risk Assessment is concerned with recovery time objectives. The Business Impact Assessment addresses the recovery time."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following answers is the BEST example of Risk Transference?",
+      "options": {
+        "A": "Insurance",
+        "B": "Results of Cost Benefit Analysis",
+        "C": "Acceptance",
+        "D": "Not hosting the services at all"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Once a company knows the amount of total and residual risk it is faced with, it must decide how to handle it. Risk can be dealt with in four basic ways: transfer it, avoid it, reduce it, or accept it. Many types of insurance are available to companies to protect their assets. If a company decides the total risk is too high to gamble with, it can purchase insurance, which would transfer the risk to the insurance company. Incorrect Answers: B: Cost/benefit analysis is an assessment that is performed to ensure that the cost of protecting an asset does not outweigh the benefit of the protection or the value of the asset. It is not an example of risk transference. C: Risk acceptance is when a company understands the level of risk it is faced with, as well as the potential cost of the risk but does not implement any countermeasure because cost of the countermeasure outweighs the potential loss value. This is determined by the Cost/benefit analysis. Acceptance is not an example of risk transference. D: Risk avoidance is when a company decides not to implement and activity or to terminate and activity that is introducing the risk, and in so doing avoids the risk. Not hosting the services at all is not an example of risk transference; it is an example of risk avoidance."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following answer BEST relates to the type of risk analysis that involves committees, interviews, opinions and subjective input from staff?",
+      "options": {
+        "A": "Qualitative Risk Analysis",
+        "B": "Quantitative Risk Analysis",
+        "C": "Interview Approach to Risk Analysis",
+        "D": "Managerial Risk Assessment"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Qualitative risk analysis methods walk through different scenarios of risk possibilities and rank the seriousness of the threats and the validity of the different possible countermeasures based on opinions. (A wide sweeping analysis can include hundreds of scenarios.) Qualitative analysis techniques include judgment, best practices, intuition, and experience. Examples of qualitative techniques to gather data are Delphi, brainstorming, storyboarding, focus groups, surveys, questionnaires, checklists, one-on-one meetings, and interviews. The risk analysis team will determine the best technique for the threats that need to be assessed, as well as the culture of the company and individuals involved with the analysis. The team that is performing the risk analysis gathers personnel who have experience and education on the threats being evaluated. When this group is presented with a scenario that describes threats and loss potential, each member responds with their gut feeling and experience on the likelihood of the threat and the extent of damage that may result. Incorrect Answers: B: Quantitative Risk Analysis assigns a monetary value to impact of a risk. This is not what is described in the question. C: Interview Approach to Risk Analysis is not one of the defined risk analysis types. D: Managerial Risk Assessment is not the best type of risk analysis that involves committees, interviews, opinions and subjective input from staff."
+    },
+    {
+      "id": 20,
+      "question": "Regarding risk reduction, which of the following answers is BEST defined by the process of giving only just enough access to information necessary for them to perform their job functions?",
+      "options": {
+        "A": "Least Privilege Principle",
+        "B": "Minimum Privilege Principle",
+        "C": "Mandatory Privilege Requirement",
+        "D": "Implicit Information Principle"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. If an individual has excessive permissions and rights, it could open the door to abuse of access and put the company at more risk than is necessary. For example, if Dusty is a technical writer for a company, he does not necessarily need to have access to the company’s source code. So, the mechanisms that control Dusty’s access to resources should not let him access source code. This would properly fulfill operations security controls that are in place to protect resources. Incorrect Answers: B: Minimum Privilege Principle is not the term defined by the process of giving only just enough access to information necessary for them to perform their job functions. C: Mandatory Privilege Requirement is not the term defined by the process of giving only just enough access to information necessary for them to perform their job functions. D: Implicit Information Principle is not the term defined by the process of giving only just enough access to information necessary for them to perform their job functions."
+    },
+    {
+      "id": 21,
+      "question": "Which term BEST describes a practice used to detect fraud for users or a user by forcing them to be away from the workplace for a while?",
+      "options": {
+        "A": "Mandatory Vacations",
+        "B": "Least Privilege Principle",
+        "C": "Obligatory Separation",
+        "D": "Job Rotation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Employees in sensitive areas should be forced to take their vacations, which is known as a mandatory vacation. While they are on vacation, other individuals fill their positions and thus can usually detect any fraudulent errors or activities. Two of the many ways to detect fraud or inappropriate activities would be the discovery of activity on someone’s user account while they’re supposed to be away on vacation, or if a specific problem stopped while someone was away and not active on the network. These anomalies are worthy of investigation. Employees who carry out fraudulent activities commonly do not take vacations because they do not want anyone to figure out what they are doing behind the scenes. This is why they must be forced to be away from the organization for a period of time, usually two weeks. Incorrect Answers: B: Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. This is not what is described in the question. C: Obligatory Separation is not a term for the process used to detect fraud for users or a user by forcing them to be away from the workplace for a while. D: Job rotation in the workplace is a system where employees work at several jobs in a business, performing each job for a relatively short period of time. This could be used to detect fraud for users or a user by forcing them to be away from the workplace for a while. However, this question is asking for the BEST answer and Mandatory Vacations are for this specific purpose."
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is a fraud detection method whereby employees are moved from position to position?",
+      "options": {
+        "A": "Job Rotation",
+        "B": "Mandatory Rotation",
+        "C": "Mandatory Vacations",
+        "D": "Mandatory Job Duties"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Job rotation is a detective administrative control to detect fraud. Job rotation means that, over time, more than one person fulfills the tasks of one position within the company. This enables the company to have more than one person who understands the tasks and responsibilities of a specific job title, which provides backup and redundancy if a person leaves the company or is absent. Job rotation also helps identify fraudulent activities, and therefore can be considered a detective type of control. If Keith has performed David’s position, Keith knows the regular tasks and routines that must be completed to fulfill the responsibilities of that job. Thus, Keith is better able to identify whether David does something out of the ordinary and suspicious. Incorrect Answers: B: Job Rotation, not Mandatory Rotation is the fraud detection method whereby employees are moved from position to position. C: Mandatory vacations are a way of detecting fraud. If a fraudulent activity stops while an employee is on vacation, it is easy to determine who was committing the fraud. Mandatory vacations force employees to take vacations rather than move them to another position. D: Mandatory Job Duties would describe duties that must be performed as part of a role. It does not describe a fraud detection method whereby employees are moved from position to position."
+    },
+    {
+      "id": 23,
+      "question": "The controls that usually require a human to evaluate the input from sensors or cameras to determine if a real threat exists are associated with:",
+      "options": {
+        "A": "preventive/physical.",
+        "B": "detective/technical.",
+        "C": "detective/physical.",
+        "D": "detective/administrative."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The detective/physical controls help to identify an incident’s activities and potentially an intruder using items put into place to protect facility, personnel, and resources. These items include motion detectors and closed-circuit TVs. Closed-circuit TVs are normally monitored by security guards to detect intruders. Incorrect Answers: A: Preventive/physical controls are meant to discourage a potential attacker using items put into place to protect facility, personnel, and resources. Sensors or cameras are not included in these items. B: The detective/technical controls helps to identify an incident’s activities and potentially an intruder using software or hardware components, which include Audit logs and IDS. Sensors or cameras are not included. D: The detective/administrative controls helps to identify an incident’s activities and potentially an intruder using management-oriented controls, which include monitoring and supervising, job rotation, and investigations. Sensors or cameras are not included."
+    },
+    {
+      "id": 24,
+      "question": "Controls such as job rotation, the sharing of responsibilities, and reviews of audit records are associated with:",
+      "options": {
+        "A": "preventive/physical.",
+        "B": "detective/technical.",
+        "C": "detective/physical.",
+        "D": "detective/administrative."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Examples of detective administrative controls include monitoring and supervising, job rotation, and investigations. Incorrect Answers: A: Examples of preventive/physical controls include locks, badge systems, security guards, biometric system, and mantrap doors. B: Examples of detective/technical controls include audit logs and IDS. C: Examples of detective/physical controls include motion detectors and closed-circuit TVs."
+    },
+    {
+      "id": 25,
+      "question": "In terms or Risk Analysis and dealing with risk, which of the four common ways listed below seek to eliminate involvement with the risk being evaluated?",
+      "options": {
+        "A": "Avoidance",
+        "B": "Acceptance",
+        "C": "Transference",
+        "D": "Mitigation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "If a company decides to terminate the activity that is introducing the risk, this is known as risk avoidance. For example, if a company allows employees to use instant messaging (IM), there are many risks surrounding this technology. The company could decide not to allow any IM activity by their users because there is not a strong enough business need for its continued use. Discontinuing this service is an example of risk avoidance. By avoiding the risk, we can eliminate involvement with the risk. Incorrect Answers: B: Risk acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. This does not eliminate involvement with the risk. C: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This does not eliminate involvement with the risk. D: Risk mitigation is to implement a countermeasure to protect against the risk. This does not eliminate involvement with the risk."
+    },
+    {
+      "id": 26,
+      "question": "Of the multiple methods of handling risks which we must undertake to carry out business operations, which one involves using controls to reduce the risk?",
+      "options": {
+        "A": "Mitigation",
+        "B": "Avoidance",
+        "C": "Acceptance",
+        "D": "Transference"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Risk mitigation is where the risk is reduced to a level considered acceptable enough to continue conducting business. The implementation of firewalls, training, and intrusion/detection protection systems or other control types represent types of risk mitigation efforts. Incorrect Answers: B: Risk avoidance is where a company removes the risk. For example, by disabling a service or removing an application deemed to be a risk. This is not the process of reducing risk by implementing controls. C: Risk acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. This is not the process of reducing risk by implementing controls. D: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This is not the process of reducing risk by implementing controls."
+    },
+    {
+      "id": 27,
+      "question": "There is no way to completely abolish or avoid risks, you can only manage them. A risk free environment does not exist. If you have risks that have been identified, understood and evaluated to be acceptable in order to conduct business operations. What is this this approach to risk management called?",
+      "options": {
+        "A": "Risk Acceptance",
+        "B": "Risk Avoidance",
+        "C": "Risk Transference",
+        "D": "Risk Mitigation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Risk Acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. Many companies will accept risk when the cost/benefit ratio indicates that the cost of the countermeasure outweighs the potential loss value. Risk acceptance should be based on several factors. For example, is the potential loss lower than the countermeasure? Can the organization deal with the “pain” that will come with accepting this risk? This second consideration is not purely a cost decision, but may entail noncost issues surrounding the decision. For example, if we accept this risk, we must add three more steps in our production process. Does that make sense for us? Or if we accept this risk, more security incidents may arise from it, and are we prepared to handle those? Incorrect Answers: B: Risk avoidance is where a company removes the risk. For example, by disabling a service or removing an application deemed to be a risk. This does not refer to the accepting of known risks. C: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This does not to the accepting of known risks. D: Risk mitigation is to implement countermeasures to protect against the risk. This does not refer to the accepting of known risks."
+    },
+    {
+      "id": 28,
+      "question": "John is the product manager for an information system. His product has undergone under security review by an IS auditor. John has decided to apply appropriate security controls to reduce the security risks suggested by an IS auditor. Which of the following technique is used by John to treat the identified risk provided by an IS auditor?",
+      "options": {
+        "A": "Risk Mitigation",
+        "B": "Risk Acceptance",
+        "C": "Risk Avoidance",
+        "D": "Risk transfer"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Risk mitigation is where the risk is reduced to a level considered acceptable enough to continue conducting business. The implementation of firewalls, training, and intrusion/detection protection systems or other control types represent types of risk mitigation efforts. Incorrect Answers: B: C: Risk acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. This is not the process of reducing risk by implementing controls. C: Risk avoidance is where a company removes the risk. For example, by disabling a service or removing an application deemed to be a risk. This is not the process of reducing risk by implementing controls. D: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This is not the process of reducing risk by implementing controls."
+    },
+    {
+      "id": 29,
+      "question": "Sam is the security Manager of a financial institute. Senior management has requested he performs a risk analysis on all critical vulnerabilities reported by an IS auditor. After completing the risk analysis, Sam has observed that for a few of the risks, the cost benefit analysis shows that risk mitigation cost (countermeasures, controls, or safeguard) is more than the potential lost that could be incurred. What kind of a strategy should Sam recommend to the senior management to treat these risks?",
+      "options": {
+        "A": "Risk Mitigation",
+        "B": "Risk Acceptance",
+        "C": "Risk Avoidance",
+        "D": "Risk transfer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Risk Acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. Many companies will accept risk when the cost/benefit ratio indicates that the cost of the countermeasure outweighs the potential loss value. Risk acceptance should be based on several factors. For example, is the potential loss lower than the countermeasure? Can the organization deal with the “pain” that will come with accepting this risk? This second consideration is not purely a cost decision, but may entail noncost issues surrounding the decision. For example, if we accept this risk, we must add three more steps in our production process. Does that make sense for us? Or if we accept this risk, more security incidents may arise from it, and are we prepared to handle those? Incorrect Answers: A: Risk mitigation is to implement countermeasures to protect against the risk. This does not refer to the accepting of known risks because the cost benefit analysis shows that risk mitigation cost (countermeasures, controls, or safeguard) is more than the potential lost that could be incurred. C: Risk avoidance is where a company removes the risk. For example, by disabling a service or removing an application deemed to be a risk. This does not refer to the accepting of known risks because the cost benefit analysis shows that risk mitigation cost (countermeasures, controls, or safeguard) is more than the potential lost that could be incurred. D: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This does not to the accepting of known risks because the cost benefit analysis shows that risk mitigation cost (countermeasures, controls, or safeguard) is more than the potential lost that could be incurred."
+    },
+    {
+      "id": 30,
+      "question": "Which of the following risk handling technique involves the practice of being proactive so that the risk in question is not realized?",
+      "options": {
+        "A": "Risk Mitigation",
+        "B": "Risk Acceptance",
+        "C": "Risk Avoidance",
+        "D": "Risk transfer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "If a company decides to terminate the activity that is introducing the risk, this is known as risk avoidance. For example, if a company allows employees to use instant messaging (IM), there are many risks surrounding this technology. The company could decide not to allow any IM activity by their users because there is not a strong enough business need for its continued use. Discontinuing this service is an example of risk avoidance. By being proactive and removing the vulnerability causing the risk, we are avoiding the risk. Incorrect Answers: A: Risk mitigation is to implement a countermeasure to protect against the risk. Implementing controls is being proactive and would ‘reduce’ a risk, however, only risk avoidance ‘removes’ the risk or prevents the risk being realized in the first place. B: Risk acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. This does not describe being proactive to remove the risk. D: Risk transference is where you assign the risk to someone else; for example, by purchasing insurance. This would transfer the risk to the insurance company. This does not describe being proactive to remove the risk."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following risk handling technique involves the practice of passing on the risk to another entity, such as an insurance company?",
+      "options": {
+        "A": "Risk Mitigation",
+        "B": "Risk Acceptance",
+        "C": "Risk Avoidance",
+        "D": "Risk transfer"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Many types of insurance are available to companies to protect their assets. If a company decides the total risk is too high to gamble with, it can purchase insurance, which would transfer the risk to the insurance company. Incorrect Answers: A: Risk mitigation is where controls or countermeasures are implemented to ensure the risk is reduced to a level considered acceptable enough to continue conducting business. This is not the practice of passing on the risk to another entity, such as an insurance company. B: Risk acceptance means the company understands the level of risk it is faced with, as well as the potential cost of damage, and decides to just live with it and not implement the countermeasure. This is not the practice of passing on the risk to another entity, such as an insurance company. C: Risk avoidance is where a company removes a risk or does not implement something that could introduce a risk. For example, by disabling a service or removing an application deemed to be a risk or not implementing them in the first place. This is not the practice of passing on the risk to another entity, such as an insurance company."
+    },
+    {
+      "id": 32,
+      "question": "Which of the following pairings uses technology to enforce access control policies?",
+      "options": {
+        "A": "Preventive/Administrative",
+        "B": "Preventive/Technical",
+        "C": "Preventive/Physical",
+        "D": "Detective/Administrative"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Controls are implemented to mitigate risk and reduce the potential for loss. Controls can be preventive, detective, or corrective. Preventive controls are put in place to inhibit harmful occurrences; detective controls are established to discover harmful occurrences; corrective controls are used to restore systems that are victims of harmful attacks. Technical controls are the software tools used to restrict subjects’ access to objects. They are core components of operating systems, add-on security packages, applications, network hardware devices, protocols, encryption mechanisms, and access control matrices. These controls work at different layers within a network or system and need to maintain a synergistic relationship to ensure there is no unauthorized access to resources and that the resources’ availability, integrity, and confidentiality are guaranteed. Technical controls protect the integrity and availability of resources by limiting the number of subjects that can access them and protecting the confidentiality of resources by preventing disclosure to unauthorized subjects. Incorrect Answers: A: Administrative controls are commonly referred to as “soft controls” because they are more management-oriented. Examples of administrative controls are security documentation, risk management, personnel security, and training. Administrative controls do not use technology to enforce access control policies. C: Physical controls are items put into place to protect facility, personnel, and resources. Examples of physical controls are security guards, locks, fencing, and lighting. Physical controls do not use technology to enforce access control policies. D: Detective controls are established to discover harmful occurrences after they have happened. Administrative controls are commonly referred to as “soft controls” because they are more management-oriented. Examples of administrative controls are security documentation, risk management, personnel security, and training. Detective controls and administrative controls do not use technology to enforce access control policies."
+    },
+    {
+      "id": 33,
+      "question": "Which type of risk assessment is the formula ALE = ARO x SLE used for?",
+      "options": {
+        "A": "Quantitative Analysis",
+        "B": "Qualitative Analysis",
+        "C": "Objective Analysis",
+        "D": "Expected Loss Analysis"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A quantitative risk analysis is used to assign monetary and numeric values to all elements of the risk analysis process. Each element within the analysis (asset value, threat frequency, severity of vulnerability, impact damage, safeguard costs, safeguard effectiveness, uncertainty, and probability items) is quantified and entered into equations to determine total and residual risks. The most commonly used equations used in quantitative risk analysis are the single loss expectancy (SLE) and the annual loss expectancy (ALE). The SLE is a dollar amount that is assigned to a single event that represents the company’s potential loss amount if a specific threat were to take place. The annualized rate of occurrence (ARO) is the value that represents the estimated frequency of a specific threat taking place within a 12-month timeframe. Incorrect Answers: B: Qualitative risk analysis quantifies the risk rather than assigning a monetary value to the impact of a risk. It does not use the ALE = ARO x SLE formula. C: Objective Analysis is not one of the defined risk assessment methods and does not use the ALE = ARO x SLE formula. D: Expected Loss Analysis is not one of the defined risk assessment methods. Expected loss is calculated using the quantitative risk analysis method."
+    },
+    {
+      "id": 34,
+      "question": "Which of the following Confidentiality, Integrity, Availability (CIA) attribute supports the principle of least privilege by providing access to information only to authorized and intended users?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Integrity",
+        "C": "Availability",
+        "D": "Accuracy"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Confidentiality ensures that the necessary level of secrecy is enforced at each junction of data processing and prevents unauthorized disclosure. Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. We can keep data ‘confidential’ by providing access to information only to authorized and intended users. Incorrect Answers: B: Integrity ensures that data is unaltered. It does not restrict access to information only to authorized and intended users. C: Availability ensures reliability and timely access to data and resources to authorized individuals. It does not restrict access to information only to authorized and intended users. D: Accuracy is not one of the three CIA/AIC attributes (Confidentiality, Integrity, Availability) and does not restrict access to information only to authorized and intended users."
+    },
+    {
+      "id": 35,
+      "question": "You are a manager for a large international bank and periodically move employees between positions in your department. What is this process called?",
+      "options": {
+        "A": "Job Rotation",
+        "B": "Separation of Duties",
+        "C": "Mandatory Vacation",
+        "D": "Dual Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Job rotation ensures that more than one person fulfills the tasks of one position within the company, over time. It, therefore, provides backup and redundancy if a person leaves the company or is absent. Incorrect Answers: B: Separation of Duties is a preventive administrative control that is used to make sure one person is unable to carry out a critical task alone. C: Mandatory Vacation is when employees in sensitive areas are forced to take their vacations, allowing other individuals to fill their positions for the purpose of detecting any fraudulent errors or activities. D: Dual Control is a variation of Separation of Duties."
+    },
+    {
+      "id": 36,
+      "question": "Which of the following is a CHARACTERISTIC of a decision support system (DSS) in regards to Threats and Risks Analysis?",
+      "options": {
+        "A": "DSS is aimed at solving highly structured problems.",
+        "B": "DSS emphasizes flexibility in the decision making approach of users.",
+        "C": "DSS supports only structured decision-making tasks.",
+        "D": "DSS combines the use of models with non-traditional data access and retrieval functions."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Decision Support System (DSS) is a computer-based information system that supports business or organizational decision-making activities. DSSs serve the management, operations, and planning levels of an organization (usually mid and higher management) and help people make decisions about problems that may be rapidly changing and not easily specified in advance - i.e. Unstructured and Semi-Structured decision problems. DSS emphasizes flexibility and adaptability to accommodate changes in the environment and the decision making approach of the user. DSS tends to be aimed at the less well structured, underspecified problem that upper level managers typically face. DSS attempts to combine the use of models or analytic techniques with traditional data access and retrieval functions. DSS attempts to combine the use of models or analytic techniques with traditional data access and retrieval functions. Incorrect Answers: A: DSS is aimed at solving unstructured and semi-structured decision problems, not highly structured problems. C: DSS does not support only structured decision-making tasks; it supports unstructured and semi-structured decision-making tasks. D: DSS attempts to combine the use of models or analytic techniques with traditional (not non-traditional) data access and retrieval functions."
+    },
+    {
+      "id": 37,
+      "question": "Which of the following is covered under Crime Insurance Policy Coverage?",
+      "options": {
+        "A": "Inscribed, printed and Written documents",
+        "B": "Manuscripts",
+        "C": "Accounts Receivable",
+        "D": "Money and Securities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Crime Insurance policy protects organizations from loss of money, securities, or inventory resulting from crime. Incorrect Answers: A: Crime Insurance Policy does not protect Inscribed, printed and written documents. You would need Valuable paper insurance for that. B: Crime Insurance Policy does not protect manuscripts. You would need Valuable paper insurance for that. C: Crime Insurance Policy does not protect business records such as Accounts Receivable. You would need Valuable paper insurance for that."
+    },
+    {
+      "id": 38,
+      "question": "It is a violation of the \"separation of duties\" principle when which of the following individuals access the software on systems implementing security?",
+      "options": {
+        "A": "security administrator",
+        "B": "security analyst",
+        "C": "systems auditor",
+        "D": "systems programmer"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reason: The security administrator, security analysis, and the system auditor need access to portions of the security systems to accomplish their jobs. The system programmer does not need access to the working (AKA: Production) security systems. Programmers should not be allowed to have ongoing direct access to computers running production systems (systems used by the organization to operate its business). To maintain system integrity, any changes they make to production systems should be tracked by the organization’s change management control system. Because the security administrator’s job is to perform security functions, the performance of non-security tasks must be strictly limited. This separation of duties reduces the likelihood of loss that results from users abusing their authority by taking actions outside of their assigned functional responsibilities. Incorrect Answers: A: The security administrator needs to access the software on systems implementing security to perform his job function. B: The security analyst needs to access the software on systems implementing security to perform his job function. C: The systems auditor needs to access the software on systems implementing security to perform his job function."
+    },
+    {
+      "id": 39,
+      "question": "The number of violations that will be accepted or forgiven before a violation record is produced is called which of the following?",
+      "options": {
+        "A": "Clipping level",
+        "B": "Acceptance level",
+        "C": "Forgiveness level",
+        "D": "Logging level"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The correct answer is \"clipping level\". This is the point at which a system decides to take some sort of action when an action repeats a preset number of times. In order to limit the amount of audit information flagged and reported by automated violation analysis and reporting mechanisms, clipping levels can be set. Using clipping levels refers to setting allowable thresholds on a reported activity. For example, a clipping level of three can be set for reporting failed log-on attempts at a workstation. Thus, three or fewer log-on attempts by an individual at a workstation will not be reported as a violation, thus eliminating the need for reviewing normal log-on entry errors. Incorrect Answers: B: Acceptance level is not the correct term for the number of violations that will be accepted or forgiven before a violation record is produced. C: Forgiveness level is not the correct term for the number of violations that will be accepted or forgiven before a violation record is produced. D: Logging level is a term used to describe what types of events are logged. It is not the correct term for the number of violations that will be accepted or forgiven before a violation record is produced."
+    },
+    {
+      "id": 40,
+      "question": "Which of the following ensures that security is NOT breached when a system crash or other system failure occurs?",
+      "options": {
+        "A": "Trusted recovery",
+        "B": "Hot swappable",
+        "C": "Redundancy",
+        "D": "Secure boot"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Trusted recovery ensures that security is not breached when a system crash or other system failure (sometimes called a “discontinuity”) occurs. It must ensure that the system is restarted without compromising its required protection scheme, and that it can recover and rollback without being compromised after the failure. Trusted recovery is required only for B3 and A1 level systems. A system failure represents a serious security risk because the security controls may be bypassed when the system is not functioning normally. For example, if a system crashes while sensitive data is being written to a disk (where it would normally be protected by controls), the data may be left unprotected in memory and may be accessible by unauthorized personnel. Trusted recovery has two primary activities — preparing for a system failure and recovering the system. Incorrect Answers: B: Hot swappable refers to computer components that can be swapped while the computer is running. This is not what is described in the question. C: Redundancy refers to multiple instances of computer or network components to ensure that the system can remain online in the event of a component failure. This is not what is described in the question. D: Secure Boot refers to a security standard that ensures that a computer boots using only software that is trusted. This is not what is described in the question."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following ensures that a TCB is designed, developed, and maintained with formally controlled standards that enforces protection at each stage in the system's life cycle?",
+      "options": {
+        "A": "Life cycle assurance",
+        "B": "Operational assurance",
+        "C": "Covert timing assurance",
+        "D": "Covert storage assurance"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Orange Book defines two types of assurance — operational assurance and life cycle assurance. Life cycle assurance ensures that a TCB is designed, developed, and maintained with formally controlled standards that enforces protection at each stage in the system’s life cycle. Configuration management, which carefully monitors and protects all changes to a system’s resources, is a type of life cycle assurance. The life cycle assurance requirements specified in the Orange Book are as follows: Security testing Design specification and testing Configuration management Trusted distribution Incorrect Answers: B: Operational assurance focuses on the basic features and architecture of a system. An example of an operational assurance would be a feature that separates a security-sensitive code from a user code in a system’s memory. Operational assurance is not what is described in the question. C: Covert timing assurance is not one of the two defined types of assurance. D: Covert storage assurance is not one of the two defined types of assurance."
+    },
+    {
+      "id": 42,
+      "question": "What is the MAIN objective of proper separation of duties?",
+      "options": {
+        "A": "To prevent employees from disclosing sensitive information.",
+        "B": "To ensure access controls are in place.",
+        "C": "To ensure that no single individual can compromise a system.",
+        "D": "To ensure that audit trails are not tampered with."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The objective of separation of duties is to ensure that one person acting alone cannot compromise the company’s security in any way. High-risk activities should be broken up into different parts and distributed to different individuals or departments. That way, the company does not need to put a dangerously high level of trust in certain individuals. For fraud to take place, collusion would need to be committed, meaning more than one person would have to be involved in the fraudulent activity Job rotation in the workplace is a system where employees work at several jobs in a business, performing each job for a relatively short period of time. Incorrect Answers: A: Separation of duties does not prevent employees from disclosing sensitive information. B: Separation of duties does not ensure access controls are in place. D: Separation of duties does not ensure that audit trails are not tampered with."
+    },
+    {
+      "id": 43,
+      "question": "This baseline sets certain thresholds for specific errors or mistakes allowed and the amount of these occurrences that can take place before it is considered suspicious?",
+      "options": {
+        "A": "Checkpoint level",
+        "B": "Ceiling level",
+        "C": "Clipping level",
+        "D": "Threshold level"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Organizations usually forgive a particular type, number, or pattern of violations, thus permitting a predetermined number of user errors before gathering this data for analysis. An organization attempting to track all violations, without sophisticated statistical computing ability, would be unable to manage the sheer quantity of such data. To make a violation listing effective, a clipping level must be established. The clipping level establishes a baseline for violation activities that may be normal user errors. Only after this baseline is exceeded is a violation record produced. This solution is particularly effective for small- to medium-sized installations. Organizations with large-scale computing facilities often track all violations and use statistical routines to cull out the minor infractions (e.g., forgetting a password or mistyping it several times). If the number of violations being tracked becomes unmanageable, the first step in correcting the problems should be to analyze why the condition has occurred. Do users understand how they are to interact with the computer resource? Are the rules too difficult to follow? Violation tracking and analysis can be valuable tools in assisting an organization to develop thorough but useable controls. Once these are in place and records are produced that accurately reflect serious violations, tracking and analysis become the first line of defense. With this procedure, intrusions are discovered before major damage occurs and sometimes early enough to catch the perpetrator. In addition, business protection and preservation are strengthened. Incorrect Answers: A: Checkpoint level is not the correct term for the baseline described in the question. B: Ceiling level is not the correct term for the baseline described in the question. D: Threshold level is not the correct term for the baseline described in the question."
+    },
+    {
+      "id": 44,
+      "question": "What is surreptitious transfer of information from a higher classification compartment to a lower classification compartment without going through the formal communication channels?",
+      "options": {
+        "A": "Object Reuse",
+        "B": "Covert Channel",
+        "C": "Security domain",
+        "D": "Data Transfer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A covert channel is a way for an entity to receive information in an unauthorized manner. It is an information flow that is not controlled by a security mechanism. This type of information path was not developed for communication; thus, the system does not properly protect this path, because the developers never envisioned information being passed in this way. Receiving information in this manner clearly violates the system’s security policy. The channel to transfer this unauthorized data is the result of one of the following conditions: Improper oversight in the development of the product Improper implementation of access controls within the software Existence of a shared resource between the two entities which are not properly controlled Incorrect Answers: A: Object reuse is where media is given to someone without first deleting any existing data. This is not what is described in the question. C: The term security describes a logical structure (domain) where resources are working under the same security policy and managed by the same group. This is not what is described in the question. D: Data transfer describes all types and methods of transferring data whether it is authorized or not. It does not describe the specific type of transfer in the question."
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is given the responsibility of the maintenance and protection of the data?",
+      "options": {
+        "A": "Data owner",
+        "B": "Data custodian",
+        "C": "User",
+        "D": "Security administrator"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The data custodian (information custodian) is responsible for maintaining and protecting the data. This role is usually filled by the IT or security department, and the duties include implementing and maintaining security controls; performing regular backups of the data; periodically validating the integrity of the data; restoring data from backup media; retaining records of activity; and fulfilling the requirements specified in the company’s security policy, standards, and guidelines that pertain to information security and data protection. Incorrect Answers: A: The data owner (information owner) is usually a member of management who is in charge of a specific business unit, and who is ultimately responsible for the protection and use of a specific subset of information. The data owner is not is given the responsibility of the maintenance and protection of the data. C: The user is any individual who routinely uses the data for work-related tasks. The user is not given the responsibility of the maintenance and protection of the data. D: The security administrator is responsible for implementing and maintaining specific security network devices and software in the enterprise. The security administrator is not is given the responsibility of the maintenance and protection of the data."
+    },
+    {
+      "id": 46,
+      "question": "In discretionary access environments, which of the following entities is authorized to grant information access to other people?",
+      "options": {
+        "A": "Manager",
+        "B": "Group Leader",
+        "C": "Security Manager",
+        "D": "Data Owner"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The data owner (information owner) is usually a member of management who is in charge of a specific business unit, and who is ultimately responsible for the protection and use of a specific subset of information. The data owner has due care responsibilities and thus will be held responsible for any negligent act that results in the corruption or disclosure of the data. The data owner decides upon the classification of the data she is responsible for and alters that classification if the business need arises. This person is also responsible for ensuring that the necessary security controls are in place, defining security requirements per classification and backup requirements, approving any disclosure activities, ensuring that proper access rights are being used, and defining user access criteria. The data owner approves access requests or may choose to delegate this function to business unit managers. Incorrect Answers: A: While the data owner is usually a member of management, this is not always the case. Therefore, the person authorized to grant information access to other people is not always the manager so this answer is incorrect. B: A Group Leader is not the person authorized to grant information access to other people (unless the group leader is also the data owner). C: The role of Security Manager does not give you the authority to grant information access to other people."
+    },
+    {
+      "id": 47,
+      "question": "Who is ultimately responsible for the security of computer based information systems within an organization?",
+      "options": {
+        "A": "The tech support team",
+        "B": "The Operation Team.",
+        "C": "The management team.",
+        "D": "The training team."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The data owner (information owner) is usually a member of management who is in charge of a specific business unit, and who is ultimately responsible for the protection and use of a specific subset of information. The data owner has due care responsibilities and thus will be held responsible for any negligent act that results in the corruption or disclosure of the data. The data owner decides upon the classification of the data she is responsible for and alters that classification if the business need arises. This person is also responsible for ensuring that the necessary security controls are in place, defining security requirements per classification and backup requirements, approving any disclosure activities, ensuring that proper access rights are being used, and defining user access criteria. The data owner approves access requests or may choose to delegate this function to business unit managers. And the data owner will deal with security violations pertaining to the data she is responsible for protecting. The data owner, who obviously has enough on her plate, delegates responsibility of the day-to-day maintenance of the data protection mechanisms to the data custodian. Incorrect Answers: A: The tech support team often performs the role of data custodian which includes the day-to-day maintenance of the data protection mechanisms. However, the tech support team is not ultimately responsible for the security of the computer based information systems. B: The Operation team is not responsible for the security of the computer based information systems. D: The training team is not responsible for the security of the computer based information systems."
+    },
+    {
+      "id": 48,
+      "question": "Which of the following embodies all the detailed actions that personnel are required to follow?",
+      "options": {
+        "A": "Standards",
+        "B": "Guidelines",
+        "C": "Procedures",
+        "D": "Baselines"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Procedures are detailed step-by-step tasks that should be performed to achieve a certain goal. The steps can apply to users, IT staff, operations staff, security members, and others who may need to carry out specific tasks. Many organizations have written procedures on how to install operating systems, configure security mechanisms, implement access control lists, set up new user accounts, assign computer privileges, audit activities, destroy material, report incidents, and much more. Procedures are considered the lowest level in the documentation chain because they are closest to the computers and users (compared to policies) and provide detailed steps for configuration and installation issues. Procedures spell out how the policy, standards, and guidelines will actually be implemented in an operating environment. Incorrect Answers: A: Standards are compulsory rules indicating how hardware and software should be implemented, used, and maintained. Standards provide a means to ensure that specific technologies, applications, parameters, and procedures are carried out in a uniform way across the organization. They do not contain all the detailed actions that personnel are required to follow. B: Guidelines are recommended actions and operational guides for users, IT staff, operations staff, and others when a specific standard does not apply. They do not contain all the detailed actions that personnel are required to follow. D: A Baseline is the minimum level of security necessary to support and enforce a security policy. It does not contain all the detailed actions that personnel are required to follow."
+    },
+    {
+      "id": 49,
+      "question": "Who can best decide what are the adequate technical security controls in a computer-based application system in regards to the protection of the data being used, the criticality of the data, and its sensitivity level?",
+      "options": {
+        "A": "System Auditor",
+        "B": "Data or Information Owner",
+        "C": "System Manager",
+        "D": "Data or Information user"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The data or information owner is ultimately responsible for the protection of the information and can decide what security controls would be required to protect the Databased on the sensitivity and criticality of the data. Incorrect Answers: A: The auditor is responsible for ensuring that the correct controls are in place and are being maintained securely, and that the organization complies with its own policies and the applicable laws and regulations. C: The system manager is responsible for managing and maintaining a system, and ensuring that the system operates as expected. The system manager is not responsible for determining which security measures should be implemented. D: The user is an individual who uses the data for work-related tasks. The user must have the necessary level of access to the data to perform the duties within their position. The user is not responsible for determining which security measures should be implemented."
+    },
+    {
+      "id": 50,
+      "question": "Which of the following is NOT a responsibility of an information (data) owner?",
+      "options": {
+        "A": "Determine what level of classification the information requires.",
+        "B": "Periodically review the classification assignments against business needs.",
+        "C": "Delegate the responsibility of data protection to data custodians.",
+        "D": "Running regular backups and periodically testing the validity of the backup data."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The data owner defines the backup requirements. However, the data owner does not run the backups. This is performed by the data custodian. The data owner is usually a member of management who is in charge of a specific business unit, and who is ultimately responsible for the protection and use of a specific subset of information. The data owner has due care responsibilities and thus will be held responsible for any negligent act that results in the corruption or disclosure of the data. The data owner decides upon the classification of the data she is responsible for and alters that classification if the business need arises. This person is also responsible for ensuring that the necessary security controls are in place, defining security requirements per classification and backup requirements, approving any disclosure activities, ensuring that proper access rights are being used, and defining user access criteria. The data custodian (information custodian) is responsible for maintaining and protecting the data. This role is usually filled by the IT or security department, and the duties include implementing and maintaining security controls; performing regular backups of the data; periodically validating the integrity of the data; restoring data from backup media; retaining records of activity; and fulfilling the requirements specified in the company’s security policy, standards, and guidelines that pertain to information security and data protection. Incorrect Answers: A: Determining what level of classification the information requires is the responsibility of the data owner. B: Periodically reviewing the classification assignments against business needs is the responsibility of the data owner. C: Delegating the responsibility of data protection to data custodians is the responsibility of the data owner."
+    }
+  ]
+}

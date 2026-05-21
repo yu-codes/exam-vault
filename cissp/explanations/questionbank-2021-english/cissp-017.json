@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q801 - Q850",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 801,
+      "question": "The \"revocation request grace period\" is defined as:",
+      "options": {
+        "A": ") The period for to the user within he must make a revocation request upon a revocation reason",
+        "B": ") Minimum response time for performing a revocation by the CA",
+        "C": ") Maximum response time for performing a revocation by the CA",
+        "D": ") Time period between the arrival of a revocation reason and the publication of the revocation information"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 802,
+      "question": "What enables users to validate each other's certificate when they are certified under different certification hierarchies?",
+      "options": {
+        "A": ") Cross-certification",
+        "B": ") Multiple certificates",
+        "C": ") Redundant certificate authorities",
+        "D": ") Root certification authorities"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 803,
+      "question": "Digital signature users register their public keys with a certification authority, which distributes a certificate containing the user's public key and digital signature of the certification authority. In creating the certificate, the user's public key and the validity period are combined with what other information before computing the digital signature?",
+      "options": {
+        "A": "Certificate issuer and the Digital Signature Algorithm identifier",
+        "B": "User's private key and the identifier of the master key code",
+        "C": "Name of secure channel and the identifier of the protocol type",
+        "D": "Key authorization and identifier of key distribution center"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The key word is 'In create the certificate..\" Certificates Certificates that conform to X.509 contain the following data: Version of X.509 to which the certificate conforms; Serial number (from the certificate cerator); Signature algorithm identifier (specifies the technique used by the certified authority to digitally sign the contents of the certificate); Issuer name (identification of the certificate authority that issues the certificate) Validity period (specifies the dates and times - a starting date and time and an ending date and time - during which the certificate is validated); Subject's name (contains the distinguished name, or DN, of the entity that owns the public key contained in teh certificate); Subject's public key (the meat of the certificate - the actual public key of the certificate owner used to setup secure communications) pg 343-344 CISSP Study Guide byTittel"
+    },
+    {
+      "id": 804,
+      "question": "What level of assurance for digital certificate verifies a user's name, address, social security number, and other information against a credit bureau database?",
+      "options": {
+        "A": ") Level 1",
+        "B": ") Level 2",
+        "C": ") Level 3",
+        "D": ") Level 4"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 805,
+      "question": "Which one of the following security technologies provides safeguards for authentication before securely sending information to a web server?",
+      "options": {
+        "A": "Secure/Multipurpose Internet Mail Extension (S/MIME)",
+        "B": "Common Gateway Interface (CGI) scripts",
+        "C": "Applets",
+        "D": "Certificates"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Digital certificates provide communicating parties with the assurance that they are communicating with people who truly are who they claim to be.\" Titel: CISSP Study Guide. pg 343. In this case, if the web server was a bank, you want to have a certificate confirming that they really are the bank before you authenticate with your username and password."
+    },
+    {
+      "id": 806,
+      "question": "The primary role of cross certification is:",
+      "options": {
+        "A": ") Creating trust between different PKIs",
+        "B": ") Build an overall PKI hierarchy",
+        "C": ") set up direct trust to a second root CA",
+        "D": ") Prevent the nullification of user certifications by CA certificate revocation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 807,
+      "question": "Windows 98 includes the ability to check the digitally signed hardware drivers. Which of the following are true?",
+      "options": {
+        "A": ") Drivers are the only files supplied with W98 that can checked for digital signatures and all drivers included with W98 have been digitally signed",
+        "B": ") If a file on a windows W98 has been digitally signed it means that the file has passed quality testing by Microsoft.",
+        "C": ") The level to which signature checking is implemented could only be changed by editing the registry",
+        "D": ") All of the statements are true"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Windows device drivers and operating system files have been digitally signed by Microsoft to ensure their quality. A Microsoft digital signature is your assurance that a particular file has met a certain level of testing, and that the file has not been altered or overwritten by another program's installation process. Depending on how your administrator has configured your computer, Windows either ignores device drivers that are not digitally signed, displays a warning when it detects device drivers that are not digitally signed (the default behavior), or prevents you from installing device drivers without digital signatures. Windows includes the following features to ensure that your device drivers and system files remain in their original, digitally-signed state: Window Files Protection System File Checker File Signature Verification Windows XP help. Not A: operating system files are included. Not C: the setting can be changed in the GUI."
+    },
+    {
+      "id": 808,
+      "question": "What is the purpose of certification path validation?",
+      "options": {
+        "A": "Checks the legitimacy of the certificates in the certification path.",
+        "B": "Checks that all certificates in the certification path refer to same certification practice statement.",
+        "C": "Checks that no revoked certificates exist outside the certification path.",
+        "D": "Checks that the names in the certification path are the same."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Not C. Revoked certificates are not checked outside the certification path. \"A Transaction with Digital Certificates 1.) Subscribing entity sends Digital Certificate Application to Certificate Authority. 2.) Certificate Authority issues Signed Digital Certificate to Subscribing Entity. 3.) Certificate Authority sends Certificate Transaction to Repository. 4.) Subscribing Entity Signs and sends to Party Transacting with Subscriber. 5.) Party Transacting with Subscriber queries Repository to verify Subscribers Public Key. 6.) Repository responds to Party Transacting with Subscriber the verification request.\" Pg. 214 Krutz: The CISSP Prep Guide: Gold Edition. \"John needs to obtain a digital certificate for himself so that he can participate in a PKI, so he makes a request to the R A. The RA requests certain identification from John, like a copy of his driver's licens, his phone number, address, and other identification information. Once the RA receives the required informoration from John and verifies it, the RA sends his certificate request to the C A. The CA creates a certificate with John's public key and identify information embedded. (The private/public key pair is either generated by the CA or on John's machine, which depends on the systems' configurations. If it is created at the CA, his private key needs to be sent to him by secure means. In most cases the user generates this pair and sends in his public key during the registration process.) Now John is registered and can participate in PKI. John decides he wants to communicate with Diane, so he requests Diane's public key from a public directory. The directory, sometimes called a repository, sends Diane's public key, and John uses this to encrypt a session key that will be used to encrypt their messages. John sends the encrypted session key to Diane. Jon then sends his certificate, containing his public key, to Diane. When Diane receives John's certificate, her browser looks to see if it trusts the CA that digitally signed this certificate. Diane's browser trusts this CA, and she makes a reques to the CA to see if this certificate is still valid. The CA responds that the certificate is valid, so Diane decrypts the session key with her private key. Now they can both communicate using encryption.\" Pg 499 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 809,
+      "question": "In what type of attack does an attacker try, from several encrypted messages, to figure out the key using the encryption process?",
+      "options": {
+        "A": ") Known-plaintext attack",
+        "B": ") Ciphertext-only attack",
+        "C": ") Chosen-Ciphertext attack",
+        "D": ") Known Ciphertext attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Ciphertext-Only Attack In this type of attack, the attacker has the ciphertext of several messages. Each of the messages has been encrypted using the same encryption algorithm. The attacker's goal is to discover the key that was used in the encryption process. Once the attacker figures out the key, she can decrypt all other messages encrypted with the same key. A ciphertext-only attack is the most common because it is very easy to get ciphertext by sniffing someone's traffic, but it is the hardest attack to actually be successful at because the attacker has so little information about the encryption process.\" Pg 531 Shon Harris CISSP All-In-One Exam Guide"
+    },
+    {
+      "id": 810,
+      "question": "When combined with unique session values, message authentication can protect against which of the following?",
+      "options": {
+        "A": "Reverse engineering, frequency analysis, factoring attacks, and ciphertext-only attack.",
+        "B": "Masquerading, frequency analysis, sequence manipulation, and ciphertext-only attack.",
+        "C": "Reverse engineering, content modification, factoring attacks, and submission notification.",
+        "D": "Masquerading, content modification, sequence manipulation, and submission notification."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Unique session values: \"IPSec: ....Each device will have one security association (SA) for each session that it uses. The SA is critical to the IPSec architecture and is a record of the configuration the device needs to support an IPSec connection. Pg 575 Shon Harris All-In-One CISSP Certification Exam Guide. Message authentication and content modification: \"Hashed Message Authentication Code (HMAC): An HMAC is a hashed alogrithim that uses a key to generate a Message Authentication Code (MAC). A MAC is a type of check sum that is a function of the information in the message. The MAC is generated before the message is sent, appended to the message, and then both are transmitted. At the receiving end, a MAC is generated from the message alone using the same algorithm as used by the sender and this MAC is compared to the MAC sent with the message. If they are not identical, the message was modified en route. Hashing algorithms can be used to generate the MAC and hash algorithms using keys provide stronger protection than ordinary MAC generation. Frequency analysis: Message authentication and session values do not protect against Frequency Analysis so A and B are eliminated. \"Simple substitution and transposition ciphers are vulnerable to attacks that perform frequency analysis. In every language, there are words and patters that are used more often than others. For instance, in the English language, the words \"the.' \"and,\" \"that,\" and \"is\" are very frequent patters of letters used in messages and conversation. The beginning of messages usually starts \"Hello\" or \"Dear\" and ends with \"Sincerely\" or \"Goodbye.\" These patterns help attackers figure out the transformation between plaintext to ciphertext, which enables them to figure out the key that was used to perform the transformation. It is important for cryptosystems to no reveal these patterns.\" Pg. 507 Shon Harris All-In-One CISSP Certification Exam Guide Ciphertext-Only Attack: Message authentication and session values do not protect against Ciphertext so A and B are again eliminated. \"Ciphertext-Only Attack: In this type of an attack, an attacker has the ciphertext of several messages. Each of the messages has been encrypted using the same encryption algorithm. The attacker's goal is to discover the plaintext of the messages by figuring out the key used in the encryption process. Once the attacker figures out the key, she can now decrypt all other messages encrypted with the same key.\" Pg 577 Shon Harris All-In-One CISSP Certification Exam Guide. Birthday attack: \"....refer to an attack against the hash function known as the birthday attack.\" Pg 162 Krutz: The CISSP Prep Guide. MAC utilizes a hashing function and is therefore susceptible to birthday attack. Masguerading Attacks: Session values (IPSec) does protect against session hijacking but not spoofing so C is eliminated. \"Masguerading Attacks: ....we'll look at two common masquerading attacks - IP Spoofing and session hijacking.\" Pg 275 Tittel: CISSP Study Guide. Session hijacking: \"If session hijacking is a concern on a network, the administrator can implement a protocol that requires mutual authentication between users like IPSec. Because the attacker will not have the necessary credentials to authenticate to a user, she cannot act as an imposter and hijack sessions.\" Pg 834 Shon Harris All-In-One CISSP Certification Exam Guide Reverse engineering: Message authentication protects against reverse engineering. Reverse engineering: \"The hash function is considered one-way because the original file cannot be created from the message digest.\" Pg. 160 Krutz: The CISSP Prep Guide Content modification: Message authentication protects against content modification. Factoring attacks: Message authentication protects against factoring attacks."
+    },
+    {
+      "id": 811,
+      "question": "The relative security of a commercial cryptographic system can be measured by the?",
+      "options": {
+        "A": "Rating value assigned by the government agencies that use the system.",
+        "B": "Minimum number of cryptographic iterations required by the system.",
+        "C": "Size of the key space and the available computational power.",
+        "D": "Key change methodology used by the cryptographic system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The strength of the encryption method comes from the algorithm, secrecy of the key, length of the key, initialization vectors, and how they all work together. - Shon Harris All-in-one CISSP Certification Guide pg 504"
+    },
+    {
+      "id": 812,
+      "question": "Which one of the following describes Kerchoff's Assumption for cryptoanalytic attack?",
+      "options": {
+        "A": "Key is secret; algorithm is Known",
+        "B": "Key is known; algorithm is Known",
+        "C": "Key is secret; algorithm is secret",
+        "D": "Key is known; algorithm is secret"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Kerhkoff's laws were intended to formalize the real situation of ciphers in the field. Basically, the more we use any particular cipher system, the more likely it is that it will \"escape\" into enemy hands. So we start out assuming that our opponents know \"all the details\" of the cipher system, except the key. http://www.ciphersbyritter.com/NEWS4/LIMCRYPT.HTM"
+    },
+    {
+      "id": 813,
+      "question": "Which of the following actions can make a cryptographic key more resistant to an exhaustive attack?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "Increase the length of a key.",
+        "C": "Increase the age of a key.",
+        "D": "Increase the history of a key."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Defenses against exhaustive attacks involve increasing the cost of the attack by increasing the number of possibilities to be exhausted. For example, increasing the length of a password will increase the cost of an exhaustive attack. Increasing the effective length of a cryptographic key variable will make it more resistant to an exhaustive attack."
+    },
+    {
+      "id": 814,
+      "question": "Which type of attack is based on the probability of two different messages using the same hash function producing a common message digest?",
+      "options": {
+        "A": ") Differential cryptanalysis",
+        "B": ") Differential linear cryptanalysis",
+        "C": ") Birthday attack",
+        "D": ") Statistical attack"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Attacks Against One-Way Hash Functions: A good hashing algorithm should not produce the same hash value for two different messages. If the algorithm does produce the same value for two distinctly different messages, this is referred to as a collision. If an attacker finds an instance of a collision, he has more information to use when trying to break the cryptographic methods used. A complex way of attacking a one-way hash function is called the birthday attack. Now hold on to your had while we go through this -- it is a bit tricky. In standard statistics, a birthday paradox exists. It goes something like this: How many people must be in the same room for the chance to be greater than even that another person has the same birthday as you? Answer: 253 How many people must be in the same room for the chance to be greater than even that at least two people share the same birthday? Answer: 23 This seems a bit backwards, but the difference is that in the first instance, you are looking for someone with a specific birthday date, which matches yours. In the second instance, you are looking for any two people who share the same birthday. There is a higher probability of finding two people who share a birthday than you finding another person sharing your birthday -- thus, the birthday paradox. ....This means that if an attacker has one hash value and wants to find a message that hashes to the same hash value, this process could take him years. However, if he just wants to find any two messages with the same hashing value, it could take him only a couple hours. .....The main point of this paradox and this section is to show how important longer hashing values truly are. A hashing algorithm that has a larger bit output is stronger and less vulnerable to brute force attacks like a birthday attack. Pg 554-555 Shon Harris: All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 815,
+      "question": "Frame-relay uses a public switched network to provide:",
+      "options": {
+        "A": ") Local Area Network (LAN) connectivity",
+        "B": ") Metropolitan Area Network (MAN) connectivity",
+        "C": ") Wide Area Network (WAN) connectivity",
+        "D": ") World Area Network (WAN) connectivity"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 816,
+      "question": "Which of the following technologies has been developed to support TCP/IP networking over low-speed serial interfaces?",
+      "options": {
+        "A": ") ISDN",
+        "B": ") SLIP",
+        "C": ") xDSL",
+        "D": ") T1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 817,
+      "question": "Which of the following provide network redundancy in a local network environment?",
+      "options": {
+        "A": ") Mirroring",
+        "B": ") Shadowing",
+        "C": ") Dual backbones",
+        "D": ") Duplexing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 818,
+      "question": "Which of the following is a Wide Area Network that was originally funded by the Department of Defense, which uses TCP/IP for data interchange?",
+      "options": {
+        "A": ") the Internet",
+        "B": ") the Intranet",
+        "C": ") the Extranet",
+        "D": ") The Ethernet"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 819,
+      "question": "Internet specifically refers to the global network of:",
+      "options": {
+        "A": ") public networks and Internet Service Providers (ISPs) throughout the world",
+        "B": ") private networks and Internet Services Providers (ISPs) through the world",
+        "C": ") limited networks and Internet Service Providers (ISPs) throughout the world",
+        "D": ") point networks and Internet Service Providers (ISPs) throughout the world"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 820,
+      "question": "To improve the integrity of asynchronous communications in the realm of personal computers, the Microcom Networking Protocol (MNP) uses a highly effective communications error-control technique known as",
+      "options": {
+        "A": "Cyclic redundancy check.",
+        "B": "Vertical redundancy check.",
+        "C": "Checksum.",
+        "D": "Echoplex."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 821,
+      "question": "Organizations should consider which of the following first before connecting their LANs to the Internet?",
+      "options": {
+        "A": ") plan for implementing W/S locking mechanisms",
+        "B": ") plan for protecting the modem pool",
+        "C": ") plan for providing the user with his account usage information",
+        "D": ") plan for considering all authentication options"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 822,
+      "question": "Which xDSL flavour delivers both downstream and upstream speeds of 1.544 MBps over two copper twisted pairs?",
+      "options": {
+        "A": ") HDSL",
+        "B": ") SDSL",
+        "C": ") ADSL",
+        "D": ") VDSL"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 823,
+      "question": "Which of the following statements pertaining to Asynchronous Transfer Mode (ATM) is false?",
+      "options": {
+        "A": ") It can be used for voice",
+        "B": ") It can be used for data",
+        "C": ") It carries various sizes of packets",
+        "D": ") It can be used for video"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Asynchronous transfer mode (ATM) is a cell-switching technology, as opposed to a packet-switching technology like Frame Relay. ATM uses virtual circuits much like Frame Relay, but because it uses fixed-size frames or cells, it can guarantee throughput. This makes ATM an excellent WAN technology for voice and video conferencing.\" Pg 87 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 824,
+      "question": "Satellite communications are easily intercepted because__",
+      "options": {
+        "A": "transmissions are continuous 24 hours per day.",
+        "B": "a satellite footprint is narrowly focused.",
+        "C": "a satellite footprint is very large.",
+        "D": "a satellite footprint does not change."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I think it may have to do with the footprint of the satellite. Footprint - The area of Earth with sufficient antenna gain to receive a signal from a satellite. - http://www.aero.org/publications/crosslink/winter2002/backpage.html Not A: Granted Satellites transmit but they may not do it 24x7 as it could be only when traffic is sent."
+    },
+    {
+      "id": 825,
+      "question": "Which one of the following protocols CANNOT be used for full duplex Wide Area Network (WAN) communications?",
+      "options": {
+        "A": "Synchronous Data Link Control (SDLC)",
+        "B": "Serial Line Internet Protocol (SLIP)",
+        "C": "Point-to-Point Protocol (PPP)",
+        "D": "High-Level Data Link Control (HDLC)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"SDLC was developed to enable mainframes to communicate with remote locations.\" Pg 456 Shon Harris CISSP Certification Exam Guide. This is a WAN protocol. Not B \"Serial Line Internet Protocol (SLIP) is an older technology developed to support TCP/IP communications over asynchronous serial connections, such as serial cables or modem dial-up.\" Pg 96. Tittel: CISSP Study Guide. SLIP is serial protocol opposed to WAN protocol. This could be correct answer but SDLC is more correct. Not C. \"PPP is a full-duplex protocol that provides bi-directional links over synchronous, asynchronous, ISDN, frame relay and SONET connections.\" Pg. 472 Shon Harris CISSP All-In-One Certification Exam Guide. PPP is full-duplex. Not D. \"HDLC is an extension of SDLC, which is mainly used in SNA environments. HDLC provides high throughput because it supports full-duplex transmissions and is used in point-to-point and multipoint connections.\" Pg 456 Shon Harris CISSP All-In-One Certification Exam Guide. PPP is full-duplex."
+    },
+    {
+      "id": 826,
+      "question": "Fast ethernet operates at which of the following?",
+      "options": {
+        "A": ") 10 MBps",
+        "B": ") 100 MBps",
+        "C": ") 1000 MBps",
+        "D": ") All of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Fast Ethernet 100bps - IEE 802.3u\" pg 810 Shon Harris CISSP All-In-One Exam Guide"
+    },
+    {
+      "id": 827,
+      "question": "Which of the following statements about the \"Intranet\" is NOT true?",
+      "options": {
+        "A": ") It is an add-on to a local area network.",
+        "B": ") It is unrestricted and publicly available.",
+        "C": ") It is usually restricted to a community of users",
+        "D": ") t can work with MANS or WANS"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"An intranet is a 'private' network that uses Internet technologies, such as TCP/IP. The company has Web servers and client machines using Web browsers, and it uses the TCP/IP protocol suite. The Web pages are written in Hypertext Markup Language (HTML) or Extensible Markup Language (XML) and are accessed via HTTP.\" Pg 395 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 828,
+      "question": "Frame relay and X.25 networks are part of which of the following?",
+      "options": {
+        "A": ") Circuit-switched services",
+        "B": ") Cell-switched services",
+        "C": ") Packet-switched services",
+        "D": ") Dedicated digital services"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Packet-Switched Technologies: X.25 Link Access Procedure-Balanced (LAPB) Frame Relay Switched Multimegabit Data Service (SMDS) Asynchronous Transfer Mode (ATM) Voice over IP (VoIP)"
+    },
+    {
+      "id": 829,
+      "question": "A Wide Area Network (WAN) may be privately operated for a specific user community, may support multiple communication protocols, or may provide network connectivity and services via:",
+      "options": {
+        "A": ") interconnected network segments (extranets, intranets, and Virtual Private Networks)",
+        "B": ") interconnected network segments (extranets, internets, and Virtual Private Networks)",
+        "C": ") interconnected netBIOS segments (extranets, intranets, and Virtual Private Networks)",
+        "D": ") interconnected NetBIOS segments (extranets, interest, and Virtual Private Networks)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 830,
+      "question": "What is the proper term to refer to a single unit of Ethernet data?",
+      "options": {
+        "A": ") Ethernet segment",
+        "B": ") Ethernet datagram",
+        "C": ") Ethernet frame",
+        "D": ") Ethernet packet"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "When the Ethernet software receives a datagram from the Internet layer, it performs the following steps: 1.) Breaks IP layer data into smaller chunks if necessary which will be in the data field of ethernet frames. Pg. 40 Sams Teach Yourself TCP/IP in 24 hrs."
+    },
+    {
+      "id": 831,
+      "question": "Which of the following is a LAN transmission protocol?",
+      "options": {
+        "A": ") Ethernet",
+        "B": ") Ring Topology",
+        "C": ") Unicast",
+        "D": ") Polling"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"LAN Transmission Methods. LAN data is transmitted from the sender to one or more receiving stations using either a unicast, multicast, or broadcast transmission.\" pg 528 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 832,
+      "question": "Which of the following access methods is used by Ethernet?",
+      "options": {
+        "A": ") CSMA/CD",
+        "B": ") CSU/DSU",
+        "C": ") TCP/IP",
+        "D": ") FIFO"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Under the Ethernet CSMA/CD media-access process, any computer on a CSMA/CD LAN can access the network at any time.\" Pg. 103 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 833,
+      "question": "Which one of the following data transmission technologies is NOT packet-switch based?",
+      "options": {
+        "A": "X.25",
+        "B": "ATM (Asynchronous Transfer Mode)",
+        "C": "CSMA/CD (Carrier Sense Multiple Access/Collision Detection)",
+        "D": "Frame Relay"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Examples of packet-switching networks are X.25, Link Access Procedure-Balanced (LAPB), Frame Relay, Switched Multimegabit Data Systems (SMDS), Asynchronous Transfer Mode (ATM), and Voice over IP (VoIP).\" Pg 146 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 834,
+      "question": "Unshielded (UTP) does not require the fixed spacing between connections that is:",
+      "options": {
+        "A": ") necessary with telephone-type connections",
+        "B": ") necessary with coaxial-type connections",
+        "C": ") necessary with twisted pair-type connections",
+        "D": ") necessary with fiber optic-type connections"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 835,
+      "question": "What type of cable is used with 100Base-TX Fast Ethernet?",
+      "options": {
+        "A": ") Fiber-optic cable",
+        "B": ") Four pairs of Category 3, 4, or 5 unshielded twisted-pair (UTP) wires.",
+        "C": ") Two pairs of Category 5 unshielded twisted-pair (UTP) or Category 1 shielded twisted-pair (STP) wires",
+        "D": ") RG-58 Cable"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 836,
+      "question": "Which cable technology refers to the CAT 3 and Cat5 Categories?",
+      "options": {
+        "A": ") Coaxial cables",
+        "B": ") Fiber Optic cables",
+        "C": ") Axial cables",
+        "D": ") Twisted Pair cables"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 837,
+      "question": "On which Open System Interconnection (OSI) Reference Model layer are repeaters used as communications transfer devices?",
+      "options": {
+        "A": "Data-link",
+        "B": "Physical",
+        "C": "Network",
+        "D": "Transport"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "This original answer is wrong (network) repeater is physical layer. Repeaters just regenerates the signal \"Hubs are multi port repeaters, and as such they obey the same rules as repeaters (See previous section OSI Operating Layer). They operate at the OSI Model Physical Layer.\" http://www.thelinuxreview.com/howto/intro_to_networking/c5434.htm"
+    },
+    {
+      "id": 838,
+      "question": "In the OSI/ISO model, at what layer are some of the SLIP, CSLIP, PPP, control functions are provided?",
+      "options": {
+        "A": ") Link",
+        "B": ") Transport",
+        "C": ") Presentation",
+        "D": ") Application"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 839,
+      "question": "In the OSI/ISO model, at what level are TCP and UDP provided?",
+      "options": {
+        "A": ") Transport",
+        "B": ") Network",
+        "C": ") Presentation",
+        "D": ") Application"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Transport Layer. .... TCP and UDP operate on this layer.' Pg 82. Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 840,
+      "question": "DNS, FTP, TFTP, SNMP are provided at what level of the OSI/ISO model?",
+      "options": {
+        "A": ") Application",
+        "B": ") Network",
+        "C": ") Presentation",
+        "D": ") Transport"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 841,
+      "question": "Which of the following OSI layers does not provide confidentiality?",
+      "options": {
+        "A": ") Presentation",
+        "B": ") Network",
+        "C": ") Transport",
+        "D": ") Session"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"[Network Layer] The routing protocols are located at this layer and include the following: .....Internet Protocol Security (IPSec)\". \"The following protocols operate within the Session layer: Secure Sockets Layer (SSL)\". \"The Presentation layer is also responsible for encryption and compression.\" Pg 61-62 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 842,
+      "question": "Which of the following OSI layers provides routing and related services?",
+      "options": {
+        "A": ") Network",
+        "B": ") Presentation",
+        "C": ") Physical"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 843,
+      "question": "The International Standards Organization/Open Systems Interconnection (ISO/OSI) Layers does NOT have which of the following characteristics?",
+      "options": {
+        "A": ") Standard model for network communications",
+        "B": ") Used to gain information from network devices such as count of packets received and routing tables",
+        "C": ") Allows dissimilar networks to communicate",
+        "D": ") Defines 7 protocol layers (a.k.a. protocol stacks)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Not A. \"The Open System Interconnect (OSI) is a worldwide federation that works to provide international standards. \" Not C. \"A protocol is a standard set of rules that determine how systems will communicate across networks. Two different systems can communicate and understand each other because they use the same protocols in spite of their differences.\" Pg. 343-344 Shon Harris: CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 844,
+      "question": "Which of the following layers supervises the control rate of packet transfers in an Open Systems Interconnections (OSI) implementation?",
+      "options": {
+        "A": "Physical",
+        "B": "Session",
+        "C": "Transport",
+        "D": "Network"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The transport layer defines how to address the physical locations and /or devices on the network, how to make connections between nodes, and how to handle the networking of messages. It is responsible for maintaining the end-to-end integrity and control of the session. Services located in the transport layer both segment and reassemble the data from upper-layer applications and unite it onto the same data stream, which provides end-to-end data transport services and establishes a logical connection between the sending host and destination host on a network. The transport layer is also responsible for providing mechanisms for multiplexing upper-layer applications, session establishment, and the teardown of virtual circuits. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 275-276 \"Transport Layer The agreement on these issues before transferring data helps provide more reliable data transfer, error detection and correction, and flow control and it optimizes network services needed to perform these tasks.\" Pg. 318 - 319 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 845,
+      "question": "Which Open Systems Interconnect (OSI) layers provide Transport Control Protocol/Internet Protocol (TCP/IP) end-to-end security?",
+      "options": {
+        "A": "Application and presentation",
+        "B": "Presentation and session",
+        "C": "Network and application",
+        "D": "Application and transport"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"The Session layer (layer 5) is responsible for establishing, maintaining, and terminating communication sessions between two computers. The primary technology within layer 5 is a gateway. The following protocols operate within the Session layer: Secure Sockets Layer (SSL) Network File System (NFS) Structured Query Language (SQL) Remote Procedure Call (RPC) The presentation layer (layer 6) is responsible for transforming data received from the application layer into a format that any system following the OSI model can understand. It imposes common or standardized structure and formatting rules onto the data. The Presentation layer is also responsible for encryption and compression.\" Pg. 79-80 Tittel: CISSP Study Guide."
+    },
+    {
+      "id": 846,
+      "question": "Which one of the following is a TRUE statement about the bottom three layers of the Open Systems Interconnection (OSI) Reference Model?",
+      "options": {
+        "A": "They generally pertain to the characteristics of the communicating end systems.",
+        "B": "They cover synchronization and error control of network data transmissions.",
+        "C": "They support and manage file transfer and distribute process resources.",
+        "D": "They support components necessary to transmit network messages."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "By exclusion: Not A. \"The Session layer (layer 5) is responsible for establish, maintaining, and terminating communication sessions between two computers.\" Pg 79 Tittel: CISSP Study Guide. Not B. \"The Transport layer (layer 4) ....This layer includes mechanisms for segmentation, sequencing, error checking, controlling the flow of data, error correction and network service optimization.\" Pg 79 Tittel: CISSP Study Guide. Not C. \"The Application itself it is not located within this layer [Application]; rather the protocols and services required to transmit files, exchange messages, connect to remote terminals, and so on are here.\" Pg. 80 Tittel: CISSP Study Guide."
+    },
+    {
+      "id": 847,
+      "question": "ICMP and IGMP belong to which layer of the OSI model?",
+      "options": {
+        "A": ") Datagram",
+        "B": ") Network",
+        "C": ") Transport",
+        "D": ") Link"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The Network layer (layer 3) is responsible for adding routing information to the data. The Network layer accepts the segment from the Transport layer and adds information to it to create a packet. The packet includes the source and destination IP addresses. T The routing protocols are located at this layer and include the following: Internet Control Message Protocol (ICMP) Routing Information Protocol (RIP) Open Shortest Path First (OSPF) Border Gateway Protocol (BGP) Internet Group Management Protocol (IGMP) Internet Protocol (IP) Internet Packet Exchange (IPX) Pg. 78 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 848,
+      "question": "The International Standards Organization / Open Systems Interconnection (ISO/OSI) Layers 6 is which of the following?",
+      "options": {
+        "A": ") Application Layer",
+        "B": ") Presentation Layer",
+        "C": ") Data Link Layer",
+        "D": ") Network Layer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Presentation Layer (Layer 6).\" Pg 81 Krutz The CISSP Prep Guide."
+    },
+    {
+      "id": 849,
+      "question": "Which OSI/ISO layer is IP implemented at?",
+      "options": {
+        "A": ") Session layer",
+        "B": ") Transport layer",
+        "C": ") Network layer",
+        "D": ") Data link layer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 850,
+      "question": "Which of the following security-focused protocols operates at a layer different from the others?",
+      "options": {
+        "A": ") Secure HTTP",
+        "B": ") Secure shell (SSH-2)",
+        "C": ") Secure socket layer (SSL)",
+        "D": ") Simple Key Management for Internet Protocols (SKIP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

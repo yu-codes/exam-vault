@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1351 - Q1400",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1351,
+      "question": "Which of the following is a connection-orientated protocol?",
+      "options": {
+        "A": "IP",
+        "B": "UDP",
+        "C": "TCP",
+        "D": "ICMP",
+        "E": "SNMP",
+        "F": "TFTP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: TCP is a connection-orientated protocol."
+    },
+    {
+      "id": 1352,
+      "question": "Which of the following is not considered firewall technology?",
+      "options": {
+        "A": "Screened subnet",
+        "B": "Screened host",
+        "C": "Duel gateway host",
+        "D": "Dual homed host"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Duel gateway host is not considered firewall technology."
+    },
+    {
+      "id": 1353,
+      "question": "Which type of network topology passes all traffic through all active nodes?",
+      "options": {
+        "A": "Broadband",
+        "B": "Star",
+        "C": "Baseband",
+        "D": "Token Ring"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Token ring passes all traffic through nodes."
+    },
+    {
+      "id": 1354,
+      "question": "The act of validating a user with a unique and specific identifier is called what?",
+      "options": {
+        "A": "Validation",
+        "B": "Registration",
+        "C": "Authentication",
+        "D": "Authorization",
+        "E": "Identification"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Authentication is the act of validating a user with a unique and specific identifier."
+    },
+    {
+      "id": 1355,
+      "question": "Why is fiber the most secure means of transmission?",
+      "options": {
+        "A": "High speed multiplexing",
+        "B": "Interception of traffic is more difficult because it is optically based",
+        "C": "Higher data rates make it more secure",
+        "D": "Multiplexing prevents traffic analysis",
+        "E": "Built-in fault tolerance"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Fiber is more secure because it is hard to tap into and gives off no EMI such as copper cabling."
+    },
+    {
+      "id": 1356,
+      "question": "The IAB defines which of the following as a violation of ethics?",
+      "options": {
+        "A": "Performing a DoS",
+        "B": "Downloading an active control",
+        "C": "Performing a penetration test",
+        "D": "Creating a virus",
+        "E": "Disrupting Internet communications"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "The IAAB considers the Internet a privilege, not a right, and as such considers it unethical to purposely disrupt communications."
+    },
+    {
+      "id": 1357,
+      "question": "A chain of custody shows who ______ _________ and _________.(Choose three)",
+      "options": {
+        "A": "Who controlled the evidence",
+        "B": "Who transcribed the evidence",
+        "C": "Who validated the evidence",
+        "D": "Who presented the evidence",
+        "E": "Secured the evidence",
+        "F": "Obtained the evidence"
+      },
+      "answers": [
+        "A",
+        "E",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "The chain of evidence shows who obtained the evidence, who secured the evidence, and who controlled the evidence."
+    },
+    {
+      "id": 1358,
+      "question": "Good forensics requires the use of a bit level copy?(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Good forensics requires the use of a bit level copy. A bit level copy duplicates all information on the suspect's disk. This includes slack space and free space."
+    },
+    {
+      "id": 1359,
+      "question": "Which agency shares the task of investigating computer crime along with the FBI?",
+      "options": {
+        "A": "Secret Service",
+        "B": "CIA",
+        "C": "Department of justice",
+        "D": "Police force",
+        "E": "NSA"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Along with the FBI, the Secret Service has been given the authority to investigate computer crime."
+    },
+    {
+      "id": 1360,
+      "question": "This type of password recovery is considered more difficult and must work through all possible combinations of numbers and characters.",
+      "options": {
+        "A": "Passive",
+        "B": "Active",
+        "C": "Dictionary",
+        "D": "Brute force",
+        "E": "Hybrid"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Brute force cracking is considered more difficult and must work through all possible combinations of numbers and characters."
+    },
+    {
+      "id": 1361,
+      "question": "_______ are added to Linux passwords to increase their randomness.",
+      "options": {
+        "A": "Salts",
+        "B": "Pepper",
+        "C": "Grains",
+        "D": "MD5 hashes",
+        "E": "Asymmetric algorithms"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Salts are added to Linux passwords to increase their randomness. They are used to help insure that no two users have the same, hashed password."
+    },
+    {
+      "id": 1362,
+      "question": "The Linux root user password is typically kept in where?(Choose two)",
+      "options": {
+        "A": "etc/shadow",
+        "B": "cmd/passwd",
+        "C": "etc/passwd",
+        "D": "windows/system32",
+        "E": "var/sys",
+        "F": "var/password"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "type": "multiple",
+      "explanation": "The Linux root user password is typically kept in /etc/passwd or etc/shadow."
+    },
+    {
+      "id": 1363,
+      "question": "The goal of cryptanalysis is to ____________.",
+      "options": {
+        "A": "Determine the number of encryption permutations required",
+        "B": "Reduce the system overhead for a crypto-system",
+        "C": "Choose the correct algorithm for a specified purpose",
+        "D": "Forge coded signals that will be accepted as authentic",
+        "E": "Develop secure crypto-systems"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The goal of cryptanalysis is to forge coded signals that will be accepted as authentic."
+    },
+    {
+      "id": 1364,
+      "question": "If an employee is suspected of computer crime and evidence need to be collected, which of the following departments must be involved with the procedure?",
+      "options": {
+        "A": "Public relations",
+        "B": "Law enforcement",
+        "C": "Computer security",
+        "D": "Auditing",
+        "E": "HR"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Human Resources always needs to be involved if an employee is suspected of wrongdoing. They know what rules apply to protect and prosecute employees."
+    },
+    {
+      "id": 1365,
+      "question": "What is it called when a system has apparent flaws that were deliberately available for penetration and exploitation?",
+      "options": {
+        "A": "A jail",
+        "B": "Investigation",
+        "C": "Enticement",
+        "D": "Data manipulation",
+        "E": "Trapping"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Administrators that leave systems with apparent flaws are performing an act of enticement. This is sometimes called a honeypot."
+    },
+    {
+      "id": 1366,
+      "question": "Why are computer generated documents not considered reliable?",
+      "options": {
+        "A": "Difficult to detect electron tampering",
+        "B": "Stored in volatile media",
+        "C": "Unable to capture and reproduce",
+        "D": "Too delicate",
+        "E": "Because of US law, Section 7 paragraph 154"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Because it is difficult to detect electron tampering and can be easily modified."
+    },
+    {
+      "id": 1367,
+      "question": "What is the name of the software that prevents users from seeing all items or directories on a computer and is most commonly found in the UNIX/Linux environment?",
+      "options": {
+        "A": "Shell Kits",
+        "B": "Root Kits",
+        "C": "Ethereal",
+        "D": "Shadow data",
+        "E": "Netbus"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Shadowing, used for Unix password files hides the password hash. IF SHAWDOWING IS ACTIVE: ------------------------ If the shawdowing is active the /etc/passwd would look like this: root:x:0:1:0000:/: sysadm:x:0:0:administration:/usr/admin:/bin/rsh The password filed is substituted by \"x\". The /etc/shawdow file only readable by root will look similar to this: root:D943/sys34:5288:: : super user accounts : Cathy:masai1:5055:7:120 : all other users : The first field contains users id:the second contains the password(The pw will be NONE if logining in remotely is deactivated):the third contains a code of when the password was last changed:the fourth and the fifth contains the minimum and the maximum numbers of days for pw changes(Its rare that you will find this in the super user logins due to there hard to guess passwords)"
+    },
+    {
+      "id": 1368,
+      "question": "What is a commercial application of steganography that is used to identify pictures or verify their authenticity?",
+      "options": {
+        "A": "A MAC",
+        "B": "A digital checksum",
+        "C": "A MD5 hash",
+        "D": "A digital signature",
+        "E": "A watermark"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "A watermark is a commercial application of steganography that is used to identify pictures or verify its authenticity."
+    },
+    {
+      "id": 1369,
+      "question": "What are the basic questions that must be asked at the beginning of any investigation?(Choose all that apply)",
+      "options": {
+        "A": "Who",
+        "B": "Cost",
+        "C": "What",
+        "D": "When",
+        "E": "Where",
+        "F": "How",
+        "G": "Time frame H. Budget"
+      },
+      "answers": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "At the beginning of any investigation, an investigator must ask who, what, when, where, and how. Answering the questions will lead to the successful conclusion of the case."
+    },
+    {
+      "id": 1370,
+      "question": "Risk can be eliminated.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Risk can never be eliminated. It may be reduced or transferred to a third party through insurance, but will always remain in some form."
+    },
+    {
+      "id": 1371,
+      "question": "Employees are a greater risk to employers than outsiders. T/F(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Employees are a greater risk to employers than outsiders, because they possess two of the three items required to commit a crime: means and opportunity."
+    },
+    {
+      "id": 1372,
+      "question": "When an organization takes reasonable measures to ensure that it took precautions to protect its network and resources is called:",
+      "options": {
+        "A": "Reasonable Action",
+        "B": "Security Mandate",
+        "C": "Due Care",
+        "D": "Prudent Countermeasures"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Due care are the steps taken to show it has taken responsibility for its actions."
+    },
+    {
+      "id": 1373,
+      "question": "What two things below are associated with security policy?(Choose Two)",
+      "options": {
+        "A": "Support of upper management",
+        "B": "Support of department managers",
+        "C": "Are tactical in nature",
+        "D": "Are strategic in nature",
+        "E": "Must be developed after procedures",
+        "F": "Must be developed after guidelines"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Policies are written as a broad overview and require the support of upper management. After the development and approval of policies, guidelines and procedures may be written."
+    },
+    {
+      "id": 1374,
+      "question": "Total risk is equal to:(Choose All That Apply)",
+      "options": {
+        "A": "Threat",
+        "B": "Vulnerability",
+        "C": "Frequency",
+        "D": "Asset value",
+        "E": "Asset loss"
+      },
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "Total risk = asset value * vulnerability * threats"
+    },
+    {
+      "id": 1375,
+      "question": "Government data classifications include which of the following:(Choose three)",
+      "options": {
+        "A": "Open",
+        "B": "Unclassified",
+        "C": "Confidential",
+        "D": "Private",
+        "E": "Secret",
+        "F": "Top Secret"
+      },
+      "answers": [
+        "B",
+        "C",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "One of the most common systems used to classify information is the one developed within the US Department of Defense. These include: unclassified, sensitive, confidential, secret, and top secret."
+    },
+    {
+      "id": 1376,
+      "question": "Job rotation is important because:",
+      "options": {
+        "A": "It insures your employees are cross-trained.",
+        "B": "It increases job satisfaction.",
+        "C": "It reduces the opportunity for fraud"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Job rotation is tightly tied to the principle of least privilege. It is an effective security control."
+    },
+    {
+      "id": 1377,
+      "question": "Your co-worker is studying for the CISSP exam and has come to you with a question. What is ARP poisoning?",
+      "options": {
+        "A": "Flooding of a switched network",
+        "B": "A denial of service that uses the DNS death ping",
+        "C": "Turning of IP to MAC resolution",
+        "D": "Inserting a bogus IP and MAC address in the ARP table",
+        "E": "Modifying a DNS record"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "ARP poisoning is a masquerading attack where the attacker inserts a bogus IP and MAC address in a victims ARP table or into the table of a switch. This has the effect of redirecting traffic to the attacker and not to the intended computer."
+    },
+    {
+      "id": 1378,
+      "question": "What is the best description for CHAP Challenge Handshake Authentication Protocol?",
+      "options": {
+        "A": "Passwords are sent in clear text",
+        "B": "Passwords are not sent in clear text",
+        "C": "Passwords are not used, a digital signature is sent",
+        "D": "It is substandard to PAP",
+        "E": "It was used with PS2's and has been discontinued"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Passwords are not sent in clear text. The server performing the authentication sends a challenge value and the user types in the password. The password is used to encrypt the challenge value then is sent back to the authentication server."
+    },
+    {
+      "id": 1379,
+      "question": "CSMA/CD computers cannot communicate without a token.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "CSMA/CD computers do not use a token. It is the media access method used in Ethernet."
+    },
+    {
+      "id": 1380,
+      "question": "__________ sends out a message to all other computers indicating it is going to send out data.",
+      "options": {
+        "A": "CSMA/CD",
+        "B": "CSMA/CA",
+        "C": "CSMA/HB",
+        "D": "PPP",
+        "E": "SLIP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "CSMA/CA sends out a message to all other computers indicating it is going to send out data. CSMA/CA or token ring networking uses this approach to reduce the amount of data collisions."
+    },
+    {
+      "id": 1381,
+      "question": "Which of the following best describes ISDN BRI(Choose two)",
+      "options": {
+        "A": "2 B channels",
+        "B": "4 B channels",
+        "C": "23 B channels",
+        "D": "1 D channel",
+        "E": "2 D channels"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "type": "multiple",
+      "explanation": "ISDN BRI has 2 B and 1 D channels"
+    },
+    {
+      "id": 1382,
+      "question": "The top speed of ISDN BRI is 256 KBS.(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The top speed of ISDN BRI is 128 KBS. Its two primary channels are each capable of carrying 64 KBS so the combined top speed is 128 KBS."
+    },
+    {
+      "id": 1383,
+      "question": "Which of the following should NOT be implemented to protect PBX's?(Choose all that apply)",
+      "options": {
+        "A": "Change default passwords and configurations",
+        "B": "Make sure that maintenance modems are on 24/7",
+        "C": "Review telephone bill regularly",
+        "D": "Block remote calling after business hours",
+        "E": "Post PBX configuration and specs on the company website"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "type": "multiple",
+      "explanation": "Many vendors have maintenance modems that vendors can use to troubleshoot systems and provide updates. They should normally be turned off. Also information about the system should not be posted on the website and should be closely guarded."
+    },
+    {
+      "id": 1384,
+      "question": "Which of the following best describes the difference between a circuit based and application based firewall?",
+      "options": {
+        "A": "Application based is more flexible and handles more protocols",
+        "B": "Circuit based provides more security",
+        "C": "Application based builds a state table",
+        "D": "Circuit based looks at IP addresses and ports",
+        "E": "Circuit based firewalls are only found in Cisco routers"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Circuit based look only at IP address and ports, whereas application based dig much deeper into the packet. This makes it more secure."
+    },
+    {
+      "id": 1385,
+      "question": "_________ is the fraudulent use of telephone services.",
+      "options": {
+        "A": "Rolling",
+        "B": "Warzing",
+        "C": "Wardriving",
+        "D": "Wardialing",
+        "E": "Phreaking"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Phreaking is the fraudulent use of telephone services."
+    },
+    {
+      "id": 1386,
+      "question": "What is another name for a VPN?",
+      "options": {
+        "A": "Firewall",
+        "B": "Tunnel",
+        "C": "Packet switching",
+        "D": "Pipeline",
+        "E": "Circuit switching"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A VPN creates a secure tunnel through an insecure network."
+    },
+    {
+      "id": 1387,
+      "question": "Which of the following is a connection-orientated protocol?",
+      "options": {
+        "A": "IP",
+        "B": "UDP",
+        "C": "TCP",
+        "D": "ICMP",
+        "E": "SNMP",
+        "F": "TFTP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "TCP is a connection-orientated protocol."
+    },
+    {
+      "id": 1388,
+      "question": "Which of the following is not considered firewall technology?",
+      "options": {
+        "A": "Screened subnet",
+        "B": "Screened host",
+        "C": "Duel gateway host",
+        "D": "Dual homed host"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Duel gateway host is not considered firewall technology."
+    },
+    {
+      "id": 1389,
+      "question": "Which of the following can be used to defeat a call-back security system?",
+      "options": {
+        "A": "Call waiting",
+        "B": "Passive wiretapping",
+        "C": "Active wiretapping",
+        "D": "Brute force password attacks",
+        "E": "Call forwarding"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "Call forwarding can be used to bypass the call back feature and is considered a security risk."
+    },
+    {
+      "id": 1390,
+      "question": "Which type of network topology passes all traffic through all active nodes?",
+      "options": {
+        "A": "Broadband",
+        "B": "Star",
+        "C": "Baseband",
+        "D": "Token Ring"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Token ring passes all traffic through nodes."
+    },
+    {
+      "id": 1391,
+      "question": "The act of validating a user with a unique and specific identifier is called what?",
+      "options": {
+        "A": "Validation",
+        "B": "Registration",
+        "C": "Authentication",
+        "D": "Authorization",
+        "E": "Identification"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Authentication is the act of validating a user with a unique and specific identifier."
+    },
+    {
+      "id": 1392,
+      "question": "Why is fiber the most secure means of transmission?",
+      "options": {
+        "A": "High speed multiplexing",
+        "B": "Interception of traffic is more difficult because it is optically based",
+        "C": "Higher data rates make it more secure",
+        "D": "Multiplexing prevents traffic analysis",
+        "E": "Built-in fault tolerance"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Fiber is more secure because it is hard to tap into and gives off no EMI such as copper cabling."
+    },
+    {
+      "id": 1393,
+      "question": "The IAB defines which of the following as a violation of ethics?",
+      "options": {
+        "A": "Performing a DoS",
+        "B": "Downloading an active control",
+        "C": "Performing a penetration test",
+        "D": "Creating a virus",
+        "E": "Disrupting Internet communications"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": "The IAAB considers the Internet a privilege, not a right, and as such considers it unethical to purposely disrupt communications."
+    },
+    {
+      "id": 1394,
+      "question": "A chain of custody shows who ______ _________ and _________.(Choose three)",
+      "options": {
+        "A": "Who controlled the evidence",
+        "B": "Who transcribed the evidence",
+        "C": "Who validated the evidence",
+        "D": "Who presented the evidence",
+        "E": "Secured the evidence",
+        "F": "Obtained the evidence"
+      },
+      "answers": [
+        "A",
+        "E",
+        "F"
+      ],
+      "type": "multiple",
+      "explanation": "The chain of evidence shows who obtained the evidence, who secured the evidence, and who controlled the evidence."
+    },
+    {
+      "id": 1395,
+      "question": "Good forensics requires the use of a bit level copy?(True/False)",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Good forensics requires the use of a bit level copy. A bit level copy duplicates all information on the suspect's disk. This includes slack space and free space."
+    },
+    {
+      "id": 1396,
+      "question": "Which agency shares the task of investigating computer crime along with the FBI?",
+      "options": {
+        "A": "Secret Service",
+        "B": "CIA",
+        "C": "Department of justice",
+        "D": "Police force",
+        "E": "NSA"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Along with the FBI, the Secret Service has been given the authority to investigate computer crime."
+    },
+    {
+      "id": 1397,
+      "question": "This type of password recovery is considered more difficult and must work through all possible combinations of numbers and characters.",
+      "options": {
+        "A": "Passive",
+        "B": "Active",
+        "C": "Dictionary",
+        "D": "Brute force",
+        "E": "Hybrid"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Brute force cracking is considered more difficult and must work through all possible combinations of numbers and characters."
+    },
+    {
+      "id": 1398,
+      "question": "_______ are added to Linux passwords to increase their randomness.",
+      "options": {
+        "A": "Salts",
+        "B": "Pepper",
+        "C": "Grains",
+        "D": "MD5 hashes",
+        "E": "Asymmetric algorithms"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Salts are added to Linux passwords to increase their randomness. They are used to help insure that no two users have the same, hashed password."
+    },
+    {
+      "id": 1399,
+      "question": "The Linux root user password is typically kept in where?(Choose two)",
+      "options": {
+        "A": "etc/shadow",
+        "B": "cmd/passwd",
+        "C": "etc/passwd",
+        "D": "windows/system32",
+        "E": "var/sys",
+        "F": "var/password"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "type": "multiple",
+      "explanation": "The Linux root user password is typically kept in /etc/passwd or etc/shadow."
+    },
+    {
+      "id": 1400,
+      "question": "The goal of cryptanalysis is to ____________.",
+      "options": {
+        "A": "Determine the number of encryption permutations required",
+        "B": "Reduce the system overhead for a crypto-system",
+        "C": "Choose the correct algorithm for a specified purpose",
+        "D": "Forge coded signals that will be accepted as authentic",
+        "E": "Develop secure crypto-systems"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The goal of cryptanalysis is to forge coded signals that will be accepted as authentic."
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1201 - Q1250",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1201,
+      "question": "Non-Discretionary Access Control. A central authority determines what subjects can have access to certain objects based on the organizational security policy. The access controls may be based on?",
+      "options": {
+        "A": "The societies role in the organization.",
+        "B": "The individual's role in the organization.",
+        "C": "The group-dynamics as they relate to the individual's role in the organization.",
+        "D": "The group-dynamics as they relate to the master-slave role in the organization."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: An access control model defines a computer and/or network system's rules for user access to information resources. Access control models provide confidentiality, integrity and also provide accountability through audit trails. An audit trail documents the access of an object by a subject with a record of what operations were performed. Operations include: read, write, execute and own. Non-Discretionary Access Control is usually role-based, centrally administered with authorization decisions based on the roles individuals have within an organization (e.g. bank teller, loan officer, etc. in a banking model). A system's security administrator grants and/or revokes system privileges based on a user's role. This model works well for corporations with a large turnover of personnel."
+    },
+    {
+      "id": 1202,
+      "question": "An effective information security policy should not have which of the following characteristics?",
+      "options": {
+        "A": "Include separation of duties.",
+        "B": "Be designed with a short-to mid-term focus.",
+        "C": "Be understandable and supported by all stakeholders.",
+        "D": "Specify areas of responsibility and authority."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is not a very good practice, specially for the CISSP examination, when you plan and develop the security policy for your enterprise you should always plan it with a long term focus. The policy should be created to be there for a long time, and you should only make revisions of it every certain time to comply with changes or things that could have changed. In a security policy the duties should be well specified, be understandable by the people involved in it, and specify areas of responsibility."
+    },
+    {
+      "id": 1203,
+      "question": "Which of the following statements pertaining to secure information processing facilities is incorrect?",
+      "options": {
+        "A": "Walls should have an acceptable fire rating.",
+        "B": "Windows should be protected by bars.",
+        "C": "Doors must resist forcible entry.",
+        "D": "Location and type of fire suppression systems should be known."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The correct answer can be determined through elimination. We need to have an acceptable fire rating for the walls, this is well known for any CISSP aspirant, its like that because we need to contain the fire as much as we can. We also need resistant doors so unauthorized people do not enter easily using the force. The people also need to know about fire suppression systems to be able to deal with a fire situation inside the facilities. As you can see, We should not protect windows with bars, this is a bad practice because, in the case of a fire, the people cannot get out of the building through the windows."
+    },
+    {
+      "id": 1204,
+      "question": "Making sure that the data is accessible when and where it is needed is which of the following?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Integrity",
+        "C": "Acceptability",
+        "D": "Availability"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is one of the pillars of network security. We can say that the data is available if we can access to it when we need it. This what is referred in the question, Availability refers to get access to data when and where you need it. Confidentiality deals with encryption and data protection against third party interception. Integrity deals with digital signatures and assures that the data has not changed. Acceptability is not a related term."
+    },
+    {
+      "id": 1205,
+      "question": "Business continuity plan development depends most on?",
+      "options": {
+        "A": "Directives of Senior Management",
+        "B": "Business Impact Analysis (BIA)",
+        "C": "Scope and Plan Initiation",
+        "D": "Skills of BCP committee"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Business continuity is of course a vital activity. However, prior to the creation of a business continuity plan, it is essential to consider the potential impacts of disaster and to understand the underlying risks. It is now widely accepted that both business impact analysis and risk analysis are vital components of the business continuity process. However, many organizations are unsure of how to approach these important disciplines. BIA is important because it provides management level analysis by which an organization assesses the quantitative (financial) and qualitative (non-financial) impacts, effects and loss that might result if the organization were to suffer a Business Continuity E/I/C. The findings from a BIA are used to make decisions concerning Business Continuity Management strategy and solutions."
+    },
+    {
+      "id": 1206,
+      "question": "Which layer defines the X.25, V.35, X,21 and HSSI standard interfaces?",
+      "options": {
+        "A": "Transport layer",
+        "B": "Network layer",
+        "C": "Data link layer",
+        "D": "Physical layer"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Physical Layer is the layer that is concerned with the signaling of the message and the interface between the sender or receiver and the medium. The physical layer is generally defined by one of the standards bodies and carries a designation that indicates the characteristics of the connection. Among frequently used physical layers standards are EIA-232-D, ITU V.35, and some of the X series (X.21/X.21bis, for example)."
+    },
+    {
+      "id": 1207,
+      "question": "Related to information security, availability is the opposite of which of the following?",
+      "options": {
+        "A": "Delegation",
+        "B": "Distribution",
+        "C": "Documentation",
+        "D": "Destruction"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is the correct term, remember that Availability refers to get access to data when and where you need it. When we talk about destruction, we are saying the opposite, if your information is destroyed, you cant access to it neither when or where you want it. Delegation deals with permissions, distribution deals with deployment and documentation deals with information and how to´s. The term we are looking here is definitively \"destruction\"."
+    },
+    {
+      "id": 1208,
+      "question": "Which of the following is a disadvantage of a behavior-based ID system?",
+      "options": {
+        "A": "The activity and behavior of the users while in the networked system may not be static enough to effectively implement a behavior-based ID system.",
+        "B": "The activity and behavior of the users while in the networked system may be dynamic enough to effectively implement a behavior-based ID system.",
+        "C": "The activity and behavior of the users while in the networked system may not be dynamic enough to effectively implement a behavior-based ID system.",
+        "D": "The system is characterized by high false negative rates where intrusions are missed."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Behavior-based intrusion detection techniques assume that an intrusion can be detected by observing a deviation from normal or expected behavior of the system or the users. The model of normal or valid behavior is extracted from reference information collected by various means. The intrusion detection system later compares this model with the current activity. When a deviation is observed, an alarm is generated. In other words, anything that does not correspond to a previously learned behavior is considered intrusive. The high false alarm rate is generally cited as the main drawback of behavior-based techniques because the entire scope of the behavior of an information system may not be covered during the learning phase. Also, behavior can change over time, introducing the need for periodic online retraining of the behavior profile, resulting either in unavailability of the intrusion detection system or in additional false alarms. To get the most out of this kind of IDS you need to have very static behavior on your network and the user actions, this is because any new thing is considered dangerous, providing many false-positives but increased security. If you are in a very \"dynamic\" environment these kind of IDS system is not recommended."
+    },
+    {
+      "id": 1209,
+      "question": "Which of the following statements pertaining to VPN protocol standards is false?",
+      "options": {
+        "A": "L2TP is a combination of PPTP and L2F.",
+        "B": "L2TP and PPTP were designed for single point-to-point client to server communication.",
+        "C": "L2TP operates at the network layer.",
+        "D": "PPTP uses native PPP authentication and encryption services."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Layer 2 Tunnel Protocol (L2TP) is an emerging Internet Engineering Task Force (IETF) standard that combines the best features of two existing tunneling protocols: Cisco's Layer 2 Forwarding (L2F) and Microsoft's Point-to-Point Tunneling Protocol (PPTP). L2TP is an extension to the Point-to-Point Protocol (PPP), which is an important component for VPNs. VPNs allow users and telecommuters to connect to their corporate intranets or extranets. VPNs are cost-effective because users can connect to the Internet locally and tunnel back to connect to corporate resources. This not only reduces overhead costs associated with traditional remote access methods, but also improves flexibility and scalability. PPTP and L2TP are Layer 2 tunneling protocols; both encapsulate the payload in a Point-to-Point Protocol (PPP) frame to be sent across an intermediate network."
+    },
+    {
+      "id": 1210,
+      "question": "What is the most critical characteristic of a biometric identifying system?",
+      "options": {
+        "A": "Perceived intrusiveness",
+        "B": "Storage requirements",
+        "C": "Accuracy",
+        "D": "Reliability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The principle of biometrics is to use some unique characteristic to identify whether the person is who they say they are. Biometrics works by matching or verifying a person's unique traits with stored data in two categories: physiological characteristics and those that are behavioral. Physical indicators include iris, fingerprint, facial, or hand geometry. Behavior types are usually voiceprints, keystroke dynamics and handwritten signatures. Most biometric technologies require special hardware to convert analog measurements of signatures, voices, or patterns of fingerprints and palm prints, to digital measurement, which computers can read. The biggest characteristic and problem of biometric implementations today is the accuracy, we must see the level of accuracy before buying a solution, because the technology is not perfect at this time and it can be erroneous sometimes."
+    },
+    {
+      "id": 1211,
+      "question": "RAID Software can run faster in the operating system because neither use the hardware-level parity drives by?",
+      "options": {
+        "A": "Simple striping or mirroring.",
+        "B": "Hard striping or mirroring.",
+        "C": "Simple hamming code parity or mirroring.",
+        "D": "Simple striping or hamming code parity."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, if we do not use parity in our RAID implementation, like RAID 1 (Mirroring) or RAID 0 (Stripping) we can improve performance because the CPU does not need waste cycles to make the parity calculations. For example this can be achieved in Windows 2000 server through the use of RAID 0 (No fault tolerance, just stripping in 64kb chunks) or RAID 1 (Mirroring through a file system driver). This is not the case of RAID 5 that actually use parity to provide fault tolerance."
+    },
+    {
+      "id": 1212,
+      "question": "The guarantee that the message sent is the message received, and that the message was not intentionally or unintentionally altered is?",
+      "options": {
+        "A": "Integrity",
+        "B": "Confidentiality",
+        "C": "Availability",
+        "D": "Identity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Here are 2 definitions for Data Integrity: 1. The condition existing when data is unchanged from its source and has not been accidentally or maliciously modified, altered, or destroyed. 2. The condition in which data are identically maintained during any operation, such as transfer, storage, and retrieval. Availability refers to get access to data when and where you need it. Confidentiality deals with encryption and data protection against third party interception. Identity deals with authentication."
+    },
+    {
+      "id": 1213,
+      "question": "Which of the following is a preventive control?",
+      "options": {
+        "A": "Motion detectors",
+        "B": "Guard dogs",
+        "C": "Audit logs",
+        "D": "Intrusion detection systems"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is very obvious. Since we want to prevent something from happening, we can go out and buy some Guard dogs to make the job. You are buying them because you want to prevent something from happening. The intruder will see the dogs and will maybe go back, this prevents an attack, this dogs are a form of preventive control. Motion Detectors and IDS are real-time, Audit Logs are passive."
+    },
+    {
+      "id": 1214,
+      "question": "What uses a key of the same length as the message?",
+      "options": {
+        "A": "Running key cipher",
+        "B": "One-time pad",
+        "C": "Steganography",
+        "D": "Cipher block chaining"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The one time pad is the most secure, and one of the simplest of all cryptographic methods. It was invented and patented just after World War I by Gilbert Vernam (of AT&T) and Joseph Mauborgne (USA, later chief of the Signal Corps). The fundamental features are that the sender and receiver each have a copy of an encryption key, which is as long as the message to be encrypted, and each key is used for only one message and then discarded. That key must be random, that is without pattern, and must remain unknown to any attacker. In addition, the key must never be reused, otherwise the cipher becomes trivially breakable. One of its features it's the key length, it's the same as the message."
+    },
+    {
+      "id": 1215,
+      "question": "Which of the following protocols operates at the session layer (layer 5)?",
+      "options": {
+        "A": "RPC",
+        "B": "IGMP",
+        "C": "LDP",
+        "D": "SPX"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The socket method of network use is a message-based system, in which one process writes a message to another. This is a long way from the procedural model. The remote procedure call is intended to act like a procedure call, but to act across the network transparently. The process makes a remote procedure call by pushing its parameters and a return address onto the stack, and jumping to the start of the procedure. The procedure itself is responsible for accessing and using the network. After the remote execution is over, the procedure jumps back to the return address. The calling process then continues. RPC works at the Session layer of the OSI model."
+    },
+    {
+      "id": 1216,
+      "question": "Which of the following are NOT a countermeasure to traffic analysis?",
+      "options": {
+        "A": "Padding messages",
+        "B": "Eavesdropping",
+        "C": "Sending noise",
+        "D": "Covert channel analysis"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Lets do this with a elimination process. With padding messages you can countermeasure traffic analysis because you add garbage information to the message to let in end in a fixed length, this can confuse the analyzer. Sending noise on the communication line could also countermeasure analysis because the analyzer don't now how to differentiate between real information and noise. You can also covert channel analysis. Eavesdropping does not apply in this situation, its not considered a counter measure to traffic analysis."
+    },
+    {
+      "id": 1217,
+      "question": "Which of the following layers of the ISO/OSI model do packet filtering firewalls operate at?",
+      "options": {
+        "A": "Application layer",
+        "B": "Session layer",
+        "C": "Network layer",
+        "D": "Presentation layer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Packet filtering firewalls work at the network level of the OSI model, or the IP layer of TCP/IP. These firewalls are normally part of a router, which is a device that receives and forwards packets to networks. \"In a packet filtering firewall each packet is compared to a set of criteria before it is forwarded. Depending on the packet and the criteria, the firewall can drop the packet, forward it, or send a message to the originator.\" The criteria used to evaluate a packet include source, destination IP address, destination port, and protocol used. These types of firewalls are low in cost and don't have much of an impact on the network's performance."
+    },
+    {
+      "id": 1218,
+      "question": "A prolonged high voltage is?",
+      "options": {
+        "A": "Spike",
+        "B": "Blackout",
+        "C": "Surge",
+        "D": "Fault"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A surge is a prolonged spike, it occur when the power level rises above normal levels and then drop back to normal in less than one second. A Spike occurs when the power level rises above normal levels and stays there for more than 1 or 2 seconds.. A blackout is the total loss of power and a fault is the opposite of a Spike, it's a lowering in the voltage, its usually around one second. The surge is the most dangerous from the listed above."
+    },
+    {
+      "id": 1219,
+      "question": "How do the Information Labels of Compartmented Mode Workstation differ from the Sensitivity Levels of B3 evaluated systems?",
+      "options": {
+        "A": "Information Labels in CMW are homologous to Sensitivity Labels, but a different term was chosen to emphasize that CMW's are not described in the Orange Book.",
+        "B": "Information Labels contain more information than Sensitivity Labels, thus allowing more granular access decisions to be made.",
+        "C": "Sensitivity Labels contain more information than Information Labels because B3+ systems should store more sensitive data than workstations.",
+        "D": "Information Labels contain more information than Sensitivity Labels, but are not used by the Reference Monitor to determine access permissions."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The primary goal of the compartmented mode workstation (CMW) project was to articulate the security requirements that workstations must meet to process highly classified intelligence data. As a basis for the validity of the requirements developed, a prototype was implemented which demonstrated that workstations could meet the requirements in an operationally useful manner while still remaining binary compatible with off-the-shelf software. The security requirements not only addressed traditional security concerns but also introduced concepts in areas such as labeling and the use of a trusted window management system. The CMW labeling paradigm is based on associating two types of security labels with objects: sensitivity levels and information labels. Sensitivity levels describe the levels at which objects must be protected. Information labels are used to prevent data over classification and also provide a mechanism for associating with data those markings that are required for accurate data labeling, but which play no role in access control decisions. The use of a trusted window manager allows users to easily operate at multiple sensitivity levels and provides a convenient mechanism for communicating security information to users in a relatively unobtrusive manner. Information labels are not used by reference monitor, permissions are referenced in Sensibility labels."
+    },
+    {
+      "id": 1220,
+      "question": "In what security mode can a system be operating if all users have the clearance or authorization and need-to-know to all data processed within the system?",
+      "options": {
+        "A": "Dedicated security mode.",
+        "B": "System-high security mode.",
+        "C": "Compartmented security mode.",
+        "D": "Multilevel security mode."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: An information-system (IS) security mode of operation wherein each user with direct or indirect access to the system, its peripherals, remote terminals, or remote hosts, has all of the Following: (a) a valid security clearance for all information within the system; (b) formal access approval and signed nondisclosure agreements for all the information stored and/or processed (including all compartments, sub compartments, and/or special access programs); and (c) a valid need_to_know for all information contained within the IS. When in the dedicated security mode, a system is specifically and exclusively dedicated to and controlled for the processing of one particular type or classification of information, either for full-time operation or for a specified period of time."
+    },
+    {
+      "id": 1221,
+      "question": "What are the three conditions that must be met by the reference monitor?",
+      "options": {
+        "A": "Confidentiality, availability and integrity.",
+        "B": "Policy, mechanism and assurance.",
+        "C": "Isolation, layering and abstraction.",
+        "D": "Isolation, completeness and verifiability."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: These are three of the main characteristics of a Reference Monitor. You need Isolation, because it cant be of public access, the less access the better. It must have a sense of completeness to provide the whole information and process cycles. It must be verifiable, to provide security, audit and accounting functions."
+    },
+    {
+      "id": 1222,
+      "question": "While referring to Physical Security, what does Positive pressurization means?",
+      "options": {
+        "A": "The pressure inside your sprinkler system is greater than zero.",
+        "B": "The air goes out of a room when a door is opened and outside air does not go into the room.",
+        "C": "Causes the sprinkler system to go off.",
+        "D": "A series of measures that increase pressure on employees in order to make them more productive."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Positive Pressurization is a condition that exists when more air is supplied to a space than is exhausted, so the air pressure within that space is greater than that in surrounding areas. This condition can cause the situation mentioned above in the answer B, you can make air go out of a room but not enter to it from the outside."
+    },
+    {
+      "id": 1223,
+      "question": "The baseline sets certain thresholds for specific errors or mistakes allowed and the amount of these occurrences that can take place before it is considered suspicious?",
+      "options": {
+        "A": "Checkpoint level",
+        "B": "Ceiling level",
+        "C": "Clipping level",
+        "D": "Threshold level"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: According to CISSP documentation, this is the proper term, The Clipping level is used to determine suspicious occurrences that are a production of errors or mistakes. Checkpoint level is not a related term. Ceiling level is not related to baselines. Threshold level is attractive, but is not the correct term. Take a look at your CISSP documentation."
+    },
+    {
+      "id": 1224,
+      "question": "The most prevalent cause of computer center fires is which of the following?",
+      "options": {
+        "A": "AC equipment",
+        "B": "Electrical distribution systems.",
+        "C": "Heating systems",
+        "D": "Natural causes"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: According to static's, this is the greatest cause, Electrical distribution systems, specially those not installed through standards are very prone to fail and make fire inside places. AC equipment its not very prone to make fire. Natural causes it's a possibility but is definitively not the most prevalent cause. Heating systems are a very rare case of Fire beginners."
+    },
+    {
+      "id": 1225,
+      "question": "An offsite backup facility intended to operate an information processing facility, having no computer or communications equipment, but having flooring, electrical writing, air conditioning, etc. Is better known as a?",
+      "options": {
+        "A": "Hot site",
+        "B": "Duplicate processing facility",
+        "C": "Cold site",
+        "D": "Warm site"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A cold site has all the appropriate power requirements, and floor space to install the hardware and to enable you to recreate your computer environment, but does not provide the actual equipment. Many of the companies that provide hot sites also provide cold sites. It may be reasonable for your company to consider creating its won cold site if your company has floor space available in another location than the home site. They require much more outage than Hot sites before operations can be restored."
+    },
+    {
+      "id": 1226,
+      "question": "Which of the following are necessary components of a Multi-Level Security Policy?",
+      "options": {
+        "A": "Sensitivity Labels and a \"system high\" evaluation.",
+        "B": "Sensitivity Labels and Discretionary Access Control.",
+        "C": "Sensitivity Labels and Mandatory Access Control.",
+        "D": "Object Labels and a \"system high\" evaluation."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: First implemented in Military organizations (and I think even today it's implemented there only), this model was a significant improvement in terms of security policy implementation. This model made implementation of complex security policies very simple. It's specifications are present in the orange book from DoD. In this model, every object is assigned a sensitivity label. Also, every user is assigned a sensitivity label. If a user's sensitivity label is greater than or equal to the sensitivity label, he is allowed access to the object, otherwise, he is denied access. This methodology is used for creating a hierarchy of access. We can say that this method is used for partitioning the organization hierarchy horizontally. Multi-Level Security is considered a Mandatory Access Control method."
+    },
+    {
+      "id": 1227,
+      "question": "Which of the following, used to extend a network, has a storage capacity to store frames and act as a store-and-forward device?",
+      "options": {
+        "A": "Bridge",
+        "B": "Router",
+        "C": "Repeater",
+        "D": "Gateway"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A bridge is a network device that connects two similar network segments together. The primary function of a bridge is to keep traffic separated on both sites of the bridge. Traffic is allowed to pass through the bridge only if the transmission is intended for a station in the opposite side. Bridges operate at the data link layer of the OSI model an provides two different collision domains in Ethernet, but they only provide one broadcast domain for layer 3 an up of the OSI model. The bridge can store frames and forward them in many forms like Cut-through and Store and Forward."
+    },
+    {
+      "id": 1228,
+      "question": "Which of the following is addressed by Kerberos?",
+      "options": {
+        "A": "Authorization and authentication.",
+        "B": "Validation and integrity.",
+        "C": "Confidentiality and integrity."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well. Kerberos was created by MIT as a solution to these network security problems. The Kerberos protocol uses strong cryptography so that a client can prove its identity to a server (and vice versa) across an insecure network connection. After a client and server has used Kerberos to prove their identity, they can also encrypt (confidentiality) all of their communications to assure privacy and data integrity as they go about their business."
+    },
+    {
+      "id": 1229,
+      "question": "Access Control techniques do not include which of the following choices?",
+      "options": {
+        "A": "Relevant Access Controls",
+        "B": "Discretionary Access Control",
+        "C": "Mandatory Access Control",
+        "D": "Lattice Based Access Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Relevant Access Controls are not included as a Access Control Technique. Lattice-based access control models were developed in the early 1970s to deal with the confidentiality of military information. In the late 1970s and early 1980s, researchers applied these models to certain integrity concerns. Later, application of the models to the Chinese Wall policy, a confidentiality policy unique to the commercial sector, was demonstrated. Discretionary control is the most common type of access control mechanism implemented in computer systems today. The basis of this kind of security is that an individual user, or program operating on the user's behalf, is allowed to specify explicitly the types of access other users (or programs executing on their behalf) may have to information under the user's control. Discretionary Access control security differs from mandatory access control security in that it implements the access control decisions of the user. Mandatory controls are driven by the results of a comparison between the user's trust level or clearance and the sensitivity designation of the information."
+    },
+    {
+      "id": 1230,
+      "question": "Why is public key cryptography recommended for use in the process of securing facsimiles during transmission?",
+      "options": {
+        "A": "Keys are never transmitted over the network.",
+        "B": "Data compression decreases key change frequency.",
+        "C": "Key data is not recognizable from facsimile data.",
+        "D": "The key is securely passed to the receiving machine."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In this method of cryptography we use 2 keys, one to encrypt the data, and another to decrypt it. In Public Key Cryptography, the users have a public and a private key, the public key is of free distribution and is usually published in a directory, while the private keys must be keep secure. This allows the keys to pass in a secure fashion to the receiving machine, its because the public key is not confidential and can be send through a secure channel. You need to use a certification authority to make this kind of cryptography work."
+    },
+    {
+      "id": 1231,
+      "question": "Database views are not used to:",
+      "options": {
+        "A": "Implement referential integrity.",
+        "B": "Implement least privilege.",
+        "C": "To implement content-dependent access restrictions.",
+        "D": "Implement need-to-know."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A View is a display of one or more table shows that shows the table data. You can even retrieve part of the table and display the same to the user. Before a user is able to use a view, they must have both, permission on the view and all dependent objects. Views can also be used to implement security, for example you can create a view that only shows 3 of 5 columns contained in a table. Views are not used to provide integrity you can use constraints, rule or other components of database systems."
+    },
+    {
+      "id": 1232,
+      "question": "Which of the following is most concerned with personnel security?",
+      "options": {
+        "A": "Management controls",
+        "B": "Operational controls",
+        "C": "Technical controls",
+        "D": "Human resources controls."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Personnel security always have to deal more with Operational controls, Operational controls provide the guidelines and the correct procedures to implement the different operations. Management controls are usually used only by managers. Human resources and Technical Controls are not related to personal security as the question states. See the different control definitions in your CISSP documentation."
+    },
+    {
+      "id": 1233,
+      "question": "Which of the following statements pertaining to the Trusted Computer System Evaluation Criteria (TCSEC) is incorrect?",
+      "options": {
+        "A": "With TCSEC, functionality and assurance are evaluated separately.",
+        "B": "TCSEC provides a means to evaluate the trustworthiness of an information system.",
+        "C": "The Orange book does not cover networks and communications.",
+        "D": "Data base management systems are not covered by the TCSEC."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: TCSEC does not separate functionality and assurance from evaluation. It makes them a combined criteria. Just to remember, The Trusted Computer System Evaluation Criteria (TCSEC) is a collection of criteria used to grade or rate the security offered by a computer system product. The TCSEC is sometimes referred to as \"the Orange Book\" because of its orange cover (Orange Book deals with networks and communications). The current version is dated 1985 (DOD 5200.28-STD, Library No.S225,711) The TCSEC, its interpretations and guidelines all have different color covers, and are sometimes known as the \"Rainbow Series\". Database management is also covered in TCSEC. The Orange Book is used to evaluate whether a product contains the security properties the vendor claims it does and whether the product is appropriate for a specific application or function. The Orange Book is used to review the functionality, effectiveness, and assurance of a product during its evaluation, and it uses classes that were devised to address typical patterns of security requirements. - Shon Harris, \"CISSP All-in-One Exam Guide\", 3rd Ed, p 302."
+    },
+    {
+      "id": 1234,
+      "question": "Which of the following could illegally capture network user passwords?",
+      "options": {
+        "A": "Data diddling",
+        "B": "Sniffing",
+        "C": "Spoofing",
+        "D": "Smurfing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Sniffing is the action of capture the information going over the network. Most popular way of connecting computers is through Ethernet. Ethernet protocol works by sending packet information to all the hosts on the same circuit. The packet header contains the proper address of the destination machine. Only the machine with the matching address is suppose to accept the packet. A machine that is accepting all packets, no matter what the packet header says, is said to be in promiscuous mode. Because, in a normal networking environment, account and password information is passed along Ethernet in clear-text, it is not hard for an intruder to put a machine into promiscuous mode and by sniffing, compromise all the machines on the net by capturing password in an illegal fashion."
+    },
+    {
+      "id": 1235,
+      "question": "Which trusted facility management concept implies that two operators must review and approve the work of each other?",
+      "options": {
+        "A": "Two-man control",
+        "B": "Dual control",
+        "C": "Double control",
+        "D": "Segregation control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The proper term for this trusted facility management concept is \"Two-man Control\", it means that two people must work and approve each others work to provide increased security and eliminate the possibility of one of them to hurt the company. For example they can only make changes to the system if both of them authenticate with their retina at the same time at the data center and enter their secret password This kind of work fashion is only used in highly secure environments, its not very common."
+    },
+    {
+      "id": 1236,
+      "question": "There are more than 20 books in the Rainbow Series. Which of the following covers password management guidelines?",
+      "options": {
+        "A": "Orange Book",
+        "B": "Green Book",
+        "C": "Red Book",
+        "D": "Lavender Book"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The DoD Password Management Guideline was published at 12 April 1985, it is also called the \"Green Book\" because of the color of its cover. Here is the password definition according to it: \"A character string used to authenticate an identity. Knowledge of the password that is associated with a user ID is considered proof of authorization to use the capabilities associated with that user ID.\""
+    },
+    {
+      "id": 1237,
+      "question": "Which of the following is an ip address that is private? (i.e. reserved for internal networks, and not a valid address to use on the Internet)?",
+      "options": {
+        "A": "172.5.42.5",
+        "B": "172.76.42.5",
+        "C": "172.90.42.5",
+        "D": "172.16.42.5"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The IP address 172.16.42.5 is contained in a class B reserved network, IANA reserved the 172.16.0.0 through 172.31.255.255 networks for internal use, this network its not routable in Internet and its commonly used in intranets. Class B networks are used in medium-sized networks. In class B networks, the two high order bits are always 10, and then remaining bits are used to define 16.384 networks, each with as many as 65.534 hosts attached. Examples of valid Class B networks include Microsoft and Exxon."
+    },
+    {
+      "id": 1238,
+      "question": "How fast is private key cryptography compared to public key cryptography?",
+      "options": {
+        "A": "10 to 100 times faster.",
+        "B": "100 to 1000 times faster.",
+        "C": "1000 to 10000 times faster.",
+        "D": "10000 to 20000 times faster."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Since Private Key encryption (Symmetric) only has one key for encrypt-decrypt, you need to use an alternative way to pass the shared secret in a secure manner, in our days, it's usually done by telephone or some secure methods that not involve the channel you are trying to secure. Also, since you need one different key to encrypt-decrypt every connection, the number of keys gets huge in a little time, for example, if we have 10 users trying to communicate between themselves, we have 100 different encryption keys to manage. There is an advantage for Private key encryption, the encryption is very fast, about 1000 / 10000 times faster than asymmetric encryption."
+    },
+    {
+      "id": 1239,
+      "question": "The continual effort of making sure that the correct policies, procedures and standards are in place and being followed is described as what?",
+      "options": {
+        "A": "Due care",
+        "B": "Due concern",
+        "C": "Due diligence",
+        "D": "Due practice"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Due care means that a company did all that it could have reasonable done to try and prevent security breaches, and also took the necessary steps to ensure that if a security breach did take place, the damages were reduced because of the controls or countermeasures that existed. Due care means that a company practiced common sense and prudent management practices with responsible actions. Due diligence meants that the company properly investigated all of their possible weaknesses and vulnerabilities before carrying out any due care practices. The following list describes some of the actions required to show that due care is being properly practiced in a corporation: Adequate physical and logical access controls Adequate telecommunication security, which could require encryption Proper information, application, and hardware backups Disaster recovery and business continuity plans Periodic review, drills, tests, and improvement in disaster recovery and business continuity plans Properly informing employees of expected behavior and ramifications of not following these expectations Developing a security policy, standards, procedures, and guidelines Performing security awareness training Running updated antivirus software Periodically performing penetration test from outside and inside the network Implementing dial-back or preset dialing features on remote access applications Abiding by and updating external service level agreements (SLAs) Ensuring that downstream security responsibilities are being met Implementing measure that ensure software piracy is not taking place Ensuring that proper auditing and reviewing of those audit logs are taking place Conducting background checks on potential employees\" Pg. 616 Shon Harris: CISSP Certification All-in-One Exam Guide"
+    },
+    {
+      "id": 1240,
+      "question": "Which tape format type is mostly used for home/small office backups?",
+      "options": {
+        "A": "Quarter Inch Cartridge drives (QIC)",
+        "B": "Digital Linear Tapes (DLT)",
+        "C": "8mm tape",
+        "D": "Digital Audio Tape (DAT)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: QIC technology utilizates belt-driven dual-hub cartridges containing integral tape motion and guidance mechanisms, providing a rich spectrum of compatible solutions across a wide range of PC system platforms. QIC reliability is unsurpassed by any other removable storage technology. Reliability can be measured both in mean-time-between failure (MTBF) and, more practically, as a function of drive duty cycles. QIC has a worldwide installed base in excess of 15 million drives -- more than twice that of any alternate removable storage technology -- a level of acceptance that would have been unachievable without rock-solid reliability. QIC is the most common tape solution for SOHO."
+    },
+    {
+      "id": 1241,
+      "question": "In an organization, an Information Technology security function should:",
+      "options": {
+        "A": "Be a function within the information systems function of an organization.",
+        "B": "Report directly to a specialized business unit such as legal, corporate security or insurance.",
+        "C": "Be lead by a Chief Security Officer and report directly to the CEO.",
+        "D": "Be independent but report to the Information Systems function."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is one of the best practices because its not good to be lead and report to the same person, in that case, that person could take possession of everything that is happening and hurt the enterprise, we can't let that to happen with security concerns. The best practice is to always be lead by a different person that the one you report to, this can be checked in real life. An advice, always try to report to the highest person you can inside the company."
+    },
+    {
+      "id": 1242,
+      "question": "Who of the following is responsible for ensuring that proper controls are in place to address integrity, confidentiality, and availability of IT systems and data?",
+      "options": {
+        "A": "Business and functional managers.",
+        "B": "IT Security practitioners.",
+        "C": "System and information owners.",
+        "D": "Chief information officer."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This is true, the people who own the information and the equipment are the ones who need to ensure they are making everything to get integrity, confidentiality and availability. The security professionals can develop policies and show how to keep the environment secure, but it depends on the owners of the actual data to achieve the security."
+    },
+    {
+      "id": 1243,
+      "question": "The act of requiring two of the three factors to be used in the authentication process refers to?",
+      "options": {
+        "A": "Two-Factor Authentication",
+        "B": "One-Factor Authentication",
+        "C": "Bi-Factor Authentication",
+        "D": "Double Authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Two-Factor Authentication is a security process that confirms user identities using two distinctive factors-something you know, such as a Personal Identification Number (PIN), and something you have, such as a smart card or token. The overall strength of Two-Factor Authentication lies in the combination of both factors, something you know and something you have."
+    },
+    {
+      "id": 1244,
+      "question": "This type of backup management provides a continuous on-line backup by using optical or tape \"jukeboxes\", similar to WORMs, (Write Once, Read Many)",
+      "options": {
+        "A": "Hierarchical Storage Management (HSM).",
+        "B": "Hierarchical Resource Management (HRM).",
+        "C": "Hierarchical Access Management (HAM).",
+        "D": "Hierarchical Instance Management (HIM)."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Hierarchical Storage Management originated in the mainframe world where it was used to minimize storage costs. The HSM name signifies that the software has the intelligence to move files along a hierarchy of storage devices that are ranked in terms of cost per megabyte of storage, speed of storage and retrieval, and overall capacity limits. Files are migrated along the hierarchy to less expensive forms of storage based on rules tied to the frequency of data access. File migration and retrieval is transparent to users. Two major factors, data access response time and storage costs determine the appropriate combination of storage devices used in HSM. A typical three tier strategy may be composed of hard drives as primary storage on the file servers, rewritable optical as the secondary storage type, and tape as the final tertiary storage location. If faster access is required, a hard drive can be considered as an alternative to optical for secondary storage, and WORM (Write Once, Read Many) optical can also be implemented, in place of tape, as the final storage destination."
+    },
+    {
+      "id": 1245,
+      "question": "Which of the following elements is not included in a Public Key Infrastructure (PKI)?",
+      "options": {
+        "A": "Timestamping",
+        "B": "Lightweight Directory Access Protocol (LDAP)",
+        "C": "Certificate revocation",
+        "D": "Internet Key Exchange (IKE)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Public key cryptography is one mechanism that is often used to fulfill the security requirements necessary to conduct electronic transactions over public networks. PKI (public key infrastructure) and cryptography based solutions are taking the lead in secure e-commerce. PKI addresses nonrepudiation of identity using a dual-key encryption system that allows users to uniquely sign documents with a digital signature. Public key cryptography uses pairs of keys, each pair consisting of one public key and one private key. Information encrypted with one key in the pair can only be decrypted with the other key. LDAP is issued to bring user information and Timestamping to track changes over time. PKI also relies on certificated and CRL (Certificate Revocation list) to discard compromised, expired digital certificates."
+    },
+    {
+      "id": 1246,
+      "question": "Which of the following best corresponds to the type of memory addressing where the address location that is specified in the program instruction contains the address of the final desired location?",
+      "options": {
+        "A": "Direct addressing",
+        "B": "Indirect addressing",
+        "C": "Indexed addressing",
+        "D": "Program addressing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: An addressing mode found in many processors' instruction sets where the instruction contains the address of a memory location which contains the address of the operand (the \"effective address\") or specifies a register which contains the effective address. Indirect addressing is often combined with pre- or post- increment or decrement addressing, allowing the address of the operand to be increased or decreased by one (or some specified number) either before or after using it."
+    },
+    {
+      "id": 1247,
+      "question": "Creation and maintenance of intrusion detection systems and processes for the following is one of them identify it:",
+      "options": {
+        "A": "Event nonrepudiation",
+        "B": "Event notification",
+        "C": "Netware monitoring",
+        "D": "Guest access"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There is not much to explain or comment in here, when you administer an IDS system you have to deal with the maintenance and creation of event notification processes, this have to be reviewed every certain time. This is a well known topic for any Intrusion detection system administrator. This notifications will save your life when your network is being attacked and you get real time notifications that will allow you to shut down your external interface before the attacker gets what he was looking for."
+    },
+    {
+      "id": 1248,
+      "question": "Which of the following is true related to network sniffing?",
+      "options": {
+        "A": "Sniffers allow an attacker to monitor data passing across a network.",
+        "B": "Sniffers alter the source address of a computer to disguise and exploit weak authentication methods,",
+        "C": "Sniffers take over network connections.",
+        "D": "Sniffers send IP fragments to a system that overlap with each other."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Sniffing is the action of capture / monitor the traffic going over the network. Because, in a normal networking environment, account and password information is passed along Ethernet in clear-text, it is not hard for an intruder to put a machine into promiscuous mode and by sniffing, compromise all the machines on the net by capturing password in an illegal fashion."
+    },
+    {
+      "id": 1249,
+      "question": "Which of the following protocols is not implemented at the Internet layer of the TCP/IP protocol model?",
+      "options": {
+        "A": "User datagram protocol (UDP)",
+        "B": "Internet protocol (IP)",
+        "C": "Address resolution protocol (ARP)",
+        "D": "Internet control message protocol (ICMP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: UDP (User Datagram Protocol) is a communications method (protocol) that offers a limited amount of service when messages are exchanged between computers in a network that uses the Internet Protocol (IP). UDP is an alternative to the Transmission Control Protocol (TCP) and, together with IP, is sometimes referred to as UDP/IP. Like the Transmission Control Protocol, UDP uses the Internet Protocol to actually get a data unit (called a datagram) from one computer to another. Unlike TCP, however, UDP does not provide the service of dividing a message into packets (datagrams) and reassembling it at the other end. Specifically, UDP doesn't provide sequencing of the packets that the data arrives in. UDP is implemented at the Transport layer of the TCP/IP protocol model."
+    },
+    {
+      "id": 1250,
+      "question": "Which of the following is used to help business units understand the impact of a disruptive event?",
+      "options": {
+        "A": "A risk analysis.",
+        "B": "A business impact assessment.",
+        "C": "A vulnerability assessment.",
+        "D": "A disaster recovery plan."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A Business impact assessment can provide information in combination with the BIA to the different business units about how can an attack impact or disrupt the business. Every disaster recovery plan should include an study containing a BIA and a Business impact assessment to better understand how is going to be in the case that a business continuity disruptive event takes place."
+    }
+  ]
+}

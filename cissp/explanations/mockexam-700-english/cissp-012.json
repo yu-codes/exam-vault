@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q551 - Q600",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 551,
+      "question": "Which RAID implementation stripes data and parity at block level across all the drives?",
+      "options": {
+        "A": "RAID level 1",
+        "B": "RAID level 2",
+        "C": "RAID level 4",
+        "D": "RAID level 5"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "With RAID level 5 data are written in disk sector units to all drives. Parity is written to all drives also, which ensures there is no single point of failure. Incorrect Answers: A: RAID Level 1 does not use a parity bit. It uses mirroring of drives. B: RAID Level 2 does not use block level parity. It uses hamming code parity. C: RAID level 4 uses byte-level parity."
+    },
+    {
+      "id": 552,
+      "question": "Which RAID level concept is considered more expensive and is applied to servers to create what is commonly known as server fault tolerance?",
+      "options": {
+        "A": "RAID level 0",
+        "B": "RAID level 1",
+        "C": "RAID level 2",
+        "D": "RAID level 5"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RAID level 1 is mirroring of drives. Data are written to two drives at once. 50% of the disks are used for fault tolerance. Incorrect Answers: A: RAID level 0, data striping, provides no fault tolerance. C: RAID Level 2 uses parity for fault tolerance, but is not used in production today. D: RAID level 5 uses one parity bit for fault tolerance. With three drives, the minimum amount, 33% of the disks are for fault tolerance."
+    },
+    {
+      "id": 553,
+      "question": "Which backup method only copies files that have been recently added or changed and also leaves the archive bit unchanged?",
+      "options": {
+        "A": "Full backup method",
+        "B": "Incremental backup method",
+        "C": "Fast backup method",
+        "D": "Differential backup method"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The Differential backup method backs up the files that have been modified since the last full backup. The differential process does not change the archive bit value. Incorrect Answers: A: During a full backup all data are backed up and saved to some type of storage media, and the archive bit is cleared. B: The Incremental backup method backs up all the files that have changed since the last full or incremental backup and sets the archive bit to 0. C: There is no backup method named fast backup method."
+    },
+    {
+      "id": 554,
+      "question": "Which of the following items is NOT primarily used to ensure integrity?",
+      "options": {
+        "A": "Cyclic Redundancy Check (CRC)",
+        "B": "Redundant Array of Inexpensive Disks (RAID) system",
+        "C": "Hashing Algorithms",
+        "D": "The Biba Security model"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RAID can be used for fault tolerance, but it does not provide integrity. Incorrect Answers: A: Cyclic redundancy checks (CRCs) act as an integrity tool. C: Hash totals act as an integrity tool. D: The Biba integrity security model focuses on integrity."
+    },
+    {
+      "id": 555,
+      "question": "Which backup method does not reset the archive bit on files that are backed up?",
+      "options": {
+        "A": "Full backup method",
+        "B": "Incremental backup method",
+        "C": "Differential backup method",
+        "D": "Additive backup method"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Differential backup method backs up the files that have been modified since the last full backup. The differential process does not change the archive bit value. Incorrect Answers: A: During a full backup all data are backed up and saved to some type of storage media, and the archive bit is cleared. B: The Incremental backup method backs up all the files that have changed since the last full or incremental backup and sets the archive bit to 0. D: There is no backup method named the Additive backup method."
+    },
+    {
+      "id": 556,
+      "question": "Which of the following defines when RAID separates the data into multiple units and stores it on multiple disks?",
+      "options": {
+        "A": "striping",
+        "B": "scanning",
+        "C": "screening",
+        "D": "shadowing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "When data are written across all drives, the technique of striping is used. This activity divides and writes the data over several drives. Incorrect Answers: B: Scanning is not a concept used in relation to RAID. C: Screening is not a concept used in relation to RAID. D: Shadowing is not a concept used in relation to RAID."
+    },
+    {
+      "id": 557,
+      "question": "Which of the following is most concerned with personnel security?",
+      "options": {
+        "A": "Management controls",
+        "B": "Operational controls",
+        "C": "Technical controls",
+        "D": "Human resources controls"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "On the CISSP exam you can see control categories broken down into administrative, technical, and physical categories and the categories outlined by NIST, which are management, technical, and operational. You need to be familiar with both ways of categorizing control types. According to the NIST control categories, Personnel Security is an Operational control. Incorrect Answers: A: Personnel security is not a management control. C: Personnel security is not a technical control. D: Human resources controls are not a defined control category although there are human resource controls listed in the administrative control category."
+    },
+    {
+      "id": 558,
+      "question": "Which of the following backup sites is the most effective for disaster recovery?",
+      "options": {
+        "A": "Time brokers",
+        "B": "Hot sites",
+        "C": "Cold sites",
+        "D": "Reciprocal Agreement"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Hot sites are a good choice for a company that needs to ensure a site will be available for it as soon as possible. The only missing resources from a hot site are usually the data. A hot site is a facility that is leased or rented and is fully configured and ready to operate within a few hours. Incorrect Answers: A: A time brokers backup solution would be less effective compared to hot or cold sites. C: A cold site is less effective than a hot site since the cold site is a leased or rented facility that supplies the basic environment, electrical wiring, air conditioning, plumbing, and flooring, but none of the equipment or additional services. A cold site is essentially an empty data center. D: Reciprocal agreements are less effective compared to hot or cold sites, since reciprocal agreements are Enforceable. This means that although company A said company B could use its facility when needed, when the need arises, company A legally does not have to fulfill this promise."
+    },
+    {
+      "id": 559,
+      "question": "Which of the following is a transaction redundancy implementation?",
+      "options": {
+        "A": "On-site mirroring",
+        "B": "Electronic Vaulting",
+        "C": "Remote Journaling",
+        "D": "Database Shadowing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "On-site mirroring is a transaction redundancy solution. Incorrect Answers: B: Electronic vaulting is one type of transaction redundancy solution. Electronic vaulting makes copies of files as they are modified and periodically transmits them to an offsite backup site. C: Remote journaling is one type of transaction redundancy solution. Remote journaling is a method of transmitting data offsite. It usually only includes moving the journal or transaction logs to the offsite facility, not the actual files. These logs contain the deltas (changes) that have taken place to the individual files. If and when data are corrupted and need to be restored, the bank can retrieve these logs, which are used to rebuild the lost data. D: Database Shadowing is one type of transaction redundancy solution. It is a mirroring technology used in databases, in which information is written to at least two hard drives for the purpose of redundancy."
+    },
+    {
+      "id": 560,
+      "question": "A site that is owned by the company and mirrors the original production site is referred to as a _______?",
+      "options": {
+        "A": "Hot site.",
+        "B": "Warm Site.",
+        "C": "Reciprocal site.",
+        "D": "Redundant Site."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A redundant site is owned by the company and is a mirror of the original production environment. Incorrect Answers: A: A hot site is not owned by the company. A hot site is leased or rented. B: A warm site is a leased or rented facility. It is not owned by the company. C: A reciprocal site is owned by another company, and is set up through a reciprocal agreement. A reciprocal agreement is one in which a company promises another company it can move in and share space if it experiences a disaster, and vice versa."
+    },
+    {
+      "id": 561,
+      "question": "Which of the following is the most critical item from a disaster recovery point of view?",
+      "options": {
+        "A": "Data",
+        "B": "Hardware/Software",
+        "C": "Communication Links",
+        "D": "Software Applications"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Data loss has the most negative impact on business functions. Data loss often lead to business failure. Incorrect Answers: B: Software can be reinstalled and hardware can replaced, and are therefore less critical compared to loss of data. C: Communication links can quite easily put back again, compared to loss of data. D: Loss of applications is Critical as they can be reinstalled."
+    },
+    {
+      "id": 562,
+      "question": "Which of the following statements pertaining to RAID technologies is incorrect?",
+      "options": {
+        "A": "RAID-5 has a higher performance in read/write speeds than the other levels.",
+        "B": "RAID-3 uses byte-level striping with dedicated parity.",
+        "C": "RAID-0 relies solely on striping.",
+        "D": "RAID-4 uses dedicated parity."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID-0 is faster than RAID-5 since RAID-0 is striping without parity, while RAID-5 uses parity which makes it slower. Incorrect Answers: B: RAID-3 uses byte-level parity. The Data striping over all drives and parity data held on one drive. If a drive fails, it can be reconstructed from the parity drive. C: With RAID-0 the data striped over several drives. No redundancy or parity is involved. If one volume fails, the entire volume can be unusable. It is used for performance only. D: RAID-4 uses block-level parity. The Data striping over all drives and parity data held on one drive. If a drive fails, it can be reconstructed from the parity drive."
+    },
+    {
+      "id": 563,
+      "question": "A contingency plan should address:",
+      "options": {
+        "A": "Potential risks.",
+        "B": "Residual risks.",
+        "C": "Identified risks.",
+        "D": "All answers are correct."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Contingency plans are developed as a result of a risk being identified. Contingency plans are pre-defined actions plans that can be implemented if identified risks actually occur. One type of identified risk is a residual risk. Residual risks are those risks that are expected to remain after implementing the planned risk response, as well as those that have been deliberately accepted. A contingency plan should address the risks found during risk assessment. Risk assessment includes both the identification of potential risk and the evaluation of the potential impact of the risk. Incorrect Answers: A: Contingency plans should not just address potential risks. It should address identified risks and residual risks as well. B: Contingency plans should not just address residual risks. It should address identified risks and potential risks as well. C: Contingency plans should not just address identified risks. It should address potential risks and residual risks as well."
+    },
+    {
+      "id": 564,
+      "question": "Which of the following focuses on sustaining an organization's business functions during and after a disruption?",
+      "options": {
+        "A": "Business continuity plan",
+        "B": "Business recovery plan",
+        "C": "Continuity of operations plan",
+        "D": "Disaster recovery plan"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A business continuity plan (BCP) contains strategy documents that provide detailed procedures that ensure critical business functions are maintained. Incorrect Answers: B: A recovery plan is focused on what actions to take after the disruption, while a Business continuity plan also includes procedures to keep critical business functions working during a disruption. C: The plan that keeps the business functions operating during a disruption is not named continuity of operations plan; it is called a Business continuity plan. D: A Disaster recovery plan is a plan developed to help a company recover from a disaster. It does not include operations to sustain business functions during a disruption."
+    },
+    {
+      "id": 565,
+      "question": "Which of the following enables the person responsible for contingency planning to focus risk management efforts and resources in a prioritized manner only on the identified risks?",
+      "options": {
+        "A": "Risk assessment",
+        "B": "Residual risks",
+        "C": "Security controls",
+        "D": "Business units"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A risk assessment is a critical part of the disaster recovery planning process. In disaster recovery planning, once you've completed a business impact analysis (BIA), the next step is to perform a risk assessment. Once risks and vulnerabilities have been identified, i.e. after the risk assessment has been completed, four types of defensive responses can be considered: Protective measures Mitigation measures Recovery activities Contingency plans Incorrect Answers: B: Contingency plans depend on risk assessments, not on residual risks. The residual risk is remaining risk after the security controls have been applied. C: Contingency plans depend on risk assessments, not on Security controls. D: Contingency plans depend on risk assessments, not on Business units."
+    },
+    {
+      "id": 566,
+      "question": "A Business Continuity Plan should be tested:",
+      "options": {
+        "A": "Once a month.",
+        "B": "At least twice a year.",
+        "C": "At least once a year.",
+        "D": "At least once every two years."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Once a continuity plan is developed, it actually has to be put into action. The people who are assigned specific tasks need to be taught and informed how to fulfill those tasks, and dry runs must be done to walk people through different situations. The drills should take place at least once a year, and the entire program should be continually updated and improved. Incorrect Answers: A: Once a month would be too much. The Business Continuity Plan should be tested at least once a year. B: The Business Continuity Plan should be tested at least once a year. Twice a year is not necessary. D: The Business Continuity Plan should be tested at least once a year. Once every two years is not recommended."
+    },
+    {
+      "id": 567,
+      "question": "Which of the following teams should NOT be included in an organization's contingency plan?",
+      "options": {
+        "A": "Damage assessment team",
+        "B": "Hardware salvage team",
+        "C": "Tiger team",
+        "D": "Legal affairs team"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A Tiger team is a team of attackers of a network. A Tiger team would never be part in a contingency plan. Note: The contingency plan consists of a business continuity plan (BCP) and a Disaster Recovery Plan (DRP). The teams necessary for the DRP include: Damage assessment team The damage assessment team is responsible for determining the disaster's cause and the amount of damage that has occurred to organizational assets. Legal Affairs Team The legal affairs team deals with all legal issues immediately following the disaster and during the disaster recovery. Hardware Salvage team The hardware salvage team recovers all assets at the disaster location and ensures that the primary site returns to normal. The hardware salvage team manages the cleaning of equipment, the rebuilding of the original facility, and identifies any experts to employ in the recovery process."
+    },
+    {
+      "id": 568,
+      "question": "Which of the following statements pertaining to the maintenance of an IT contingency plan is incorrect?",
+      "options": {
+        "A": "The plan should be reviewed at least once a year for accuracy and completeness.",
+        "B": "The Contingency Planning Coordinator should make sure that every employee gets an up-to-date copy of the plan.",
+        "C": "Strict version control should be maintained.",
+        "D": "Copies of the plan should be provided to recovery personnel for storage offline at home and office."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The Contingency Planning Coordinator is not responsible to distribute the contingency plan to all employees. Incorrect Answers: A: Once a continuity plan is developed, it actually has to be put into action. The people who are assigned specific tasks need to be taught and informed how to fulfill those tasks, and dry runs must be done to walk people through different situations. The drills should take place at least once a year, and the entire program should be continually updated and improved. C: Version control is critical. A strict version control of the IT contingency should be kept. D: There should be two or three copies of these plans. One copy may be at the primary location, but the other copies should be at other locations in case the primary facility is destroyed."
+    },
+    {
+      "id": 569,
+      "question": "Which of the following is less likely to accompany a contingency plan, either within the plan itself or in the form of an appendix?",
+      "options": {
+        "A": "Contact information for all personnel.",
+        "B": "Vendor contact information, including offsite storage and alternate site.",
+        "C": "Equipment and system requirements lists of the hardware, software, firmware and other resources required to support system operations.",
+        "D": "The Business Impact Analysis."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Contact information for all personnel is not required. Contact information is required for specific vendors, emergency agencies, offsite facilities, and any other entity that may need to be contacted in a time of need. Incorrect Answers: B: Contact information is required for specific vendors, emergency agencies, offsite facilities, and any other entity that may need to be contacted in a time of need. C: Documentation of the current system must be incorporated in the contingency plan. This documentation should include equipment and system requirements lists of the hardware, software, firmware and other resources required to support system operations. D: A vital part of a contingency plan is to conduct the business impact analysis (BIA)."
+    },
+    {
+      "id": 570,
+      "question": "Which of the following server contingency solutions offers the highest availability?",
+      "options": {
+        "A": "System backups",
+        "B": "Electronic vaulting/remote journaling",
+        "C": "Redundant arrays of independent disks (RAID)",
+        "D": "Load balancing/disk replication"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "With load balancing, often through clustering, each system takes a part of the processing load, and if one system fails there is an automatic failover to the other systems which continue to work. This guarantees a high availability of the service. Incorrect Answers: A: Systems backups only protects against data loss. It does not product a failure of server. B: Electronic vaulting and remote journaling are transaction redundancy solutions. It protects the system by copying transaction information to a remote location. In case of server failure, the database can be restored, but it would require a rebuild of the database. C: RAID protects against hard disk failures, but it does not protect against other type of server failures."
+    },
+    {
+      "id": 571,
+      "question": "What assesses potential loss that could be caused by a disaster?",
+      "options": {
+        "A": "The Business Assessment (BA)",
+        "B": "The Business Impact Analysis (BIA)",
+        "C": "The Risk Assessment (RA)",
+        "D": "The Business Continuity Plan (BCP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Business Impact Analysis assesses the likelihood that each threat will actually occur and the impact those occurrences will have on the business. Incorrect Answers: A: The Business Assessment is an analysis that identifies the resources that are critical to an organization’s ongoing viability and the threats posed to those resources. A Business Assessment does analyze the potential loss of a disaster. C: A risk assessment includes the identification of potential risk and the evaluation of the potential impact of the risk. A risk assessment does assess the potential loss of a disaster. D: A business continuity plan (BCP) contains strategy documents that provide detailed procedures that ensure critical business functions are maintained. However, a BCP analyses the potential loss of a disaster."
+    },
+    {
+      "id": 572,
+      "question": "Which of the following item would best help an organization to gain a common understanding of functions that are critical to its survival?",
+      "options": {
+        "A": "A risk assessment",
+        "B": "A business assessment",
+        "C": "A disaster recovery plan",
+        "D": "A business impact analysis"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A BIA (business impact analysis) is considered a functional analysis, in which a team collects data through interviews and documentary sources; documents business functions, activities, and transactions; develops a hierarchy of business functions; and finally applies a classification scheme to indicate each individual function’s criticality level. Incorrect Answers: A: A risk assessment includes the identification of potential risk and the evaluation of the potential impact of the risk. A risk assessment is a functional analysis of critical business functions. B: A Business Assessment is a functional analysis of critical business functions. The Business Assessment is an analysis that identifies the resources that are critical to an organization’s ongoing viability and the threats posed to those resources. C: A disaster recovery plan focuses on how to recover various IT mechanisms after a disaster. A disaster recovery plan is a functional analysis of critical business functions."
+    },
+    {
+      "id": 573,
+      "question": "What can be defined as the maximum acceptable length of time that elapses before the unavailability of the system severely affects the organization?",
+      "options": {
+        "A": "Recovery Point Objectives (RPO)",
+        "B": "Recovery Time Objectives (RTO)",
+        "C": "Recovery Time Period (RTP)",
+        "D": "Critical Recovery Time (CRT)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The recovery time objective (RTO) is the targeted duration of time and a service level within which a business process must be restored after a disaster (or disruption) in order to avoid unacceptable consequences associated with a break in business continuity. Incorrect Answers: A: A recovery point objective is the maximum targeted period in which data might be lost from an IT service due to a major incident. C: Recovery Time Period (RTP) is not a concept used within the CISSP framework. D: Critical Recovery Time (CRT) is not a concept used within the CISSP framework."
+    },
+    {
+      "id": 574,
+      "question": "A business continuity plan should list and prioritize the services that need to be brought back after a disaster strikes. Which of the following services is more likely to be of primary concern in the context of what your Disaster Recovery Plan would include?",
+      "options": {
+        "A": "Marketing/Public relations",
+        "B": "Data/Telecomm/IS facilities",
+        "C": "IS Operations",
+        "D": "Facilities security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "One of the most important elements of the disaster recovery plan is the selection of alternate processing sites to be used when the primary sites are unavailable. To get the alternate site operational it would need an information technology system similar to equal to the system running on the primary. This would include telecommunication facilities such as internet access. We would also need the data from the primary site to get the alternate site up and running. Incorrect Answers: A: Marketing/Public relations are not the primary concern. Most important is to get an alternate processing site running. C: At a disaster the Information Systems would be disrupted. To get the information systems up and running again we would need an alternate processing site, which requires the data, telecomm, and information systems facilities. D: Facility security relations are not the primary concern. Most important is to get an alternate processing site running."
+    },
+    {
+      "id": 575,
+      "question": "Which of the following rules pertaining to a Business Continuity Plan/Disaster Recovery Plan is incorrect?",
+      "options": {
+        "A": "In order to facilitate recovery, a single plan should cover all locations.",
+        "B": "There should be requirements to form a committee to decide a course of action. These decisions should be made ahead of time and incorporated into the plan.",
+        "C": "In its procedures and tasks, the plan should refer to functions, not specific individuals.",
+        "D": "Critical vendors should be contacted ahead of time to validate equipment can be obtained in a timely manner."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A single plan is Always the best idea. Depending on the size of your organization and the number of people involved in the DRP effort, it may be a good idea to maintain multiple types of Recovery Plans documents. Incorrect Answers: B: A Business Continuity Plan committee needs to be put together. This committee decides course of actions that are implemented in the Business Continuity Plan. C: Business continuity planning is focused on keeping business functions uninterrupted when a disaster strikes. D: The Business Continuity Plan risk assessment should include continuity risks due to outsourced vendors and suppliers. Critical vendors should be contacted to ensure that necessary equipment can be obtained."
+    },
+    {
+      "id": 576,
+      "question": "The first step in the implementation of the contingency plan is to perform:",
+      "options": {
+        "A": "A firmware backup",
+        "B": "A data backup",
+        "C": "An operating systems software backup",
+        "D": "An application software backup"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The first priority of a contingency plan is to preserve business data. A first step to protect the data is make a backup of it. Incorrect Answers: A: A firmware backup is of lesser priority compared to a data backup. C: An operating systems backup is of lesser priority compared to a data backup. D: An application software backup is of lesser priority compared to a data backup."
+    },
+    {
+      "id": 577,
+      "question": "The MOST common threat that impacts a business's ability to function normally is:",
+      "options": {
+        "A": "Power Outage",
+        "B": "Water Damage",
+        "C": "Severe Weather",
+        "D": "Labor Strike"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "As power outages are more common than other threats, even the most basic disaster recovery plan contains provisions to deal with the threat of a short power outage. Incorrect Answers: B: Water damage is much less frequent compared to a power outage. C: Severe weather causing a threat is much less frequent compared to a power outage. D: A labor strike causing a threat is much less frequent compared to a power outage."
+    },
+    {
+      "id": 578,
+      "question": "Failure of a contingency plan is usually:",
+      "options": {
+        "A": "A technical failure.",
+        "B": "A management failure.",
+        "C": "Because of a lack of awareness.",
+        "D": "Because of a lack of training."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Failure of the contingency plan is usually considered as a management failure. Incorrect Answers: A: A technical failure is not usually thought to be a failure of the contingency plan. C: A lack of awareness is not usually thought to be a failure of the contingency plan. D: Lack of training is not usually thought to be a failure of the contingency plan."
+    },
+    {
+      "id": 579,
+      "question": "A business continuity plan is an example of which of the following?",
+      "options": {
+        "A": "Corrective control",
+        "B": "Detective control",
+        "C": "Preventive control",
+        "D": "Compensating control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A corrective control, such as business continuity plan (BCP), consists of instructions, procedures, or guidelines used to reverse the effects of an unwanted activity, such as attacks or errors. In particular a BCP is the assessment of a variety of risks to organizational processes and the creation of policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur. Incorrect Answers: B: A business continuity plan is A detective control. A detective control is an access control deployed to discover unwanted or unauthorized activity. Examples of detective access controls include security guards, supervising users, incident investigations, and intrusion detection systems (IDSs). C: A preventive control is any security mechanism, tool, or practice that can deter and mitigate undesirable actions or events. A business continuity plan is A preventive control. D: A compensating control is a data security measure that is designed to satisfy the requirement for some other security measure that is deemed too difficult or impractical to implement. A business continuity plan is A compensating control."
+    },
+    {
+      "id": 580,
+      "question": "Which of the following statements pertaining to disaster recovery is incorrect?",
+      "options": {
+        "A": "A recovery team's primary task is to get the pre-defined critical business functions at the alternate backup processing site.",
+        "B": "A salvage team's task is to ensure that the primary site returns to normal processing conditions.",
+        "C": "The disaster recovery plan should include how the company will return from the alternate site to the primary site.",
+        "D": "When returning to the primary site, the most critical applications should be brought back first."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The salvage team must ensure the reliability of primary site. This is done by returning the least-mission-critical processes to the restored original site to stress – test the rebuilt network. As the restored site shows resiliency, more important processes are transferred. Incorrect Answers: A: The restoration team should be responsible for getting the alternate site into a working and functioning environment B: The salvage team must ensure the reliability of primary site by returning it to normal processing conditions. C: Within the recovery plan the salvage team is responsible for starting the recovery of the original site. The recovery plan must include how the original site is recovered."
+    },
+    {
+      "id": 581,
+      "question": "For which areas of the enterprise are business continuity plans required?",
+      "options": {
+        "A": "All areas of the enterprise.",
+        "B": "The financial and information processing areas of the enterprise.",
+        "C": "The operating areas of the enterprise.",
+        "D": "The marketing, finance, and information processing areas."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Business Impact Analysis (BIA) is performed at the beginning of business continuity planning to identify all the areas of the enterprise that would suffer the greatest financial or operational loss in the event of a disaster or disruption. Incorrect Answers: B: All areas of the operations must be considered, not only the financial an information processing areas. C: All areas of the operations must be considered, not only the operating areas. D: All areas of the operations must be considered, not only the marketing, finance, and information processing areas."
+    },
+    {
+      "id": 582,
+      "question": "Which of the following will a Business Impact Analysis NOT identify?",
+      "options": {
+        "A": "Areas that would suffer the greatest financial or operational loss in the event of a disaster.",
+        "B": "Systems critical to the survival of the enterprise.",
+        "C": "The names of individuals to be contacted during a disaster.",
+        "D": "The outage time that can be tolerated by the enterprise as a result of a disaster."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A Business Impact Analysis (BIA) does not identify persons that should be contacted during a disaster. Incorrect Answers: A: A Business Impact Analysis (BIA) is performed at the beginning of business continuity planning to identify all the areas of the enterprise that would suffer the greatest financial or operational loss in the event of a disaster or disruption. B: The BIA identifies the company’s critical systems needed for survival. D: The BIA estimates the outage time that can be tolerated by the company as a result of a disaster or disruption."
+    },
+    {
+      "id": 583,
+      "question": "What is a hot-site facility?",
+      "options": {
+        "A": "A site with pre-installed computers, raised flooring, air conditioning, telecommunications and networking equipment, and UPS.",
+        "B": "A site in which space is reserved with pre-installed wiring and raised floors.",
+        "C": "A site with raised flooring, air conditioning, telecommunications, and networking equipment, and UPS.",
+        "D": "A site with readymade work space with telecommunications equipment, LANs, PCs, and terminals for work groups."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A hot site is a backup facility is maintained in constant working order, with a full complement of pre-installed servers and workstations, raised flooring, air conditioning, network equipment including communications links, and UPS ready to assume primary operations responsibilities. Incorrect Answers: B: A site in which space is reserved with pre-installed wiring and raised floors is called a cold site, A hot site. C: A hot site includes pre-installed servers. D: A hot site includes pre-installed servers."
+    },
+    {
+      "id": 584,
+      "question": "Which of the following best describes remote journaling?",
+      "options": {
+        "A": "Send hourly tapes containing transactions off-site.",
+        "B": "Send daily tapes containing transactions off-site.",
+        "C": "Real-time capture of transactions to multiple storage devices.",
+        "D": "Real time transmission of copies of the entries in the journal of transactions to an alternate site."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Remote journaling is a method of transmitting data offsite. It usually only includes moving the journal or transaction logs to the offsite facility, not the actual files. These logs contain the deltas (changes) that have taken place to the individual files. If and when data are corrupted and need to be restored, the bank can retrieve these logs, which are used to rebuild the lost data. Incorrect Answers: A: Remote journaling does not involve tapes that are sent on an hourly schedule. B: Remote journaling does not involve tapes that are sent on a daily schedule. C: Remote journaling send log files, not transactions, to a remote location."
+    },
+    {
+      "id": 585,
+      "question": "All of the following can be considered essential business functions that should be identified when creating a Business Impact Analysis (BIA) except one. Which of the following would be considered an essential element of the BIA but an important topic to include within the BCP plan?",
+      "options": {
+        "A": "IT Network Support",
+        "B": "Accounting",
+        "C": "Public Relations",
+        "D": "Purchasing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Public Relations is part of the BCP, but it is not part of the BIA. Public relations and Crisis Communication should be part of the BCP. Incorrect Answers: A: IT Network Support is part of both the BCP and the BIA. B: Accounting is part of both the BCP and the BIA. D: Purchasing is part of both the BCP and the BIA."
+    },
+    {
+      "id": 586,
+      "question": "Of the following, which is NOT a specific loss criteria that should be considered while developing a BIA?",
+      "options": {
+        "A": "Loss of skilled workers knowledge",
+        "B": "Loss in revenue",
+        "C": "Loss in profits",
+        "D": "Loss in reputation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Although a loss of skilled workers knowledge would cause the company a great loss, it is not identified as a specific loss criteria. It would fall under one of the three other criteria listed as distracters. Source: HARRIS, Shon, All-In-One CISSP Certification Exam Guide, McGraw-Hill/Osborne, 2002, chapter 9: Disaster Recovery and Business continuity (page 598)."
+    },
+    {
+      "id": 587,
+      "question": "Of the reasons why a Disaster Recovery plan gets outdated, which of the following is not true?",
+      "options": {
+        "A": "Personnel turnover",
+        "B": "Large plans can take a lot of work to maintain",
+        "C": "Continuous auditing makes a Disaster Recovery plan irrelevant",
+        "D": "Infrastructure and environment changes"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Auditing would affect the Disaster Recovery plan. Note: The main reasons Disaster Recovery plans become outdated include the following: Personnel turn over. Large plans take a lot of work to maintain. Changes occur to the infrastructure and environment. Other reasons include: The business continuity process is not integrated into the change management process. Reorganization of the company, layoffs, or mergers occurs. Changes in hardware, software, and applications occur. After the plan is constructed, people feel their job is done. Plans do not have a direct line to profitability. Incorrect Answers: A: Personnel turnover can make the Disaster Recovery plan outdated. B: Large plans take a lot of work to maintain can make the Disaster Recovery plan outdated. C: Changes that occur to the infrastructure and environment can make the Disaster Recovery plan outdated."
+    },
+    {
+      "id": 588,
+      "question": "Which backup type run at regular intervals would take the least time to complete?",
+      "options": {
+        "A": "Full Backup",
+        "B": "Differential Backup",
+        "C": "Incremental Backup",
+        "D": "Disk Mirroring"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "An incremental backup copies only the files that have been modified since the previous backup. An incremental backup copies less data compared to full and differential backups. Incorrect Answers: A: A full backup copies all the data from the system to the backup medium. It copies more data compared to an incremental backup. B: A differential backup is a type of data backup that preserves data, saving only the difference in the data since the last full backup. But a differential backup copies more data compared to an incremental backup. D: Disk mirroring works dynamically in real-time. Disk mirroring does not take place at regular intervals."
+    },
+    {
+      "id": 589,
+      "question": "What is electronic vaulting?",
+      "options": {
+        "A": "Information is backed up to tape on a hourly basis and is stored in an on-site vault.",
+        "B": "Information is backed up to tape on a daily basis and is stored in an on-site vault.",
+        "C": "Transferring electronic journals or transaction logs to an off-site storage facility",
+        "D": "A transfer of bulk information to a remote central backup facility."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Electronic vaulting makes copies of files as they are modified and periodically transmits them in a bulk to an offsite backup site. Incorrect Answers: A: Electronic vaulting does not use tape backup on an hourly basis. B: Electronic vaulting does not use tape backup on a daily basis. C: Electronic vaulting copies data files not transaction logs. Remote journaling transfer log files."
+    },
+    {
+      "id": 590,
+      "question": "After a company is out of an emergency state, what should be moved back to the original site first?",
+      "options": {
+        "A": "Executives",
+        "B": "Least critical components",
+        "C": "IT support staff",
+        "D": "Most critical components"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The salvage team must ensure the reliability of primary site. This is done by returning the least-mission-critical processes to the restored original site to stress – test the rebuilt network. As the restored site shows resiliency, more important processes are transferred. Incorrect Answers: A: There is no priority to move the Executives back to the original site fast. The salvage team, not the Executives brings the original site back in order. C: The salvage team, not the IT support staff brings the original site back in order. There is no priority to move the IT support staff back to the original site fast. D: The most critical operations should be to the primary site after, before, the other less critical operations have been moved."
+    },
+    {
+      "id": 591,
+      "question": "How often should tests and disaster recovery drills be performed?",
+      "options": {
+        "A": "At least once a quarter",
+        "B": "At least once every 6 months",
+        "C": "At least once a year",
+        "D": "At least once every 2 years"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The drills should take place at least once a year, and the entire program should be continually updated and improved. Incorrect Answers: A: Once a quarter would be too much. Once a year is fine. B: Once every 6 months would be too much. Once a year is fine. D: Once every 2 years would Be enough. Once a year is the recommended frequency."
+    },
+    {
+      "id": 592,
+      "question": "A business impact assessment is one element in business continuity planning. What are the three primary goals of a BIA?",
+      "options": {
+        "A": "Data processing continuity planning, data recovery plan maintenance, and testing the disaster recovery plan.",
+        "B": "Scope and plan initiation, business continuity plan development, and plan approval and implementation.",
+        "C": "Facility requirements planning, facility security management, and administrative personnel controls.",
+        "D": "Criticality prioritization, downtime estimation, and resource requirements."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The first business impact assessment (BIA) task facing the BCP team is identifying business priorities. The second quantitative measure that the team must develop is the maximum tolerable downtime (MTD). The final step of the BIA is to prioritize the allocation of business continuity resources to the various risks that you identified and assessed in the preceding tasks of the BIA. Incorrect Answers: A: Continuity planning and data recovery planning are not part of the BIA. B: Business continuity plan development is not part of the BIA. C: Facility planning is not part of the BIA."
+    },
+    {
+      "id": 593,
+      "question": "Business Continuity Planning (BCP) is defined as a preparation that facilitates:",
+      "options": {
+        "A": "the rapid recovery of mission-critical business operations",
+        "B": "the continuation of critical business functions",
+        "C": "the monitoring of threat activity for adjustment of technical controls",
+        "D": "the reduction of the impact of a disaster"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The BCP is concerned with monitoring threat activity. Incorrect Answers: A: One goal of BCP is to enhance a company’s ability to recover from a disruptive event promptly. B: BCP is used to maintain the continuous operation of a business in the event of an emergency situation. D: The goal of BCP planners is to implement a combination of policies, procedures, and processes such that a potentially disruptive event has as little impact on the business as possible."
+    },
+    {
+      "id": 594,
+      "question": "During a test of a disaster recovery plan the IT systems are concurrently set up at the alternate site. The results are compared to the results of regular processing at the original site. What kind of testing has taken place?",
+      "options": {
+        "A": "Simulation",
+        "B": "Parallel",
+        "C": "Checklist",
+        "D": "Full interruption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In a parallel test the employees are relocated to the site perform their disaster recovery responsibilities just as they would for an actual disaster. The only difference is that operations at the main facility are not interrupted. That site retains full responsibility for conducting the day - to - day business of the organization. Incorrect Answers: A: A simulation test does not use an alternate site. In simulation tests, disaster recovery team members are presented with a scenario and asked to develop an appropriate response. C: In a checklist test you simply distribute copies of disaster recovery checklists to the members of the disaster recovery team for review. You do not set up an alternate site. D: Full - interruption tests actually shut down operations at the primary site and shifting them to the recovery site."
+    },
+    {
+      "id": 595,
+      "question": "During a business impact analysis it is concluded that a system has maximum tolerable downtime of 2 hours. What would this system be classified as?",
+      "options": {
+        "A": "Important",
+        "B": "Urgent",
+        "C": "Critical",
+        "D": "Vital"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A classification of critical has a maximum tolerable downtime (MTD) in minutes to hours, such as 2 hours. Incorrect Answers: A: A classification as Important would have a MTD of around 72 hours. B: A classification as urgent would have a MTD of around 24 hours. D: There is no MTD classification named vital. The classifications are Nonessential (30 days), Normal (7 days), Important (72 hours), Urgent (24 hours), and Critical/Essential (minutes to hours)."
+    },
+    {
+      "id": 596,
+      "question": "Business Impact Analysis (BIA) is about:",
+      "options": {
+        "A": "Technology",
+        "B": "Supporting the mission of the organization",
+        "C": "Due Care",
+        "D": "Risk Assessment"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Business Impact Assessment (BIA) supports the mission of the organization by identifying the resources that are critical to an organization’s ongoing viability and the threats posed to those resources. The BIA also assesses the likelihood that each threat will actually occur and the impact those occurrences will have on the business. Incorrect Answers: A: BIA is about critical business functions, and about technology. C: While due care concerns using reasonable care to protect the interests of an organization, BIA is about supporting the mission of the organization. D: BIA is about risk assessment. A BIA often takes place prior to a risk assessment. The BIA focuses on the effects or consequences of the interruption to critical business functions and attempts to quantify the financial and non-financial costs associated with a disaster. The business impact assessment looks at the parts of the organization that are most crucial."
+    },
+    {
+      "id": 597,
+      "question": "What is the MOST important step in business continuity planning?",
+      "options": {
+        "A": "Risk Assessment",
+        "B": "Due Care",
+        "C": "Business Impact Analysis (BIA)",
+        "D": "Due Diligence"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In order to develop the in business continuity planning (BCP), the scope of the project must be determined and agreed upon. This involves some distinct milestones including Conduct the business impact analysis (BIA). The BIA helps to identify and prioritize critical IT systems and components. Incorrect Answers: A: Risk assessment is part of the business continuity planning, but it is less important compared to the BIA. B: Due care is not the most important to the business continuity planning. Due care concerns using reasonable care to protect the interests of an organization. D: Due diligence is A factor for continuity planning. Due diligence is an investigation of a business or person prior to signing a contract, or an act with a certain standard of care."
+    },
+    {
+      "id": 598,
+      "question": "You have been tasked with developing a Business Continuity Plan/Disaster Recovery (BCP/DR) plan. After several months of researching the various areas of the organization, you are ready to present the plan to Senior Management. During the presentation meeting, the plan that you have dutifully created is not received positively. Senior Management is convinced that they need to enact your plan, nor are they prepared to invest any money in the plan. What is the BEST reason, as to why Senior Management is not willing to enact your plan?",
+      "options": {
+        "A": "The business case was not initially made and thus did not secure their support.",
+        "B": "They were not included in any of the Risk Assessment meetings.",
+        "C": "They were not included in any of the Business Impact Assessment meetings.",
+        "D": "A Business Impact Assessment was not performed."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The most critical part of establishing and maintaining a current continuity plan is management support. Management must be convinced of the necessity of such a plan. Therefore, a business case must be made to obtain this support. In order to convince Senior Management of the viability of the plan you need to convince them of the business case. The Senior Management usually wants information stated in monetary, quantitative terms, not in subjective, qualitative terms. Incorrect Answers: B: Senior Management does not need to attend the Risk Assessment meetings. C: Senior Management does not need to attend the Business Impact Assessment meetings. D: The Business Impact Assessment is made after the BCP plan has been approved. To make a Business Impact Assessment the BCP team must sit down and discuss, preferably with the involvement of senior management, qualitative concerns to develop a comprehensive approach that satisfies all stakeholders."
+    },
+    {
+      "id": 599,
+      "question": "When planning for disaster recovery it is important to know a chain of command should one or more people become missing, incapacitated or otherwise available to lead the organization. Which of the following terms BEST describes this process?",
+      "options": {
+        "A": "Succession Planning",
+        "B": "Continuity of Operations",
+        "C": "Business Impact Analysis",
+        "D": "Business Continuity Planning"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Organizations must ensure that there is always an executive available to make decisions during a disaster. Executive succession planning determines an organization’s line of succession. Executives may become unavailable due to a variety of disasters, ranging from injury and loss of life to strikes, travel restrictions, and medical quarantines. Incorrect Answers: B: The purpose of a Continuity of Operations plan is to maintain operations during a disaster. Continuity of Operations does address chain of command recovery. C: A Business Impact Assessment (BIA) is an analysis that identifies the resources that are critical to an organization’s ongoing viability and the threats posed to those resources. A BIA does address chain of command recovery. D: Business continuity planning is focused on keeping business functions uninterrupted when a disaster strikes. Business continuity planning does address chain of command recovery."
+    },
+    {
+      "id": 600,
+      "question": "Of the three types of alternate sites: hot, warm or cold, which is BEST described by the following facility description? Configured and functional facility Available with a few hours Requires constant maintenance Is expensive to maintain",
+      "options": {
+        "A": "Hot Site",
+        "B": "Warm Site",
+        "C": "Cold Site",
+        "D": "Remote Site"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A hot site is a facility that is leased or rented and is fully configured and ready to operate within a few hours. The only missing resources from a hot site are usually the data, which will be retrieved from a backup site, and the people who will be processing the data. The hot site would include computers, cables and peripherals. Incorrect Answers: B: A warm site is a leased or rented facility that is usually partially configured with some equipment, such as HVAC, and foundational infrastructure components, but not the actual computers. In other words, a warm site is usually a hot site without the expensive equipment such as communication equipment and servers. C: A cold site is a leased or rented facility that supplies the basic environment, electrical wiring, air conditioning, plumbing, and flooring, but none of the equipment or additional services. D: A remote site is just a site at a remote location. There are no specification on what equipment or services, if any, would be available at the remote location."
+    }
+  ]
+}

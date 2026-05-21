@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q51 - Q100",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 51,
+      "question": "The absence or weakness in a system that may possibly be exploited is called a(n)?",
+      "options": {
+        "A": ") Threat",
+        "B": ") Exposure",
+        "C": ") Vulnerability",
+        "D": ") Risk"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 52,
+      "question": "What tool do you use to determine whether a host is vulnerable to known attacks?",
+      "options": {
+        "A": "Padded Cells",
+        "B": "Vulnerability analysis",
+        "C": "Honey Pots",
+        "D": "IDS"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Vulnerability analysis (also known as vulnerability assessment) tools test to determine whether a network or host is vulnerable to known attacks. Vulnerability assessment represents a special case of the intrusion detection process. The information sources used are system state attributes and outcomes of attempted attacks. The information sources are collected by a part of the assessment engine. The timing of analysis is interval-based or batch-mode, and the type of analysis is misuse detection. This means that vulnerability assessment systems are essentially batch mode misuse detectors that operate on system state information and results of specified test routines."
+    },
+    {
+      "id": 53,
+      "question": "Which of the following statements pertaining to ethical hacking is incorrect?",
+      "options": {
+        "A": ") An organization should use ethical hackers who do not sell auditing, consulting, hardware, software, firewall, hosting, and/or networking services",
+        "B": ") Testing should be done remotely",
+        "C": ") Ethical hacking should not involve writing to or modifying the target systems",
+        "D": ") Ethical hackers should never use tools that have potential of exploiting vulnerabilities in the organizations IT system."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 54,
+      "question": "Why would an information security policy require that communications test equipment be controlled?",
+      "options": {
+        "A": ") The equipment is susceptible to damage",
+        "B": ") The equipment can be used to browse information passing on a network",
+        "C": ") The equipment must always be available for replacement if necessary",
+        "D": ") The equipment can be used to reconfigure the network multiplexers"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 55,
+      "question": "Management can expect penetration tests to provide all of the following EXCEPT",
+      "options": {
+        "A": "identification of security flaws",
+        "B": "demonstration of the effects of the flaws",
+        "C": "a method to correct the security flaws.",
+        "D": "verification of the levels of existing infiltration resistance"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Not B: It is not the objective of the pen tester to supply a method on how to correct the flaws. In fact management may decide to accept the risk and not repair the flaw. They may be able to demonstrate the effects of a flaw - especially if they manage to clobber a system! Penetration testing is a set of procedures designed to test and possibly bypass security controls of a system. Its goal is to measure an organization's resistance to an attack and to uncover any weaknesses within the environment...The result of a penetration test is a report given to management describing the list of vulnerabilities that were identified and the severity of those vulnerabilities. From here, it is up to management to determine how the vulnerabilities are dealt with and what countermeasures are implemented. - Shon Harris All-in-one CISSP Certification Guide pg 837-839"
+    },
+    {
+      "id": 56,
+      "question": "Which one of the following is a characteristic of a penetration testing project?",
+      "options": {
+        "A": "The project is open-ended until all known vulnerabilities are identified.",
+        "B": "The project schedule is plotted to produce a critical path.",
+        "C": "The project tasks are to break into a targeted system.",
+        "D": "The project plan is reviewed with the target audience."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"One common method to test the strength of your security measures is to perform penetration testing. Penetration testing is a vigorous attempt to break into a protected network using any means necessary.\" Pg 430 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 57,
+      "question": "Which one of the following is the PRIMARY objective of penetration testing?",
+      "options": {
+        "A": "Assessment",
+        "B": "Correction",
+        "C": "Detection",
+        "D": "Protection"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Its goal is to measure an organization's resistance to an attack and to uncover any weakness within the environment...The result of a penetration test is a report given to management describing the list of vulnerabilities that were identified and the severity of those vulnerabilities. - Shon Harris All-in-one CISSP Certification Guide pg 837-839 Not A: Assessment would imply management deciding whether they can live with a given vulnerability."
+    },
+    {
+      "id": 58,
+      "question": "Open box testing, in the Flaw Hypothesis Methodology of Penetration Testing applies to the analysis of",
+      "options": {
+        "A": "Routers and firewalls",
+        "B": "Host-based IDS systems",
+        "C": "Network-based IDS systems",
+        "D": "General purpose operating systems"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Flaw Hypothesis Methodology - A system analysis and penetration technique where specifications and documentation for the system are analyzed and then flaws in the system are hypothesized. The list of hypothesized flaws is then prioritized on the basis of the estimated probability that a flaw actually exists and, assuming a flaw does exist, on the ease of exploiting it and on the extent of control or compromise it would provide. The prioritized list is used to direct the actual testing of the system. http://www.kernel.org/pub/linux/libs/security/Orange-Linux/refs/Orange/Orange0-5.html"
+    },
+    {
+      "id": 59,
+      "question": "What is the FIRST step that should be considered in a penetration test?",
+      "options": {
+        "A": "The approval of change control management.",
+        "B": "The development of a detailed test plan.",
+        "C": "The formulation of specific management objectives.",
+        "D": "The communication process among team members."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The type of penetration test depends on the organization, its security objectives, and the management's goals. - Shon Harris All-in-one CISSP Certification Guide pg 838"
+    },
+    {
+      "id": 60,
+      "question": "Penetration testing will typically include",
+      "options": {
+        "A": "Generally accepted auditing practices.",
+        "B": "Review of Public Key Infrastructure (PKI) digital certificate, and encryption.",
+        "C": "Social engineering, configuration review, and vulnerability assessment.",
+        "D": "Computer Emergency Response Team (CERT) procedures."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is not a valid reason to use external penetration service firms rather than corporate resources?",
+      "options": {
+        "A": ") They are more cost-effective",
+        "B": ") They offer a lack of corporate bias",
+        "C": ") They use highly talented ex-hackers",
+        "D": ") They insure a more complete reporting"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 62,
+      "question": "Which of the following tools can you use to assess your networks vulnerability?",
+      "options": {
+        "A": "ISS",
+        "B": "All of the choices.",
+        "C": "SATAN",
+        "D": "Ballista"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: ISS, Ballista and SATAN are all penetration tools."
+    },
+    {
+      "id": 63,
+      "question": "Annualized Loss Expectancy (ALE) value is derived from an algorithm of the product of annual rate of occurrence and",
+      "options": {
+        "A": "Cost of all losses expected.",
+        "B": "Previous year's actual loss.",
+        "C": "Average of previous losses.",
+        "D": "Single loss expectancy."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Single Loss Expectancy (SLE) x Annualized Rate of Occurance (ARO) = ALE pg. 18 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 64,
+      "question": "If your property insurance has Actual Cost Evaluation (ACV) clause your damaged property will be compensated:",
+      "options": {
+        "A": ") Based on the value of the item on the date of loss",
+        "B": ") Based on new item for old regardless of condition of lost item",
+        "C": ") Based on value of item one month before loss",
+        "D": ") Based on value of item on the date of loss plus 10 percent"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 65,
+      "question": "How is Annualized Loss Expectancy (ALE) derived from a threat?",
+      "options": {
+        "A": ") ARO x (SLE - EF)",
+        "B": ") SLE x ARO",
+        "C": ") SLE/EF",
+        "D": ") AV x EF"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"SLE x annualized rate of occurrence (ARO) = ALE\" pg 70 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 66,
+      "question": "Qualitative loss resulting from the business interruption does not include:",
+      "options": {
+        "A": ") Loss of revenue",
+        "B": ") Loss of competitive advantage or market share",
+        "C": ") Loss of public confidence and credibility",
+        "D": ") Public embarrassment"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Another method of risk analysis is qualitative, which does not assign numbers and monetary valu8es to components and losses.\" Pg 72 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 67,
+      "question": "Which risk management methodology uses the exposure factor multiplied by the asset value to determine its outcome?",
+      "options": {
+        "A": "Annualized Loss Expectancy",
+        "B": "Single Loss Expectancy",
+        "C": "Annualized Rate of Occurrence",
+        "D": "Information Risk Management"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Single Loss Expectancy (SLE) AN SLE is the dollar figure that is assigned to a single event. It represents an organization's loss from a single threat and is derived from the following formula: Asset Value ($) X Exposure Factor (EF) = SLE -Ronald Krutz The CISSP PREP Guide (gold edition) pg 18"
+    },
+    {
+      "id": 68,
+      "question": "Valuable paper insurance coverage does not cover damage to which of the following?",
+      "options": {
+        "A": ") Inscribed, printed and written documents",
+        "B": ") Manuscripts",
+        "C": ") Records",
+        "D": ") Money and Securities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 69,
+      "question": "What is the window of time for recovery of information processing capabilities based on?",
+      "options": {
+        "A": ") Quality of the data to be processed",
+        "B": ") Nature of the disaster",
+        "C": ") Criticality of the operations affected",
+        "D": ") Applications that are mainframe based"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 70,
+      "question": "What is the Maximum Tolerable Downtime (MTD):",
+      "options": {
+        "A": ") Maximum elapsed time required to complete recovery of application data",
+        "B": ") Minimum elapsed time required to complete recovery of application data",
+        "C": ") Maximum elapsed time required to move back to primary site a major disruption",
+        "D": ") It is maximum delay businesses that can tolerate and still remain viable"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"The MTD is the period of time a business function or process can remain interrupted before its ability to recover becomes questionable.\" Pg 678 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 71,
+      "question": "A \"critical application\" is one that MUST",
+      "options": {
+        "A": "Remain operational for the organization to survive.",
+        "B": "Be subject to continual program maintenance.",
+        "C": "Undergo continual risk assessments.",
+        "D": "Be constantly monitored by operations management."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "I am assuming that I don't need to put a reference for this answer. Yeah ok here it is but I cheated and used a earlier reference \"A BIA is performed at the beginning of disaster recovery and continuity planning to identify the areas that would suffer the greatest financial or operational loss in the event of a disaster or disruption. It identifies the company's critical systems needed for survival and estimates the outage time that can be tolerated by the company as a result of disaster or disruption.\" - Shon Harris All-in-one CISSP Certification Guide pg 597"
+    },
+    {
+      "id": 72,
+      "question": "Which of the following questions is less likely to help in assessing physical and environmental protection?",
+      "options": {
+        "A": ") Are entry codes changed periodically?",
+        "B": ") Are appropriate fire suppression and prevention devices installed and working?",
+        "C": ") Are there processes to ensure that unauthorized individuals cannot read, copy, alter, or steal printed or electronic information?",
+        "D": ") Is physical access to data transmission lines controlled?"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 73,
+      "question": "A common Limitation of information classification systems is the INABILITY to",
+      "options": {
+        "A": "Limit the number of classifications.",
+        "B": "Generate internal labels on diskettes.",
+        "C": "Declassify information when appropriate.",
+        "D": "Establish information ownership."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "I could not find a reference for this. However I do agree that declassifying information is harder to do the classifying, but use your best judgment based on experience and knowledge."
+    },
+    {
+      "id": 74,
+      "question": "The purpose of information classification is to",
+      "options": {
+        "A": "Assign access controls.",
+        "B": "Apply different protective measures.",
+        "C": "Define the parameters required for security labels.",
+        "D": "Ensure separation of duties."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 75,
+      "question": "Who should determine the appropriate access control of information?",
+      "options": {
+        "A": "Owner",
+        "B": "User",
+        "C": "Administrator",
+        "D": "Server"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: All information generated, or used must have a designated owner. The owner must determine appropriate sensitivity classifications, and access controls. The owner must also take steps to ensure the appropriate controls for the storage, handling, distribution, and use of the information in a secure manner."
+    },
+    {
+      "id": 76,
+      "question": "What is the main responsibility of the information owner?",
+      "options": {
+        "A": ") making the determination to decide what level of classification the information requires",
+        "B": ") running regular backups",
+        "C": ") audit the users when they require access to the information",
+        "D": ") periodically checking the validity and accuracy for all data in the information system"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 77,
+      "question": "What process determines who is trusted for a given purpose?",
+      "options": {
+        "A": "Identification",
+        "B": "Authorization",
+        "C": "Authentication",
+        "D": "Accounting"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Authorization determines who is trusted for a given purpose. More precisely, it determines whether a particular principal, who has been authenticated as the source of a request to do something, is trusted for that operation. Authorization may also include controls on the time at which something can be done (e.g. only during working hours) or the computer terminal from which it can be requested (e.g. only the one on the system administrator desk)."
+    },
+    {
+      "id": 78,
+      "question": "The intent of least privilege is to enforce the most restrictive user rights required",
+      "options": {
+        "A": "To execute system processes.",
+        "B": "By their job description.",
+        "C": "To execute authorized tasks.",
+        "D": "By their security role."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Least Privilege; the security principle that requires each subject to be granted the most restrictive set of privileges needed for the performance of authorized tasks. The application of this principle limits the damage that can result from accident, error, or unauthorized. - Shon Harris All-in-one CISSP Certification Guide pg 933"
+    },
+    {
+      "id": 79,
+      "question": "What principle requires that a user be given no more privilege then necessary to perform a job?",
+      "options": {
+        "A": "Principle of aggregate privilege.",
+        "B": "Principle of most privilege.",
+        "C": "Principle of effective privilege.",
+        "D": "Principle of least privilege."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As described at http://hissa.nist.gov/rbac/paper/node5.html, the principle of least privilege has been described as important for meeting integrity objectives. The principle of least privilege requires that a user be given no more privilege than necessary to perform a job."
+    },
+    {
+      "id": 80,
+      "question": "To ensure least privilege requires that __________ is identified.",
+      "options": {
+        "A": "what the users privilege owns",
+        "B": "what the users job is",
+        "C": "what the users cost is",
+        "D": "what the users group is"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Ensuring least privilege requires identifying what the user's job is, determining the minimum set of privileges required to perform that job, and restricting the user to a domain with those privileges and nothing more. By denying to subjects transactions that are not necessary for the performance of their duties, those denied privileges couldn't be used to circumvent the organizational security policy. Although the concept of least privilege currently exists within the context of the TCSEC, requirements restrict those privileges of the system administrator. Through the use of RBAC, enforced minimum privileges for general system users can be easily achieved."
+    },
+    {
+      "id": 81,
+      "question": "The concept of least privilege currently exists within the context of:",
+      "options": {
+        "A": "ISO",
+        "B": "TCSEC",
+        "C": "OSI",
+        "D": "IEFT"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Ensuring least privilege requires identifying what the user's job is, determining the minimum set of privileges required to perform that job, and restricting the user to a domain with those privileges and nothing more. By denying to subjects transactions that are not necessary for the performance of their duties, those denied privileges couldn't be used to circumvent the organizational security policy. Although the concept of least privilege currently exists within the context of the TCSEC, requirements restrict those privileges of the system administrator. Through the use of RBAC, enforced minimum privileges for general system users can be easily achieved."
+    },
+    {
+      "id": 82,
+      "question": "Which of the following rules is less likely to support the concept of least privilege?",
+      "options": {
+        "A": ") The number of administrative accounts should be kept to a minimum",
+        "B": ") Administrators should use regular accounts when performing routing operations like reading mail",
+        "C": ") Permissions on tools that are likely to be used by hackers should be as restrictive as possible",
+        "D": ") Only data to and from critical systems and applications should be allowed through the firewall"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 83,
+      "question": "Which level of \"least privilege\" enables operators the right to modify data directly in it's original location, in addition to data copied from the original location?",
+      "options": {
+        "A": ") Access Change",
+        "B": ") Read/Write",
+        "C": ") Access Rewrite",
+        "D": ") Access modify"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 84,
+      "question": "This is a common security issue that is extremely hard to control in large environments. It occurs when a user has more computer rights, permissions, and privileges that what is required for the tasks the user needs to fulfill. What best describes this scenario?",
+      "options": {
+        "A": ") Excessive Rights",
+        "B": ") Excessive Access",
+        "C": ") Excessive Permissions",
+        "D": ") Excessive Privileges"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"Excessive Privileges: This is a common security issue that is extremely hard to control in vast, complex environments. It occurs when a user has more computer rights, permissions, and privileges than what is required for the tasks she needs to fulfill.\" pg 603 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 85,
+      "question": "One method to simplify the administration of access controls is to group",
+      "options": {
+        "A": "Capabilities and privileges",
+        "B": "Objects and subjects",
+        "C": "Programs and transactions",
+        "D": "Administrators and managers"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 86,
+      "question": "Cryptography does not concern itself with:",
+      "options": {
+        "A": ") Availability",
+        "B": ") Integrity",
+        "C": ") Confidentiality",
+        "D": ") Authenticity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 87,
+      "question": "Which of the following measures would be the BEST deterrent to the theft of corporate information from a laptop which was left in a hotel room?",
+      "options": {
+        "A": ") Store all data on disks and lock them in an in-room safe",
+        "B": ") Remove the batteries and power supply from the laptop and store them separately from the computer",
+        "C": ") Install a cable lock on the laptop when it is unattended",
+        "D": ") Encrypt the data on the hard drive"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 88,
+      "question": "To support legacy applications that rely on risky protocols (e.g,, plain text passwords), which one of the following can be implemented to mitigate the risks on a corporate network?",
+      "options": {
+        "A": "Implement strong centrally generated passwords to control use of the vulnerable applications.",
+        "B": "Implement a virtual private network (VPN) with controls on workstations joining the VPN.",
+        "C": "Ensure that only authorized trained users have access to workstations through physical access control.",
+        "D": "Ensure audit logging is enabled on all hosts and applications with associated frequent log reviews."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "It makes more sense to provide VPN client to workstations opposed to physically securing workstations."
+    },
+    {
+      "id": 89,
+      "question": "Which of the following computer crime is more often associated with insiders?",
+      "options": {
+        "A": ") IP spoofing",
+        "B": ") Password sniffing",
+        "C": ") Data diddling",
+        "D": ") Denial of Service (DOS)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 90,
+      "question": "The technique of skimming small amounts of money from multiple transactions is called the",
+      "options": {
+        "A": "Scavenger technique",
+        "B": "Salami technique",
+        "C": "Synchronous attack technique",
+        "D": "Leakage technique"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 91,
+      "question": "What best describes a scenario when an employee has been shaving off pennies from multiple accounts and depositing the funds into his own bank account?",
+      "options": {
+        "A": ") Data fiddling",
+        "B": ") Data diddling",
+        "C": ") Salami techniques",
+        "D": ") Trojan horses"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 92,
+      "question": "What is the act of willfully changing data, using fraudulent input or removal of controls called?",
+      "options": {
+        "A": "Data diddling",
+        "B": "Data contaminating",
+        "C": "Data capturing",
+        "D": "Data trashing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Data-diddling - the modification of data -Ronald Krutz The CISSP PREP Guide (gold edition) pg 417"
+    },
+    {
+      "id": 93,
+      "question": "In the context of computer security, \"scavenging\" refers to searching",
+      "options": {
+        "A": "A user list to find a name.",
+        "B": "Through storage to acquire information.",
+        "C": "Through data for information content.",
+        "D": "Through log files for trusted path information."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Scavenging is a form of dumpster diving performed electronically. Online scavenging searches for useful information in the remnants of data left over after processes or tasks are completed. This could include audit trails, logs files, memory dumps, variable settings, port mappings, and cached data. - Ed Tittle CISSP Study Guide (sybex) pg 476"
+    },
+    {
+      "id": 94,
+      "question": "Which security program exists if a user accessing low-level data is able to draw conclusions about high-level information?",
+      "options": {
+        "A": "Interference",
+        "B": "Inference",
+        "C": "Polyinstatiation",
+        "D": "Under-classification"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Main Entry: in*fer*ence Function: noun Date: 1594 1 : the act or process of inferring : as a : the act of passing from one proposition, statement, or judgment considered as true to another whose truth is believed to follow from that of the former b : the act of passing from statistical sample data to generalizations (as of the value of population parameters) usually with calculated degrees of certainty 2 : something that is inferred especially : a proposition arrived at by inference 3 : the premises and conclusion of a process of inferring http://www.m-w.com/cgi-bin/dictionary"
+    },
+    {
+      "id": 95,
+      "question": "Which of the following is not a form of a passive attack?",
+      "options": {
+        "A": ") Scavenging",
+        "B": ") Data diddling",
+        "C": ") Shoulder surfing",
+        "D": ") Sniffing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Data diddling is an active attack opposed to a passive attack. Reference: \"Data Diddling occurs when an attacker gains access to a system and makes small, random, or incremental changes to data rather than obviously altering file contents or damaging or deleting entire files.\" Pg 383 Tittel"
+    },
+    {
+      "id": 96,
+      "question": "An example of an individual point of verification in a computerized application is",
+      "options": {
+        "A": "An inference check.",
+        "B": "A boundary protection.",
+        "C": "A sensitive transaction.",
+        "D": "A check digit."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Checkdigit: A one-digit checksum. Checksum: A computed value which depends on the contents of a block of data and which is transmitted or stored along with the data in order to detect corruption of the data. The receiving system recomputes the checksum based upon the received data and compares this value with the one sent with the data. If the two values are the same, the receiver has some confidence that the data was received correctly. The checksum may be 8 bits (modulo 256 sum), 16, 32, or some other size. It is computed by summing the bytes or words of the data block ignoring overflow. The checksum may be negated so that the total of the data words plus the checksum is zero."
+    },
+    {
+      "id": 97,
+      "question": "Data inference violations can be reduced using",
+      "options": {
+        "A": "Polyinstantiation technique.",
+        "B": "Rules based meditation.",
+        "C": "Multi-level data classification.",
+        "D": "Correct-state transformation."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Polyinstantiation is the development of a detailed version of an object from another object using different values in the new object. In the database information security, this term is concerned with the same primary key for different relations at different classification levels being stored in the same database. For example, in a relational database, the same of a military unit may be classified Secret in the database and may have an identification number as the primary key. If another user at a lower classification level attempts to create a confidential entry for another military unit using the same identification number as a primary key, a rejection of this attempt would imply to the lower level user that the same identification number existed at a higher level of classification. To avoid this inference channel of information, the lower level user would be issued the same identification number for their unit and the database management system would manage this situation where the same primary key was used for different units.\" Pg 352-353 Krutz: The CISSP Prep Guide: Gold Edition. \"As with aggregation, the best defense against inference attacks is to maintain constant vigilance over the permissions granted to individual users. Furthermore, intentional blurring of data may be used to prevent the inference of sensitive information.\" - Ed Tittle CISSP Study Guide (sybex) The other security issue is inference, which is very similar to aggregation. The inference problem happens when a subject deduces information that is restricted from data he has access to. This is seen when data at a lower security level indirectly portrays data at a higher level...This problem is usually dealt with in the development of the database by implementing content and context-dependent classification rules; this tracks the subject's query requests and restricts patterns that represent inference. \"Polyinstantiation is a process of interactively producing more detailed versions of objects by populating variables with values or other variables\"- Shon Harris All-in-one CISSP Certification Guide pg 725-727"
+    },
+    {
+      "id": 98,
+      "question": "What is it called when a computer uses more than one CPU in parallel to execute instructions?",
+      "options": {
+        "A": ") Multiprocessing",
+        "B": ") Multitasking",
+        "C": ") Multithreading",
+        "D": ") Parallel running"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 99,
+      "question": "What is the main purpose of undertaking a parallel run of a new system?",
+      "options": {
+        "A": ") Resolve any errors in the program and file interfaces",
+        "B": ") Verify that the system provides required business functionality",
+        "C": ") Validate the operation of the new system against its predecessor",
+        "D": ") Provide a backup of the old system"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 100,
+      "question": "Which of the following provide network redundancy in a local network environment?",
+      "options": {
+        "A": ") Mirroring",
+        "B": ") Shadowing",
+        "C": ") Dual backbones",
+        "D": ") Duplexing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q251 - Q300",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 251,
+      "question": "Which of the following concerning the Rijndael block cipher algorithm is NOT true?",
+      "options": {
+        "A": "The design of Rijndael was strongly influenced by the design of the block cipher Square.",
+        "B": "A total of 25 combinations of key length and block length are possible",
+        "C": "Both block size and key length can be extended to multiples of 64 bits.",
+        "D": "The cipher has a variable block length and key length."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "It is false that both block size and key length can be extended to multiples of 64 bits; they can be extended in multiples of 32 bits. Rijndael is a block symmetric cipher that was chosen to fulfill the Advanced Encryption Standard. It uses a 128-bit block size and various key lengths (128, 192, 256). The Rijndael specification is specified with block and key sizes that may be any multiple of 32 bits, both with a minimum of 128 and a maximum of 256 bits. Incorrect Answers: A: It is true that the design of Rijndael was strongly influenced by the design of the block cipher Square. B: It is true that a total of 25 combinations of key length and block length are possible. D: It is true that the cipher has a variable block length and key length."
+    },
+    {
+      "id": 252,
+      "question": "This type of attack is generally most applicable to public-key cryptosystems, what type of attack am I?",
+      "options": {
+        "A": "Chosen-Ciphertext attack",
+        "B": "Ciphertext-only attack",
+        "C": "Plaintext Only Attack",
+        "D": "Adaptive-Chosen-Plaintext attack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A chosen-ciphertext attack is one in which a cryptanalyst may choose a piece of ciphertext and attempt to obtain the corresponding decrypted plaintext. This type of attack is generally most applicable to public-key cryptosystems. Incorrect Answers: B: A Ciphertext-Only attack is one which the cryptanalyst obtains a sample of ciphertext without the plaintext associated with it. This data is relatively easy to obtain in many scenarios, but a successful ciphertext-only attack is generally difficult and requires a very large ciphertext sample. This attack is not generally most applicable to public-key cryptosystems. C: Plaintext Only Attack it not a defined attack type. D: An Adaptive-Chosen-Plaintext attack is a special case of chosen-plaintext attack in which the cryptanalyst is able to choose plaintext samples dynamically and alter his or her choices based on the results of previous encryptions. This attack is not generally most applicable to public-key cryptosystems."
+    },
+    {
+      "id": 253,
+      "question": "What is NOT true about a one-way hashing function?",
+      "options": {
+        "A": "It provides authentication of the message",
+        "B": "A hash cannot be reverse to get the message used to create the hash",
+        "C": "The results of a one-way hash is a message digest",
+        "D": "It provides integrity of the message"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "One-way hashing does not provide confidentiality or authentication. Incorrect Answers: B: One-way hash functions are never used in reverse. C: With one-way hashing, the sender puts a message through a hashing algorithm that results in a message digest (MD) value. D: One-way hashing does not provide confidentiality or authentication, but it does provide integrity."
+    },
+    {
+      "id": 254,
+      "question": "You've decided to authenticate the source who initiated a particular transfer while ensuring integrity of the data being transferred. You can do this by:",
+      "options": {
+        "A": "having the sender encrypt the message with his private key.",
+        "B": "having the sender encrypt the hash with his private key.",
+        "C": "having the sender encrypt the message with his symmetric key.",
+        "D": "having the sender encrypt the hash with his public key."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A hash will ensure the integrity of the data being transferred. A private key will authenticate the source (sender). Only the sender has a copy of the private key. If the recipient is able to decrypt the hash with the public key, then the recipient will know that the hash was encrypted with the private key of the sender. A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone. The input data is often called the message, and the hash value is often called the message digest or simply the digest. The ideal cryptographic hash function has four main properties: it is easy to compute the hash value for any given message it is infeasible to generate a message from its hash it is infeasible to modify a message without changing the hash it is infeasible to find two different messages with the same hash. Incorrect Answers: A: Having the sender encrypt the message with his private key would authenticate the sender. However, is would not ensure the integrity of the message. A hash is required to ensure the integrity of the message. C: Having the sender encrypt the message with his symmetric key will not authenticate the sender or ensure the integrity of the message. A hash is required to ensure the integrity of the message and the hash should be encrypted with the sender’s private key. D: Having the sender encrypt the hash with his public key will not authenticate the sender. Anyone could have a copy of the sender’s public key. The hash should be encrypted with the sender’s private key as the sender is the only person in possession of the private key."
+    },
+    {
+      "id": 255,
+      "question": "Which of the following type of lock uses a numeric keypad or dial to gain entry?",
+      "options": {
+        "A": "Bolting door locks",
+        "B": "Cipher lock",
+        "C": "Electronic door lock",
+        "D": "Biometric door lock"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Cipher locks, also known as programmable locks, are keyless and use keypads to control access into an area or facility. The lock requires a specific combination to be entered into the keypad and possibly a swipe card. They cost more than traditional locks, but their combinations can be changed, specific combination sequence values can be locked out, and personnel who are in trouble or under duress can enter a specific code that will open the door and initiate a remote alarm at the same time. Thus, compared to traditional locks, cipher locks can provide a much higher level of security and control over who can access a facility. Incorrect Answers: A: A bolting door lock is not the name for the type of lock that uses a numeric keypad or dial to gain entry. Therefore, this answer is incorrect. C: Locks that use a numeric keypad or dial to gain entry are often electronic locks. However, they can also be mechanical (non-electronic) locks. Therefore, this answer is incorrect. D: Biometric door locks do not use a numeric keypad or dial to gain entry; they use biometric scanners such as fingerprint or retina scanners. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 256,
+      "question": "In a dry pipe system, there is no water standing in the pipe - it is being held back by what type of valve?",
+      "options": {
+        "A": "Relief valve",
+        "B": "Emergency valve",
+        "C": "Release valve",
+        "D": "Clapper valve"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "In a dry pipe system, there is no water standing in the pipe — it is being held back by a clapper valve. In the event of a fire, the valve opens, the air is blown out of the pipe, and the water flows. Incorrect Answers: A: The valve used in a dry pipe system is called a clapper valve, not a relief valve. Therefore, this answer is incorrect. B: The valve used in a dry pipe system is called a clapper valve, not an emergency valve. Therefore, this answer is incorrect. C: The valve used in a dry pipe system is called a clapper valve, not a release valve. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 257,
+      "question": "The most prevalent cause of computer center fires is which of the following?",
+      "options": {
+        "A": "AC equipment",
+        "B": "Electrical distribution systems",
+        "C": "Heating systems",
+        "D": "Natural causes"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The most prevalent cause of computer center fires is electrical distribution systems. Most computer circuits use only two to five volts of direct current, which usually cannot start a fire. If a fire does happen in a computer room, it will most likely be an electrical fire caused by overheating of wire insulation or by overheating components that ignite surrounding plastics. Prolonged smoke usually occurs before combustion. Incorrect Answers: A: AC equipment is not the most prevalent cause of computer center fires. Therefore, this answer is incorrect. C: Heating systems are not the most prevalent cause of computer center fires. Computer centers use cooling systems, not heating systems. Therefore, this answer is incorrect. D: Natural causes are not the most prevalent cause of computer center fires. Computer centers are typically protected against natural causes. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 258,
+      "question": "Under what conditions would the use of a Class C fire extinguisher be preferable to a Class A extinguisher?",
+      "options": {
+        "A": "When the fire involves paper products",
+        "B": "When the fire is caused by flammable products",
+        "C": "When the fire involves electrical equipment",
+        "D": "When the fire is in an enclosed area"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Class C fire extinguishers are used for fires involving electrical equipment. Class C fires are electrical fires which that may occur in electrical equipment or wiring. Class C fire extinguishers use gas, CO2 or dry powders. These extinguishing agents are non-conductive. Class A fire extinguishers use water or foam. Water or foam used on an electrical fire would conduct the electricity and make the fire worse. Therefore, for an electrical fire, a Class C fire extinguisher is preferable to a Class A fire extinguisher. Incorrect Answers: A: For a paper fire, a Class A fire extinguisher that uses water or foam is preferred. Therefore, this answer is incorrect. B: All products that are burning in a fire are ‘flammable’. The specific type of product needs to be determined to determine which fire extinguisher to use. Therefore, this answer is incorrect. D: For a fire in an enclosed area, a Class A fire extinguisher that uses water or foam is preferred (unless the elements of the fire require a different fire extinguisher). This is because other fire extinguishers can use gases that can be harmful to life. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 259,
+      "question": "Examples of types of physical access controls include all EXCEPT which of the following?",
+      "options": {
+        "A": "badges",
+        "B": "locks",
+        "C": "guards",
+        "D": "passwords"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Access control needs to be enforced through physical and technical components when it comes to physical security. Physical access controls use mechanisms to identify individuals who are attempting to enter a facility or area. They make sure the right individuals get in and the wrong individuals stay out, and provide an audit trail of these actions. A physical security control is a physical item put into place to protect facility, personnel, and resources. Examples of physical access controls include badges, locks, guards, fences, barriers, RFID cards etc. A password is not a physical object; it is something you know. Therefore, a password is not an example of a physical access control. Incorrect Answers: A: A badge is a physical object. Therefore, this answer is incorrect. B: A lock is a physical object. Therefore, this answer is incorrect. C: A guard is a physical object; a person working as a guard counts as a physical access control. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 260,
+      "question": "Which of the following statements pertaining to fire suppression systems is TRUE?",
+      "options": {
+        "A": "Halon is today the most common choice as far as agents are concerned because it is highly effective in the way that it interferes with the chemical reaction of the elements within a fire.",
+        "B": "Gas masks provide an effective protection against use of CO2 systems. They are recommended for the protection of the employees within data centers.",
+        "C": "CO2 systems are NOT effective because they suppress the oxygen supply required to sustain the fire.",
+        "D": "Water Based extinguishers are NOT an effective fire suppression method for class C (electrical) fires."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Class C fires are electrical fires which that may occur in electrical equipment or wiring. Class C fire extinguishers use gas, CO2 or dry powders. These extinguishing agents are non-conductive. Class A fire extinguishers use water or foam. Water or foam used on an electrical fire would conduct the electricity and make the fire worse. Therefore, it is TRUE that water-based extinguishers are NOT an effective fire suppression method for class C (electrical) fires. Incorrect Answers: A: Halon is NOT the most common choice as far as agents are concerned. Halon is now known to be dangerous and no longer produced. Therefore, this answer is incorrect. B: Gas masks DO NOT provide an effective protection against use of CO2 systems. CO2 systems work by removing the oxygen from the air. Therefore, this answer is incorrect. C: CO2 systems ARE effective because they suppress the oxygen supply required to sustain the fire. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 261,
+      "question": "How should a doorway of a manned facility with automatic locks be configured?",
+      "options": {
+        "A": "It should be configured to be fail-secure.",
+        "B": "It should be configured to be fail-safe.",
+        "C": "It should have a door delay cipher lock.",
+        "D": "It should not allow piggybacking."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Doorways with automatic locks can be configured to be fail-safe or fail-secure. A fail-safe setting means that if a power disruption occurs that affects the automated locking system, the doors default to being unlocked. Fail-safe deals directly with protecting people. If people work in an area and there is a fire or the power is lost, it is not a good idea to lock them in. A fail-secure configuration means that the doors default to being locked if there are any problems with the power. If people do not need to use specific doors for escape during an emergency, then these doors can most likely default to fail-secure settings. Incorrect Answers: A: The doorway should be configured to be fail-safe, not fail-secure. A fail-secure configuration could lock people in the building if a power disruption occurs that affects the automated locking system. Therefore, this answer is incorrect. C: A door delay cipher lock will sound an alarm if the door is held open for too long. This is not a requirement for a doorway of a manned facility. Therefore, this answer is incorrect. D: Piggybacking is when an individual gains unauthorized access by using someone else’s legitimate credentials or access rights. Usually an individual just follows another person closely through a door without providing any credentials. It is not a requirement for a doorway of a manned facility to not allow piggybacking. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 262,
+      "question": "Which of the following is a proximity identification device that does not require action by the user and works by responding with an access code to signals transmitted by a reader?",
+      "options": {
+        "A": "A passive system sensing device",
+        "B": "A transponder",
+        "C": "A card swipe",
+        "D": "A magnetic card"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "System sensing access control readers, also called transponders, recognize the presence of an approaching object within a specific area. This type of system does not require the user to swipe the card through the reader. The reader sends out interrogating signals and obtains the access code from the card without the user having to do anything. Incorrect Answers: A: A passive system sensing device contains no battery or power on the card, but senses the electromagnetic field transmitted by the reader and transmits at different frequencies using the power field of the reader. This device does not send an access code. Therefore, this answer is incorrect. C: A swipe card requires the action from the user; the user has to swipe the card. Therefore, this answer is incorrect. D: A magnetic card requires the action from the user; the user has to swipe the card. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 263,
+      "question": "According to ISC2, what should be the fire rating for the internal walls of an information processing facility?",
+      "options": {
+        "A": "All walls must have a one-hour minimum fire rating.",
+        "B": "All internal walls must have a one-hour minimum fire rating, except for walls to adjacent rooms where records such as paper and media are stored, which should have a two-hour minimum fire rating.",
+        "C": "All walls must have a two-hour minimum fire rating.",
+        "D": "All walls must have a two-hour minimum fire rating, except for walls to adjacent rooms where records such as paper and media are stored, which should have a three-hour minimum fire rating."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The internal walls of your processing facility must be a floor to ceiling slab with a one-hour minimum fire rating. Any adjacent walls where records such as paper, media, etc. must have a two-hour minimum fire rating. There are different regulations that exist for external walls from state to state. Incorrect Answers: A: Walls to adjacent rooms where records such as paper and media are stored should have a two-hour minimum fire rating, not a one-hour fire rating. Therefore, this answer is incorrect. C: It is not necessary for all walls to have a two-hour minimum fire rating. Therefore, this answer is incorrect. D: It is not necessary for the internal walls to have a two-hour fire rating and it is not necessary for walls to adjacent rooms where records such as paper and media are stored should have a three-hour minimum fire rating. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 264,
+      "question": "Which of the following statements pertaining to air conditioning for an information processing facility is TRUE?",
+      "options": {
+        "A": "The AC units must be controllable from outside the area.",
+        "B": "The AC units must keep negative pressure in the room so that smoke and other gases are forced out of the room.",
+        "C": "The AC units must be on the same power source as the equipment in the room to allow for easier shutdown.",
+        "D": "The AC units must be dedicated to the information processing facility."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The AC units used in an information processing facility must be dedicated and controllable from within the area. They must be on an independent power source from the rest of the room and have a dedicated Emergency Power Off switch. It is positive, not negative pressure that forces smoke and other gases out of the room. Incorrect Answers: A: The AC units must be controllable from inside the area, not outside the area. Therefore, this answer is incorrect. B: The AC units must keep positive pressure in the room, not negative pressure so that smoke and other gases are forced out of the room. Therefore, this answer is incorrect. C: The AC units must be on a different power source as the equipment in the room to allow for easier shutdown. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 265,
+      "question": "Which of the following statements pertaining to secure information processing facilities is NOT true?",
+      "options": {
+        "A": "Walls should have an acceptable fire rating.",
+        "B": "Windows should be protected with bars.",
+        "C": "Doors must resist forcible entry.",
+        "D": "Location and type of fire suppression systems should be known."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The following statements pertaining to secure information processing facilities are correct: Walls should have an acceptable fire rating. Doors must resist forcible entry. Location and type of fire suppression systems should be known. Flooring in server rooms and wiring closets should be raised to help mitigate flooding damage. Separate AC units must be dedicated to the information processing facilities. Backup and alternate power sources should exist. The statement “windows should be protected with bars” is tricky. You could argue that they windows should be protected with bars. However, in a ‘secure’ information processing facility, there should be no windows. Incorrect Answers: A: It is true that walls should have an acceptable fire rating. Therefore, this answer is incorrect. C: It is true that doors must resist forcible entry. Therefore, this answer is incorrect. D: It is true that the location and type of fire suppression systems should be known. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 266,
+      "question": "What is a common problem when using vibration detection devices for perimeter control?",
+      "options": {
+        "A": "They are vulnerable to non-adversarial disturbances.",
+        "B": "They can be defeated by electronic means.",
+        "C": "Signal amplitude is affected by weather conditions.",
+        "D": "They must be buried below the frost line."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A common problem when using vibration detection devices for perimeter control is false alarms. For example, someone could lean on the fence and trigger an alarm. Perimeter Intrusion Detection and Assessment System (PIDAS) is a type of fencing that has sensors located on the wire mesh and at the base of the fence. It is used to detect if someone attempts to cut or climb the fence. It has a passive cable vibration sensor that sets off an alarm if an intrusion is detected. PIDAS is very sensitive and can cause many false alarms. Incorrect Answers: B: Vibration detection devices for perimeter control are not commonly defeated by electronic means. Therefore, this answer is incorrect. C: Signal amplitude being affected by weather conditions is not common problem when using vibration detection devices for perimeter control. Therefore, this answer is incorrect. D: It is not true that vibration detection devices for perimeter control must be buried below the frost line. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 267,
+      "question": "Under what conditions would the use of a \"Class C\" hand-held fire extinguisher be preferable to the use of a \"Class A\" hand-held fire extinguisher?",
+      "options": {
+        "A": "When the fire is in its incipient stage.",
+        "B": "When the fire involves electrical equipment.",
+        "C": "When the fire is located in an enclosed area.",
+        "D": "When the fire is caused by flammable products."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Class C fire extinguishers are used for fires involving electrical equipment. Class C fires are electrical fires which that may occur in electrical equipment or wiring. Class C fire extinguishers use non-conductive agents such as gas, CO2 or dry powders. Class A fire extinguishers use water or foam. Water or foam used on an electrical fire would conduct the electricity and make the fire worse. Therefore, for an electrical fire, a Class C fire extinguisher is preferable to a Class A fire extinguisher. Incorrect Answers: A: A fire being in its incipient stage (just starting) is not a reason to use a Class C fire extinguisher. Therefore, this answer is incorrect. C: For a fire in an enclosed area, a Class A fire extinguisher that uses water or foam is preferred (unless the elements of the fire require a different fire extinguisher). This is because other fire extinguishers can use gases that are harmful to life. Therefore, this answer is incorrect. D: All products that are burning in a fire are ‘flammable’. The specific type of product needs to be determined to determine which fire extinguisher to use. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 268,
+      "question": "To be in compliance with the Montreal Protocol, which of the following options can be taken to refill a Halon flooding system in the event that Halon is fully discharged in the computer room?",
+      "options": {
+        "A": "Order an immediate refill with Halon 1201 from the manufacturer.",
+        "B": "Contact a Halon recycling bank to make arrangements for a refill.",
+        "C": "Order a Non-Hydrochlorofluorocarbon compound from the manufacturer.",
+        "D": "Order an immediate refill with Halon 1301 from the manufacturer."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Halon is a gas that was widely used in the past to suppress fires because it interferes with the chemical combustion of the elements within a fire. It mixes quickly with the air and does not cause harm to computer systems and other data processing devices. It was used mainly in data centers and server rooms. It was discovered that halon has chemicals (chlorofluorocarbons) that deplete the ozone and that concentrations greater than 10 percent are dangerous to people. Halon used on extremely hot fires degrades into toxic chemicals, which is even more dangerous to humans. Halon has not been manufactured since January 1, 1992, by international agreement. The Montreal Protocol banned halon in 1987, and countries were given until 1992 to comply with these directives. The most effective replacement for halon is FM-200, which is similar to halon but does not damage the ozone. By law, companies that have halon extinguishers do not have to replace them, but the extinguishers cannot be refilled. So, companies that have halon extinguishers do not have to replace them right away, but when the extinguisher’s lifetime runs out, FM-200 extinguishers or other EPA-approved chemicals should be used. Incorrect Answers: A: You cannot refill a fire extinguisher with Halon 1201. Therefore, this answer is incorrect. B: You cannot refill a fire extinguisher with Halon. Therefore, this answer is incorrect. D: You cannot refill a fire extinguisher with Halon 1301. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 269,
+      "question": "Within Crime prevention through Environmental Design (CPTED) the concept of territoriality is BEST described as:",
+      "options": {
+        "A": "ownership.",
+        "B": "protecting specific areas with different measures.",
+        "C": "localized emissions.",
+        "D": "compromise of the perimeter."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Crime Prevention Through Environmental Design (“CPTED”) is the design, maintenance, and use of the built environment in order to enhance quality of life and to reduce both the incidence and fear of crime. Territoriality means providing clear designation between public, private, and semi-private areas and makes it easier for people to understand, and participate in, an area’s intended use. Territoriality communicates a sense of active “ownership” of an area that can discourage the perception that illegal acts may be committed in the area without notice or consequences. The use of see-through screening, low fencing, gates, signage, different pavement textures, or other landscaping elements that visually show the transition between areas intended for different uses are examples of the principle of territoriality. Incorrect Answers: B: Protecting specific areas with different measures is not a description of the CPTED concept of territoriality. Therefore, this answer is incorrect. C: Localized emissions are not a description of the CPTED concept of territoriality. Therefore, this answer is incorrect. D: Compromise of the perimeter is not a description of the CPTED concept of territoriality. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 270,
+      "question": "In the physical security context, a security door equipped with an electronic lock configured to ignore the unlock signals sent from the building emergency access control system in the event of an issue (fire, intrusion, power failure) would be in which of the following configuration?",
+      "options": {
+        "A": "Fail Soft",
+        "B": "Fail Open",
+        "C": "Fail Safe",
+        "D": "Fail Secure"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Doorways with automatic locks can be configured to be fail-safe or fail-secure. A fail-safe setting means that if a power disruption occurs that affects the automated locking system, the doors default to being unlocked. Fail-safe deals directly with protecting people. If people work in an area and there is a fire or the power is lost, it is not a good idea to lock them in. A fail-secure configuration means that the doors default to being locked if there are any problems with the power. If people do not need to use specific doors for escape during an emergency, then these doors can most likely default to fail-secure settings. Incorrect Answers: A: Doorways with automatic locks can be configured to be fail-safe or fail-secure. “Fail-soft” is not a valid term when talking about doorways with automatic locks. Therefore, this answer is incorrect. B: A fail-safe setting means that if a power disruption occurs that affects the automated locking system, the doors default to being unlocked. “Fail-open” is essentially the same as fail-safe although fail-safe is the more commonly used terminology. In a fail-safe or fail-open system, the doors do not remain locked. Therefore, this answer is incorrect. C: A fail-safe setting means that if a power disruption occurs that affects the automated locking system, the doors default to being unlocked; the doors do not remain locked. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 271,
+      "question": "An employee ensures all cables are shielded, builds concrete walls that extend from the true floor to the true ceiling and installs a white noise generator. What attack is the employee trying to protect against?",
+      "options": {
+        "A": "Emanation Attacks",
+        "B": "Social Engineering",
+        "C": "Object reuse",
+        "D": "Wiretapping"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Shielding is used to protect against electromagnetic emanation by reducing the size and strength of the propagated field. This makes shielding an effective method for decreasing or eliminating the interference and crosstalk. White noise is also used to protect against electromagnetic emanation. It achieves this by drowning out the small signal emanations that could normally be identified and used by unauthorized users to steal data. Incorrect Answers: B: Shielding and white noise are not countermeasures to Social Engineering. C: To protect against object reuse issues, you should wipe data from the subject media before reuse. D: Shielding and white noise are not countermeasures to Wiretapping."
+    },
+    {
+      "id": 272,
+      "question": "Electrical systems are the lifeblood of computer operations. The continued supply of clean, steady power is required to maintain the proper personnel environment as well as to sustain data operations. Which of the following is not an element that can threaten power systems?",
+      "options": {
+        "A": "Transient Noise",
+        "B": "Faulty Ground",
+        "C": "Brownouts",
+        "D": "UPS"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "An uninterruptible power supply (UPS) helps to ensure the continued supply of clean, steady power; it does not threaten it. An uninterruptible power supply (UPS) is an electrical apparatus that provides emergency power to a load when the input power source, typically mains power, fails. A UPS differs from an auxiliary or emergency power system or standby generator in that it will provide near-instantaneous protection from input power interruptions, by supplying energy stored in batteries, supercapacitors, or flywheels. The on-battery runtime of most uninterruptible power sources is relatively short (only a few minutes) but sufficient to start a standby power source or properly shut down the protected equipment. Incorrect Answers: A: Transient Noise is an element that can threaten power systems. Therefore, this answer is incorrect. B: Faulty Ground is an element that can threaten power systems. Therefore, this answer is incorrect. C: A brownout is a prolonged period of lower than expected voltage; this an element that can threaten power systems. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 273,
+      "question": "The ideal operating humidity range is defined as 40 percent to 60 percent. High humidity (greater than 60 percent) can produce what type of problem on computer parts?",
+      "options": {
+        "A": "Static electricity",
+        "B": "Corrosion",
+        "C": "Energy-plating",
+        "D": "Element-plating"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "High humidity means extra water in the air. This extra water can cause corrosion to computer parts. It is important to maintain the proper temperature and humidity levels within data centers, which is why an HVAC system should be implemented specifically for this room. Too high a temperature can cause components to overheat and turn off; too low a temperature can cause the components to work more slowly. If the humidity is high, then corrosion of the computer parts can take place; if humidity is low, then static electricity can be introduced. Because of this, the data center must have its own temperature and humidity controls, which are separate from the rest of the building. Incorrect Answers: A: Static electricity is caused by low humidity, not high humidity. Therefore, this answer is incorrect. C: Energy-plating is not caused by high humidity. Therefore, this answer is incorrect. D: Element-plating is not caused by high humidity. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 274,
+      "question": "Which of the following provides coordinated procedures for minimizing loss of life, injury, and property damage in response to a physical threat?",
+      "options": {
+        "A": "Business continuity plan",
+        "B": "Incident response plan",
+        "C": "Disaster recovery plan",
+        "D": "Occupant emergency plan"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The occupant emergency plan (OEP) provides the “response procedures for occupants of a facility in the event of a situation posing a potential threat to the health and safety of personnel, the environment, or property. Such events would include a fire, hurricane, criminal attack, or a medical emergency.” Incorrect Answers: A: A business continuity plan provides procedures for sustaining essential business operations while recovering from a significant disruption, while occupant emergency plan provides coordinated procedures for minimizing loss of life or injury and protecting properly damage in response to a physical threat. B: Incident response plan focuses on malware, hackers, intrusions, attacks, and other security issues. It outlines procedures for incident response. C: A Disaster recovery plan provides detailed procedures to facilitate recovery of capabilities at an alternate site, while occupant emergency plan provides coordinated procedures for minimizing loss of life or injury and protecting properly damage in response to a physical threat."
+    },
+    {
+      "id": 275,
+      "question": "The main risks that physical security components combat are all of the following EXCEPT:",
+      "options": {
+        "A": "SYN flood",
+        "B": "Physical damage",
+        "C": "Theft",
+        "D": "Tailgating"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A SYN flood is a type of software attack on system. The defense against a SYN flood is also software-based, not a physical component. If an attacker sends a target system SYN packets with a spoofed address, then the victim system replies to the spoofed address with SYN/ACK packets. Each time the victim system receives one of these SYN packets it sets aside resources to manage the new connection. If the attacker floods the victim system with SYN packets, eventually the victim system allocates all of its available TCP connection resources and can no longer process new requests. This is a type of DoS that is referred to as a SYN flood. To thwart this type of attack you can use SYN proxies, which limit the number of open and abandoned network connections. The SYN proxy is a piece of software that resides between the sender and receiver and only sends on TCP traffic to the receiving system if the TCP handshake process completes successfully. Incorrect Answers: B: Physical damage is carried out by a person or people. Physical security components can reduce the risk of physical damage. Therefore, this answer is incorrect. C: Theft is carried out by a person or people. Physical security components can reduce the risk of theft. Therefore, this answer is incorrect. D: Tailgating is carried out by a person or people. Physical security components can reduce the risk of tailgating. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 276,
+      "question": "A momentary power outage is a:",
+      "options": {
+        "A": "spike",
+        "B": "blackout",
+        "C": "surge",
+        "D": "fault"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Interference interrupts the flow of an electrical current, and fluctuations can actually deliver a different level of voltage than what was expected. Each fluctuation can be damaging to devices and people. The following explains the different types of voltage fluctuations possible with electric power: Power excess: Spike Momentary high voltage Surge Prolonged high voltage Power loss: Fault Momentary power outage Blackout Prolonged, complete loss of electric power Power degradation: Sag/dip Momentary low-voltage condition, from one cycle to a few seconds Brownout Prolonged power supply that is below normal voltage In-rush current Initial surge of current required to start a load Incorrect Answers: A: A spike is a momentary high voltage, not a momentary power outage. Therefore, this answer is incorrect. B: A blackout is a prolonged complete loss of power, not a momentary loss of power. Therefore, this answer is incorrect. C: A surge is prolonged high voltage, not a momentary power outage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 277,
+      "question": "A momentary high voltage is a:",
+      "options": {
+        "A": "spike",
+        "B": "blackout",
+        "C": "surge",
+        "D": "fault"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Interference interrupts the flow of an electrical current, and fluctuations can actually deliver a different level of voltage than what was expected. Each fluctuation can be damaging to devices and people. The following explains the different types of voltage fluctuations possible with electric power: Power excess: Spike Momentary high voltage Surge Prolonged high voltage Power loss: Fault Momentary power outage Blackout Prolonged, complete loss of electric power Power degradation: Sag/dip Momentary low-voltage condition, from one cycle to a few seconds Brownout Prolonged power supply that is below normal voltage In-rush current Initial surge of current required to start a load Incorrect Answers: B: A blackout is a prolonged complete loss of power, not a momentary high voltage. Therefore, this answer is incorrect. C: A surge is prolonged high voltage, not a momentary high voltage. Therefore, this answer is incorrect. D: A fault is a momentary power outage, not a momentary high voltage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 278,
+      "question": "What can be defined as a momentary low voltage?",
+      "options": {
+        "A": "spike",
+        "B": "blackout",
+        "C": "sag",
+        "D": "fault"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Interference interrupts the flow of an electrical current, and fluctuations can actually deliver a different level of voltage than what was expected. Each fluctuation can be damaging to devices and people. The following explains the different types of voltage fluctuations possible with electric power: Power excess: Spike Momentary high voltage Surge Prolonged high voltage Power loss: Fault Momentary power outage Blackout Prolonged, complete loss of electric power Power degradation: Sag/dip Momentary low-voltage condition, from one cycle to a few seconds Brownout Prolonged power supply that is below normal voltage In-rush current Initial surge of current required to start a load Incorrect Answers: A: A spike is a momentary high voltage, not a momentary low voltage. Therefore, this answer is incorrect. B: A blackout is a prolonged complete loss of power, not a momentary low voltage. Therefore, this answer is incorrect. D: A fault is a momentary power outage, not a momentary low voltage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 279,
+      "question": "A prolonged high voltage is a:",
+      "options": {
+        "A": "spike",
+        "B": "blackout",
+        "C": "surge",
+        "D": "fault"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A surge is a prolonged rise in voltage from a power source. Surges can cause a lot of damage very quickly. A surge is one of the most common power problems and is controlled with surge protectors. These protectors use a device called a metal oxide varistor, which moves the excess voltage to ground when a surge occurs. Its source can be from a strong lightning strike, a power plant going online or offline, a shift in the commercial utility power grid, and electrical equipment within a business starting and stopping. Incorrect Answers: A: A spike is a momentary high voltage, not a prolonged high voltage. Therefore, this answer is incorrect. B: A blackout is a prolonged complete loss of power, not a prolonged high voltage. Therefore, this answer is incorrect. D: A fault is a momentary power outage, not a prolonged high voltage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 280,
+      "question": "A prolonged complete loss of electric power is a:",
+      "options": {
+        "A": "brownout",
+        "B": "blackout",
+        "C": "surge",
+        "D": "fault"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A blackout is when the voltage drops to zero. This can be caused by lightning, a car taking out a power line, storms, or failure to pay the power bill. It can last for seconds or days. This is when a backup power source is required for business continuity. Incorrect Answers: A: A brownout is a prolonged low voltage, not a prolonged complete loss of power. Therefore, this answer is incorrect. C: A surge is a prolonged high voltage, not a prolonged power outage. Therefore, this answer is incorrect. D: A fault is a momentary power outage, not a prolonged power outage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 281,
+      "question": "A prolonged electrical power supply that is below normal voltage is a:",
+      "options": {
+        "A": "brownout",
+        "B": "blackout",
+        "C": "surge",
+        "D": "fault"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "When power companies are experiencing high demand, they frequently reduce the voltage in an electrical grid, which is referred to as a brownout. Constant voltage transformers can be used to regulate this fluctuation of power. They can use different ranges of voltage and only release the expected 120 volts of alternating current to devices. Interference interrupts the flow of an electrical current, and fluctuations can actually deliver a different level of voltage than what was expected. Each fluctuation can be damaging to devices and people. The following explains the different types of voltage fluctuations possible with electric power: Power excess: Spike Momentary high voltage Surge Prolonged high voltage Power loss: Fault Momentary power outage Blackout Prolonged, complete loss of electric power Power degradation: Sag/dip Momentary low-voltage condition, from one cycle to a few seconds Brownout Prolonged power supply that is below normal voltage In-rush current Initial surge of current required to start a load Incorrect Answers: B: A blackout is a prolonged complete loss of power, not a prolonged low voltage. Therefore, this answer is incorrect. C: A surge is a prolonged high voltage, not a prolonged low voltage. Therefore, this answer is incorrect. D: A fault is a momentary power outage, not a prolonged low voltage. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 282,
+      "question": "While referring to physical security, what does positive pressurization means?",
+      "options": {
+        "A": "The pressure inside your sprinkler system is greater than zero.",
+        "B": "The air goes out of a room when a door is opened and outside air does not go into the room.",
+        "C": "Causes the sprinkler system to go off.",
+        "D": "A series of measures that increase pressure on employees in order to make them more productive."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Ventilation has several requirements that must be met to ensure a safe and comfortable environment. A closed-loop recirculating air-conditioning system should be installed to maintain air quality. “Closed-loop” means the air within the building is reused after it has been properly filtered, instead of bringing outside air in. Positive pressurization and ventilation should also be implemented to control contamination. Positive pressurization means that when an employee opens a door, the air goes out, and outside air does not come in. If a facility were on fire, you would want the smoke to go out the doors instead of being pushed back in when people are fleeing. Incorrect Answers: A: Positive pressurization does not mean the pressure inside your sprinkler system is greater than zero. Therefore, this answer is incorrect. C: Positive pressurization does not cause the sprinkler system to go off. Therefore, this answer is incorrect. D: Positive pressurization is not a series of measures that increase pressure on employees in order to make them more productive. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 283,
+      "question": "How many bits compose an IPv6 address?",
+      "options": {
+        "A": "32 bits",
+        "B": "64 bits",
+        "C": "96 bits",
+        "D": "128 bits"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "IPv6 uses 128 bits for its addresses. Incorrect Answers: A: IPv4 uses 32 bits for its addresses, while IPv6 uses 128 bits. B: IPv6 uses 128 bits, not 64 bits, for its addresses. C: IPv6 uses 128 bits, not 96 bits, for its addresses."
+    },
+    {
+      "id": 284,
+      "question": "What protocol is used on the Local Area Network (LAN) to obtain an IP address from its known MAC address?",
+      "options": {
+        "A": "Reverse address resolution protocol (RARP)",
+        "B": "Address resolution protocol (ARP)",
+        "C": "Data link layer",
+        "D": "Network address translation (NAT)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RARP translates a MAC address into an IP address. Incorrect Answers: B: ARP translates the IP address into a MAC address, not the other way around. C: Network address translation (NAT) is a methodology of remapping one IP address space into another IP address space. NAT does handle MAC addresses. D: The data link layer does not use IP addresses. It transfers data between adjacent network nodes in a wide area network (WAN) or between nodes on the same local area network (LAN) segment."
+    },
+    {
+      "id": 285,
+      "question": "Which of the following security-focused protocols has confidentiality services operating at a layer different from the others?",
+      "options": {
+        "A": "Secure HTTP (S-HTTP)",
+        "B": "FTP Secure (FTPS)",
+        "C": "Secure socket layer (SSL)",
+        "D": "Sequenced Packet Exchange (SPX)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "S-HTTP provides application layer security, while the other protocols provide transport layer security. Incorrect Answers: B: FTPS can use SSL. FTPS (also known as FTPES, FTP-SSL and FTP Secure) is an extension to the commonly used File Transfer Protocol (FTP) that adds support for the Transport Layer Security (TLS) and the Secure Sockets Layer (SSL) cryptographic protocols. C: SSL can be used by FTPS. SSL provides transport layer security. D: SPX is a transport layer protocol (layer 4 of the OSI Model)."
+    },
+    {
+      "id": 286,
+      "question": "Packet Filtering Firewalls can also enable access for:",
+      "options": {
+        "A": "only authorized application port or service numbers.",
+        "B": "only unauthorized application port or service numbers.",
+        "C": "only authorized application port or ex-service numbers.",
+        "D": "only authorized application port or service integers."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering is a firewall technology that makes access decisions based upon network-level protocol header values. The filters can make access decisions based upon the following basic criteria: Source and destination port numbers (such as an application port or a service number) Protocol types Source and destination IP addresses Inbound and outbound traffic direction Incorrect Answers: B: Only authorized ports or service numbers, not unauthorized, would be granted access through the firewall. C: Packet Filtering Firewalls do not grant access through ex-service numbers. They use service numbers. D: Packet Filtering Firewalls do not grant access through service integers. A service has a number, not an integer."
+    },
+    {
+      "id": 287,
+      "question": "Which of the following is NOT a VPN communications protocol standard?",
+      "options": {
+        "A": "Point-to-point tunneling protocol (PPTP)",
+        "B": "Challenge Handshake Authentication Protocol (CHAP)",
+        "C": "Layer 2 tunneling protocol (L2TP)",
+        "D": "IP Security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The Challenge Handshake Authentication Protocol (CHAP) is used for authentication only. It is not a VPN communications protocol. Incorrect Answers: A: The Point-to-Point Tunneling Protocol (PPTP) is a method for implementing virtual private networks. C: Layer 2 Tunneling Protocol (L2TP) is a tunneling protocol used to support virtual private networks (VPNs). D: IP Security, Internet Protocol Security (IPsec), can be used to setup secure VPN connections."
+    },
+    {
+      "id": 288,
+      "question": "What layer of the OSI/ISO model does Point-to-point tunneling protocol (PPTP) work at?",
+      "options": {
+        "A": "Data link layer",
+        "B": "Transport layer",
+        "C": "Session layer",
+        "D": "Network layer"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "PPTP works at the data link layer."
+    },
+    {
+      "id": 289,
+      "question": "Which of the following statements pertaining to VPN protocol standards is false?",
+      "options": {
+        "A": "L2TP is a combination of PPTP and L2F.",
+        "B": "L2TP and PPTP were designed for single point-to-point client to server communication.",
+        "C": "L2TP operates at the network layer.",
+        "D": "PPTP uses native PPP authentication and encryption services."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "L2TP works at the data link layer, not at the network layer. Incorrect Answers: A: L2TP is a hybrid of PPTP and L2F B: Both L2TP and PPTP are designed for single point-to-point connections. D: PPTP extends and protects PPP connections."
+    },
+    {
+      "id": 290,
+      "question": "Which IPSec operational mode encrypts the entire data packet (including header and data) into an IPSec packet?",
+      "options": {
+        "A": "Authentication mode",
+        "B": "Tunnel mode",
+        "C": "Transport mode",
+        "D": "Safe mode"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "IPSec can work in one of two modes: transport mode, in which the payload of the message is protected, and tunnel mode, in which the payload and the routing and header information are protected. Incorrect Answers: A: IPsec does not have an Authentication mode C: In tunnel mode only the payload is protected. D: IPsec does not have a Safe mode."
+    },
+    {
+      "id": 291,
+      "question": "Which of the following category of UTP cables is specified to be able to handle gigabit Ethernet (1 Gbps) according to the EIA/TIA-568-B standards?",
+      "options": {
+        "A": "Category 5e UTP",
+        "B": "Category 2 UTP",
+        "C": "Category 3 UTP",
+        "D": "Category 1e UTP"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Category 5 UTP cable provides performance of up to 100 MHz and is suitable for 10BASE-T, 100BASE-TX (Fast Ethernet), and 1000BASE-T (Gigabit Ethernet). Category 5 was superseded by the category 5e (enhanced) specification. Incorrect Answers: B: The maximum frequency suitable for transmission over Category 2 UTP cable is 4 MHz, and the maximum bandwidth is 4Mbit/s. C: Category 3 UTP was widely used in computer networking in the early 1990s for 10BASE-T Ethernet (and to a lesser extent for 100BaseVG Ethernet, token ring and 100BASE-T4), but from the early 2000s new structured cable installations were almost invariably built with the higher performing Cat 5e or Cat 6 cable required by 100BASE-TX. D: The maximum frequency suitable for transmission over Category 1 UTP cable is 1 MHz, but Category 1 is not considered adequate for data transmission."
+    },
+    {
+      "id": 292,
+      "question": "In which LAN transmission method is a source packet copied and sent to specific multiple destinations but not ALL of the destinations on the network?",
+      "options": {
+        "A": "Overcast",
+        "B": "Unicast",
+        "C": "Multicast",
+        "D": "Broadcast"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "If the packet needs to go to a specific group of systems, the sending system uses the multicast method. Incorrect Answers: A: There is no LAN transmission method called Overcast. B: Unicast is a one-to-one transmission. D: If a system wants all computers on its subnet to receive a message, it will use the broadcast method."
+    },
+    {
+      "id": 293,
+      "question": "Which of the following can prevent hijacking of a web session?",
+      "options": {
+        "A": "RSA",
+        "B": "SET",
+        "C": "SSL",
+        "D": "PPP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "One method to prevent web session hijacking is to encrypt the data traffic passed between the parties by using SSL/TLS. Incorrect Answers: A: RSA cannot be used to prevent web session hijacking. B: SET cannot be used to prevent web session hijacking. D: PPP cannot be used to prevent web session hijacking."
+    },
+    {
+      "id": 294,
+      "question": "What is defined as the rules for communicating between computers on a Local Area Network (LAN)?",
+      "options": {
+        "A": "LAN Media Access methods",
+        "B": "LAN topologies",
+        "C": "LAN transmission methods",
+        "D": "Contention Access Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Media access technologies deal with how these systems communicate over the network media. LAN access technologies set up the rules of how computers will communicate on the Local Area Network. Incorrect Answers: B: Network topology is not defined by rules of communication. It is the arrangement of the various elements (links, nodes, etc.) of a computer network. C: The communications rules on a LAN is called Media Access rules, not transmissions methods. D: Contention Access Control is just used to avoid collisions. To communicate LAN Media Access methods are used."
+    },
+    {
+      "id": 295,
+      "question": "Which of the following is a LAN transmission method?",
+      "options": {
+        "A": "Broadcast",
+        "B": "Carrier-sense multiple access with collision detection (CSMA/CD)",
+        "C": "Token ring",
+        "D": "Fiber Distributed Data Interface (FDDI)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Broadcast, unicast, and multicast are all LAN transmissions methods. Incorrect Answers: B: CSMA/CD is a media access method, not a LAN transmission method. C: Token ring is a media access methodology, not a LAN transmission method. D: FDDI is a media access methodology, not a LAN transmission method."
+    },
+    {
+      "id": 296,
+      "question": "In what LAN topology do all the transmissions of the network travel the full length of cable and are received by all other stations?",
+      "options": {
+        "A": "Bus topology",
+        "B": "Ring topology",
+        "C": "Star topology",
+        "D": "FDDI topology"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In a bus topology a linear, single cable for all computers attached is used. All traffic travels the full cable and can be viewed by all other computers. Incorrect Answers: B: In a ring topology all computers are connected by a unidirectional transmission link, and the cable is in a closed loop. C: In a star topology all computers are connected to a central device, which provides more resilience for the network. D: FDDI is a media access methodology, not a LAN topology."
+    },
+    {
+      "id": 297,
+      "question": "Which of the following IEEE standards defines the token ring media access method?",
+      "options": {
+        "A": "802.3",
+        "B": "802.11",
+        "C": "802.5",
+        "D": "802.2"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Token Ring technology is defined by the IEEE 802.5 standard. Incorrect Answers: A: IEEE 802.3 is the IEEE standard defining the physical layer and data link layer's media access control (MAC) of wired Ethernet. B: IEEE 802.11 is a set of media access control (MAC) and physical layer (PHY) specifications for implementing wireless local area network (WLAN) computer communication. D: IEEE 802.2 is the original name of the standard which defines Logical Link Control (LLC) as the upper portion of the data link layer of the OSI Model."
+    },
+    {
+      "id": 298,
+      "question": "Which of the following LAN devices only operates at the physical layer of the OSI/ISO model?",
+      "options": {
+        "A": "Switch",
+        "B": "Bridge",
+        "C": "Hub",
+        "D": "Router"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A hub is a multiport repeater. Repeaters work at the physical layer and are add-on devices for extending a network connection over a greater distance. Incorrect Answers: A: Basic switches work at the data link layer. Layer 3, layer 4, and other layer switches have more enhanced functionality than layer 2 switches. B: A bridge is a LAN device used to connect LAN segments. It works at the data link layer. D: Routers work at the network layer."
+    },
+    {
+      "id": 299,
+      "question": "Which of the following technologies has been developed to support TCP/IP networking over low-speed serial interfaces?",
+      "options": {
+        "A": "ISDN",
+        "B": "SLIP",
+        "C": "xDSL",
+        "D": "T1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Serial Line Internet Protocol (SLIP) is an older technology developed to support TCP/IP communications over asynchronous serial connections, such as serial cables or modem dial - up. Incorrect Answers: A: ISDN can be considered a suite of digital services existing on layers 1, 2, and 3 of the OSI model. ISDN is digital, not serial. C: xDSL is a digital technology. xDSL is the term for the Broadband Access technologies based on Digital Subscriber Line (DSL) technology D: The T1 carrier is the most commonly used digital, not serial, transmission service."
+    },
+    {
+      "id": 300,
+      "question": "Which xDSL flavor, appropriate for home or small offices, delivers more bandwidth downstream than upstream and over longer distance?",
+      "options": {
+        "A": "VDSL",
+        "B": "SDSL",
+        "C": "ADSL",
+        "D": "HDSL"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Asymmetric DSL (ADSL) provides data travel downstream faster than upstream. Upstream speeds are 128 Kbps to 384 Kbps, and downstream speeds can be as fast as 768 Kbps. Generally used by residential users. ADSL is appropriate for small offices. Incorrect Answers: A: VDSL is basically ADSL at much higher data rates (13 Mbps downstream and 2 Mbps upstream). B: Symmetric DSL (SDSL) provides data travel upstream and downstream at the same rate. D: High-Bit-Rate DSL (HDSL) provides T1 (1.544 Mbps) speeds over regular copper phone wire without the use of repeaters."
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q501 - Q550",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 501,
+      "question": "RADIUS incorporates which of the following services?",
+      "options": {
+        "A": "Authentication server and PIN codes.",
+        "B": "Authentication of clients and static passwords generation.",
+        "C": "Authentication of clients and dynamic passwords generation.",
+        "D": "Authentication server as well as support for Static and Dynamic passwords."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A central authentication service for dial-up users is the standard Remote Authentication and Dial-In User Service (RADIUS). RADIUS incorporates an authentication server and dynamic passwords. The RADIUS protocol is an open lightweight, UDP-based protocol that can be modified to work with a variety of security systems. It provides authentication, authorization and accounting services to routers, modem servers, and wireless applications. RADIUS is described in RFC 2865. Incorrect Answers: A: RADIUS does not incorporate PIN codes. B: Authentication of clients is provided by the authentication server which is incorporated into RADIUS. RADIUS does not incorporate static passwords ‘generation’. C: Authentication of clients is provided by the authentication server which is incorporated into RADIUS. RADIUS does not incorporate dynamic passwords ‘generation’."
+    },
+    {
+      "id": 502,
+      "question": "Which of the following would constitute the BEST example of a password to use for access to a system by a network administrator?",
+      "options": {
+        "A": "holiday",
+        "B": "Christmas12",
+        "C": "Jenny",
+        "D": "GyN19Za!"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A generally accepted minimum standard for password complexity is a minimum of eight characters, one uppercase alpha character, one lowercase alpha character, one number character, and one symbol character. Therefore, “GyN19Za!” is the best example. Incorrect Answers: A: This option does not satisfy the minimum complexity as it only has lowercase characters. B: This option does not satisfy minimum complexity as there are no alpha or symbol characters. C: This option does not satisfy the minimum complexity as it is less than eight characters, and has no alpha, number, or symbol characters."
+    },
+    {
+      "id": 503,
+      "question": "What ensures that the control mechanisms correctly implement the security policy for the entire life cycle of an information system?",
+      "options": {
+        "A": "Accountability controls",
+        "B": "Mandatory access controls",
+        "C": "Assurance procedures",
+        "D": "Administrative controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Controls provide accountability for individuals who are accessing sensitive information. This accountability is accomplished through access control mechanisms that require identification and authentication and through the audit function. These controls must be in accordance with and accurately represent the organization’s security policy. Assurance procedures ensure that the control mechanisms correctly implement the security policy for the entire life cycle of an information system. Incorrect Answers: A: Controls are administrative, logical/technical or physical. Accountability controls are not a defined control type and do not ensure that the control mechanisms correctly implement the security policy for the entire life cycle of an information system. B: Mandatory access controls are an access control type. They do not ensure that the control mechanisms correctly implement the security policy for the entire life cycle of an information system. D: Administrative controls are a group of controls that include policies and procedures. However, assurance procedures are the specific name for the set of procedures that ensure that the control mechanisms correctly implement the security policy for the entire life cycle of an information system."
+    },
+    {
+      "id": 504,
+      "question": "Smart cards are an example of which type of control?",
+      "options": {
+        "A": "Detective control",
+        "B": "Administrative control",
+        "C": "Technical control",
+        "D": "Physical control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Smart cards are an example of a Preventive/Technical control. Incorrect Answers: A: Detective controls include Motion detectors, Closed-circuit TVs, Monitoring and Supervising, Job rotation, Investigations, Audit logs, and IDS. B: Administrative controls include Security policy, Monitoring and Supervising, Separation of duties, Job rotation, Information Classification, Personnel Procedures, Testing, and Security-awareness training. D: Physical controls include Fences, Locks, Badge system, Security guard, Biometric system, Mantrap doors, Lighting, Motion detectors, and Closed-circuit TVs."
+    },
+    {
+      "id": 505,
+      "question": "Which of the following is NOT a two-factor authentication mechanism?",
+      "options": {
+        "A": "Something you have and something you know.",
+        "B": "Something you do and a password.",
+        "C": "A smartcard and something you are.",
+        "D": "Something you know and a password."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Two-factor authentication includes two of the following three factors: Something you know - Password Something you have - Token Something you are - Biometrics A password is something you know, and cannot be used together for two-factor authentication. Incorrect Answers: A, B, C: This answer satisfies the requirements for two-factor authentication."
+    },
+    {
+      "id": 506,
+      "question": "Which of following is NOT a service provided by AAA servers (Radius, TACACS and DIAMETER)?",
+      "options": {
+        "A": "Authentication",
+        "B": "Administration",
+        "C": "Accounting",
+        "D": "Authorization"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The AAA term refers to authentication, authorization, and accounting/audit. Administration is not one of the options, therefore, the correct answer. Incorrect Answers: A, C, D: Authentication, Accounting, and Authorization are what the AAA term refers to."
+    },
+    {
+      "id": 507,
+      "question": "Which of the following protocol was used by the INITIAL version of the Terminal Access Controller Access Control System TACACS for communication between clients and servers?",
+      "options": {
+        "A": "TCP",
+        "B": "SSL",
+        "C": "UDP",
+        "D": "SSH"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "TACACS has been through three generations: TACACS, Extended TACACS (XTACACS), and TACACS+. TACACS combines its authentication and authorization processes; XTACACS separates authentication, authorization, and auditing processes; and TACACS+ is XTACACS with extended two-factor user authentication. TACACS uses fixed passwords for authentication, while TACACS+ allows users to employ dynamic (one-time) passwords, which provides more protection. The original TACACS was developed during the days of ARPANET which is the basis for the Internet. TACACS uses UDP as its communication protocol. TACACS + uses TCP as its communication protocol. Incorrect Answers: A: TACACS uses UDP as its communication protocol, not TCP. B: TACACS uses UDP as its communication protocol, not SSL. D: TACACS uses UDP as its communication protocol, not SSH."
+    },
+    {
+      "id": 508,
+      "question": "What is Kerberos?",
+      "options": {
+        "A": "A three-headed dog from the Egyptian mythology.",
+        "B": "A trusted third-party authentication protocol.",
+        "C": "A security model.",
+        "D": "A remote authentication dial-in user server."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Kerberos is a third-party authentication service that can be used to support SSO. Kerberos (or Cerberus) was the name of the three-headed dog that guarded the entrance to Hades in Greek mythology. Incorrect Answers: A: Kerberos (or Cerberus) was the name of the three-headed dog that guarded the entrance to Hades in Greek mythology. We are, however, dealing with information systems, not mythology. C: Kerberos is an authentication protocol, not just a security model. D: A remote authentication dial in user server refers to RADIUS, not Kerberos."
+    },
+    {
+      "id": 509,
+      "question": "Which of the following can BEST eliminate dial-up access through a Remote Access Server as a hacking vector?",
+      "options": {
+        "A": "Using a TACACS+ server.",
+        "B": "Installing the Remote Access Server outside the firewall and forcing legitimate users to authenticate to the firewall.",
+        "C": "Setting modem ring count to at least 5",
+        "D": "Only attaching modems to non-networked hosts."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "As client computers used to have built-in modems to allow for Internet connectivity, organizations commonly had a pool of modems to allow for remote access into and out of their networks. In some cases the modems were installed on individual servers here and there throughout the network or they were centrally located and managed. Most companies did not properly enforce access control through these modem connections, and they served as easy entry points for attackers. Installing the Remote Access Server outside the firewall and forcing legitimate users to authenticate to the firewall can best eliminate dial-up access through a Remote Access Server as a hacking vector. This solution would mean that even if an attacker gained access to the Remote Access Server, the firewall would provide another layer of protection. Incorrect Answers: A: Using a TACACS+ server does provide a good remote access authentication and authorization solution. However, to best eliminate dial-up access through a Remote Access Server as a hacking vector, you should place the remote access server outside the firewall. C: Setting modem ring count to at least 5 may deter wardialers but it does not eliminate dial-up access through a Remote Access Server as a hacking vector. D: Only attaching modems to non-networked hosts do not eliminate dial-up access through a Remote Access Server as a hacking vector. Besides being impractical, the non-network hosts would be vulnerable to attack."
+    },
+    {
+      "id": 510,
+      "question": "Which authentication technique BEST protects against hijacking?",
+      "options": {
+        "A": "Static authentication",
+        "B": "Continuous authentication",
+        "C": "Robust authentication",
+        "D": "Strong authentication"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "There are three major types of authentication available: static, robust, and continuous. Static authentication includes passwords and other techniques that can be compromised through replay attacks. They are often called reusable passwords. Robust authentication involves the use of cryptography or other techniques to create one-time passwords that are used to create sessions. These can be compromised by session hijacking. Continuous authentication prevents session hijacking. Continuous Authentication provides protection against impostors who can see, alter, and insert information passed between the claimant and verifier even after the claimant/verifier authentication is complete. These are typically referred to as active attacks, since they assume that the imposter can actively influence the connection between claimant and verifier. One way to provide this form of authentication is to apply a digital signature algorithm to every bit of data that is sent from the claimant to the verifier. There are other combinations of cryptography that can provide this form of authentication but current strategies rely on applying some type of cryptography to every bit of data sent. Otherwise, any unprotected bit would be suspect. Incorrect Answers: A: Static authentication only provides protection against attacks in which an imposter cannot see, insert or alter the information passed between the claimant and the verifier during an authentication exchange and subsequent session. Static authentication does not protect against hijacking. C: Robust Authentication relies on dynamic authentication data that changes with each authenticated session between a claimant and verifier. Robust or dynamic authentication does not protect against hijacking. D: Strong authentication is not a specific authentication type; it is another term for multi-factor authentication."
+    },
+    {
+      "id": 511,
+      "question": "Which of the following is NOT a security goal for remote access?",
+      "options": {
+        "A": "Reliable authentication of users and systems",
+        "B": "Protection of confidential data",
+        "C": "Easy to manage access control to systems and network resources",
+        "D": "Automated login for remote users"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Protection of confidential data is one of the most important security aspects of any business. Providing remote access to a network and its computer systems brings new risks. Is the person logging in remotely who he claims to be? Is someone physically or electronically looking over his shoulder, or tapping the communication line? Is the client device from which he is performing the remote access in a secure configuration, or has it been compromised by spyware, Trojan horses, and other malicious code? When providing remote access to your network, you need reliable authentication of users and systems. You also need to be able to control access to the systems and network resources. Automated login for remote users is not a security goal for remote access. Logins should not be automated for remote users. Automated logins do not improve the security of the network or systems. Incorrect Answers: A: Reliable authentication of users and systems is a security goal for remote access. B: Protection of confidential data is a security goal for remote access. C: Easy to manage access control to systems and network resources is a security goal for remote access."
+    },
+    {
+      "id": 512,
+      "question": "During an IS audit, one of your auditors has observed that some of the critical servers in your organization can be accessed ONLY by using a shared/common user name and password. What should be the auditor's PRIMARY concern be with this approach?",
+      "options": {
+        "A": "Password sharing",
+        "B": "Accountability",
+        "C": "Shared account management",
+        "D": "Difficulty in auditing shared account"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Identification and authentication are the keystones of most access control systems. Identification is the act of a user professing an identity to a system, usually in the form of a log-on ID to the system. Identification establishes user accountability for the actions on the system. Authentication is verification that the user’s claimed identity is valid and is usually implemented through a user password at log-on time. Audit trails list the actions performed by the user account used to perform the actions. However, if all the users are using the same user account, you have no way of knowing which person performed which action. Therefore, you have no “accountability”. Incorrect Answers: A: Password sharing is not the primary concern in this case. The only password shared is the password for the shared account. C: Shared account management is not a concern. The fact that the account is shared is the concern. D: Difficulty in auditing shared account is not the primary concern. Auditing a single account is not a problem. The problem is that you do not know which person is using the account at any given time."
+    },
+    {
+      "id": 513,
+      "question": "During an IS audit, auditor has observed that authentication and authorization steps are split into two functions and there is a possibility to force the authorization step to be completed before the authentication step. Which of the following technique an attacker could user to force authorization step before authentication?",
+      "options": {
+        "A": "Eavesdropping",
+        "B": "Traffic analysis",
+        "C": "Masquerading",
+        "D": "Race Condition"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A race condition happens when two different processes need to carry out their tasks on the same resource. Incorrect Answers: A: Sniffing or eavesdropping involves the capturing and recording of all frames traveling across the network media. B: Traffic analysis is used for discovering information by watching traffic patterns on a network. C: Masquerading occurs by impersonating another user to gain unauthorized access to a system"
+    },
+    {
+      "id": 514,
+      "question": "Which of the following testing method examines the functionality of an application without peering into its internal structure or knowing the details of its internals?",
+      "options": {
+        "A": "Black-box testing",
+        "B": "Parallel Test",
+        "C": "Regression Testing",
+        "D": "Pilot Testing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Black box testing examines the functionality of an application without peering into its internal structures or workings. Black box testing provides the tester with no internal details; the software is treated as a black box that receives inputs. Incorrect Answers: B: Parallel Testing is the process of entering the same inputs in two different versions of the application and reporting the anomalies. C: Regression Testing is the process of rerunning a portion of a test scenario or test plan to ensure that changes or corrections have not introduced new errors. D: Pilot Testing is a preliminary test that focuses on specific and predefined aspect of a system."
+    },
+    {
+      "id": 515,
+      "question": "Which of the following is NOT a technique used to perform a penetration test?",
+      "options": {
+        "A": "traffic padding",
+        "B": "scanning and probing",
+        "C": "war dialing",
+        "D": "sniffing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Traffic padding is a countermeasure to traffic analysis. Even if perfect cryptographic routines are used, the attacker can gain knowledge of the amount of traffic that was generated. The attacker might not know what Alice and Bob were talking about, but can know that they were talking and how much they talked. In certain circumstances this can be very bad. Consider for example when a military is organizing a secret attack against another nation: it may suffice to alert the other nation for them to know merely that there is a lot of secret activity going on. Padding messages is a way to make it harder to do traffic analysis. Normally, a number of random bits are appended to the end of the message with an indication at the end how much this random data is. The randomness should have a minimum value of 0, a maximum number of N and an even distribution between the two extremes. Note, that increasing 0 does not help, only increasing N helps, though that also means that a lower percentage of the channel will be used to transmit real data. Also note, that since the cryptographic routine is assumed to be uncrackable (otherwise the padding length itself is crackable), it does not help to put the padding anywhere else, e.g. at the beginning, in the middle, or in a sporadic manner. Incorrect Answers: B: Scanning and probing is a technique used in Penetration Testing. Various scanners, like a port scanner, can reveal information about a network’s infrastructure and enable an intruder to access the network’s unsecured ports. C: War dialing is a technique used in Penetration Testing. War dialing is a technique of using a modem to automatically scan a list of telephone numbers, usually dialing every number in a local area code to search for computers to hack in to. D: Sniffing (packet sniffing) is a technique used in Penetration Testing. Packet sniffing is the process of intercepting data as it is transmitted over a network."
+    },
+    {
+      "id": 516,
+      "question": "Which of the following is NOT a valid reason to use external penetration service firms rather than corporate resources?",
+      "options": {
+        "A": "They are more cost-effective",
+        "B": "They offer a lack of corporate bias",
+        "C": "They use highly talented ex-hackers",
+        "D": "They ensure a more complete reporting"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Two points are important to consider when it comes to ethical hacking: integrity and independence. By not using an ethical hacking firm that hires or subcontracts to ex-hackers of others who have criminal records, an entire subset of risks can be avoided by an organization. Also, it is not cost-effective for a single firm to fund the effort of the ongoing research and development, systems development, and maintenance that is needed to operate state-of-the-art proprietary and open source testing tools and techniques. External penetration firms are more effective than internal penetration testers because they are not influenced by any previous system security decisions, knowledge of the current system environment, or future system security plans. Moreover, an employee performing penetration testing might be reluctant to fully report security gaps. Incorrect Answers: A: External penetration service firms are more cost-effective than using corporate resources for penetration testing. This is a valid reason to use external penetration service firms. B: External penetration service firms do offer a lack of corporate bias compared to corporate resources. This is a valid reason to use external penetration service firms. D: External penetration service firms do tend to ensure more complete reporting than corporate resources. This is a valid reason to use external penetration service firms."
+    },
+    {
+      "id": 517,
+      "question": "Which of the following statements pertaining to ethical hacking is NOT true?",
+      "options": {
+        "A": "An organization should use ethical hackers who do not sell auditing, hardware, software, firewall, hosting, and/or networking services.",
+        "B": "Testing should be done remotely to simulate external threats.",
+        "C": "Ethical hacking should not involve writing to or modifying the target systems negatively.",
+        "D": "Ethical hackers never use tools that have the potential of affecting servers or services."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Ethical hackers should use tools that have the potential of affecting servers or services to provide a valid security test. These are the tools that a malicious hacker would use. The first step before sending even one single packet to the target would be to have a signed agreement with clear rules of engagement and a signed contract. The signed contract explains to the client the associated risks and the client must agree to them before you even send one packet to the target range. This way the client understands that some of the tests could lead to interruption of service or even crash a server. The client signs that he is aware of such risks and willing to accept them. Incorrect Answers: A: An organization should use ethical hackers who do not sell auditing, hardware, software, firewall, hosting, and/or networking services. An ethical hacking firm's independence can be questioned if they sell security solutions at the same time as doing testing for the same client. B: Testing should be done remotely to simulate external threats. Testing simulating a cracker from the Internet is often one of the first tests being done. This is to validate perimeter security. By performing tests remotely, the ethical hacking firm emulates the hacker's approach more realistically. C: Ethical hacking should not involve writing to or modifying the target systems negatively. Proving the ability to write to or modify the target systems (without causing harm) is enough to demonstrate the existence of a vulnerability."
+    },
+    {
+      "id": 518,
+      "question": "Common Criteria 15408 generally outlines assurance and functional requirements through a security evaluation process concept of ______________, ____________, __________ for Evaluated Assurance Levels (EALs) to certify a product or system.",
+      "options": {
+        "A": "EAL, Security Target, Target of Evaluation",
+        "B": "SFR, Protection Profile, Security Target",
+        "C": "Protection Profile, Target of Evaluation, Security Target",
+        "D": "SFR, Security Target, Target of Evaluation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Under the Common Criteria model, an evaluation is carried out on a product and it is assigned an Evaluation Assurance Level (EAL). The thorough and stringent testing increases in detailed-oriented tasks as the assurance levels increase. The Common Criteria has seven assurance levels. The range is from EAL1, where functionality testing takes place, to EAL7, where thorough testing is performed and the system design is verified. The different components are shown in the exhibit below: Incorrect Answers: A: Evaluated Assurance Levels (EALs) determine the levels of evaluation required. EAL is not a common criteria security evaluation process concept. B: Security functional requirements (SFRs) are individual security functions which must be provided by a product. An SFR is not a common criteria security evaluation process concept. D: Security functional requirements (SFRs) are individual security functions which must be provided by a product. An SFR is not a common criteria security evaluation process concept."
+    },
+    {
+      "id": 519,
+      "question": "You are a security consultant who is required to perform penetration testing on a client's network. During penetration testing, you are required to use a compromised system to attack other systems on the network to avoid network restrictions like firewalls. Which method would you use in this scenario:",
+      "options": {
+        "A": "Black box Method",
+        "B": "Pivoting method",
+        "C": "White Box Method.",
+        "D": "Grey Box Method"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Pivoting is a method that makes use of the compromised system to attack other systems on the same network to avoid restrictions that might prohibit direct access to all machines. Incorrect Answers: A: Black box testing examines the functionality of an application without peering into its internal structures or workings. C: With white box testing, the testers are provided with complete knowledge of the infrastructure being tested. D: With gray-box pen testing, the tester is provided with partial knowledge of the infrastructure being tested."
+    },
+    {
+      "id": 520,
+      "question": "Which of the following would provide the BEST stress testing environment taking under consideration and avoiding possible data exposure and leaks of sensitive data?",
+      "options": {
+        "A": "Test environment using test data.",
+        "B": "Test environment using sanitized live workloads data.",
+        "C": "Production environment using test data.",
+        "D": "Production environment using sanitized live workloads data."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "You should perform stress tests in a test environment. It is best to use live workload data as the stress test would be more realistic. Stress testing (sometimes called torture testing) is a form of deliberately intense or thorough testing used to determine the stability of a given system or entity. It involves testing beyond normal operational capacity, often to a breaking point, in order to observe the results. Incorrect Answers: A: It would be better to use live workload data. C: You should not perform stress tests in the product environment. D: You should not perform stress tests in the product environment."
+    },
+    {
+      "id": 521,
+      "question": "Which of the following are required for Life-Cycle Assurance?",
+      "options": {
+        "A": "System Architecture and Design specification",
+        "B": "Security Testing and Covert Channel Analysis",
+        "C": "Security Testing and Trusted distribution",
+        "D": "Configuration Management and Trusted Facility Management"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Trusted Computer System Evaluation Criteria (TCSEC) is a United States Government Department of Defense (DoD) standard that sets basic requirements for assessing the effectiveness of computer security controls built into a computer system. The TCSEC was used to evaluate, classify and select computer systems being considered for the processing, storage and retrieval of sensitive or classified information. The computer system must contain hardware/software mechanisms that can be independently evaluated to provide sufficient assurance that the system enforces the requirements. By extension, assurance must include a guarantee that the trusted portion of the system works only as intended. To accomplish these objectives, two types of assurance are needed with their respective elements: Operational Assurance: System Architecture, System Integrity, Covert Channel Analysis, Trusted Facility Management and Trusted Recovery Life-cycle Assurance: Security Testing, Design Specification and Verification, Configuration Management and Trusted System Distribution Incorrect Answers: A: System Architecture is not required for Life-Cycle Assurance. System Architecture is part of Operational Assurance. B: Covert Channel Analysis is not required for Life-Cycle Assurance. Covert Channel Analysis is part of Operational Assurance. D: Trusted Facility Management is not required for Life-Cycle Assurance. Trusted Facility Management is part of Operational Assurance."
+    },
+    {
+      "id": 522,
+      "question": "What is the most effective means of determining that controls are functioning properly within an operating system?",
+      "options": {
+        "A": "Interview with computer operator",
+        "B": "Review of software control features and/or parameters",
+        "C": "Review of operating system manual",
+        "D": "Interview with product vendor"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Various operating system software products provide parameters and options for the tailoring of the system and activation of features such as activity logging. Parameters are important in determining how a system runs because they allow a standard piece of software to be customized to diverse environments. The reviewing of software control features and/or parameters is the most effective means of determining how controls are functioning within an operating system and of assessing and operating system's integrity. The review of software control features and/or parameters would be part of your security audit. A security audit is typically performed by an independent third party to the management of the system. The audit determines the degree with which the required controls are implemented. A security review is conducted by the system maintenance or security personnel to discover vulnerabilities within the system. A vulnerability occurs when policies are not followed, misconfigurations are present, or flaws exist in the hardware or software of the system. System reviews are sometimes referred to as a vulnerability assessment. Incorrect Answers: A: An interview with the computer operator is not an effective means of determining that controls are functioning properly within an operating system because the computer operator will not necessarily be aware of the detailed settings of the parameters. C: The operating system manual should provide information as to what settings can be used but will not give any hint as to how parameters are actually set. D: An interview with the product vendor is not an effective means of determining that controls are functioning properly within an operating system because the product vendor will not be aware of the detailed settings of the parameters."
+    },
+    {
+      "id": 523,
+      "question": "Which of the following would be the best reason for separating the test and development environments?",
+      "options": {
+        "A": "To restrict access to systems under test.",
+        "B": "To control the stability of the test environment.",
+        "C": "To segregate user and development staff.",
+        "D": "To secure access to systems under development."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "You should always separate test and development environments. When testing a system, you need to isolate the system to ensure the test system is controlled and stable. This will ensure the system is tested in a realistic environment that mirrors the live environment as closely as possible. Access control methods can be used to easily separate the test and development environments. Incorrect Answers: A: Restricting access to systems under test is not the best reason for separating the test and development environments. Preventing instability in a development environment from affecting the test environment is a better answer. C: Segregate user and development staff is not the best reason for separating the test and development environments. D: Securing access to systems under development is not the best reason for separating the test and development environments. Securing access to systems under development would not be achieved by separating the test and development environments."
+    },
+    {
+      "id": 524,
+      "question": "The MAIN issue with Level 1 of RAID is which of the following?",
+      "options": {
+        "A": "It is very expensive.",
+        "B": "It is difficult to recover.",
+        "C": "It causes poor performance.",
+        "D": "It is relatively unreliable."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 1 is commonly called mirroring. It mirrors the data from one disk or set of disks by duplicating the data onto another disk or set of disks. This is often implemented by a one-for-one disk to disk ratio: Each drive is mirrored to an equal drive partner that is continually being updated with current data. If one drive fails, the system automatically gets the data from the other drive. The main issue with this level of RAID is that the one-for-one ratio is very expensive — resulting in the highest cost per megabyte of data capacity. This level effectively doubles the amount of hard drives you need, therefore it is usually best for smaller capacity systems. Incorrect Answers: B: RAID level 1 is not difficult to recover. If one drive fails, the system automatically gets the data from the other drive. C: RAID level 1 does not cause poor performance. The performance is quite good because no parity data needs to be calculated. D: RAID level 1 is not relatively unreliable; duplicating data onto another disk is a reliable system."
+    },
+    {
+      "id": 525,
+      "question": "Which of the following effectively doubles the amount of hard drives needed but also provides redundancy?",
+      "options": {
+        "A": "RAID Level 0",
+        "B": "RAID Level 1",
+        "C": "RAID Level 2",
+        "D": "RAID Level 5"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 1 is commonly called mirroring. It mirrors the data from one disk or set of disks by duplicating the data onto another disk or set of disks. This is often implemented by a one-for-one disk to disk ratio: Each drive is mirrored to an equal drive partner that is continually being updated with current data. If one drive fails, the system automatically gets the data from the other drive. The main issue with this level of RAID is that the one-for-one ratio is very expensive — resulting in the highest cost per megabyte of data capacity. This level effectively doubles the amount of hard drives you need, therefore it is usually best for smaller capacity systems. Incorrect Answers: A: RAID Level 0 requires a minimum of two disks so in that sense, it does double the minimum disk requirement. However, if the minimum amount of disks you require to store your data is more than two, then RAID level 0 does not double the disk requirement. For example, if you needed 4 disks to store all your data, you could just create a 4-disk RAID. RAID level 0 also provides no redundancy. C: RAID Level 2 defines a 39-disk system. This doesn’t double the amount of hard drives needed because it is a fixed disk requirement. D: RAID Level 5 does not double the amount of hard drives needed. RAID level 5 requires the equivalent of one extra drive for parity data. For example, if 4 disks were needed for the amount of data to be stored, the RAID would need 5 disks. If 10 disks were required for the amount of data to be stored, the RAID would need 11 disks in total."
+    },
+    {
+      "id": 526,
+      "question": "Which of the following is used to create parity information?",
+      "options": {
+        "A": "a hamming code",
+        "B": "a clustering code",
+        "C": "a mirroring code",
+        "D": "a striping code"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 2 consists of bit-interleaved data on multiple disks. The parity information is created using a hamming code that detects errors and establishes which part of which drive is in error. It defines a disk drive system with 39 disks: 32 disks of user storage 66 and seven disks of error recovery coding. This level is not used in practice and was quickly superseded by the more flexible levels of RAID such as RAID 3 and RAID 5. Incorrect Answers: B: Clustering code is not used to create parity information. C: A mirroring code is not used to create parity information. Mirroring is used to describe the method used in RAID level 1. D: A striping code is not used to create parity information. Striping is the method used to write data across multiple disks in RAID systems."
+    },
+    {
+      "id": 527,
+      "question": "The only difference between RAID 3 and RAID 4 is that level 3 is implemented at the byte level while level 4 is usually implemented at which of the following?",
+      "options": {
+        "A": "Block level.",
+        "B": "Bridge level.",
+        "C": "Channel level.",
+        "D": "Buffer level."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Levels 3 and 4 function in a similar way. The only difference is that level 3 is implemented at the byte level and level 4 is usually implemented at the block level. In this scenario, data is striped across several drives and the parity check bit is written to a dedicated parity drive. This is similar to RAID 0. They both have a large data volume, but the addition of a dedicated parity drive provides redundancy. If a hard disk fails, the data can be reconstructed by using the bit information on the parity drive. The main issue with this level of RAID is that the constant writes to the parity drive can create a performance hit. In this implementation, spare drives can be used to replace crashed drives. Incorrect Answers: B: RAID level 4 is not implemented at bridge level. C: RAID level 4 is not implemented at channel level. D: RAID level 4 is not implemented at buffer level."
+    },
+    {
+      "id": 528,
+      "question": "The spare drives that replace the failed drives are usually hot swappable, meaning they can be replaced on the server in which of the following scenarios?",
+      "options": {
+        "A": "system is up and running",
+        "B": "system is quiesced but operational",
+        "C": "system is idle but operational",
+        "D": "system is up and in single-user-mode"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 5 stripes the data and the parity information at the block level across all the drives in the set. It is similar to RAID 3 and 4 except that the parity information is written to the next available drive rather than to a dedicated drive by using an interleave parity. This enables more flexibility in the implementation and increases fault tolerance as the parity drive is not a single point of failure, as it is in RAID 3 or 4. The disk reads and writes are also performed concurrently, thereby increasing performance over levels 3 and 4. The spare drives that replace the failed drives are usually hot swappable, meaning they can be replaced on the server while the system is up and running. This is probably the most popular implementation of RAID today. Incorrect Answers: B: Hot swappable means that the disk drives can be replaced on the server while the server is system is up and running. The server does not need to be quiesced. C: Hot swappable means that the disk drives can be replaced on the server while the server is system is up and running. The server does not need to be idle. D: Hot swappable means that the disk drives can be replaced on the server while the server is system is up and running. The server does not need to be in single- user-mode."
+    },
+    {
+      "id": 529,
+      "question": "RAID level 10 is created by combining which of the following?",
+      "options": {
+        "A": "level 0 (striping) with level 1 (mirroring).",
+        "B": "level 0 (striping) with level 2 (hamming).",
+        "C": "level 0 (striping) with level 1 (clustering).",
+        "D": "level 0 (striping) with level 1 (hamming)."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID 10, also known as RAID 1+0, combines disk mirroring and disk striping to protect data. A RAID 10 configuration requires a minimum of four disks, and stripes data across mirrored pairs. As long as one disk in each mirrored pair is functional, data can be retrieved. If two disks in the same mirrored pair fail, all data will be lost because there is no parity in the striped sets. RAID 10 provides redundancy and performance, and is the best option for I/O-intensive applications. One disadvantage is that only 50% of the total raw capacity of the drives is usable due to mirroring. Incorrect Answers: B: Level 0 (striping) is combined with level 1 (mirroring), not level 2 (hamming). C: Level 1 is mirroring, not clustering. D: Level 1 is mirroring, not hamming."
+    },
+    {
+      "id": 530,
+      "question": "A hardware RAID implementation is usually:",
+      "options": {
+        "A": "platform-independent.",
+        "B": "platform-dependent.",
+        "C": "operating system dependent.",
+        "D": "software dependent."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID can be implemented in either hardware or software. Each type has its own issues and benefits. A hardware RAID implementation is usually platform- independent. It runs below the operating system (OS) of the server and usually does not care if the OS is Novell, NT, or Unix. The hardware implementation uses its own Central Processing Unit (CPU) for calculations on an intelligent controller card. There can be more than one of these cards installed to provide hardware redundancy in the server. RAID levels 3 and 5 run faster on hardware. A software implementation of RAID means it runs as part of the operating system on the file server. Incorrect Answers: B: A hardware RAID implementation is not platform-dependent. C: A hardware RAID implementation is not operating system dependent. D: A hardware RAID implementation is not software dependent."
+    },
+    {
+      "id": 531,
+      "question": "RAID levels 3 and 5 run:",
+      "options": {
+        "A": "faster on hardware.",
+        "B": "slower on hardware.",
+        "C": "faster on software.",
+        "D": "at the same speed on software and hardware."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID can be implemented in either hardware or software. Each type has its own issues and benefits. A hardware RAID implementation is usually platform- independent. It runs below the operating system (OS) of the server and usually does not care if the OS is Novell, NT, or Unix. The hardware implementation uses its own Central Processing Unit (CPU) for calculations on an intelligent controller card. There can be more than one of these cards installed to provide hardware redundancy in the server. RAID levels 3 and 5 run faster on hardware. A software implementation of RAID means it runs as part of the operating system on the file server. Incorrect Answers: B: RAID levels 3 and 5 run faster, not slower on hardware. C: RAID levels 3 and 5 run faster on hardware, not software. D: RAID levels 3 and 5 run faster hardware than they do on software."
+    },
+    {
+      "id": 532,
+      "question": "When RAID runs as part of the operating system on the file server, it is an example of a:",
+      "options": {
+        "A": "software implementation.",
+        "B": "hardware implementation.",
+        "C": "network implementation.",
+        "D": "server implementation."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID can be implemented in either hardware or software. Each type has its own issues and benefits. A software implementation of RAID means it runs as part of the operating system on the file server. Often RAID levels 0, 1, and 10 run faster on software RAID because of the need for the server’s software resources. Simple striping or mirroring can run faster in the operating system because neither use the hardware-level parity drives. Incorrect Answers: B: RAID running as part of the operating system on the file server is an example of a software implementation, not a hardware implementation. C: RAID running as part of the operating system on the file server is an example of a software implementation, not a network implementation. D: RAID running as part of the operating system on the file server is an example of a software implementation, not a server implementation."
+    },
+    {
+      "id": 533,
+      "question": "A server cluster looks like a:",
+      "options": {
+        "A": "single server from the user's point of view.",
+        "B": "dual server from the user's point of view.",
+        "C": "triple server from the user's point of view.",
+        "D": "quadruple server from the user's point of view."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A server cluster is a group of independent servers, which are managed as a single system that provides higher availability, easier manageability, and greater scalability. The cluster looks like a single server from the user’s point of view. If any server in the cluster crashes, processing continues transparently. Incorrect Answers: B: A server cluster looks like a single server, not a dual server from the user's point of view. C: A server cluster looks like a single server, not a triple server from the user's point of view. D: A server cluster looks like a single server, not a quadruple server from the user's point of view."
+    },
+    {
+      "id": 534,
+      "question": "Which of the following backup methods makes a complete backup of every file on the server every time it is run?",
+      "options": {
+        "A": "The full backup method.",
+        "B": "The incremental backup method.",
+        "C": "The differential backup method.",
+        "D": "The tape backup method."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Full Backup Method makes a complete backup of every file on the server every time it is run. The method is primarily run when time and tape space permits, and is used for system archive or baselined tape sets. Incorrect Answers: B: The incremental backup method backs up only the files that have changed since the previous full or incremental backup. This backup method does not back up all files every time it is run. C: The differential backup method backs up only the files that have changed since the previous full backup. This backup method does not back up all files every time it is run. D: The tape backup method is not a method that determines what files are backed up; it just specifies that the files are backed up to tape."
+    },
+    {
+      "id": 535,
+      "question": "Which backup method usually resets the archive bit on the files after they have been backed up?",
+      "options": {
+        "A": "Incremental backup method.",
+        "B": "Differential backup method.",
+        "C": "Partial backup method.",
+        "D": "Tape backup method."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The incremental backup method backs up all the files that have changed since the last full or incremental backup and resets the archive bit to 0. This is known as “clearing the archive bit”. A full backup backs up all files regardless of whether the archive bit is 1 or 0 and sets the archive bit to 0. The archive bit is used by the backup process to determine whether a file has been changed. When you modify a file or create a new file, the archive bit is set to 1. This tells the backups process that the file has changed (or is a new file) and needs to be backed up. When an incremental backup backs up the file, it sets the archive bit to 0. When the next incremental backup runs and sees that the archive bit is 0, the incremental backup knows that the file has not changed since the last backup and so will not back up the file again. Incorrect Answers: B: The differential backup method backs up only the files that have changed since the previous full backup. This backup method does not reset the archive bit. C: The partial backup method is not a method that determines whether the archive bit is reset or not; it just specifies that a subset of data is backed up. D: The tape backup method is not a method that determines whether the archive bit is reset or not; it just specifies that the files are backed up to tape."
+    },
+    {
+      "id": 536,
+      "question": "Which backup method is additive because the time and tape space required for each night's backup grows during the week as it copies the day's changed files and the previous days' changed files up to the last full backup?",
+      "options": {
+        "A": "The differential backup method.",
+        "B": "The full backup method.",
+        "C": "The incremental backup method.",
+        "D": "The tape backup method."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Differential Backup Method is additive because the time and tape space required for each night's backup grows during the week as it copies the day's changed files and the previous days' changed files up to the last full backup. Archive bits let the backup software know what needs to be backed up. The differential and incremental backup types rely on the archive bit to direct them. Incorrect Answers: B: Full backups back up all files. Full backups are not additive. C: Incremental backups are not additive because they reset the archive bit so the file is not backed up again next day (unless the file was changed again). D: The tape backup method is not a method that determines whether the archive bit is reset or not; it just specifies that the files are backed up to tape."
+    },
+    {
+      "id": 537,
+      "question": "Which of the following backup method must be made regardless of whether Differential or Incremental methods are used?",
+      "options": {
+        "A": "Full Backup Method.",
+        "B": "Incremental backup method.",
+        "C": "Supplemental backup method.",
+        "D": "Tape backup method."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Full Backup must be made regardless of whether Differential or Incremental methods are used. The Full Backup Method makes a complete backup of every file on the server every time it is run. The full backup will reset the archive bits on all the files that were backed up. The archive bits are used by incremental and differential backups to determine which files have been changed since the full backup and therefore, which files need to be backed up. Incorrect Answers: B: Incremental backups back up all files that were changed since the last full or incremental backup. You do not have to use incremental backups. C: “Supplemental” is not the backup type that must be made regardless of whether Differential or Incremental methods are used. A supplemental backup is an ‘extra’ or ‘additional’ backup; it is not part of the regular backup schedule. D: The tape backup method is not one of the defined backup types; it just specifies that the files are backed up to tape."
+    },
+    {
+      "id": 538,
+      "question": "Which of the following tape formats can be used to backup data systems in addition to its original intended audio uses?",
+      "options": {
+        "A": "Digital Video Tape (DVT).",
+        "B": "Digital Analog Tape (DAT).",
+        "C": "Digital Voice Tape (DVT).",
+        "D": "Digital Audio Tape (DAT)."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Digital Audio Tape (DAT) can be used to backup data systems in addition to its original intended audio uses. Incorrect Answers: A: Digital Video Tape (DVT) is not used to backup data systems. B: Digital Analog Tape (DAT) is not a defined type of tape; DAT stands for Digital Audio Tape. C: Digital Voice Tape (DVT) is not a defined type of tape; DVT stands for Digital Video Tape."
+    },
+    {
+      "id": 539,
+      "question": "This type of backup management provides a continuous on-line backup by using optical or tape \"jukeboxes,\" similar to WORMs (Write Once, Read Many):",
+      "options": {
+        "A": "Hierarchical Storage Management (HSM).",
+        "B": "Hierarchical Resource Management (HRM).",
+        "C": "Hierarchical Access Management (HAM).",
+        "D": "Hierarchical Instance Management (HIM)."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Hierarchical Storage Management (HSM) provides a continuous on-line backup by using optical or tape \"jukeboxes,\" similar to WORMs. It appears as an infinite disk to the system, and can be configured to provide the closest version of an available real-time backup. This is commonly employed in very large data retrieval systems. Incorrect Answers: B: Hierarchical Resource Management (HRM) is not a defined backup media technology. C: Hierarchical Access Management (HAM) is not a defined backup media technology. D: Hierarchical Instance Management (HIM) is not a defined backup media technology."
+    },
+    {
+      "id": 540,
+      "question": "Physically securing backup tapes from unauthorized access is obviously a security concern and is considered a function of the:",
+      "options": {
+        "A": "Operations Security Domain.",
+        "B": "Operations Security Domain Analysis.",
+        "C": "Telecommunications and Network Security Domain.",
+        "D": "Business Continuity Planning and Disaster Recovery Planning."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Physically securing the tapes from unauthorized access is obviously a security concern and is considered a function of the Operations Security Domain. Operations Security can be described as the controls over the hardware in a computing facility, the data media used in a facility, and the operators using these resources in a facility. Operations Security refers to the act of understanding the threats to and vulnerabilities of computer operations in order to routinely support operational activities that enable computer systems to function correctly. It also refers to the implementation of security controls for normal transaction processing, system administration tasks, and critical external support operations. These controls can include resolving software or hardware problems along with the proper maintenance of auditing and monitoring processes. Incorrect Answers: B: Physically securing backup tapes from unauthorized access is not considered a function of the Operations Security Domain Analysis. C: Physically securing backup tapes from unauthorized access is not considered a function of the Telecommunications and Network Security Domain. D: Physically securing backup tapes from unauthorized access is not considered a function of the Business Continuity Planning and Disaster Recovery Planning."
+    },
+    {
+      "id": 541,
+      "question": "The main issue with RAID Level 1 is that the one-for-one ratio is:",
+      "options": {
+        "A": "very expensive, resulting in the highest cost per megabyte of data capacity.",
+        "B": "very inexpensive, resulting in the lowest cost per megabyte of data capacity.",
+        "C": "very unreliable resulting in a greater risk of losing data.",
+        "D": "very reliable resulting in a lower risk of losing data."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 1 is commonly called mirroring. It mirrors the data from one disk or set of disks by duplicating the data onto another disk or set of disks. This is often implemented by a one-for-one disk to disk ratio: Each drive is mirrored to an equal drive partner that is continually being updated with current data. If one drive fails, the system automatically gets the data from the other drive. The main issue with this level of RAID is that the one-for-one ratio is very expensive — resulting in the highest cost per megabyte of data capacity. This level effectively doubles the amount of hard drives you need, therefore it is usually best for smaller capacity systems. Incorrect Answers: B: RAID Level 1 is not inexpensive, resulting in the lowest cost per megabyte of data capacity; it is the opposite. C: RAID Level 1 is not unreliable resulting in a greater risk of losing data; it is the opposite. D: RAID Level 1 is very reliable resulting in a lower risk of losing data. However, this is not an ‘issue’, it’s a good thing."
+    },
+    {
+      "id": 542,
+      "question": "Which of the following RAID levels is not used in practice and was quickly superseded by the more flexible levels?",
+      "options": {
+        "A": "RAID Level 0",
+        "B": "RAID Level 1",
+        "C": "RAID Level 2",
+        "D": "RAID Level 7"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 2 consists of bit-interleaved data on multiple disks. The parity information is created using a hamming code that detects errors and establishes which part of which drive is in error. It defines a disk drive system with 39 disks: 32 disks of user storage 66 and seven disks of error recovery coding. This level is not used in practice and was quickly superseded by the more flexible levels. Incorrect Answers: A: RAID Level 0 \"Writes files in stripes across multiple disks without the use of parity information. This technique allows for fast reading and writing to disk. However, without the parity information, it is not possible to recover from a hard drive failure. This technique does not provide redundancy and should not be used for systems with high availability requirements. RAID Level 0 is widely used today where performance is required but not redundancy. B: RAID Level 1 \"This level duplicates all disk writes from one disk to another to create two identical drives. This technique is also known as data mirroring. RAID Level 1 is widely used today. D: RAID Level 7 is a variation of RAID 5 wherein the array functions as a single virtual disk in the hardware. This is sometimes simulated by software running over a RAID level 5 hardware implementation. This enables the drive array to continue to operate if any disk or any path to any disk fails. RAID Level 7 was not superseded by the more flexible levels."
+    },
+    {
+      "id": 543,
+      "question": "Which RAID implementation is commonly called mirroring?",
+      "options": {
+        "A": "RAID level 2",
+        "B": "RAID level 3",
+        "C": "RAID level 5",
+        "D": "RAID level 1"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 1 is commonly called mirroring. It mirrors the data from one disk or set of disks by duplicating the data onto another disk or set of disks. This is often implemented by a one-for-one disk to disk ratio: Each drive is mirrored to an equal drive partner that is continually being updated with current data. If one drive fails, the system automatically gets the data from the other drive. The main issue with this level of RAID is that the one-for-one ratio is very expensive — resulting in the highest cost per megabyte of data capacity. This level effectively doubles the amount of hard drives you need, therefore it is usually best for smaller capacity systems. Incorrect Answers: A: RAID level 2 uses hamming code parity. It is not called mirroring. B: RAID level 3 uses byte level parity. It is not called mirroring. C: RAID level 5 uses interleave parity. It is not called mirroring."
+    },
+    {
+      "id": 544,
+      "question": "Ding Ltd. is a firm specialized in intellectual property business. A new video streaming application needs to be installed for the purpose of conducting the annual awareness program as per the firm security program. The application will stream internally copyrighted computer based training videos. The requirements for the application installation are to use a single server, low cost technologies, high performance and no high availability capacities. In regards to storage technology, what is the most suitable configuration for the server hard drives?",
+      "options": {
+        "A": "Single hard disk (no RAID)",
+        "B": "RAID 0",
+        "C": "RAID 1",
+        "D": "RAID 10"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The questions states that the requirements are low cost technologies, high performance and no high availability capacities. RAID Level 0 creates one large disk by using several disks. This process is called striping. It stripes data across all disks (but provides no redundancy) by using all of the available drive space to create the maximum usable data volume size and to increase the read/write performance. Incorrect Answers: A: Single hard disk does meet the low cost requirement and no high availability but it does not provide high performance. C: RAID 1 (mirroring) does not provide high performance; it does provide high cost and high availability. This does not meet the requirements. D: RAID 10 does provide high performance but it is an expensive solution with high availability capacities. This does not meet the requirements."
+    },
+    {
+      "id": 545,
+      "question": "Which of the following answers is directly related to providing High Availability to your users?",
+      "options": {
+        "A": "Backup data circuits",
+        "B": "Good hiring practices",
+        "C": "Updated Antivirus Software",
+        "D": "Senior Executive Support"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "When planning for high availability, any critical component of your data network should have some sort of redundancy or backup plan in case it does fail. One of the ways to provide uninterrupted access to information assets is through redundancy and fault tolerance. Redundancy refers to providing multiple instances of either a physical or logical component such that a second component is available if the first fails. Fault tolerance is a broader concept that includes redundancy but refers to any process that allows a system to continue making information assets available in the case of a failure. This can include items like these: RAID array disks on servers so that if any single drive fails the server remains available. Backup network connections. Many internet services providers provide these for a fee. Backup power for all systems and circuits. Fire suppression and evacuation plans. A data backup practice to backup and restore data while storing backups offsite in a safe, remote location. Incorrect Answers: B: Good hiring practices can ensure that good staff are hired. However, this does not ensure high availability. C: Updated Antivirus Software does not ensure high availability, although it's a critical part of defense in depth. D: Senior Executive Support, while this is important for funding equipment for high availability, it isn't directly related to providing the high availability."
+    },
+    {
+      "id": 546,
+      "question": "When backing up an applications system's data, which of the following is a key question to be answered first?",
+      "options": {
+        "A": "When to make backups.",
+        "B": "Where to keep backups.",
+        "C": "What records to backup.",
+        "D": "How to store backups."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "It is critical that a determination be made of WHAT data is important and should be retained and protected. Without determining the data to be backed up, the potential for error increases. A record or file could be vital and yet not included in a backup routine. Alternatively, temporary or insignificant files could be included in a backup routine unnecessarily. Incorrect Answers: A: Although it is important to consider schedules for backups, this is done after it has been determined what data should be included in the backup routine. B: The location of the backup copies of data should be decided after determining what data should be included in the backup routine. C: How to store backups is a question that needs to be answered. However, what to backup is the first question to be answered."
+    },
+    {
+      "id": 547,
+      "question": "Which of the following security controls is intended to bring an environment back to regular operation?",
+      "options": {
+        "A": "Deterrent",
+        "B": "Preventive",
+        "C": "Corrective",
+        "D": "Recovery"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The different functionalities of security controls are preventive, detective, corrective, deterrent, recovery, and compensating. The six different control functionalities are as follows: Deterrent Intended to discourage a potential attacker Preventive Intended to avoid an incident from occurring Corrective Fixes components or systems after an incident has occurred Recovery Intended to bring the environment back to regular operations Detective Helps identify an incident’s activities and potentially an intruder Compensating Controls that provide an alternative measure of control Incorrect Answers: A: The Deterrent security control is intended to discourage a potential attacker. This is not what is described in the question. B: The Preventative security control is intended to avoid an incident from occurring. This is not what is described in the question. C: The Corrective security control fixes components or systems after an incident has occurred. This is not what is described in the question."
+    },
+    {
+      "id": 548,
+      "question": "Which of the following activities would not be included in the contingency planning process phase?",
+      "options": {
+        "A": "Prioritization of applications",
+        "B": "Development of test procedures",
+        "C": "Assessment of threat impact on the organization",
+        "D": "Development of recovery scenarios"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "When an incident strikes, more is required than simply knowing how to restore data from backups. Also necessary are the detailed procedures that outline the activities to keep the critical systems available and ensure that operations and processing are not interrupted. Contingency management defines what should take place during and after an incident. Actions that are required to take place for emergency response, continuity of operations, and dealing with major outages must be documented and readily available to the operations staff. Development of test procedures is not part of contingency planning. This has nothing to do with recovering from an incident. Incorrect Answers: A: Prioritization of applications is used to determine which applications are most important to the company and should be recovered first. This should be part of your contingency planning. C: Assessment of threat impact on the organization should be part of the contingency plan to determine what affect an incident would have. This should be part of your contingency planning. D: Development of recovery scenarios are the most obvious part of a contingency plan. You need to plan how to recover from an incident. This should be part of your contingency planning."
+    },
+    {
+      "id": 549,
+      "question": "Which RAID Level often implements a one-for-one disk to disk ratio?",
+      "options": {
+        "A": "RAID Level 1",
+        "B": "RAID Level 0",
+        "C": "RAID Level 2",
+        "D": "RAID Level 5"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID Level 1, disk mirroring, uses a one-for-one setup, where data are written to two drives at once. If one drive fails, the other drive has the exact same data available. Incorrect Answers: B: RAID Level 0 uses data striped over several drives, not just two drives. There is not one-to-one disk ratio. C: RAID Level 2 uses data striped over several drives, not just two drives. There is not one-to-one disk ratio. D: RAID Level 5 does not use a one-to-one disk ratio."
+    },
+    {
+      "id": 550,
+      "question": "What is the PRIMARY purpose of using redundant array of inexpensive disks (RAID) level zero?",
+      "options": {
+        "A": "To improve system performance.",
+        "B": "To maximize usage of hard disk space.",
+        "C": "To provide fault tolerance and protection against file server hard disk crashes.",
+        "D": "To implement integrity."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RAID level 0 offers no fault tolerance, just performance improvements. Incorrect Answers: B: RAID level 0 provides no increase in hard disk usage compared to non-raid disks. C: RAID level 0 offers no fault tolerance. D: RAID does provide integrity."
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1051 - Q1100",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1051,
+      "question": "Once evidence is seized, a law enforcement officer should emphasize which of the following?",
+      "options": {
+        "A": ") chain of command",
+        "B": ") chain of custody",
+        "C": ") chain of control",
+        "D": ") chain of communications"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1052,
+      "question": "Which of the following rules is less likely to allow computer evidence to be admissible in court?",
+      "options": {
+        "A": ") It must prove a fact that is material to the case",
+        "B": ") Its reliability must be proven",
+        "C": ") The process for producing it must be documented",
+        "D": ") The chain of custody of evidence must show who collected, security, controlled, handled, transported, and tampered with the evidence"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1053,
+      "question": "A copy of evidence or oral description of this contents; not reliable as best evidence is what type of evidence?",
+      "options": {
+        "A": ") Direct evidence",
+        "B": ") Circumstantial evidence",
+        "C": ") Hearsay evidence",
+        "D": ") Secondary evidence"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1054,
+      "question": "What is defined as inference of information from other, intermediate, relevant facts?",
+      "options": {
+        "A": ") Secondary evidence",
+        "B": ") Conclusive evidence",
+        "C": ") Hearsay evidence",
+        "D": ") Circumstantial evidence"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1055,
+      "question": "In order to be able to successfully prosecute an intruder:",
+      "options": {
+        "A": ") A point of contact should be designated to be responsible for communicating with law enforcement and other external agencies.",
+        "B": ") A proper chain of custody of evidence has to be preserved",
+        "C": ") Collection of evidence has to be done following predefined procedures",
+        "D": ") Whenever possible, analyze, a replica of the compromised resource, not the original, thereby avoiding inadvertently tamping with evidence"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1056,
+      "question": "Which of the following proves or disproves a specific act through oral testimony based on information gathered through the witness's five senses?",
+      "options": {
+        "A": ") direct evidence",
+        "B": ") best evidence",
+        "C": ") conclusive evidence",
+        "D": ") hearsay evidence"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1057,
+      "question": "In order to preserver a proper chain of custody of evidence?",
+      "options": {
+        "A": ") Evidence has to be collected following predefined procedures in accordance with all laws and legal regulations",
+        "B": ") Law enforcement officials should be contacted for advice on how and when to collect critical information",
+        "C": ") Verifiable documentation indicating the sequence of individuals who have handled a piece of evidence should be available.",
+        "D": ") Log files containing information regarding an intrusion are retained for at least as long as normal business records, and longer in the case of an ongoing investigation."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1058,
+      "question": "What is the primary reason for the chain of custody of evidence?",
+      "options": {
+        "A": ") To ensure that no evidence is lost",
+        "B": ") To ensure that all possible evidence is gathered",
+        "C": ") To ensure that it will be admissible in court",
+        "D": ") To ensure that incidents were handled with due care and due diligence"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1059,
+      "question": "Which element must computer evidence have to be admissible in court?",
+      "options": {
+        "A": ") It must be relevant",
+        "B": ") It must be annotated",
+        "C": ") It must be printed",
+        "D": ") t must contain source code"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1060,
+      "question": "Which kind of evidence would printed business records, manuals, and, printouts classify as?",
+      "options": {
+        "A": ") Direct evidence",
+        "B": ") Real evidence",
+        "C": ") Documentary evidence",
+        "D": ") Demonstrative evidence"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1061,
+      "question": "Since disks and other magnetic media are only copies of the actual or original evidence, what type of evidence are they are often considered to represent?",
+      "options": {
+        "A": ") Hearsay",
+        "B": ") Irrelevant",
+        "C": ") Incomplete",
+        "D": ") Secondary"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1062,
+      "question": "Which of the following is LEAST necessary when creating evidence tags detailing the chain of custody for electronic evidence?",
+      "options": {
+        "A": "The mode and means of transportation.",
+        "B": "Notifying the person who owns the information being seized.",
+        "C": "Complete description of the evidence, including quality if necessary.",
+        "D": "Who received the evidence."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The references indicate that transportation is important. Each piece of evidence should be marked in some way with the date, time, initials of the collector, and a case number if one has been assigned...The pieces of evidence should then be sealed in a container and the container should be marked with the same information. The container should be sealed with evidence tape and if possible, the writing should be on the tape so a broken seal can be detected. - Shon Harris All-in-one CISSP Certification Guide pg 673 In many cases, it is not possible for a witness to uniquely identify an object in court. In those cases, a chain of evidence must be established. This involves everyone who handles evidence - including the police who originally collect it, the evidence technicians who process it, and the lawyers who use it in court. The location of the evidence must be fully documented from the moment it was collected to the moment it appears in court to ensure that it is indeed the same item. This requires thorough labeling of evidence and comprehensive logs noting who had access to the evidence at specific times and the reasons they required such access.\" Pg. 593 Tittel: CISSP Study Guide. The evidence life cycle covers the evidence gathering and application process. This life cycle has the following components: Discovery and recognition Protection Recording Collection Collect all relevant storage media Make image of hard disk before removing power Print out screen Avoid degaussing equipment Identification Preservation Protect magnetic media from erasure Store in proper environment Transportation Presentation in a court of law Return of evidence to owner Pg. 309 Krutz: The CISSP Prep Guide The life cycle of evidence includes * Collection and identification * Storage, preservation, and transportation * Presentation in court * Being returned to victim or owner Pg 677 Shon Harris: All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 1063,
+      "question": "To be admissible in court, computer evidence must be which of the following?",
+      "options": {
+        "A": ") relevant",
+        "B": ") decrypted",
+        "C": ") edited",
+        "D": ") incriminating"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1064,
+      "question": "Computer-generated evidence is considered:",
+      "options": {
+        "A": ") Best evidence",
+        "B": ") Second hand evidence",
+        "C": ") Demonstrative evidence",
+        "D": ") Direct evidence"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Most of the time, computer-related documents are considered hearsay, meaning the evidence is secondhand evidence. Hearsay evidence is not normally admissible in court unless it has firsthand evidence that can be used to prove the evidence's accuracy, trustworthiness, and reliability, such as a businessperson who generated the computer logs and collected them.\" Pg. 630 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1065,
+      "question": "Why would a memory dump be admissible as evidence in court?",
+      "options": {
+        "A": ") Because it is used to demonstrate the truth of the contents",
+        "B": ") Because it is used to identify the state of the system",
+        "C": ") Because the state of the memory cannot be used as avidence",
+        "D": ") Because of the exclusionary rule"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1066,
+      "question": "Evidence corroboration is achieved by",
+      "options": {
+        "A": "Creating multiple logs using more than one utility.",
+        "B": "Establishing secure procedures for authenticating users.",
+        "C": "Maintaining all evidence under the control of an independent source.",
+        "D": "Implementing disk mirroring on all devices where log files are stored."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Corroborative evidence is supporting evidence used to help prove an idea or point. It cannot stand on its own, but is used as a supplementary tool to help prove a primary piece of evidence. - Shon Harris All-in-one CISSP Certification Guide pg 678"
+    },
+    {
+      "id": 1067,
+      "question": "You are documenting a possible computer attack. Which one of the following methods is NOT appropriate for legal record keeping?",
+      "options": {
+        "A": "A bound paper notebook.",
+        "B": "An electronic mail document.",
+        "C": "A personal computer in \"capture\" mode that prints immediately.",
+        "D": "Microcassette recorder for verbal notes"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1068,
+      "question": "Which one of the following is NOT a requirement before a search warrant can be issued?",
+      "options": {
+        "A": "There is a probable cause that a crime has been committed.",
+        "B": "There is an expectation that evidence exists of the crime.",
+        "C": "There is probable cause to enter someone's home or business.",
+        "D": "There is a written document detailing the anticipated evidence."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"If a computer crime is suspected, it is important not to alert the suspect. A preliminary investigation should be conducted to determine weather a crime has been committed by examining the audit records and system logs, interviewing witnesses, and assessing the damage incurred....Search warrants are issued when there is a probable cause for the search and provide legal authorization to search a location for specific evidence.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 436"
+    },
+    {
+      "id": 1069,
+      "question": "Once a decision is made to further investigate a computer crime incident, which one of the following is NOT employed?",
+      "options": {
+        "A": "Identifying what type of system is to be seized.",
+        "B": "Identifying the search and seizure team members.",
+        "C": "Identifying the cost of damage and plan for their recover.",
+        "D": "Determining the risk that the suspect will destroy evidence."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Costs and how to recover are not considered in a computer crime scene incident."
+    },
+    {
+      "id": 1070,
+      "question": "From a legal perspective, which of the following rules must be addressed when investigating a computer crime?",
+      "options": {
+        "A": "Search and seizure",
+        "B": "Data protection",
+        "C": "Engagement",
+        "D": "Evidence"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"The gathering, control, storage and preservation of evidence are extremely critical in any legal investigation.\" Pg 432 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 1071,
+      "question": "Which of the following is not a problem regarding computer investigation issues?",
+      "options": {
+        "A": ") Information is intangible",
+        "B": ") Evidence is difficult to gather",
+        "C": ") Computer-generated records are only considered secondary evidence, thus are no as reliable as best evidence",
+        "D": ") In many instances, an expert or specialist is required"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1072,
+      "question": "Why is the investigation of computer crime involving malicious damage especially challenging?",
+      "options": {
+        "A": "Information stored in a computer is intangible evidence.",
+        "B": "Evidence may be destroyed in an attempt to restore the system.",
+        "C": "Isolating criminal activity in a detailed audit log is difficult.",
+        "D": "Reports resulting from common user error often obscure the actual violation."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The gathering, control, storage, and preservation of evidence are extremely critical in any legal investigation. Because evidence involved in a computer crime might be intangible and subject to easy modification without a trace, evidence must be carefully handled and controlled throughout its entire life cycle. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 432"
+    },
+    {
+      "id": 1073,
+      "question": "After law enforcement is informed of a computer crime, the organization's investigators constraints are",
+      "options": {
+        "A": "removed.",
+        "B": "reduced.",
+        "C": "increased.",
+        "D": "unchanged."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"On the other hand, there are also two major factors that may cause a company to shy away from calling in the authorities. First, the investigation will more than likely become public and may embarrass the company. Second, law enforcement authorities are bound to conduct an investigation that complies with the Fourth Amendment and other legal requirements that may not apply to a private investigation.\" Pg. 529 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 1074,
+      "question": "To understand the \"whys\" in crime, many times it is necessary to understand MOM. Which of the following is not a component of MOM?",
+      "options": {
+        "A": ")Opportunities",
+        "B": ") Methods",
+        "C": ") Motivation",
+        "D": ") Means"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 600 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1075,
+      "question": "What category of law deals with regulatory standards that regulate performance and conduct? Government agencies create these standards, which are usually applied to companies and individuals within those companies.",
+      "options": {
+        "A": ") Standards law",
+        "B": ") Conduct law",
+        "C": ") Compliance law",
+        "D": ") Administrative law"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1076,
+      "question": "Something that is proprietary to that company and importance for its survival and profitability is what type of intellectual property law?",
+      "options": {
+        "A": ") Trade Property",
+        "B": ") Trade Asset",
+        "C": ") Patent",
+        "D": ") Trade Secret"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1077,
+      "question": "Which of the following statements regarding trade secrets is false?",
+      "options": {
+        "A": ") For a company to have a resource qualify as a trade secret, it must provide the company with some type of competitive value or advantage",
+        "B": ") The Trade Secret Law normally protects the expression of the idea of the resource.",
+        "C": ") Many companies require their employees to sign nondisclosure agreements regarding the protection of their trade secrets",
+        "D": ") A resource can be protected by law if it is not generally known and if it requires special skill, ingenuity, and/or expenditure of money and effort to develop it"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1078,
+      "question": "Which category of law is also referenced as a Tort law?",
+      "options": {
+        "A": ") Civil law",
+        "B": ") Criminal law",
+        "C": ") Administrative law",
+        "D": ") Public law"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1079,
+      "question": "Which of the following European Union (EU) principles pertaining to the protection of information on private individuals is incorrect?",
+      "options": {
+        "A": ") Data collected by an organization can be used for any purpose and for as long as necessary, as long as it is never communicated outside of the organization by which it was collected",
+        "B": ") Individuals have the right to correct errors contained in their personal data",
+        "C": ") Transmission of personal information to locations where \"equivalent\" personal data protection cannot be assured is prohibited.",
+        "D": ") Records kept on an individual should be accurate and up to date"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1080,
+      "question": "A country that fails to legally protect personal data in order to attract companies engaged in collection of such data is referred to as a",
+      "options": {
+        "A": "data pirate",
+        "B": "data haven",
+        "C": "country of convenience",
+        "D": "sanctional nation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Correct answer is B. Data Haven. Data Haven A place where data that cannot legally be kept can be stashed for later use; an offshore web host. This is an interesting topic; companies often need information that they are not legally allowed to know. For example, some hospitals are not allowed to mark patients as HIV positive (because it stigmatizes patients); staff members create codes or other ways so can take the necessary steps to protect themselves. http://www.technovelgy.com/ct/content.asp?Bnum=279 DATA HAVEN This phrase has been around for at least 15 years, but only in a specialist way. One sense is that of a place of safety and security for electronic information, for example where encrypted copies of crucial data can be stored as a backup away from one's place of business. But it can also mean a site in which data can be stored outside the jurisdiction of regulatory authorities. This sense has come to wider public notice recently as a result of Neal Stephenson's book Cryptonomicon, in which the establishment of such a haven in South East Asia is part of the plot. In a classic case of life imitating art, there is now a proposal to set up a data haven on one of the old World War Two forts off the east coast of Britain, which declared independence under the name of Sealand back in 1967 (it issues its own stamps and money, for example). The idea is to get round a proposed British law-the Regulation of Investigatory Powers Bill (RIP)-that would force firms to hand over decryption keys if a crime is suspected and make Internet providers install equipment to allow interception of e-mails by the security services. The Privacy Act doesn't protect information from being transferred from New Zealand to data havens-countries that don't have adequate privacy protection. [Computerworld, May 1999] The government last night poured cold water on a plan by a group of entrepreneurs to establish a \"data haven\" on a rusting iron fortress in the North Sea in an attempt to circumvent new anti-cryptography laws. [Guardian, June 2000] World Wide Words is copyright (c) Michael Quinion, 1996-2004. All rights reserved. Contact the author for reproduction requests. Comments and feedback are always welcome. Page created 17 June 2000; last updated October 2002. http://www.worldwidewords.org/turnsofphrase/tp-dat2.htm Not C: The majority google searches for 'Country of Convenience' relate to those countries supporting terrorism. Not D: the meaning of sanctioned is listed below. This would mean that countries that DON'T protect privacy are APPROVED Main Entry: 2sanction Function: transitive verb Inflected Form(s): sanc*tioned; sanc*tion*ing Date: 1778 1 to make valid or binding usually by a formal procedure (as ratification) 2 to give effective or authoritative approval or consent"
+    },
+    {
+      "id": 1081,
+      "question": "Which of the following requires all communications carriers to make wiretaps possible?",
+      "options": {
+        "A": ") 1994 U.S. Communications Assistance for Law Enforcement Act",
+        "B": ") 1996 U.S. Economic and Protection of Property Information Act",
+        "C": ") 1996 U.S. National Information Infrastructure Protection Act",
+        "D": ") 1986 U.S. Computer Security Act"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1082,
+      "question": "Which of the following U.S. federal government laws/regulations was the first to require the development of computer security plan?",
+      "options": {
+        "A": ") Privacy Act of 1974",
+        "B": ") Computer Security Act of 1987",
+        "C": ") Federal Information Resources Management Regulations",
+        "D": ") Office of Management & Budget Circular A-130"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 722 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 1083,
+      "question": "Which U.S. act places responsibility on senior organizational management for prevention and detection programs with fines of up to $290 million for nonperformance?",
+      "options": {
+        "A": ") The 1987 U.S. Computer Security Act",
+        "B": ") The 1986 U.S. Computer Fraud and Abuse Act",
+        "C": ") The 1991 U.S. Federal Sentencing Guidelines",
+        "D": ") The 1996 U.S. National Information Infrastructure Protection Act"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 615 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1084,
+      "question": "What document made theft no longer restricted to physical constraints?",
+      "options": {
+        "A": ") The Electronic Espionage Act of 1996",
+        "B": ") The Gramm Leach Bliley Act of 1999",
+        "C": ") The Computer Security Act of 1987",
+        "D": ") The Federal Privacy Act of 1974"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1085,
+      "question": "In the US, HIPPA addresses which of the following?",
+      "options": {
+        "A": ") Availability and Accountability",
+        "B": ") Accuracy and Privacy",
+        "C": ") Security and Availability",
+        "D": ") Security and Privacy"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1086,
+      "question": "Which of the following placed requirements of federal government agencies to conduct security-related training, to identify sensitive systems, and to develop a security plan for those sensitive systems?",
+      "options": {
+        "A": ") 1987 U.S. Computer Security Act",
+        "B": ") 1996 U.S. Economic and Protection of Proprietary Information Act",
+        "C": ") 1994 U.S. Computer Abuse Amendments Act",
+        "D": ") 1986 (Amended in 1996) U.S. Computer Fraud and Abuse Act"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1087,
+      "question": "Which of the following cannot be undertaken in conjunction with computer incident handling?",
+      "options": {
+        "A": ") system development activity",
+        "B": ") help-desk function",
+        "C": ") system backup function",
+        "D": ") risk management process"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1088,
+      "question": "What is the primary goal of incident handling?",
+      "options": {
+        "A": ") Successfully retrieve all evidence that can be used to prosecute",
+        "B": ") Improve the company's ability to be prepared for threats and disasters",
+        "C": ") Improve the company's disaster recovery plan",
+        "D": ") Contain and repair any damage caused by an event"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: Page 629 of Shon Harris's All in One Exam Guide, Second Ed."
+    },
+    {
+      "id": 1089,
+      "question": "Which one of the following is NOT a factor to consider when establishing a core incident response team?",
+      "options": {
+        "A": "Technical knowledge",
+        "B": "Communication skills",
+        "C": "The recovery capability",
+        "D": "Understanding business policy"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The team should have someone from senior management, the network administrator, security officer, possibly a network engineer and /or programmer, and liaison for public affairs...The incident response team should have the following basic items List of outside agencies and resources to contact or report to List of computer or forensics experts to contact Steps on how to secure and preserve evidence Steps on how to search for evidence List of items that should be included on the report A list that indicates how the different systems should be treated in this type of situation (removed from internet, removed from the network, and powered down) - Shon Harris All-in-one CISSP Certification Guide pg 671-672 ..an investigation should involve management, corporate security, human resources, the legal department, and other appropriate staff members. The act of investigating may also affect critical operations...Thus it is important to prepare a plan beforehand on how to handle reports of suspected computer crimes. A committee of appropriate personnel should be set up beforehand to address the following issues Establishing a prior liaison with law enforcement Deciding when and whether to bring in law enforcement... Setting up means of reporting computer crimes Establishing procedures for handling and processing reports of computer crime Planning for and conducting investigations Involving senior management and the appropriate departments, such as legal, internal audit, information systems, and human resources Ensuring the proper collection of evidence, which includes identification and protection of the various storage media. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 435-436"
+    },
+    {
+      "id": 1090,
+      "question": "Which of the following specifically addresses cyber attacks against an organization's IT systems?",
+      "options": {
+        "A": ") Continuity of support plan",
+        "B": ") Business continuity plan",
+        "C": ") Incident response plan",
+        "D": ") Continuity of operations plan"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1091,
+      "question": "When should a post-mortem review meeting be held after an intrusion has been properly taken care of?",
+      "options": {
+        "A": ") Within the first three months after the investigation of the intrusion is completed",
+        "B": ") Within the first week after prosecution of intruders have taken place, weather successful or not",
+        "C": ") Within the first month after the investigation of the intrusion is completed",
+        "D": ") Within the first week of completing the investigation of the intrusion"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1092,
+      "question": "During a review of system logs of the enterprise, a security manager discovers that a colleague working on an exercise ran a job to collect confidential information on the company's clients. The colleague who ran the job has since left the company to work for a competitor. Based on the (ISC) Code of Ethics, which one of the following statements is MOST correct?",
+      "options": {
+        "A": "The manager should call the colleague and explain what has been discovered. The manager should then ask for the return of the information in exchange for silence.",
+        "B": "The manager should warn the competitor that a potential crime has been committed that could put their company at risk.",
+        "C": "The manager should inform his or her appropriate company management, and secure the results of the recover exercise for future review.",
+        "D": "The manager should call the colleague and ask the purpose of running the job prior to informing his or her company management of the situation."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In the references I have not found out anything that directly relates to this but It would be logical to assume the answer of going to necessary management. \"ISC2 Code of Ethics.... ...Not commit or be party to any unlawful or unethical act that may negatively affect their professional reputation or the reputation of their profession. ...Appropriately report activity related to the profession that they believe to be unlawful and shall cooperate with the resulting investigations.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 440"
+    },
+    {
+      "id": 1093,
+      "question": "In what way could the use of \"cookies\" violate a person's privacy?",
+      "options": {
+        "A": "When they are used to tie together a set of unconnected requests for web pages to cause an electronic map of where one has been.",
+        "B": "When they are used to keep logs of who is using an anonymizer to access a site instead of their regular userid.",
+        "C": "When the e-mail addresses of users that have registered to access the web site are sold to marketing firms."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Both A and C are correct in that they are true but from a CISSP viewpoint looking into a PC the cookies show a map of where the user has been. Therefore I think A is the better choice. \"Any web site that knows your identity and has cookie for you could set up procedures to exchange their data with the companies that buy advertising space from them, synchronizing the cookies they both have on your computer. This possibility means that once your identity becomes known to a single company listed in your cookies file, any of the others might know who you are every time you visit their sites. The result is that a web site about gardening that you never told your name could sell not only your name to mail-order companies, but also the fact that you spent a lot of time one Saturday night last June reading about how to fertilize roses. More disturbing scenarios along the same lines could be imagined.\" http://www.junkbusters.com/cookies.html"
+    },
+    {
+      "id": 1094,
+      "question": "Which of the following is the BEST way to prevent software license violations?",
+      "options": {
+        "A": ") Implementing a corporate policy on copyright infringements and software use",
+        "B": ") Requiring that all PC's be diskless workstations",
+        "C": ") Installing metering software on the LAN so applications can be accessed through the metered software",
+        "D": ") Regularly scanning used PC's to ensure that unauthorized copies of software have not been loaded on the PC"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1095,
+      "question": "The ISC2 Code of Ethics does not include which of the following behaviors for a CISSP:",
+      "options": {
+        "A": ") moral",
+        "B": ") ethical",
+        "C": ") legal",
+        "D": ") control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1096,
+      "question": "Where can the phrase \"Discourage unsafe practice\" be found?",
+      "options": {
+        "A": ") Computer Ethics Institute commandments",
+        "B": ") (ISC)2 Code of Ethics",
+        "C": ") Internet Activities Board's Ethics and the Internet (RFC1087)",
+        "D": ") CIAC Guidelines"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1097,
+      "question": "One of the offences an individual or company can commit is decompiling vendor code. This is usually done in the hopes of understanding the intricate details of its functionality. What best describes this type of non-ethical engineering?",
+      "options": {
+        "A": ") Inverse Engineering",
+        "B": ") Backward Engineering",
+        "C": ") Subvert Engineering",
+        "D": ") Reverse Engineering"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1098,
+      "question": "Which one of the following is an ethical consideration of computer technology?",
+      "options": {
+        "A": "Ownership of proprietary software.",
+        "B": "Information resource management.",
+        "C": "Service level agreements.",
+        "D": "System implementation and design."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "can only assume that they mean piracy or something."
+    },
+    {
+      "id": 1099,
+      "question": "The Internet Activities Board characterizes which of the following as unethical behavior for Internet users?",
+      "options": {
+        "A": ") Writing computer viruses",
+        "B": ") Monitoring data traffic",
+        "C": ") Westing computer resources",
+        "D": ") Concealing unauthorized accesses"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1100,
+      "question": "Which of the following is a potential problem when creating a message digest for forensic purposes?",
+      "options": {
+        "A": "The process if very slow.",
+        "B": "The file's last access time is changed.",
+        "C": "The message digest is almost as long as the data string.",
+        "D": "One-way hashing technology invalidates message digest processing."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Not C. \"To generate a digital signature, the digital signal program passes the file to be sent through a one-way hash function. This hash function produces a fixed size output from a variable size input.\" Pg. 208 Krutz: The CISSP Prep Guide: Gold Edition."
+    }
+  ]
+}

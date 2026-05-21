@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1001 - Q1050",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1001,
+      "question": "Which one of the following is a core infrastructure and service element of Business Continuity Planning (BCP) required to effectively support the business processes of an organization?",
+      "options": {
+        "A": "Internal and external support functions.",
+        "B": "The change management process.",
+        "C": "The risk management process.",
+        "D": "Backup and restoration functions."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Pg 383 Krutz Gold Edition. Backup is not BCP."
+    },
+    {
+      "id": 1002,
+      "question": "A business continuity plan should list and prioritize the services that need to be brought back after a disaster strikes. Which of the following services is more likely to be of primary concern?",
+      "options": {
+        "A": ") Marketing/Public relations",
+        "B": ") Data/Telecomm/IS facilities",
+        "C": ") IS Operations",
+        "D": ") Facilities security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1003,
+      "question": "When preparing a business continuity plan, who of the following is responsible for identifying and prioritizing time-critical systems?",
+      "options": {
+        "A": ") Executive management staff",
+        "B": ") Senior business unit management",
+        "C": ") BCP committee",
+        "D": ") Functional business units"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1004,
+      "question": "Classification of information systems is essential in business continuity planning. Which of the following system types can not be replaced by manual methods?",
+      "options": {
+        "A": ") Critical System",
+        "B": ") Vital System",
+        "C": ") Sensitive System",
+        "D": ") Non-critical system"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1005,
+      "question": "A business continuity plan should list and prioritize the services that need to be brought back after a disaster strikes. Which of the following services is more likely to be of primary concern?",
+      "options": {
+        "A": ") Marketing/Public Relations",
+        "B": ") Data/Telecomm/IS facilities",
+        "C": ") IS Operations",
+        "D": ") Facilities security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1006,
+      "question": "Business Continuity Plan development depends most on:",
+      "options": {
+        "A": ") Directives of Senior Management",
+        "B": ") Business Impact Analysis (BIA)",
+        "C": ") Scope and Plan Initiation",
+        "D": ") Skills of BCP committee"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1007,
+      "question": "Which primary element of BCP includes carrying out vulnerability analysis?",
+      "options": {
+        "A": ") Scope and Plan Initiation",
+        "B": ") Business Impact Assessment",
+        "C": ") Business Continuity Plan Development",
+        "D": ") Plan Approval and Implementation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1008,
+      "question": "To mitigate the impact of a software vendor going out of business, a company that uses vendor software should require which one of the following?",
+      "options": {
+        "A": "Detailed credit investigation prior to acquisition.",
+        "B": "Source code held in escrow.",
+        "C": "Standby contracts with other vendors.",
+        "D": "Substantial penalties for breech of contract.'"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The original answer was C however this is incorrect for this case. SLA and standby are good ideas but in this case B is right. \"A software escrow arrangement is a unique tool used to protect a company against the failure of a software developer to provide adequate support for its products or against the possibility that the developer will go out of business and no technical support will be available for the product....Under a software escrow agreement, the developer provides copies of the application source code to an independent third-party organization. The third party then maintains updated backup copies of the source code in a secure fashion. The agreement between the end user and the developer specifies \"trigger events\", such as the failure of the developer to meet terms of a service level agreement (SLA) or the liquidation of the developer's firm.\" - Ed Tittle CISSP Study Guide (sybex) pg 550"
+    },
+    {
+      "id": 1009,
+      "question": "Similarity between all recovery plans is:",
+      "options": {
+        "A": ") They need extensive testing",
+        "B": ") They need to be developed by business continuity experts",
+        "C": ") They become obsolete quickly",
+        "D": ") The create employment opportunities"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1010,
+      "question": "Which of the following focuses on sustaining an organizations business functions during and after a disruption?",
+      "options": {
+        "A": ") Business continuity plan",
+        "B": ") Business recovery plan",
+        "C": ") Continuity of operations plan",
+        "D": ") Disaster recovery plan"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1011,
+      "question": "What is not one of the drawbacks of a hot site?",
+      "options": {
+        "A": ") Need Security controls, as it usually contain mirror copies of live production data",
+        "B": ") Full redundancy in hardware, software, communication lines, and applications lines is very expensive",
+        "C": ") The hot sites are available immediately or within maximum allowable downtime (MTD)",
+        "D": ") They are administratively resource intensive, as transaction redundancy controls need to be implemented to keep data up-to-date"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1012,
+      "question": "Which one of the following processing alternatives involves a ready-to-use computing facility with telecommunications equipment, but not computers?",
+      "options": {
+        "A": "Company-owned hot site",
+        "B": "Commercial hot site",
+        "C": "Cold site",
+        "D": "Warm site"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Warm Site - These facilities are usually partially configured with some equipment, but not the actual computers.\" - Shon Harris All-in-one CISSP Certification Guide pg 613"
+    },
+    {
+      "id": 1013,
+      "question": "What is a hot-site facility?",
+      "options": {
+        "A": ") A site with pre-installed computers, raised flooring, air conditioning, telecommunications, and networking equipment, and UPS",
+        "B": ") A site is which space is reserved with pre-installed wiring and raised floors",
+        "C": ") A site with raised flooring, air conditioning, telecommunications, and networking equipment, and UPS",
+        "D": ") A site with ready made work space with telecommunications equipment, LANs, PCs, and terminals with work groups"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1014,
+      "question": "Contracts and agreements are unenforceable in which of the following alternate back facilities?",
+      "options": {
+        "A": ") hot site",
+        "B": ") warm site",
+        "C": ") cold site",
+        "D": ") reciprocal agreement"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1015,
+      "question": "Which of the following computer recovery sites is the least expensive and the most difficulty to test?",
+      "options": {
+        "A": ") non-mobile hot site",
+        "B": ") mobile hot site",
+        "C": ") warm site",
+        "D": ") cold site"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1016,
+      "question": "Which of the following is an advantage of the use of hot sites as a backup alternative?",
+      "options": {
+        "A": ") The costs associated with hot sites are low",
+        "B": ") Hot sites can be made ready for operation within a short period of time",
+        "C": ") Hot sites can be used for an extended amount of time",
+        "D": ") Hot sites do not require that equipment and systems software be compatible with the primary installation being backed up"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1017,
+      "question": "What is not a benefit of Cold Sites?",
+      "options": {
+        "A": ") No resource contention with other organization",
+        "B": ") Quick Recovery",
+        "C": ") Geographical location that is not affected by the same disaster",
+        "D": ") low cost"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1018,
+      "question": "What is the PRIMARY reason that reciprocal agreements between independent organizations for backup processing capability are seldom used?",
+      "options": {
+        "A": "Lack of successful recoveries using reciprocal agreements.",
+        "B": "Legal liability of the host site in the event that the recovery fails.",
+        "C": "Dissimilar equipment used by disaster recovery organization members.",
+        "D": "Difficulty in enforcing the reciprocal agreement."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Reciprocal agreements are at best a secondary option for disaster protection. The agreements are not enforceable, so there is no guarantee that this facility will really be available to the company in a time of need.\" Pg 615 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 1019,
+      "question": "Which of the following alternative business recovery strategies would be LEAST appropriate in a large database and on-line communications network environment where the critical business continuity period is 7 days?",
+      "options": {
+        "A": ") Hot site",
+        "B": ") Warm site",
+        "C": ") Duplicate information processing facilities",
+        "D": ") Reciprocal agreement"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1020,
+      "question": "A contingency plan should address:",
+      "options": {
+        "A": ") Potential risks",
+        "B": ") Residual risks",
+        "C": ") Identified risks",
+        "D": ") All of the above"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1021,
+      "question": "Prior to a live disaster test, which of the following is most important?",
+      "options": {
+        "A": ") Restore all files in preparation for the test",
+        "B": ") Document expected findings",
+        "C": ") Arrange physical security for the test site",
+        "D": ") Conduct a successful structured walk-through"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1022,
+      "question": "Which of the following business continuity stages ensures the continuity strategy remains visible?",
+      "options": {
+        "A": "Backup, Recover and Restoration",
+        "B": "Testing Strategy Development",
+        "C": "Post Recovery Transition Data Development",
+        "D": "Implementation, Testing and Maintenance"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Once the strategies have been decided upon, they need to be documented and put into place. This moves the efforts from a purely planning stage to an actual implementation and action phase...The disaster recovery and continuity plan should be tested periodically because an environment continually changes and each time it is tested, more improvements may be uncovered...The plan's maintenance can be incorporated into change management procedures so that any changes in the environment will be sure to be reflected in the plan itself. - Shon Harris All-in-one CISSP Certification Guide pg 611"
+    },
+    {
+      "id": 1023,
+      "question": "During the testing of the business continuity plan (BCP), which of the following methods of results analysis provides the BEST assurance that the plan is workable?",
+      "options": {
+        "A": ") Measurement of accuracy",
+        "B": ") Elapsed time for completion of critical tasks",
+        "C": ") Quantitatively measuring the results of the test",
+        "D": ") Evaluation of the observed test results"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1024,
+      "question": "Which of the following recovery plan test results would be most useful to management?",
+      "options": {
+        "A": ") elapsed time to perform various activities",
+        "B": ") list of successful and unsuccessful activities",
+        "C": ") amount of work completed",
+        "D": ") description of each activity"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1025,
+      "question": "Failure of a contingency plan is usually:",
+      "options": {
+        "A": ") A technical failure",
+        "B": ") A management failure",
+        "C": ") Because of a lack of awareness",
+        "D": ") Because of a lack of training"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1026,
+      "question": "The first step in contingency planning is to perform:",
+      "options": {
+        "A": ") A hardware backup",
+        "B": ") A data backup",
+        "C": ") An operating system software backup",
+        "D": ") An application software backup"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1027,
+      "question": "Which of the following server contingency solutions offers the highest availability?",
+      "options": {
+        "A": ") System backups",
+        "B": ") Electronic vaulting/remote journaling",
+        "C": ") Redundant arrays of independent disks (RAID)",
+        "D": ") Load balancing/disk replication"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1028,
+      "question": "Which of the following statement pertaining to the maintenance of an IT contingency plan is incorrect?",
+      "options": {
+        "A": ") The plan should be reviewed at least once a year for accuracy and completeness",
+        "B": ") The Contingency Planning Coordinator should make sure that every employee gets an up-to-date copy of the plan",
+        "C": ") Strict version control should be maintained",
+        "D": ") Copies of the plan should be provided to recovery personnel for storage at home and office"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1029,
+      "question": "Which disaster recovery plan test involves functional representatives meeting to review the plan in detail?",
+      "options": {
+        "A": ") Simulation test",
+        "B": ") Checklist test",
+        "C": ") Parallel test",
+        "D": ") Structured walkthrough test"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Structured walk-through: 1. Functional representatives meet to review the plan in detail 2. Strategy involves a thorough look at each of the plan steps and the procedures that are invoked at that point in the plan 3. This ensures that the actual planned activities are accurately described in the plan. Pg 699 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 1030,
+      "question": "What is the MAIN purpose of periodically testing off-site hardware backup facilities?",
+      "options": {
+        "A": ") To eliminate the need to develop detailed contingency plans",
+        "B": ") To ensure that program and system documentation remains current",
+        "C": ") To ensure the integrity of the data in the database",
+        "D": ") To ensure the continued compatibility of the contingency facilities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1031,
+      "question": "Scheduled tests of application contingency plans should be based on the",
+      "options": {
+        "A": "Size and complexity of the application.",
+        "B": "Number of changes to the application.",
+        "C": "Criticality of the application.",
+        "D": "Reliability of the application."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "All though not directly answering the question a little inference lead to this \"Priorities - It is extremely important to know what is critical versus nice to have... It is necessary to know which department must come online first, which second, and so on...It maybe more necessary to ensure that the database is up and running before working to bring the file server online.\" - Shon Harris All-in-one CISSP Certification Guide pg 604"
+    },
+    {
+      "id": 1032,
+      "question": "Which of the following is less likely to accompany a contingency plan, either within the plan itself or in the form of an appendix?",
+      "options": {
+        "A": ") Contact information for all personnel",
+        "B": ") Vendor contract information, including offsite storage and alternate site",
+        "C": ") Equipment ad system requirements lists of hardware, software, firmware, and other resources required to support system operations",
+        "D": ") The Business Impact Analysis"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: You use the BIA as a guideline to create the contingency plan."
+    },
+    {
+      "id": 1033,
+      "question": "The first step in contingency planning is to perform:",
+      "options": {
+        "A": ") A hardware backup",
+        "B": ") A data backup",
+        "C": ") An operating system software backup",
+        "D": ") An application software backup"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1034,
+      "question": "Which of the following teams should not be included in an organization's contingency plan?",
+      "options": {
+        "A": ") Damage assessment team",
+        "B": ") Hardware salvage team",
+        "C": ") Tiger team",
+        "D": ") Legal affairs team"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1035,
+      "question": "In the public sector, as opposed to the private sector, due care is usually determined by",
+      "options": {
+        "A": "Minimum standard requirements.",
+        "B": "Legislative requirements.",
+        "C": "Insurance rates.",
+        "D": "Potential for litigation."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1036,
+      "question": "What is the minimum and customary practice of responsible protection of assets that affects a community or societal norm?",
+      "options": {
+        "A": "Due diligence",
+        "B": "Risk mitigation",
+        "C": "Asset protection",
+        "D": "Due care"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Due care and due diligence are terms that are used throughout this book. Due diligence is the act of investigating and understanding the risks the company faces. A company practices due care by developing security policies, procedures, and standards. Due care shows that a company has taken responsibility for the activities that take place within the corporation and has taken the necessary steps to help protect the company, its resources, and employees from possible risks. So due diligence is understanding the current threats and risks and due care is implementing countermeasures to provide protection from those threats. If a company does not practice due care and due diligence pertaining to the security of its assets, it can be legally charged with negligence and held accountable for any ramifications of that negligence.\" Pg. 85 Shon Harris: All-in-One CISSP Certification \"The following list describes some of the actions required to show that due care is being properly practiced in a corporation: 1. Adequate physical and logical access controls 2. Adequate telecommunication security, which could require encryption 3. Proper information, application, and hardware backups 4. Disaster recovery and business continuity plans 5. Periodic review, drills, tests, and improvement in disaster recovery and business continuity plans 6. Properly informing employees of expected behavior and ramifications of not following these expectations 7. Developing a security policy, standards, procedures, and guidelines 8. Performing security awareness training 9. Running updated antivirus software 10. Periodically performing penetration tests from outside and inside the network 11. Implementing dial-back or preset dialing features on remote access applications 12. Abiding by and updating external service level agreements (SLAs) 13. Ensuring that downstream security responsibilities are being met 14. Implementing measures that ensure that software piracy is not taking place 15. Ensuring the proper auditing and reviewing of those audit logs are taking place 16. Conducting background checks on potential employees\" Pg. 616 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1037,
+      "question": "Under the standard of due care, failure to achieve the minimum standards would be considered",
+      "options": {
+        "A": "Negligent",
+        "B": "Unethical",
+        "C": "Abusive",
+        "D": "Illegal"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Due Care: care which an ordinary prudent person would have exercised under the same or similar circumstances. \"Due Care\" and \"Reasonable Care\" are used interchangeably. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 896"
+    },
+    {
+      "id": 1038,
+      "question": "Under the principle of culpable negligence, executives can be held liable for losses that result from computer system breaches if:",
+      "options": {
+        "A": ") the company is not a multi-national company",
+        "B": ") they have not exercised due care protecting computing resources",
+        "C": ") they have failed to properly insure computer resources against loss",
+        "D": ") the company does not prosecute the hacker that caused the breach"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1039,
+      "question": "The criteria for evaluating the legal requirements for implementing safeguards is to evaluate the cost (C) of instituting the protection versus the estimated loss (L) resulting from the exploitation f the corresponding vulnerability. Therefore, a legal liability exists when?",
+      "options": {
+        "A": ") C < L",
+        "B": ") C < L - (residual risk)",
+        "C": ") C > L",
+        "D": ") C > L - (residual risk)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1040,
+      "question": "When companies come together to work in an integrated manner such as extranets, special care must be taken to ensure that each party promises to provide the necessary level of protection, liability and responsibility. These aspects should be defined in the contracts that each party signs. What describes this type of liability?",
+      "options": {
+        "A": ") Cascade liabilities",
+        "B": ") Downstream liabilities",
+        "C": ") Down-flow liabilities",
+        "D": ") Down-set liabilities"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"When companies come together to work in an integrated manner, such as extranets and VANs, special care must be taken to ensure that teach party promises to provide the necessary level of protection, liability, and responsibility needed, which should be clearly defined in the contracts that each party signs. Auditing and testing should be performed to ensure that each party is indeed holding up its side of the bargain and that its technology integrates properly with all other parties. Interoperability can become a large, frustrating, and expensive issue in these types of arrangements. If one of the companies does no provide the necessary level of protection and their negligence affects a partner they are working with, the affected company can sue the upstream company. For example, let's say company A and company B have constructed an extranet. Company A does not put in controls to detect and del with viruses. Company A gets infected with a destructive virus and it is spread to company B through the extranet. The virus corrupts critical data and causes massive disruption to company B's production. Company B can sue company A for being negligent. Both companies need to make sure that they are doing their part to ensure that their activities, or lack of them, will not negatively affect another company, which is referred to as downstream liability.\" Pg 616 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 1041,
+      "question": "The typical computer felons are usually persons with which of the following characteristics?",
+      "options": {
+        "A": ") The have had previous contact with law enforcement",
+        "B": ") The conspire with others",
+        "C": ") They hold a position of trust",
+        "D": ") They deviate from the accepted norms of security"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1042,
+      "question": "Which of the following is responsible for the most security issues?",
+      "options": {
+        "A": ") Outside espionage",
+        "B": ") Hackers",
+        "C": ") Personnel",
+        "D": ") Equipment Failure"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1043,
+      "question": "Hackers are most often interested in:",
+      "options": {
+        "A": ") Helping the community in securing their networks",
+        "B": ") Seeing how far their skills wll take them",
+        "C": ") Getting recognition for their actions",
+        "D": ") Money"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1044,
+      "question": "Which of the following categories of hackers poses the greatest threat?",
+      "options": {
+        "A": ") Disgruntled employees",
+        "B": ") Student hackers",
+        "C": ") Criminal hackers",
+        "D": ") Corporate spies"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1045,
+      "question": "Individuals who have their sole aim as breaking into a computer system are being referred to as:",
+      "options": {
+        "A": "Crackers",
+        "B": "Sniffers",
+        "C": "Hackers",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Crackers are individuals who try to break into a computer system. The term was coined in the mid-80s by hackers who wanted to differentiate themselves from individuals whose sole purpose is to sneak through security systems. Whereas crackers sole aim is to break into secure systems, hackers are more interested in gaining knowledge about computer systems and possibly using this knowledge for playful pranks. Although hackers still argue that there's a big difference between what they do and what crackers do, the mass media has failed to understand the distinction, so the two terms -- hack and crack -- are often used interchangeably."
+    },
+    {
+      "id": 1046,
+      "question": "Which of the following tools is less likely to be used by a hacker?",
+      "options": {
+        "A": ") l0phtcrack",
+        "B": ") Tripwire",
+        "C": ") Crack",
+        "D": ") John the ripper"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Other security packages, such as the popular Tripwire data integrity assurance packages, also provide a secondary antivirus functionality. Tripwire is designed to alert administrators of unauthorized file modifications. It's often used to detect web server defacements and similar attacks, but it also may provide some warning of virus infections if critical system executable files, such as COMMAND.COM, are modified unexpectedly. These systems work by maintaining a database of hash values for all files stored on the system. These archive hash values are then compared to current computed values to detect any files that were modified between the two periods.\" Pg. 224 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 1047,
+      "question": "Which of the following tools is not likely to be used by a hacker?",
+      "options": {
+        "A": ") Nessus",
+        "B": ") Saint",
+        "C": ") Tripwire",
+        "D": ") Nmap"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1048,
+      "question": "Supporting evidence used to help prove an idea of point is described as? It cannot stand on its own, but is used as a supplementary tool to help prove a primary piece of evidence:",
+      "options": {
+        "A": ") Circumstantial evidence",
+        "B": ") Corroborative evidence",
+        "C": ") Opinion evidence",
+        "D": ") Secondary evidence"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1049,
+      "question": "Which of the following would best describe secondary evidence?",
+      "options": {
+        "A": ") Oral testimony by a non-expert witness",
+        "B": ") Oral testimony by an expert witness",
+        "C": ") A copy of a piece of evidence",
+        "D": ") Evidence that proves a specific act"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 1050,
+      "question": "Which of the following exceptions is less likely to make hearsay evidence admissible in court?",
+      "options": {
+        "A": ") Records are collected during the regular conduct of business",
+        "B": ") Records are collected by senior or executive management",
+        "C": ") Records are collected at or near the time of occurrence of the act being investigated",
+        "D": ") Records are in the custody of the witness on a regular basis"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

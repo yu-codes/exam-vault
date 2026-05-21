@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q251 - Q300",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 251,
+      "question": "Which of the following methods is more microscopic and will analyze the direction of the ridges of the fingerprints for matching?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "Flow direct",
+        "C": "Ridge matching",
+        "D": "Minutia matching"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are two approaches for capturing the fingerprint image for matching: minutia matching and global pattern matching. Minutia matching is a more microscopic approach that analyzes the features of the fingerprint, such as the location and direction of the ridges, for matching. The only problem with this approach is that it is difficult to extract the minutiae points accurately if the fingerprint is in some way distorted. The more macroscopic approach is global pattern matching where the flow of the ridges is compared at all locations between a pair of fingerprint images; however, this can be affected by the direction that the image is rotated."
+    },
+    {
+      "id": 252,
+      "question": "Which of the following are the types of eye scan in use today?",
+      "options": {
+        "A": "Retinal scans and body scans.",
+        "B": "Retinal scans and iris scans.",
+        "C": "Retinal scans and reflective scans.",
+        "D": "Reflective scans and iris scans."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are two types of eye scan in use today for authentication purposes: retinal scans and iris scans. Retinal Scan technology maps the capillary pattern of the retina, a thin (1/50th inch) nerve on the back of the eye. To enroll, a minimum of five scans is required, which takes 45 seconds. The subject must keep his head and eye motionless within 1/2\" of the device, focusing on a small rotating point of green light. 320 - 400 points of reference are captured and stored in a 35-byte field, ensuring the measure is accurate with a negligible false rejection rate. This compares to 30-70 points of reference for a finger scan. Unfortunately a retinal scan is considerably more intrusive than an iris scans and many people are hesitant to use the device [Retina-scan]. In addition a significant number of people may be unable to perform a successful enrolment, and there exist degenerative diseases of the retina that alter the scan results over time. Despite these disadvantages, there are several successful implementations of this technology [Retina-scan]."
+    },
+    {
+      "id": 253,
+      "question": "Which of the following eye scan methods is considered to be more intrusive?",
+      "options": {
+        "A": "Iris scans",
+        "B": "Retinal scans",
+        "C": "Body scans",
+        "D": "Reflective scans"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are two types of eye scan in use today for authentication purposes: retinal scans and iris scans. Retinal Scan technology maps the capillary pattern of the retina, a thin (1/50th inch) nerve on the back of the eye. To enroll, a minimum of five scans is required, which takes 45 seconds. The subject must keep his head and eye motionless within 1/2\" of the device, focusing on a small rotating point of green light. 320 - 400 points of reference are captured and stored in a 35-byte field, ensuring the measure is accurate with a negligible false rejection rate. This compares to 30-70 points of reference for a finger scan. Unfortunately a retinal scan is considerably more intrusive than an iris scans and many people are hesitant to use the device [Retina-scan]. In addition a significant number of people may be unable to perform a successful enrolment, and there exist degenerative diseases of the retina that alter the scan results over time. Despite these disadvantages, there are several successful implementations of this technology [Retina-scan]."
+    },
+    {
+      "id": 254,
+      "question": "Which of the following offers greater accuracy then the others?",
+      "options": {
+        "A": "Facial recognition",
+        "B": "Iris scanning",
+        "C": "Finger scanning",
+        "D": "Voice recognition"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Iris scanning offers greater accuracy than finger scanning, voice or facial recognition, hand geometry or keystroke analysis. It is safer and less invasive than retinal scanning, an important legal consideration [Nuger]. Any company thinking of using biometrics would do well to ensure that they comply with existing privacy laws."
+    },
+    {
+      "id": 255,
+      "question": "In addition to the accuracy of the biometric systems, there are other factors that must also be considered:",
+      "options": {
+        "A": ") These factors include the enrollment time and the throughput rate, but not acceptability.",
+        "B": ") These factors do not include the enrollment time, the throughput rate, and acceptability.",
+        "C": ") These factors include the enrollment time, the throughput rate, and acceptability.",
+        "D": ") These factors include the enrollment time, but not the throughput rate, neither the acceptability."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In addition to the accuracy of the biometric systems, there are OTHER factors that must also be considered. These factors include the enrollment time, the throughput rate, and acceptability. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 51"
+    },
+    {
+      "id": 256,
+      "question": "What physical characteristics does a retinal scan biometric device measure?",
+      "options": {
+        "A": ") The amount of light reaching the retina",
+        "B": ") The amount of light reflected by the retina",
+        "C": ") The size, curvature, and shape of the retina",
+        "D": ") The pattern of blood vessels at the back of the eye"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 257,
+      "question": "Type II errors occur when which of the following biometric system rates is high?",
+      "options": {
+        "A": "False accept rate",
+        "B": "False reject rate",
+        "C": "Crossover error rate",
+        "D": "Speed and throughput rate"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "There are three main performance issues in biometrics. These measures are as follows: False Rejection Rate (FRR) or Type 1 Error. The percentage of valid subjects that are falsely rejected. False Acceptance Rate (FAR) or Type 2 Error. The percentage of invalid subjects that are falsely accepted. Crossover Error Rate (CER). The percent in which the False Rejection Rate equals the False Acceptance Rate. pg 38 Krutz: The CISSP Prep Guide"
+    },
+    {
+      "id": 258,
+      "question": "Which of the following are the valid categories of hand geometry scanning?",
+      "options": {
+        "A": "Electrical and image-edge detection.",
+        "B": "Mechanical and image-edge detection.",
+        "C": "Logical and image-edge detection.",
+        "D": "Mechanical and image-ridge detection."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Hand geometry reading (scanning) devices usually fall into one of two categories: mechanical or image-edge detection. Both methods are used to measure specific characteristics of a person's hand such as length of fingers and thumb, widths, and depth."
+    },
+    {
+      "id": 259,
+      "question": "In the world of keystroke dynamics, what represents the amount of time you hold down in a particular key?",
+      "options": {
+        "A": "Dwell time",
+        "B": "Flight time",
+        "C": "Dynamic time",
+        "D": "Systems time"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Keystroke dynamics looks at the way a person types at a keyboard. Specifically, keyboard dynamics measures two distinct variables: \"dwell time\" which is the amount of time you hold down a particular key and \"flight time\" which is the amount of time it takes a person to switch between keys. Keyboard dynamics systems can measure one's keyboard input up to 1000 times per second."
+    },
+    {
+      "id": 260,
+      "question": "In the world of keystroke dynamics, what represents the amount of time it takes a person to switch between keys?",
+      "options": {
+        "A": "Dynamic time",
+        "B": "Flight time",
+        "C": "Dwell time",
+        "D": "Systems time."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Keystroke dynamics looks at the way a person types at a keyboard. Specifically, keyboard dynamics measures two distinct variables: \"dwell time\" which is the amount of time you hold down a particular key and \"flight time\" which is the amount of time it takes a person to switch between keys. Keyboard dynamics systems can measure one's keyboard input up to 1000 times per second."
+    },
+    {
+      "id": 261,
+      "question": "Which of the following are the benefits of Keystroke dynamics?",
+      "options": {
+        "A": "Low cost",
+        "B": "Unintrusive device",
+        "C": "Transparent",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Keystroke dynamics is behavioral in nature. It works well with users that can \"touch type\". Key advantages in applying keyboard dynamics are that the device used in this system, the keyboard, is unintrusive and does not detract from one's work. Enrollment as well as identification goes undetected by the user. Another inherent benefit to using keystroke dynamics as an identification device is that the hardware (i.e. keyboard) is inexpensive. Currently, plug-in boards, built-in hardware and firmware, or software can represent keystroke dynamics systems."
+    },
+    {
+      "id": 262,
+      "question": "DSV as an identification method check against users:",
+      "options": {
+        "A": "Fingerprints",
+        "B": "Signature",
+        "C": "Keystrokes",
+        "D": "Facial expression"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Signature identification, also known as Dynamic Signature Verification (DSV), is another natural fit in the world of biometrics since identification through one's signature occurs during many everyday transactions. Any process or transaction that requires an individual's signature is a prime contender for signature identification."
+    },
+    {
+      "id": 263,
+      "question": "Signature identification systems analyze what areas of an individual's signature?",
+      "options": {
+        "A": "All of the choices EXCEPT the signing rate.",
+        "B": "The specific features of the signature.",
+        "C": "The specific features of the process of signing one's signature.",
+        "D": "The signature rate."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Signature identification systems analyze two different areas of an individual's signature: the specific features of the signature and specific features of the process of signing one's signature. Features that are taken into account and measured include speed, pen pressure, directions, stroke length, and the points in time when the pen is lifted from the paper."
+    },
+    {
+      "id": 264,
+      "question": "What are the advantages to using voice identification?",
+      "options": {
+        "A": "All of the choices.",
+        "B": "Timesaving",
+        "C": "Reliability",
+        "D": "Flexibility"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The many advantages to using voice identification include: Considered a \"natural\" biometric technology Provides eyes and hands-free operation Reliability Flexibility Timesaving data input Eliminate spelling errors Improved data accuracy"
+    },
+    {
+      "id": 265,
+      "question": "What are the methods used in the process of facial identification?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "Detection and recognition.",
+        "C": "Scanning and recognition.",
+        "D": "Detection and scanning."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The process of facial identification incorporates two significant methods: detection and recognition."
+    },
+    {
+      "id": 266,
+      "question": "In the process of facial identification, the basic underlying recognition technology of facial identification involves:",
+      "options": {
+        "A": "Eigenfeatures of eigenfaces.",
+        "B": "Scanning and recognition.",
+        "C": "Detection and scanning.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Recognition is comparing the captured face to other faces that have been saved and stored in a database. The basic underlying recognition technology of facial feature identification involves either eigenfeatures (facial metrics) or eigenfaces. The German word \"eigen\" refers to recursive mathematics used to analyze unique facial characteristics."
+    },
+    {
+      "id": 267,
+      "question": "What is known as the probability that you are not authenticated to access your account?",
+      "options": {
+        "A": "ERR",
+        "B": "FRR",
+        "C": "MTBF",
+        "D": "FAR"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Biometric performance is most commonly measured in two ways: False Rejection Rate (FRR), and False Acceptance Rate (FAR). The FRR is the probability that you are not authenticated to access your account. A strict definition states that the FRR is the probability that a mated comparison (i.e. 2 biometric samples of the same finger) incorrectly determines that there is no match."
+    },
+    {
+      "id": 268,
+      "question": "What is known as the chance that someone other than you is granted access to your account?",
+      "options": {
+        "A": "ERR",
+        "B": "FAR",
+        "C": "FRR",
+        "D": "MTBF"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The FAR is the chance that someone other than you is granted access to your account, in other words, the probability that a non-mated comparison (i.e. two biometric samples of different fingers) match. FAR and FRR numbers are generally expressed in terms of probability."
+    },
+    {
+      "id": 269,
+      "question": "What is typically used to illustrate the comparative strengths and weaknesses of each biometric technology?",
+      "options": {
+        "A": "Decipher Chart",
+        "B": "Zephyr Chart",
+        "C": "Cipher Chart",
+        "D": "Zapper Chart"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Zephyr Chart illustrates the comparative strengths and weaknesses of each biometric technology. The eight primary biometric technologies are listed around the outer border, and for each technology the four major evaluation criteria are ranked from outside (better) to inside (worse). Looking at dynamic signature verification (DSV) will illustrate how the Zephyr Chart works."
+    },
+    {
+      "id": 270,
+      "question": "In terms of the order of effectiveness, which of the following technologies is the most affective?",
+      "options": {
+        "A": "Fingerprint",
+        "B": "Iris scan",
+        "C": "Keystroke pattern",
+        "D": "Retina scan"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The order of effectiveness has not changed for a few years. It is still the same today as it was three years ago. The list below present them from most effective to list effective: Iris scan Retina scan Fingerprint Hand geometry Voice pattern Keystroke pattern Signature"
+    },
+    {
+      "id": 271,
+      "question": "In terms of the order of effectiveness, which of the following technologies is the least effective?",
+      "options": {
+        "A": "Voice pattern",
+        "B": "Signature",
+        "C": "Keystroke pattern",
+        "D": "Hand geometry"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The order of effectiveness has not changed for a few years. It is still the same today as it was three years ago. The list below present them from most effective to list effective: Iris scan Retina scan Fingerprint Hand geometry Voice pattern Keystroke pattern Signature"
+    },
+    {
+      "id": 272,
+      "question": "In terms of the order of acceptance, which of the following technologies is the MOST accepted?",
+      "options": {
+        "A": "Hand geometry",
+        "B": "Keystroke pattern",
+        "C": "Voice Pattern",
+        "D": "Signature"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The order of acceptance has slightly changed in the past years. It was Iris that was the most accepted method three years ago but today we have Voice Pattern that is by far the most accepted. Here is the list from most accepted first to least accepted at the bottom of the list: Voice Pattern Keystroke pattern Signature Hand geometry Handprint Fingerprint Iris Retina pattern"
+    },
+    {
+      "id": 273,
+      "question": "In terms of the order of acceptance, which of the following technologies is the LEAST accepted?",
+      "options": {
+        "A": "Fingerprint",
+        "B": "Iris",
+        "C": "Handprint",
+        "D": "Retina patterns"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The order of acceptance has slightly changed in the past years. It was Iris that was the most accepted method three years ago but today we have Voice Pattern that is by far the most accepted. Here is the list from most accepted first to least accepted at the bottom of the list: Voice Pattern Keystroke pattern Signature Hand geometry Handprint Fingerprint Iris Retina pattern"
+    },
+    {
+      "id": 274,
+      "question": "Which of the following biometric characteristics cannot be used to uniquely authenticate an individual's identity?",
+      "options": {
+        "A": ") Retina scans",
+        "B": ") Iris scans",
+        "C": ") Palm scans",
+        "D": ") Skin scans"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 275,
+      "question": "Which of the following is true of two-factor authentication?",
+      "options": {
+        "A": ") It uses the RSA public-key signature based algorithm on integers with large prime factors",
+        "B": ") It requires two measurements of hand geometry",
+        "C": ") It does not use single sign-on technology",
+        "D": ") It relies on two independent proofs of identity"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 276,
+      "question": "What is Kerberos?",
+      "options": {
+        "A": ") A three-headed dog from Egyptian Mythology",
+        "B": ") A trusted third-party authentication protocol",
+        "C": ") A security model",
+        "D": ") A remote authentication dial in user server"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 277,
+      "question": "Which of the following is true about Kerberos?",
+      "options": {
+        "A": ") It utilized public key cryptography",
+        "B": ") It encrypts data after a ticket is granted, but passwords are exchanged in plain text",
+        "C": ") It depends upon symmetric ciphers",
+        "D": ") It is a second party authentication system"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Kerberos relies upon symmetric key cryptography, specifically Data Encryption Standard (DES), and provides end-to-end security for authentication traffic between the client and the Key Distribution Center (KDC).\" Pg. 15 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 278,
+      "question": "Kerberos depends upon what encryption method?",
+      "options": {
+        "A": ") Public Key cryptography",
+        "B": ") Private Key cryptography",
+        "C": ") El Gamal cryptography",
+        "D": ") Blowfish cryptography"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Kerberos uses symmetric key cryptography and provides end-to-end security, meaning that information being passed between a user and a service is protected without the need of an intermediate component. Although it allows the use of passwords for authentication, it was designed specifically to eliminate the need for transmitting passwords over the network. Most Kerberos implementations work with cryptography keys and shared secret keys (private keys) instead of passwords. Pg 148 Shon Harris All-In-One CISSP Certification Exam Guide"
+    },
+    {
+      "id": 279,
+      "question": "The primary service provided by Kerberos is which of the following?",
+      "options": {
+        "A": ") non-repudiation",
+        "B": ") confidentiality",
+        "C": ") authentication",
+        "D": ") authorization"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 280,
+      "question": "Which of the following are authentication server systems with operational modes that can implement SS0?",
+      "options": {
+        "A": ") Kerberos, SESAME and KryptoKnight",
+        "B": ") SESAME, KryptoKnight and NetSP",
+        "C": ") Kerberos and SESAME",
+        "D": ") Kerberos, SESAME, KryptoKnight, and NetSP"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Scripts, directory services, thin clients, Kerberos, SESAME, NetSP, scripted access, and KrtyptoKnight are examples of SSO mechanisms.\" Pg. 14 Tittel: CISSP Study Guide Second Edition"
+    },
+    {
+      "id": 281,
+      "question": "Which of the following is a trusted, third party authentication protocol that was developed under Project Athena at MIT?",
+      "options": {
+        "A": ") Kerberos",
+        "B": ") SESAME",
+        "C": ") KryptoKnight",
+        "D": ") NetSP"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Kerberos is an authentication protocol and was designed in the mid-1980s as part of MIT's Project Athena.\" Pg 129 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 282,
+      "question": "Which of the following is true about Kerberos?",
+      "options": {
+        "A": ") It utilizes public key cryptography",
+        "B": ") It encrypts data after a ticket is granted, but passwords are exchanged in plain text.",
+        "C": ") It depends upon symmetric ciphers",
+        "D": ") It is a second party authentication system"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 283,
+      "question": "One of the differences between Kerberos and KryptoKnight is that there is:",
+      "options": {
+        "A": ") a mapped relationship among the parties takes place",
+        "B": ") there is a peer-to-peer relationship among the parties with themselves.",
+        "C": ") there is no peer-to-peer relationship among the parties and the KDC",
+        "D": ") a peer-to-peer relationship among the parties and the KDC"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Krytponight The IBM Kryptonight system provides authentication, SSO, and key distribution services. It was designed to support computers with widely varying computational capabilities. KryptoKnight uses a trusted Key Distribution Center (KDC) that knows the secret key of each party. One of the differences between kerberos and KrytoKnight is that there is a peer-to-peer relationship among the parties and the KDC.\" Pg. 58 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 284,
+      "question": "Which of the following is the MOST secure network access control procedure to adopt when using a callback device?",
+      "options": {
+        "A": "The user enters a userid and PIN, and the device calls back the telephone number that corresponds to the userid.",
+        "B": "The user enters a userid, PIN, and telephone number, and the device calls back the telephone number entered.",
+        "C": "The user enters the telephone number, and the device verifies that the number exists in its database before calling back.",
+        "D": "The user enters the telephone number, and the device responds with a challenge."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Usually a request for a username and password takes place and the NAS may hang up the call in order to call the user back at a predefined phone number. This is a security activity that is used to try and ensure that only authenticated users are given access to the network and it reverse the long distance charges back to the company...However, this security measure can be compromised if someone implements call forwarding. - Shon Harris All-in-one CISSP Certification Guide pg 463"
+    },
+    {
+      "id": 285,
+      "question": "What is called the access protection system that limits connections by calling back the number of a previously authorized location?",
+      "options": {
+        "A": ") Sendback system",
+        "B": ") Callback forward systems",
+        "C": ") Callback systems",
+        "D": ") Sendback forward systems"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Callback systems provide access protection by calling back the number of a previously authorized location, but this control can be compromised by call forwarding.\" Pg 48 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 286,
+      "question": "A confidential number to verify a user's identity is called a:",
+      "options": {
+        "A": ") PIN",
+        "B": ") userid",
+        "C": ") password",
+        "D": ") challenge"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 287,
+      "question": "How are memory cards and smart cards different?",
+      "options": {
+        "A": ") Memory cards normally hold more memory than smart cards",
+        "B": ") Smart cards provide a two-factor authentication whereas memory cards don't",
+        "C": ") Memory cards have no processing power",
+        "D": ") Only smart cards can be used for ATM cards"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"The main difference between memory cards and smart cards is the processing power. A memory card holds information, but does not process information. A smart card has the necessary hardware and logic to actually process information.\" Pg 121 Shon Harris CISSP All-In-One Exam Guide"
+    },
+    {
+      "id": 288,
+      "question": "They in form of credit card-size memory cards or smart cards, or those resembling small calculators, are used to supply static and dynamic passwords are called:",
+      "options": {
+        "A": ") Tickets",
+        "B": ") Tokens",
+        "C": ") Token passing networks",
+        "D": ") Coupons"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 289,
+      "question": "Tokens, as a way to identify users are subject to what type of error?",
+      "options": {
+        "A": "Token error",
+        "B": "Decrypt error",
+        "C": "Human error",
+        "D": "Encrypt error"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Tokens are a fantastic way of ensuring the identity of a user. However, you must remember that no system is immune to \"human error\". If the token is lost with it's pin written on it, or if it were loaned with the corresponding pin it would allow for masquerading. This is one of the greatest threats that you have with tokens."
+    },
+    {
+      "id": 290,
+      "question": "Which of the following factors may render a token based solution unusable?",
+      "options": {
+        "A": "Token length",
+        "B": "Card size",
+        "C": "Battery lifespan",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Another limitation of some of the tokens is their battery lifespan. For example, in the case of SecurID you have a token that has a battery that will last from 1 to 3 years depending on the type of token you acquired. Some token companies such as Cryptocard have introduced tokens that have a small battery compartment allowing you to change the battery when it is discharged."
+    },
+    {
+      "id": 291,
+      "question": "Memory only cards work based on:",
+      "options": {
+        "A": "Something you have.",
+        "B": "Something you know.",
+        "C": "None of the choices.",
+        "D": "Something you know and something you have."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Memory Only Card - This type of card is the most common card. It has a magnetic stripe on the back. These cards can offer two-factor authentication, the card itself (something you have) and the PIN (something you know). Everyone is familiar with the use of an ATM (Automated Teller Machine) card. These memory cards are very easy to counterfeit. There was a case in Montreal where a storeowner would swipe the card through for the transaction; he hould then swipe it through a card reader to get a copy while a small hidden camera was registering the PIN as the user was punching it on the pad. This scheme was quickly identified as the victims had one point in common; they all visited the same store."
+    },
+    {
+      "id": 292,
+      "question": "Which of the following is a disadvantage of a memory only card?",
+      "options": {
+        "A": "High cost to develop.",
+        "B": "High cost to operate.",
+        "C": "Physically infeasible.",
+        "D": "Easy to counterfeit."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Memory Only Card - This type of card is the most common card. It has a magnetic stripe on the back. These cards can offer two-factor authentication, the card itself (something you have) and the PIN (something you know). Everyone is familiar with the use of an ATM (Automated Teller Machine) card. These memory cards are very easy to counterfeit. There was a case in Montreal where a storeowner would swipe the card through for the transaction; he hould then swipe it through a card reader to get a copy, while a small hidden camera was registering the PIN as the user was punching it on the pad. This scheme was quickly identified as the victims had one point in common; they all visited the same store."
+    },
+    {
+      "id": 293,
+      "question": "The word \"smart card\" has meanings of:",
+      "options": {
+        "A": "Personal identity token containing IC-s.",
+        "B": "Processor IC card.",
+        "C": "IC card with ISO 7816 interface.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The word \"smart card\" has four different meanings (in order of usage frequency): IC card with ISO 7816 interface Processor IC card Personal identity token containing IC-s Integrated Circuit(s) Card is ad ID-1 type (specified in ISO 7810) card, into which has been inserted one or more integrated circuits. [ISO 7816]"
+    },
+    {
+      "id": 294,
+      "question": "Processor card contains which of the following components?",
+      "options": {
+        "A": "Memory and hard drive.",
+        "B": "Memory and flash.",
+        "C": "Memory and processor.",
+        "D": "Cache and processor."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Processor cards contain memory and a processor. They have remarkable data processing capabilities. Very often the data processing power is used to encrypt/decrypt data, which makes this type of card a very unique personal identification token. Data processing also permits dynamic storage management, which enables the realization of flexible multifunctional cards."
+    },
+    {
+      "id": 295,
+      "question": "Which of the following offers advantages such as the ability to use stronger passwords, easier password administration, and faster resource access?",
+      "options": {
+        "A": ") Smart cards",
+        "B": ") Single Sign-on (SSO)",
+        "C": ") Kerberos",
+        "D": ") Public Key Infrastructure (PKI)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 296,
+      "question": "What is the main concern with single sign-on?",
+      "options": {
+        "A": ") Maximum unauthorized access would be possible if a password is disclosed",
+        "B": ") The security administrator's workload would increase",
+        "C": ") The users' password would be to hard to remember",
+        "D": ") User access rights would be increased"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 297,
+      "question": "Which of the following describes the major disadvantage of many SSO implementations?",
+      "options": {
+        "A": ") Once a user obtains access to the system through the initial log-on they can freely roam the network resources without any restrictions",
+        "B": ") The initial logon process is cumbersome to discourage potential intruders",
+        "C": ") Once a user obtains access to the system through the initial log-on, they only need to logon to some applications.",
+        "D": ") Once a user obtains access to the system through the initial log-on, he has to logout from all other systems"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"The major disadvantage of many SSO implementations is that once a user obtains access to the system through the initial logon, the user can freely roam the network resources without any restrictions.\" pg 53 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 298,
+      "question": "Which of the following addresses cumbersome situations where users need to log on multiple times to access different resources?",
+      "options": {
+        "A": ") Single Sign-On (SSO) systems",
+        "B": ") Dual Sign-On (DSO) systems",
+        "C": ") Double Sign-On (DS0) systems",
+        "D": ") Triple Sign-On (TSO) systems"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 299,
+      "question": "A method for a user to identify and present credentials only once to a system is known as:",
+      "options": {
+        "A": "SEC",
+        "B": "IPSec",
+        "C": "SSO",
+        "D": "SSL"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Single Sign-On (SSO) - This is a method for a users to identify and present credentials only once to a system. Information needed for future system access to resources is forwarded by the initial System. BENEFITS More efficient user log-on process Users select stronger passwords Inactivity timeout and attempt thresholds applied uniformly closer to user point of entry Improved timely disabling of all network/computer accounts for terminated users"
+    },
+    {
+      "id": 300,
+      "question": "Which of the following correctly describe the features of SSO?",
+      "options": {
+        "A": "More efficient log-on.",
+        "B": "More costly to administer.",
+        "C": "More costly to setup.",
+        "D": "More key exchanging involved."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Single Sign-On (SSO) - This is a method for a users to identify and present credentials only once to a system. Information needed for future system access to resources is forwarded by the initial System. BENEFITS More efficient user log-on process Users select stronger passwords Inactivity timeout and attempt thresholds applied uniformly closer to user point of entry Improved timely disabling of all network/computer accounts for terminated users"
+    }
+  ]
+}

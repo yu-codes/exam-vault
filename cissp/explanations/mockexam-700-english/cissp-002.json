@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q51 - Q100",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 51,
+      "question": "In regards to information classification what is the main responsibility of information (data) owner?",
+      "options": {
+        "A": "determining the data sensitivity or classification level",
+        "B": "running regular data backups",
+        "C": "audit the data users",
+        "D": "periodically check the validity and accuracy of the data"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The data owner (information owner) is usually a member of management who is in charge of a specific business unit, and who is ultimately responsible for the protection and use of a specific subset of information. The data owner has due care responsibilities and thus will be held responsible for any negligent act that results in the corruption or disclosure of the data. The data owner decides upon the classification of the data she is responsible for and alters that classification if the business need arises. This person is also responsible for ensuring that the necessary security controls are in place, defining security requirements per classification and backup requirements, approving any disclosure activities, ensuring that proper access rights are being used, and defining user access criteria. The data owner approves access requests or may choose to delegate this function to business unit managers. Incorrect Answers: B: Running regular data backups is the job of the data custodian, not the data owner. C: It is not the job of the data owner to audit the data users. D: Periodically checking the validity and accuracy of the data is the job of the data custodian, not the data owner."
+    },
+    {
+      "id": 52,
+      "question": "The owner of a system should have the confidence that the system will behave according to its specifications. This is termed as:",
+      "options": {
+        "A": "Integrity",
+        "B": "Accountability",
+        "C": "Assurance",
+        "D": "Availability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In a trusted system, all protection mechanisms work together to process sensitive data for many types of uses, and will provide the necessary level of protection per classification level. Assurance looks at the same issues but in more depth and detail. Systems that provide higher levels of assurance have been tested extensively and have had their designs thoroughly inspected, their development stages reviewed, and their technical specifications and test plans evaluated. In the Trusted Computer System Evaluation Criteria (TCSEC), commonly known as the Orange Book, the lower assurance level ratings look at a system’s protection mechanisms and testing results to produce an assurance rating, but the higher assurance level ratings look more at the system design, specifications, development procedures, supporting documentation, and testing results. The protection mechanisms in the higher assurance level systems may not necessarily be much different from those in the lower assurance level systems, but the way they were designed and built is under much more scrutiny. With this extra scrutiny comes higher levels of assurance of the trust that can be put into a system. Incorrect Answers: A: Integrity ensures that data is unaltered. This is not what is described in the question. B: Accountability is a security principle indicating that individuals must be identifiable and must be held responsible for their actions. This is not what is described in the question. D: Availability ensures reliability and timely access to data and resources to authorized individuals."
+    },
+    {
+      "id": 53,
+      "question": "The US department of Health, Education and Welfare developed a list of fair information practices focused on privacy of individually, personal identifiable information. Which one of the following is incorrect?",
+      "options": {
+        "A": "There must be a way for a person to find out what information about them exists and how it is used.",
+        "B": "There must be a personal data record-keeping system whose very existence shall be kept secret.",
+        "C": "There must be a way for a person to prevent information about them, which was obtained for one purpose, from being used or made available for another purpose without their consent.",
+        "D": "Any organization creating, maintaining, using, or disseminating records of personal identifiable information must ensure reliability of the data for their intended use and must make precautions to prevent misuses of that data."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Fair Information Practice was first developed in the United States in the 1970s by the Department for Health, Education and Welfare (HEW). T Fair Information Practice does not state that there the personal data record-keeping system must be secret. Incorrect Answers: A: HEW Fair Information Practices include that there should be mechanisms for individuals to review data about them, to ensure accuracy. C: HEW Fair Information Practices include For all data collected there should be a stated purpose Information collected by an individual cannot be disclosed to other organizations or individuals unless specifically authorized by law or by consent of the individual D: HEW Fair Information Practices include Records kept on an individual should be accurate and up to date Data should be deleted when it is no longer needed for the stated purpose"
+    },
+    {
+      "id": 54,
+      "question": "The typical computer fraudsters are usually persons with which of the following characteristics?",
+      "options": {
+        "A": "They have had previous contact with law enforcement",
+        "B": "They conspire with others",
+        "C": "They hold a position of trust",
+        "D": "They deviate from the accepted norms of society"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "It is easy for people who are placed in position of trust to commit fraud, as they are considered to be trustworthy. Incorrect Answers: A: A fraudster might very well have a clean legal record. This in conjunction with a position of trust make him/her hard to detect. B: It is most typical that a fraudster conspires with other persons as the fraudster usually acts alone. D: A fraudster can very well follow the accepted norms of society, and this makes him/her harder to detect."
+    },
+    {
+      "id": 55,
+      "question": "The US-EU Safe Harbor process has been created to address which of the following?",
+      "options": {
+        "A": "Integrity of data transferred between U.S. and European companies",
+        "B": "Confidentiality of data transferred between U.S and European companies",
+        "C": "Protection of personal data transferred between U.S and European companies",
+        "D": "Confidentiality of data transferred between European and international companies"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "US-EU Safe Harbor process relates to privacy, that is protection of personal data. The Safe Harbor is a construct that outlines how U.S.-based companies can comply with the EU privacy. The Safe Harbor Privacy Principles states that if a non-European organization wants to do business with a European entity, it will need to adhere to the Safe Harbor requirements if certain types of data will be passed back and forth during business processes Incorrect Answers: A: The US-EU Safe Harbor process does not relate to the integrity of the data. It concerns the privacy of the data. B: The US-EU Safe Harbor process does not relate to the Confidentiality of the data. It concerns the privacy of the data. D: The US-EU Safe Harbor process does not relate to the Confidentiality of the data. It concerns the privacy of the data."
+    },
+    {
+      "id": 56,
+      "question": "What level of assurance for a digital certificate verifies a user's name, address, social security number, and other information against a credit bureau database?",
+      "options": {
+        "A": "Level 1/Class 1",
+        "B": "Level 2/Class 2",
+        "C": "Level 3/Class 3",
+        "D": "Level 4/Class 4"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Users can obtain certificates with various levels of assurance. Level 1/Class 1 certificates verify electronic mail addresses. This is done through the use of a personal information number that a user would supply when asked to register. This level of certificate may also provide a name as well as an electronic mail address; however, it may or may not be a genuine name (i.e., it could be an alias). This proves that a human being will reply back if you send an email to that name or email address. Class 2/Level 2 verify a user’s name, address, social security number, and other information against a credit bureau database. Class 3/Level 3 certificates are available to companies. This level of certificate provides photo identification to accompany the other items of information provided by a level 2 certificate. Incorrect Answers: A: Level 1/Class 1 certificates verify electronic mail addresses. They do not verify a user's name, address, social security number, and other information against a credit bureau database. C: Level 3/Class 3 certificates provide photo identification to accompany the other items of information provided by a level 2 certificate. They do not verify a user's name, address, social security number, and other information against a credit bureau database. D: Level 4/Class 4 certificates do not verify a user's name, address, social security number, and other information against a credit bureau database."
+    },
+    {
+      "id": 57,
+      "question": "According to Requirement 3 of the Payment Card Industry’s Data Security Standard (PCI DSS) there is a requirement to “protect stored cardholder data.” Which of the following items cannot be stored by the merchant?",
+      "options": {
+        "A": "Primary Account Number",
+        "B": "Cardholder Name",
+        "C": "Expiration Date",
+        "D": "The Card Validation Code (CVV2)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Requirement 3 of the Payment Card Industry’s Data Security Standard (PCI DSS) is to “protect stored cardholder data.” The public assumes merchants and financial institutions will protect data on payment cards to thwart theft and prevent unauthorized use. Requirement 3 applies only if cardholder data is stored. Merchants who do not store any cardholder data automatically provide stronger protection by having eliminated a key target for data thieves. For merchants who have a legitimate business reason to store cardholder data, it is important to understand what data elements PCI DSS allows them to store and what measures they must take to protect those data. To prevent unauthorized storage, only council certified PIN entry devices and payment applications may be used. PCI DSS compliance is enforced by the major payment card brands who established the PCI DSS and the PCI Security Standards Council: American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa Inc. PCI DSS Requirement 3 It details technical guidelines for protecting stored cardholder data. Merchants should develop a data retention and storage policy that strictly limits storage amount and retention time to that which is required for business, legal, and/or regulatory purposes. Sensitive authentication data must never be stored after authorization – even if this data is encrypted. Never store full contents of any track from the card’s magnetic stripe or chip (referred to as full track, track, track 1, track 2, or magnetic stripe data). If required for business purposes, the cardholder’s name, PAN, expiration date, and service code may be stored as long as they are protected in accordance with PCI DSS requirements. Never store the card-validation code (CVV) or value (three- or four-digit number printed on the front or back of a payment card used to validate card-not-present transactions). Never store the personal identification number (PIN) or PIN Block. Be sure to mask PAN whenever it is displayed. The first six and last four digits are the maximum number of digits that may be displayed. This requirement does not apply to those authorized with a specific need to see the full PAN, nor does it supersede stricter requirements in place for displays of cardholder data such as in a point-of-sale receipt. Incorrect Answers: A: The Primary Account Number can be stored by the merchant according to the PCI Data Storage Guidelines. B: The Cardholder Name can be stored by the merchant according to the PCI Data Storage Guidelines. C: The Expiration Date can be stored by the merchant according to the PCI Data Storage Guidelines."
+    },
+    {
+      "id": 58,
+      "question": "Which of the following is NOT a proper component of Media Viability Controls?",
+      "options": {
+        "A": "Storage",
+        "B": "Writing",
+        "C": "Handling",
+        "D": "Marking"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Writing is not a component of media viability controls. Media viability controls are implemented to preserve the proper working state of the media, particularly to facilitate the timely and accurate restoration of the system after a failure. Many physical controls should be used to protect the viability of the data storage media. The goal is to protect the media from damage during handling and transportation, or during short-term or long-term storage. Proper marking and labeling of the media is required in the event of a system recovery process: Marking. All data storage media should be accurately marked or labeled. The labels can be used to identify media with special handling instructions, or to log serial numbers or bar codes for retrieval during a system recovery. Handling. Proper handling of the media is important. Some issues with the handling of media include cleanliness of the media and the protection from physical damage to the media during transportation to the archive sites. Storage. Storage of the media is very important for both security and environmental reasons. A proper heat- and humidity-free, clean storage environment should be provided for the media. Data media is sensitive to temperature, liquids, magnetism, smoke, and dust. Incorrect Answers: A: Storage is a media viability control used to protect the viability of data storage media. C: Handling is a media viability control used to protect the viability of data storage media. D: Marking is a media viability control used to protect the viability of data storage media."
+    },
+    {
+      "id": 59,
+      "question": "Degaussing is used to clear data from all of the following media except:",
+      "options": {
+        "A": "Floppy Disks",
+        "B": "Read-Only Media",
+        "C": "Video Tapes",
+        "D": "Magnetic Hard Disks"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Atoms and Data Shon Harris says: \"A device that performs degaussing generates a coercive magnetic force that reduces the magnetic flux density of the storage media to zero. This magnetic force is what properly erases data from media. Data are stored on magnetic media by the representation of the polarization of the atoms. Degaussing changes this polarization (magnetic alignment) by using a type of large magnet to bring it back to its original flux (magnetic alignment). \" Degaussing is achieved by passing the magnetic media through a powerful magnet field to rearrange the metallic particles, completely removing any resemblance of the previously recorded signal. Therefore, degaussing will work on any electronic based media such as floppy disks, or hard disks - all of these are examples of electronic storage. However, \"read-only media\" includes items such as paper printouts and CD-ROM which do not store data in an electronic form or is not magnetic storage. Passing them through a magnet field has no effect on them. Not all clearing/ purging methods are applicable to all media— for example, optical media is not susceptible to degaussing, and overwriting may not be effective against Flash devices. The degree to which information may be recoverable by a sufficiently motivated and capable adversary must not be underestimated or guessed at in ignorance. For the highest-value commercial data, and for all data regulated by government or military classification rules, read and follow the rules and standards. Incorrect Answers: A: Floppy Disks can be erased by degaussing. C: Video Tapes can be erased by degaussing. D: Magnetic Hard Disks can be erased by degaussing."
+    },
+    {
+      "id": 60,
+      "question": "What is the main issue with media reuse?",
+      "options": {
+        "A": "Degaussing",
+        "B": "Data remanence",
+        "C": "Media destruction",
+        "D": "Purging"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The main issue with media reuse is data remanence, where residual information still resides on the media. Data Remanence is the problem of residual information remaining on the media after erasure, which may be subject to restoration by another user, thereby resulting in a loss of confidentiality. Diskettes, hard drives, tapes, and any magnetic or writable media are susceptible to data remanence. Retrieving the bits and pieces of data that have not been thoroughly removed from storage media is a common method of computer forensics, and is often used by law enforcement personnel to preserve evidence and to construct a trail of misuse. Anytime a storage medium is reused (and also when it is discarded), there is the potential for the media’s information to be retrieved. Methods must be employed to properly destroy the existing data to ensure that no residual data is available to new users. The “Orange Book” standard recommends that magnetic media be formatted seven times before discard or reuse. Incorrect Answers: A: Degaussing is a method used to ensure that there is no residual data left on the media. This is not the main issue with media reuse. C: Media destruction as the name suggests is the destruction of media. This is not the main issue with media reuse. D: Purging is another method used to ensure that there is no residual data left on the media. This is not the main issue with media reuse."
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is the most reliable, secure means of removing data from magnetic storage media such as a magnetic tape, or a cassette?",
+      "options": {
+        "A": "Degaussing",
+        "B": "Parity Bit Manipulation",
+        "C": "Zeroization",
+        "D": "Buffer overflow"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A \"Degausser (Otherwise known as a Bulk Eraser) has the main function of reducing to near zero the magnetic flux stored in the magnetized medium. Flux density is measured in Gauss or Tesla. The operation is speedier than overwriting and done in one short operation. This is achieved by subjecting the subject in bulk to a series of fields of alternating polarity and gradually decreasing strength. Incorrect Answers: B: Parity has to do with disk error detection, not data removal. A bit or series of bits appended to a character or block of characters to ensure that the information received is the same as the information that was sent. C: Zeroization involves overwriting data to sanitize it. There is a drawback to this method. During normal write operations with magnetic media, the head of the drive moves back-and-forth across the media as data is written. The track of the head does not usually follow the exact path each time. The result is a miniscule amount of data remanence with each pass. With specialized equipment, it is possible to read data that has been overwritten. Degaussing is more effective than overwriting the sectors. D: This is a detractor. Although many Operating Systems use a disk buffer to temporarily hold data read from disk, its primary purpose has no connection to data removal. An overflow goes outside the constraints defined for the buffer and is a method used by an attacker to attempt access to a system."
+    },
+    {
+      "id": 62,
+      "question": "Which of the following is NOT a media viability control used to protect the viability of data storage media?",
+      "options": {
+        "A": "clearing",
+        "B": "marking",
+        "C": "handling",
+        "D": "storage"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Clearing is not an example of a media viability control used to protect the viability of data storage media. Media viability controls are implemented to preserve the proper working state of the media, particularly to facilitate the timely and accurate restoration of the system after a failure. Many physical controls should be used to protect the viability of the data storage media. The goal is to protect the media from damage during handling and transportation, or during short-term or long-term storage. Proper marking and labeling of the media is required in the event of a system recovery process: Marking. All data storage media should be accurately marked or labeled. The labels can be used to identify media with special handling instructions, or to log serial numbers or bar codes for retrieval during a system recovery. Handling. Proper handling of the media is important. Some issues with the handling of media include cleanliness of the media and the protection from physical damage to the media during transportation to the archive sites. Storage. Storage of the media is very important for both security and environmental reasons. A proper heat- and humidity-free, clean storage environment should be provided for the media. Data media is sensitive to temperature, liquids, magnetism, smoke, and dust. Incorrect Answers: B: Marking is a media viability control used to protect the viability of data storage media. C: Handling is a media viability control used to protect the viability of data storage media. D: Storage is a media viability control used to protect the viability of data storage media."
+    },
+    {
+      "id": 63,
+      "question": "An electrical device (AC or DC) which can generate coercive magnetic force for the purpose of reducing magnetic flux density to zero on storage media or other magnetic media is called:",
+      "options": {
+        "A": "a magnetic field.",
+        "B": "a degausser.",
+        "C": "magnetic remanence.",
+        "D": "magnetic saturation."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A device that performs degaussing generates a coercive magnetic force that reduces the magnetic flux density of the storage media to zero. This magnetic force is what properly erases data from media. Data are stored on magnetic media by the representation of the polarization of the atoms. Degaussing changes this polarization (magnetic alignment) by using a type of large magnet to bring it back to its original flux (magnetic alignment). Incorrect Answers: A: A magnetic field is not the electrical device described in the question. C: Magnetic remanence is not the electrical device described in the question. D: Magnetic saturation is not the electrical device described in the question."
+    },
+    {
+      "id": 64,
+      "question": "What is the most secure way to dispose of information on a CD-ROM?",
+      "options": {
+        "A": "Sanitizing",
+        "B": "Physical damage",
+        "C": "Degaussing",
+        "D": "Physical destruction"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The information stored on a CDROM is not in electro-magnetic format, so a degausser would be ineffective. The only way to dispose of information on a CD-ROM is to physically destroy the CD-ROM. Incorrect Answers: A: You cannot sanitize read-only media such as a CDROM. B: Physical damage is not the MOST secure way to dispose of information on a CD-ROM. Data could still be recovered from the undamaged part of the CD-ROM. Only complete destruction of the CD-ROM will suffice. C: Degaussing does not work on read-only media such as a CDROM."
+    },
+    {
+      "id": 65,
+      "question": "Which of the following refers to the data left on the media after the media has been erased?",
+      "options": {
+        "A": "remanence",
+        "B": "recovery",
+        "C": "sticky bits",
+        "D": "semi-hidden"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Data Remanence is the problem of residual information remaining on the media after erasure, which may be subject to restoration by another user, thereby resulting in a loss of confidentiality. Diskettes, hard drives, tapes, and any magnetic or writable media are susceptible to data remanence. Retrieving the bits and pieces of data that have not been thoroughly removed from storage media is a common method of computer forensics, and is often used by law enforcement personnel to preserve evidence and to construct a trail of misuse. Anytime a storage medium is reused (and also when it is discarded), there is the potential for the media’s information to be retrieved. Methods must be employed to properly destroy the existing data to ensure that no residual data is available to new users. The “Orange Book” standard recommends that magnetic media be formatted seven times before discard or reuse. Incorrect Answers: B: Recovery is not the term that refers to the data left on the media after the media has been erased. C: Sticky bits is not the term that refers to the data left on the media after the media has been erased. D: Semi-hidden is not the term that refers to the data left on the media after the media has been erased."
+    },
+    {
+      "id": 66,
+      "question": "What best describes a scenario when an employee has been shaving off pennies from multiple accounts and depositing the funds into his own bank account?",
+      "options": {
+        "A": "Data fiddling",
+        "B": "Data diddling",
+        "C": "Salami techniques",
+        "D": "Trojan horses"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Salami techniques: A salami attack is the one in which an attacker commits several small crimes with the hope that the overall larger crime will go unnoticed. In this case, the employee has been shaving off pennies from multiple accounts in the hope that no one notices. Shaving pennies from an account is the small crime in this example. However, the cumulative effect of the multiple ‘small crimes’ is that a larger amount of money is stolen in total. Incorrect Answers: A: Data fiddling is not a defined attack type. The term could refer to entering incorrect data in a similar way to data diddling. However, it is not the term used to describe a scenario when an employee has been shaving off pennies from multiple accounts and depositing the funds into his own bank account. B: Data diddling refers to the alteration of existing data. Many times, this modification happens before the data is entered into an application or as soon as it completes processing and is outputted from an application. For instance, if a loan processor is entering information for a customer’s loan of $100,000, but instead enters $150,000 and then moves the extra approved money somewhere else, this would be a case of data diddling. Another example is if a cashier enters an amount of $40 into the cash register, but really charges the customer $60 and keeps the extra $20. This is not what is described in the question. D: A Trojan Horse is a program that is disguised as another program. This is not what is described in the question."
+    },
+    {
+      "id": 67,
+      "question": "Which of the following logical access exposures involvers changing data before, or as it is entered into the computer?",
+      "options": {
+        "A": "Data diddling",
+        "B": "Salami techniques",
+        "C": "Trojan horses",
+        "D": "Viruses"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Data diddling refers to the alteration of existing data. Many times, this modification happens before the data is entered into an application or as soon as it completes processing and is outputted from an application. For instance, if a loan processor is entering information for a customer’s loan of $100,000, but instead enters $150,000 and then moves the extra approved money somewhere else, this would be a case of data diddling. Another example is if a cashier enters an amount of $40 into the cash register, but really charges the customer $60 and keeps the extra $20. This type of crime is extremely common and can be prevented by using appropriate access controls and proper segregation of duties. It will more likely be perpetrated by insiders, who have access to data before it is processed. Incorrect Answers: B: Salami techniques: A salami attack is the one in which an attacker commits several small crimes with the hope that the overall larger crime will go unnoticed. This is not what is described in the question. C: A Trojan Horse is a program that is disguised as another program. This is not what is described in the question. D: A Virus is a small application or a string of code that infects applications. This is not what is described in the question."
+    },
+    {
+      "id": 68,
+      "question": "When it comes to magnetic media sanitization, what difference can be made between clearing and purging information?",
+      "options": {
+        "A": "Clearing completely erases the media whereas purging only removes file headers, allowing the recovery of files.",
+        "B": "Clearing renders information unrecoverable by a keyboard attack and purging renders information unrecoverable against laboratory attack.",
+        "C": "They both involve rewriting the media.",
+        "D": "Clearing renders information unrecoverable against a laboratory attack and purging renders information unrecoverable to a keyboard attack."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The removal of information from a storage medium is called sanitization. Different kinds of sanitization provide different levels of protection. A distinction can be made between clearing information (rendering it unrecoverable by a keyboard attack) and purging (rendering it unrecoverable against laboratory attack). There are three general methods of purging media: overwriting, degaussing, and destruction. There should be continuous assurance that sensitive information is protected and not allowed to be placed in a circumstance wherein a possible compromise can occur. There are two primary levels of threat that the protector of information must guard against: keyboard attack (information scavenging through system software capabilities) and laboratory attack (information scavenging through laboratory means). Procedures should be implemented to address these threats before the Automated Information System (AIS) is procured, and the procedures should be continued throughout the life cycle of the AIS. Incorrect Answers: A: It is not true that clearing completely erases the media or that purging only removes file headers, allowing the recovery of files. C: Clearing does not involve rewriting the media. D: It is not true that clearing renders information unrecoverable against a laboratory attack or purging renders information unrecoverable to a keyboard attack."
+    },
+    {
+      "id": 69,
+      "question": "Which of the following method is recommended by security professional to PERMANENTLY erase sensitive data on magnetic media?",
+      "options": {
+        "A": "Degaussing",
+        "B": "Overwrite every sector of magnetic media with pattern of 1's and 0's",
+        "C": "Format magnetic media",
+        "D": "Delete File allocation table"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Degaussing is the most effective method out of all the provided choices to erase sensitive data on magnetic media. A device that performs degaussing generates a coercive magnetic force that reduces the magnetic flux density of the storage media to zero. This magnetic force is what properly erases data from media. Data are stored on magnetic media by the representation of the polarization of the atoms. Degaussing changes this polarization (magnetic alignment) by using a type of large magnet to bring it back to its original flux (magnetic alignment). Simply deleting files or formatting the media does not actually remove the information. File deletion and media formatting often simply remove the pointers to the information. Specialized hardware devices known as degaussers can be used to erase data saved to magnetic media. The measure of the amount of energy needed to reduce the magnetic field on the media to zero is known as coercivity. It is important to make sure that the coercivity of the degausser is of sufficient strength to meet object reuse requirements when erasing data. If a degausser is used with insufficient coercivity, then a remanence of the data will exist. Remanence is the measure of the existing magnetic field on the media; it is the residue that remains after an object is degaussed or written over. Data is still recoverable even when the remanence is small. While data remanence exists, there is no assurance of safe object reuse. Some degaussers can destroy drives. The security professional should exercise caution when recommending or using degaussers on media for reuse. Incorrect Answers: B: Software tools also exist that can provide object reuse assurance. These tools overwrite every sector of magnetic media with a random or predetermined bit pattern. Overwrite methods are effective for all forms of electronic media with the exception of read-only optical media. There is a drawback to using overwrite software. During normal write operations with magnetic media, the head of the drive moves back-and-forth across the media as data is written. The track of the head does not usually follow the exact path each time. The result is a miniscule amount of data remanence with each pass. With specialized equipment, it is possible to read data that has been overwritten. Degaussing is more effective than overwriting the sectors. C: Simply deleting files or formatting the media does not actually remove the information. File deletion and media formatting often simply removes the pointers to the information. D: Deleting the File allocation table will not erase all data. The data can be recoverable using software tools."
+    },
+    {
+      "id": 70,
+      "question": "Which protocol makes USE of an electronic wallet on a customer's PC and sends encrypted credit card information to merchant's Web server, which digitally signs it and sends it on to its processing bank?",
+      "options": {
+        "A": "SSH (Secure Shell)",
+        "B": "S/MIME (Secure MIME)",
+        "C": "SET (Secure Electronic Transaction)",
+        "D": "SSL (Secure Sockets Layer)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Secure Electronic Transaction (SET) is a security technology proposed by Visa and MasterCard to allow for more secure credit card transaction possibilities than what is currently available. SET has been waiting in the wings for full implementation and acceptance as a standard for quite some time. Although SET provides an effective way of transmitting credit card information, businesses and users do not see it as efficient because it requires more parties to coordinate their efforts, more software installation and configuration for each entity involved, and more effort and cost than the widely used SSL method. SET is a cryptographic protocol and infrastructure developed to send encrypted credit card numbers over the Internet. The following entities would be involved with a SET transaction, which would require each of them to upgrade their software, and possibly their hardware: Issuer (cardholder’s bank) The financial institution that provides a credit card to the individual. Cardholder The individual authorized to use a credit card. Merchant The entity providing goods. Acquirer (merchant’s bank) The financial institution that processes payment cards. Payment gateway This processes the merchant payment. It may be an acquirer. Incorrect Answers: A: SSH is a network protocol that allows for a secure connection to a remote system. Developed to replace Telnet and other insecure remote shell methods. This is not what is described in the question. B: S/MIME stands for Secure/Multipurpose Internet Mail Extensions, which outlines how public key cryptography can be used to secure MIME data types. This is not what is described in the question. D: SSL (Secure Sockets Layer) is most commonly used to Internet connections and e-commerce transactions. It is used instead of SET but is not what is described in the question."
+    },
+    {
+      "id": 71,
+      "question": "In Mandatory Access Control, sensitivity labels attached to object contain what information?",
+      "options": {
+        "A": "The item's classification",
+        "B": "The item's classification and category set",
+        "C": "The item's category",
+        "D": "The item's need to know"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A sensitivity label is required for every subject and object when using the Mandatory Access Control (MAC) model. The sensitivity label is made up of a classification and different categories. Incorrect Answers: A: The item's classification on its own is incorrect. It has to have a category as well. C: The item's category on its own is incorrect. It has to have a classification as well. D: Need-to-know rules are applied by the categories section of the label."
+    },
+    {
+      "id": 72,
+      "question": "Which of the following European Union (EU) principles pertaining to the protection of information on private individuals is incorrect?",
+      "options": {
+        "A": "Data collected by an organization can be used for any purpose and for as long as necessary, as long as it is never communicated outside of the organization by which it was collected.",
+        "B": "Individuals have the right to correct errors contained in their personal data.",
+        "C": "Transmission of personal information to locations where \"equivalent\" personal data protection cannot be assured is prohibited.",
+        "D": "Records kept on an individual should be accurate and up to date."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "EU’s Data Protection Data Integrity states that Data must be relevant and reliable for the purpose it was collected for. Incorrect Answers: B: EU’s Data Protection Directive includes the access directive which states that individuals must be able to access information held about them, and correct or delete it if it is inaccurate. C: EU’s Data Protection Directive includes the Onward Transfer directive which states that transfers of data to third parties may only occur to other organizations that follow adequate data protection principles. D: EU’s Data Protection Directive includes the Data Integrity directive which states that Data must be relevant and reliable for the purpose it was collected for."
+    },
+    {
+      "id": 73,
+      "question": "Who should DECIDE how a company should approach security and what security measures should be implemented?",
+      "options": {
+        "A": "Senior management",
+        "B": "Data owner",
+        "C": "Auditor",
+        "D": "The information security specialist"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Computers and the information processed on them usually have a direct relationship with a company’s critical missions and objectives. Because of this level of importance, senior management should make protecting these items a high priority and provide the necessary support, funds, time, and resources to ensure that systems, networks, and information are protected in the most logical and cost-effective manner possible. For a company’s security plan to be successful, it must start at the top level and be useful and functional at every single level within the organization. Senior management needs to define the scope of security and identify and decide what must be protected and to what extent. Incorrect Answers: B: The data owner can grant access to the data. However, the data owner should not decide how a company should approach security and what security measures should be implemented. C: Systems Auditors ensure the appropriate security controls are in place. However, they should not decide how a company should approach security and what security measures should be implemented. D: The information security specialist may be the ones who implement the security measures. However, they should not decide how a company should approach security and what security measures should be implemented."
+    },
+    {
+      "id": 74,
+      "question": "The Telecommunications Security Domain of information security is also concerned with the prevention and detection of the misuse or abuse of systems, which poses a threat to the tenets of:",
+      "options": {
+        "A": "Confidentiality, Integrity, and Entity (C.I.E.).",
+        "B": "Confidentiality, Integrity, and Authenticity (C.I.A.).",
+        "C": "Confidentiality, Integrity, and Availability (C.I.A.).",
+        "D": "Confidentiality, Integrity, and Liability (C.I.L.)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Fundamental Principles of Security which are to provide confidentiality, availability, and integrity, and Confidentiality (the CIA triad). Incorrect Answers: A: The three tenets do not include Entity. B: The three tenets do not include Authenticity. D: The three tenets do not include Liability."
+    },
+    {
+      "id": 75,
+      "question": "Controlling access to information systems and associated networks is necessary for the preservation of their:",
+      "options": {
+        "A": "Authenticity, confidentiality and availability",
+        "B": "Confidentiality, integrity, and availability.",
+        "C": "Integrity and availability.",
+        "D": "Authenticity, confidentiality, integrity and availability."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Information security is made up of the following main attributes: Availability - Prevention of loss of, or loss of access to, data and resources Integrity - Prevention of unauthorized modification of data and resources Confidentiality - Prevention of unauthorized disclosure of data and resources Incorrect Answers: A: Authenticity is an attribute that stems from the three main attributes. C: Information security is made up of three main attributes, which includes confidentiality. D: Authenticity is an attribute that stems from the three main attributes."
+    },
+    {
+      "id": 76,
+      "question": "What security model is dependent on security labels?",
+      "options": {
+        "A": "Discretionary access control",
+        "B": "Label-based access control",
+        "C": "Mandatory access control",
+        "D": "Non-discretionary access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Mandatory Access Control begins with security labels assigned to all resource objects on the system. These security labels contain two pieces of information - a classification (top secret, confidential etc.) and a category (which is essentially an indication of the management level, department or project to which the object is available). Similarly, each user account on the system also has classification and category properties from the same set of properties applied to the resource objects. When a user attempts to access a resource under Mandatory Access Control the operating system checks the user's classification and categories and compares them to the properties of the object's security label. If the user's credentials match the MAC security label properties of the object access is allowed. It is important to note that both the classification and categories must match. A user with top secret classification, for example, cannot access a resource if they are not also a member of one of the required categories for that object. Incorrect Answers: A: Discretionary access control is not dependent on security labels. B: Label-based access control is not one of the defined access control types. D: Non-discretionary access control is not dependent on security labels."
+    },
+    {
+      "id": 77,
+      "question": "At which temperature does damage start occurring to magnetic media?",
+      "options": {
+        "A": "100 degrees Fahrenheit or 37.7 degrees Celsius",
+        "B": "125 degrees Fahrenheit or 51.66 degrees Celsius",
+        "C": "150 degrees Fahrenheit or 65.5 degrees Celsius",
+        "D": "175 degrees Fahrenheit or 79.4 degrees Celsius"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Maintaining appropriate temperature and humidity is important in any facility, especially facilities with computer systems. Improper levels of either can cause damage to computers and electrical devices. Lower temperatures can cause mechanisms to slow or stop, and higher temperatures can cause devices to use too much fan power and eventually shut down. Damage can start to occur on magnetic media at 100 degrees Fahrenheit or 37'7º Celsius. Incorrect Answers: B: Damage can start to occur on magnetic media at 100 degrees Fahrenheit, not 125 degrees Fahrenheit. Therefore, this answer is incorrect. C: Damage can start to occur on magnetic media at 100 degrees Fahrenheit, not 150 degrees Fahrenheit. Therefore, this answer is incorrect. D: Damage can start to occur on magnetic media at 100 degrees Fahrenheit, not 175 degrees Fahrenheit. Damage can start to occur in computer systems and peripheral devices at 175 degrees Fahrenheit. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 78,
+      "question": "Which of the following access control models requires defining classification for objects?",
+      "options": {
+        "A": "Role-based access control",
+        "B": "Discretionary access control",
+        "C": "Identity-based access control",
+        "D": "Mandatory access control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Mandatory access control (MAC) is an access policy that restricts access to objects based on the security clearance of a subject and the classification of an object. Incorrect Answers: A: Role-based access control (RBAC) provides access to resources according to the role the user holds within the company or the tasks that the user has been assigned. B: Access in a DAC model is restricted based on the authorization granted to the users. C: Identity-based access control is a type of DAC system that allows or prevents access based on the identity of the subject."
+    },
+    {
+      "id": 79,
+      "question": "In which of the following security models is the subject's clearance compared to the object's classification such that specific rules can be applied to control how the subject-to-object interactions take place?",
+      "options": {
+        "A": "Bell-LaPadula model",
+        "B": "Biba model",
+        "C": "Access Matrix model",
+        "D": "Take-Grant model"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A system that employs the Bell-LaPadula model is called a multilevel security system because users with different clearances use the system, and the system processes data at different classification levels. The level at which information is classified determines the handling procedures that should be used. The Bell- LaPadula model is a state machine model that enforces the confidentiality aspects of access control. A matrix and security levels are used to determine if subjects can access different objects. The subject’s clearance is compared to the object’s classification and then specific rules are applied to control how subject- to-object interactions can take place. This model uses subjects, objects, access operations (read, write, and read/write), and security levels. Subjects and objects can reside at different security levels and will have relationships and rules dictating the acceptable activities between them. Incorrect Answers: B: The Biba Model is a formal state transition system of computer security policy that describes a set of access control rules designed to ensure data integrity. This is not what is described in the question. C: An access control matrix is a table of subjects and objects indicating what actions individual subjects can take upon individual objects. This is not what is described in the question. D: The take-grant protection model is used to establish or disprove the safety of a given computer system that follows specific rules. This is not what is described in the question."
+    },
+    {
+      "id": 80,
+      "question": "Which of the following classes is the first level (lower) defined in the TCSEC (Orange Book) as mandatory protection?",
+      "options": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal protection Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Level B: Mandatory Protection: Mandatory access control is enforced by the use of security labels. The architecture is based on the Bell-LaPadula security model, and evidence of reference monitor enforcement must be available. Incorrect Answers: B: Level A is defined as verified protection, not mandatory protection. C: Level C is defined as discretionary protection, not mandatory protection. D: Level D is defined as minimal security, not mandatory protection."
+    },
+    {
+      "id": 81,
+      "question": "Which of the following classes is defined in the TCSEC (Orange Book) as discretionary protection?",
+      "options": {
+        "A": "C",
+        "B": "B",
+        "C": "A",
+        "D": "D"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal protection Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Level C: Discretionary Protection: The C rating category has two individual assurance ratings within it. The higher the number of the assurance rating, the greater the protection. Incorrect Answers: B: Level B is defined as mandatory protection, not discretionary protection. C: Level A is defined as verified protection, not discretionary protection. D: Level D is defined as minimal security, not discretionary protection."
+    },
+    {
+      "id": 82,
+      "question": "Which of the following division is defined in the TCSEC (Orange Book) as minimal protection?",
+      "options": {
+        "A": "Division D",
+        "B": "Division C",
+        "C": "Division B",
+        "D": "Division A"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal protection Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Division D: Minimal Protection: There is only one class in Division D. It is reserved for systems that have been evaluated but fail to meet the criteria and requirements of the higher divisions. Incorrect Answers: B: Level C is defined as discretionary protection, not minimal protection. C: Level B is defined as mandatory protection, not minimal protection. D: Level A is defined as verified protection, not mandatory minimal."
+    },
+    {
+      "id": 83,
+      "question": "Which of the following establishes the minimal national standards for certifying and accrediting national security systems?",
+      "options": {
+        "A": "NIACAP",
+        "B": "DIACAP",
+        "C": "HIPAA",
+        "D": "TCSEC"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "National Information Assurance Certification and Accreditation Process (NIACAP), establishes the minimum national standards for certifying and accrediting national security systems. This process provides a standard set of activities, general tasks, and a management structure to certify and accredit systems that will maintain the Information Assurance (IA) and security posture of a system or site. This process focuses on an enterprise-wide view of the information system (IS) in relation to the organization’s mission and the IS business case. Incorrect Answers: B: The DoD Information Assurance Certification and Accreditation Process (DIACAP) is a United States Department of Defense (DoD) process that means to ensure that companies and organizations apply risk management to information systems (IS). This is not what is described in the question. C: HIPAA is the federal Health Insurance Portability and Accountability Act of 1996. The primary goal of the law is to make it easier for people to keep health insurance, protect the confidentiality and security of healthcare information and help the healthcare industry control administrative costs. This is not what is described in the question. D: Trusted Computer System Evaluation Criteria (TCSEC) is a United States Government Department of Defense (DoD) standard that sets basic requirements for assessing the effectiveness of computer security controls built into a computer system. This is not what is described in the question."
+    },
+    {
+      "id": 84,
+      "question": "Which of the following places the Orange Book classifications in order from MOST secure to LEAST secure?",
+      "options": {
+        "A": "A, B, C, D",
+        "B": "D, C, B, A",
+        "C": "D, B, A, C",
+        "D": "C, D, B, A"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal security Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Incorrect Answers: B: Classification A represents the highest level of assurance, and D represents the lowest level of assurance. C: Classification A represents the highest level of assurance, and D represents the lowest level of assurance. D: Classification A represents the highest level of assurance, and D represents the lowest level of assurance."
+    },
+    {
+      "id": 85,
+      "question": "What would BEST define a covert channel?",
+      "options": {
+        "A": "An undocumented backdoor that has been left by a programmer in an operating system",
+        "B": "An open system port that should be closed.",
+        "C": "A communication channel that allows transfer of information in a manner that violates the system's security policy.",
+        "D": "A Trojan horse."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A covert channel is a way for an entity to receive information in an unauthorized manner. It is an information flow that is not controlled by a security mechanism. This type of information path was not developed for communication; thus, the system does not properly protect this path, because the developers never envisioned information being passed in this way. Receiving information in this manner clearly violates the system’s security policy. The channel to transfer this unauthorized data is the result of one of the following conditions: Improper oversight in the development of the product Improper implementation of access controls within the software Existence of a shared resource between the two entities which are not properly controlled Incorrect Answers: A: An undocumented backdoor that has been left by a programmer in an operating system could be used in a covert channel. However, this is not the BEST definition of a covert channel. B: An open system port that should be closed could be used in a covert channel. However, an open port is not the definition of a covert channel. D: A Trojan horse could be used in a covert channel. However, a Trojan horse is not the definition of a covert channel."
+    },
+    {
+      "id": 86,
+      "question": "Which of the following Orange Book ratings represents the highest level of trust?",
+      "options": {
+        "A": "B1",
+        "B": "B2",
+        "C": "F6",
+        "D": "C2"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal security Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Each division can have one or more numbered classes with a corresponding set of requirements that must be met for a system to achieve that particular rating. The classes with higher numbers offer a greater degree of trust and assurance. So B2 would offer more assurance than B1, and C2 would offer more assurance than C1. Incorrect Answers: A: B1 has a lower level of trust than B2. C: F6 is not a valid rating. D: Division C has a lower level of trust than division B."
+    },
+    {
+      "id": 87,
+      "question": "What Orange Book security rating is reserved for systems that have been evaluated but fail to meet the criteria and requirements of the higher divisions?",
+      "options": {
+        "A": "A",
+        "B": "D",
+        "C": "E",
+        "D": "F"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal security Classification A represents the highest level of assurance, and D represents the lowest level of assurance. Each division can have one or more numbered classes with a corresponding set of requirements that must be met for a system to achieve that particular rating. There is only one class in Division D. It is reserved for systems that have been evaluated but fail to meet the criteria and requirements of the higher divisions. Incorrect Answers: A: Division A is the highest level. C: The lowest division/level (reserved for systems that have been evaluated but fail to meet the criteria and requirements of the higher divisions) is D, not E. D: The lowest division/level (reserved for systems that have been evaluated but fail to meet the criteria and requirements of the higher divisions) is D, not F."
+    },
+    {
+      "id": 88,
+      "question": "Which division of the Orange Book deals with discretionary protection (need-to-know)?",
+      "options": {
+        "A": "D",
+        "B": "C",
+        "C": "B",
+        "D": "A"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The U.S. Department of Defense developed the Trusted Computer System Evaluation Criteria (TCSEC), which was used to evaluate operating systems, applications, and different products. These evaluation criteria are published in a book known as the Orange Book. TCSEC provides a classification system that is divided into hierarchical divisions of assurance levels: A. Verified protection B. Mandatory protection C. Discretionary protection D. Minimal security C1: Discretionary Security Protection: Discretionary access control is based on individuals and/or groups. It requires a separation of users and information, and identification and authentication of individual entities. Some type of access control is necessary so users can ensure their data will not be accessed and corrupted by others. The system architecture must supply a protected execution domain so privileged system processes are not adversely affected by lower-privileged processes. There must be specific ways of validating the system’s operational integrity. The documentation requirements include design documentation, which shows that the system was built to include protection mechanisms, test documentation (test plan and results), a facility manual (so companies know how to install and configure the system correctly), and user manuals. Incorrect Answers: A: Division C, not D deals with discretionary protection. C: Division C, not B deals with discretionary protection. D: Division C, not A deals with discretionary protection."
+    },
+    {
+      "id": 89,
+      "question": "Which of the following computer crime is MORE often associated with INSIDERS?",
+      "options": {
+        "A": "IP spoofing",
+        "B": "Password sniffing",
+        "C": "Data diddling",
+        "D": "Denial of service (DoS)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Data diddling refers to the alteration of existing data. Many times, this modification happens before the data is entered into an application or as soon as it completes processing and is outputted from an application. For instance, if a loan processor is entering information for a customer’s loan of $100,000, but instead enters $150,000 and then moves the extra approved money somewhere else, this would be a case of data diddling. Another example is if a cashier enters an amount of $40 into the cash register, but really charges the customer $60 and keeps the extra $20. This type of crime is extremely common and can be prevented by using appropriate access controls and proper segregation of duties. It will more likely be perpetrated by insiders, who have access to data before it is processed. Incorrect Answers: A: IP Spoofing attacks are more commonly performed by outsiders. B: Password sniffing can be performed by insiders or outsiders. However, Data Diddling is MORE commonly performed by insiders. D: Most Denial of service attacks occur over the internet and are performed by outsiders."
+    },
+    {
+      "id": 90,
+      "question": "Which of the following groups represents the leading source of computer crime losses?",
+      "options": {
+        "A": "Hackers",
+        "B": "Industrial saboteurs",
+        "C": "Foreign intelligence officers",
+        "D": "Employees"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Employees represent the leading source of computer crime losses. This can be through hardware theft, data theft, physical damage and interruptions to services. Laptop theft is increasing at incredible rates each year. They have been stolen for years, but in the past they were stolen mainly to sell the hardware. Now laptops are also being stolen to gain sensitive data for identity theft crimes. Since employees use laptops as they travel, they may have extremely sensitive company or customer data on their systems that can easily fall into the wrong hands. Incorrect Answers: A: Losses caused by hackers can be high. However, this is rare in comparison to losses caused by employees. B: Losses caused by industrial saboteurs can be high. However, this is very rare in comparison to losses caused by employees. C: Foreign intelligence officers are not a cause of computer crime losses."
+    },
+    {
+      "id": 91,
+      "question": "Which of the following term BEST describes a weakness that could potentially be exploited?",
+      "options": {
+        "A": "Vulnerability",
+        "B": "Risk",
+        "C": "Threat",
+        "D": "Target of evaluation (TOE)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A vulnerability is the absence of a countermeasure or a weakness in an in-place countermeasure, and can therefore be exploited. Incorrect Answers: B: A risk is the likelihood of a threat agent exploiting a vulnerability and the corresponding business impact. C: A threat is any potential danger that is associated with the exploitation of a vulnerability. D: Target Of Evaluation (TOE) refers to the product or system that is the subject of the evaluation."
+    },
+    {
+      "id": 92,
+      "question": "Which of the following BEST describes an exploit?",
+      "options": {
+        "A": "An intentional hidden message or feature in an object such as a piece of software or a movie.",
+        "B": "A chunk of data, or sequence of commands that take advantage of a bug, glitch or vulnerability in order to cause unintended or unanticipated behavior to occur on computer software.",
+        "C": "An anomalous condition where a process attempts to store data beyond the boundaries of a fixed-length buffer.",
+        "D": "A condition where a program (either an application or part of the operating system) stops performing its expected function and also stops responding to other parts of the system."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "An exploit refers to a piece of software or data, or a sequence of commands that takes advantage of a bug or vulnerability with the aim of causing unplanned or unexpected behavior to take place on computerized hardware, or its software. Incorrect Answers: A: An intentional hidden message, in-joke, or feature in a work such as a computer program, web page, video game, movie, book, or crossword is known as a virtual Easter egg. C: The anomalous condition where a process attempts to store data beyond the boundaries of a fixed-length buffer is known as buffer overflow. D: In computing, a condition where a program (either an application or part of the operating system) stops performing its expected function and also stops responding to other parts of the system is known as a crash."
+    },
+    {
+      "id": 93,
+      "question": "Virus scanning and content inspection of S/MIME encrypted e-mail without doing any further processing is:",
+      "options": {
+        "A": "Not possible",
+        "B": "Only possible with key recovery scheme of all user keys",
+        "C": "It is possible only if X509 Version 3 certificates are used",
+        "D": "It is possible only by \"brute force\" decryption"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "E-mail encryption solutions such as S/MIME have been available for a long time. These encryption solutions have seen varying degrees of adoption in organizations of different types. However, such solutions present some challenges: Inability to apply messaging policies: Organizations also face compliance requirements that require inspection of messaging content to make sure it adheres to messaging policies. However, messages encrypted with most client-based encryption solutions, including S/MIME, prevent content inspection on the server. Without content inspection, an organization can't validate that all messages sent or received by its users comply with messaging policies. Decreased security: Antivirus software is unable to scan encrypted message content, further exposing an organization to risk from malicious content such as viruses and worms. Encrypted messages are generally considered to be trusted by most users, thereby increasing the likelihood of a virus spreading throughout your organization. Incorrect Answers: B: Virus scanning and content inspection of S/MIME encrypted e-mail is not possible even with a key recovery scheme of all user keys. C: Virus scanning and content inspection of S/MIME encrypted e-mail is not possible even if X509 Version 3 certificates are used. D: Using \"brute force\" decryption on S/MIME encrypted e-mail for the purpose of virus scanning and content inspection is not practical and unlikely to be successful."
+    },
+    {
+      "id": 94,
+      "question": "What can be defined as secret communications where the very existence of the message is hidden?",
+      "options": {
+        "A": "Clustering",
+        "B": "Steganography",
+        "C": "Cryptology",
+        "D": "Vernam cipher"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Steganography is a method of hiding data in another media type so the very existence of the data is concealed. Only the sender and receiver are supposed to be able to see the message because it is secretly hidden in a graphic, wave file, document, or other type of media. The message is not encrypted, just hidden. Encrypted messages can draw attention because it tells the bad guy, “This is something sensitive.” A message hidden in a picture of your grandmother would not attract this type of attention, even though the same secret message can be embedded into this image. Steganography is a type of security through obscurity. Incorrect Answers: A: Clustering describes multiple instances of a component working together as a single unit. This is not what is described in the question. C: Cryptology is the study of cryptography and cryptanalysis. This is not what is described in the question. D: Vernam cipher is another name for one-time pad because one-time pad was invented by Gilbert Vernam. This is not what is described in the question."
+    },
+    {
+      "id": 95,
+      "question": "Which of the following terms can be described as the process to conceal data into another file or media in a practice known as security through obscurity?",
+      "options": {
+        "A": "Steganography",
+        "B": "ADS - Alternate Data Streams",
+        "C": "Encryption",
+        "D": "NTFS ADS"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Steganography allows you to hide data in another media type, concealing the very existence of the data. Incorrect Answers: B, D: Alternate data stream (ADS) is a feature of Windows New Technology File System (NTFS) that includes metadata for locating a specific file by author or title. C: Encryption is a method of transforming readable data into a form that appears to be random and unreadable."
+    },
+    {
+      "id": 96,
+      "question": "Which of the following can be best defined as computing techniques for inseparably embedding unobtrusive marks or labels as bits in digital data and for detecting or extracting the marks later?",
+      "options": {
+        "A": "Steganography",
+        "B": "Digital watermarking",
+        "C": "Digital enveloping",
+        "D": "Digital signature"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Digital watermarking is defined as “Computing techniques for inseparably embedding unobtrusive marks or labels as bits in digital data -- text, graphics, images, video, or audio -- and for detecting or extracting the marks later.” A \"digital watermark\", i.e., the set of embedded bits, is sometimes hidden, usually imperceptible, and always intended to be unobtrusive. Depending on the particular technique that is used, digital watermarking can assist in proving ownership, controlling duplication, tracing distribution, ensuring data integrity, and performing other functions to protect intellectual property rights. Incorrect Answers: A: Steganography is a method of hiding data in another media type so the very existence of the data is concealed. Digital Watermarking is considered to be a type of steganography. However, steganography is not what is described in the question. C: A digital envelope is another term used to describe hybrid cryptography where a message is encrypted with a symmetric key and the symmetric key is encrypted with an asymmetric key. This is not what is described in the question. D: A digital signature is a mathematical technique used to validate the authenticity and integrity of a message, software or digital document. This is not what is described in the question."
+    },
+    {
+      "id": 97,
+      "question": "What is Dumpster Diving?",
+      "options": {
+        "A": "Going through dust bin",
+        "B": "Running through another person's garbage for discarded document, information and other various items that could be used against that person or company",
+        "C": "Performing media analysis",
+        "D": "performing forensics on the deleted items"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Dumpster diving refers to the concept of rummaging through a company or individual’s garbage for discarded documents, information, and other precious items that could then be used in an attack against that company or person. Incorrect Answers: A: Dumpster Diving is more specific than going through dust bins. C: Dumpster Diving does not refer to media analysis. D: Dumpster Diving does not refer to forensics on deleted items."
+    },
+    {
+      "id": 98,
+      "question": "The control of communications test equipment should be clearly addressed by security policy for which of the following reasons?",
+      "options": {
+        "A": "Test equipment is easily damaged.",
+        "B": "Test equipment can be used to browse information passing on a network.",
+        "C": "Test equipment is difficult to replace if lost or stolen.",
+        "D": "Test equipment must always be available for the maintenance personnel."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Protocol Analyzer (also known as a packet sniffer) is a useful tool for testing or troubleshooting network communications. A Protocol Analyzer is a hardware device or more commonly a software program used to capture network data communications sent between devices on a network. Capturing packets sent from a computer system is known as packet sniffing. The ability to browse information passing on a network is a security risk which means access to a protocol analyzer should be carefully managed and therefore addressed by security policy. Incorrect Answers: A: Damage to test equipment is not a ‘security’ risk so does not need to be addressed by security policy. C: Test equipment is generally not difficult to replace if lost or stolen. Even if it was, that would not constitute a ‘security’ risk so it would not need to be addressed by security policy. D: The need for test equipment to always be available for the maintenance personnel would not constitute a ‘security’ risk so it would not need to be addressed by security policy."
+    },
+    {
+      "id": 99,
+      "question": "Which of the following would BEST be defined as an absence or weakness of safeguard that could be exploited?",
+      "options": {
+        "A": "A threat.",
+        "B": "A vulnerability.",
+        "C": "A risk.",
+        "D": "An exposure."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A vulnerability is defined as “the absence or weakness of a safeguard that could be exploited”. A vulnerability is a lack of a countermeasure or a weakness in a countermeasure that is in place. It can be a software, hardware, procedural, or human weakness that can be exploited. A vulnerability may be a service running on a server, unpatched applications or operating systems, an unrestricted wireless access point, an open port on a firewall, lax physical security that allows anyone to enter a server room, or unenforced password management on servers and workstations."
+    },
+    {
+      "id": 100,
+      "question": "Which of the following could be BEST defined as the likelihood of a threat agent taking advantage of a vulnerability?",
+      "options": {
+        "A": "A risk.",
+        "B": "A residual risk.",
+        "C": "An exposure.",
+        "D": "A countermeasure."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A risk is the likelihood of a threat agent exploiting a vulnerability and the corresponding business impact. If a firewall has several ports open, there is a higher likelihood that an intruder will use one to access the network in an unauthorized method. If users are not educated on processes and procedures, there is a higher likelihood that an employee will make an unintentional mistake that may destroy data. If an intrusion detection system (IDS) is not implemented on a network, there is a higher likelihood an attack will go unnoticed until it is too late. Risk ties the vulnerability, threat, and likelihood of exploitation to the resulting business impact. Incorrect Answers: B: Residual risk is the risk that remains after countermeasures have been implemented. C: An exposure is an instance of being exposed to losses. A vulnerability exposes an organization to possible damages. D: A countermeasure is a step taken to mitigate a risk."
+    }
+  ]
+}

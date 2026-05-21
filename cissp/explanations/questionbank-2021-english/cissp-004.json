@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q151 - Q200",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 151,
+      "question": "Which of the following statements pertaining to the trusted computing base (TCB) is false?",
+      "options": {
+        "A": ") It addresses the level of security a system provides",
+        "B": ") It originates from the Orange Book",
+        "C": ") It includes hardware, firmware, and software",
+        "D": ") A higher TCB rating will require that details of their testing procedures and documentation be reviewed with more granularity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 152,
+      "question": "Which of the following is not an Orange book-defined operational assurance requirement?",
+      "options": {
+        "A": ") System architecture",
+        "B": ") Trusted facility management",
+        "C": ") Configuration management",
+        "D": ") Covert channel analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Configuration management is a part of life cycle assurance opposed to operational assurance. \"The operational assurance requirements specified in the Orange Book are as follows: System Architecture System integrity Covert channel analysis Trusted facility management Trusted recovery The life cycle assurance requirements specified in the Orange Book are as follows: Security testing Design specification and testing Configuration Management Trusted Distribution\" Pg. 301 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 153,
+      "question": "Which of the following focuses on the basic features and architecture of a system?",
+      "options": {
+        "A": ") operational assurance",
+        "B": ") life cycle assurance",
+        "C": ") covert channel assurance",
+        "D": ") level A1"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"The operational assurance requirements specified in the Orange Book are as follows: System Architecture System integrity Covert channel analysis Trusted facility management Trusted recovery\" Pg. 301 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 154,
+      "question": "Which level(s) must protect against both covert storage and covert timing channels?",
+      "options": {
+        "A": ") B3 and A1",
+        "B": ") B2, B3 and A1",
+        "C": ") A1",
+        "D": ") B1, B2, B3 and A1"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 302 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 155,
+      "question": "According to the Orange Book, trusted facility management is not required for which of the following security levels?",
+      "options": {
+        "A": ") B1",
+        "B": ") B2",
+        "C": ") B3",
+        "D": ") A1"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "B1 does not provide trusted facility management, the next highest level that does is B2. \"Trusted facility management is defined as the assignment of a specific individual to administer the security-related functions of a system. Although trusted facility management is an assurance requirement only for highly secure systems (B2, B3, and A1), many systems evaluated at lower security levels CK structured to try to meet this requirement.\" Pg. 302 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 156,
+      "question": "Which factor is critical in all systems to protect data integrity?",
+      "options": {
+        "A": "Data classification",
+        "B": "Information ownership",
+        "C": "Change control",
+        "D": "System design"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Integrity is dependent on confidentiality, which relies on data classification. Also Biba integrity model relies on data classification. \"There are numerous countermeasures to ensure confidentiality against possible threats. These include the use of encryption, network traffic padding, strict access control, rigorous authentication procedures, data classification, and extensive personnel training. Confidentiality and integrity are dependent upon each other. Without object integrity, confidentiality cannon be maintained. Other concepts, conditions, and aspects of confidentiality include sensitivity, discretion, criticality, concealment, secrecy, privacy, seclusion, and isolation.\" Pg 145 Tittel: CISSP Study Guide. \"Biba Integrity Model Integrity is usually characterized by the three following goals: 1.) The data is protected from modification by unauthorized users. 2.) The data is protected from unauthorized modification by authorized users. 3) The data is internally and externally consistent; the data held in a database must balance internally and correspond to the external, real world situation.\" Pg. 277 Krutz: The CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 157,
+      "question": "Which of the following is not a common integrity goal?",
+      "options": {
+        "A": ") Prevent unauthorized users from making modifications",
+        "B": ") Maintain internal and external consistency",
+        "C": ") Prevent authorized users from making improper modifications",
+        "D": ") Prevent paths that could lead to inappropriate disclosure"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 158,
+      "question": "Which security model introduces access to objects only through programs?",
+      "options": {
+        "A": ") The Biba model",
+        "B": ") The Bell-LaPadula model",
+        "C": ") The Clark-Wilson model",
+        "D": ") The information flow model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"The Clark-Wilson model is also an integrity-protecting model. The Clark-Wilson model was developed after Biba and approaches integrity protection from a different perspective. Rather than employing a lattice structure, it uses a three-part relationship of subject/program/object known as a triple. Subjects do not have direct access to objects. Objects can be access only through programs.\" Pg 347 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 159,
+      "question": "To ensure that integrity is attainted through the Clark and Wilson model, certain rules are needed.These rules are:",
+      "options": {
+        "A": "Processing rules and enforcement rules.",
+        "B": "Integrity-bouncing rules.",
+        "C": "Certification rules and enforcement rules.",
+        "D": "Certification rules and general rules."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: To ensure that integrity is attained and preserved, Clark and Wilson assert, certain integrity-monitoring and integrity-preserving rules are needed. Integrity-monitoring rules are called certification rules, and integrity-preserving rules are called enforcement rules."
+    },
+    {
+      "id": 160,
+      "question": "What can be defined as a formal security model for the integrity of subjects and objects in a system?",
+      "options": {
+        "A": "Biba",
+        "B": "Bell LaPadulaLattice",
+        "C": "Lattice",
+        "D": "Info Flow"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Handbook of Information System Management, 1999 Edition, ISBN: 0849399742 presents the following definition: In studying the two properties of the Bell-LaPadula model, Biba discovered a plausible notion of integrity, which he defined as prevention of unauthorized modification. The resulting Biba integrity model states that maintenance of integrity requires that data not flow from a receptacle of given integrity to a receptacle of higher integrity. For example, if a process can write above its security level, trustworthy data could be contaminated by the addition of less trustworthy data. SANS glossary at http://www.sans.org/newlook/resources/glossary.htm define it as: Formal security model for the integrity of subjects and objects in a system."
+    },
+    {
+      "id": 161,
+      "question": "The Clark Wilson model has its emphasis on:",
+      "options": {
+        "A": "Security",
+        "B": "Integrity",
+        "C": "Accountability",
+        "D": "Confidentiality"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: This model attempts to capture security requirements of commercial applications. 'Military' and 'Commercial' are shorthand for different ways of using computers. This model has emphasis on integrity: Internal consistency: properties of the internal state of a system External consistency: relation of the internal state of a system to the outside world"
+    },
+    {
+      "id": 162,
+      "question": "What does * (star) integrity axiom mean in the Biba model?",
+      "options": {
+        "A": ") No read up",
+        "B": ") No write down",
+        "C": ") No read down",
+        "D": ") No write up"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Biba has two integrity axioms: 1. Simple Integrity Axiom The Simple Integrity Axiom (SI Axiom) state that a subject at a specific classification level cannot read data with a lower classification level. This is often shortened to \"no read down.\" 1. Integrity Axiom The * (star) Integrity Axiom (* Axiom) states that a subject at a specific classification level cannot write data to a higher classification level. This is often shortened to \"no write up.\"\" Pg 347 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 163,
+      "question": "Which access control model states that for integrity to be maintained data must not flow from a receptacle of given integrity to a receptacle of higher integrity?",
+      "options": {
+        "A": "Lattice Model",
+        "B": "Bell-LaPadula Model",
+        "C": "Biba Model",
+        "D": "Take-Grant Model"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "If implemented and enforced properly, the Biba model prevents data from any integrity level from flowing to a higher integrity level. - Shon Harris All-in-one CISSP Certification Guide pg 244"
+    },
+    {
+      "id": 164,
+      "question": "Which one of the following is a KEY responsibility for the \"Custodian of Data\"?",
+      "options": {
+        "A": "Data content and backup",
+        "B": "Integrity and security of data",
+        "C": "Authentication of user access",
+        "D": "Classification of data elements"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Custodian - Preserves the information's CIA (chart) -Ronald Krutz The CISSP PREP Guide (gold edition) pg 15"
+    },
+    {
+      "id": 165,
+      "question": "Which one of the following is true about information that is designated with the highest of confidentiality in a private sector organization?",
+      "options": {
+        "A": "It is limited to named individuals and creates and audit trail.",
+        "B": "It is restricted to those in the department of origin for the information.",
+        "C": "It is available to anyone in the organization whose work relates to the subject and requires authorization for each access.",
+        "D": "It is classified only by the information security officer and restricted to those who have made formal requests for access."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 166,
+      "question": "Related to information security, confidentiality is the opposite of which of the following?",
+      "options": {
+        "A": ") closure",
+        "B": ") disclosure",
+        "C": ") disposal",
+        "D": ") disaster"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 167,
+      "question": "What is the main concern of the Bell-LaPadula security model?",
+      "options": {
+        "A": ") Accountability",
+        "B": ") Integrity",
+        "C": ") Confidentiality",
+        "D": ") Availability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"An important thing to note is that the Bell-LaPadula model was developed to make sure secrets stay secret; thus, it provides and addresses confidentially only. This model does not address integrity of the data the system maintains - only who can and cannot access the data.\" Pg 214 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 168,
+      "question": "Which of the following are the limitations of the Bell-LaPadula model?",
+      "options": {
+        "A": "No policies for changing access data control.",
+        "B": "All of the choices.",
+        "C": "Contains covert channels.",
+        "D": "Static in nature."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Limitations of the BLP model: Have no policies for changing access data control Intended for systems with static security levels Contains covert channels: a low subject can detect the existence of a high object when it is denied access. Sometimes it is enough to hide the content of an abject; also their existence may have to be hidden. Restricted to confidentiality"
+    },
+    {
+      "id": 169,
+      "question": "Which of the following is a state machine model capturing confidentiality aspects of access control?",
+      "options": {
+        "A": "Clarke Wilson",
+        "B": "Bell-LaPadula",
+        "C": "Chinese Wall",
+        "D": "Lattice"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Bell-LaPadula is a state machine model capturing confidentiality aspects of access control. Access permissions are defined through an Access Control matrix and through a partial ordering of security levels. Security policies prevent information flowing downwards from a high security level to a low security level. BLP only considers the information flow that occurs when a subject observes or alters an object."
+    },
+    {
+      "id": 170,
+      "question": "With the BLP model, access permissions are defined through:",
+      "options": {
+        "A": "Filter rules",
+        "B": "Security labels",
+        "C": "Access Control matrix",
+        "D": "Profiles"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Bell-LaPadula is a state machine model capturing confidentiality aspects of access control. Access permissions are defined through an Access Control matrix and through a partial ordering of security levels. Security policies prevent information flowing downwards from a high security level to a low security level. BLP only considers the information flow that occurs when a subject observes or alters an object."
+    },
+    {
+      "id": 171,
+      "question": "With the BLP model, security policies prevent information flowing downwards from a:",
+      "options": {
+        "A": "Low security level",
+        "B": "High security level",
+        "C": "Medium security level",
+        "D": "Neutral security level"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Bell-LaPadula is a state machine model capturing confidentiality aspects of access control. Access permissions are defined through an Access Control matrix and through a partial ordering of security levels. Security policies prevent information flowing downwards from a high security level to a low security level. BLP only considers the information flow that occurs when a subject observes or alters an object."
+    },
+    {
+      "id": 172,
+      "question": "When will BLP consider the information flow that occurs?",
+      "options": {
+        "A": "When a subject alters on object.",
+        "B": "When a subject accesses an object.",
+        "C": "When a subject observer an object.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Bell-LaPadula is a state machine model capturing confidentiality aspects of access control. Access permissions are defined through an Access Control matrix and through a partial ordering of security levels. Security policies prevent information flowing downwards from a high security level to a low security level. BLP only considers the information flow that occurs when a subject observes or alters an object."
+    },
+    {
+      "id": 173,
+      "question": "In the Bell-LaPadula model, the Star-property is also called:",
+      "options": {
+        "A": ") The simple security property",
+        "B": ") The confidentiality property",
+        "C": ") The confinement property",
+        "D": ") The tranquility property"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 174,
+      "question": "The Lattice Based Access Control model was developed MAINLY to deal with:",
+      "options": {
+        "A": "Affinity",
+        "B": "None of the choices.",
+        "C": "Confidentiality",
+        "D": "Integrity"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: We think this is D: \"Identity-Based Access Control\" \"...grant or deny access based on the identity of the subject. ...user identity or group membership.\" Harris, 3rd Ed, p 163. Group membership would be part of a user profile. Rule based based can be ID or \"a set of complex rules that must be met. ... Rule-based access control is not necessarily identity based.\" Harris, 3rd Ed, p 167. So item \"C\" is out. \"A\" and \"B\" are not access control methods. I would note that in Harris, there is no reference to \"ID based access control\". \"Role-based access control would be the VERY best answer to the question - role information would be included as part of the users profile."
+    },
+    {
+      "id": 175,
+      "question": "With the Lattice Based Access Control model, a security class is also called a:",
+      "options": {
+        "A": "Control factor",
+        "B": "Security label",
+        "C": "Mandatory number",
+        "D": "Serial ID"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Lattice Based Access Control model was developed to deal mainly with information flow in computer systems. Information flow is clearly central to confidentiality but to some extent it also applies to integrity. The basic work in this area was done around 1970 and was driven mostly by the defense sector. Information flow in computer systems is concerned with flow from one security class (also called security label) to another. These controls are applied to objects. An object is a container of information, and an object can be a directory or file."
+    },
+    {
+      "id": 176,
+      "question": "Under the Lattice Based Access Control model, a container of information is a(n):",
+      "options": {
+        "A": "Object",
+        "B": "Model",
+        "C": "Label"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Lattice Based Access Control model was developed to deal mainly with information flow in computer systems. Information flow is clearly central to confidentiality but to some extent it also applies to integrity. The basic work in this area was done around 1970 and was driven mostly by the defense sector. Information flow in computer systems is concerned with flow from one security class (also called security label) to another. These controls are applied to objects. An object is a container of information, and an object can be a directory or file."
+    },
+    {
+      "id": 177,
+      "question": "What Access Control model was developed to deal mainly with information flow in computer systems?",
+      "options": {
+        "A": "Lattice Based",
+        "B": "Integrity Based",
+        "C": "Flow Based",
+        "D": "Area Based"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The Lattice Based Access Control model was developed to deal mainly with information flow in computer systems. Information flow is clearly central to confidentiality but to some extent it also applies to integrity. The basic work in this area was done around 1970 and was driven mostly by the defense sector. Information flow in computer systems is concerned with flow from one security class (also called security label) to another. These controls are applied to objects. An object is a container of information, and an object can be a directory or file."
+    },
+    {
+      "id": 178,
+      "question": "The Lattice Based Access Control model was developed to deal mainly with ___________ in computer systems.",
+      "options": {
+        "A": "Access control",
+        "B": "Information flow",
+        "C": "Message routes",
+        "D": "Encryption"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Information flow is clearly central to confidentiality but to some extent it also applies to integrity. The basic work in this area was done around 1970 and was driven mostly by the defense sector. Information flow in computer systems is concerned with flow from one security class (also called security label) to another. These controls are applied to objects. An object is a container of information, and an object can be a directory or file."
+    },
+    {
+      "id": 179,
+      "question": "In the Lattice Based Access Control model, controls are applied to:",
+      "options": {
+        "A": "Scripts",
+        "B": "Objects",
+        "C": "Models",
+        "D": "Factors"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Information flow is clearly central to confidentiality but to some extent it also applies to integrity. The basic work in this area was done around 1970 and was driven mostly by the defense sector. Information flow in computer systems is concerned with flow from one security class (also called security label) to another. These controls are applied to objects. An object is a container of information, and an object can be a directory or file."
+    },
+    {
+      "id": 180,
+      "question": "Access control techniques do not include:",
+      "options": {
+        "A": ") Rule-Based Access Controls",
+        "B": ") Role-Based Access Controls",
+        "C": ") Mandatory Access Controls",
+        "D": ") Random Number Based Access Control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 181,
+      "question": "An access control policy for a bank teller is an example of the implementation of which of the following?",
+      "options": {
+        "A": ") rule-based policy",
+        "B": ") identity-based policy",
+        "C": ") user-based policy",
+        "D": ") role-based policy"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 182,
+      "question": "Access control techniques do not include which of the following choices?",
+      "options": {
+        "A": ") Relevant Access Controls",
+        "B": ") Discretionary Access Controls",
+        "C": ") Mandatory Access Controls",
+        "D": ") Lattice Based Access Controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Mandatory Access Control. The authorization of a subject's access to an object depends upon labels, which indicate the subject's clearance, and the classification or sensitivity of the object.\" \"Rule-based access control is a type of mandatory access control because rules determine this access, rather than the identity of the subjects and objects alone.\" \"Discretionary Access Control.The subject has authority, within certain limitations, to specify what objects are accessible.\" \"When a user with certain limitations has the right to alter the access control to certain objects, this is termed as user-directed discretionary access control.\" \"An identity-based access control is a type of a discretionary access control based on an individual's identity.\" \"In some instances, a hybrid approach is used, which combines the features of user-based and identity-based discretionary access control.\" \"Non-discretionary Access Control. A Central authority determines what subjects can have access to certain objects based on the organizational security policy.\" \"The access controls might be based on the individuals role in the organization (role-based) or the subject's responsibilities and duties (task-based).\" \"[Lattice-based] In this type of control, a lattice model is applied. \"Access control can be characterized as context-dependent or content dependent.\" Pg. 45-46 Krutz: The CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 183,
+      "question": "What is called a type of access control where a central authority determines what subjects can have access to certain objects, based on the organizational security policy?",
+      "options": {
+        "A": ") Mandatory Access Control",
+        "B": ") Discretionary Access Control",
+        "C": ") Non-discretionary Access Control",
+        "D": ") Rule-based access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Non-Discretionary Access Control. A central authority determines what subjects can have access to certain objects based on organizational security policy. The access controls may be based on the individual's role in the organization (role-based) or the subject's responsibilities and duties (task-based). Pg. 33 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 184,
+      "question": "In non-discretionary access control, a central authority determines what subjects can have access to certain objects based on the organizational security policy. The access controls may be based on:",
+      "options": {
+        "A": ") the society's role in the organization",
+        "B": ") the individual's role in the organization",
+        "C": ") the group-dynamics as they relate to the individual's role in the organization",
+        "D": ") the group-dynamics as they relate to the master-slave role in the organization"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Non-Discretionary Access Control. A central authority determines what subjects can have access to certain objects based on organizational security policy. The access controls may be based on the individual's role in the organization (role-based) or the subject's responsibilities and duties (task-based). Pg. 33 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 185,
+      "question": "This is a common security issue that is extremely hard to control in large environments. It occurs when a user has more computer rights, permissions, and privileges than what is required for the tasks the user needs to fulfill. What best describes this scenario?",
+      "options": {
+        "A": ") Excessive Rights",
+        "B": ") Excessive Access",
+        "C": ") Excessive Permissions",
+        "D": ") Excessive Privileges"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 186,
+      "question": "The default level of security established for access controls should be",
+      "options": {
+        "A": "All access",
+        "B": "Update access",
+        "C": "Read access",
+        "D": "No access"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Need to Know and the Principle of Least Privilege are two standard axioms of high-security environments. A user must have a need-to-know to gain access to data or resources. Even if that ser has an equal or greater security classification than the requested information, if they do not have a need-to-know, they are denied access. A need-to-know is the requirement to have access to, knowledge about, or possession of data or a resource to perform specific work tasks. The principle of least privilege is the notion that users should be granted the least amount of access to the secure environment as possible for them to be able to complete their work tasks.\" Pg 399 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 187,
+      "question": "Access Control techniques do not include which of the following choices?",
+      "options": {
+        "A": ") Relevant Access Controls",
+        "B": ") Discretionary Access Control",
+        "C": ") Mandatory Access Control",
+        "D": ") Lattice Based Access Controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 188,
+      "question": "Which of the following is a type of mandatory access control?",
+      "options": {
+        "A": ") Rule-based access control",
+        "B": ") Role-based access control",
+        "C": ") User-directed access control",
+        "D": ") Lattice-based access control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 46 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 189,
+      "question": "A central authority determines what subjects can have access to certain objects based on the organizational security policy is called:",
+      "options": {
+        "A": ") Mandatory Access Control",
+        "B": ") Discretionary Access Control",
+        "C": ") Non-Discretionary Access Control",
+        "D": ") Rule-based Access Control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 46 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 190,
+      "question": "What can be defined as a table of subjects and objects indicating what actions individual subjects can take upon individual objects?",
+      "options": {
+        "A": ") A capacity table",
+        "B": ") An access control list",
+        "C": ") An access control matrix",
+        "D": ") A capability table"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 191,
+      "question": "What access control methodology facilitates frequent changes to data permissions?",
+      "options": {
+        "A": "Rule-based",
+        "B": "List-based",
+        "C": "Role-based",
+        "D": "Ticket-based"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "RBAC - This type of model provides access to resources based on the role the users holds within the company or the tasks that user has been assigned. - Shon Harris All-in-one CISSP Certification Guide pg 937 Rule-based access control is a type of mandatory access control because rules determine this access (such as the correspondence of clearances labels to classification labels), rather than the identity of the subjects and objects alone. . -Ronald Krutz The CISSP PREP Guide (gold edition) pg 45-46"
+    },
+    {
+      "id": 192,
+      "question": "Which of the following is a means of restricting access to objects based on the identity of the subject to which they belong?",
+      "options": {
+        "A": "Mandatory access control",
+        "B": "Group access control",
+        "C": "Discretionary access control",
+        "D": "User access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The question does not ask about the identity of the accessing subject, the question refers to the subject to which the object belongs (ie the owner). The owner setting the access rights is the definition of DAC. \"DAC systems grant or deny access based on the identity of the subject. ....\" Harris, 3rd Ed, p 163"
+    },
+    {
+      "id": 193,
+      "question": "What is the method of coordinating access to resources based on the listening of permitted IP addresses?",
+      "options": {
+        "A": "MAC",
+        "B": "ACL",
+        "C": "DAC",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The definition of ACL: A method of coordinating access to resources based on the listing of permitted (or denied) users, network addresses or groups for each resource."
+    },
+    {
+      "id": 194,
+      "question": "What control is based on a specific profile for each user?",
+      "options": {
+        "A": "Lattice based access control.",
+        "B": "Directory based access control.",
+        "C": "Rule based access control.",
+        "D": "ID based access control."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With this model, information can be easily changed for only one user but this scheme may become a burden in a very large environment. A rule-based access control unit will intercept every request to the server and compare the source specific access conditions with the rights of the user in order to make an access decision. A good example could be a firewall. Here a set of rules defined by the network administrator is recorded in a file. Every time a connection is attempted (incoming or outgoing), the firewall software checks the rules file to see if the connection is allowed. If it is not, the firewall closes the connection."
+    },
+    {
+      "id": 195,
+      "question": "In a very large environment, which of the following is an administrative burden?",
+      "options": {
+        "A": "Rule based access control.",
+        "B": "Directory based access control.",
+        "C": "Lattice based access control",
+        "D": "ID bases access control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 196,
+      "question": "Which of the following is a feature of the Rule based access control?",
+      "options": {
+        "A": "The use of profile.",
+        "B": "The use of information flow label.",
+        "C": "The use of data flow diagram.",
+        "D": "The use of token."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Rule based access control is based on a specific profile for each user. Information can be easily changed for only one user but this scheme may become a burden in a very large environment. A rule-based access control unit will intercept every request to the server and compare the source specific access conditions with the rights of the user in order to make an access decision. A good example could be a firewall. Here a set of rules defined by the network administrator is recorded in a file. Every time a connection is attempted (incoming or outgoing), the firewall software checks the rules file to see if the connection is allowed. If it is not, the firewall closes the connection."
+    },
+    {
+      "id": 197,
+      "question": "What is an access control model?",
+      "options": {
+        "A": "A formal description of access control ID specification.",
+        "B": "A formal description of security policy.",
+        "C": "A formal description of a sensibility label.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: What is an access control model? It is a formal description of a security policy. What is a security policy? A security policy captures the security requirements of an enterprise or describes the steps that have to be taken to achieve security. Security models are used in security evaluation, sometimes as proofs of security."
+    },
+    {
+      "id": 198,
+      "question": "Which of the following is true about MAC?",
+      "options": {
+        "A": "It is more flexible than DAC.",
+        "B": "It is more secure than DAC.",
+        "C": "It is less secure than DAC.",
+        "D": "It is more scalable than DAC."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Mandatory controls are access controls that are based on a policy that the user, and more importantly the processes running with that user's privileges, is not allowed to violate. An example of this is \"Top Secret\" data is configured so that regardless of what the user does, the data cannot be transmitted to someone who does not have \"Top Secret\" status. Thus no \"trojan horse\" program could ever do what the user is not allowed to do anyway. The restrictions of mandatory controls are (at least in normal mode) also applied to the user who in a discretionary system would be \"root\", or the superuser."
+    },
+    {
+      "id": 199,
+      "question": "Which of the following is true regarding a secure access model?",
+      "options": {
+        "A": "Secure information cannot flow to a more secure user.",
+        "B": "Secure information cannot flow to a less secure user.",
+        "C": "Secure information can flow to a less secure user.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access restrictions such as access control lists and capabilities sometimes are not enough. In some cases, information needs to be tightened further, sometimes by an authority higher than the owner of the information. For example, the owner of a top-secret document in a government office might deem the information available to many users, but his manager might know the information should be restricted further than that. In this case, the flow of information needs to be controlled -- secure information cannot flow to a less secure user."
+    },
+    {
+      "id": 200,
+      "question": "In the Information Flow Model, what acts as a type of dependency?",
+      "options": {
+        "A": "State",
+        "B": "Successive points",
+        "C": "Transformation",
+        "D": "Flow"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A flow is a type of dependency that relates two versions of the same object, and thus the transformation of one state of that object into another, at successive points in time."
+    }
+  ]
+}

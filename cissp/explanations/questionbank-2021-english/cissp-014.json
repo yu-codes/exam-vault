@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q651 - Q700",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 651,
+      "question": "As a type of access control, which of the following asks for identifying occurrences?",
+      "options": {
+        "A": "Deterrent",
+        "B": "Preventive",
+        "C": "Detective",
+        "D": "Intrusive"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    },
+    {
+      "id": 652,
+      "question": "As a type of access control, which of the following asks for discouraging occurrence?",
+      "options": {
+        "A": "Detective",
+        "B": "Intrusive",
+        "C": "Deterrent",
+        "D": "Preventive"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    },
+    {
+      "id": 653,
+      "question": "As a type of access control, which of the following asks for restoring controls?",
+      "options": {
+        "A": "Deterrent",
+        "B": "Intrusive",
+        "C": "Corrective",
+        "D": "Preventive"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    },
+    {
+      "id": 654,
+      "question": "What type of access control focuses on restoring resources?",
+      "options": {
+        "A": "Recovery",
+        "B": "Preventive",
+        "C": "Intrusive",
+        "D": "Corrective"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: There are different types of access control. Access controls can be categorized as follows: Preventive (in order to avoid occurrence) Detective (in order to detect or identify occurrences) Deterrent (in order to discourage occurrences) Corrective (In order to correct or restore controls) Recovery (in order to restore resources, capabilities, or losses)"
+    },
+    {
+      "id": 655,
+      "question": "Access control is the collection of mechanisms that permits managers of a system to exercise influence over the use of:",
+      "options": {
+        "A": "A man guard",
+        "B": "An IS system",
+        "C": "A threshold",
+        "D": "A Trap"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access control is the collection of mechanisms that permits managers of a system to exercise a directing or restraining influence over the behavior, use, and content of a system. It permits management to specify what users can do, which resources they can access, and what operations they can perform on a system."
+    },
+    {
+      "id": 656,
+      "question": "What fencing height is likely to stop a determined intruder?",
+      "options": {
+        "A": ") 3' to 4' high",
+        "B": ") 6' to 7' high",
+        "C": ") 8' high and above with strands of barbed wire",
+        "D": ") No fence can stop a determined intruder"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 657,
+      "question": "Lock picking is classified under which one of the following lock mechanism attacks?",
+      "options": {
+        "A": "Illicit key",
+        "B": "Circumvention",
+        "C": "Manipulation",
+        "D": "Shimming"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 658,
+      "question": "The Physical Security domain addresses three areas that can be utilized to physically protect an enterprise's resources and sensitive information. Which of the following is not one of these areas?",
+      "options": {
+        "A": ") Threats",
+        "B": ") Countermeasures",
+        "C": ") Vulnerabilities",
+        "D": ") Risks"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 659,
+      "question": "Which issue when selecting a facility site deals with the surrounding terrain, building markings and signs, and high or low population in the area?",
+      "options": {
+        "A": ") surrounding area and external entities",
+        "B": ") natural disasters",
+        "C": ") accessibility",
+        "D": ") visibility"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 660,
+      "question": "Which of the following is not a physical control for physical security?",
+      "options": {
+        "A": ") lighting",
+        "B": ") fences",
+        "C": ") training",
+        "D": ") facility construction materials"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 661,
+      "question": "The main risks that physical security components combat are all of the following EXCEPT:",
+      "options": {
+        "A": ") SYN flood",
+        "B": ") physical damage",
+        "C": ") theft",
+        "D": ") availability"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 662,
+      "question": "What mechanism automatically causes an alarm originating in a data center to be transmitted over the local municipal fire or police alarm circuits for relaying to both the local police/fire station and the appropriate headquarters?",
+      "options": {
+        "A": ") Central station alarm",
+        "B": ") Proprietary alarm",
+        "C": ") A remote station alarm",
+        "D": ") An auxiliary station alarm"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 663,
+      "question": "Examples of types of physical access controls include all except which of the following?",
+      "options": {
+        "A": ") badges",
+        "B": ") locks",
+        "C": ") guards",
+        "D": ") passwords"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 664,
+      "question": "Which of the following is the most costly countermeasures to reducing physical security risks?",
+      "options": {
+        "A": ") procedural controls",
+        "B": ") hardware devices",
+        "C": ") electronic systems",
+        "D": ") personnel"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 665,
+      "question": "Which of the following protection devices is used for spot protection within a few inches of the object, rather than for overall room security monitoring?",
+      "options": {
+        "A": ") Wave pattern motion detectors",
+        "B": ") Capacitance detectors",
+        "C": ") Field-powered devices",
+        "D": ") Audio detectors"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 666,
+      "question": "Which of the following questions is less likely to help in assessing physical access controls?",
+      "options": {
+        "A": ") Does management regularly review the list of persons with physical access to sensitive facilities?",
+        "B": ") Is the operating system configured to prevent circumvention of the security software and application controls?",
+        "C": ") Are keys or other access devices needed to enter the computer room and media library?",
+        "D": ") Are visitors to sensitive areas signed in and escorted?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 667,
+      "question": "The concentric circle approach is used to",
+      "options": {
+        "A": "Evaluate environmental threats.",
+        "B": "Assess the physical security facility,",
+        "C": "Assess the communications network security.",
+        "D": "Develop a personnel security program."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The original answer for this question was C (assess the communications network security) however I think the concentric circle is defining what in the krutz book is know as the security perimeter. To this end this is a reference \"A circular security perimeter that is under the access control defines the area or zone to be protected. Preventive/physical controls include fences, badges, multiple doors (man-traps that consists of two doors physically separated so that an individual can be 'trapped' in the space between the doors after entering one of the doors), magnetic card entry systems, biometrics (for identification), guards, dogs, environmental control systems (temperature, humidity, and so forth), and building and access area layout.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 13 This is a standard concentric circle model shown in Figure 1 . If you've never seen this, you haven't had a security lecture. On the outside is our perimeter. We are fortunate to have some defenses on our base. Although some bases don't have people guarding the gates and checking IDs any longer, there's still the perception that it's tougher to commit a crime on a Naval base than it would be at GM. The point is: How much control do we have over fencing and guards? The answer: Not much. The next circle, the red circle, contains your internal access controls. For our purposes, the heart of the red circle is the computer. That's what I want to zero in on. The internal controls are the things you can do to keep people out of your PCs and off your network. http://www.chips.navy.mil/archives/96_oct/file5.htm"
+    },
+    {
+      "id": 668,
+      "question": "The MAIN reason for developing closed-circuit television (CCTV) as part of your physical security program is to",
+      "options": {
+        "A": "Provide hard evidence for criminal prosecution.",
+        "B": "Apprehend criminals.",
+        "C": "Deter criminal activity.",
+        "D": "Increase guard visibility."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A CCTV enables a guard to monitor many different areas at once from a centralized location.- Shon Harris All-in-one CISSP Certification Guide pg 179-180"
+    },
+    {
+      "id": 669,
+      "question": "Closed circuit TV is a feature of:",
+      "options": {
+        "A": "Detective Physical Controls",
+        "B": "Corrective Physical Controls",
+        "C": "Corrective Logical Controls",
+        "D": "Logical Physical Controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Physical Controls would use the following: motion detectors, closed circuit TV, sensors, and alarms."
+    },
+    {
+      "id": 670,
+      "question": "Motion detector is a feature of:",
+      "options": {
+        "A": "Corrective Logical Controls.",
+        "B": "Logical Physical Controls.",
+        "C": "Corrective Physical Controls.",
+        "D": "Detective Physical Controls."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Physical Controls would use the following: motion detectors, closed circuit TV, sensors, and alarms."
+    },
+    {
+      "id": 671,
+      "question": "Which of the following is a physical control?",
+      "options": {
+        "A": ") Monitoring of system activity",
+        "B": ") Environmental controls",
+        "C": ") Identification and authentication methods",
+        "D": ") Logical access control mechanisms"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 672,
+      "question": "Which of the following is a detective control?",
+      "options": {
+        "A": ") Segregation of duties",
+        "B": ") Back-up procedures",
+        "C": ") Audit trails",
+        "D": ") Physical access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 673,
+      "question": "The basic Electronic Access Control (EAC) components required for access doors are an electromagnetic lock,",
+      "options": {
+        "A": "A credential reader, and a door closed sensor.",
+        "B": "A card reader, and a door open sensor.",
+        "C": "A biometric reader, and a door open sensor.",
+        "D": "A card reader, and door motion detector."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "We have not been able to find any reference to this question really. So we are going with A \"In addition to smart and dumb cards, proximity readers can be used to control physical access. A proximity reader can be passive device, a field-powered device, or a transponder.\" - Ed Tittle CISSP Study Guide (sybex) pg 650"
+    },
+    {
+      "id": 674,
+      "question": "Which of the following control pairing places emphasis on \"soft\" mechanisms that support the access control objectives?",
+      "options": {
+        "A": ") Preventive/Technical Pairing",
+        "B": ") Preventive/Administrative Pairing",
+        "C": ") Preventive/Physical Pairing",
+        "D": ") Detective/Administrative Pairing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Preventive-Administrative The following are the soft mechanisms that are put into place to enforce access control and protection for the company as a whole: Policies and procedures Effective hiring practices Pre-employment background checks Controlled termination processes Data classification and labeling Security awareness\" Pg. 157 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 675,
+      "question": "Controls like guards and general steps to maintain building security, securing of server rooms or laptops, the protection of cables, and the backing up of files are some of the examples of:",
+      "options": {
+        "A": ") Administrative controls",
+        "B": ") Logical controls",
+        "C": ") Technical controls",
+        "D": ") Physical controls"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 676,
+      "question": "Which of the following is NOT a type of motion detector?",
+      "options": {
+        "A": ") photoelectric sensor",
+        "B": ") wave pattern",
+        "C": ") capacitance",
+        "D": ") audio detector"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Audio detector detects sound not motion Not A: A photoelectric sensor is a motion sensor that's what it was designed to do."
+    },
+    {
+      "id": 677,
+      "question": "Which of the following measures would be the BEST deterrent to the theft of corporate information from a laptop which was left in a hotel room?",
+      "options": {
+        "A": ") Store all data on disks and lock them in an in-room safe",
+        "B": ") Remove the batteries and power supply from the laptop and store them separately from the computer",
+        "C": ") Install a cable lock on the laptop when it is unattended",
+        "D": ") Encrypt the data on the hard drive"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 678,
+      "question": "Guards are appropriate whenever the function required by the security program involves which of the following?",
+      "options": {
+        "A": ") The use of discriminating judgment",
+        "B": ") The use of physical force",
+        "C": ") The operation of access control devices",
+        "D": ") The need to detect unauthorized access"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 679,
+      "question": "Which of the following floors would be most appropriate to locate information processing facilities in a 6-stories building?",
+      "options": {
+        "A": ") Basement",
+        "B": ") Ground floor",
+        "C": ") Third floor",
+        "D": ") Sixth floor"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 680,
+      "question": "Which of the following risk will most likely affect confidentiality, integrity and availability?",
+      "options": {
+        "A": ") Physical damage",
+        "B": ") Unauthorized disclosure of information",
+        "C": ") Loss of control over system",
+        "D": ") Physical theft"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 681,
+      "question": "Which is the last line of defense in a physical security sense?",
+      "options": {
+        "A": ") people",
+        "B": ") interior barriers",
+        "C": ") exterior barriers",
+        "D": ") perimeter barriers"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 682,
+      "question": "The recording of events with a closed-circuit TV camera is considered a:",
+      "options": {
+        "A": ") Preventative control",
+        "B": ") Detective control",
+        "C": ") Compensating control",
+        "D": ") Corrective Control"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 683,
+      "question": "Sensor is:",
+      "options": {
+        "A": "Logical, Physical",
+        "B": "Corrective, Logical",
+        "C": "Detective, Physical",
+        "D": "Corrective, Physical"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Detective Physical Controls would use the following: motion detectors, closed circuit TV, sensors, and alarms."
+    },
+    {
+      "id": 684,
+      "question": "What fencing height is likely to stop a determined intruder?",
+      "options": {
+        "A": ") 3' to 4' high",
+        "B": ") 6' to 7' high",
+        "C": ") 8' high and above with strands of barbed wire",
+        "D": ") No fence can stop a determined intruder"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Reference: \"2.4 meters/8 feet with top guard: Deters determined intruder\". Pg 467 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 685,
+      "question": "A controlled light fixture mounted on a 5-meter pole can illuminate an area 30 meter in diameter. For security lighting purposes, what would be the proper distance between fixtures?",
+      "options": {
+        "A": "25 meters",
+        "B": "30 meters",
+        "C": "35 meters",
+        "D": "40 meters"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and two feet out. (It is referred to as two-feet candles that reach eight feet in height) - Shon Harris All-in-one CISSP Certification Guide pg 325"
+    },
+    {
+      "id": 686,
+      "question": "Critical areas should be lighted:",
+      "options": {
+        "A": ") Eight feet high and two feet out",
+        "B": ") Eight feet high and four feet out",
+        "C": ") Ten feet high and four feet out",
+        "D": ") Ten feet high and six feet out"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 687,
+      "question": "Which of the following statements regarding an off-site information processing facility is TRUE?",
+      "options": {
+        "A": ") It should have the same amount of physical access restrictions as the primary processing unit",
+        "B": ") It should be located in proximity to the originating site so that it can quicl be made operational",
+        "C": ") It should be easily identified from the outside so in the event of an emergency it can be easily found",
+        "D": ") Need not have the same level of environmental monitoring as the originating site since this would be cost prohibitive"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 688,
+      "question": "Which of the following is electromagnetic interference (EMI) that is noise from the radiation generated by the difference between the hot and ground wires?",
+      "options": {
+        "A": ") common-mode noise",
+        "B": ") traverse-mode noise",
+        "C": ") transversal-mode noise",
+        "D": ") crossover-mode noise"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 689,
+      "question": "Which of the following is NOT a precaution you can take to reduce static electricity?",
+      "options": {
+        "A": ") power line conditioning",
+        "B": ") anti-static sprays",
+        "C": ") maintain proper humidity levels",
+        "D": ") anti-static flooding"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 690,
+      "question": "Devices that supply power when the commercial utility power system fails are called which of the following?",
+      "options": {
+        "A": ") power conditioners",
+        "B": ") uninterruptible power supplies",
+        "C": ") power filters",
+        "D": ") power dividers"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 691,
+      "question": "A prolonged high voltage is a:",
+      "options": {
+        "A": ") spike",
+        "B": ") blackout",
+        "C": ") surge",
+        "D": ") fault"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 692,
+      "question": "A prolonged power supply that is below normal voltage is a:",
+      "options": {
+        "A": ") brownout",
+        "B": ") blackout",
+        "C": ") surge",
+        "D": ") fault"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 693,
+      "question": "A prolonged power outage is a:",
+      "options": {
+        "A": ") brownout",
+        "B": ") blackout",
+        "C": ") surge",
+        "D": ") fault"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 694,
+      "question": "A momentary power outage is a:",
+      "options": {
+        "A": ") spike",
+        "B": ") blackout",
+        "C": ") surge",
+        "D": ") fault"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 695,
+      "question": "What can be defined as a momentary low voltage?",
+      "options": {
+        "A": ") Spike",
+        "B": ") Sag",
+        "C": ") Fault",
+        "D": ") Brownout"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 696,
+      "question": "Electrical systems are the lifeblood of computer operations. The continued supply of clean, steady power is required to maintain the proper personnel environment as well as to sustain data operations. Which of the following is not an element that can threaten power systems?",
+      "options": {
+        "A": ") Noise",
+        "B": ") Humidity",
+        "C": ") Brownouts",
+        "D": ") UPS"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 697,
+      "question": "Under what conditions would use of a \"Class C\" hand-held fire extinguisher be preferable to use of a \"Class A\" hand-held fire extinguisher?",
+      "options": {
+        "A": ") When the fire is in its incipient stage",
+        "B": ") When the fire involves electrical equipment",
+        "C": ") When the fire is located in an enclosed area",
+        "D": ") When the fire is caused by flammable products"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 698,
+      "question": "Which of the following is a class C fire?",
+      "options": {
+        "A": ") electrical",
+        "B": ") liquid",
+        "C": ") common combustibles",
+        "D": ") soda acid"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 699,
+      "question": "Which of the following is not a EPA-approved replacement for Halon?",
+      "options": {
+        "A": ") Water",
+        "B": ") Argon",
+        "C": ") NAF-S-III",
+        "D": ") Bromine"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 700,
+      "question": "Which of the following suppresses combustion through a chemical reaction that kills the fire?",
+      "options": {
+        "A": ") Halon",
+        "B": ") Co2",
+        "C": ") water",
+        "D": ") soda acid"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

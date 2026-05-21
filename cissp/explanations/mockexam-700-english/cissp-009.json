@@ -1,0 +1,762 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q401 - Q450",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 401,
+      "question": "Which of the following are additional terms used to describe knowledge-based IDS and behavior-based IDS?",
+      "options": {
+        "A": "Signature-based IDS and statistical anomaly-based IDS, respectively.",
+        "B": "Signature-based IDS and dynamic anomaly-based IDS, respectively.",
+        "C": "Anomaly-based IDS and statistical-based IDS, respectively.",
+        "D": "Signature-based IDS and motion anomaly-based IDS, respectively."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Knowledge-based detection is also called signature-based detection. In this case the IDS use a signature database and attempts to match all monitored events to its contents. Behavior-based detection is also called statistical intrusion detection, anomaly detection, and heuristics-based detection. Incorrect Answers: B: Behavior-based IDS is not dynamical anomaly-based. Behavior-based IDS can be said to be statistical anomaly-based. C: A knowledge-based IDS uses signatures, not anomalies. D: Motion anomaly-based IDS is not a synonym for behavior-based IDS."
+    },
+    {
+      "id": 402,
+      "question": "Knowledge-based Intrusion Detection Systems (IDS) are more common than:",
+      "options": {
+        "A": "Network-based IDS",
+        "B": "Host-based IDS",
+        "C": "Behavior-based IDS",
+        "D": "Application-Based IDS"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "An IDS can detect malicious behavior using two common methods. One way is to use knowledge-based detection which is more frequently used. The second detection type is behavior-based detection. Incorrect Answers: A: A Network-based IDS is not a type of Knowledge-based Intrusion Detection System. B: A host-based IDS is not a type of Knowledge-based Intrusion Detection System. D: An application-based IDS is not a type of Knowledge-based Intrusion Detection System."
+    },
+    {
+      "id": 403,
+      "question": "Which cable technology refers to the CAT3 and CAT5 categories?",
+      "options": {
+        "A": "Coaxial cables",
+        "B": "Fiber Optic cables",
+        "C": "Axial cables",
+        "D": "Twisted Pair cables"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Twisted-pair cables are categorized into UTP categories CAT1, CAT2, CAT3, CAT4, CAT5, etc. Incorrect Answers: A: Coaxial cables do not have categories named CAT3 or CAT5. B: Fiber optic cables do not have categories named CAT3 or CAT5. C: Axial cables do not have categories named CAT3 or CAT5."
+    },
+    {
+      "id": 404,
+      "question": "The older coaxial cable has been widely replaced with twisted pair, which is extremely easy to work with, inexpensive, and also resistant to multiple host failure at once, especially when used in one of the following topology:",
+      "options": {
+        "A": "Token Passing Configuration.",
+        "B": "Star Configuration.",
+        "C": "Ring Configuration.",
+        "D": "Point to Point Configuration."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In Star topologies twisted-pair cabling is the preferred cabling. Incorrect Answers: A: In a Token Passing configuration Coaxial cabling works fine. C: In a Ring configuration Coaxial cabling works fine. D: Twisted cable has not special advantage compared to other cabling in a point-to-point configuration."
+    },
+    {
+      "id": 405,
+      "question": "Which of the following was designed as a more fault-tolerant topology than Ethernet, and very resilient when properly implemented?",
+      "options": {
+        "A": "Token Link.",
+        "B": "Token system.",
+        "C": "Token Ring.",
+        "D": "Duplicate ring."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Token Ring has a built in management and recovery system which makes it very fault tolerant. Incorrect Answers: A: Token link is not a network topology. B: Token system is not a network topology. D: Duplicate ring is not a network topology."
+    },
+    {
+      "id": 406,
+      "question": "Which of the following should be used as a replacement for Telnet for secure remote login over an insecure network?",
+      "options": {
+        "A": "S-Telnet",
+        "B": "SSL",
+        "C": "Rlogin",
+        "D": "SSH"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Secure Shell (SSH) works as a type of tunneling mechanism that delivers terminal like access to remote computers. SSH should be used instead of Telnet, FTP, rlogin, rexec, or rsh, because it is more secure. Incorrect Answers: A: S-Telnet is only used for IBM 5250 data streams. B: SSL is supported for Telnet implementations. C: Rlogin is a software utility for Unix-like computer operating systems that enables users to log in on another host via a network. It is, however, less secure that SSH."
+    },
+    {
+      "id": 407,
+      "question": "Which of the following is LESS likely to be used today in creating a Virtual Private Network?",
+      "options": {
+        "A": "L2TP",
+        "B": "PPTP",
+        "C": "IPSec",
+        "D": "L2F"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Layer 2 Forwarding Protocol (L2F) is rarely used today. The following are the three most common VPN communications protocol standards: Point-to-Point Tunneling Protocol (PPTP). PPTP works at the Data Link Layer of the OSI model. Designed for individual client to server connections, it enables only a single point-to-point connection per session. This standard is very common with asynchronous connections that use Win9x or NT clients. PPTP uses native Point-to-Point Protocol (PPP) authentication and encryption services. Layer 2 Tunneling Protocol (L2TP). L2TP is a combination of PPTP and the earlier Layer 2 Forwarding Protocol (L2F) that works at the Data Link Layer like PPTP. It has become an accepted tunneling standard for VPNs. In fact, dial-up VPNs use this standard quite frequently. Like PPTP, this standard was designed for single point-topoint client to server connections. Note that multiple protocols can be encapsulated within the L2TP tunnel. IPSec. IPSec operates at the Network Layer and it enables multiple and simultaneous tunnels, unlike the single connection of the previous standards. IPSec has the functionality to encrypt and authenticate IP data. It is built into the new IPv6 standard, and is used as an add-on to the current IPv4. While PPTP and L2TP are aimed more at dial-up VPNs, IPSec focuses more on network-to-network connectivity. Incorrect Answers: A: L2TP and IPSec are commonly used together for VPNs today. B: PPTP is not used as commonly as L2TP and IPSec but it is more common than L2F. C: L2TP and IPSec are commonly used together for VPNs today."
+    },
+    {
+      "id": 408,
+      "question": "Which of the following answers presents the MOST significant threat to network based IDS or IPS systems?",
+      "options": {
+        "A": "Encrypted Traffic",
+        "B": "Complex IDS/IPS Signature Syntax",
+        "C": "Digitally Signed Network Packets",
+        "D": "Segregated VLANs"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Encrypted network packets present the biggest threat to an effective IDS/IPS plan because the network traffic cannot easily be decoded and examined. Encrypted packets cannot be examined by the IDS to determine if there is a threat there so in most cases the traffic is just forwarded along with the potential threat. There is an industry where a company provides examination services for your network traffic, acting like a proxy server for all your network traffic. You simply send them copies of your certificates so they can decode the traffic. This is common in the financial industry where violating federal law or being sued by federal investigators for insider trading can lead to business collapse. The external company examines all the network traffic coming and going from your network for potential liabilities. Incorrect Answers: B: Complex IDS/IPS Signature syntax: IDS/IPS signatures can be complex but this is not the MOST significant threat to the functionality of an IDS/IPS system. C: Digitally Signed Network Packets: This is not threat to IDS/IPS systems looking for dangerous network traffic. D: Segregated VLANs are only a threat if the IDS/IPS system is not monitoring traffic on the segregated VLAN. VLANs can present barriers to IDS/IPS systems spotting dangerous traffic. There is an easy solution to VLANs and IDS/IPS systems and that would be simply placing an IDS/IPS sensor on that VLAN and set it up to send its traffic to the IDS/IPS management system."
+    },
+    {
+      "id": 409,
+      "question": "Which of the following is NOT a countermeasure to traffic analysis?",
+      "options": {
+        "A": "Padding messages.",
+        "B": "Eavesdropping.",
+        "C": "Sending noise.",
+        "D": "Faraday Cage"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Eavesdropping is not a countermeasure, it is a type of attack where you are collecting traffic and attempting to see what is being sent between entities communicating with each other. Traffic analysis, which is sometimes called trend analysis, is a technique employed by an intruder that involves analyzing data characteristics (message length, message frequency, and so forth) and the patterns of transmissions (rather than any knowledge of the actual information transmitted) to infer information that is useful to an intruder. Countermeasures to traffic analysis are similar to the countermeasures to cryptoattacks: Padding messages. Creating all messages to be a uniform data size by filling empty space in the data. Sending noise. Transmitting non-informational data elements mixed in with real information to disguise the real message Faraday cage can also be used as a countermeasure to traffic analysis as it prevents intruders from being able to access information emitted via electrical signals from network devices Incorrect Answers: A: Padding messages (creating all messages to be a uniform data size by filling empty space in the data) is a countermeasure to traffic analysis. C: Sending noise (transmitting non-informational data elements mixed in with real information to disguise the real message) is a countermeasure to traffic analysis. D: Faraday cage (preventing intruders from being able to access information emitted via electrical signals from network devices) is a countermeasure to traffic analysis."
+    },
+    {
+      "id": 410,
+      "question": "Which of the following describes the sequence of steps required for a Kerberos session to be established between a user (Principal P1), and an application server (Principal P2)?",
+      "options": {
+        "A": "Principals P1 and Principals P2 authenticate to the Key Distribution Center (KDC),",
+        "B": "Principal P1 receives a Ticket Granting Ticket (TGT), and then Principal P2 requests a service ticket from the KDC.",
+        "C": "Principal P1 authenticates to the Key Distribution Center (KDC), Principal P1 receives a Ticket Granting Ticket (TGT), and Principal P1 requests a service ticket from the Ticket Granting Service (TGS) in order to access the application server P2",
+        "D": "Principal P1 authenticates to the Key Distribution Center (KDC),",
+        "E": "Principal P1 requests a Ticket Granting Ticket (TGT) from the authentication server, and then Principal P1 requests a service ticket from the application server P2",
+        "F": "Principals P1 and P2 authenticate to the Key Distribution Center (KDC), Principal P1 requests a Ticket Granting Ticket (TGT) from the authentication server, and application server P2 requests a service ticket from P1"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In the following sequence, the user (Principle P1) is Emily and the server (Principal P2) is a print server: 1. Emily comes in to work and enters her username and password into her workstation at 8:00 A.M. The Kerberos software on Emily’s computer sends the username to the authentication service (AS) on the KDC, which in turn sends Emily a ticket granting ticket (TGT) that is encrypted with Emily’s password (secret key). 2. If Emily has entered her correct password, then this TGT is decrypted and Emily gains access to her local workstation desktop. 3. When Emily needs to send a print job to the print server, her system sends the TGT to the ticket granting service (TGS), which runs on the KDC, and a request to access the print server. (The TGT allows Emily to prove she has been authenticated and allows her to request access to the print server.) 4. The TGS creates and sends a second ticket to Emily, which she will use to authenticate to the print server. This second ticket contains two instances of the same session key, one encrypted with Emily’s secret key and the other encrypted with the print server’s secret key. The second ticket also contains an authenticator, which contains identification information on Emily, her system’s IP address, sequence number, and a timestamp. 5. Emily’s system receives the second ticket, decrypts and extracts the embedded session key, adds a second authenticator set of identification information to the ticket, and sends the ticket on to the print server. 6. The print server receives the ticket, decrypts and extracts the session key, and decrypts and extracts the two authenticators in the ticket. If the print server can decrypt and extract the session key, it knows the KDC created the ticket, because only the KDC has the secret key used to encrypt the session key. If the authenticator information that the KDC and the user put into the ticket matches, then the print server knows it received the ticket from the correct principal. 7. Once this is completed, it means Emily has been properly authenticated to the print server and the server prints her document. Incorrect Answers: A: Principal P2 does not need to authenticate to the Key Distribution Center (KDC). There are more steps required than there are listed in this answer. B: Principal P1 must authenticate first. Principal P2 does not request a service ticket from the KDC. There are more steps required than there are listed in this answer. D: There are more steps required than there are listed in this answer. E: Principal P1 must authenticate first. Principal P1 does not request a service ticket from the application server P2. There are more steps required than there are listed in this answer. F: Principal P2 does not need to authenticate to the Key Distribution Center (KDC). Principal P2 does not request a service ticket from Principal P1. There are more steps required than there are listed in this answer."
+    },
+    {
+      "id": 411,
+      "question": "A packet containing a long string of NOP's followed by a command is usually indicative of what?",
+      "options": {
+        "A": "A syn scan.",
+        "B": "A half-port scan.",
+        "C": "A buffer overflow attack.",
+        "D": "A packet destined for the network's broadcast address."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In a carefully crafted buffer overflow attack, the stack is filled properly so the return pointer can be overwritten and control is given to the malicious instructions that have been loaded onto the stack instead of back to the requesting application. This allows the malicious instructions to be executed in the security context of the requesting application. In this example the buffer is filled with NOP's (No Operation) commands followed by the instruction that the attacker wants to be executed. Incorrect Answers: A: Syn scanning is not done by sending a packet with a long string of instructions. Syn scanning s is done by sending a SYN (synchronization) packet, as if to initiate a three-way handshake, to every port on the server. B: A port scan is not done by sending a single packet with long string of instructions. A port scan, such as a half-port scan, is a series of messages sent by someone attempting to break into a computer to learn which computer network services, each associated with a \"well-known\" port number, the computer provides. D: The purpose of sending this packet filled of instructions is likely to be a buffer-overflow attack, not that the packet is destined for the network's broadcast address."
+    },
+    {
+      "id": 412,
+      "question": "Organizations should consider which of the following first before allowing external access to their LANs via the Internet?",
+      "options": {
+        "A": "Plan for implementing workstation locking mechanisms.",
+        "B": "Plan for protecting the modem pool.",
+        "C": "Plan for providing the user with his account usage information.",
+        "D": "Plan for considering proper authentication options."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "LANs are typically protected from the Internet by firewalls. However, to allow external access to a LAN, you need to open ports on the firewall to allow the connections. With the firewall allowing external connections into the LAN, your last line of defense is authentication. You need to ensure that the remote user connecting to the LAN is who they say they are. Therefore, before allowing external access into a LAN, you should plan and implement proper authentication. Incorrect Answers: A: Workstation locking mechanisms are not the most important consideration when allowing external access to a LAN. Without the proper authentication mechanism in place, an intruder could connect to the LAN from an unlocked workstation. B: Protecting the modem pool (if a modem pool is used to provide the remote access) is not the most important consideration when allowing external access to a LAN. Without the proper authentication mechanism in place, an intruder could connect to the LAN. C: Providing the user with his account usage information is not the most important consideration when allowing external access to a LAN. Protecting LAN resources by ensuring only authorized people can connect to the LAN is far more important."
+    },
+    {
+      "id": 413,
+      "question": "Several analysis methods can be employed by an IDS, each with its own strengths and weaknesses, and their applicability to any given situation should be carefully considered. There are two basic IDS analysis methods that exist. Which of the basic method is more prone to false positive?",
+      "options": {
+        "A": "Pattern Matching (also called signature analysis)",
+        "B": "Anomaly Detection",
+        "C": "Host-based intrusion detection",
+        "D": "Network-based intrusion detection"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Anomaly Detection IDS learns about the normal activities and events on your system by watching and tracking what it sees. Once it has accumulated enough data about normal activity, it can detect abnormal and possibly malicious activities or events. There is a small risk that some non-harmful activity is classified as anomaly by mistake – false positives can occur. Incorrect Answers: A: A Pattern Matching IDS uses a signature database and attempts to match all monitored events to its contents. Only activities present in the database will be detected. There will be no false positives. C: Host-based intrusion detection is not an IDS analysis method. It is a classification on information source. A host - based IDS watches for questionable activity on a single computer system, especially by watching audit trails, event logs, and application logs. D: Network-based intrusion detection is not an IDS analysis method. It is a classification on information course. Here the source is a network segment."
+    },
+    {
+      "id": 414,
+      "question": "You are part of a security staff at a highly profitable bank and each day, all traffic on the network is logged for later review. Every Friday when major deposits are made you're seeing a series of bits placed in the \"Urgent Pointer\" field of a TCP packet. This is only 16 bits which isn't much but it concerns you because:",
+      "options": {
+        "A": "This could be a sign of covert channeling in bank network communications and should be investigated.",
+        "B": "It could be a sign of a damaged network cable causing the issue.",
+        "C": "It could be a symptom of malfunctioning network card or drivers and the source system should be checked for the problem.",
+        "D": "It is normal traffic because sometimes the previous fields 16 bit checksum value can over run into the urgent pointer's 16 bit field causing the condition."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Some Intrusion Detection System (IDS) evasion techniques involve deliberately violating the TCP or IP protocols in a way the target computer will handle differently from the IDS. For example, the TCP Urgent Pointer is handled differently on different operating systems and may not be handled correctly by the IDS. Incorrect Answers: B: It is very unlikely that a changed TCP Urgent pointer value is caused by a hardware problem, such as a damaged network cable. C: It is very unlikely that a changed TCP Urgent pointer value is caused by a hardware problem, such as a damaged network card, or by a corrupt driver. D: The TCP Urgent pointer field does not contain checksums."
+    },
+    {
+      "id": 415,
+      "question": "What would you call the process that takes advantages of the security provided by a transmission protocol by carrying one protocol over another?",
+      "options": {
+        "A": "Piggy Backing",
+        "B": "Steganography",
+        "C": "Tunneling",
+        "D": "Concealing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A tunneling protocol allows a network user to access or provide a network service that the underlying network does not support or provide directly. Because tunneling involves repackaging the traffic data into a different form, perhaps with encryption as standard, one use of tunneling is to hide the nature of the traffic that is run through the tunnels. Incorrect Answers: A: Piggybacking on Internet access is the practice of establishing a wireless Internet connection by using another subscriber's wireless Internet access service without the subscriber's explicit permission or knowledge. B: Steganography uses files, not protocols. Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. D: One protocol carrying another is called tunneling, not concealing."
+    },
+    {
+      "id": 416,
+      "question": "At which OSI layer does SSL reside in?",
+      "options": {
+        "A": "Application",
+        "B": "Session",
+        "C": "Transport",
+        "D": "Network"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "SSL encryption takes place at the transport layer. Incorrect Answers: A: SSL resides at transport layer, not at the application layer. B: SSL resides at transport layer, not at the session layer. D: SSL resides at transport layer, not at the network layer."
+    },
+    {
+      "id": 417,
+      "question": "What is the BEST answer pertaining to the difference between the Session and Transport layers of the OSI model?",
+      "options": {
+        "A": "The Session layer sets up communication between protocols, while the Transport layer sets up connections between computer systems.",
+        "B": "The Transport layer sets up communication between computer systems, while the Session layer sets up connections between applications.",
+        "C": "The Session layer sets up communication between computer systems, while the Transport layer sets up connections between protocols.",
+        "D": "The Transport layer sets up communication between applications, while the Session layer sets up connections between computer systems."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The transport layer provides host-to-host (for example, computer-to-computer) communication services. The session layer provides the mechanism for opening, closing and managing a session between end-user application processes. Incorrect Answers: A: The session layer sets up communication between applications, not between protocols. C: The session layer sets up communication between applications, not between computer systems. The transport layer provides host-to-host communication services, not protocol-to-protocol services. D: The session layers sets up communication between applications, while the Transport layer sets up connections between computer systems. Not vice versa."
+    },
+    {
+      "id": 418,
+      "question": "What is called an attack in which an attacker floods a system with connection requests but does not respond when the target system replies to those requests?",
+      "options": {
+        "A": "Ping of death attack",
+        "B": "SYN attack",
+        "C": "Smurf attack",
+        "D": "Buffer overflow attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A SYN flood DoS attack where an attacker sends a succession of SYN packets with the goal of overwhelming the victim system so that it is unresponsive to legitimate traffic. Incorrect Answers: A: The Ping of Death attack is based upon the use of oversized ICMP packets. It is not based on flooding the system with connection requests. C: In a smurf attack the attacker sends an ICMP ECHO REQUEST packet, not a connection request, with a spoofed source address to a victim’s network broadcast address. D: In Buffer overflow attack is an anomaly where a program, while writing data to a buffer (not sending connection requests), overruns the buffer's boundary and overwrites adjacent memory locations."
+    },
+    {
+      "id": 419,
+      "question": "In the context of access control, locks, gates, guards are examples of which of the following?",
+      "options": {
+        "A": "Administrative controls",
+        "B": "Technical controls",
+        "C": "Physical controls",
+        "D": "Logical controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Physical controls are items put into place to protect facility, personnel, and resources. These include guards, locks, fencing, and lighting. Incorrect Answers: A: Administrative controls include Security policy, Monitoring and Supervising, Separation of duties, Job rotation, Information Classification, Personnel Procedures, Testing, and Security-awareness training. B, D: Technical controls, which are also known as logical controls, are software or hardware components such as firewalls, IDS, encryption, identification and authentication mechanisms."
+    },
+    {
+      "id": 420,
+      "question": "Access Control techniques do NOT include which of the following?",
+      "options": {
+        "A": "Relevant Access Controls",
+        "B": "Discretionary Access Control",
+        "C": "Mandatory Access Control",
+        "D": "Lattice Based Access Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Relevant Access Controls is not a valid Access Control model. Incorrect Answers: B: Discretionary Access Control (DAC) allows data owners to dictate what subjects have access to the files and resources they own. C: Mandatory Access control is considered nondiscretionary and is based on a security label system. D: Lattice-based Access control is known as a label-based access control, or rule-based access control restriction."
+    },
+    {
+      "id": 421,
+      "question": "A central authority determines what subjects can have access to certain objects based on the organizational security policy is called:",
+      "options": {
+        "A": "Mandatory Access Control",
+        "B": "Discretionary Access Control",
+        "C": "Non-Discretionary Access Control",
+        "D": "Rule-based Access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Non-discretionary access control is when the system administrator or a single management body within an organization centrally controls access to all resources for everybody on a network. Incorrect Answers: A: Mandatory access control (MAC) is an access policy that restricts access to objects based on the security clearance of a subject and the classification of an object. B: Discretionary access control (DAC) is an access control model and policy that restricts access to objects according to the identity of the subjects and the groups to which those subjects belong. D: Rule-based access control makes use of explicit rules that specify what can and cannot happen between a subject and an object."
+    },
+    {
+      "id": 422,
+      "question": "Technical controls such as encryption and access control can be built into the operating system, be software applications, or can be supplemental hardware/ software units. Such controls, also known as logical controls, represent which pairing?",
+      "options": {
+        "A": "Preventive/Administrative Pairing",
+        "B": "Preventive/Technical Pairing",
+        "C": "Preventive/Physical Pairing",
+        "D": "Detective/Technical Pairing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Technical controls, which are also known as logical controls, are software or hardware components, such as firewalls, IDS, encryption, identification and authentication mechanisms. Preventive/Technical controls include the following: Passwords, biometrics, smart cards Encryption, secure protocols, call-back systems, database views, constrained user interfaces Antimalware software, access control lists, firewalls, intrusion prevention Incorrect Answers: A: Technical controls are also known as logical controls, not Administrative controls. C: Technical controls are also known as logical controls, not Physical controls. D: Detective/Technical controls include Audit logs and IDS."
+    },
+    {
+      "id": 423,
+      "question": "Rule-Based Access Control (RuBAC) access is determined by rules. Such rules would fit within what category of access control?",
+      "options": {
+        "A": "Discretionary Access Control (DAC)",
+        "B": "Mandatory Access control (MAC)",
+        "C": "Non-Discretionary Access Control (NDAC)",
+        "D": "Lattice-based Access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Rule-based access control is considered nondiscretionary because the users cannot make access decisions based upon their own discretion. Incorrect Answers: A: Discretionary Access Control (DAC) allows data owners to dictate what subjects have access to the files and resources they own. B: Mandatory Access control is considered nondiscretionary and is based on a security label system D: Lattice-based Access control is known as a label-based access control, or rule-based access control restriction."
+    },
+    {
+      "id": 424,
+      "question": "The type of discretionary access control (DAC) that is based on an individual's identity is also called:",
+      "options": {
+        "A": "Identity-based Access control",
+        "B": "Rule-based Access control",
+        "C": "Non-Discretionary Access Control",
+        "D": "Lattice-based Access control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An identity-based access control is a type of Discretionary Access Control (DAC) that is based on an individual's identity. Incorrect Answers: B: Rule-based Access control is based on rules. C: Non-Discretionary Access Control does not allow access based on discretion. D: Lattice-based Access control is a type of label-based mandatory access control model."
+    },
+    {
+      "id": 425,
+      "question": "Which access control type has a central authority that determine to what objects the subjects have access to and it is based on role or on the organizational security policy?",
+      "options": {
+        "A": "Mandatory Access Control",
+        "B": "Discretionary Access Control",
+        "C": "Non-Discretionary Access Control",
+        "D": "Rule-based Access control"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Non-discretionary access control is when the system administrator or a single management body within an organization centrally controls access to all resources for everybody on a network. This type of access control can be role based or rule based, as both of these prevents users from making access decisions based upon their own discretion. Incorrect Answers: A: Mandatory Access Control is based on a security label system. B: Discretionary Access control is based on identity. D: Rule Based Access Control is based on rules."
+    },
+    {
+      "id": 426,
+      "question": "A periodic review of user account management should NOT determine:",
+      "options": {
+        "A": "conformity with the concept of least privilege.",
+        "B": "whether active accounts are still being used.",
+        "C": "strength of user-chosen passwords.",
+        "D": "whether management authorizations are up-to-date."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Organizations should have a process for (1) requesting, establishing, issuing, and closing user accounts; (2) tracking users and their respective access authorizations; and (3) managing these functions. Reviews should examine the levels of access each individual has, conformity with the concept of least privilege, whether all accounts are still active, whether management authorizations are up-to-date, whether required training has been completed, and so forth. These reviews can be conducted on at least two levels: (1) on an application-by-application basis, or (2) on a system wide basis. The strength of user passwords is beyond the scope of a simple user account management review, since it requires specific tools to try and crack the password file/ database through either a dictionary or brute-force attack in order to check the strength of passwords. Incorrect Answers: A: A periodic review of user account management should determine conformity with the concept of least privilege. B: A periodic review of user account management should determine whether active accounts are still being used. D: A periodic review of user account management should determine whether management authorizations are up-to-date."
+    },
+    {
+      "id": 427,
+      "question": "Which of the following access control models requires security clearance for subjects?",
+      "options": {
+        "A": "Identity-based access control",
+        "B": "Role-based access control",
+        "C": "Discretionary access control",
+        "D": "Mandatory access control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Mandatory access control (MAC) is an access policy that restricts access to objects based on the security clearance of a subject and the classification of an object. Incorrect Answers: A: Identity-based access control is a type of DAC system that allows or prevents access based on the identity of the subject. B: Role-based access control (RBAC) provides access to resources according to the role the user holds within the company or the tasks that the user has been assigned. C: Access in a DAC model is restricted based on the authorization granted to the users."
+    },
+    {
+      "id": 428,
+      "question": "Which of the following statements pertaining to Kerberos is TRUE?",
+      "options": {
+        "A": "Kerberos uses public key cryptography.",
+        "B": "Kerberos uses X.509 certificates.",
+        "C": "Kerberos is a credential-based authentication system.",
+        "D": "Kerberos was developed by Microsoft."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Kerberos uses symmetric key cryptography and provides end-to-end security. Although it allows the use of passwords for authentication, it was designed specifically to eliminate the need to transmit passwords over the network. Most Kerberos implementations work with shared secret keys. Kerberos uses a credential-based mechanism as the basis for identification and authentication. Kerberos credentials are referred to as tickets. Incorrect Answers: A: Kerberos does not use public key cryptography (asymmetric); it uses symmetric key cryptography. B: Kerberos does not use X.509 certificates. X.509 certificates are used in public key cryptography. D: Kerberos was not developed by Microsoft; it was developed in the mid-1980s as part of MIT’s Project Athena."
+    },
+    {
+      "id": 429,
+      "question": "Which of the following statements pertaining to using Kerberos without any extension is FALSE?",
+      "options": {
+        "A": "A client can be impersonated by password-guessing.",
+        "B": "Kerberos is mostly a third-party authentication protocol.",
+        "C": "Kerberos uses public key cryptography.",
+        "D": "Kerberos provides robust authentication."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Kerberos is a trusted, third party authentication protocol that was developed under Project Athena at MIT. Using symmetric key cryptography, Kerberos authenticates clients to other entities on a network of which a client requires services. Because a client’s password is used in the initiation of the Kerberos request for the service protocol, password guessing can be used to impersonate a client. Kerberos does not use public key cryptography (asymmetric); it uses symmetric key cryptography. Incorrect Answers: A: It is true that a client can be impersonated by password-guessing. B: It is true that Kerberos is mostly a third-party authentication protocol. D: It is true that Kerberos provides robust authentication."
+    },
+    {
+      "id": 430,
+      "question": "Which of the following services is provided by S-RPC?",
+      "options": {
+        "A": "Availability",
+        "B": "Accountability",
+        "C": "Integrity",
+        "D": "Authentication"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Secure Remote Procedure Call (S- RPC) is an authentication service and is simply a means to prevent unauthorized execution of code on remote systems. Incorrect Answers: A: S-RPC provides authentication, not availability. B: S-RPC provides authentication, not accountability. C: S-RPC provides authentication, not integrity."
+    },
+    {
+      "id": 431,
+      "question": "A smart Card that has two chips with the Capability of utilizing both Contact and Contactless formats is called:",
+      "options": {
+        "A": "Contact Smart Cards",
+        "B": "Contactless Smart Cards",
+        "C": "Hybrid Cards",
+        "D": "Combi Cards"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A smart Card that has two chips with the ability of utilizing both Contact and Contactless formats is called a combi card. Incorrect Answers: A: Contact Smart Cards are not configured for the Contactless format. B: Contactless Smart Cards are not configured for the Contact format C: The hybrid card makes use of two CPU chips for processing and includes both contact-oriented and contactless components. D: The combi-card is similar to the hybrid card, but it only uses a single CPU chip for the processing."
+    },
+    {
+      "id": 432,
+      "question": "The BEST technique to authenticate to a system is to:",
+      "options": {
+        "A": "establish biometric access through a secured server or Web site.",
+        "B": "ensure the person is authenticated by something he knows and something he has.",
+        "C": "maintain correct and accurate ACLs (access control lists) to allow access to applications.",
+        "D": "allow access only through user ID and password."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "This is a tricky question. Normally, biometrics is the preferred answer as it is a more secure means of authentication than even multi-factor authentication. However, you would not establish biometric access through a secured server or Web site. Therefore, the answer must be “Ensure the person is authenticated by something he knows and something he has”. This is an example of two-factor authentication. Incorrect Answers: A: You would not establish biometric access through a secured server or Web site. C: Maintain correct and accurate ACLs is always a good idea. However, this provides no authentication solution as required by the question. D: A user ID and password is single-factor authentication. The user ID and the password are both “something you"
+    },
+    {
+      "id": 433,
+      "question": "Which of the following biometrics methods provides the HIGHEST accuracy and is LEAST accepted by users?",
+      "options": {
+        "A": "Palm Scan",
+        "B": "Hand Geometry",
+        "C": "Fingerprint",
+        "D": "Retina scan"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A system that reads a person’s retina scans the blood-vessel pattern of the retina on the backside of the eyeball. This pattern has shown to be extremely unique between different people. A camera is used to project a beam inside the eye and capture the pattern and compare it to a reference file recorded previously. Acceptability in terms of biometric systems refers to considerations of privacy, invasiveness, and psychological and physical comfort when using the system. For example, a concern with retina scanning systems may be the exchange of body fluids on the eyepiece or the feeling that a retinal scan could be harmful to the eye. Another concern would be the retinal pattern that could reveal changes in a person’s health, such as diabetes or high blood pressure. Incorrect Answers: A: While requiring contact with a surface shared by others, a palm scan is generally considered more acceptable than sharing a surface with other parts of the anatomy. Therefore, this answer is incorrect. B: A Hand Geometry scan is less accurate and more acceptable than a retina scan. Therefore, this answer is incorrect. C: A fingerprint scan is more acceptable to users than a retina scan. Users are much more likely to prefer placing their fingers on a fingerprint scanner than looking into a retina scanner. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 434,
+      "question": "Identity Management solutions include such technologies as Directories services, Single Sign-On and Web Access management. There are many reasons for management to choose an identity management solution. Which of the following is a key management challenge regarding identity management solutions?",
+      "options": {
+        "A": "Increasing the number of points of failures.",
+        "B": "Users will no longer be able to “recycle” their password for different applications.",
+        "C": "Costs increase as identity management technologies require significant resources.",
+        "D": "It must be able to scale to support high volumes of data and peak transaction rates."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Identity management is the combination of business process and technology used to manage data on IT systems and applications about users. Managed data includes user objects, identity attributes, security entitlements and authentication factors. Enterprises manage identity data about two broad kinds of users: Insiders: including employees and contractors. They often access multiple internal systems and their identity profiles are relatively complex. Outsiders: including customers, partners and vendors. There are normally many more outsiders than insiders. One of the challenges presented by Identity management is scalability. Enterprises manage user profile data for large numbers of people. There may be tens of thousands of insiders and hundreds of thousands of outsiders. Any identity management system used in this environment must scale to support the data volumes and peak transaction rates produced by large user populations. Incorrect Answers: A: Increasing the number of points of failures is not key management challenge regarding identity management solutions. There should be no single points of failure but this would be more of a concern for the IT department than management. B: Users not being able to “recycle” their password for different applications is not a concern for management. C: A working scalable identity management system is more important to management than the cost. The resource requirement for identity management technologies is not that much when compared to the cost of other systems."
+    },
+    {
+      "id": 435,
+      "question": "When submitting a passphrase for authentication, the passphrase is converted into:",
+      "options": {
+        "A": "a virtual password by the system.",
+        "B": "a new passphrase by the system.",
+        "C": "a new passphrase by the encryption technology",
+        "D": "a real password by the system which can be used forever."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A passphrase is a sequence of characters that is longer than a password. The user enters this phrase into an application, and the application transforms the value into a virtual password, making the passphrase the length and format that is required by the application. (For example, an application may require your virtual password to be 128 bits to be used as a key with the AES algorithm.) If a user wants to authenticate to an application, such as Pretty Good Privacy (PGP), he types in a passphrase, let’s say StickWithMeKidAndYouWillWearDiamonds. The application converts this phrase into a virtual password that is used for the actual authentication. A passphrase is more secure than a password because it is longer, and thus harder to obtain by an attacker. In many cases, the user is more likely to remember a passphrase than a password. Incorrect Answers: B: The passphrase is not converted into a new passphrase by the system. C: The passphrase is not converted into a new passphrase by the encryption technology. D: The passphrase is not converted into a real password by the system which can be used forever."
+    },
+    {
+      "id": 436,
+      "question": "Which of the following can be defined as a framework that supports multiple, optional authentication mechanisms for PPP, including cleartext passwords, challenge-response, and arbitrary dialog sequences?",
+      "options": {
+        "A": "Extensible Authentication Protocol",
+        "B": "Challenge Handshake Authentication Protocol",
+        "C": "Remote Authentication Dial-In User Service",
+        "D": "Multilevel Authentication Protocol."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Extensible Authentication Protocol (EAP) is defined as: A framework that supports multiple, optional authentication mechanisms for PPP, including clear-text passwords, challenge-response, and arbitrary dialog sequences. The Extensible Authentication Protocol (EAP) is a protocol for wireless networks that expands on authentication methods used by the Point-to-Point Protocol (PPP), a protocol often used when connecting a computer to the Internet. EAP can support multiple authentication mechanisms, such as token cards, smart cards, certificates, one-time passwords, and public key encryption authentication. Incorrect Answers: B: The definition in the question does not describe Challenge Handshake Authentication Protocol. C: The definition in the question does not describe Remote Authentication Dial-In User Service. D: The definition in the question does not describe Multilevel Authentication Protocol."
+    },
+    {
+      "id": 437,
+      "question": "The throughput rate is the rate at which individuals, once enrolled, can be processed and identified or authenticated by a biometric system. Acceptable throughput rates are in the range of:",
+      "options": {
+        "A": "100 subjects per minute.",
+        "B": "25 subjects per minute.",
+        "C": "10 subjects per minute.",
+        "D": "50 subjects per minute."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "In addition to the accuracy of the biometric systems, there are other factors that must also be considered. These factors include the enrollment time, the throughput rate, and acceptability. The throughput rate is the rate at which individuals, once enrolled, can be processed and identified or authenticated by a system. Acceptable throughput rates are in the range of 10 subjects per minute. Incorrect Answers: A: 100 subjects per minute is just over half a second per user. This is way faster than is necessary. B: 25 subjects per minute is less than 3 seconds per user. This is faster than necessary as people using a biometric scanner would not use it that quickly. D: 50 subjects per minute is just over one second per user. This is faster than necessary as people using a biometric scanner would not use it that quickly."
+    },
+    {
+      "id": 438,
+      "question": "Which of the following biometric parameters are better suited for authentication use over a long period of time?",
+      "options": {
+        "A": "Iris pattern",
+        "B": "Voice pattern",
+        "C": "Signature dynamics",
+        "D": "Retina pattern"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Of the answers given, the iris is the least likely to change over a long period of time which makes the iris pattern better suited for authentication use over a long period of time. The iris is the colored portion of the eye that surrounds the pupil. The iris has unique patterns, rifts, colors, rings, coronas, and furrows. The uniqueness of each of these characteristics within the iris is captured by a camera and compared with the information gathered during the enrollment phase. Of the biometric systems, iris scans are the most accurate. The iris remains constant through adulthood, which reduces the type of errors that can happen during the authentication process. Incorrect Answers: B: A person’s voice pattern is less suited for authentication use over a long period of time because the voice pattern can change over time. C: A person’s signature is less suited for authentication use over a long period of time because the signature can change over time. D: A person’s retina pattern is less suited for authentication use over a long period of time because the retina pattern can change over time and can be changed by illnesses such as Diabetes."
+    },
+    {
+      "id": 439,
+      "question": "Which of the following is NOT a disadvantage of Single Sign On (SSO)?",
+      "options": {
+        "A": "Support for all major operating system environment is difficult",
+        "B": "The cost associated with SSO development can be significant",
+        "C": "SSO could be single point of failure and total compromise of an organization asset",
+        "D": "SSO improves an administrator's ability to manage user's account and authorization to all associated system"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Single sign-on (SSO) gives the administrator the ability to streamline user accounts and better control access rights. It, therefore, improves an administrator's ability to manage users and user configurations to all associated systems. Incorrect Answers: A: A disadvantage of SSO is that insufficient software solutions accommodate all major operating system environments. A mix of solutions must, therefore, be adapted to the enterprise's IT architecture and strategic direction. B: A disadvantage of SSO is that considerable interface development and maintenance may be required, which could be costly. C: SSO could be single point of failure and total compromise of an organization asset. This means that that if an attacker uncovers a credential set, the attacker would have access to every resource within the environment that the compromised account has access to."
+    },
+    {
+      "id": 440,
+      "question": "Another type of access control is lattice-based access control. In this type of control a lattice model is applied. How is this type of access control concept applied?",
+      "options": {
+        "A": "The pair of elements is the subject and object, and the subject has an upper bound equal or higher than the upper bound of the object being accessed.",
+        "B": "The pair of elements is the subject and object, and the subject has an upper bound lower than the upper bound of the object being accessed.",
+        "C": "The pair of elements is the subject and object, and the subject has no special upper or lower bound needed within the lattice.",
+        "D": "The pair of elements is the subject and object, and the subject has no access rights in relation to an object."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A lattice is a mathematical construct that is built upon the notion of a group. The most common definition of the lattice model is “a structure consisting of a finite partially ordered set together with least upper and greatest lower bound operators on the set.” Two methods are commonly used for applying mandatory access control: Rule-based (or label-based) access control: This type of control further defines specific conditions for access to a requested object. A Mandatory Access Control system implements a simple form of rule-based access control to determine whether access should be granted or denied by matching: - An object's sensitivity label - A subject's sensitivity label Lattice-based access control: These can be used for complex access control decisions involving multiple objects and/or subjects. A lattice model is a mathematical structure that defines greatest lower-bound and least upper-bound values for a pair of elements, such as a subject and an object. Incorrect Answers: B: The subject’s upper bound must be equal or higher, not lower than the upper bound of the object being accessed. C: The subject must have an upper bound. D: The subject must have access rights determined by an upper bound."
+    },
+    {
+      "id": 441,
+      "question": "In the context of Biometric authentication, there is a quick way to compare the accuracy of devices. In general, the devices that have the lowest value would be the most accurate. Which of the following would be used to compare accuracy of devices?",
+      "options": {
+        "A": "the CER is used.",
+        "B": "the FRR is used",
+        "C": "the FAR is used",
+        "D": "the FER is used"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "There are three main performance measures in biometrics. These measures are as follows: False Rejection Rate (FRR) or Type I Error. The percentage of valid subjects that are falsely rejected. False Acceptance Rate (FAR) or Type II Error. The percentage of invalid subjects that are falsely accepted. Crossover Error Rate (CER). The percent in which the False Rejection Rate equals the False Acceptance Rate. Almost all types of detection permit a system’s sensitivity to be increased or decreased during an inspection process. If the system’s sensitivity is increased, such as in an airport metal detector, the system becomes increasingly selective and has a higher FRR. Conversely, if the sensitivity is decreased, the FAR will increase. Thus, to have a valid measure of the system performance, the CER is used. Incorrect Answers: B: FRR is the percentage of valid subjects that are falsely rejected. It is not used to compare accuracy of biometric devices. C: FAR is the percentage of invalid subjects that are falsely accepted. It is not used to compare accuracy of biometric devices. D: FER is not used to compare accuracy of biometric devices."
+    },
+    {
+      "id": 442,
+      "question": "Which of the following biometric devices has the lowest user acceptance level?",
+      "options": {
+        "A": "Retina Scan",
+        "B": "Fingerprint scan",
+        "C": "Hand geometry",
+        "D": "Signature recognition"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Acceptability in terms of biometric systems refers to considerations of privacy, invasiveness, and psychological and physical comfort when using the system. For example, a concern with retina scanning systems may be the exchange of body fluids on the eyepiece or the feeling that a retinal scan could be harmful to the eye. Another concern would be the retinal pattern that could reveal changes in a person’s health, such as diabetes or high blood pressure. Incorrect Answers: A: While requiring contact with a surface shared by others, a fingerprint scan is generally considered more acceptable than sharing a surface with other parts of the anatomy. B: While requiring contact with a surface shared by others, a hand geometry scan is generally considered more acceptable than sharing a surface with other parts of the anatomy. C: A signature does not involve contact with a surface shared by others and is therefore more acceptable than other biometric methods."
+    },
+    {
+      "id": 443,
+      "question": "Which of the following would be an example of the BEST password?",
+      "options": {
+        "A": "golf001",
+        "B": "Elizabeth",
+        "C": "T1me4g0lF",
+        "D": "password"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The following four rules apply to what can be contained in a password. The more rules that are met by a password, the stronger the password is. Passwords should contain uppercase characters Passwords should contain lowercase characters Passwords should contain base 10 digits (0 through 9) Passwords should contain nonalphanumeric characters: ~!@#$%^&*_-+=`|\\(){}[]:;\"'<>,.?/ Further to the list above, passwords should be at least eight characters long and not include names, usernames or dictionary words. The password T1me4g0lF meets three of the above rules. It contains uppercase characters, numeric characters and lowercase characters. This is the strongest password of the options given. Incorrect Answers: A: golf001 meets only two of the password rules. It contains lowercase and numeric characters. This is not the strongest password. B: Elizabeth meets only two of the password rules. It contains lowercase and numeric characters. Furthermore, the password is a name which makes it easier to guess. This is not the strongest password. D: ‘password’ is a very weak password. It meets only one password rule (it contains lowercase letters). It is also one of the most easily guessed passwords there is."
+    },
+    {
+      "id": 444,
+      "question": "Which of the following does NOT apply to system-generated passwords?",
+      "options": {
+        "A": "Passwords are harder to remember for users.",
+        "B": "If the password-generating algorithm gets to be known, the entire system is in jeopardy.",
+        "C": "Passwords are more vulnerable to brute force and dictionary attacks.",
+        "D": "Passwords are harder to guess for attackers."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Passwords that are generated by a system or a password generation tool are robust passwords in that they will contain a mix of uppercase characters, lowercase characters, numbers and non-alphanumeric characters. One of the benefits of system-generated passwords is that they are LESS (not more) vulnerable to brute force and dictionary attacks. Incorrect Answers: A: It is true that system-generated passwords are harder to remember for users. This is due to the complexity of the password. B: It is true that if the password-generating algorithm gets to be known, the entire system is in jeopardy. This is because it would be possible to crack the passwords by using the algorithm used to create the passwords. D: It is true that system-generated passwords are harder to guess for attackers. This is due to the complexity of the password."
+    },
+    {
+      "id": 445,
+      "question": "What is the MOST critical characteristic of a biometric identifying system?",
+      "options": {
+        "A": "Perceived intrusiveness",
+        "B": "Storage requirements",
+        "C": "Accuracy",
+        "D": "Scalability"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Biometrics are based on the Type 3 authentication mechanism — something you are. Biometrics are defined as an automated means of identifying or authenticating the identity of a living person based on physiological or behavioral characteristics. The most critical characteristic of a biometric identifying system (or any other identification and authentication system) is the accuracy of the system. The system needs to ensure that the identification of the person is correct. Incorrect Answers: A: The perceived intrusiveness of a biometric system is an important consideration. Users will not be happy to use a system which is perceived to be too intrusive. However, this is not as critical as the accuracy of the system. B: The storage requirement of a biometric system is not an important consideration. Storage is cheap nowadays and biometric data does not require much storage space. D: The scalability of a biometric system could be an important consideration if the company intends to expand in the future although most biometric systems are easily scalable. However, this is not as critical as the accuracy of the system."
+    },
+    {
+      "id": 446,
+      "question": "What is considered the MOST important type of error to avoid for a biometric access control system?",
+      "options": {
+        "A": "Type I Error",
+        "B": "Type II Error",
+        "C": "Combined Error Rate",
+        "D": "Crossover Error Rate"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Type II Error occurs when the system accepts impostors who should be rejected. This type of error is the most dangerous type, and therefore the most important to avoid. Incorrect Answers: A: A Type I Error is when a biometric system rejects an authorized individual. It is not as dangerous as a Type II Error, and therefore not the most important to avoid. C: Combined Error Rate is not a valid type of biometric error. D: The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate. It is the most important measurement when determining the system’s accuracy."
+    },
+    {
+      "id": 447,
+      "question": "How can an individual/person BEST be identified or authenticated to prevent local masquerading attacks?",
+      "options": {
+        "A": "User Id and password",
+        "B": "Smart card and PIN code",
+        "C": "Two-factor authentication",
+        "D": "Biometrics"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Masquerading is the term used when one user pretends to be another user. Strong authentication is the best defense against this. Authentication is based on the following three factor types: Type 1. Something you know, such as a PIN or password Type 2. Something you have, such as an ATM card or smart card Type 3. Something you are (physically), such as a fingerprint or retina scan Biometrics verifies an individual’s identity by analyzing a unique personal attribute or behavior, which is one of the most effective and accurate methods of verifying identification. A biometric authentication such as a fingerprint cannot be imitated which makes biometrics the best defense against masquerading attacks. Incorrect Answers: A: A user Id and password can be guessed by an attacker. This is not the best identification and authentication method to prevent local masquerading attacks. B: A smart card can be stolen and the PIN guessed by an attacker. This is not the best identification and authentication method to prevent local masquerading attacks. C: Two-factor authentication is more secure than other methods but still less secure than biometrics. Two-factor authentication could comprise of “something you have” and “something you know”. The “something you have” such as a smart card could be stolen by an attacker and the “something you know” such as a PIN could be guessed. This is not the best identification and authentication method to prevent local masquerading attacks."
+    },
+    {
+      "id": 448,
+      "question": "What are cognitive passwords?",
+      "options": {
+        "A": "Passwords that can be used only once.",
+        "B": "Fact or opinion-based information used to verify an individual's identity.",
+        "C": "Password generators that use a challenge response scheme.",
+        "D": "Passphrases."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Cognitive passwords refer to fact-based or opinion-based information used to verify the identity of an individual. The cognitive password enrollment process requires the answering of some questions based on the user’s life experiences. Incorrect Answers: A: Passwords that can be used only once are known as one-time passwords (OTPs). C: Password generators that use a challenge response scheme are known as asynchronous token devices. D: A passphrase is a sequence of characters that is longer than a password."
+    },
+    {
+      "id": 449,
+      "question": "Which of the following biometrics devices has the highest Crossover Error Rate (CER)?",
+      "options": {
+        "A": "Iris scan",
+        "B": "Hand geometry",
+        "C": "Voice pattern",
+        "D": "Fingerprints"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "There are three main performance measures in biometrics. These measures are as follows: False Rejection Rate (FRR) or Type I Error. The percentage of valid subjects that are falsely rejected. False Acceptance Rate (FAR) or Type II Error. The percentage of invalid subjects that are falsely accepted. Crossover Error Rate (CER). The percent in which the False Rejection Rate equals the False Acceptance Rate. Voice pattern biometrics have the highest Crossover Error Rate (CER). This is because voice patterns tend to change with the individual’s mood and health. The common cold or flu, for instance, would alter the tone and pitch of a person’s voice. Incorrect Answers: A: Iris scan biometric devices do not have the highest Crossover Error Rate (CER) due to the accuracy of an iris scan and the fact that the iris rarely changes. B: Hand geometry biometric devices do not have the highest Crossover Error Rate (CER) due to the accuracy of a hand geometry scan the fact that the hand rarely changes. D: Fingerprint biometric devices do not have the highest Crossover Error Rate (CER) due to the accuracy of fingerprint scan the fact that the fingerprint rarely changes."
+    },
+    {
+      "id": 450,
+      "question": "What is the PRIMARY use of a password?",
+      "options": {
+        "A": "Allow access to files.",
+        "B": "Identify the user.",
+        "C": "Authenticate the user.",
+        "D": "Segregate various users’ accesses."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A protected string of characters, known as a password, is used to authenticate an individual. Incorrect Answers: A: The primary use of a password is not to allow access to files, it is to authenticate an individual. B: The primary use of a password is not to identify an individual, it is to authenticate an individual. D: The primary use of a password is not to divide various user's accesses, it is to authenticate an individual."
+    }
+  ]
+}

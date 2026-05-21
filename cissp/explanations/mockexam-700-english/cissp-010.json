@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q451 - Q500",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 451,
+      "question": "The three classic ways of authenticating yourself to the computer security software are: something you know, something you have, and something:",
+      "options": {
+        "A": "you need.",
+        "B": "you read.",
+        "C": "you are.",
+        "D": "you do."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "There are three common factors that can be used for authentication: Something a person knows. Something a person has. Something a person is. Incorrect Answers: A, B, D: These answers are not valid classic authentication factors."
+    },
+    {
+      "id": 452,
+      "question": "An access system that grants users only those rights necessary for them to perform their work is operating on which security principle?",
+      "options": {
+        "A": "Discretionary Access",
+        "B": "Least Privilege",
+        "C": "Mandatory Access",
+        "D": "Separation of Duties"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Least privilege means an individual should have just enough permissions and rights to fulfill his role in the company and no more. Incorrect Answers: A: A: Discretionary Access Control (DAC) allows data owners to dictate what subjects have access to the files and resources they own. C: Mandatory Access control is based on a security label system D: Separation of Duties is a preventive administrative control that is used to make sure one person is unable to carry out a critical task alone."
+    },
+    {
+      "id": 453,
+      "question": "Pin, Password, Passphrases, Tokens, smart cards, and biometric devices are all items that can be used for Authentication. When one of these items listed above in conjunction with a second factor to validate authentication, it provides robust authentication of the individual by practicing which of the following?",
+      "options": {
+        "A": "Multi-party authentication",
+        "B": "Two-factor authentication",
+        "C": "Mandatory authentication",
+        "D": "Discretionary authentication"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Two-factor authentication provides identification of users via the combination of two different components, which could be something that the user knows, something that the user possesses or something that is inseparable from the user. Incorrect Answers: A: Multi-party authentication is not a valid term. C: Mandatory authentication is not a valid term. D: Discretionary authentication is not a valid term."
+    },
+    {
+      "id": 454,
+      "question": "Legacy single sign on (SSO) is:",
+      "options": {
+        "A": "Technology to allow users to authenticate to every application by entering the same user ID and password each time, thus having to remember only a single password.",
+        "B": "Technology to manage passwords consistently across multiple platforms, enforcing policies such as password change intervals.",
+        "C": "A mechanism where users can authenticate themselves once, and then a central repository of their credentials is used to launch various legacy applications.",
+        "D": "Another way of referring to SESAME and KryptoKnight, now that Kerberos is the de-facto industry standard single sign on mechanism."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Legacy single sign on (SSO) is a mechanism where users can authenticate themselves once, and then a central repository of their credentials is used to launch various legacy applications. An SSO solution may provide a bottleneck or single point of failure. If the SSO server goes down, users are unable to access network resources. This is why it’s a good idea to have some type of redundancy or fail-over technology in place. Incorrect Answers: A: Legacy single sign on (SSO) enables users to sign on once; they do not have to sign on to every application. B: Legacy single sign on (SSO) is not technology to manage passwords consistently across multiple platforms, enforcing policies such as password change intervals. This can be done with password synchronization. D: Legacy single sign on (SSO) is not another way of referring to SESAME and KryptoKnight."
+    },
+    {
+      "id": 455,
+      "question": "Which type of password token involves time synchronization?",
+      "options": {
+        "A": "Static password tokens",
+        "B": "Synchronous dynamic password tokens",
+        "C": "Asynchronous dynamic password tokens",
+        "D": "Challenge-response tokens"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Synchronous dynamic tokens make use of time or counters to synchronize a displayed token code with the code expected by the authentication server. Hence, the codes are synchronized. Incorrect Answers: A: Static passwords are reusable passwords that may or may not expire, and are normally user generated. C: Asynchronous dynamic tokens are not synchronized with a central server. D: Challenge-response tokens are asynchronous dynamic password tokens."
+    },
+    {
+      "id": 456,
+      "question": "Which of the following would describe a type of biometric error refers to as FASLE rejection rate?",
+      "options": {
+        "A": "Type I error",
+        "B": "Type II error",
+        "C": "Type III error",
+        "D": "CER error"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Type I error, or false rejection rate, is when a biometric system rejects an authorized individual. Incorrect Answers: B: A Type II error, or false acceptance rate, is when the system accepts impostors who should be rejected. C: A Type III error does not exist in biometrics. D: The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate."
+    },
+    {
+      "id": 457,
+      "question": "Which of the following statements pertaining to biometrics is FALSE?",
+      "options": {
+        "A": "Increased system sensitivity can cause a higher false rejection rate",
+        "B": "The crossover error rate is the point at which false rejection rate equals the false acceptance rate.",
+        "C": "False acceptance rate is also known as Type II error.",
+        "D": "Biometrics are based on the Type 2 authentication mechanism."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Type 2 authentication is based on something you have, like a token. Biometrics for part of Type 3 authentication, which is based on something you are. Something you are refers to an individual’s physical traits. Incorrect Answers: A, B, C: These options are all TRUE with regards to biometrics."
+    },
+    {
+      "id": 458,
+      "question": "Which of the following statements pertaining to Kerberos is TRUE?",
+      "options": {
+        "A": "Kerberos does not address availability",
+        "B": "Kerberos does not address integrity",
+        "C": "Kerberos does not make use of Symmetric Keys",
+        "D": "Kerberos cannot address confidentiality of information"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Kerberos is a trusted, third party authentication protocol that was developed under Project Athena at MIT. In Greek mythology, Kerberos is a three-headed dog that guards the entrance to the Underworld. Using symmetric key cryptography, Kerberos authenticates clients to other entities on a network of which a client requires services. Kerberos addresses the confidentiality and integrity of information. It does not address availability. Incorrect Answers: B: Kerberos does address integrity. C: Kerberos does make use of Symmetric Keys. D: Kerberos does address confidentiality of information."
+    },
+    {
+      "id": 459,
+      "question": "Which of the following BEST ensures accountability of users for the actions taken within a system or domain?",
+      "options": {
+        "A": "Identification",
+        "B": "Authentication",
+        "C": "Authorization",
+        "D": "Credentials"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Identification and authentication are the keystones of most access control systems. Identification is the act of a user professing an identity to a system, usually in the form of a log-on ID to the system. Identification establishes user accountability for the actions on the system. Authentication is verification that the user’s claimed identity is valid and is usually implemented through a user password at log-on time. To ‘ensure’ accountability, the user must prove that they are who they say they are. This is the function of authentication. Therefore, authentication best ensures accountability of users for the actions taken within a system or domain. Incorrect Answers: A: Identification is the user saying who they are. However, to ensure accountability, you need authentication to prove that they are who they say they are. C: Authorization is the rights and permissions granted to an individual which enable access to a computer resource. This does not ensure accountability because it does not ensure that the user accessing the system is who they say they are. D: Credentials are the user’s username and password combination. However, authentication is the process of validating the credentials. Credentials alone (without validation/authentication) do not ensure that the user accessing the system is who they say they are."
+    },
+    {
+      "id": 460,
+      "question": "Which of the following statements pertaining to biometrics is FALSE?",
+      "options": {
+        "A": "User can be authenticated based on behavior.",
+        "B": "User can be authenticated based on unique physical attributes.",
+        "C": "User can be authenticated by what he knows.",
+        "D": "A biometric system's accuracy is determined by its crossover error rate (CER)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Biometrics is based on “what you are” or “what you do”. It is not based on what you know. Incorrect Answers: A: Behavioral (what you do), is one of the two categories that biometrics are divided into. B: The physiological biometric category refers to traits that are physical attributes unique to a specific individual. D: When determining a biometric system’s accuracy, the CER metric is the most important measurement."
+    },
+    {
+      "id": 461,
+      "question": "Which of the following biometric devices offers the LOWEST CER?",
+      "options": {
+        "A": "Keystroke dynamics",
+        "B": "Voice verification",
+        "C": "Iris scan",
+        "D": "Fingerprint"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "According to the SANS Institute, an Iris scan has a lower CER than keystroke dynamics, voice verification, and fingerprint. Incorrect Answers: A, B, D: According to the SANS Institute, keystroke dynamics, voice verification, and fingerprint has a higher CER than iris scan."
+    },
+    {
+      "id": 462,
+      "question": "Which of the following is the WEAKEST authentication mechanism?",
+      "options": {
+        "A": "Passphrases",
+        "B": "Passwords",
+        "C": "One-time passwords",
+        "D": "Token devices"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Passwords are considered one of the weakest security mechanisms available, because users generally select passwords that are easy to guess. Incorrect Answers: A: Because a passphrase is longer, it is said to be more secure than a password. C: Once a one-time password is used, it is no longer valid. It is, therefore, more secure than a normal password. D: Token devices generate a One-time password, which is more secure than a normal password."
+    },
+    {
+      "id": 463,
+      "question": "When a biometric system is used, which error type deals with the possibility of GRANTING access to impostors who should be REJECTED?",
+      "options": {
+        "A": "Type I error",
+        "B": "Type II error",
+        "C": "Type III error",
+        "D": "Crossover error"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Type II error, or false acceptance rate, is when the system accepts impostors who should be rejected. Incorrect Answers: A: A Type I error, or false rejection rate, is when a biometric system rejects an authorized individual. C: A Type III error does not exist in biometrics. D: The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate."
+    },
+    {
+      "id": 464,
+      "question": "Which of the following offers advantages such as the ability to use stronger passwords, easier password administration, one set of credential, and faster resource access?",
+      "options": {
+        "A": "Smart cards",
+        "B": "Single Sign-On (SSO)",
+        "C": "Symmetric Ciphers",
+        "D": "Public Key Infrastructure (PKI)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Single Sign-On (SSO) allows a user to enter credentials once to gain access to all resources in primary and secondary network domains. Thereby, minimizing the amount of time users spend authenticating to resources and enabling the administrator to streamline user accounts and better control access rights. Furthermore, security is improved by reducing the likelihood that users will record passwords and also lessens the administrator’s time spent on adding and removing user accounts and modifying access permissions. Because SSO requires a user to remember only one password, a but one of the goals is that if a user only has to remember one password, a more complicated and secure password policy can be enforced. Incorrect Answers: A: Smart cards are used for authentication purposes in access control. Although it can provide extra protection in an SSO environment, it does not provide the ability to use stronger passwords, easier password administration, one set of credential, and faster resource access. C: Symmetric Ciphers are used for encryption and decryption. It does not provide the ability to use stronger passwords, easier password administration, one set of credential, and faster resource access. D: Public Key Infrastructure allows for people who are widely dispersed to communicate securely and predictably."
+    },
+    {
+      "id": 465,
+      "question": "Which of the following describes the major disadvantage of many Single Sign-On (SSO) implementations?",
+      "options": {
+        "A": "Once an individual obtains access to the system through the initial log-on, they have access to all resources within the environment that the account has access to.",
+        "B": "The initial logon process is cumbersome to discourage potential intruders.",
+        "C": "Once a user obtains access to the system through the initial log-on, they only need to logon to some applications.",
+        "D": "Once a user obtains access to the system through the initial log-on, he has to logout from all other systems"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A security issue to consider in an SSO environment is that If an attacker uncovers a credential set, the attacker would have access to every resource within the environment that the compromised account has access to."
+    },
+    {
+      "id": 466,
+      "question": "Which of the following is implemented through scripts or smart agents that replay the users multiple log-ins against authentication servers to verify a user's identity which permit access to system services?",
+      "options": {
+        "A": "Single Sign-On",
+        "B": "Dynamic Sign-On",
+        "C": "Smart cards",
+        "D": "Kerberos"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Single Sign-On (SSO) addresses the cumbersome situation of logging on multiple times to access different resources. In SSO, a user provides one ID and password per work session and is automatically logged-on to all the required applications. SSO can be implemented by using scripts that replay the users’ multiple log-ins, or by using authentication servers to verify a user’s identity and encrypted authentication tickets to permit access to system services. Incorrect Answers: B: Dynamic Sign-On is not the correct term to describe an authentication system that can be implemented through scripts or smart agents that replay the users multiple log-ins against authentication servers to verify a user's identity which permit access to system services. C: Smart cards provide static or dynamic passwords or certificates to authenticate a user. The authentication happens every time the smart card is presented and the login. This is not what is described in the question. D: Kerberos can be used to implement Single-Sign on. However, “single sign-on” is the term described in the question."
+    },
+    {
+      "id": 467,
+      "question": "Which of the following protects a password from eavesdroppers and supports the encryption of communication?",
+      "options": {
+        "A": "Challenge Handshake Authentication Protocol (CHAP)",
+        "B": "Challenge Handshake Identification Protocol (CHIP)",
+        "C": "Challenge Handshake Encryption Protocol (CHEP)",
+        "D": "Challenge Handshake Substitution Protocol (CHSP)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "One approach to remote access security is the Challenge Handshake Authentication Protocol (CHAP). CHAP protects the password from eavesdroppers and supports the encryption of communication. Challenge Handshake Authentication Protocol (CHAP) addresses some of the vulnerabilities found in PAP. It uses a challenge/response mechanism to authenticate the user instead of sending a password. When a user wants to establish a PPP connection and both ends have agreed that CHAP will be used for authentication purposes, the user’s computer sends the authentication server a logon request. The server sends the user a challenge (nonce), which is a random value. This challenge is encrypted with the use of a predefined password as an encryption key, and the encrypted challenge value is returned to the server. The authentication server also uses the predefined password as an encryption key and decrypts the challenge value, comparing it to the original value sent. If the two results are the same, the authentication server deduces that the user must have entered the correct password, and authentication is granted. Incorrect Answers: B: The correct name for the protocol is Challenge Handshake Authentication Protocol (CHAP), not Challenge Handshake Identification Protocol (CHIP). C: The correct name for the protocol is Challenge Handshake Authentication Protocol (CHAP), not Challenge Handshake Encryption Protocol (CHEP). D: The correct name for the protocol is Challenge Handshake Authentication Protocol (CHAP), not Challenge Handshake Substitution Protocol (CHSP)."
+    },
+    {
+      "id": 468,
+      "question": "The act of requiring two of the three factors to be used in the authentication process refers to:",
+      "options": {
+        "A": "Two-Factor Authentication",
+        "B": "One-Factor Authentication",
+        "C": "Bi-Factor Authentication",
+        "D": "Double Authentication"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Two-Factor Authentication, also known as strong authentication, must include two out of the three authentication types. Incorrect Answers: B: One-Factor Authentication would only include a single authentication type. C: Bi-Factor Authentication is not a valid authentication term. D: Double Authentication is not a valid authentication term."
+    },
+    {
+      "id": 469,
+      "question": "Which of the following would be true about Static password tokens?",
+      "options": {
+        "A": "The owner identity is authenticated by the token",
+        "B": "The owner will never be authenticated by the token.",
+        "C": "The owner will authenticate himself to the system.",
+        "D": "The token does not authenticates the token owner but the system."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Static password token is a device that contains a password which is physically hidden, but which is transmitted for each authentication. The token authenticates the identity of the owner to the information system. Incorrect Answers: B: Static password tokens will authenticate the identity of the owner to the information system. C: Static password tokens do not allow the owner to authenticate himself to the system. It authenticates the identity of the owner to the information system. D: Static password tokens authenticate the identity of the owner to the information system, not the system."
+    },
+    {
+      "id": 470,
+      "question": "In Synchronous dynamic password tokens:",
+      "options": {
+        "A": "The token generates a new password value at fixed time intervals (this password could be based on the time of day encrypted with a secret key).",
+        "B": "The token generates a new non-unique password value at fixed time intervals (this password could be based on the time of day encrypted with a secret key).",
+        "C": "The unique password is not entered into a system or workstation along with an owner's PIN.",
+        "D": "The authentication entity in a system or workstation knows an owner's secret key and PIN, and the entity verifies that the entered password is invalid and that it was entered during the invalid time window."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Synchronous dynamic password tokens generate new passwords at specific time intervals that are synched with the main system. Passwords are only valid for a specific time period. Incorrect Answers: B: With synchronous dynamic password tokens, a timer is used to rotate through various combinations produced by a cryptographic algorithm. Therefore the password will be unique. C: With synchronous dynamic password tokens, the user enters the generated value and a user ID (this could be a PIN) into the computer, which then passes them to the server running the authentication service. D: This is incorrect as the time value on the token device and a secret key is used to create the one-time password, which the authentication service decrypts and compares to the value it expected."
+    },
+    {
+      "id": 471,
+      "question": "In biometrics, \"one-to-many\" search against database of stored biometric images is done in:",
+      "options": {
+        "A": "Authentication",
+        "B": "Identification",
+        "C": "Identities",
+        "D": "Identity-based access control"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A biometric system executes a one-to-many comparison against a biometric database in attempt to establish the identity of an unknown user in identification mode. If the comparison of the biometric sample to a template in the database falls within a threshold previously set, identifying the individual will succeed. Incorrect Answers: A: In authentication mode, the biometric system performs a one-to-one comparison of a captured biometric with a specific template stored in a biometric database in order to confirm the individual is the person they claim to be. C: Identities refer to who users are, not a mode used in biometrics. D: An identity-based access control is a type of Discretionary Access Control (DAC) that is based on an individual's identity."
+    },
+    {
+      "id": 472,
+      "question": "Which of the following is true of biometrics?",
+      "options": {
+        "A": "It is used for identification in physical controls and it is not used in logical controls.",
+        "B": "It is used for authentication in physical controls and for identification in logical controls.",
+        "C": "It is used for identification in physical controls and for authentication in logical controls.",
+        "D": "Biometrics has no role in logical controls."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Biometrics is used for identification in physical controls and for authentication in logical controls. Physical controls are items put into place to protect facility, personnel, and resources. As a physical control, biometrics provides protection by identifying a person to see if that person is authorized to access a facility. When a user is identified and granted physical access to a facility, biometrics can be used for authentication in logical controls to provide access to resources. Controls are put into place to reduce the risk an organization faces, and they come in three main flavors: administrative, technical, and physical. Administrative controls are commonly referred to as “soft controls” because they are more management-oriented. Examples of administrative controls are security documentation, risk management, personnel security, and training. Technical controls (also called logical controls) are software or hardware components, as in firewalls, IDS, encryption, identification and authentication mechanisms. And physical controls are items put into place to protect facility, personnel, and resources. Examples of physical controls are security guards, locks, fencing, and lighting. Incorrect Answers: A: Biometrics is used in logical controls. B: Biometrics is used for identification in physical controls and for authentication in logical controls, not the other way round. Biometrics is used first as a physical control to identify a person to grant access to a facility, and then as a logical control to authenticate the user to provide access to resources. D: Biometrics does have a role in logical controls."
+    },
+    {
+      "id": 473,
+      "question": "What is the percentage of valid subjects that are falsely rejected by a Biometric Authentication system called?",
+      "options": {
+        "A": "False Rejection Rate (FRR) or Type I Error",
+        "B": "False Acceptance Rate (FAR) or Type II Error",
+        "C": "Crossover Error Rate (CER)",
+        "D": "True Rejection Rate (TRR) or Type III Error"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Type I error, or false rejection rate, is when a biometric system rejects an authorized individual. Incorrect Answers: B: A Type II error, or false acceptance rate, is when the system accepts impostors who should be rejected. C: The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate. D: The true reject rate refers to the percentage of times a system correctly rejects a false claim of identity."
+    },
+    {
+      "id": 474,
+      "question": "What is the percentage of invalid subjects that are falsely accepted by a Biometric authentication system called?",
+      "options": {
+        "A": "False Rejection Rate (FRR) or Type I Error",
+        "B": "False Acceptance Rate (FAR) or Type II Error",
+        "C": "Crossover Error Rate (CER)",
+        "D": "True Acceptance Rate (TAR) or Type III Error"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Type II error, or false acceptance rate, is when the system accepts impostors who should be rejected. Incorrect Answers: A: A Type I error, or false rejection rate, is when a biometric system rejects an authorized individual. C: The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate. D: The true accept rate is the percentage of times a system correctly verifies a true claim of identity."
+    },
+    {
+      "id": 475,
+      "question": "What is the percentage at which the False Rejection Rate equals the False Acceptance Rate called?",
+      "options": {
+        "A": "False Rejection Rate (FRR) or Type I Error",
+        "B": "False Acceptance Rate (FAR) or Type II Error",
+        "C": "Crossover Error Rate (CER)",
+        "D": "Failure to enroll rate (FTE or FER)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The crossover error rate (CER) is a percentage that signifies the point at which the false rejection rate equals the false acceptance rate. Incorrect Answers: A: A Type I error, or false rejection rate, is when a biometric system rejects an authorized individual. B: A Type II error, or false acceptance rate, is when the system accepts impostors who should be rejected. D: The Failure to enroll rate is the rate at which attempts to create a template from an input is unsuccessful."
+    },
+    {
+      "id": 476,
+      "question": "What is a password called that is the same for each log-on session?",
+      "options": {
+        "A": "one-time password",
+        "B": "two-time password",
+        "C": "static password",
+        "D": "dynamic password"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Static passwords are passwords that can be reused, but may or may not expire. They can, therefore, be used for each log-on session if password expiration has not been configured. Incorrect Answers: A: A one-time password is no longer valid and, if obtained by a hacker, cannot be reused after it has been used. B: A two-time password is not a valid password type. D: A dynamic password is no longer valid and, if obtained by a hacker, cannot be reused after it has been used."
+    },
+    {
+      "id": 477,
+      "question": "What is a sequence of characters that is usually longer than the allotted number for a password called?",
+      "options": {
+        "A": "passphrase",
+        "B": "cognitive phrase",
+        "C": "anticipated phrase",
+        "D": "Real phrase"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A passphrase is a sequence of characters that is longer than a password and, in some cases, takes the place of a password during an authentication process. Passphrases are long static passwords, which is made up of words in a phrase or sentence. Incorrect Answers: B: A sequence of characters that is usually longer than the allotted number for a password is called a passphrase, not a cognitive phrase. C: A sequence of characters that is usually longer than the allotted number for a password is called a passphrase, not an anticipated phrase. D: A sequence of characters that is usually longer than the allotted number for a password is called a passphrase, not a real phrase."
+    },
+    {
+      "id": 478,
+      "question": "Which BEST describes a tool (i.e. keyfob, calculator, memory card or smart card) used to supply dynamic passwords?",
+      "options": {
+        "A": "Tickets",
+        "B": "Tokens",
+        "C": "Token passing networks",
+        "D": "Coupons"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A security token (or sometimes a hardware token, authentication token, USB token, cryptographic token, software token, virtual token, or key fob) may be a physical device that an authorized user is given to ease authentication. Security tokens are used to prove one's identity electronically (as in the case of a customer trying to access their bank account). The token is used in addition to or in place of a password to prove that the customer is who they claim to be. The token acts like an electronic key to access something. Some may store cryptographic keys, such as a digital signature, or biometric data, such as fingerprint minutiae. Some designs feature tamper resistant packaging, while others may include small keypads to allow entry of a PIN or a simple button to start a generating routine with some display capability to show a generated key number. All tokens contain some secret information that is used to prove identity. There are different ways in which this information can be used. Examples include: Synchronous dynamic password token: A timer is used to rotate through various combinations produced by a cryptographic algorithm. The token and the authentication server must have synchronized clocks. Asynchronous password token: A one-time password is generated without the use of a clock, either from a one-time pad or cryptographic algorithm. Incorrect Answers: A: A tool such as a keyfob, calculator, memory card or smart card used to supply dynamic passwords is not known as a ticket. C: Token passing networks are computer networks such as Token Ring or FDDI networks. They do not supply dynamic passwords. D: A tool such as a keyfob, calculator, memory card or smart card used to supply dynamic passwords is not known as a coupon."
+    },
+    {
+      "id": 479,
+      "question": "Which one of the following factors is NOT one on which Authentication is based?",
+      "options": {
+        "A": "Type 1 Something you know, such as a PIN or password",
+        "B": "Type 2 Something you have, such as an ATM card or smart card",
+        "C": "Type 3 Something you are (based upon one or more intrinsic physical or behavioral traits), such as a fingerprint or retina scan",
+        "D": "Type 4 Something you are, such as a system administrator or security administrator"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Something you are, or authentication by characteristic, is based on a unique physical attribute, not what role you fulfill. Incorrect Answers: A: Something you know, or authentication by knowledge, can be a password, PIN, mother’s maiden name, or the combination to a lock. B: Something you have, or authentication by ownership, can be a key, swipe card, access card, or badge. C: Something you are, or authentication by characteristic, is based on a unique physical attribute, referred to as biometrics."
+    },
+    {
+      "id": 480,
+      "question": "What is called the use of technologies such as fingerprint, retina, and iris scans to authenticate the individuals requesting access to resources?",
+      "options": {
+        "A": "Micrometrics",
+        "B": "Macrometrics",
+        "C": "Biometrics",
+        "D": "MicroBiometrics"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Some biometric systems base authentication decisions on physical attributes such as iris, retina, or fingerprints. Incorrect Answers: A: Micrometrics is a business term used for measures that support the improvement and management of a particular project, program or initiative. B: Macrometrics is a business term used for the overall organization or cross-functional metrics used to drive strategy. D: MicroBiometrics is not a technology that uses fingerprint, retina, and iris scans to authenticate the individuals requesting access to resources"
+    },
+    {
+      "id": 481,
+      "question": "What is the access protection system that limits connections by calling back the number of a previously authorized location called?",
+      "options": {
+        "A": "Sendback systems",
+        "B": "Callback forward systems",
+        "C": "Callback systems",
+        "D": "Sendback forward systems"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Callback is when the host system disconnects the caller and then dials the authorized telephone number of the remote terminal in order to reestablish the connection. Incorrect Answers: A: A sendback system is not a valid system type with regards to CISSP. B: A callback forward system is not a valid system type with regards to CISSP. D: A sendback forward system is not a valid system type with regards to CISSP."
+    },
+    {
+      "id": 482,
+      "question": "Which of the following is the most reliable authentication method for remote access?",
+      "options": {
+        "A": "Variable callback system",
+        "B": "Synchronous token",
+        "C": "Fixed callback system",
+        "D": "Combination of callback and caller ID"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A Synchronous token generates a one-time password that is only valid for a short period of time. Once the password is used it is no longer valid, and it expires if not entered in the acceptable time frame. Incorrect Answers: A: Although variable callback systems are more flexible than fixed callback systems, the system assumes the identity of the individual unless two-factor authentication is also implemented. C: Callback systems authenticate a person, but anyone can pretend to be that person. They are tied to a specific place and phone number, which can be spoofed by implementing call-forwarding. D: The caller ID and callback functionality provides greater confidence and auditability of the caller's identity. However, unless combined with strong authentication, any individual at the location could obtain access."
+    },
+    {
+      "id": 483,
+      "question": "Which of the following is NOT a security characteristic we need to consider while choosing a biometric identification system?",
+      "options": {
+        "A": "data acquisition process",
+        "B": "cost",
+        "C": "enrollment process",
+        "D": "speed and user interface"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The cost of the biometric identification system is a financial consideration, not a security consideration. The data acquisition process refers to how a user’s biometric data will be acquired. Will you use a fingerprint scan, a retina scan, a palm scan etc. This is an obvious security characteristic to be considered while choosing a biometric identification system. The enrollment process refers to how the user’s biometric data will be initially acquired and the data stored as a template for comparison for future identifications. This is also a security characteristic to be considered while choosing a biometric identification system. The speed and user interface are security characteristics to be considered while choosing a biometric identification system. You need a biometric identification system that does not keep the user waiting before being identified and authenticated. The user interface for a biometric identification system should include instructional and feedback aspects that would enable users to use the system effectively without assistance. Incorrect Answers: A: The data acquisition process refers to how a user’s biometric data will be acquired. This is a security characteristic to be considered while choosing a biometric identification system. C: The enrollment process is a security characteristic to be considered while choosing a biometric identification system. D: The speed and user interface are security characteristics to be considered while choosing a biometric identification system."
+    },
+    {
+      "id": 484,
+      "question": "In biometric identification systems, at the beginning, it was soon apparent that truly positive identification could only be based on physical attributes of a person. This raised the necessity of answering two questions:",
+      "options": {
+        "A": "What was the sex of a person and his age?",
+        "B": "What part of body to be used and how to accomplish identification that is viable?",
+        "C": "What was the age of a person and his income level?",
+        "D": "What was the tone of the voice of a person and his habits?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "When it became apparent that truly positive identification could only be based on physical attributes of a person, two questions had to be answered. First, what part of body could be used? Second, how could identification be accomplished with sufficient accuracy, reliability and speed so as to be viable? Because most identity authentication requirements take place when people are fully clothed (neck to feet and wrists), the parts of the body conveniently available for this purpose are the hands, face and eyes. Incorrect Answers: A: The sex of a person and his age are not considered in biometric identification systems. C: The age of a person and his income level are not considered in biometric identification systems. D: The tone of the voice of a person and his habits are not considered in biometric identification systems."
+    },
+    {
+      "id": 485,
+      "question": "What is the primary role of smartcards in a PKI?",
+      "options": {
+        "A": "Transparent renewal of user keys",
+        "B": "Easy distribution of the certificates between the users",
+        "C": "Fast hardware encryption of the raw data",
+        "D": "Tamper resistant, mobile storage and application of private keys of the users"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A smart card, which includes the ability to process data stored on it, is also able to deliver a two-factor authentication method as the user may have to enter a PIN to unlock the smart card. The authentication can be completed by using an OTP, by utilizing a challenge/response value, or by presenting the user’s private key if it is used within a PKI environment. The fact that the memory of a smart card is not readable until the correct PIN is entered, as well as the complexity of the smart token makes these cards resistant to reverse-engineering and tampering methods. Incorrect Answers: A: Transparent renewal of user keys is not the primary role of smartcards in a PKI. B: Easy distribution of the certificates between the users is not the primary role of smartcards in a PKI. C: Fast hardware encryption of the raw data is not the primary role of smartcards in a PKI."
+    },
+    {
+      "id": 486,
+      "question": "In biometric identification systems, the parts of the body conveniently available for identification are:",
+      "options": {
+        "A": "neck and mouth",
+        "B": "hands, face, and eyes",
+        "C": "feet and hair",
+        "D": "voice and neck"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Most identity authentication takes place when people are fully clothed (neck to feet and wrists), the parts of the body conveniently available for this purpose are hands, face, and eyes. Incorrect Answers: A: The neck is not convenient as it can be covered. C: The feet normally have shoes on, and therefore not convenient. D: The neck is not convenient as it can be covered."
+    },
+    {
+      "id": 487,
+      "question": "Which of the following is TRUE of two-factor authentication?",
+      "options": {
+        "A": "It uses the RSA public-key signature based on integers with large prime factors.",
+        "B": "It requires two measurements of hand geometry.",
+        "C": "It does not use single sign-on technology.",
+        "D": "It relies on two independent proofs of identity."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "There are three general factors that are used for authentication: Something a person knows. Something a person has. Something a person is. Two-factor authentication requires two of the three factors to be part of authentication process. Incorrect Answers: A: RSA encryption uses integers with exactly two prime factors, but the term \"two-factor authentication\" is not used in that context. B: Measuring hand geometry twice only provides one factor. C: Single sign-on (SSO) technology allows a user to enter their credentials once to gain access to multiple systems. Two-factor authentication could be used for SSO, not the other way around."
+    },
+    {
+      "id": 488,
+      "question": "What kind of certificate is used to validate a user identity?",
+      "options": {
+        "A": "Public key certificate",
+        "B": "Attribute certificate",
+        "C": "Root certificate",
+        "D": "Code signing certificate"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In cryptography, a public key certificate (or identity certificate) is an electronic document which incorporates a digital signature to bind together a public key with an identity — information such as the name of a person or an organization, their address, and so forth. The certificate can be used to verify that a public key belongs to an individual. Incorrect Answers: B: In computer security, an authorization certificate (also known as an attribute certificate) is a digital document that describes a written permission from the issuer to use a service or a resource that the issuer controls or has access to use. C: A root certificate is an unsigned or a self-signed public key certificate that identifies the Root Certificate Authority (CA). D: Code signing digitally signs executables and scripts to verify the software author and guarantee that the code has not been changed or tainted since it was signed by use of a cryptographic hash."
+    },
+    {
+      "id": 489,
+      "question": "Single Sign-on (SSO) is characterized by which of the following advantages?",
+      "options": {
+        "A": "Convenience",
+        "B": "Convenience and centralized administration",
+        "C": "Convenience and centralized data administration",
+        "D": "Convenience and centralized network administration"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Single sign-on allows users to type their passwords only once when they first log in to access all the network resources. This makes SSO convenient. Single Sign-on allows a single administrator to add and delete accounts across the entire network from one user interface, providing centralized administration. Incorrect Answers: A: Single Sign-on does offer convenience, but it also offers centralized administration, making option B a more suitable answer. C: Centralized data administration is not an advantage of Single Sign-on. D: Centralized network administration is not an advantage of Single Sign-on."
+    },
+    {
+      "id": 490,
+      "question": "What is called the act of a user professing an identity to a system, usually in the form of a log-on ID?",
+      "options": {
+        "A": "Authentication",
+        "B": "Identification",
+        "C": "Authorization",
+        "D": "Confidentiality"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Identification involves a user supplying identification information using a username, user ID, or account number. Incorrect Answers: A: Authentication involves verifying a user’s identification information using a passphrase, PIN value, biometric, one-time password, or password. C: Authorization is when a system establishes whether the user is authorized to access the particular resource and what actions he is permitted to perform on that resource. D: Confidentiality is used to make sure that the required level of secrecy is imposed at every junction of data processing and prevents unauthorized disclosure."
+    },
+    {
+      "id": 491,
+      "question": "What is the verification that the user's claimed identity is valid called and is usually implemented through a user password at log-on time?",
+      "options": {
+        "A": "Authentication",
+        "B": "Identification",
+        "C": "Integrity",
+        "D": "Confidentiality"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Authentication involves verifying a user’s identification information using a passphrase, PIN value, biometric, one-time password, or password. Incorrect Answers: B: Identification involves a user supplying identification information using a username, user ID, or account number. C: Integrity is a security principle that ensures information and systems are not maliciously or accidentally modified. D: Confidentiality is used to make sure that the required level of secrecy is imposed at every junction of data processing and prevents unauthorized disclosure."
+    },
+    {
+      "id": 492,
+      "question": "Which of the following is TRUE about Kerberos?",
+      "options": {
+        "A": "It utilizes public key cryptography.",
+        "B": "It encrypts data after a ticket is granted, but passwords are exchanged in plain text.",
+        "C": "It depends upon symmetric ciphers.",
+        "D": "It is a second party authentication system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Kerberos makes use of symmetric key cryptography and offers end-to-end security. The majority Kerberos implementations works with shared secret keys. Incorrect Answers: A: Kerberos makes use of symmetric key cryptography, which does not include the use of public keys. B: Kerberos was specifically designed to remove the need to transmit passwords over the network. D: Kerberos is a trusted third-party service."
+    },
+    {
+      "id": 493,
+      "question": "A confidential number used as an authentication factor to verify a user's identity is called a:",
+      "options": {
+        "A": "PIN",
+        "B": "User ID",
+        "C": "Password",
+        "D": "Challenge"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Personal Identification Number (PIN) is a numeric password shared between a user and a system, which can be used to authenticate the user to the system. Incorrect Answers: B: User ID is used for identification, not authentication. C: A password is a word or string of characters used for user authentication. D: Challenge-response authentication involves one party presenting a question (\"challenge\") and another party providing a valid answer (\"response\") to be authenticated. It does not specifically be a number sequence."
+    },
+    {
+      "id": 494,
+      "question": "Which type of password provides maximum security because a new password is required for each new log-on?",
+      "options": {
+        "A": "One-time or dynamic password",
+        "B": "Cognitive password",
+        "C": "Static password",
+        "D": "Passphrase"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A one-time or dynamic password is no longer valid and, if obtained by a hacker, cannot be reused after it has been used. A one-time or dynamic password is used in environments where a higher level of security than static passwords is required. Incorrect Answers: B: After a user is enrolled by answering several questions based on her life experiences, the user can answer the questions asked of her to be authenticated instead of having to remember a password. The questions do not change from log-on to log-on. C: Static passwords are passwords that can be reused, but may or may not expire. D: Passphrases are long static passwords, which is made up of words in a phrase or sentence."
+    },
+    {
+      "id": 495,
+      "question": "The primary service provided by Kerberos is which of the following?",
+      "options": {
+        "A": "non-repudiation",
+        "B": "confidentiality",
+        "C": "authentication",
+        "D": "authorization"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Kerberos is a third-party authentication service that can be used to support SSO. Incorrect Answers: A: Non-repudiation provides assurance that a specific user performed a specific transaction that did not change. It is not, however, the primary service provided by Kerberos. B: Confidentiality strives to prevent unauthorized read access to data. It is not, however, the primary service provided by Kerberos. D: Authorization refers to the actions you are allowed to carry out on a system after identification and authentication has taken place. It is not, however, the primary service provided by Kerberos."
+    },
+    {
+      "id": 496,
+      "question": "Which of the following is NOT true of the Kerberos protocol?",
+      "options": {
+        "A": "Only a single login is required per session.",
+        "B": "The initial authentication steps are done using public key algorithm.",
+        "C": "The KDC is aware of all systems in the network and is trusted by all of them",
+        "D": "It performs mutual authentication"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Kerberos uses shared secret keys and tickets for the initial authentication, not a public key algorithm. Incorrect Answers: A: Kerberos is an example of a single sign-on system for distributed environments, and therefore only requires a single login per session. C: the foundation of Kerberos security is trust that clients and services have in the integrity of the KDC. D: Kerberos provides mutual authentication in that both the user and the server verify each other's identity."
+    },
+    {
+      "id": 497,
+      "question": "The authenticator within Kerberos provides a requested service to the client after validating which of the following?",
+      "options": {
+        "A": "timestamp",
+        "B": "client public key",
+        "C": "client private key",
+        "D": "server public key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In Kerberos implementations where the use of an authenticator is configured, the user sends their identification information and a timestamp and sequence number encrypted with the shared session key to the requested service, which then decrypts this information and compares it with the identification data the KDC sent to it about this requesting user. If the data matches, the user is allowed access to the requested service. Incorrect Answers: B: A requested service is provided to the client after validating a user’s identification information and a timestamp and encrypted sequence number, not a client public key. C: A requested service is provided to the client after validating a user’s identification information and a timestamp and encrypted sequence number, not a client private key. D: A requested service is provided to the client after validating a user’s identification information and a timestamp and encrypted sequence number, not a server public key."
+    },
+    {
+      "id": 498,
+      "question": "Which of the following is addressed by Kerberos?",
+      "options": {
+        "A": "Confidentiality and Integrity",
+        "B": "Authentication and Availability",
+        "C": "Validation and Integrity",
+        "D": "Auditability and Integrity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Kerberos is a trusted, third party authentication protocol that was developed under Project Athena at MIT. In Greek mythology, Kerberos is a three-headed dog that guards the entrance to the Underworld. Using symmetric key cryptography, Kerberos authenticates clients to other entities on a network of which a client requires services. Kerberos addresses the confidentiality and integrity of information. It does not directly address availability and attacks such as frequency analysis. Incorrect Answers: B: Kerberos an authentication protocol. However, it does not address availability. C: Kerberos does address integrity but it does not address validation. D: Kerberos does address integrity but it does not address auditability."
+    },
+    {
+      "id": 499,
+      "question": "Kerberos is vulnerable to replay in which of the following circumstances?",
+      "options": {
+        "A": "When a private key is compromised within an allotted time window.",
+        "B": "When a public key is compromised within an allotted time window.",
+        "C": "When a ticket is compromised within an allotted time window.",
+        "D": "When the KSD is compromised within an allotted time window."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Kerberos addresses the confidentiality and integrity of information. It does not directly address availability and attacks such as frequency analysis. Furthermore, because all the secret keys are held and authentication is performed on the Kerberos TGS and the authentication servers, these servers are vulnerable to both physical attacks and attacks from malicious code. Replay can be accomplished on Kerberos if the compromised tickets are used within an allotted time window. Because a client’s password is used in the initiation of the Kerberos request for the service protocol, password guessing can be used to impersonate a client. Incorrect Answers: A: Kerberos does not use a private key like an asymmetric key cryptography system does. It uses symmetric key cryptography (shared key). B: Kerberos does not use a public key like an asymmetric key cryptography system does. It uses symmetric key cryptography (shared key). D: KSD being compromised is not a vulnerability of Kerberos."
+    },
+    {
+      "id": 500,
+      "question": "Like the Kerberos protocol, SESAME is also subject to which of the following?",
+      "options": {
+        "A": "timeslot replay",
+        "B": "password guessing",
+        "C": "symmetric key guessing",
+        "D": "asymmetric key guessing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Just like Kerberos, SESAME depends on the initial user authentication. For that reason, SESAME has the same weakness to attacks on the user’s password as Kerberos does. Incorrect Answers: A: SESAME is not susceptible to timeslot replay attacks. C: Symmetric key guessing is not a weakness of Kerberos. D: Asymmetric key guessing is not a weakness of Kerberos."
+    }
+  ]
+}

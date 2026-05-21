@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "question_range": "Q201 - Q209",
+    "total_questions": 9
+  },
+  "questions": [
+    {
+      "id": 201,
+      "question": "Which of the following statements regarding an off-site information processing facility is TRUE? Q?W—i%f%%%%&%%E%%?",
+      "options": {
+        "A": "Need not have the same level of environmental monitoring as the originating site since this would be cost prohibitive. $%%E€5%%¥%%%%W,i%%%$%%",
+        "B": "lt should have the same amount of physical access restrictions as the primary processing site. E&€5i%%@%%%E%@W%",
+        "C": "|t should be located in proximity to the originating site so that it can quickly be made operational. €@?%§%,U@EW&W",
+        "D": "|t should be easily identified from the outside so in the event of an emergency it can be easily found. E@§M%%§%%,%UE%%%%fWM@§%%"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 202,
+      "question": "Which of the following is an ADVANTAGE of the use of hot sites as a backup alternative? TWW—%%¢%%%%H%%%?",
+      "options": {
+        "A": "Hot sites do not require that equipment and systems software be compatible with the primary installation being backed up. %$%%&%%%%H#5%%%%%§",
+        "B": "Hot sites can be used for an extended amount of time. E%%%H@WWQ@%%Hé",
+        "C": "Hot sites can be made ready for operation within a short period of time. WQE%W@W@%",
+        "D": "The costs associated with hot sites are low. %%%%"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 203,
+      "question": "What would be the PRIMARY purpose of periodically testing offsite hardware backup facilities? §?ill36§l@l=%l5:‘i§t1‘§’&EI‘JE§J%l?l!lifil§l‘]I%* E El‘]%lJrQ\\?",
+      "options": {
+        "A": "Ensure that data can be restored at offsite facilities. ii%i%i$U’EFl LiWE5'Fiii.i§ZE£E",
+        "B": "Ensure the continued compatibility of the contingency facilities 6il%Fi%'i§2‘EfEE‘J%?F§%t%'l$",
+        "C": "Eliminate the need to develop detailed contingency plans T\\%’%i’5'l%i$éHElE<]JE%1fE‘i%",
+        "D": "Ensure that operations documentation remains current E%l%?;\"él’l5il‘liil%%B‘?‘%<%'<Ji"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 204,
+      "question": "Which of the following tasks is NOT usually part of a Business Impact Analysis (BIA)? l‘§Ill‘§:ll3I3“i$%i§’%'\"l§i‘Jk%%2l1|’I1J§1‘lr)? (BIA) Ei‘Jl9E%?",
+      "options": {
+        "A": "ldentify organizational risks. 1lP\"\\§'a|lZHZ/‘:lEl<J)>_<\\|3{1‘",
+        "B": "Develop a mission statement. §f7§Z\"\"/|\\li’€|iF:‘5FU§",
+        "C": "|dentify the type and quantity of resources required for the recovery. iE§'1'lW§F)f%'%E<J §$I§‘IEI‘J%“l*3§%Hi3Z%",
+        "D": "|dentify critical business processes and the dependencies between them. “:'i\"5'J9€%E1k§§‘bfEf_%%D\"ElI‘]Z|‘EU Blllwlféé/%"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 205,
+      "question": "Which ofthe following statements pertaining to RAID technologies is incorrect? 159% RAID %i7l<“F@‘l§ID'i%$IEE%B‘J?",
+      "options": {
+        "A": "RA|D-4 uses dedicated parity. 4555 RAID4 Til?",
+        "B": "RAID-0 relies solely on striping. 276 Ill; 1H1P>?? >l >r>lll“lfl‘rl mmpWWi%",
+        "C": "RAlD-5 has a higher performance in read/write speeds than the other levels. mm5E€%E%%%@5AEE%%%",
+        "D": "RAlD-3 uses byte-level striping with dedicated parity . mms@%%€%%&%?%"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 206,
+      "question": "A contingency plan should address: )YL§1l+£Ul&j%7J§l+Z|‘R]%E:",
+      "options": {
+        "A": "ldentified risks. iFl§'2'JJ3\\l5",
+        "B": "Residual risks 5JJ%§?J>@l3",
+        "C": "All answers are correct. U~_l1%$€%l3IEE% 277 11>? >llil Ell >\" \\ $16 -u otential risks. lfilxkllfj"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 207,
+      "question": "During the salvage of the Local Area Network and Servers, which of the following steps would normally be performed first? ?£¥5Zi%l?1iil7><]%[llil?¢%%§?l?lL, T§U|13§l§’|‘Zl%i$ T",
+      "options": {
+        "A": "Recover equipment",
+        "B": "Assess damage to LAN and servers 281 @W 11>? ?iill il% “?. i v . > U(T3 3*-ll? l/‘ll? Elf WE%W%%%%% ,",
+        "C": "lnstall LAN communications network and servers §%EW%W%W%%%",
+        "D": "Damage mitigation H&% '%,'3%:B"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 208,
+      "question": "Which of the following statements pertaining to a Criticality Survey is incorrect? T5Ul3il§—1D\"i9€%‘§€iE'l$iF<El§E‘Ji%iizEé$IEE% H4]?",
+      "options": {
+        "A": "The purpose of the survey must be clearly stated. E E‘JuZ~ZD‘i¥D1%BHii%",
+        "B": "Management's approval should be obtained before distributing the survey. §ZW@&%%EEM%",
+        "C": "Its intent is to find out what services and systems are critical to keeping the organization in business. E H<JF:l‘32tlji§i%¥?'1=éHéRl4a\"§iz3.l’EF;l‘J§'€i>’iF1<Jlil§’<%7rD%é3i':.",
+        "D": "It is implemented to gather input from all personnel that is going to be part of the recovery teams. M%%%WE$%%€%$W%%%A"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 209,
+      "question": "After a company is out of an emergency state, what should be moved back to the original site first? 290 11>? ?l.f5l U §§'EFli?Z|§l§Ul§\\i5,'§il:l‘]i13:? {1_\\\\E'i]@5l”5l3»’1?',%T4-§‘~>lji?$§Ji§,",
+      "options": {
+        "A": "Most critical components Bgiiéillélill",
+        "B": "Least critical components B,Ei7F§%E‘JZHl¢F",
+        "C": "lT support staff IT 5'ZT?F)\\ —>-A-/\\-",
+        "D": "Executives E Fa‘; /'§%:"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q1 - Q50",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "All of the following are basic components of a security policy EXCEPT the",
+      "options": {
+        "A": "definition of the issue and statement of relevant terms.",
+        "B": "statement of roles and responsibilities",
+        "C": "statement of applicability and compliance requirements.",
+        "D": "statement of performance of characteristics and requirements."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Policies are considered the first and highest level of documentation, from which the lower level elements of standards, procedures, and guidelines flow. This order, however, does not mean that policies are more important than the lower elements. These higher-level policies, which are the more general policies and statements, should be created first in the process for strategic reasons, and then the more tactical elements can follow. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 13"
+    },
+    {
+      "id": 2,
+      "question": "A security policy would include all of the following EXCEPT",
+      "options": {
+        "A": "Background",
+        "B": "Scope statement",
+        "C": "Audit requirements",
+        "D": "Enforcement"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 3,
+      "question": "Which one of the following is an important characteristic of an information security policy?",
+      "options": {
+        "A": "Identifies major functional areas of information.",
+        "B": "Quantifies the effect of the loss of the information.",
+        "C": "Requires the identification of information owners.",
+        "D": "Lists applications that support the business function."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Information security policies area high-level plans that describe the goals of the procedures. Policies are not guidelines or standards, nor are they procedures or controls. Policies describe security in general terms, not specifics. They provide the blueprints for an overall security program just as a specification defines your next product - Roberta Bragg CISSP Certification Training Guide (que) pg 206"
+    },
+    {
+      "id": 4,
+      "question": "Ensuring the integrity of business information is the PRIMARY concern of",
+      "options": {
+        "A": "Encryption Security",
+        "B": "Procedural Security.",
+        "C": "Logical Security",
+        "D": "On-line Security"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Procedures are looked at as the lowest level in the policy chain because they are closest to the computers and provide detailed steps for configuration and installation issues. They provide the steps to actually implement the statements in the policies, standards, and guidelines...Security procedures, standards, measures, practices, and policies cover a number of different subject areas. - Shon Harris All-in-one CISSP Certification Guide pg 44-45"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following would be the first step in establishing an information security program?",
+      "options": {
+        "A": ") Adoption of a corporate information security policy statement",
+        "B": ") Development and implementation of an information security standards manual",
+        "C": ") Development of a security awareness-training program",
+        "D": ") Purchase of security access control software"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 6,
+      "question": "Which of the following department managers would be best suited to oversee the development of an information security policy?",
+      "options": {
+        "A": ") Information Systems",
+        "B": ") Human Resources",
+        "C": ") Business operations",
+        "D": ") Security administration"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 7,
+      "question": "What is the function of a corporate information security policy?",
+      "options": {
+        "A": "Issue corporate standard to be used when addressing specific security problems.",
+        "B": "Issue guidelines in selecting equipment, configuration, design, and secure operations.",
+        "C": "Define the specific assets to be protected and identify the specific tasks which must be completed to secure them.",
+        "D": "Define the main security objectives which must be achieved and the security framework to meet business objectives."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Information security policies are high-level plans that describe the goals of the procedures or controls. Policies describe security in general, not specifics. They provide the blueprint fro an overall security program just as a specification defines your next product. - Roberta Bragg CISSP Certification Training Guide (que) pg 587"
+    },
+    {
+      "id": 8,
+      "question": "Why must senior management endorse a security policy?",
+      "options": {
+        "A": "So that they will accept ownership for security within the organization.",
+        "B": "So that employees will follow the policy directives.",
+        "C": "So that external bodies will recognize the organizations commitment to security.",
+        "D": "So that they can be held legally accountable."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "This really does not a reference as it should be known. Upper management is legally accountable (up to 290 million fine). External organizations answer is not really to pertinent (however it stated that other organizations will respect a BCP and disaster recover plan). Employees need to be bound to the policy regardless of who signs it but it gives validity. Ownership is the correct answer in this statement. However, here is a reference. \"Fundamentally important to any security program's success us the senior management's high-level statement of commitment to the information security policy process and a senior management's understanding of how important security controls and protections are to the enterprise's continuity. Senior management must be aware of the importance of security implementation to preserve the organization's viability (and for their own 'due care' protection) and must publicly support that process throughout the enterprise.\" -Ronald Krutz The CISSP PREP Guide (gold edition) pg 13"
+    },
+    {
+      "id": 9,
+      "question": "In which one of the following documents is the assignment of individual roles and responsibilities MOST appropriately defined?",
+      "options": {
+        "A": "Security policy",
+        "B": "Enforcement guidelines",
+        "C": "Acceptable use policy",
+        "D": "Program manual"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "An acceptable use policy is a document that the employee signs in which the expectations, roles and responsibilities are outlined. Issue -specific policies address specific security issues that management feels need more detailed explanation and attention to make sure a comprehensive structure is built and all employees understand how they are to comply to these security issues. - Shon Harris All-in-one CISSP Certification Guide pg 62"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following defines the intent of a system security policy?",
+      "options": {
+        "A": "A definition of the particular settings that have been determined to provide optimum security.",
+        "B": "A brief, high-level statement defining what is and is not permitted during the operation of the system.",
+        "C": "A definition of those items that must be excluded on the system.",
+        "D": "A listing of tools and applications that will be used to protect the system."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"A system-specific policy presents the management's decisions that are closer to the actual computers, networks, applications, and data. This type of policy can provide an approved software list, which contains a list of applications that can be installed on individual workstations. This policy can describe how databases are to be protected, how computers are to be locked down, and how firewall, intrusion diction systems, and scanners are to be employed.\" Pg 93 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 11,
+      "question": "When developing an information security policy, what is the FIRST step that should be taken?",
+      "options": {
+        "A": "Obtain copies of mandatory regulations.",
+        "B": "Gain management approval.",
+        "C": "Seek acceptance from other departments.",
+        "D": "Ensure policy is compliant with current working practices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "Which one of the following should NOT be contained within a computer policy?",
+      "options": {
+        "A": "Definition of management expectations.",
+        "B": "Responsibilities of individuals and groups for protected information.",
+        "C": "Statement of senior executive support.",
+        "D": "Definition of legal and regulatory controls."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 13,
+      "question": "Which one of the following is NOT a fundamental component of a Regulatory Security Policy?",
+      "options": {
+        "A": "What is to be done.",
+        "B": "When it is to be done.",
+        "C": "Who is to do it.",
+        "D": "Why is it to be done"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Regulatory Security policies are mandated to the organization but it up to them to implement it. \"Regulatory - This policy is written to ensure that the organization is following standards set by a specific industry and is regulated by law. The policy type is detailed in nature and specific to a type of industry. This is used in financial institutions, health care facilities, and public utilities.\" - Shon Harris All-in-one CISSP Certification Guide pg 93-94"
+    },
+    {
+      "id": 14,
+      "question": "Which one of the following statements describes management controls that are instituted to implement a security policy?",
+      "options": {
+        "A": "They prevent users from accessing any control function.",
+        "B": "They eliminate the need for most auditing functions.",
+        "C": "They may be administrative, procedural, or technical.",
+        "D": "They are generally inexpensive to implement."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Administrative, physical, and technical controls should be utilized to achieve the management's directives. - Shon Harris All-in-one CISSP Certification Guide pg 60"
+    },
+    {
+      "id": 15,
+      "question": "Which must bear the primary responsibility for determining the level of protection needed for information systems resources?",
+      "options": {
+        "A": ") IS security specialists",
+        "B": ") Senior Management",
+        "C": ") Seniors security analysts",
+        "D": ") system auditors"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 16,
+      "question": "Which of the following choices is NOT part of a security policy?",
+      "options": {
+        "A": ") definition of overall steps of information security and the importance of security",
+        "B": ") statement of management intend, supporting the goals and principles of information security",
+        "C": ") definition of general and specific responsibilities for information security management",
+        "D": ") description of specific technologies used in the field of information security"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 17,
+      "question": "In an organization, an Information Technology security function should:",
+      "options": {
+        "A": ") Be a function within the information systems functions of an organization",
+        "B": ") Report directly to a specialized business unit such as legal, corporate security or insurance",
+        "C": ") Be lead by a Chief Security Officer and report directly to the CEO",
+        "D": ") Be independent but report to the Information Systems function"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 18,
+      "question": "Which of the following embodies all the detailed actions that personnel are required to follow?",
+      "options": {
+        "A": ") Standards",
+        "B": ") Guidelines",
+        "C": ") Procedures",
+        "D": ") Baselines"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 19,
+      "question": "A significant action has a state that enables actions on an ADP system to be traced to individuals who may then be held responsible. The action does NOT include:",
+      "options": {
+        "A": "Violations of security policy.",
+        "B": "Attempted violations of security policy.",
+        "C": "Non-violations of security policy.",
+        "D": "Attempted violations of allowed actions."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Significant action: The quality or state that enables actions on an ADP system to be traced to individuals who may then be held responsible. These actions include violations and attempted violations of the security policy, as well as allowed actions."
+    },
+    {
+      "id": 20,
+      "question": "Network Security is a",
+      "options": {
+        "A": ") Product",
+        "B": ") protocols",
+        "C": ") ever evolving process",
+        "D": ") quick-fix solution"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 21,
+      "question": "Security is a process that is:",
+      "options": {
+        "A": "Continuous",
+        "B": "Indicative",
+        "C": "Examined",
+        "D": "Abnormal"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Security is a continuous process; as such you must closely monitor your systems on a regular basis. Log files are usually a good way to find an indication of abnormal activities. However some care must be exercise as to what will be logged and how the logs are protected. Having corrupted logs is about as good as not having logs at all."
+    },
+    {
+      "id": 22,
+      "question": "What are the three fundamental principles of security?",
+      "options": {
+        "A": ") Accountability, confidentiality, and integrity",
+        "B": ") Confidentiality, integrity, and availability",
+        "C": ") Integrity, availability, and accountability",
+        "D": ") Availability, accountability, and confidentiality"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 23,
+      "question": "Which of the following prevents, detects, and corrects errors so that the integrity, availability, and confidentiality of transactions over networks may be maintained?",
+      "options": {
+        "A": ") Communications security management and techniques",
+        "B": ") Networks security management and techniques",
+        "C": ") Clients security management and techniques",
+        "D": ") Servers security management and techniques"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 24,
+      "question": "Making sure that the data is accessible when and where it is needed is which of the following?",
+      "options": {
+        "A": ") Confidentiality",
+        "B": ") integrity",
+        "C": ") acceptability",
+        "D": ") availability"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 25,
+      "question": "Which of the following describes elements that create reliability and stability in networks and systems and which assures that connectivity is accessible when needed?",
+      "options": {
+        "A": ") Availability",
+        "B": ") Acceptability",
+        "C": ") Confidentiality",
+        "D": ") Integrity"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 26,
+      "question": "Most computer attacks result in violation of which of the following security properties?",
+      "options": {
+        "A": "Availability",
+        "B": "Confidentiality",
+        "C": "Integrity and control",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Most computer attacks only corrupt a system's security in very specific ways. For example, certain attacks may enable a hacker to read specific files but don't allow alteration of any system components. Another attack may allow a hacker to shut down certain system components but doesn't allow access to any files. Despite the varied capabilities of computer attacks, they usually result in violation of only four different security properties: availability, confidentiality, integrity, and control."
+    },
+    {
+      "id": 27,
+      "question": "Which of the following are objectives of an information systems security program?",
+      "options": {
+        "A": "Threats, vulnerabilities, and risks",
+        "B": "Security, information value, and threats",
+        "C": "Integrity, confidentiality, and availability.",
+        "D": "Authenticity, vulnerabilities, and costs."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "There are several small and large objectives of a security program, but the main three principles in all programs are confidentiality, integrity, and availability. These are referred to as the CIA triad. - Shon Harris All-in-one CISSP Certification Guide pg 62"
+    },
+    {
+      "id": 28,
+      "question": "An area of the Telecommunications and Network Security domain that directly affects the Information Systems Security tenet of Availability can be defined as:",
+      "options": {
+        "A": ") Netware availability",
+        "B": ") Network availability",
+        "C": ") Network acceptability",
+        "D": ") Network accountability"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 29,
+      "question": "The Structures, transmission methods, transport formats, and security measures that are used to provide integrity, availability, and authentication, and confidentiality for transmissions over private and public communications networks and media includes:",
+      "options": {
+        "A": ") The Telecommunications and Network Security domain",
+        "B": ") The Telecommunications and Netware Security domain",
+        "C": ") The Technical communications and Network Security domain",
+        "D": ") The Telnet and Security domain"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Telecommunications, Network, and Internet Security Domain encompasses the structures, transmission methods, transport formats, and security measures used to provide integrity, availability, authentication, and confidentiality for transmissions over private and public communications networks and media.\" Pg 515 Hansche: Official (ISC)2 Guide to the CISSP Exam"
+    },
+    {
+      "id": 30,
+      "question": "Which one of the following is the MOST crucial link in the computer security chain?",
+      "options": {
+        "A": "Access controls",
+        "B": "People",
+        "C": "Management",
+        "D": "Awareness programs"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 31,
+      "question": "The security planning process must define how security will be managed, who will be responsible, and",
+      "options": {
+        "A": "Who practices are reasonable and prudent for the enterprise.",
+        "B": "Who will work in the security department.",
+        "C": "What impact security will have on the intrinsic value of data.",
+        "D": "How security measures will be tested for effectiveness."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 32,
+      "question": "Information security is the protection of data. Information will be protected mainly based on:",
+      "options": {
+        "A": "Its sensitivity to the company.",
+        "B": "Its confidentiality.",
+        "C": "Its value.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Information security is the protection of data against accidental or malicious disclosure, modification, or destruction. Information will be protected based on its value, confidentiality, and/or sensitivity to the company, and the risk of loss or compromise. At a minimum, information will be update-protected so that only authorized individuals can modify or erase the information."
+    },
+    {
+      "id": 33,
+      "question": "Organizations develop change control procedures to ensure that",
+      "options": {
+        "A": "All changes are authorized, tested, and recorded.",
+        "B": "Changes are controlled by the Policy Control Board (PCB).",
+        "C": "All changes are requested, scheduled, and completed on time.",
+        "D": "Management is advised of changes made to systems."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"Change Control: Changes must be authorized, tested, and recorded. Changed systems may require re-certification and re-accreditation.\" Pg 699 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 34,
+      "question": "Within the organizational environment, the security function should report to an organizational level that",
+      "options": {
+        "A": "Has information technology oversight.",
+        "B": "Has autonomy from other levels.",
+        "C": "Is an external operation.",
+        "D": "Provides the internal audit function."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 35,
+      "question": "What is the MAIN purpose of a change control/management system?",
+      "options": {
+        "A": "Notify all interested parties of the completion of the change.",
+        "B": "Ensure that the change meets user specifications.",
+        "C": "Document the change for audit and management review.",
+        "D": "Ensure the orderly processing of a change request."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 36,
+      "question": "Which of the following is most relevant to determining the maximum effective cost of access control?",
+      "options": {
+        "A": ") the value of information that is protected",
+        "B": ") management's perceptions regarding data importance",
+        "C": ") budget planning related to base versus incremental spending.",
+        "D": ") the cost to replace lost data"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 37,
+      "question": "Which one of the following is the MAIN goal of a security awareness program when addressing senior management?",
+      "options": {
+        "A": "Provide a vehicle for communicating security procedures.",
+        "B": "Provide a clear understanding of potential risk and exposure.",
+        "C": "Provide a forum for disclosing exposure and risk analysis.",
+        "D": "Provide a forum to communicate user responsibilities."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: When the Security Officer is addressing Senior Management, the focus would not be on user responsibilities, it would be on making sure the Senior Management have a clear understanding of the risk and potential liability is Not D: Item D would be correct in a situation where Senior Management is addressing organizational staff."
+    },
+    {
+      "id": 38,
+      "question": "In developing a security awareness program, it is MOST important to",
+      "options": {
+        "A": "Understand the corporate culture and how it will affect security.",
+        "B": "Understand employees preferences for information security.",
+        "C": "Know what security awareness products are available.",
+        "D": "Identify weakness in line management support."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The controls and procedures of a security program should reflect the nature of the data being processed...These different types of companies would also have very different cultures. For a security awareness program to be effective, these considerations must be understood and the program should be developed in a fashion that makes sense per environment - Shon Harris All-in-one CISSP Certification Guide pg 109"
+    },
+    {
+      "id": 39,
+      "question": "Which of the following would be best suited to provide information during a review of the controls over the process of defining IT service levels?",
+      "options": {
+        "A": ") Systems programmer",
+        "B": ") Legal stuff",
+        "C": ") Business unit manager",
+        "D": ") Programmer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 40,
+      "question": "Which of the following best explains why computerized information systems frequently fail to meet the needs of users?",
+      "options": {
+        "A": ") Inadequate quality assurance (QA) tools",
+        "B": ") Constantly changing user needs",
+        "C": ") Inadequate user participation in defining the system's requirements",
+        "D": ") Inadequate project management."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is not a compensating measure for access violations?",
+      "options": {
+        "A": ") Backups",
+        "B": ") Business continuity planning",
+        "C": ") Insurance",
+        "D": ") Security awareness"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 42,
+      "question": "Risk analysis is MOST useful when applied during which phase of the system development process?",
+      "options": {
+        "A": ") Project identification",
+        "B": ") Requirements definition",
+        "C": ") System construction",
+        "D": ") Implementation planning"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 684 Shon Harris: All-in-One CISSP Certification"
+    },
+    {
+      "id": 43,
+      "question": "Which one of the following is not one of the outcomes of a vulnerability analysis?",
+      "options": {
+        "A": ") Quantative loss assessment",
+        "B": ") Qualitative loss assessment",
+        "C": ") Formal approval of BCP scope and initiation document",
+        "D": ") Defining critical support areas"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 44,
+      "question": "Which of the following is not a part of risk analysis?",
+      "options": {
+        "A": ") Identify risks",
+        "B": ") Quantify the impact of potential threats",
+        "C": ") Provide an economic balance between the impact of the risk and the cost of the associated countermeasures",
+        "D": ") Choose the best countermeasure"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 45,
+      "question": "A new worm has been released on the Internet. After investigation, you have not been able to determine if you are at risk of exposure. Management is concerned as they have heard that a number of their counterparts are being affected by the worm. How could you determine if you are at risk?",
+      "options": {
+        "A": "Evaluate evolving environment.",
+        "B": "Contact your anti-virus vendor.",
+        "C": "Discuss threat with a peer in another organization.",
+        "D": "Wait for notification from an anti-virus vendor."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 46,
+      "question": "When conducting a risk assessment, which one of the following is NOT an acceptable social engineering practice?",
+      "options": {
+        "A": "Shoulder surfing",
+        "B": "Misrepresentation",
+        "C": "Subversion",
+        "D": "Dumpster diving"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Shoulder Surfing: Attackers can thwart confidentiality mechanisms by network monitoring, shoulder surfing, stealing password files, and social engineering. These topics will be address more in-depth in later chapters, but shoulder surfing is when a person looks over another person's shoulder and watches keystrokes or data as it appears on the screen. Social engineering is tricking another person into sharing confidential information by posing as an authorized individual to that information. Shon Harris: CISSP Certification pg. 63. Shoulder surfing is not social engineering."
+    },
+    {
+      "id": 47,
+      "question": "Which one of the following risk analysis terms characterizes the absence or weakness of a risk-reducing safegaurd?",
+      "options": {
+        "A": "Threat",
+        "B": "Probability",
+        "C": "Vulnerability",
+        "D": "Loss expectancy"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A weakness in system security procedures, system design, implementation, internal controls, and so on that could be exploited to violate system security policy. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 927"
+    },
+    {
+      "id": 48,
+      "question": "Risk is commonly expressed as a function of the",
+      "options": {
+        "A": "Systems vulnerabilities and the cost to mitigate.",
+        "B": "Types of countermeasures needed and the system's vulnerabilities.",
+        "C": "Likelihood that the harm will occur and its potential impact.",
+        "D": "Computer system-related assets and their costs."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The likelihood of a threat agent taking advantage of a vulnerability. A risk is the loss potential, or probability, that a threat will exploit a vulnerability. - Shon Harris All-in-one CISSP Certification Guide pg 937"
+    },
+    {
+      "id": 49,
+      "question": "How should a risk be handled when the cost of the countermeasures outweighs the cost of the risk?",
+      "options": {
+        "A": ") Reject the risk",
+        "B": ") Perform another risk analysis",
+        "C": ") Accept the risk",
+        "D": ") Reduce the risk"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 50,
+      "question": "Which of the following is an advantage of a qualitative over quantitative risk analysis?",
+      "options": {
+        "A": ") It prioritizes the risks and identifies areas for immediate improvement in addressing the vulnerabilities.",
+        "B": ") It provides specific quantifiable measurements of the magnitude of the impacts",
+        "C": ") It makes cost-benefit analysis of recommended controls easier"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

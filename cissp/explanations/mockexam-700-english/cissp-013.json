@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q601 - Q650",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 601,
+      "question": "Which of the following plan provides procedures for sustaining essential business operations while recovering from significant disruption?",
+      "options": {
+        "A": "Business Continuity Plan",
+        "B": "Occupant Emergency Plan",
+        "C": "Cyber Incident Response Plan",
+        "D": "Disaster Recovery Plan"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A business continuity plan provides procedures for sustaining essential business operations while recovering from a significant disruption. Incorrect Answers: B: The occupant emergency plan (OEP) provides the “response procedures for occupants of a facility in the event of a situation posing a potential threat to the health and safety of personnel, the environment, or property. Such events would include a fire, hurricane, criminal attack, or a medical emergency.” C: A Cyber Incident response plan focuses on malware, hackers, intrusions, attacks, and other security issues. It outlines procedures for incident response. D: A Disaster recovery plan provides detailed procedures to facilitate recovery of capabilities at an alternate site, while occupant emergency plan provides coordinated procedures for minimizing loss of life or injury and protecting properly damage in response to a physical threat."
+    },
+    {
+      "id": 602,
+      "question": "Which of the following statements pertaining to disaster recovery planning is incorrect?",
+      "options": {
+        "A": "Every organization must have a disaster recovery plan",
+        "B": "A disaster recovery plan contains actions to be taken before, during and after a disruptive event.",
+        "C": "The major goal of disaster recovery planning is to provide an organized way to make decisions if a disruptive event occurs.",
+        "D": "A disaster recovery plan should cover return from alternate facilities to primary facilities."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Every organization should have a disaster recovery plan, but there is no requirement of a disaster recovery plan. Incorrect Answers: B: The DRP is carried out when everything is still in emergency mode, and everyone is scrambling to get all critical systems back online. But the DRP also includes comprehensive instructions for essential personnel to follow immediately upon recognizing that a disaster is imminent. C: The disaster recovery plan (DRP) guides the recovery efforts necessary to restore your business to normal operations as quickly as possible. The DRP guides the actions of emergency - response personnel until the end goal is reached, which is to see the business restored to full operating capacity in its primary operations facilities. D: One of the most important elements of the disaster recovery plan is the selection of alternate processing sites to be used when the primary sites are unavailable."
+    },
+    {
+      "id": 603,
+      "question": "Which of the following statements do apply to a hot site?",
+      "options": {
+        "A": "It is expensive.",
+        "B": "There are cases of common overselling of processing capabilities by the service provider.",
+        "C": "It provides a false sense of security.",
+        "D": "It is accessible on a first come first serve basis. In case of large disaster it might Be accessible."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A hot site is Accessible on first come first server basis. With a hot site arrangement, a backup facility is maintained in constant working order, with a full complement of servers, workstations, and communications links ready to assume primary operations responsibilities. The servers and workstations are all preconfigured and loaded with appropriate operating system and application software. Incorrect Answers: A: One disadvantage of a hot site is that it is very expensive. B: The hot site service provider might oversell the processing capabilities. C: The level of disaster recovery protection provided by a hot site is unsurpassed. A hot site does not give a false sense of security."
+    },
+    {
+      "id": 604,
+      "question": "What can be defined as a batch process dumping backup data through communications lines to a server at an alternate location?",
+      "options": {
+        "A": "Remote journaling",
+        "B": "Electronic vaulting",
+        "C": "Data clustering",
+        "D": "Database shadowing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In an electronic vaulting scenario, database backups are transferred to a remote site using bulk transfers. The transfers occur in infrequent batches. Incorrect Answers: A: With remote journaling, data transfers are performed in a expeditious manner. Data transfers occur in a bulk transfer mode, but they occur on a frequent basis, usually once every hour if not more frequently. C: Data clustering does not include batch processing dumping data at an alternate location. D: Database shadowing is remote journaling to more than one destination duplicate server. Remote journaling is Batch processing dumping backup data to an alternate location."
+    },
+    {
+      "id": 605,
+      "question": "Which of the following is the most complete disaster recovery plan test type, to be performed after successfully completing the Parallel test?",
+      "options": {
+        "A": "Full Interruption test",
+        "B": "Checklist test",
+        "C": "Simulation test",
+        "D": "Structured walk-through test"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Full-interruption tests operate like parallel tests, but they involve actually shutting down operations at the primary site and shifting them to the recovery site. After a parallel test has been completed the next step is to perform a full-interruption test. Incorrect Answers: B: The checklist test is one of the simplest tests to conduct. You should perform it before, after, you perform a Parallel test. C: Simulation tests are similar to the structured walk – through tests, and should be performed before parallel test, after parallel tests. D: Parallel tests represent the next level in testing compared to a structured walk-through test, not vice versa."
+    },
+    {
+      "id": 606,
+      "question": "What is the Maximum Tolerable Downtime (MTD)?",
+      "options": {
+        "A": "Maximum elapsed time required to complete recovery of application data",
+        "B": "Minimum elapsed time required to complete recovery of application data",
+        "C": "Maximum elapsed time required to move back to primary site after a major disruption",
+        "D": "It is maximum delay businesses can tolerate and still remain viable"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The outage time that can be endured by a company is referred to as the maximum tolerable downtime (MTD). Incorrect Answers: A: Maximum Tolerable Downtime does not refer to application data. Maximum Tolerable Downtime is the time delay that the business can tolerate. B: Maximum Tolerable Downtime does not refer to application data. Maximum Tolerable Downtime is the time delay that the business can tolerate. C: Maximum Tolerable Downtime does not refer to the time needed to move back to the primary site after a disruption. Maximum Tolerable Downtime is the time delay that the business can tolerate."
+    },
+    {
+      "id": 607,
+      "question": "Which of the following specifically addresses cyber-attacks against an organization's IT systems?",
+      "options": {
+        "A": "Continuity of support plan",
+        "B": "Business continuity plan",
+        "C": "Incident response plan",
+        "D": "Continuity of operations plan"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A Cyber incident response plan focuses on malware, hackers, intrusions, attacks, and other security issues. It outlines procedures for incident response. There are no other types of Incident response plans. Incorrect Answers: A: There is no continuity of support plan which addresses cyber-attacks. The Incident response plan addresses cyber-attacks. B: A business continuity plan (BCP) does address cyber-attacks. A BCP contains strategy documents that provide detailed procedures that ensure critical business functions are maintained. D: There is no continuity of operations plan which addresses cyber-attacks. The Incident response plan addresses cyber-attacks."
+    },
+    {
+      "id": 608,
+      "question": "During the salvage of the Local Area Network and Servers, which of the following steps would normally be performed first?",
+      "options": {
+        "A": "Damage mitigation",
+        "B": "Install LAN communications network and servers",
+        "C": "Assess damage to LAN and servers",
+        "D": "Recover equipment"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The damage assessment team should be responsible determining the disaster's cause and the amount of damage that has occurred to organizational assets. The assessment of the damage should include the status of the equipment at the site such as servers and network devices. Incorrect Answers: A: Damage mitigation is a preventive method which is applied prior to a disaster, while salvage are done after a disaster. B: Before installing new equipment the damage must be assessed and the equipment must be salvaged. D: Before the salvage team starts to recover the equipment, the damage assessment team should assess the damage on the site."
+    },
+    {
+      "id": 609,
+      "question": "Which disaster recovery plan test involves functional representatives meeting to review the plan in detail?",
+      "options": {
+        "A": "Simulation test",
+        "B": "Checklist test",
+        "C": "Parallel test",
+        "D": "Structured walk-through test"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "In a Structured walk-through test representatives from each department or functional area come together and go over the plan to ensure its accuracy. The group reviews the objectives of the plan; discusses the scope and assumptions of the plan; reviews the organization and reporting structure; and evaluates the testing, maintenance, and training requirements described. Incorrect Answers: A: In a Simulation test the plan is not reviewed in detail. In a Simulation test all employees who participate in operational and support functions, or their representatives, come together to practice executing the disaster recovery plan based on a specific scenario. B: A Checklist test, like a Structured walk-through test, has the aim to review the plan, but in a Checklist test the functional representatives do not meet. Instead copies of the BCP are distributed to the different departments and functional areas for review. C: The purpose of a Parallel test is not to review the plan in detail. A parallel test is done to ensure that the specific systems can actually perform adequately at the alternate offsite facility."
+    },
+    {
+      "id": 610,
+      "question": "When preparing a business continuity plan, who of the following is responsible for identifying and prioritizing time-critical systems?",
+      "options": {
+        "A": "Executive management staff",
+        "B": "Senior business unit management",
+        "C": "BCP committee",
+        "D": "Functional business units"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Senior management is ultimately responsible for all phases of the plan, and who should be most concerned about the protection of its assets. They must sign off on all policy issues, and they will be held liable for overall success or failure of a security solution. Incorrect Answers: A: If possible the BCP plan should by endorsed by the Executive management staff, but the Executive management staff is not responsible for identifying and prioritizing time-critical systems. C: The BCP committee does not identify and prioritize systems. The BCP committee oversees, initiates, plans, approves, tests and audits the BCP. It also implements the BCP, coordinates activities, approve the BIA survey. The BCP committee also oversees the creation of continuity plans and reviews the results of quality assurance activities D: Functional business units are a part of the BCP committee. Functional business units are not responsible for identifying and prioritizing time-critical system."
+    },
+    {
+      "id": 611,
+      "question": "In addition to the Legal Department, with what company function must the collection of physical evidence be coordinated if an employee is suspected?",
+      "options": {
+        "A": "Human Resources",
+        "B": "Industrial Security",
+        "C": "Public Relations",
+        "D": "External Audit Group"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "If the incident response team determines that a crime has been carried out, senior management should be informed immediately. If the suspect is an employee, a human resources representative must be called right away. Incorrect Answers: B: Industrial Security does not need to be involved when an employee is suspected of a crime. C: Public Relations does not need to be involved when an employee is suspected of a crime. D: The External Audit Group does not need to be involved when an employee is suspected of a crime."
+    },
+    {
+      "id": 612,
+      "question": "To be admissible in court, computer evidence must be which of the following?",
+      "options": {
+        "A": "Relevant",
+        "B": "Decrypted",
+        "C": "Edited",
+        "D": "Incriminating"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "For evidence to be admissible in court, it needs to be relevant, sufficient, and reliable. Incorrect Answers: B: The evidence should not be changed. If it is encrypted it should be kept encrypted. C: Evidence should not be changed or edited. D: Evidence does not need to be incriminating. It can very well be used in favor of the suspect, such as an alibi."
+    },
+    {
+      "id": 613,
+      "question": "Once evidence is seized, a law enforcement officer should emphasize which of the following?",
+      "options": {
+        "A": "Chain of command",
+        "B": "Chain of custody",
+        "C": "Chain of control",
+        "D": "Chain of communications"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "When evidence is seized, it is important to make sure a proper chain of custody is maintained to ensure any data collected can later be properly and accurately represented in case it needs to be used for later events such as criminal proceedings or a successful prosecution. Incorrect Answers: A: Chain of command is not related to the collection of evidence. In a military context, the chain of command is the line of authority and responsibility along which orders are passed within a military unit and between different units. C: Chain of control is not related to collection of evidence. Chain of custody relates to how evidence is collected. D: Chain of communication is not related to collection of evidence. Chain of custody relates to how evidence is collected."
+    },
+    {
+      "id": 614,
+      "question": "Which of the following cannot be undertaken in conjunction or while computer incident handling is ongoing?",
+      "options": {
+        "A": "System development activity",
+        "B": "Help-desk function",
+        "C": "System Imaging",
+        "D": "Risk management process"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The computer system should not be changed, while the incident handling is ongoing. System development should not occur during incident handling. Incorrect Answers: B: As part of the ongoing incident handling employees, vendors, customers, partner, devices or sensors report the event to Help Desk. C: System imaging would not affect the ongoing incident handling and should take place to D: The Risk management process would not affect the ongoing incident handling."
+    },
+    {
+      "id": 615,
+      "question": "In the process of gathering evidence from a computer attack, a system administrator took a series of actions which are listed below. Can you identify which one of these actions has compromised the whole evidence collection process?",
+      "options": {
+        "A": "Using a write blocker",
+        "B": "Made a full-disk image",
+        "C": "Created a message digest for log files",
+        "D": "Displayed the contents of a folder"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The original media should have two copies created: a primary image (a control copy that is stored in a library) and a working image (used for analysis and evidence collection). These should be timestamped to show when the evidence was collected. Displaying the contents of a folder would affect the original media, and would compromise the evidence collection process. Incorrect Answers: A: A write blocker would be a step to secure the integrity of the media. B: Making a full-disk image would be a part of the investigation process. C: To create a message digest for log files would be part of the documentation."
+    },
+    {
+      "id": 616,
+      "question": "What is the PRIMARY goal of incident handling?",
+      "options": {
+        "A": "Successfully retrieve all evidence that can be used to prosecute",
+        "B": "Improve the company's ability to be prepared for threats and disasters",
+        "C": "Improve the company's disaster recovery plan",
+        "D": "Contain and repair any damage caused by an event."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The primary goal of incident handling is to contain, eradicate, and recovery from the incident. See step 3 below. Note: The Incident Handling lifecycle can be divided into the following four steps: 1. Preparation 2. Detection and Analysis 3. Containment, Eradication, and Recovery 4. Post-incident Activity Incorrect Answers: A: Retrieving evidence to prosecute is not part of Incident Handling. B: Preparation is part of incident handling lifecycle, but it is not the most important goal. C: Improving the disaster recovery plan is not a goal of incident handling."
+    },
+    {
+      "id": 617,
+      "question": "Which of the following would be LESS likely to prevent an employee from reporting an incident?",
+      "options": {
+        "A": "They are afraid of being pulled into something they don't want to be involved with.",
+        "B": "The process of reporting incidents is centralized.",
+        "C": "They are afraid of being accused of something they didn't do.",
+        "D": "They are unaware of the company's security policies and procedures."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A centralized incident reporting would increase, not decrease, the likelihood that an employee would report an incident. Incorrect Answers: A: An employee could be afraid to get involved and refrain from reporting an incident. C: Employees that are afraid of being accused of something they didn't do would be less likely to report an incident. D: Employees that are unaware of the company's security policies and procedures would be less likely to report an incident."
+    },
+    {
+      "id": 618,
+      "question": "In an online transaction processing system (OLTP), which of the following actions should be taken when erroneous or invalid transactions are detected?",
+      "options": {
+        "A": "The transactions should be dropped from processing.",
+        "B": "The transactions should be processed after the program makes adjustments.",
+        "C": "The transactions should be written to a report and reviewed.",
+        "D": "The transactions should be corrected and reprocessed."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "An online transaction processing system is used in conjunction with a database to commit transactions to a database in real time. The database must maintain its integrity, meaning the data in the database must be accurate at all times. Therefore, transactions must occur correctly or not at all to ensure that that only accurate data are entered into the database. If any of the steps in a transaction fails to complete to due invalid data, all the steps of the transaction are rolled back (dropped). Incorrect Answers: B: Invalid transactions should not be processed as it would affect the accuracy of the data and the integrity of the database. Instead, the transaction should be dropped. C: Writing the transaction to a report for later review would help identify potential problems and/or threats. However, the database must maintain its integrity, meaning the data in the database must be accurate at all times. This means that the invalid transactions should not be allowed as it would compromise the database integrity. Therefore, the transaction should be dropped. D: Generally, an online transaction processing system does not have mechanisms to correct invalid transactions. These transactions are made by information entered into a web form or other front-end interface. The user needs to correct their error and resubmit the information."
+    },
+    {
+      "id": 619,
+      "question": "When considering all the reasons that buffer overflow vulnerabilities exist what is the real reason?",
+      "options": {
+        "A": "Human error",
+        "B": "The Windows Operating system",
+        "C": "Insecure programming languages",
+        "D": "Insecure Transport Protocols"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The human error in this answer is poor programming by the software developer. A buffer overflow takes place when too much data are accepted as input to a specific process. A buffer is an allocated segment of memory. A buffer can be overflowed arbitrarily with too much data, but for it to be of any use to an attacker, the code inserted into the buffer must be of a specific length, followed up by commands the attacker wants executed. When a programmer writes a piece of software that will accept data, this data and its associated instructions will be stored in the buffers that make up a stack. The buffers need to be the right size to accept the inputted data. So if the input is supposed to be one character, the buffer should be one byte in size. If a programmer does not ensure that only one byte of data is being inserted into the software, then someone can input several characters at once and thus overflow that specific buffer. Incorrect Answers: B: The Windows Operating system does not cause buffer overflow vulnerabilities. C: Insecure programming languages do not cause buffer overflow vulnerabilities. D: Insecure Transport Protocols do not cause buffer overflow vulnerabilities."
+    },
+    {
+      "id": 620,
+      "question": "A security evaluation report and an accreditation statement are produced in which of the following phases of the system development life cycle?",
+      "options": {
+        "A": "project initiation and planning phase",
+        "B": "system design specification phase",
+        "C": "development & documentation phase",
+        "D": "acceptance phase"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Certification and accreditation (C&A) processes are performed before a system can be formally installed in the production environment. Certification is the technical testing and evaluation of a system while accreditation is the formal authorization given by management to allow a system to operate in a specific environment. The accreditation decision is based upon the results of the certification process. This occurs during the acceptance phase. Incorrect Answers: A: The project initiation and planning phase is the initial phase that establishes the need for a system. Nothing has been developed yet to be evaluated, tested, accredited, etc. B: System requirement specifications are gathered in the system design and specifications phase. This phase determines how the system will accomplish design goals and could cover required functionality, compatibility, fault tolerance, extensibility, security, usability, and maintainability. C: During the development & documentation phase programmers are assigned tasks to meet the specifications laid out in the design phase. This is where the system is developed."
+    },
+    {
+      "id": 621,
+      "question": "Which of the following is often the GREATEST challenge of distributed computing solutions?",
+      "options": {
+        "A": "scalability",
+        "B": "security",
+        "C": "heterogeneity",
+        "D": "usability"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A distributed computing environment is dependent on a network to ensure interoperability. This increases the footprint of the system and increases the potential for attack. Incorrect Answers: A: A distributed computing environment is almost infinitely scalable as additional systems can just be added to the environment. C: The distributed computing environment has evolved to support heterogeneous systems early in its emergence. It is thus possible to have systems from different vendors in a distributed computing environment. D: The support for heterogeneous systems in a distributed computing environment reduces the problem of usability."
+    },
+    {
+      "id": 622,
+      "question": "What is the appropriate role of the security analyst in the application system development or acquisition project?",
+      "options": {
+        "A": "policeman",
+        "B": "control evaluator & consultant",
+        "C": "data owner",
+        "D": "application user"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The security analyst contributes to the development of policies, standards, guidelines, and baselines. They help define the security controls and ensure the security controls are being implemented and maintained. This role is fulfilled through consultation and evaluation. Incorrect Answers: A: During system development or acquisition, there should be no need of anyone filling the role of policeman. C: The data owner is responsible for the protection of the data used by the application and can decide what security controls would be required to protect the Databased on the sensitivity and criticality of the data. D: The application user is an individual who uses the application for work-related tasks. The user must have the necessary level of access to the data to perform the duties within their position. The application user is not responsible for implementing or evaluating security measures."
+    },
+    {
+      "id": 623,
+      "question": "The information security staff's participation in which of the following system development life cycle phases provides maximum benefit to the organization?",
+      "options": {
+        "A": "project initiation and planning phase",
+        "B": "system design specifications phase",
+        "C": "development and documentation phase",
+        "D": "in parallel with every phase throughout the project"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A system has a developmental life cycle, which is made up of the following phases: initiation, acquisition/development, implementation, operation/maintenance, and disposal. Collectively these are referred to as a system development life cycle (SDLC). Security is critical in each phase of the life cycle. In the initiation phase the company establishes the need for a specific system. The company has figured out that there is a problem that can be solved or a function that can be carried out through some type of technology. A preliminary risk assessment should be carried out to develop an initial description of the confidentiality, integrity, and availability requirements of the system. The Acquisition/Development phase should include security analysis such as Security functional requirements analysis and Security assurance requirements analysis In the Implementation phase, it may be necessary to carry out certification and accreditation (C&A) processes before a system can be formally installed within the production environment. Certification is the technical testing of a system. In the Operation and Maintenance phase, continuous monitoring needs to take place to ensure that security baselines are always met. Vulnerability assessments and penetration testing should also take place in this phase. These types of periodic testing allow for new vulnerabilities to be identified and remediated. Disposal phase: When a system no longer provides a needed function, plans for how the system and its data will make a transition should be developed. Data may need to be moved to a different system, archived, discarded, or destroyed. If proper steps are not taken during the disposal phase, unauthorized access to sensitive assets can take place. Incorrect Answers: A: Security staff should participate in all phases of the system development life cycle, not just the project initiation and planning phases. B: Security staff should participate in all phases of the system development life cycle, not just the development phase. Documentation is not one of the phases in the system development life cycle. C: System design specifications would happen in the development phase. ‘System design specifications’ is not a recognized phase in itself. Security staff should participate in all phases of the system development life cycle, not just the development phase."
+    },
+    {
+      "id": 624,
+      "question": "Which answer BEST describes a computer software attack that takes advantage of a previously unpublished vulnerability?",
+      "options": {
+        "A": "Zero-Day Attack",
+        "B": "Exploit Attack",
+        "C": "Vulnerability Attack",
+        "D": "Software Crack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A zero-day is an undisclosed computer application vulnerability that could be misused to harmfully affect the computer programs, data, additional computers or a network. Incorrect Answers: B: An exploit refers to a piece of software or data, or a sequence of commands that takes advantage of a bug or vulnerability with the aim of causing unplanned or unexpected behavior to take place on computerized hardware, or its software. C: A vulnerability is a weakness which allows an attacker to reduce a system's information assurance. D: Software cracking is the modification of software to get rid of or deactivate features that are considered undesirable by the person cracking the software."
+    },
+    {
+      "id": 625,
+      "question": "A 'Pseudo flaw' is which of the following?",
+      "options": {
+        "A": "An apparent loophole deliberately implanted in an operating system program as a trap for intruders.",
+        "B": "An omission when generating Pseudo-code.",
+        "C": "Used for testing for bounds violations in application programming.",
+        "D": "A normally generated page fault causing the system to halt."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A Pseudo flaw is appearing as a vulnerability in an operating system program but is in actual fact a trap for intruders who may attempt to exploit the vulnerability. Incorrect Answers: B: Pseudocode is an informal high-level description of the operating principle of a software program. It uses some of the syntax and conventions of a programming language, but is intended for human reading rather than machine reading. C: Bounds checking is used to test for violations in application programming. Essentially, it tests the application’s response to inputted data and ensures the inputted data are of an acceptable length. D: A page fault is caused when the operating kernel attempts to access a page that is in virtual memory rather than in RAM. This often causes the system to halt."
+    },
+    {
+      "id": 626,
+      "question": "Which of the following is based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes?",
+      "options": {
+        "A": "The Software Capability Maturity Model (CMM)",
+        "B": "The Spiral Model",
+        "C": "The Waterfall Model",
+        "D": "Expert Systems Model"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Software Capability Maturity Model (CMM) is based on the premise that the quality of a software product is a direct function of the quality of its associated software development and maintenance processes. It introduces five maturity levels that serve as a foundation for conducting continuous process improvement and as an ordinal scale for measuring the maturity of the organization involved in the software processes. CMM has Five Maturity Levels of Software Processes: The initial level: processes are disorganized, even chaotic. Success is likely to depend on individual efforts, and is not considered to be repeatable as processes would not be sufficiently defined and documented to allow them to be replicated. The repeatable or managed level: basic project management techniques are established, and successes could be repeated as the requisite processes would have been made established, defined, and documented. The defined level: an organization has developed its own standard software process through greater attention to documentation, standardization, and integration. The quantatively managed level: an organization monitors and controls its own processes through data collection and analysis. The optimized level: processes are constantly being improved through monitoring feedback from current processes and introducing innovative processes to better serve the organization's particular needs. Incorrect Answers: B: The Spiral model uses an iterative approach to software development with an emphasis on risk analysis. The iterative approach allows new requirements to be addressed as they are uncovered. Testing takes place early in the development project, and feedback based upon these tests is integrated into the following iteration of steps. The risk analysis ensures that all issues are actively reviewed and analyzed. The evaluation phase allows the customer to evaluate the product in its current state and provide feedback, which is an input value for the following iteration of steps. This is a good model for complex projects that have fluid requirements. C: The Waterfall model uses a linear-sequential life-cycle approach with each phase having to be completed in its entirety before the next phase can begin. At the end of each phase, a review takes place to make sure the project is on the correct path. In this model all requirements are gathered in the initial phase and it is difficult to integrate changes as more information becomes available or requirements change. D: Expert systems is not a model for the development of software products. It is the use artificial intelligence (AI) to solve problems and is also called knowledge- based systems."
+    },
+    {
+      "id": 627,
+      "question": "Which of the following determines that the product developed meets the projects goals?",
+      "options": {
+        "A": "verification",
+        "B": "validation",
+        "C": "concurrence",
+        "D": "accuracy"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Validation is the process of determining whether the product provides the necessary solution for the real-world problem that is was created to solve. Incorrect Answers: A: Verification is the process of determining whether the product accurately represents and meets the design specifications given to the developers. C: Concurrence occurs when there is a piece of software that will be accessed at the same time by different users and/or applications. It is not an issue of product development. D: Accuracy is related to the integrity of information and systems. The integrity of information and systems requires that the information and systems remain accurate and reliable. This is ensured by preventing any unauthorized modification to the information or systems."
+    },
+    {
+      "id": 628,
+      "question": "What is RAD?",
+      "options": {
+        "A": "A development methodology",
+        "B": "A project management technique",
+        "C": "A measure of system complexity",
+        "D": "Risk-assessment diagramming"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Rapid Application Development (RAD) model is a software development model or methodology that relies on the use of rapid prototyping and enables organizations to develop strategically important systems faster while reducing development costs and maintaining quality. Incorrect Answers: B: RAD, or Rapid Application Development, is a software development model that relies on the use of rapid prototyping and enables organizations to develop strategically important systems faster while reducing development costs and maintaining quality. It is not a project management technique. C: RAD, or Rapid Application Development, is a software development model that relies on the use of rapid prototyping and enables organizations to develop strategically important systems faster while reducing development costs and maintaining quality. It is not a measure of system complexity D: RAD, or Rapid Application Development, is a software development model that relies on the use of rapid prototyping and enables organizations to develop strategically important systems faster while reducing development costs and maintaining quality. It is not Risk-assessment diagramming."
+    },
+    {
+      "id": 629,
+      "question": "Which of the following best describes the purpose of debugging programs?",
+      "options": {
+        "A": "To generate random data that can be used to test programs before implementing them.",
+        "B": "To ensure that program coding flaws are detected and corrected.",
+        "C": "To protect, during the programming phase, valid changes from being overwritten by other changes.",
+        "D": "To compare source code versions before transferring to the test environment"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Debugging provides the basis for the programmer to correct the logic errors in a program under development before it goes into production. Logical errors and coding mistakes are referred to as bugs in the code. Incorrect Answers: A: The process of generating random data that can be sent to a target program in order to trigger failures is called fuzzing. C: Debugging does not protect the program from changes. D: Debugging is not used to compare code versions."
+    },
+    {
+      "id": 630,
+      "question": "Which of the following is one of the oldest and most common problem in software development that is still very prevalent today?",
+      "options": {
+        "A": "Buffer Overflow",
+        "B": "Social Engineering",
+        "C": "Code injection for machine language",
+        "D": "Unassembled reversible DOS instructions."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Buffer overflows are in the source code of various applications and operating systems. They have been around since programmers started developing software. This means it is very difficult for a user to identify and fix them. When a buffer overflow is identified, the vendor usually sends out a patch, so keeping systems current on updates, hotfixes, and patches is usually the best countermeasure. A buffer overflow takes place when too much data are accepted as input to a specific process. A buffer is an allocated segment of memory. A buffer can be overflowed arbitrarily with too much data, but for it to be of any use to an attacker, the code inserted into the buffer must be of a specific length, followed up by commands the attacker wants executed. So, the purpose of a buffer overflow may be either to make a mess, by shoving arbitrary data into various memory segments, or to accomplish a specific task, by pushing into the memory segment a carefully crafted set of data that will accomplish a specific task. This task could be to open a command shell with administrative privilege or execute malicious code. Incorrect Answers: B: Social engineering is when one person tricks another person into sharing confidential information, for example, by posing as someone authorized to have access to that information. This is a user issue; it is not a problem in software development. C: Code injection is the exploitation of a computer bug that is caused by processing invalid data. Injection is used by an attacker to introduce (or \"inject\") code into a vulnerable computer program and change the course of execution. This is not one of the most common problems in software development today. D: DOS applications are rare nowadays so unassembled reversible DOS instructions is not a prevalent problem today."
+    },
+    {
+      "id": 631,
+      "question": "Which of the following is NOT true concerning Application Control?",
+      "options": {
+        "A": "It limits end users use of applications in such a way that only particular screens are visible.",
+        "B": "Only specific records can be requested through the application controls",
+        "C": "Particular usage of the application can be recorded for audit purposes",
+        "D": "It is non-transparent to the endpoint applications so changes are needed to the applications and databases involved"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Application control limits what users can see or do within the application. For example, if a user does not have the necessary access privilege to perform some functions, the functions can be hidden from the screen or the screen itself can be hidden so the user cannot select it within the application. In a similar way, only the records a user has access to can be displayed. Application control is transparent to the user; the user does not know that a particular screen, function or data records have been hidden. Application control can be implemented to record the activities a user performs within the application for auditing purposes. Incorrect Answers: A: It is true that application control limits end users use of applications in such a way that only particular screens are visible. B: It is true that only specific records can be requested through the application controls. C: It is true that particular usage of the application can be recorded for audit purposes by Application Control."
+    },
+    {
+      "id": 632,
+      "question": "The object-relational and object-oriented models are better suited to managing complex data such as required for which of the following?",
+      "options": {
+        "A": "computer-aided development and imaging",
+        "B": "computer-aided duplexing and imaging",
+        "C": "computer-aided processing and imaging",
+        "D": "computer-aided design and imaging"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "An object-oriented database has classes to define the attributes and procedures of its objects, which can be a variety of data types such as images, audio, documents, and video. This complex data is required for computer-aided design and imaging. Incorrect Answers: A, B, C: Computer-aided development, computer-aided duplexing, and computer-aided processing are not valid computing terms. The correct term is computer- aided design."
+    },
+    {
+      "id": 633,
+      "question": "Which of the following is not an element of a relational database model?",
+      "options": {
+        "A": "Relations, tuples, attributes and domains",
+        "B": "Data Manipulation Language (DML) on how the data will be accessed and manipulated",
+        "C": "Constraints to determine valid ranges and values",
+        "D": "Security structures called referential validation within tables"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A relational database model uses attributes (columns) and tuples (rows) to contain and organize information. The relational database model is the most widely used model today. It presents information in the form of tables. A relational database is composed of two-dimensional tables, and each table contains unique rows, columns, and cells (the intersection of a row and a column). Each cell contains only one data value that represents a specific attribute value within a given tuple. These data entities are linked by relationships. The relationships between the data entities provide the framework for organizing data. A primary key is a field that links all the data within a record to a unique value. Data manipulation language (DML) contains all the commands that enable a user to view, manipulate, and use the database (view, add, modify, sort, and delete commands). A constraint is usually associated with a table and is created with a CREATE CONSTRAINT or CREATE ASSERTION SQL statement. They define certain properties that data in a database must comply with. They can apply to a column, a whole table, more than one table or an entire schema. Security structures called referential validation within tables are not an element of a relational database model. Referential integrity is used to ensure all foreign keys reference primary keys. Referential validation is not a security structure within a table. Incorrect Answers: A: Relations, tuples, attributes and domains are elements of a relational database model. B: Data Manipulation Language (DML) is an element of a relational database model. C: Constraints to determine valid ranges and values are an element of a relational database model."
+    },
+    {
+      "id": 634,
+      "question": "A persistent collection of interrelated data items can be defined as which of the following?",
+      "options": {
+        "A": "database",
+        "B": "database management system",
+        "C": "database security",
+        "D": "database shadowing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A database can be defined as a persistent collection of interrelated data items. Persistency is obtained through the preservation of integrity and through the use of nonvolatile storage media. The description of a database is a schema and a Data Description Language (DDL) defines the schema. Incorrect Answers: B: A database management system is the software that maintains and provides access to the database. This is not what is described in the question. C: Database security restricts access to the database to authorized users and applications. This is not what is described in the question. D: Database shadowing creates a replica of the database on another database server for redundancy purposes. This is not what is described in the question."
+    },
+    {
+      "id": 635,
+      "question": "The description of the database is called a schema. The schema is defined by which of the following?",
+      "options": {
+        "A": "Data Control Language (DCL).",
+        "B": "Data Manipulation Language (DML).",
+        "C": "Data Definition Language (DDL).",
+        "D": "Search Query Language (SQL)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The description of the database is called a schema, and the schema is defined by a Data Definition Language (DDL). DDL is similar to a computer programming language and is used for defining data structures, such as database schemas. Incorrect Answers: A: The Data Control Language (DCL) is a subset of the Structured Query Language (SQL) that allows database administrators to configure security access to relational databases. B: The Data Manipulation Language (DML) is used to retrieve, insert and modify database information. These commands will be used by all database users during the routine operation of the database. D: SQL is the abbreviation for structured query language and not search query language. SQL is a standardized query language for requesting information from a database."
+    },
+    {
+      "id": 636,
+      "question": "Which of the following defines the software that maintains and provides access to the database?",
+      "options": {
+        "A": "database management system (DBMS)",
+        "B": "relational database management system (RDBMS)",
+        "C": "database identification system (DBIS)",
+        "D": "Interface Definition Language system (IDLS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The database management system (DBMS) is a software suite that is used to manage access to the database and provides data integrity and redundancy. It is usually controlled by a database administrator. Incorrect Answers: B: A relational database management system (RDBMS) provides access to a relational database. C: There is no database identification system. D: An Interface Definition Language (IDL) is a language that is used to define the interface between a client and server process in a distributed system. It is not used to provide access to a database."
+    },
+    {
+      "id": 637,
+      "question": "Which of the following represents a relation, which is the basis of a relational database?",
+      "options": {
+        "A": "One-dimensional table",
+        "B": "Two-dimensional table",
+        "C": "Three-dimensional table",
+        "D": "Four-dimensional table"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The relational database model is based on a series of interrelated two-dimensional tables that have columns representing the variables and rows that contain specific instances of data."
+    },
+    {
+      "id": 638,
+      "question": "Which of the following represents the rows of the table in a relational database?",
+      "options": {
+        "A": "attributes",
+        "B": "records or tuples",
+        "C": "record retention",
+        "D": "relation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The rows of the table represent records or tuples. Incorrect Answers: A: The columns of the table represent the attributes. C: Record retention refers to the usually legal requirement to retain data that are no longer of value to the business for a period of time. This ensures compliance with legal requirements. D: The relation represents the link between data entities, usually from different tables in the database."
+    },
+    {
+      "id": 639,
+      "question": "Which of the following can be defined as the set of allowable values that an attribute can take?",
+      "options": {
+        "A": "domain of a relation",
+        "B": "domain name service of a relation",
+        "C": "domain analysis of a relation",
+        "D": "domains, in database of a relation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The domain of a relation is the set of allowable values that an attribute can take. In other words, it is the values that can be entered in a column (attribute) of a table (relation)."
+    },
+    {
+      "id": 640,
+      "question": "Which of the following can be defined as a unique identifier in the table that unambiguously points to an individual tuple or record in the table?",
+      "options": {
+        "A": "primary key",
+        "B": "candidate key",
+        "C": "secondary key",
+        "D": "foreign key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The primary key is the attribute that is used to make each row or tuple in a table unique. Incorrect Answers: B: Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table. C: Secondary keys are candidate keys that have not been chosen as the primary key. The primary key is the attribute that is used to make each row or tuple in a table unique. Candidate keys are a subset of attributes that from which the database developer can choose the primary key. D: A foreign key is an attribute in one table that matches the primary key of another table and is used to cross-reference tables."
+    },
+    {
+      "id": 641,
+      "question": "Which of the following can be defined as THE unique attribute used as a unique identifier within a given table to identify a tuple?",
+      "options": {
+        "A": "primary key",
+        "B": "candidate key",
+        "C": "foreign key",
+        "D": "secondary key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The primary key is the attribute that is used to make each row or tuple in a table unique. Incorrect Answers: B: Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table. C: A foreign key is an attribute in one table that matches the primary key of another table and is used to cross-reference tables. D: Secondary keys are candidate keys that have not been chosen as the primary key. The primary key is the attribute that is used to make each row or tuple in a table unique. Candidate keys are a subset of attributes that from which the database developer can choose the primary key."
+    },
+    {
+      "id": 642,
+      "question": "Which of the following can be defined as an attribute in one relation that has values matching the primary key in another relation?",
+      "options": {
+        "A": "foreign key",
+        "B": "candidate key",
+        "C": "primary key",
+        "D": "secondary key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A foreign key is an attribute in one table that matches the primary key of another table and is used to cross-reference tables. Incorrect Answers: B: Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table. C: The primary key is the attribute that is used to make each row or tuple in a table unique. D: Secondary keys are candidate keys that have not been chosen as the primary key. The primary key is the attribute that is used to make each row or tuple in a table unique. Candidate keys are a subset of attributes that from which the database developer can choose the primary key."
+    },
+    {
+      "id": 643,
+      "question": "Referential Integrity requires that for any foreign key attribute, the referenced relation must have a tuple with the same value for which of the following?",
+      "options": {
+        "A": "primary key",
+        "B": "secondary key",
+        "C": "foreign key",
+        "D": "candidate key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A foreign key is an attribute in one table that references or matches the primary key of another table. The primary key is the attribute that is used to ensure that each row or tuple in a table unique. Together, the foreign key and the primary key ensure referential integrity. Incorrect Answers: B: Secondary keys are candidate keys that have not been chosen as the primary key. The primary key is the attribute that is used to make each row or tuple in a table unique. Candidate keys are a subset of attributes that from which the database developer can choose the primary key. C: A foreign key is an attribute in one table that matches the primary key of another table and is used to cross-reference tables. D: Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table."
+    },
+    {
+      "id": 644,
+      "question": "Matches between which of the following are important because they represent references from one relation to another and establish the connections among these relations?",
+      "options": {
+        "A": "foreign key to primary key",
+        "B": "foreign key to candidate key",
+        "C": "candidate key to primary key",
+        "D": "primary key to secondary key"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A foreign key is an attribute in one table that references or matches the primary key of another table. The primary key is the attribute that is used to ensure that each row or tuple in a table unique. Together, the foreign key and the primary key ensure referential integrity. Incorrect Answers: B: Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table. There are usually more than one candidate key attributes in a table. C: A foreign key is an attribute in one table that references or matches the primary key of another table. Candidate keys are a subset of attributes that from which the database developer can choose the primary key to uniquely identify any tuple or record in a table. D: Secondary keys are candidate keys that have not been chosen as the primary key. The primary key is the attribute that is used to make each row or tuple in a table unique. Candidate keys are a subset of attributes that from which the database developer can choose the primary key."
+    },
+    {
+      "id": 645,
+      "question": "A database view is the results of which of the following operations?",
+      "options": {
+        "A": "Join and Select.",
+        "B": "Join, Insert, and Project.",
+        "C": "Join, Project, and Create.",
+        "D": "Join, Project, and Select."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "SQL offers three classes of operators for creating views: select, project, and join. The select operator serves to shrink the table vertically by eliminating unwanted rows (tuples). The project operator serves to shrink the table horizontally by removing unwanted columns (attributes). Most commercial implementations of SQL do not support a project operation, instead projections are achieved by specifying the columns desired in the output. The join operator allows the dynamic linking of two tables that share a common column value. Incorrect Answers: A: SQL offers three classes of operators for creating views: select, project, and join. However, modern implementations of SQL do not support a project operation, instead projections are achieved by specifying the columns desired in the output. Nevertheless, project is a SQL operator. B: Insert is a SQL command used to insert data into a table. It is not used to output a view. C: Create is a SQL command used to create a new database, table, view, or index. However, the data or output of the view requires a select statement to shrink the table vertically by not showing unwanted rows, a project operation that shrinks the table horizontally by not showing unwanted columns, and a join statement when data from more than one table is required."
+    },
+    {
+      "id": 646,
+      "question": "In regards to the query function of relational database operations, which of the following represent implementation procedures that correspond to each of the low- level operations in the query?",
+      "options": {
+        "A": "query plan",
+        "B": "relational plan",
+        "C": "database plan",
+        "D": "structuring plan"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A query plan (or query execution plan) is an ordered set of steps used to access data in a SQL relational database management system. This is a specific case of the relational model concept of access plans. Since SQL is declarative, there are typically a large number of alternative ways to execute a given query, with widely varying performance. When a query is submitted to the database, the query optimizer evaluates some of the different, correct possible plans for executing the query and returns what it considers the best option. Incorrect Answers: B: Relational plan is not the correct term to describe implementation procedures that correspond to each of the low-level operations in the query. C: Database plan is not the correct term to describe implementation procedures that correspond to each of the low-level operations in the query. D: Structural plan is not the correct term to describe implementation procedures that correspond to each of the low-level operations in the query."
+    },
+    {
+      "id": 647,
+      "question": "In regards to relational database operations using the Structure Query Language (SQL), which of the following is a value that can be bound to a placeholder declared within an SQL statement?",
+      "options": {
+        "A": "A bind value",
+        "B": "An assimilation value",
+        "C": "A reduction value",
+        "D": "A resolution value"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. Instead of putting the values directly into the SQL statement, you just use a placeholder like ?, :name or @name and provide the actual values using a separate API call. When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values. Incorrect Answers: B: An assimilation value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement. C: A reduction value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement. D: A resolution value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement."
+    },
+    {
+      "id": 648,
+      "question": "Which of the following are placeholders for literal values in a Structured Query Language (SQL) query being sent to the database on a server?",
+      "options": {
+        "A": "Bind variables",
+        "B": "Assimilation variables",
+        "C": "Reduction variables",
+        "D": "Resolution variables"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Bind variables placeholders for literal values in a Structured Query Language (SQL) query being sent to the database on a server. The SQL statement is sent to the server for parsing and the later values are bound to the placeholders and sent separately to the server. This separate step is the origin of the term ‘bind variable’. Incorrect Answers: B: An assimilation value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement. C: A reduction value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement. D: A resolution value is not the correct term for a value that can be bound to a placeholder declared within an SQL statement."
+    },
+    {
+      "id": 649,
+      "question": "Which of the following is an important part of database design that ensures that attributes in a table depend only on the primary key?",
+      "options": {
+        "A": "Normalization",
+        "B": "Assimilation",
+        "C": "Reduction",
+        "D": "Compaction"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The first normal form (1NF) requires that we create separate tables for each group of related data and identify each row with a unique column identified as the primary key. The second normal form (2NF) requires that we move data that is only partially dependent on the primary key to another table. The third normal form (3NF) requires that we remove data that do not depend only on the primary key. The process of conforming with the normal form us called normalization."
+    },
+    {
+      "id": 650,
+      "question": "Normalizing data within a database could include all or some of the following except which one?",
+      "options": {
+        "A": "Eliminate duplicative columns from the same table.",
+        "B": "Eliminates functional dependencies on a partial key by putting the fields in a separate table from those that are dependent on the whole key",
+        "C": "Eliminates Functional dependencies on non-key fields by putting them in a separate table. At this level, all non-key fields are dependent on the primary key.",
+        "D": "Eliminating duplicate key fields by putting them into separate tables."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Normalizing data within a database does not eliminate duplicate key fields by putting them into separate tables. An entity is in First Normal Form (1NF) when all tables are two-dimensional with no repeating groups. A row is in first normal form (1NF) if all underlying domains contain atomic values only. 1NF eliminates repeating groups by putting each into a separate table and connecting them with a one-to-many relationship. Make a separate table for each set of related attributes and uniquely identify each record with a primary key. Eliminate duplicative columns from the same table. Create separate tables for each group of related data and identify each row with a unique column or set of columns (the primary key). An entity is in Second Normal Form (2NF) when it meets the requirement of being in First Normal Form (1NF) and additionally: Does not have a composite primary key. Meaning that the primary key cannot be subdivided into separate logical entities. All the non-key columns are functionally dependent on the entire primary key. A row is in second normal form if, and only if, it is in first normal form and every non-key attribute is fully dependent on the key. 2NF eliminates functional dependencies on a partial key by putting the fields in a separate table from those that are dependent on the whole key. An example is resolving many:many relationships using an intersecting entity An entity is in Third Normal Form (3NF) when it meets the requirement of being in Second Normal Form (2NF) and additionally: Functional dependencies on non-key fields are eliminated by putting them in a separate table. At this level, all non-key fields are dependent on the primary key. A row is in third normal form if and only if it is in second normal form and if attributes that do not contribute to a description of the primary key are move into a separate table. An example is creating look-up tables. Incorrect Answers: A: Normalizing data within a database does eliminate duplicative columns from the same table. B: Normalizing data within a database does eliminate functional dependencies on a partial key by putting the fields in a separate table from those that are dependent on the whole key. C: Normalizing data within a database does eliminate Functional dependencies on non-key fields by putting them in a separate table."
+    }
+  ]
+}

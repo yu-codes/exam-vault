@@ -1,0 +1,761 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q501 - Q550",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 501,
+      "question": "Which one of the following entails immediately transmitting copies of on-line transactions to a remote computer facility for backup?",
+      "options": {
+        "A": "Archival storage management (ASM)",
+        "B": "Electronic vaulting",
+        "C": "Hierarchical storage management (HSM)",
+        "D": "Data compression"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "\"Electronic vaulting makes an immediate copy of a changed file or transaction and sends it to a remote location where the original backup is stored....Another technology used for automated backups is hierarrchial storage management (HSM). In this situation, the HSM system dynamically manages the storage and covery of files, which are copied to storage media devices that vary in speed and cost. The faster media hold the data that is accessed more often and the seldom-useed files are stored on the slower devices, or near-line devices. The different storage media rang from optical disk, magnetic disks, and tapes. Pg. 619 Shon Harris CISSP All-In-One Certification Exam Guide"
+    },
+    {
+      "id": 502,
+      "question": "When continuous availability (24 hours-a-day processing) is required, which one of the following provides a good alternative to tape backups?",
+      "options": {
+        "A": "Disk mirroring",
+        "B": "Backup to jukebox",
+        "C": "Optical disk backup",
+        "D": "Daily archiving"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Hierarchical Storage Management (HSM). HSM provides continuous on-line backup by using optical or tape 'jukeboxes,' similar to WORMs. It appears as an infinite disk to the system, and can be configured to provide the closest version of an available real-time backup. This is commonly employed in very large data retrieval systems.\" Pg. 71 Krutz: The CISSP Prep Guide."
+    },
+    {
+      "id": 503,
+      "question": "Zip/Jaz drives are frequently used for the individual backups of small data sets of:",
+      "options": {
+        "A": ") specific application data",
+        "B": ") sacrificial application data",
+        "C": ") static application data",
+        "D": ") dynamic application data"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 504,
+      "question": "With non-continuous backup systems, data that was entered after the last backup prior to a system crash will have to be:",
+      "options": {
+        "A": ") recreated",
+        "B": ") created",
+        "C": ") updated",
+        "D": ") deleted"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 505,
+      "question": "The alternate processing strategy in a business continuity plan can provide for required backup computing capacity through a hot site, a cold site, or",
+      "options": {
+        "A": "A dial-up services program.",
+        "B": "An off-site storage replacement.",
+        "C": "An online backup program.",
+        "D": "A crate and ship replacement."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "What I believe is being wanted here is not the other data center backup alternatives but transaction redundancy implementation. The CISSP candidate should understand the three concepts used to create a level of fault tolerance and redundancy in transaction processing. While these processes are not used solely for disaster recovery, they are often elements of a larger disaster recovery plan. If one or more of these processes are employed, the ability of a company to get back online is greatly enhanced. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 394 (they are Electronic Vaulting, Remote journaling, and Database shadowing)"
+    },
+    {
+      "id": 506,
+      "question": "The 8mm tape format is commonly used in Helical Scan tape drives, but was superseded by:",
+      "options": {
+        "A": ") Digital Linear Tape (DLT)",
+        "B": ") Analog Linear Tape (ALT)",
+        "C": ") Digital Signal Tape (DST)",
+        "D": ") Digital Coded Tape (DCT)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "\"8mm Tape. This format was commonly used in Helical Scan tape drives, but was superseded by Digital Linear Tape (DLT).\" Pg 95 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 507,
+      "question": "The spare drives that replace the failed drives are usually hot swappable, meaning they can be replaced on the server in which of the following scenarios?",
+      "options": {
+        "A": ") system is up and running",
+        "B": ") system is quiesced but operational",
+        "C": ") system is idle but operational",
+        "D": ") system is up and in single-user-mode"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 508,
+      "question": "Primarily run when time and tape space permits, and is used for the system archive or baselined tape sets is the:",
+      "options": {
+        "A": ") full backup method",
+        "B": ") Incremental backup method",
+        "C": ") differential backup method",
+        "D": ") tape backup method"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 509,
+      "question": "This backup method makes a complete backup of every file on the server every time it is run by:",
+      "options": {
+        "A": ") full backup method",
+        "B": ") incremental backup method",
+        "C": ") differential backup method",
+        "D": ") tape backup method"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 510,
+      "question": "A backup of all files that are new or modified since the last full backup is",
+      "options": {
+        "A": "In incremental backup",
+        "B": "A father/son backup",
+        "C": "A differential backup",
+        "D": "A full backup"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "\"Incremental backup -A procedure that backs up only those files that have been modified since the previous backup of any sort. It does remove the archive attribute. Differential backup - A procedure that backs up all files that have been modified since the last full backup. It does not remove the archive attribute.\" - Shon Harris All-in-one CISSP Certification Guide pg 618"
+    },
+    {
+      "id": 511,
+      "question": "What two factors should a backup program track to ensure the serviceability of backup tape media?",
+      "options": {
+        "A": "The initial usage data of the media and the number of uses.",
+        "B": "The physical characteristics and rotation cycle of the media.",
+        "C": "The manufactured and model number of the tape media.",
+        "D": "The frequency of usage and magnetic composition."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The answer should be B. The physical charecteristics (what type of tape drive) and rotation cyle. (Frequency of backup cycles and retention timE.)"
+    },
+    {
+      "id": 512,
+      "question": "Which of the following virus types changes some of its characteristics as it spreads?",
+      "options": {
+        "A": ") boot sector",
+        "B": ") parasitic",
+        "C": ") stealth",
+        "D": ") polymorphic"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 513,
+      "question": "Which one of the following is a good defense against worms?",
+      "options": {
+        "A": "Differentiating systems along the lines exploited by the attack.",
+        "B": "Placing limits on sharing, writing, and executing programs.",
+        "C": "Keeping data objects small, simple, and obvious as to their intent.",
+        "D": "Limiting connectivity by means of well-managed access controls."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Take as general information regarding worms \"Although the worm is not technically malicious, opening the attachment allows the file to copy itself to the user's PC Windows folder and then send the .pif-based program to any e-mail address stored on the hard drive. Ducklin said the huge risks associated with accepting program files such as .pif, .vbs (visual basic script) or the more common .exe (executable) as attachments via e-mail outweighs the usefulness of distributing such files in this manner. \"There's no business sense for distributing programs via e-mail,\" he said. To illustrate the point, Ducklin said six of the top 10 viruses reported to Sophos in April spread as Windows programs inside e-mails.\" http://security.itworld.com/4340/030521stopworms/page_1.html"
+    },
+    {
+      "id": 514,
+      "question": "An active content module, which attempts to monopolize and exploits system resources is called a",
+      "options": {
+        "A": "Macro virus",
+        "B": "Hostile applet",
+        "C": "Plug-in worm",
+        "D": "Cookie"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "This applet can execute in the network browser and may contain malicious code. The types of downloadable programs are also known as mobile code. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 361 \"ActiveX Controls are Microsoft's answer to Sun's Java applets. They operate in a very similar fashion, but they are implemented using any on of a variety of languages, including Visual Basic, C, C++ and Java. There are two key distinctions between Java applets and ActiveX controls. First, ActiveX controls use proprietary Microsoft technology and, therefore, can only execute on systems running Microsoft operating systems. Second, ActiveX controls are not subject to the sandbox restrictions placed on Java applets. They have full access to the Windows operating environment and can perform a number of privileged actions. Therefore, special precautions must be taken when deciding which ActiveX controls to download and execute. Many security administrators have taken the somewhat harsh position of prohibiting the download of any ActiveX content from all but a select handful of trusted sites.\" Pg. 214 Tittel: CISSP Study Guide"
+    },
+    {
+      "id": 515,
+      "question": "Macro viruses written in Visual Basic for Applications (VDA) are a major problem because",
+      "options": {
+        "A": "Floppy disks can propagate such viruses.",
+        "B": "These viruses can infect many types of environments.",
+        "C": "Anti-virus software is usable to remove the viral code.",
+        "D": "These viruses almost exclusively affect the operating system."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 516,
+      "question": "What is the term used to describe a virus that can infect both program files and boot sectors?",
+      "options": {
+        "A": "Polymorphic",
+        "B": "Multipartite",
+        "C": "Stealth",
+        "D": "Multiple encrypting"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 517,
+      "question": "Why are macro viruses easy to write?",
+      "options": {
+        "A": "Active contents controls can make direct system calls",
+        "B": "The underlying language is simple and intuitive to apply.",
+        "C": "Only a few assembler instructions are needed to do damage.",
+        "D": "Office templates are fully API compliant."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Macro Languages enable programmers to edit, delete, and copy files. Because these languages are so easy to use, many more types of macro viruses are possible. - Shon Harris All-in-one CISSP Certification Guide pg 785"
+    },
+    {
+      "id": 518,
+      "question": "Which one of the following traits alow macro viruses to spread more effectively than other types?",
+      "options": {
+        "A": "They infect macro systems as well as micro computers.",
+        "B": "They attach to executable and batch applications.",
+        "C": "They can be transported between different operating systems.",
+        "D": "They spread in distributed systems without detection"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Macro virus is a virus written in one of these programming languages and is platform independent. They infect and replicate in templates and within documents. - Shon Harris All-in-one CISSP Certification Guide pg 784"
+    },
+    {
+      "id": 519,
+      "question": "In what way could Java applets pose a security threat?",
+      "options": {
+        "A": ") Their transport can interrupt the secure distribution of World Wide Web pages over the Internet by removing SSL and S-HTTP",
+        "B": ") Java interpreters do not provide the ability to limit system access that an applet could have on a client system",
+        "C": ") Executables from the Internet may attempt an intentional attack when they are downloaded on a client system",
+        "D": ") Java does not check the bytecode at runtime or provide other safety mechanisms for program isolation from the client system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: \"Java Security Java applets use a security scheme that employs a sandbox to limit the applet's access to certain specific areas within the user's system and protects the system from malicious or poorly written applets. The applet is supposed to run only within the sandbox. The sandbox restricts the applet's environment by restricting access to a user's hard drives and system resources. If the applet does not go outside the sandbox, it is considered safe. However, as with many other things in the computing world, the bad guys have figured out how to escape their confines and restrictions. Programmers have figured out how to write applets that enable the code to access hard drives and resources that are supposed to be protected by the Java security scheme. This code can be malicious in nature and cause destruction and mayhem to the user and her system. Java employs a sandbox in its security scheme, but if an applet can escape the confines of the sandbox, the system can be easily compromised.\" Pg 726 Shon Harris: All-In-One CISSP Certification Guide."
+    },
+    {
+      "id": 520,
+      "question": "What setup should an administrator use for regularly testing the strength of user passwords?",
+      "options": {
+        "A": ") A networked workstation so that the live password database can easily be accessed by the cracking program",
+        "B": ") A networked workstation so the password database can easily be copied locally and processed by the cracking program",
+        "C": ") A standalone workstation on which the password database is copied and processed by the cracking program",
+        "D": ") A password-cracking program is unethical; therefore it should not be used."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 521,
+      "question": "On UNIX systems, passwords shall be kept:",
+      "options": {
+        "A": "In any location on behalf of root.",
+        "B": "In a shadow password file.",
+        "C": "In the /etc/passwd file.",
+        "D": "In root."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: When possible, on UNIX systems, passwords shall not be kept in the /etc/passwd file, but rather in a shadow password file which can be modified only by root or a program executing on behalf of root."
+    },
+    {
+      "id": 522,
+      "question": "Which of the following would constitute the best example of a password to use for access to a system by a network administrator?",
+      "options": {
+        "A": ") holiday",
+        "B": ") Christmas12",
+        "C": ") Jenny&30",
+        "D": ") TrZc&45g"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 523,
+      "question": "Which of the following is not a media viability control used to protect the viability of data storage media?",
+      "options": {
+        "A": ") clearing",
+        "B": ") marking",
+        "C": ") handling",
+        "D": ") storage"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 315 Krutz: CISSP Study Guide: Gold Edition"
+    },
+    {
+      "id": 524,
+      "question": "Which of the following refers to the data left on the media after the media has been erased?",
+      "options": {
+        "A": ") remanence",
+        "B": ") recovery",
+        "C": ") sticky bits",
+        "D": ") semi-hidden"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 525,
+      "question": "What is the main issue with media reuse?",
+      "options": {
+        "A": ") Degaussing",
+        "B": ") Data remanence",
+        "C": ") Media destruction",
+        "D": ") Purging"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 526,
+      "question": "What should a company do first when disposing of personal computers that once were used to store confidential data?",
+      "options": {
+        "A": ") Overwrite all data on the hard disk with zeroes",
+        "B": ") Delete all data contained on the hard disk",
+        "C": ") Demagnetize the hard disk",
+        "D": ") Low level format the hard disk"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 527,
+      "question": "Which of the following is not a critical security aspect of Operations Controls?",
+      "options": {
+        "A": ") Controls over hardware",
+        "B": ") data media used",
+        "C": ") Operations using resources",
+        "D": ") Environment controls"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Reference: pg 311 Krutz: CISSP Prep Guide: Gold Edition"
+    },
+    {
+      "id": 528,
+      "question": "What tool is being used to determine whether attackers have altered system files of executables?",
+      "options": {
+        "A": "File Integrity Checker",
+        "B": "Vulnerability Analysis Systems",
+        "C": "Honey Pots",
+        "D": "Padded Cells"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Although File Integrity Checkers are most often used to determine whether attackers have altered system files or executables, they can also help determine whether vendor-supplied bug patches or other desired changes have been applied to system binaries. They are extremely valuable to those conducting a forensic examination of systems that have been attacked, as they allow quick and reliable diagnosis of the footprint of an attack. This enables system managers to optimize the restoration of service after incidents occur."
+    },
+    {
+      "id": 529,
+      "question": "A system file that has been patched numerous times becomes infected with a virus. The anti-virus software warns that disinfecting the file can damage it. What course of action should be taken?",
+      "options": {
+        "A": ") Replace the file with the original version from master media",
+        "B": ") Proceed with automated disinfection",
+        "C": ") Research the virus to see if it is benign",
+        "D": ") Restore an uninfected version of the patched file from backup media"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 530,
+      "question": "In an on-line transaction processing system, which of the following actions should be taken when erroneous or invalid transactions are detected?",
+      "options": {
+        "A": ") The transactions should be dropped from processing",
+        "B": ") The transactions should be processed after the program makes adjustments",
+        "C": ") The transactions should be written to a report and reviewed",
+        "D": ") The transactions should be corrected and reprocessed"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 531,
+      "question": "Which of the following is a reasonable response from the intrusion detection system when it detects Internet Protocol (IP) packets where the IP source address is the same as the IP destination address?",
+      "options": {
+        "A": "Allow the packet to be processed by the network and record the event.",
+        "B": "Record selected information about the item and delete the packet.",
+        "C": "Resolve the destination address and process the packet.",
+        "D": "Translate the source address and resend the packet."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RFC 1918 and RFC 2827 state about private addressing and ip spoofing using the same source address as destination address. Drop the packet."
+    },
+    {
+      "id": 532,
+      "question": "Which of the following is not a good response to a detected intrusion?",
+      "options": {
+        "A": ") Collect additional information about the suspected attack",
+        "B": ") Inject TCP reset packets into the attacker's connection to the victim system",
+        "C": ") Reconfigure routers and firewalls to block packets from the attacker's apparent connection",
+        "D": ") Launch attacks or attempt to actively gain information about the attacker's host"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 533,
+      "question": "Once an intrusion into your organizations information system has been detected, which of the following actions should be performed first?",
+      "options": {
+        "A": ") Eliminate all means of intruder access",
+        "B": ") Contain the intrusion",
+        "C": ") Determine to what extent systems and data are compromised",
+        "D": ") Communicate with relevant parties"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 534,
+      "question": "After an intrusion has been contained and the compromised systems having been reinstalled, which of the following need not be reviewed before bringing the systems back to service?",
+      "options": {
+        "A": ") Access control lists",
+        "B": ") System services and their configuration",
+        "C": ") Audit trails",
+        "D": ") User accounts"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 535,
+      "question": "Which of the following includes notifying the appropriate parties to take action in order to determine the extent of the severity of an incident and to remediate the incident's effects?",
+      "options": {
+        "A": ") Intrusion Evaluation (IE) and Response",
+        "B": ") Intrusion Recognition (IR) and Response",
+        "C": ") Intrusion Protection (IP) and Response",
+        "D": ") Intrusion Detection (ID) and Response"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "\"Intrusion Detection (ID) and Response is the task of monitoring systems for evidence of an intrusion or an inappropriate usage. This includes notifying the appropriate parties to take action in order to determine the extent of the severity of an incident and to remediate the incident's effects.\" Pg 86 Krutz: CISSP Prep Guide: Gold Edition."
+    },
+    {
+      "id": 536,
+      "question": "Which of the following is used to monitor network traffic or to monitor host audit logs in order to determine violations of security policy that have taken place?",
+      "options": {
+        "A": ") Intrusion Detection System",
+        "B": ") Compliance Validation System",
+        "C": ") Intrusion Management System",
+        "D": ")Compliance Monitoring System"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 537,
+      "question": "Which of the following is not a technique used for monitoring?",
+      "options": {
+        "A": ") Penetration testing",
+        "B": ") Intrusion detection",
+        "C": ") Violation processing (using clipping levels)",
+        "D": ") Countermeasures testing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 538,
+      "question": "Which one of the following is NOT a characteristic of an Intrusion Detection System? (IDS)",
+      "options": {
+        "A": "Determines the source of incoming packets.",
+        "B": "Detects intruders attempting unauthorized activities.",
+        "C": "Recognizes and report alterations to data files.",
+        "D": "Alerts to known intrusion patterns."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Software employed to monitor and detect possible attacks and behaviors that vary from the normal and expected activity. The IDS can be network-based, which monitors network traffic, or host-based, which monitors activities of a specific system and protects system files and control mechanisms. - Shon Harris All-in-one CISSP Certification Guide pg 932"
+    },
+    {
+      "id": 539,
+      "question": "An IDS detects an attach using which of the following?",
+      "options": {
+        "A": ") an event-based ID or a statistical anomaly-based ID",
+        "B": ") a discrete anomaly-based ID or a signature-based ID",
+        "C": ") a signature-based ID or a statistical anomaly-based ID",
+        "D": ") a signature-based ID or an event-based ID"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 540,
+      "question": "Which of the following monitors network traffic in real time?",
+      "options": {
+        "A": ") network-based IDS",
+        "B": ") host-based IDS",
+        "C": ") application-based IDS",
+        "D": ") firewall-based IDS"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 541,
+      "question": "What technology is being used to detect anomalies?",
+      "options": {
+        "A": "IDS",
+        "B": "FRR",
+        "C": "Sniffing",
+        "D": "Capturing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Intrusion Detection is a quickly evolving domain of expertise. In the past year we have seen giant steps forward in this area. We are now seeing IDS engines that will detect anomalies, and that have some built-in intelligence. It is no longer a simple game of matching signatures in your network traffic."
+    },
+    {
+      "id": 542,
+      "question": "IDSs verify, itemize, and characterize threats from:",
+      "options": {
+        "A": "Inside your organization's network.",
+        "B": "Outside your organization's network.",
+        "C": "Outside and inside your organization's network.",
+        "D": "The Internet."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: IDSs verify, itemize, and characterize the threat from both outside and inside your organization's network, assisting you in making sound decisions regarding your allocation of computer security resources. Using IDSs in this manner is important, as many people mistakenly deny that anyone (outsider or insider) would be interested in breaking into their networks. Furthermore, the information that IDSs give you regarding the source and nature of attacks allows you to make decisions regarding security strategy driven by demonstrated need, not guesswork or folklore."
+    },
+    {
+      "id": 543,
+      "question": "IDS can be described in terms of what fundamental functional components?",
+      "options": {
+        "A": "Response",
+        "B": "Information Sources",
+        "C": "Analysis",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Many IDSs can be described in terms of three fundamental functional components: Information Sources - the different sources of event information used to determine whether an intrusion has taken place. These sources can be drawn from different levels of the system, with network, host, and application monitoring most common. Analysis - the part of intrusion detection systems that actually organizes and makes sense of the events derived from the information sources, deciding when those events indicate that intrusions are occurring or have already taken place. The most common analysis approaches are misuse detection and anomaly detection. Response - the set of actions that the system takes once it detects intrusions. These are typically grouped into active and passive measures, with active measures involving some automated intervention on the part of the system, and passive measures involving reporting IDS findings to humans, who are then expected to take action based on those reports."
+    },
+    {
+      "id": 544,
+      "question": "What are the primary goals of intrusion detection systems? (Select all that apply.)",
+      "options": {
+        "A": "Accountability",
+        "B": "Availability",
+        "C": "Response",
+        "D": "All of the choices"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "type": "multiple",
+      "explanation": "Explanation: Although there are many goals associated with security mechanisms in general, there are two overarching goals usually stated for intrusion detection systems. Accountability is the capability to link a given activity or event back to the party responsible for initiating it. This is essential in cases where one wishes to bring criminal charges against an attacker. The goal statement associated with accountability is: \"I can deal with security attacks that occur on my systems as long as I know who did it (and where to find them.)\" Accountability is difficult in TCP/IP networks, where the protocols allow attackers to forge the identity of source addresses or other source identifiers. It is also extremely difficult to enforce accountability in any system that employs weak identification and authentication mechanisms. Response is the capability to recognize a given activity or event as an attack and then taking action to block or otherwise affect its ultimate goal. The goal statement associated with response is \"I don't care who attacks my system as long as I can recognize that the attack is taking place and block it.\" Note that the requirements of detection are quite different for response than for accountability."
+    },
+    {
+      "id": 545,
+      "question": "What is the most common way to classify IDSs?",
+      "options": {
+        "A": "Group them by information source.",
+        "B": "Group them by network packets.",
+        "C": "Group them by attackers.",
+        "D": "Group them by signs of intrusion."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The most common way to classify IDSs is to group them by information source. Some IDSs analyze network packets, captured from network backbones or LAN segments, to find attackers. Other IDSs analyze information sources generated by the operating system or application software for signs of intrusion."
+    },
+    {
+      "id": 546,
+      "question": "The majority of commercial intrusion detection systems are:",
+      "options": {
+        "A": "Identity-based",
+        "B": "Network-based",
+        "C": "Host-based",
+        "D": "Signature-based"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The majority of commercial intrusion detection systems are network-based. These IDSs detect attacks by capturing and analyzing network packets. Listening on a network segment or switch, one network-based IDS can monitor the network traffic affecting multiple hosts that are connected to the network segment, thereby protecting those hosts."
+    },
+    {
+      "id": 547,
+      "question": "Which of the following is a drawback of Network-based IDSs?",
+      "options": {
+        "A": "It cannot analyze encrypted information.",
+        "B": "It is very costly to setup.",
+        "C": "It is very costly to manage.",
+        "D": "It is not effective."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Network-based IDSs cannot analyze encrypted information. This problem is increasing as more organizations (and attackers) use virtual private networks. Most network-based IDSs cannot tell whether or not an attack was successful; they can only discern that an attack was initiated. This means that after a network-based IDS detects an attack, administrators must manually investigate each attacked host to determine whether it was indeed penetrated."
+    },
+    {
+      "id": 548,
+      "question": "Host-based IDSs normally utilize information from which of the following sources?",
+      "options": {
+        "A": "Operating system audit trails and system logs.",
+        "B": "Operating system audit trails and network packets.",
+        "C": "Network packets and system logs.",
+        "D": "Operating system alarms and system logs."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Host-based IDSs normally utilize information sources of two types, operating system audit trails, and system logs. Operating system audit trails are usually generated at the innermost (kernel) level of the operating system, and are therefore more detailed and better protected than system logs. However, system logs are much less obtuse and much smaller than audit trails, and are furthermore far easier to comprehend. Some host-based IDSs are designed to support a centralized IDS management and reporting infrastructure that can allow a single management console to track many hosts. Others generate messages in formats that are compatible with network management systems."
+    },
+    {
+      "id": 549,
+      "question": "When comparing host based IDS with network based ID, which of the following is an obvious advantage?",
+      "options": {
+        "A": "It is unaffected by switched networks.",
+        "B": "It cannot analyze encrypted information.",
+        "C": "It is not costly to setup.",
+        "D": "It is not costly to manage."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Host-based IDSs are unaffected by switched networks. When Host-based IDSs operate on OS audit trails, they can help detect Trojan horse or other attacks that involve software integrity breaches. These appear as inconsistencies in process execution."
+    },
+    {
+      "id": 550,
+      "question": "You are comparing host based IDS with network based ID. Which of the following will you consider as an obvious disadvantage of host based IDS?",
+      "options": {
+        "A": "It cannot analyze encrypted information.",
+        "B": "It is costly to remove.",
+        "C": "It is affected by switched networks.",
+        "D": "It is costly to manage."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Host-based IDSs are harder to manage, as information must be configured and managed for every host monitored. Since at least the information sources (and sometimes part of the analysis engines) for host-based IDSs reside on the host targeted by attacks, the IDS may be attacked and disabled as part of the attack. Host-based IDSs are not well suited for detecting network scans or other such surveillance that targets an entire network, because the IDS only sees those network packets received by its host. Host-based IDSs can be disabled by certain denial-of-service attacks."
+    }
+  ]
+}

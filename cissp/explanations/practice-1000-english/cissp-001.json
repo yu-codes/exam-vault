@@ -1,0 +1,746 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "question_range": "Q1 - Q50",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which one of the following functions provides the least effective organizational reporting structure for the Information Systems Security function? 5<q‘€‘l%.%.%??E>T%4£IiJ'i'%‘i‘?.§l€i5é, FLU TWlL*lll4‘HR’§‘éZ.El.éRéE2ilI%l?c§i<7fiJ5‘s%/§t€><5Z% EV] °",
+      "options": {
+        "A": "IS quality assurance. l%IE.,%€}EJ§l%l,IE",
+        "B": "Corporate security. ikii IS resource management. l€.§.%€i§$§%E IS operations. l§.§./%€33E5Z5.£€§ :"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 2,
+      "question": "|n discretionary access environments, which of the following entities is authorized to grant 4 nm Owun%.. iii\" information access to other people? E § £iJ‘5l\"if§fl?'l1$i“l1, l:§lll9ll§/I\\§TlZl§l5@?il*>?i‘3ZElll3)\\l§.§i)‘i Eillflllo I351]",
+      "options": {
+        "A": "Manager *§i§§}\\5'1",
+        "B": "Data Owner i§ZiEF)f7%",
+        "C": "Security Manager ?*$'%‘f§E)\\§'1",
+        "D": "Group Leader ZHK %%="
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 3,
+      "question": "The Computer Security Policy Model the Orange Book is based on is which of the following? l‘%&%“3%¥E‘Jifl‘J1i‘\"<%§i‘il%’l‘Eil% blfliillimli? 5 K.l3ata Encryption Standard",
+      "options": {
+        "B": "Kerberos iT§ll’5l§'fL§1.",
+        "C": "Tempest lllliimgi",
+        "D": "Bell-LaPadula UlJFhi%ii¥ §;%:"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 4,
+      "question": "Which of the following uses a directed graph to specify the rights that a subject can transfer to an object, or that a subject can take from another subject? F§U\"£l§IlEFH E“ Fil iiéH1iFéBE$lZlK?%fZi'JElZlK, §5Z?ElM)\\Eltl333iZlK%‘§\"<f§‘i=E1‘J7i1%'l ?",
+      "options": {
+        "A": "Take-Grant model §?%TE3“§£?’7f§il",
+        "B": "Bell-LaPadula model WJT<¥j%7fi¥jl§'€§!",
+        "C": "Biba model Bibail iii liilkliilil",
+        "D": "Access Matrix model %$:"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 5,
+      "question": "In which of the following security models is the subject's clearance compared to the object's classification such that specific rules can be applied to control how the subject-to-object interactions take place? if iiiii Lifiiil/i\\:1\"%$i§€Pl\"%i§.iiilZlXB<J?=’i BE’-€%l1liE’~161‘%€?tE'i tlzifc, Lililltiéildlilzliillilli EI<JTclIT_$E‘Ji§5$'l ?",
+      "options": {
+        "A": "Access Matrix model i)‘ili%EE1‘;Eii*'§",
+        "B": "Biba model Bibaii",
+        "C": "Take-Grant model 39§H1il‘§7’i§“§Z\"E 7 l-LaPadula model"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 6,
+      "question": "Which of the following was developed to address some of the weaknesses in Kerberos and uses public key cryptography for the distribution of secret keys and provides additional access control support? Tdllli lfi 5l%5ii¥J%Kerberos=l= El<]—*f-5'5 /z§%H@J6§5$“i£%§='EE§1\\EE, 9YFiz‘%iiE%9l~ E14] i7‘i|1i§:‘$lJi%‘-’ Amwws%A%F%%%",
+      "options": {
+        "B": "SESAME Secure European System for Applications in a Multi-vendor Environment iF??'£lX’X§9'|“l2<kJ—Fl‘Ji%§:3%=€3i",
+        "C": "KryptoKnight",
+        "D": "TACACS+"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 7,
+      "question": "ln biometric identification systems, at the beginning, it was soon apparent that truly positive identification could only be based on : ¥£$fi%iF1%'J?=é}iEl1» §z9i‘i1é‘EEEI<J€'>’€iZt,Fl1“$'JiEl5l",
+      "options": {
+        "A": "sex of a person Al§l4]‘li§:'i'J",
+        "B": "physical attributes of a person )\\El‘]%E‘li",
+        "C": "age of a person )\\l§4]$’i§/%\\",
+        "D": "voice of a person )\\El4]?5T§‘ éfi:"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 8,
+      "question": "Rule-Based Access Control (RuBAC) access is determined by rules. Such rules would fit within what category of access control ? %Jf¥5'i.'T'JlE4]ilEJ§§$ll ( RuBAC ) l§l4]iJ‘il‘5.l%ElEl¥%mJl7?%il§l‘].. iX%¥5Wli5L lll34]i7‘i|‘5.lT§$ll'-’ Ii)?",
+      "options": {
+        "A": "Non-Discretionary Access Control (NDAC) Elli Q I5]T§$ll (NDAC)",
+        "B": "Lattice-based Access control %¥1l‘%El<]ij§ T§$|l I313",
+        "C": "Mandatory Access control (MAC) 5'§?F'JTJ‘il‘5] §”§$'l (MAC)",
+        "D": "Discretionary Access Control (DAC) E iii]? IE]ilf'E$ll (DAC) %.\"~;'%="
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 9,
+      "question": "What would be the name of a Logical or Virtual Table dynamically generated to restrict the information a user can access in a database? Fi35l5l5@?'ll5i‘3)'r'5.llJ~il'1]l§l4J§5I5l7§$‘l“i§Z?l?§, 311,1-EEiililiE<]—4\\i§§§l§l4]§li%‘lfW§l4Il5i§?JS\"i$7F§€J?",
+      "options": {
+        "A": "Database shadowing %5[§fEl§EEFr§ iftflié",
+        "B": "Database security",
+        "C": "Database views $§'£f7E‘l§?§'u@",
+        "D": "Database Management system ilililiféif/%€}E %%="
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 10,
+      "question": "What is called the act of a user professing an identity to a system, usually in the form of a log-on ID? E? FHF‘ ir’Y.l/%?¥ii-2%l5J%l §1l61‘B<]iJJ, L)li£lil?rlD3f2i’K‘1i%iP't, if/V9?",
+      "options": {
+        "A": "lntegritv ?E%‘lfE",
+        "B": "Authentication i)\\iIE",
+        "C": "Confidentiality {%%",
+        "D": "ldentification iFl§'a'l"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 11,
+      "question": "Password Tokens are electronic devices or cards that supply a user's password for them. A token system can be used to supply either a static or a dynamic password. There is a big difference between the static and dynamic systems, a static system will normally log a user in but a dynamic system the user will often have to log themselves in. Which of the following would be true about Static password tokens? %@%%%%%F%%@%%¥&%%%%°%%%%WU%¥%%§%EU%@%§ %%W%§%%Z@%E%%,%§%%%%Ei@F,%§%%%%P$%$i %§%E@TWl%¥%§U%%%%%E%%?",
+      "options": {
+        "A": "The token does not authenticates the token owner but the system. %%$%ME%%%€%W%%E%%",
+        "B": "The owner will never be authenticated by the token. %€%$%W%%M",
+        "C": "The owner will authenticate himself to the system. %€%%@%&%EEE",
+        "D": "The owner identity is authenticated by the token %%%%E%%H%E féii:"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "In Synchronous dynamic password tokens: El $iJJ?§ é>/éll I11 =",
+      "options": {
+        "A": "The authentication entity in a system or workstation knows an owner's secret key and PIN, and the entity verifies that the entered password is invalid and that it was entered during the invalid time window. 16 /%é?:§JiIl’I5£i'1l1El‘JU\\if:§lZlX%IIli€F)i7€%§§‘éH%I1P|N,9¥EiX4‘§ElPl§?'T Li5§iIE¥£%§5Zl?l<JBH‘I‘E \"%i2il‘1‘¥r§a‘*u)\\ “I.‘E§5%3ii§5Z B4]",
+        "B": "The toke i n generates a new unique password value at fixed time intervals (this password could be based on the time of day encrypted with a secret key). €>ll$?:€@ EVJIFI IE] IETJ l?i%$HlZ~/|‘%JiEl‘Jl1’E~%E55lE (ii/|‘%%?E5lz‘%%¥%%H7JIi1%‘%.‘ El ,HH*Il‘§.l¥i2I5liE<J)",
+        "C": "The unique password is not entered into a system or workstation along with an owner's PIN. I1E~§$E55lE‘J&€llliE%FIi€%‘EI4]P|N’§t)\\§H%é§iElZIl’E»5KP O",
+        "D": "The token generates a new non-unique password value at fixed time intervals (this password could be based on the time of day encrypted with a secret key). /<>li$ftiEl<]B¢l‘EUlIil?i%$lZ—4‘§9iB‘]3lEI1’§~B‘]@.Z65llE (52/i\"E‘%‘li55%3‘5.14T\"1E)%iJI1§'.;€El‘JB‘I‘ETl) ."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 13,
+      "question": "What is called the percentage at which the False Rejection Rate equals the False Acceptance Rate? %%i§'e3*EZ@$$i1%%i§é3%§%*3i‘H%E‘JE§a‘ttiifivltz ?",
+      "options": {
+        "A": "False Rejection Rate (FRR) or Type I Error ‘E’§l§&?l’E€@$ (FRR) fl3ll§§$’§i5% 18",
+        "B": "False Acceptance Rate (FAR) or Type ll Error ’€§i5j&f§%$ (FAR) §lZ||§ll’€‘EH§'a",
+        "C": "Crossover Error Rate (CER) §_§Y‘E§i%$ (CER)",
+        "D": "Failure to enroll rate (FTE or FER) Ell)‘l5l€Ul§l$ (FTEEEFER)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 14,
+      "question": "Which of the following describes the major disadvantage of many Single Sign-On (SSO) implementations? T‘§Il\"3-lll—ID\"i¥l1‘§i$Yi‘F§$,'§%% (sso) i13\"i’El‘JI%$)%»?i?",
+      "options": {
+        "A": "Once a user obtains access to the system through the initial log-on, they only need to logon to some applications. ~EH%)i“iEi1“iJJ!1éi‘%%%\"§Ei%5i'¢5<H‘/%é}EE<Ji)‘i lr, llllll] R E1‘]—¢;‘*Fll5l5l O",
+        "B": "Once a user obtains access to the system through the initial log-on, he has to logout from all other 19 systems ~EFHF' ll’M<i%Z<iEHiF)i€%ll’5B‘J,%é}‘i isEii%)]i1éi‘f’ia*?%%'%\"<i%@5<‘3%=é3Ei§1‘Ji/*a|‘11,",
+        "C": "The initial logon process is cumbersome to discourage potential intruders. Yl<J]il‘a%iiif%ii¥%§i)‘iWl;ll<l€liti%i:'EH‘J)\\l%%‘o",
+        "D": "Once an individual obtains access to the system through the initial log-on, they have access to all resources within the environment that the account has access to. ~EiiJ“.i<JJ'§lé‘%%%1*tf%=5<‘/’%é3il?l‘JiJ‘i|‘I=Il, Fit&%s'ftf%-'l§~‘%‘1‘i¢FF'TEl<JF}i‘1\"ii%$El§i<Ji§il‘l1l)Zl5E‘<"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 15,
+      "question": "In Kerberos, the principal decrypts the message received from the TGS containing the session key 20 11>: iii (Kc, tgs) (the message received is called a Ticket) with its secret key (Kc), and will now use the session key within the ticket to communicate with the: T£Kerberos, i—’l¥JFilW\\'l5*§Z‘L§5l5§TGSl’il<]‘?‘l§§.§\\, Ej§“l\"'Ii3ii%'7‘-+*n*’E$J7;“T§$l7;!E)§ (Kc) El4J€‘:‘i§%¥E(Kc, tgs) (W ¥llF14]l§.§~l1lllii5Z*/l\\>%§%f)i\"§) , 'E>l%l§l3§?<i5§“l“l34]%i§5._§@H$l?lT§Ul93l5IDifT§5?ffi= A- TGS principal ;‘?%§E§‘§%HE%%l9l'l",
+      "options": {
+        "B": "TGS server and TGS principal %iEi§2¥El?<a\"%El§i%%§fl1?%i7§T§‘<¥Eli%¥JflEU C-TGS principal and the KDC %¥Ei§:I\"Bl§‘<%%MIl%i1%%E6a‘EBEl1»iL~",
+        "D": "TGS server?§i”§i¥HE%Hl§%%§ %‘~'f%é="
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 16,
+      "question": "The authenticator within Kerberos provides a requested service to the client after validating which of the following? 7£5iET:§lJ u}il5—1J§ » Kerberosi)\\iEf%l;§l5)fi§§?E4]El§i§§€€?7§FF‘ iirh ?",
+      "options": {
+        "A": "server public key H|§%%‘§2\\\\'€H",
+        "B": "timestamp l5lTJLll7]’€JLi",
+        "C": "client public key :§:)j%Q\\\\€H",
+        "D": "client private key \"§F'ri\"iL\"€H %$="
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is addressed by Kerberos? T§IJl1}.ll$I?$lZKerberos? Kerber0s5F¥J%T T@3iB1£i2|3=r‘%E?",
+      "options": {
+        "A": "confidentiality and integrity (%%‘li%l15—E%‘li",
+        "B": "auditability and integrity _F_'T?I§i‘l\"l§lE$l35':o%'l$",
+        "C": "authentication and availability %(§J\\%iE$[lE.U5H‘l§lE",
+        "D": "validation and integrity 5§iE$lil5bo¥‘l$"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 18,
+      "question": "A database view is the results of which of the following operations? %*i5I§°EF§i=FI.% LiFIl}il1IDi%‘;T%l’EE1‘Jé€%?",
+      "options": {
+        "A": "Join, Project, and Select. ET?’ B5l%§L$[liif¥<=",
+        "B": "Join and Select. i?£f§$l1li2“§f=§@ iii’?",
+        "C": "Join, Project, and Create. H9%§q‘%[I1’iIJ5£",
+        "D": "Join, Insert, and Project. ET?’ fB§)\\$lIll5l§t§Lo '|€T‘%="
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 19,
+      "question": "Which of the following monitors network traffic in real time? bilS\"3iIilID‘ii&iH‘Il’1iia;\"“|*_X.lé1’¥rii§?",
+      "options": {
+        "A": "firewall-based IDS %?l3)5§<ii%l§l<]IDS",
+        "B": "network-based IDS %ll:W?%El4]lDS",
+        "C": "host-based IDS EQZEIFJIEIUIDS",
+        "D": "application-based IDS %3;Fll5l§ l34JlDS 23 35\" -3;\\ ~I"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 20,
+      "question": "A network-based IDS is which of the following? %ll3l>‘_>€l?%El<]lDSzEt5:TFU“}ll3'*IDi?",
+      "options": {
+        "A": "infinite while it acquires data. §'|§T€%§§ITEl3T%9El3§l§l4Ilo",
+        "B": "active while it acquires data. %’i§T€%¥§ZTEl3“%Iij] E14]",
+        "C": "passive while it acquires data. ”:‘i§T€%¥KZ}EBTJ‘%%J§Zi)J E14]",
+        "D": "finite while it acquires data. %'|§T€§i<§§{l7§H9LI%§|3El§l4].."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 21,
+      "question": "What would be considered the biggest drawback of Host-based Intrusion Detection systems (HIDS)? ltziv§U\\#§%%3‘i7iJii§1’J)\\l%iil%é}E (HIDS) FJ‘]§s'J<n’9%;€.?",
+      "options": {
+        "A": "Virtually eliminates limits associated with encryption JL%@i@|*il§/’J1§’-€)3I1“'4.l“;%‘5\"Et3’~Jl§E?l%'l",
+        "B": "Monitors all processes and activities on the host system only E¢%¥;T:3lZl‘Jl,%é3iiJ:EI<]F)i€i2'l£f%%[l‘l%iJJ",
+        "C": "|t can be very invasive to the host operating system W’iiEX‘ifILi§'i'@l’F%é}i.l§%'liiE7<",
+        "D": "They have an increased level of visibility and control compared to NIDS '-5 Wé%)\\l%i9'1%9l'l3%?3ifEtl:, li’El|‘]€—/i‘i%§§E1<J EI‘JFliE‘.'l$fl1i5?%'J7l<¥ ."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is most relevant to determining the maximum effective cost of access control? T§Il\"3lBIDi5¥J%i%7<§5ZB<JiJ‘;i l\\1Ui§il%'llZ2liY€§~'€?",
+      "options": {
+        "A": "the cost to replace lost data. E¥§Q%5'EE4]§flZ?E E]4]E§'Z2lK",
+        "B": "budget planning related to base versus incremental spending. '~€%%5£vs.i%'%¥i‘%iii\"9€El<J?’Z$i+5Z'J",
+        "C": "management's perceptions regarding data importance. %‘i§Ei‘*E%S£l9%l§l‘]§§‘l$E-1‘Ji)\\i,':l.,",
+        "D": "the value of information that is protected. E Elfil. ¥l%5*F' E1414? /‘1.;>.'*~;%=é="
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is most appropriate to notify an external user that session monitoring is being conducted? F§'Jl9iI5I3F1z‘%%%i€E‘]5ED§\"l*E~‘l3%F%ill1’ii‘D1lE”E%E‘§i§H<Ji9‘§I?",
+      "options": {
+        "A": "Logon Banners",
+        "B": "Written agreement 1“3@l?J~i)Z",
+        "C": "Wall poster j<?l‘l§’<",
+        "D": "Employee Handbook 9:*lI¥l§lll"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 24,
+      "question": "Which of the following pairings uses technology to enforce access control policies? U~Tl1}ll31§'ll§l5l3il‘§7li§§\\?1?'lil3lW\"Ti)?l5llfI?$U%l§?",
+      "options": {
+        "A": "Preventive/Administrative \"1l3Jli‘l€lE/ifl",
+        "B": "Preventive/Physical Tl3]§/WIEEB",
+        "C": "Preventive/Technical lll/l’§Z7l¢l§l4]",
+        "D": "Detective/Administrative l‘lE|l/illfll] /§%:"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 25,
+      "question": "Access Control techniques do not include which of the following? i3‘il\"5.lf\"Efl?'lf5'Z7l<7F’@lf€Pl<§'lll/lll3—‘I§‘i?",
+      "options": {
+        "A": "Random Number Based Access Control %3:l37lll.§‘lIEl4]l7‘il‘5lf§fl?'l",
+        "B": "Mandatory Access Control liiffill £15 I31]il’§$lJ",
+        "C": "Rule-Based Access Controls %3fi'llll1'll§\"-Jiji l5lf§?§'l",
+        "D": "Role-Based Access Control §3:%@.l§l4]lJ‘ill5]f’1*$'l"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 26,
+      "question": "Which of the following best ensures accountability of users for the actions taken within a system or domain? li? LiTi139l§IB‘1E%%‘i‘2%l%?:E~/|\\%€iEZiF/EKl1%E1E‘]i?ri<JJEI<JFl?lF'",
+      "options": {
+        "A": "Authentication $55!]",
+        "B": "Authorization $31?",
+        "C": "Credentials i|‘§Z¥iIE‘F5",
+        "D": "Identification iR55'l"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 27,
+      "question": "Which of the following biometric devices offers the LOWEST CER? T§lJ\"}il§/l‘$?l%iF\\9“a'l”z§§fzEel§¥F?ilEEB<]§5Y'€“§i§'*&$?",
+      "options": {
+        "A": "Iris scan El1lll§§f5l€l§§",
+        "B": "Voice verification igjégillf",
+        "C": "Keystroke dynamics $'{§‘$Z)]j]%",
+        "D": "Fingerprint TEZSI /i2:i£%="
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 28,
+      "question": "Which of the following is the LEAST user accepted biometric device? 29 T§llll3‘lllI§ll%B.Ei’/l‘l*)§@ii‘f§\">i7’l§l4]f€lZl@lR1':5'l%§?",
+      "options": {
+        "A": "Voice verification ijéfgii",
+        "B": "Fingerprint TEQK",
+        "C": "Iris scan $Ill§ilf3fl1\"5",
+        "D": "Retina scan ?DE,Wlll§3lEl¥E’"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is the WEAKEST authentication mechanism? l:5'.lll3l3I%B'$i§5 l3‘]l‘iT‘<7f17llli‘l?ll ?",
+      "options": {
+        "A": "Passphrases III/£1‘",
+        "B": "Token devices /:‘>l%ii%",
+        "C": "One-time passwords *7/’K'li5'.§555",
+        "D": "Passwords $5555 /éiz"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 30,
+      "question": "Which access control model is also called nondiscretionary access control? 335/l\\i7‘:7l\"§‘§§il?lll‘§%@X?)§l1LllililZ5ll5§ 3EiJ‘:Tl‘117ll‘§\"-ll?",
+      "options": {
+        "A": "Lattice based access control %5CElEi'al% l‘5.l&$ll",
+        "B": "Label-based access control Ejfll‘/i1§l?l<]iJ‘§ W l§$ll",
+        "C": "Role-based access control %3:§@.El4Jii7ll?§?’1§ll",
+        "D": "Mandatory access control §§?ElllJ‘§l\\'5']l’§'il?'l"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 31,
+      "question": "Which access control model provides upper and lower bounds of access capabilities for a subject? W$4‘ iii I313???-*'Jf§'§< E ilizfzfilii I3 j] Elf] J:Y l3@ 7",
+      "options": {
+        "A": "Content-dependent access control I73 4'é\"}lZlZ§\"Ji|\"5]f§$ll El",
+        "B": "Role-based access control @315 Iii Eilill",
+        "C": "Biba access control BibaiJ‘il‘5]f§$'J",
+        "D": "Lattice-based access control %3:|ll‘%ij§ I51 f§fl?ll"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 32,
+      "question": "Which of the following statements pertaining to the Bell-LaPadula is false if you are NOT making use of the strong star property? Z1i1%$Fl%?i‘§E%li1%, YE]\"3il§1D’i9€¥Be||-LaPadu|aEi4Ji%i$%’i%i%Ei<J?",
+      "options": {
+        "A": "lt does not address management of access controls. \"E$‘2*/Fiiii |‘5J}§$llf1l3EE§f§E",
+        "B": "It does not allow \"write up.” \"E$ii3i¥EJ:5",
+        "C": "lt does not address covert channels. \"i>j$l$/§2i@ié?%§§",
+        "D": "It does not allow \"read up.\" T/J$fci‘FEaJ:ii 34 Mmp >llfi1lg> an 7f'l'D)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 33,
+      "question": "Which of the following centralized access control mechanisms is the least appropriate for mobile workers accessing the corporate network over analog lines? FFIJ\"}.lllf'l1%'1l1i§%U1l‘fL$H%$i’E?§é@i?7lZiJJ71&)\\EU5 |1’z§T7l‘§TH2>%E%J;? Elli",
+      "options": {
+        "A": "Call-back",
+        "B": "CHAP a*JEEilZiE¥i)\\iElJ~i>Z c. RADIUS i@f%i%)\\%§li)\\)5FlF' El§’<% o. TACACS é§<n“%?%)\\i§%ll%§¥%)\\l‘£%'l3<?=é3i"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 34,
+      "question": "Database views are NOT used tor §§Iil5§?§'i.E$%l5§5l€=",
+      "options": {
+        "A": "Implement least privilege ¥‘5@P%/J‘f§Zl3E",
+        "B": "To implement content-dependent access restrictions §EI§'ulZE§\"}: W Elijiji IE] l3E'<$lJ",
+        "C": "Implement need-to-know §f§'i.fl§§[l",
+        "D": "Implement referential integrity $591’/§l3?.§'?¥'li 36 ii >"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 35,
+      "question": "Which of the following access control models requires security clearance for subjects? Liflllfiil‘EUi5-‘lil%%7§1£lZlii&ff><\"’-Zéé£’<§'JU?'-BE93",
+      "options": {
+        "A": "Identity-based access control %JJ:§l5J\\l§l4]iji I31???-:“‘$ll",
+        "B": "Role-based access control %3E%@iEl4]iJ‘:7 l‘5_l¥§$Il",
+        "C": "Discretionary access control E §l51l)'5|'1}§$Il",
+        "D": "Mandatory access control §§fl§'ll7\\5l\"1El‘§fl‘?'l"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 36,
+      "question": "Which one of the following is NOT a primary component or aspect of firewall systems? T§U§il3~I$%l3J5J<i%%?3iE-1‘1£%D§1€éHlF?",
+      "options": {
+        "A": "rule enforcement engine. iliitil %",
+        "B": "packet switching. iiité aw?",
+        "C": "protocol filtering. 41 Ill? 11>? lillllllll ':i$ EN lam EE W",
+        "D": "E E xte i n i ded logging capability"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 37,
+      "question": "Organizations should consider which of the following first before allowing external access to their LANs via the Internet? %¢EW%%W%§W%AW%EWZW@&§%%%Qfw?",
+      "options": {
+        "A": "plan for protecting the modem pool. %%%%%%?",
+        "B": "plan for implementing workstation locking mechanisms. W§%%IWE%%%%",
+        "C": "plan for providing the user with his account usage information. %%F%E%%%F%€",
+        "D": "plan for considering proper authentication options. %M%%M&M"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 38,
+      "question": "What is the 802.11 standard related to? L1T§Jl§I5i%iIs02.11liJ~i>‘L1l‘H9€?",
+      "options": {
+        "A": "Wireless network communications E&M%E",
+        "B": "Public Key Infrastructure (PKI) P|<ilZl§,%",
+        "C": "The OSI/ISO model OSI/lSOf;?§§';J",
+        "D": "i Packet-switching technology"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 39,
+      "question": "Which Application Layer security protocol requires two pair of asymmetric keys and two digital certificates? HF%$@%%W&%E%%%%%Wl?E%",
+      "options": {
+        "A": "SSL",
+        "B": "PEM S/HTTP SET"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 40,
+      "question": "Which tunneling protocol can be described by these characteristics: 1) Handles multiple connections at the same time, 2) Provides secure authtentication and encryption, 3) Supports only lP networks, 4) Used to be focused mostly on LAN-to-LAN communication rather than dial-up protocol, 5) Works at the network layer and provides security on top of lP. &F$,%t%wWWQW%%&T%L@—WW%E§¢%z%@§éMEw %&i%mW%4i%%¥EW%W%%5IWEW%EU&%w§£",
+      "options": {
+        "A": "HybdL2PP",
+        "B": "lPSec",
+        "C": "L2F LZTP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 41,
+      "question": "The standard server port number for HT|'P is which of the following? mWwW%@%U%U?W—+?",
+      "options": {
+        "A": "81",
+        "B": "8180 8080 80"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 42,
+      "question": "In which layer of the OSI Model are connection-oriented protocols in the TCP/IP suite implemented? ?Eos|i=%Zi!El1, £8/i‘E§Ef9lT@|‘ri§i§iJ~iS4TcP/IPH’J%i¢F?",
+      "options": {
+        "A": "Transport layer 142353",
+        "B": "Network layer lY*]é%E 47",
+        "C": "Physical layer %*%I£El?z<",
+        "D": "Application layer Fililili’-a"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 43,
+      "question": "The International Standards Organization Open Systems Interconnection (ISO/OSl) Layers are in which of the following order (1 to 7)? ll/iii/T<¥’§llzééR/9ffi5I?=éiEH9é <|s0/osi) EEP LiT\"3l§ID‘1Xw“J1-7%?",
+      "options": {
+        "A": "Physical Layer, Data Link Layer, Network Layer, Session Layer, Transport Layer, Presentation Layer, Application Layer 48 Ill? 11>? 11>llll?llllll lllll %E.%%%.W%§.%%E.%%E.%%%.E%E",
+        "B": "Physical Layer, Network Layer, Data Link Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer WEE.W%E.§%%%%.%%E.%E.%%E.@%E",
+        "C": "Physical Layer, Data Link Layer, Transport Layer, Session Layer, Presentation Layer, Network Layer , Application Layer %EE.%%%E.%%E.%%E.%%%.W%E.E%E",
+        "D": "Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer %E.%%%%.W%%.%%%.i%.%EE.W%E"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 44,
+      "question": "Communications and network security relates to transmission of which of the following? QT%%E%%%&WW%§%?",
+      "options": {
+        "A": "Voice %%",
+        "B": "voice, data and multimedia %.W@§W%",
+        "C": "data and multimedia %W£%%",
+        "D": "voice and multimedia %%W§w"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 45,
+      "question": "ln the course of responding to and handling an incident, you work on determining the root cause of the incident. In which step are you in? E%EE%%E$M¢,E%l§%$W$%%%?",
+      "options": {
+        "A": "Analysis and tracking itiinti",
+        "B": "Triage %%&",
+        "C": "Containment %%&",
+        "D": "Recovery WEME"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 46,
+      "question": "Which one of the following statements about the advantages and disadvantages of network-based Intrusion detection systems is true U.FliillliliiflWé%)\\l%1l‘?91l%€}iB<JliE%'rJ%.*§i=l7lfT%IEli%E4]?",
+      "options": {
+        "A": "Network-based lDSs are not vulnerable to attacks. %¥lT>€l?1’%~B‘J)\\l%';l‘?F!U,%é}$ZéF51§I5I:'L6",
+        "B": "Most network-based |DSs can automatically indicate whether or not an attack was successful ?<§%5I?é¥lJé%E<J)\\l%l‘?F!U/%é3'iEIL1 E i}JE.%%?§?ElZIiJB<1I5£iE.",
+        "C": "Network-based |DSs are well suited for modern switch-based networks. %¥|TiIé1’%E‘J)\\l%l‘?l1U,%é}iif%-ililil ?ill‘€%\"3E?§&E‘JlYi]é%",
+        "D": "The deployment of network-based lDSs has little impact upon an existing network. )\\ Fl 2% Fifi lfiiliil ?3EE41‘kill i“)l?. W 4'9? weT\\J;"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 47,
+      "question": "The IP header contains a protocol field. If this field contains the value of 51, what type of data is contained within the ip datagram? ?:E%S£¥Efl§’<3CEl1, |PEJ‘]§E‘%|3%lVi%€XilJ~i>Z El‘]l»iiRlXi3i, Z1l1%ld1~i>Zl‘/iiFl?951, 5‘-il3Q.iZi5I3*E3*l?<§CE? IJ T%l3%lJJ~i>Z?",
+      "options": {
+        "A": "Internet Control Message Protocol (ICMP) ICMP 111134",
+        "B": "User datagram protocol (UDP) uoPfJ~i>Z 50 W M M WH $2",
+        "C": "Transmission Control Protocol (TCP) Tci>fJ1~i>‘4",
+        "D": "Authentication Header (AH) %¥:D Details: The correct answer is: Authentication Header (AH) TCP has the value of 6 UDP has the value of 17 ICMP has the value of 1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 48,
+      "question": "Which of the following defines when RAID separates the data into multiple units and stores it on multiple disks? W?%$%%MDWW@%%%?%E§l%i7",
+      "options": {
+        "A": "Shadowing %@",
+        "B": "Striping »%%HL",
+        "C": "Screening %",
+        "D": "Scanning E%"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 49,
+      "question": "RAID level 10 is created by combining which of the following? RAio10%EI2i T§IJ9IlK%RA|o2i-M141 ?",
+      "options": {
+        "A": "level 0 (striping) with level 2 (hamming). RAIDO (%%%i§) HIRAID2 <i’&HJ%‘EI)",
+        "B": "level 0 (striping) with level 1 (hamming). RAIDO <9-H‘-p*-> HIRAID1 <%’e,BH6§5)",
+        "C": "level O (striping) with level 1 (clustering). 52 1I1111)))??? )I)llllllll}}l (iii) RAIDO <%%i§) 5FllRAlD2",
+        "D": "level O (striping) with level 1 (mirroring). RAIDO $l_lRAlD1 <.%5§;l?Z>1>"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 50,
+      "question": "Transport Layer Security (TLS) is a two-layered socket layer security protocol that contains the TLS Record Protocol and the:: T$WW%—iZE%UEi$WW,Qnmm",
+      "options": {
+        "A": "Transport Layer Security (TLS) Internet Protocol. %%E§%UmE%WWW",
+        "B": "Transport Layer Security (TLS) Data Protocol. %%E§£mwW",
+        "C": "Transport Layer Security (TLS) Link Protocol. %%E§£m%WW",
+        "D": "Transport Layer Security (TLS) Handshake Protocol. %%%%§Um%¥w&"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

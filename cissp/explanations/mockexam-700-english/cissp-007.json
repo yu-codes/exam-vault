@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q301 - Q350",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 301,
+      "question": "Another name for a VPN is a:",
+      "options": {
+        "A": "tunnel",
+        "B": "one-time password",
+        "C": "pipeline",
+        "D": "bypass"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A virtual private network (VPN) is a secure, private connection through an untrusted network. VPN technology requires a tunnel to work and it assumes encryption. Incorrect Answers: B: A one-time password is not the same as a VPN. C: Tunnel, not pipeline, can be used as a name for a VPN. D: Tunnel, not bypass, can be used as a name for a VPN."
+    },
+    {
+      "id": 302,
+      "question": "What is the framing specification used for transmitting digital signals at 1.544 Mbps on a T1 facility?",
+      "options": {
+        "A": "DS-0",
+        "B": "DS-1",
+        "C": "DS-2",
+        "D": "DS-3"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Digital Signal Level 1 (DS - 1) provides 1.544 Mbps over a T1 line. Incorrect Answers: A: Digital Signal Level 0 (DS - 0) provides from 64 Kbps up to 1.544 Mbps on a Partial T1 line. C: There is no framing specification named DS-2. D: Digital Signal Level 3 (DS - 3) is a specification for T3, not for T1."
+    },
+    {
+      "id": 303,
+      "question": "Which of the following is the BIGGEST concern with firewall security?",
+      "options": {
+        "A": "Internal hackers",
+        "B": "Complex configuration rules leading to misconfiguration",
+        "C": "Buffer overflows",
+        "D": "Distributed denial of service (DDoS) attacks"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Firewalls filter traffic based on a defined set of rules. The rules must be configured correctly for the firewall to provide the intended security. Incorrect Answers: A: Firewalls main duty is to defend against external, not internal, threats. C: Firewalls do not product from buffer overflows attacks. D: Firewalls can help in defending from DDoS attacks, but the main concern with firewall is to configure them correctly."
+    },
+    {
+      "id": 304,
+      "question": "Which of the following is the SIMPLEST type of firewall?",
+      "options": {
+        "A": "Stateful packet filtering firewall",
+        "B": "Packet filtering firewall",
+        "C": "Dual-homed host firewall",
+        "D": "Application gateway"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering was the first generation of firewalls and it is the most rudimentary type of all of the firewall technologies. Incorrect Answers: A: A stateful packet filtering firewall is more complicated compared to the Packet filtering firewall, since the latter is stateless. C: Dual-homed is a firewall architecture, not a firewall type. A Dual-homed firewall refers to a device that has two interfaces: one facing the external network and the other facing the internal network. D: Application -level gateways are known as second generation firewalls, while packet filtering is a first generation firewall"
+    },
+    {
+      "id": 305,
+      "question": "Which of the following devices enables more than one signal to be sent out simultaneously over one physical circuit?",
+      "options": {
+        "A": "Router",
+        "B": "Multiplexer",
+        "C": "Channel service unit/Data service unit (CSU/DSU)",
+        "D": "Wan switch"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "An electronic multiplexer makes it possible for several signals to share one device or resource. A multiplexer (or mux) is a device that selects one of several analog or digital input signals and forwards the selected input into a single line. Incorrect Answers: A: A router forwards data packets. A router does not handle signals. C: A CSU/DSU is a digital-interface device used to connect a data terminal equipment (DTE), such as a router, to a digital circuit, such as a Digital Signal 1 (T1) line. D: A switch forwards traffic at the data link layer of the OSI model. It does operate with multiple signals."
+    },
+    {
+      "id": 306,
+      "question": "Which of the following is NOT an advantage that TACACS+ has over TACACS?",
+      "options": {
+        "A": "Event logging",
+        "B": "Use of two-factor password authentication",
+        "C": "User has the ability to change his password",
+        "D": "Ability for security tokens to be resynchronized"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Event logging is available in both TACACS and TACACS+. Incorrect Answers: B: TACACS+ is XTACACS with extended two-factor user authentication. C: TACACS uses fixed passwords for authentication, while TACACS+ allows users to employ dynamic (one-time) passwords, which provides more protection. D: TACACS+ features security tokes, which is not included in TACACS."
+    },
+    {
+      "id": 307,
+      "question": "Which of the following remote access authentication systems is the MOST robust?",
+      "options": {
+        "A": "TACACS+",
+        "B": "RADIUS",
+        "C": "PAP",
+        "D": "TACACS"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "TACACS+ is more secure compared to TACACS, RADIUS, and PAP. Incorrect Answers: B: TACACS+ encrypts all of this data between the client and server and thus does not have the vulnerabilities inherent in the RADIUS protocol. C: PAP transmits unencrypted ASCII passwords over the network and is therefore considered insecure. D: TACACS uses fixed passwords for authentication, while TACACS+ allows users to employ dynamic (one-time) passwords, which provides more protection. TACACS+ is XTACACS with extended two-factor user authentication."
+    },
+    {
+      "id": 308,
+      "question": "Layer 2 of the OSI model has two sublayers. What are those sublayers, and what are two IEEE standards that describe technologies at that layer?",
+      "options": {
+        "A": "LLC and MAC; IEEE 802.2 and 802.3",
+        "B": "LLC and MAC; IEEE 802.1 and 802.3",
+        "C": "Network and MAC; IEEE 802.1 and 802.3",
+        "D": "LLC and MAC; IEEE 802.2 and 802.3"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 309,
+      "question": "Which of the following protects Kerberos against replay attacks?",
+      "options": {
+        "A": "Tokens",
+        "B": "Passwords",
+        "C": "Cryptography",
+        "D": "Time stamps"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "To protect against replay attacks, the Kerberos authentication protocol uses the concept of an authenticator. The authenticator includes the user identification information, a sequence number, and a timestamp. The timestamp is used to help fight against replay attacks. Incorrect Answers: A: Kerberos uses time stamps, not tokens, to defend against replay attacks. B: Kerberos uses time stamps, not passwords, to defend against replay attacks. C: Kerberos uses time stamps, not cryptography, to defend against replay attacks."
+    },
+    {
+      "id": 310,
+      "question": "Which of the following offers security to wireless communications?",
+      "options": {
+        "A": "S-WAP",
+        "B": "WTLS",
+        "C": "WSP",
+        "D": "WDP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Wireless Transport Layer Security (WTLS) provides security connectivity services similar to those of SSL or TLS. Incorrect Answers: A: There is no protocol named S-WAP C: Wireless Session Protocol (WSP) does not provide security. D: Wireless Datagram Protocol (WDP) does not provide security."
+    },
+    {
+      "id": 311,
+      "question": "Which of the following is a Wide Area Network that was originally funded by the Department of Defense, which uses TCP/IP for data interchange?",
+      "options": {
+        "A": "The Internet.",
+        "B": "The Intranet.",
+        "C": "The extranet.",
+        "D": "The Ethernet."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Advanced Research Projects Agency Network (ARPANET), funded by the Department of Defense, was an early packet switching network and the first network to implement the protocol suite TCP/IP. Both technologies became the technical foundation of the Internet. Incorrect Answers: B: Intranets can use other protocols than TCP/IP. Intranet is not standard that was developed by the Department of Defense. C: Intranet can use other protocols than TCP/IP. Extranet is not standard that was developed by the Department of Defense. D: Ethernet can use other protocols than TCP/IP. Ethernet is not standard that was developed by the Department of Defense."
+    },
+    {
+      "id": 312,
+      "question": "An intranet is an Internet-like logical network that uses:",
+      "options": {
+        "A": "a firm's internal, physical network infrastructure.",
+        "B": "a firm's external, physical network infrastructure.",
+        "C": "a firm's external, physical netBIOS infrastructure.",
+        "D": "a firm's internal, physical netBIOS infrastructure."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "When a company uses web-based technologies inside its networks, it is using an intranet, a private network. The company's internal physical network structure is used. Incorrect Answers: B: The internal, not the external, network structure is used. C: The internal, not the external, network structure is used. D: The physical structure, not the NetBIOS structure."
+    },
+    {
+      "id": 313,
+      "question": "An intranet provides more security and control than which of the following:",
+      "options": {
+        "A": "private posting on the Internet.",
+        "B": "public posting on the Ethernet.",
+        "C": "public posting on the Internet.",
+        "D": "public posting on the Extranet."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A public posting on the internet is not secure. Compared to the internet, an intranet provides more control. Incorrect Answers: A: A private posting provides high security and control. B: Ethernet is a link layer protocol in the TCP/IP stack. An Intranet is defined on the physical layer. The data link layer provides more control compared to the physical layer. D: An extranet is a website that allows controlled access to partners, vendors and suppliers or an authorized set of customers - normally to a subset of the information accessible from an organization's intranet. As an extranet is a subset of an intranet is provides more security and control."
+    },
+    {
+      "id": 314,
+      "question": "Which of the following Common Data Network Services is used to share data files and subdirectories on file servers?",
+      "options": {
+        "A": "File services.",
+        "B": "Mail services.",
+        "C": "Print services.",
+        "D": "Client/Server services."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Files services, which are part of the Common Data Network Services, provides sharing of data files and subdirectories on file servers. Incorrect Answers: B: Mail services only provide sending and receiving email internally or externally through an email gateway device. C: Print services only provide printing documents to a shared printer or a print queue/spooler. D: Client/server services provide allocating computing power resources among workstations with some shared resources centralized in a file server."
+    },
+    {
+      "id": 315,
+      "question": "Which of the following Common Data Network Services is used to send and receive email internally or externally through an email gateway device?",
+      "options": {
+        "A": "File services.",
+        "B": "Mail services.",
+        "C": "Print services.",
+        "D": "Client/Server services."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Mail services, which are part of the Common Data Network Services, sends and receives email internally or externally through an email gateway device. Incorrect Answers: A: Files services provide sharing of data files and subdirectories on file servers. C: Print services only prints documents to a shared printer or a print queue/spooler. D: Client/server services allocate computing power resources among workstations with some shared resources centralized in a file server."
+    },
+    {
+      "id": 316,
+      "question": "Asynchronous Communication transfers data by sending:",
+      "options": {
+        "A": "bits of data sequentially",
+        "B": "bits of data sequentially in irregular timing patterns",
+        "C": "bits of data in sync with a heartbeat or clock",
+        "D": "bits of data simultaneously"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Asynchronous communication is the transmission sequencing technology that uses start and stop bits or similar encoding mechanism. Used in environments that transmits a variable amount of data in a periodic fashion. Incorrect Answers: A: Both asynchronous and synchronous communication sends bits of data sequentially. C: Data bits transferred in sync with a heartbeat or clock is called synchronous communication. D: Asynchronous Communication transfers one bit at a time, not multiple bits of data simultaneously."
+    },
+    {
+      "id": 317,
+      "question": "Communications devices must operate:",
+      "options": {
+        "A": "at different speeds to communicate.",
+        "B": "at the same speed to communicate.",
+        "C": "at varying speeds to interact.",
+        "D": "at high speed to interact."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "It is preferable that both devices have the same speed when they are going to interoperate. Incorrect Answers: A: It is preferable that the devices have the same speed to interoperate well. C: Communication is easier if the speeds of the devices do not change. D: High speed is not a necessity for devices to be able to interact."
+    },
+    {
+      "id": 318,
+      "question": "The basic language of modems and dial-up remote access systems is:",
+      "options": {
+        "A": "Asynchronous Communication.",
+        "B": "Synchronous Communication.",
+        "C": "Asynchronous Interaction.",
+        "D": "Synchronous Interaction."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Asynchronous start-stop is the physical layer used to connect computers to modems for many dial-up Internet access applications, using a data link framing protocol. Incorrect Answers: B: Dial-up modems use Asynchronous, not synchronous, communication. C: Dial-up modems connect to a remote system using communication, not interaction. D: Dial-up modems connect to a remote system using communication, not interaction."
+    },
+    {
+      "id": 319,
+      "question": "Which of the following Common Data Network Services is used to print documents to a shared printer or a print queue/spooler?",
+      "options": {
+        "A": "Mail services.",
+        "B": "Print services.",
+        "C": "Client/Server services.",
+        "D": "Domain Name Service."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Print services, which are part of the Common Data Network Services, prints documents to a shared printer or a print queue/spooler. Incorrect Answers: A: Mail services only send and receive email internally or externally through an email gateway device. C: Client/server services allocate computing power resources among workstations with some shared resources centralized in a file server. D: Domain Name Service translates domain names into IP addresses."
+    },
+    {
+      "id": 320,
+      "question": "Which of the following Common Data Network Services allocates computing power resources among workstations with some shared resources centralized on a server?",
+      "options": {
+        "A": "Print services",
+        "B": "File services",
+        "C": "Client/Server services",
+        "D": "Domain Name Service"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Client/server services, which belongs to the Common Data Network Services, allocates computing power resources among workstations with some shared resources centralized in a file server. Incorrect Answers: A: Print services only print documents to a shared printer or a print queue/spooler. B: Files services provide sharing of data files and subdirectories on file servers. D: Domain Name Service translates domain names into IP addresses."
+    },
+    {
+      "id": 321,
+      "question": "Domain Name Service is a distributed database system that is used to map:",
+      "options": {
+        "A": "Domain Name to IP addresses.",
+        "B": "MAC addresses to domain names.",
+        "C": "MAC Address to IP addresses.",
+        "D": "IP addresses to MAC Addresses."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Domain Name Service translates domain names into IP addresses. Incorrect Answers: B: DNS is not used to map MAC addresses to domain names. DNS maps domain names into IP addresses. C: The RARP protocol translates MAC Address to IP addresses. D: The ARP protocol translates IP addresses to MAC Addresses."
+    },
+    {
+      "id": 322,
+      "question": "The Domain Name System (DNS) is a global network of:",
+      "options": {
+        "A": "servers that provide these Domain Name Services.",
+        "B": "clients that provide these Domain Name Services.",
+        "C": "hosts that provide these Domain Name Services.",
+        "D": "workstations that provide these Domain Name Services."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The Domain Name System is lists of domain names and IP addresses that are distributed on Domain Name System (DNS) Servers throughout the Internet in a hierarchy of authority. Incorrect Answers: B: The global Domain Name System (DNS) system consists of DNS servers, not DNS clients. C: The global Domain Name System (DNS) system consists of DNS servers, not DNS hosts. D: The global Domain Name System (DNS) system consists of DNS servers, not DNS workstations."
+    },
+    {
+      "id": 323,
+      "question": "The communications products and services, which ensure that the various components of a network (such as devices, protocols, and access methods) work together refers to:",
+      "options": {
+        "A": "Netware Architecture.",
+        "B": "Network Architecture.",
+        "C": "WAN Architecture.",
+        "D": "Multiprotocol Architecture."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Network architecture is the design of a communication network. It is a framework for the specification of a network's physical components and their functional organization and configuration, its operational principles and procedures, including protocols and access methods, as well as data formats used in its operation. Incorrect Answers: A: Novell Netware is specific to the vendor Novell. C: WAN Architecture is not used for the various components of a network. It used for components that enables different local network to communicate with other networks. D: The physical components must be included as well, not just the protocols."
+    },
+    {
+      "id": 324,
+      "question": "Unshielded Twisted Pair cabling is a:",
+      "options": {
+        "A": "four-pair wire medium that is used in a variety of networks.",
+        "B": "three-pair wire medium that is used in a variety of networks.",
+        "C": "two-pair wire medium that is used in a variety of networks.",
+        "D": "one-pair wire medium that is used in a variety of networks."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Unshielded Twisted Pair cabling consists of an outer jacket and four pairs of twisted wire medium. Incorrect Answers: B: There are four pairs, not three. C: There are four pairs, not two. D: There are four pairs, not one."
+    },
+    {
+      "id": 325,
+      "question": "In the UTP category rating, the tighter the wind:",
+      "options": {
+        "A": "the higher the rating and its resistance against interference and crosstalk.",
+        "B": "the slower the rating and its resistance against interference and attenuation.",
+        "C": "the shorter the rating and its resistance against interference and attenuation.",
+        "D": "the longer the rating and its resistance against interference and attenuation."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "With Increased UTP category the better the signal is transmitted, that is the cable is more resistance against interference and crosstalk. The lowest category is 1 and the highest is 8.2. Incorrect Answers: B: The UTP categories are just numbers from 1 to 8.2. They do not represent speed. C: The UTP categories are just numbers. They do not represent length. D: The UTP categories are just numbers. They do not represent speed."
+    },
+    {
+      "id": 326,
+      "question": "What works as an E-mail message transfer agent?",
+      "options": {
+        "A": "SMTP",
+        "B": "SNMP",
+        "C": "S-RPC",
+        "D": "S/MIME"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In e-mail clients SMTP works as a message transfer agent and moves the message from the user’s computer to the mail server when the user sends the e-mail message. Incorrect Answers: B: SNMP is used for monitoring the network, not for sending email messages. C: S-RPC is used for remote procedure not calls, and not for sending email messages. D: S/MIME is a standard for email encryption. It is not used to send email messages."
+    },
+    {
+      "id": 327,
+      "question": "Which of the following statements pertaining to packet switching is NOT true?",
+      "options": {
+        "A": "Most data sent today uses digital signals over network employing packet switching.",
+        "B": "Messages are divided into packets.",
+        "C": "All packets from a message travel through the same route.",
+        "D": "Each network node or point examines each packet for routing."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Packet switching does not set up a dedicated virtual link, and packets from one connection can pass through a number of different individual devices, instead of all of them following one another through the same devices. Incorrect Answers: A: Most traffic over the Internet uses packet switching and the Internet is basically a connectionless network. B: In a packet-switching network, the data are broken up into packets containing frame check sequence numbers. D: The packet switching packets go through different network nodes, and their paths can be dynamically altered by a router or switch that determines a better route for a specific packet to take."
+    },
+    {
+      "id": 328,
+      "question": "All hosts on an IP network have a logical ID called a(n):",
+      "options": {
+        "A": "IP address.",
+        "B": "MAC address.",
+        "C": "TCP address.",
+        "D": "Datagram address."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Each node on an IP network must have a unique IP address. Incorrect Answers: B: IP hosts use IP addresses, not MAC addresses. C: There is no such thing as a TCP address in the TCP/IP model. D: There is no such thing as a datagram address in the TCP/IP model."
+    },
+    {
+      "id": 329,
+      "question": "An Ethernet address is composed of how many bits?",
+      "options": {
+        "A": "48-bit address",
+        "B": "32-bit address.",
+        "C": "64-bit address",
+        "D": "128-bit address"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Ethernet is a common LAN media access technology standardized by IEEE 802.3. Ethernet uses 48-bit MAC addressing, works in contention-based networks, and has extended outside of just LAN environments. Incorrect Answers: B: An Ethernet address has 48 bits, not 32 bits. C: An Ethernet address has 48 bits, not 64 bits. D: An Ethernet address has 48 bits, not 128 bits."
+    },
+    {
+      "id": 330,
+      "question": "Address Resolution Protocol (ARP) interrogates the network by sending out a?",
+      "options": {
+        "A": "broadcast.",
+        "B": "multicast.",
+        "C": "unicast.",
+        "D": "semicast."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "ARP broadcasts a frame requesting the MAC address that corresponds with the destination IP address. Each computer on the subnet receives this broadcast frame, and all but the computer that has the requested IP address ignore it. The computer that has the destination IP address responds with its MAC address. Incorrect Answers: B: The ARP protocol uses broadcasts, not multicasts. C: The ARP protocol uses broadcasts, not unicast. D: The ARP protocol uses broadcasts, not semicast."
+    },
+    {
+      "id": 331,
+      "question": "When a station communicates on the network for the first time, which of the following protocol would search for and find the Internet Protocol (IP) address that matches with a known Ethernet address?",
+      "options": {
+        "A": "Address Resolution Protocol (ARP).",
+        "B": "Reverse Address Resolution Protocol (RARP).",
+        "C": "Internet Control Message protocol (ICMP).",
+        "D": "User Datagram Protocol (UDP)."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The RARP protocol translates MAC (Ethernet) Address to IP addresses. Incorrect Answers: A: The ARP protocol translates IP addresses to MAC Addresses. It is the wrong direction. C: ICMP is not an address resolution protocol. D: UDP is not an address resolution protocol. It is a transport protocol."
+    },
+    {
+      "id": 332,
+      "question": "Which protocol's primary function is to facilitate file and directory transfer between two machines?",
+      "options": {
+        "A": "Telnet.",
+        "B": "File Transfer Protocol (FTP).",
+        "C": "Trivial File Transfer Protocol (TFTP).",
+        "D": "Simple Mail Transfer Protocol (SMTP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "FTP is a network application that supports an exchange of files between computers, and that requires anonymous or specific authentication. Incorrect Answers: A: Through Telnet users can access someone else's computer remotely. C: TFTP is less capable compared to FTP. TFTP is used where user authentication and directory visibility are not required. D: SMTP is used only for sending email messages."
+    },
+    {
+      "id": 333,
+      "question": "What is the primary reason why some sites choose not to implement Trivial File Transfer Protocol (TFTP)?",
+      "options": {
+        "A": "It is too complex to manage user access restrictions under TFTP",
+        "B": "Due to the inherent security risks",
+        "C": "It does not offer high level encryption like FTP",
+        "D": "It cannot support the Lightweight Directory Access Protocol (LDAP)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "TFTP is a network application that supports an exchange of fi les that does not require authentication. TFTP is not secure. Incorrect Answers: A: FTP is too insure, not too complex. C: The difference between FTP and TFTP is that TFTP does not offer authentication. D: Both FTP and TFTP support LDAP."
+    },
+    {
+      "id": 334,
+      "question": "Which protocol is used to send email?",
+      "options": {
+        "A": "File Transfer Protocol (FTP).",
+        "B": "Post Office Protocol (POP).",
+        "C": "Network File System (NFS).",
+        "D": "Simple Mail Transfer Protocol (SMTP)."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "In e-mail clients SMTP works as a message transfer agent and moves the message from the user’s computer to the mail server when the user sends the e-mail message. Incorrect Answers: A: FTP is a network application that supports an exchange of files between computers. B: The Post Office Protocol (POP) is an application-layer Internet standard protocol used by local e-mail clients to retrieve, not to send, e-mail from a remote server over a TCP/IP connection. C: The Network File System (NFS) is a client/server application that lets a computer user view and optionally store and update file on a remote computer as though they were on the user's own computer."
+    },
+    {
+      "id": 335,
+      "question": "Which of the following best describes the Secure Electronic Transaction (SET) protocol?",
+      "options": {
+        "A": "Originated by VISA and MasterCard as an Internet credit card protocol using Message Authentication Code.",
+        "B": "Originated by VISA and MasterCard as an Internet credit card protocol using digital signatures.",
+        "C": "Originated by VISA and MasterCard as an Internet credit card protocol using the transport layer.",
+        "D": "Originated by VISA and American Express as an Internet credit card protocol using SSL."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Secure Electronic Transaction (SET) is a security technology proposed by Visa and MasterCard to allow for more secure credit card transaction possibilities than what is currently available. With SET an entity verifies a digital signature of the sender and digitally signs the information before it is sent to the next entity involved in the process. Incorrect Answers: A: SET uses digital signatures, not Message Authentication Codes. C: SET uses digital signatures, not transport layer security. D: Visa and Mastercard, not American Express, has proposed the SET protocol. The current security solution in use for credit cards transfers use SSL, but SET uses digital signatures."
+    },
+    {
+      "id": 336,
+      "question": "Which of the following protocols is designed to send individual messages securely?",
+      "options": {
+        "A": "Kerberos",
+        "B": "Secure Electronic Transaction (SET).",
+        "C": "Secure Sockets Layer (SSL).",
+        "D": "Secure HTTP (S-HTTP)."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "S-HTTP provides protection for each message sent between two computers, but not the actual link. Incorrect Answers: A: Kerberos is a network authentication protocol. It is not used to secure messages. B: SET is designed to provide secure credit card transactions, not to provide secure transfer of messages. C: HTTPS protects the communication channel, not each individual message separately. HTTPS is HTTP that uses SSL for security purposes."
+    },
+    {
+      "id": 337,
+      "question": "Secure Electronic Transaction (SET) and Secure HTTP (S-HTTP) operate at which layer of the OSI model?",
+      "options": {
+        "A": "Application Layer.",
+        "B": "Transport Layer.",
+        "C": "Session Layer.",
+        "D": "Network Layer."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Both SET and S-HTTP provides application layer security. Incorrect Answers: B: SET and S-HTTP work at the application layer, not at the transportation layer. C: SET and S-HTTP work at the session layer, not at the transportation layer. D: SET and S-HTTP work at the network layer, not at the transportation layer."
+    },
+    {
+      "id": 338,
+      "question": "Why does fiber optic communication technology have significant security advantage over other transmission technology?",
+      "options": {
+        "A": "Higher data rates can be transmitted.",
+        "B": "Interception of data traffic is more difficult.",
+        "C": "Traffic analysis is prevented by multiplexing.",
+        "D": "Single and double-bit errors are correctable."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Because fiber-optic cable passes electrically non-conducting photons through a glass medium, it is very hard to intercept or wiretap. Incorrect Answers: A: High data rates are an advantage of fiber options, but speed in itself does not significantly increase speed. C: Multiplexing would not prevent traffic analysis. It would just make it harder. D: Correctable bits are not an advantage of fiber optic communication."
+    },
+    {
+      "id": 339,
+      "question": "Which of the following statements pertaining to IPSec is NOT true?",
+      "options": {
+        "A": "IPSec can help in protecting networks from some of the IP network attacks.",
+        "B": "IPSec provides confidentiality and integrity to information transferred over IP networks through transport layer encryption and authentication.",
+        "C": "IPSec protects against man-in-the-middle attacks.",
+        "D": "IPSec protects against spoofing."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "IPSec works at the network layer, not at the transport layer. Incorrect Answers: A: IPSec protects networks by authenticating and encrypting each IP packet of a communication session. C: IPSec protects against man-in-the-middle attacks by combining mutual authentication with shared, cryptography-based keys. D: IPSec uses cryptography-based keys, shared only by the sending and receiving computers, to create a cryptographic checksum for each IP packet. The cryptographic checksum ensures that only the computers that have knowledge of the keys could have sent each packet. This products against spoofing."
+    },
+    {
+      "id": 340,
+      "question": "Which of the following is NOT a characteristic or shortcoming of packet filtering gateways?",
+      "options": {
+        "A": "The source and destination addresses, protocols, and ports contained in the IP packet header are the only information that is available to the router in making a decision whether or not to permit traffic access to an internal network.",
+        "B": "They don't protect against IP or DNS address spoofing.",
+        "C": "They do not support strong user authentication.",
+        "D": "They are appropriate for medium-risk environment."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering was the first generation of firewalls and it is the most rudimentary type of all of the firewall technologies. Packet filtering gateways/firewalls would be insufficient for a medium-risk environment. Incorrect Answers: A: Packet filtering gateways can make access decisions based upon the following basic criteria: Source and destination IP addresses Source and destination port numbers Protocol types Inbound and outbound traffic direction B: Packet filters are useful in IP address spoofing attack prevention because they are capable of filtering out and blocking packets with conflicting source address information (packets from outside the network that show source addresses from inside the network and vice-versa). On the other hand packet filtering gateways would not be able to protect against DNS spoofing. A stateful firewall is needed to protect against DNS spoofing C: Packet filter gateways cannot ensure strong user authentication."
+    },
+    {
+      "id": 341,
+      "question": "In order to ensure the privacy and integrity of the data, connections between firewalls over public networks should use:",
+      "options": {
+        "A": "Screened subnets",
+        "B": "Digital certificates",
+        "C": "An encrypted Virtual Private Network",
+        "D": "Encryption"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A virtual private network (VPN) is a secure, private connection through an untrusted Network. It is a private connection because the encryption and tunneling protocols are used to ensure the confidentiality and integrity of the data in transit. Incorrect Answers: A: The main purpose of a screened subnet it to set up a demilitarized zone, not to protect connections over an insecure network. B: A digital certificate provides identifying information. It is not used to protect connections over an insecure network. D: Encryption can be used to protect connections over an insecure network, but it cannot protect the integrity."
+    },
+    {
+      "id": 342,
+      "question": "Which of the following protocols does not operate at the data link layer (layer 2)?",
+      "options": {
+        "A": "PPP",
+        "B": "RARP",
+        "C": "L2F",
+        "D": "ICMP"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "ICMP works at the network layer of the OSI model. Incorrect Answers: A: RARP is a data link layer protocol. B: L2F is a data link layer protocol. C: ICMP is a data link layer protocol."
+    },
+    {
+      "id": 343,
+      "question": "Which of the following protocols operates at the session layer (layer 5)?",
+      "options": {
+        "A": "RPC",
+        "B": "IGMP",
+        "C": "LPD",
+        "D": "SPX"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Remote procedure call (RPC) works at the session layer of the OSI model. Incorrect Answers: B: ICMP works at the network layer of the OSI model. C: LPD (Line Printer Daemon Protocol) is an application layer protocol. D: SPX is a transport layer protocol."
+    },
+    {
+      "id": 344,
+      "question": "Which layer of the TCP/IP protocol stack corresponds to the ISO/OSI Network layer (layer 3)?",
+      "options": {
+        "A": "Host-to-host layer",
+        "B": "Internet layer",
+        "C": "Network access layer",
+        "D": "Session layer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The network layer of the OSI model corresponds to the Internet layer of the TCP/IP model. Incorrect Answers: A: The host-to-host layer of the TCP/IP model corresponds to the Transport layer of the OSI model. C: The host-to-host layer of the TCP/IP model corresponds to the Data link layer of the OSI model. D: The TCP/IP model does not have any session layer."
+    },
+    {
+      "id": 345,
+      "question": "Which layer of the OSI/ISO model handles physical addressing, network topology, line discipline, error notification, orderly delivery of frames, and optional flow control?",
+      "options": {
+        "A": "Physical",
+        "B": "Data link",
+        "C": "Network",
+        "D": "Session"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The data link layer is responsible for proper communication within the network components and for changing the data into the necessary format (electrical voltage) for the physical layer. It is concerned with local delivery of frames between devices on the same LAN. Incorrect Answers: A: The physical layer defines the means of transmitting raw bits rather than logical data packets over a physical link connecting network nodes. C: The session layer protocols set up connections between applications; maintain dialog control; and negotiate, establish, maintain, and tear down the communication channel. D: The session layer provides the mechanism for opening, closing and managing a session between end-user application processes, i.e., a semi-permanent dialogue."
+    },
+    {
+      "id": 346,
+      "question": "The Logical Link Control sub-layer is a part of which of the following?",
+      "options": {
+        "A": "The ISO/OSI Data Link layer.",
+        "B": "The Reference monitor.",
+        "C": "The Transport layer of the TCP/IP stack model.",
+        "D": "Change management control."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The ISO/OSI data link layer is divided into two functional sublayers: the Logical Link Control (LLC) and the Media Access Control (MAC). Incorrect Answers: B: Logical Link Control is a sublayer of the Data link layer, and not part of the Reference monitor. C: Logical Link Control is a sublayer of the Data link layer, and not part of the Transport layer. D: Logical Link Control is a sublayer of the Data link layer, and not part of the Change management control."
+    },
+    {
+      "id": 347,
+      "question": "Which of the following services relies on UDP?",
+      "options": {
+        "A": "FTP",
+        "B": "Telnet",
+        "C": "DNS",
+        "D": "SMTP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "DNS primarily uses User Datagram Protocol (UDP) on port number 53 to serve requests. DNS queries consist of a single UDP request from the client followed by a single UDP reply from the server. Incorrect Answers: A: FTP uses the TCP protocol. B: Telnet uses the TCP protocol. C: SMTP uses the TCP protocol."
+    },
+    {
+      "id": 348,
+      "question": "Which of the following is NOT a common weakness of packet filtering firewalls?",
+      "options": {
+        "A": "Vulnerability to denial-of-service and related attacks.",
+        "B": "Vulnerability to IP spoofing.",
+        "C": "Limited logging functionality.",
+        "D": "No support for advanced user authentication schemes."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Packet filters are useful in IP address spoofing attack prevention because they are capable of filtering out and blocking packets with conflicting source address information (packets from outside the network that show source addresses from inside the network and vice-versa). Incorrect Answers: A: Packet filtering firewalls, as they are stateless, are vulnerable to denial-of-service attacks. A stateful firewall would be able to handle these attacks better. C: Logging is no problem when using packet filtering firewalls. D: Packet filter gateways cannot ensure strong user authentication."
+    },
+    {
+      "id": 349,
+      "question": "Which Network Address Translation (NAT) is the MOST convenient and secure solution?",
+      "options": {
+        "A": "Hiding Network Address Translation",
+        "B": "Port Address Translation",
+        "C": "Dedicated Address Translation",
+        "D": "Static Address Translation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Port Address Translation (PAT) maps one internal IP address to an external IP address and port number combination. Thus, PAT can theoretically support 65,536 (2 16 ) simultaneous communications from internal clients over a single external leased IP address. A company can save a lot of money by using PAT, because the company needs to buy only a few public IP addresses, which are used by all systems in the network. Incorrect Answers: A: NAT maps one internal IP address to one external IP address. Compared to PAT this is pretty bad. C: There is no NAT implementation called Dedicated Address Translation. D: Static Address Translation is not convenient as it must be configured manually."
+    },
+    {
+      "id": 350,
+      "question": "What is the primary difference between FTP and TFTP?",
+      "options": {
+        "A": "Speed of negotiation",
+        "B": "Authentication",
+        "C": "Ability to automate",
+        "D": "TFTP is used to transfer configuration files to and from network equipment."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "TFTP is less capable compared to FTP. TFTP is used where user authentication and directory visibility are not required. Incorrect Answers: A: Both FTP and TFTP have ability to negotiate speed- C: There is ability to automate both FTP and TFTP. D: TFTP can be used to transfer any files, not just configuration files between network equipment."
+    }
+  ]
+}

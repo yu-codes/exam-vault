@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q351 - Q400",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 351,
+      "question": "Which of the following cable types is limited in length to 185 meters?",
+      "options": {
+        "A": "10BaseT",
+        "B": "RG8",
+        "C": "RG58",
+        "D": "10Base5"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RG-58 was once widely used in \"thin\" Ethernet (10BASE2), where it provides a maximum segment length of 185 meters. Incorrect Answers: A: 10BaseT has a maximal distance of 100 meters. B: RG-8 has a maximal distance of 500 meters. D: 10Base5 has a maximal distance of 500 meters."
+    },
+    {
+      "id": 352,
+      "question": "In a SSL session between a client and a server, who is responsible for generating the master secret that will be used as a seed to generate the symmetric keys that will be used during the session?",
+      "options": {
+        "A": "Both client and server",
+        "B": "The client's browser",
+        "C": "The web server",
+        "D": "The merchant's Certificate Server"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "HTTP Secure (HTTPS) is HTTP running over SSL. The client browser generates a session key and encrypts it with the server’s public key. Incorrect Answers: A: Only the client generates the key. C: The client, not the server, generates the key. D: The client, not a certification server, generates the key."
+    },
+    {
+      "id": 353,
+      "question": "Which of the following statements pertaining to PPTP (Point-to-Point Tunneling Protocol) is NOT true?",
+      "options": {
+        "A": "PPTP allows the tunneling of any protocols that can be carried within PPP.",
+        "B": "PPTP does not provide strong encryption.",
+        "C": "PPTP does not support any token-based authentication method for users.",
+        "D": "PPTP is derived from L2TP."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "PPTP is an encapsulation protocol based on PPP that works at OSI layer 2 (Data Link) and that enables a single point-to-point connection, usually between a client and a server. While PPTP depends on IP to establish its connection. As currently implemented, PPTP encapsulates PPP packets using a modified version of the generic routing encapsulation (GRE) protocol, which gives PPTP to the flexibility of handling protocols other than IP, such as IPX and NETBEUI over IP networks. PPTP does have some limitations: It does not provide strong encryption for protecting data, nor does it support any token-based methods for authenticating users. L2TP is derived from L2F and PPTP, not the opposite. Incorrect Answers: A: PPTP relies on the Point-to-Point Protocol (PPP) being tunneled to implement security functionality. B: PPTP uses PPP for encryption. The PPP protocol has only the capability to encrypt data with 128-bit so it ensures low security. C: The PPTP specification does not include authentication. In the Microsoft implementation, the tunneled PPP traffic can be authenticated with PAP, CHAP, MS- CHAP v1/v2 , but not with any token-based authentication scheme."
+    },
+    {
+      "id": 354,
+      "question": "During the initial stage of configuration of your firewall, which of the following rules appearing in an Internet firewall policy is inappropriate?",
+      "options": {
+        "A": "The firewall software shall run on a dedicated computer.",
+        "B": "Appropriate firewall documentation and a copy of the rulebase shall be maintained on offline storage at all times.",
+        "C": "The firewall shall be configured to deny all services not expressly permitted.",
+        "D": "The firewall should be tested online first to validate proper configuration."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "For security reasons, the firewall should be tested offline. Incorrect Answers: A: A firewall may take the form of either software installed on a regular computer using a regular operating system or a dedicated hardware appliance that has its own operating system. The second choice is usually more secure. B: It is important to make a backup of the configuration of the firewall. C: All unneeded ports should be closed, and all unneeded services should be denied."
+    },
+    {
+      "id": 355,
+      "question": "SMTP can best be described as:",
+      "options": {
+        "A": "a host-to-host email protocol.",
+        "B": "an email retrieval protocol.",
+        "C": "a web-based e-mail reading protocol.",
+        "D": "a standard defining the format of e-mail messages."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In e-mail clients SMTP works as a message transfer agent and moves the message from the user’s computer to the mail server when the user sends the e-mail message. Incorrect Answers: B: SMTP is used only for sending, not retrieving, email messages. C: SMTP is used only for sending, not reading, email messages. D: SMTP is not a format of email messages. It is a protocol for sending email messages."
+    },
+    {
+      "id": 356,
+      "question": "Which of the following protocol is PRIMARILY used to provide confidentiality in a web based application thus protecting data sent across a client machine and a server?",
+      "options": {
+        "A": "SSL",
+        "B": "FTP",
+        "C": "SSH",
+        "D": "S/MIME"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "SSL is primarily used to protect HTTP traffic. SSL capabilities are already embedded into most web browsers. Incorrect Answers: B: FTP is used to transfer files, not to secure data that are transferred. C: S/MIME is not to protect data sent in web applications. S/MIME, more specifically, is used to secure email messages. D: SSH is not used in a web based application. SSH allows remote login and other network services to operate securely over an unsecured network."
+    },
+    {
+      "id": 357,
+      "question": "What attack involves the perpetrator sending spoofed packet(s) which contains the same destination and source IP address as the remote host, the same port for the source and destination, having the SYN flag, and targeting any open ports that are open on the remote host?",
+      "options": {
+        "A": "Boink attack",
+        "B": "Land attack",
+        "C": "Teardrop attack",
+        "D": "Smurf attack"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A land (Local Area Network Denial) attack involves sending a spoofed TCP SYN packet (connection initiation) with the target host's IP address to an open port as both source and destination. This causes the machine to reply to itself continuously. Incorrect Answers: A: The Boink attack manipulates a field in TCP/IP packets, called a fragment offset. This field tells a computer how to reconstruct a packet that was broken up (fragmented) because it was too big to transmit in a whole piece. By manipulating this number, the Boink attack causes the target machine to reassemble a packet that is much too big to be reassembled. This causes the target computer to crash. C: A teardrop attack is a denial-of-service (DoS) attack that involves sending fragmented packets to a target machine. D: The Smurf Attack is a distributed denial-of-service attack in which large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed source IP are broadcast to a computer network using an IP Broadcast address."
+    },
+    {
+      "id": 358,
+      "question": "Which of the following is NOT a component of IPSec?",
+      "options": {
+        "A": "Authentication Header",
+        "B": "Encapsulating Security Payload",
+        "C": "Key Distribution Center",
+        "D": "Internet Key Exchange"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A Key Distribution Center (KDC) is not used by IPSec. Kerberos uses a KDC for authentication. Incorrect Answers: A: The Authentication Header (AH) security protocol is used by IPSec. B: The Encapsulating Security Payload (ESP) security protocol is used by IPSec. D: The Internet Key Exchange (IKE) is the first phase of IPSec authentication, which accomplishes key management."
+    },
+    {
+      "id": 359,
+      "question": "Which of the following statements pertaining to IPSec is NOT true?",
+      "options": {
+        "A": "A security association has to be defined between two IPSec systems in order for bi-directional communication to be established.",
+        "B": "Integrity and authentication for IP datagrams are provided by AH.",
+        "C": "ESP provides for integrity, authentication and encryption to IP datagrams.",
+        "D": "In transport mode, ESP only encrypts the data payload of each packet."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "One security association (SA) is not enough to establish bi-directional communication. Each device will have at least one security association (SA) for each secure connection it uses, so two security associations would be required. Incorrect Answers: B: AH provides authentication and integrity for the IP datagrams. C: ESP provides authentication, integrity, and encryption for the IP datagrams. D: In IPSec transport mode the payload, but not the routing and header information, of the message is protected."
+    },
+    {
+      "id": 360,
+      "question": "Which of the following statements pertaining to packet filtering is NOT true?",
+      "options": {
+        "A": "It is based on ACLs.",
+        "B": "It is not application dependent.",
+        "C": "It operates at the network layer.",
+        "D": "It keeps track of the state of a connection."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering firewalls are stateless. They do not keep track of the state of a connection. Incorrect Answers: A: The device that is carrying out packet filtering processes is configured with ACLs, which dictate the type of traffic that is allowed into and out of specific networks. B: Packet filtering firewalls are application dependent. C: Packet filtering is a firewall technology that makes access decisions based upon network-level protocol header values. D: Packet filtering works at the network and transport layers, not at the application layer. It is not application dependent."
+    },
+    {
+      "id": 361,
+      "question": "Which of the following is a method of multiplexing data where a communication channel is divided into an arbitrary number of variable bit-rate digital channels or data streams. This method allocates bandwidth dynamically to physical channels having information to transmit?",
+      "options": {
+        "A": "Time-division multiplexing",
+        "B": "Asynchronous time-division multiplexing",
+        "C": "Statistical multiplexing",
+        "D": "Frequency division multiplexing"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Statistical time-division multiplexing (STDM) transmits several types of data simultaneously across a single transmission cable or line. The communication channel is divided into an arbitrary number of variable bit-rate digital channels or data streams. Incorrect Answers: A: Time-division multiplexing (TDM) is less complex compared to Statistical multiplexing. In its primary form, TDM is used communication with a fixed number of channels and constant bandwidth per channel. B: Asynchronous time-division multiplexing (TDM) is similar to TDM. It uses a fixed number channels, not an arbitrary number of channels like STDM. D: Frequency-division multiplexing (FDM) uses an available wireless spectrum, not a communication channel, to move data."
+    },
+    {
+      "id": 362,
+      "question": "If an organization were to deploy only one Intrusion Detection System (IDS) sensor to protect its information system from the Internet:",
+      "options": {
+        "A": "It should be host-based and installed on the most critical system in the DMZ, between the external router and the firewall.",
+        "B": "It should be network-based and installed in the DMZ, between the external router and the firewall.",
+        "C": "It should be network-based and installed between the firewall to the DMZ and the intranet.",
+        "D": "It should be host-based and installed between the external router and the Internet."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Network Intrusion Detection Systems (NIDS) are placed at a strategic point, such as between the internet-facing router and the firewall, within the network to monitor traffic to and from all devices on the network. Incorrect Answers: A: A host-based IDS is an IDS that is installed on a single computer and can monitor the activities on that computer only. C: It is better to place the IDS between the DMZ and the internet. D: A host-based IDS is an IDS that is installed on a single computer and can monitor the activities on that computer only."
+    },
+    {
+      "id": 363,
+      "question": "Why is infrared generally considered to be more secure to eavesdropping than multidirectional radio transmissions?",
+      "options": {
+        "A": "Because infrared eavesdropping requires more sophisticated equipment.",
+        "B": "Because infrared operates only over short distances.",
+        "C": "Because infrared requires direct line-of-sight paths.",
+        "D": "Because infrared operates at extra-low frequencies (ELF)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Infrared communications require line-of-sight transmission. This makes infrared relative secure from electronic eavesdropping. Incorrect Answers: A: Infrared eavesdropping does not require more advanced transmissions. B: Infrared operates over short distances, but this is not the main reason it is hard to eavesdrop. Compared to multidirectional radio transmission a direct line of sight is necessary. D: Infrared operates at high frequencies around 430 THz."
+    },
+    {
+      "id": 364,
+      "question": "Authentication Headers (AH) and Encapsulating Security Payload (ESP) protocols are the driving force of IPSec. Authentication Headers (AH) provides the following service except:",
+      "options": {
+        "A": "Authentication",
+        "B": "Integrity",
+        "C": "Replay resistance and non-repudiations",
+        "D": "Confidentiality"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Integrity and authentication for IP datagrams are provided by AH, but AH does not provide Confidentiality. Incorrect Answers: A: Authentication is provided by AH. B: Integrity is provided by AH. C: Authentication Headers (AH) might also provide non-repudiation, depending on which cryptographic algorithm is used and how keying is performed. With non- repudiations comes replay resistance."
+    },
+    {
+      "id": 365,
+      "question": "In IPSec, if the communication is to be gateway-to-gateway or host-to-gateway:",
+      "options": {
+        "A": "Tunnel mode of operation is required",
+        "B": "Only transport mode can be used",
+        "C": "Encapsulating Security Payload (ESP) authentication must be used",
+        "D": "Both tunnel and transport mode can be used"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In IPSec tunnel mode, the entire IP packet is encrypted and/or authenticated. It is then encapsulated into a new IP packet with a new IP header. Tunnel mode is used to create virtual private networks for network-to-network communications (e.g. between routers to link sites), host-to-network communications (e.g. remote user access) and host-to-host communications. Incorrect Answers: B: Tunnel mode, not transport mode, must be used. C: Tunnel mode, not ESP authentication, must be used. D: Only tunnel mode can be used."
+    },
+    {
+      "id": 366,
+      "question": "Which of the following is NOT true about IPSec Tunnel mode?",
+      "options": {
+        "A": "Fundamentally an IP tunnel with encryption and authentication",
+        "B": "Works at the Transport layer of the OSI model",
+        "C": "Have two sets of IP headers",
+        "D": "Established for gateway service"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "IPSec Tunnel mode works at the Internet layer, not at the Transport layer. Incorrect Answers: A: In IPSec tunnel mode, the entire IP packet is encrypted and/or authenticated. C: In tunnel mode, the entire IP packet is encrypted and/or authenticated. It is then encapsulated into a new IP packet with a new IP header. That is, in tunnel mode, there are two sets of IP headers. D: Tunnel mode is used to create virtual private networks for network-to-network communications (e.g. between routers to link sites), host-to-network communications (e.g. remote user access or for gateway services) and host-to-host communications."
+    },
+    {
+      "id": 367,
+      "question": "Which of the following statements is NOT true of IPSec Transport mode?",
+      "options": {
+        "A": "It is required for gateways providing access to internal systems",
+        "B": "Set-up when end-point is host or communications terminates at end-points",
+        "C": "If used in gateway-to-host communication, gateway must act as host",
+        "D": "When ESP is used for the security protocol, the hash is only applied to the upper layer protocols contained in the packet"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Tunnel mode, not transport mode, is required for gateway services. Incorrect Answers: B: Transport mode is allowed between two end hosts only. C: As Transport mode only is allowed between two end hosts, the gateway must act as a host. D: ESP operates directly on top of IP. The encryption is only applied to the upper layer protocols contained in the packet."
+    },
+    {
+      "id": 368,
+      "question": "Which of the following statements pertaining to firewalls is NOT true?",
+      "options": {
+        "A": "Firewalls create bottlenecks between the internal and external network.",
+        "B": "Firewalls allow for centralization of security services in machines optimized and dedicated to the task.",
+        "C": "Firewalls protect a network at all layers of the OSI models.",
+        "D": "Firewalls are used to create security checkpoints at the boundaries of private networks."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering firewalls work at the network level of the OSI model. If you filter specific ports, you can say you're filtering at layer 4. If your firewall inspects specific protocol states or data, you can say it operates at layer 7. Firewalls do not work at layer 1, layer 2, or layer 3 of the OSI model. Incorrect Answers: A: Firewalls can create bottlenecks between the internal and external network. B: Firewalls can be administered from a central location. D: Firewall are most often placed at the boundaries of the private networks to implement a security checkpoint to restrict access from the Internet."
+    },
+    {
+      "id": 369,
+      "question": "Which of the following is an extension to Network Address Translation that permits multiple devices providing services on a local area network (LAN) to be mapped to a single public IP address?",
+      "options": {
+        "A": "IP Spoofing",
+        "B": "IP subnetting",
+        "C": "Port address translation",
+        "D": "IP Distribution"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Port address translation (PAT) is an implementation of Network Address Translation. PAT is a mechanism for converting the internal private IP addresses found in packet headers into public IP addresses and port numbers for transmission over the Internet. PAT supports a many-to-one mapping of internal to external IP addresses by using ports. Incorrect Answers: A: IP Spoofing does not involve mapping of IP addresses. IP spoofing is the creation of Internet Protocol (IP) packets with a forged source IP address, with the purpose of concealing the identity of the sender or impersonating another computing system B: IP subnetting is the practice of dividing a network into two or more networks. D: The distribution of IP addresses does not involve mapping of IP addresses."
+    },
+    {
+      "id": 370,
+      "question": "At which OSI/ISO layer is an encrypted authentication between a client software package and a firewall performed?",
+      "options": {
+        "A": "Network layer",
+        "B": "Session layer",
+        "C": "Transport layer",
+        "D": "Data link layer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Encrypted authentication is a firewall feature that allows users on an external network to authenticate themselves to prove that they are authorized to access resources on the internal network. Encrypted authentication is convenient because it happens at the transport layer between a client software and a firewall, allowing all normal application software to run without hindrance. Incorrect Answers: A: The firewall encrypted authentication feature is performed at the transport layer, not the network layer. B: The firewall encrypted authentication feature is performed at the transport layer, not the session layer. D: The firewall encrypted authentication feature is performed at the transport layer, not the data link layer."
+    },
+    {
+      "id": 371,
+      "question": "Which of the following attack is MOSTLY performed by an attacker to steal the identity information of a user such as credit card number, passwords, etc?",
+      "options": {
+        "A": "Smurf attack",
+        "B": "Traffic analysis",
+        "C": "Pharming",
+        "D": "Interrupt attack"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Pharming is a cyber attack intended to redirect a website's traffic to another, fake site. At the fake site the user can be fooled into providing identity information such as passwords. Incorrect Answers: A: The aim of a smurf attack is not to steal information. A smurf attack is an exploitation of the Internet Protocol (IP) broadcast addressing to create a denial of service. B: Traffic analysis is not mostly used to steal identity information. D: The aim of an Interrupt attack is not to steal information. Interrupt Attacks are aimed to disrupt services."
+    },
+    {
+      "id": 372,
+      "question": "Which of the following was designed to support multiple network types over the same serial link?",
+      "options": {
+        "A": "Ethernet",
+        "B": "SLIP",
+        "C": "PPP",
+        "D": "PPTP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Point-to-Point Protocol (PPP) is a full - duplex protocol used for the transmission of TCP/IP packets over various non-LAN connections, such as modems, ISDN, VPNs, Frame Relay, and so on. PPP permits multiple network layer protocols to operate on the same communication link. Incorrect Answers: A: Ethernet is a link layer protocol in the TCP/IP stack, but Ethernet is not used for serial links. B: SLIP is a predecessor of PPP which do not support multiple network types over a single link. D: PPTP is a tunneling protocol which uses a control channel over TCP and a GRE tunnel operating to encapsulate PPP packets. PPTP tunnels do not handle network types."
+    },
+    {
+      "id": 373,
+      "question": "What is an IP routing table?",
+      "options": {
+        "A": "A list of IP addresses and corresponding MAC addresses.",
+        "B": "A list of station and network addresses with corresponding gateway IP address.",
+        "C": "A list of host names and corresponding IP addresses.",
+        "D": "A list of current network interfaces on which IP routing is enabled."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A routing table is a set of rules, often viewed in table format that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. The routing table stores route information about directly connected and remote networks. Incorrect Answers: A: An IP Routing table does not contain MAC addresses. B: There are not host names in IP routing tables. D: A routing table does not include a list of network interface which are IP routing enabled. A routing table includes an Interface address, which is the outgoing network interface the device should use when forwarding the packet to the next hop or final destination."
+    },
+    {
+      "id": 374,
+      "question": "Which of the following should be allowed through a firewall to easy communication and usage by users?",
+      "options": {
+        "A": "RIP",
+        "B": "IGRP",
+        "C": "DNS",
+        "D": "OSPF"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "DNS translates domain names into IP addresses, which enables us to use domain names instead of IP addresses. Incorrect Answers: A: RIP is a routing protocol. A routing protocol forwards routing information between routers, but does make it easier for users to communicate. B: IGRP is a routing protocol. A routing protocol forwards routing information between routers, but does make it easier for users to communicate. D: OSPF is a routing protocol. A routing protocol forwards routing information between routers, but does make it easier for users to communicate."
+    },
+    {
+      "id": 375,
+      "question": "Which of the following was developed as a simple mechanism for allowing simple network terminals to load their operating system from a server over the LAN?",
+      "options": {
+        "A": "DHCP",
+        "B": "BootP",
+        "C": "DNS",
+        "D": "ARP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "BOOTP has been used for Unix-like diskless workstations to obtain the network location of their boot image, in addition to the IP address assignment. Enterprises used it to roll out a pre-configured client (e.g., Windows) installation to newly installed PCs. Incorrect Answers: A: DHCP is a network protocol used on IP networks for dynamically distributing network configuration parameters, such as IP addresses for interfaces and services. C: DNS translates domain names into IP addresses, which enables us to use domain names instead of IP addresses. D: The ARP protocol translates IP addresses to MAC Addresses."
+    },
+    {
+      "id": 376,
+      "question": "What is the greatest danger from DHCP?",
+      "options": {
+        "A": "An intruder on the network impersonating a DHCP server and thereby misconfiguring the DHCP clients.",
+        "B": "Having multiple clients on the same LAN having the same IP address.",
+        "C": "Having the wrong router used as the default gateway.",
+        "D": "Having the organization's mail server unreachable."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The main security risk concerning DHCP is that unauthorized (rogue) DHCP servers offering IP configuration to DHCP clients. Rogue DHCP servers are often used in man in the middle or denial of service attacks for malicious purposes. Incorrect Answers: B: IP address collisions are not a major security risk. C: Incorrect default gateway is not a major security problem compared to a rogue DHCP Server. D: An unreachable mail server is not a main security concern compared to the damage a rogue DHCP server can do."
+    },
+    {
+      "id": 377,
+      "question": "Which of the following allows two computers to coordinate in executing software?",
+      "options": {
+        "A": "RSH",
+        "B": "RPC",
+        "C": "NFS",
+        "D": "SNMP"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The programmer of a piece of software can write a function call that calls upon a subroutine. The subroutine could be local to the system or be on a remote system. If the subroutine is on a remote system, it is a Remote Procedure Call (RPC). The RPC request is carried over a session layer protocol. The result that the remote system provides is then returned to the requesting system over the same session layer protocol. With RPC a piece of software can execute components that reside on another system. Incorrect Answers: A: The remote shell (rsh) is a command line computer program that can execute shell commands as another user, and on another computer across a computer network. RSH is not used to remotely execute software. C: The Network File System (NFS) is not used to execute software remotely. NFS is a client/server application that lets a computer user view and optionally store and update file on a remote computer as though they were on the user's own computer. D: SNMP is used for monitoring the network, not for remote software execution."
+    },
+    {
+      "id": 378,
+      "question": "Which of the following should NOT normally be allowed through a firewall?",
+      "options": {
+        "A": "SNMP",
+        "B": "SMTP",
+        "C": "HTTP",
+        "D": "SSH"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "SNMP is used for monitoring network traffic. SNMP would monitor the traffic on a single segment and there would be no reason to allow SNMP traffic through a firewall. Incorrect Answers: B: Users must be allowed to send email messages, so SMTP traffic must be allowed. C: Users must be allowed to browse the internet, so HTTP traffic must be allowed. D: Users must be allowed to log into a remote machine and execute commands, so SSH traffic must be allowed."
+    },
+    {
+      "id": 379,
+      "question": "Which of the following NAT firewall translation modes allows a large group of internal clients to share a single or small group of ROUTABLE IP addresses for the purpose of hiding their identities when communicating with external hosts?",
+      "options": {
+        "A": "Static translation",
+        "B": "Load balancing translation",
+        "C": "Network redundancy translation",
+        "D": "Dynamic translation"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Port address translation (PAT) is a dynamic NAT translation. It maps one internal IP address to an external IP address and port number combination. Thus, PAT can theoretically support 65,536 (2 16) simultaneous communications from internal clients over a single external leased IP address. Incorrect Answers: A: With static translation each private address is statically mapped to a specific public address. B: There is no NAT implementation named Load balancing translation. C: There is no NAT implementation called Network redundancy translation."
+    },
+    {
+      "id": 380,
+      "question": "Which of the following NAT firewall translation modes offers no protection from hacking attacks to an internal host using this functionality?",
+      "options": {
+        "A": "Network redundancy translation",
+        "B": "Load balancing translation",
+        "C": "Dynamic translation",
+        "D": "Static translation"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Static translation offers no protection against IP Spoofing. Incorrect Answers: A: There is no NAT firewall translation mode called Network redundancy translation. B: There is no NAT firewall translation mode called Load balancing translation. C: Port address translation (PAT) is a dynamic NAT translation. It maps one internal IP address to an external IP address and port number combination. With Dynamic NAT te internal IP address is hidden from external hackers."
+    },
+    {
+      "id": 381,
+      "question": "Which of the following is the primary security feature of a proxy server?",
+      "options": {
+        "A": "Virus Detection",
+        "B": "URL blocking",
+        "C": "Route blocking",
+        "D": "Content filtering"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A proxy firewall is a network security system that protects network resources by filtering messages at the application layer. The application-level proxy understands the packet as a whole and can make access decisions based on the content of the packets. Incorrect Answers: A: Firewalls does not detect viruses. B: A proxy server firewall does not use URL blocking. C: A proxy server firewall does not use route blocking."
+    },
+    {
+      "id": 382,
+      "question": "Which of the following is an advantage of proxies?",
+      "options": {
+        "A": "Proxies provide a single point of access, control, and logging.",
+        "B": "Proxies must exist for each service.",
+        "C": "Proxies create a single point of failure.",
+        "D": "Proxies do not protect the base operating system."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Proxies provide services through a single access point. Proxies can be installed in order to eavesdrop upon the data-flow between client machines and the web. All content sent or accessed – including passwords submitted and cookies used – can be captured and analyzed by the proxy operator. Incorrect Answers: B: A proxy can handle many services, not only a single service. A client connects to the proxy server, requesting some service, such as a file, connection, web page, or other resource available from a different server and the proxy server evaluates the request as a way to simplify and control its complexity. C: Proxies does not create a single point of failure. D: Firewall proxies protect the base operating system."
+    },
+    {
+      "id": 383,
+      "question": "Which of the following packets should NOT be dropped at a firewall protecting an organization's internal network?",
+      "options": {
+        "A": "Inbound packets with Source Routing option set",
+        "B": "Router information exchange protocols",
+        "C": "Inbound packets with an internal address as the source IP address",
+        "D": "Outbound packets with an external destination IP address"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Internal users access the internet will create outbound packets with external IP addresses. These legit packets should not be dropped. Incorrect Answers: A: Firewalls do not drop packet based on routing options. B: Firewalls do not drop packet based on routing protocol information. C: Inbound packets should have an external source address. If the inbound packet has an internal source address it must be dropped."
+    },
+    {
+      "id": 384,
+      "question": "A packet filtering firewall looks at the data packet to get information about the source and destination addresses of an incoming packet, the protocol (TCP, UDP, or ICMP), and the source and destination port for the:",
+      "options": {
+        "A": "desired service.",
+        "B": "dedicated service.",
+        "C": "delayed service.",
+        "D": "distributed service."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering is a firewall technology that makes access decisions based upon network-level protocol header values. The filters can make access decisions based upon the following basic criteria: Source and destination port numbers (such as an application port or a service number) Protocol types Source and destination IP addresses Inbound and outbound traffic direction Incorrect Answers: B: A packet filtering firewall can grant access to desired services, not dedicated services, through source and destination numbers. C: A packet filtering firewall can grant access to desired services, not delayed services, through source and destination numbers. D: A packet filtering firewall can grant access to desired services, not distributed services, through source and destination numbers."
+    },
+    {
+      "id": 385,
+      "question": "Frame relay uses a public switched network to provide:",
+      "options": {
+        "A": "Local Area Network (LAN) connectivity.",
+        "B": "Metropolitan Area Network (MAN) connectivity.",
+        "C": "Wide Area Network (WAN) connectivity.",
+        "D": "World Area Network (WAN) connectivity."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Frame relay is a Wide Area Network (WAN) technology. Incorrect Answers: A: Frame relay is not used in local area networks. It is a WAN technology. B: Frame relay is not used Metropolitan Area Network (MAN) networks. It is a WAN technology. D: There is no connectivity technology named World Area Network (WAN)."
+    },
+    {
+      "id": 386,
+      "question": "Which of the following is a drawback of fiber optic cables?",
+      "options": {
+        "A": "It is affected by electromagnetic interference (EMI).",
+        "B": "It can easily be tapped.",
+        "C": "The expertise needed to install it.",
+        "D": "The limited distance at high speeds."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Fiber-optic cable is expensive and difficult to work with. Incorrect Answers: A: Fiber optic cables are not affected by electromagnetic interference (EMI). B: Fiber optic cables are hard to tap. D: Fiber-optic cabling has higher transmission speeds that allow signals to travel over longer distances."
+    },
+    {
+      "id": 387,
+      "question": "Which of the following is the MOST secure firewall implementation?",
+      "options": {
+        "A": "Dual-homed host firewalls",
+        "B": "Screened-subnet firewalls",
+        "C": "Screened-host firewalls",
+        "D": "Packet-filtering firewalls"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A screened-subnet architecture is the most secure solution as it adds another layer of security to the screened-host architecture, which in turn is more secure than both Dual-homed host firewalls and Packet-filtering firewalls. Incorrect Answers: A: Dual-homed host firewalls are less secure compared to screened-host firewall. C: Screened-host firewalls are less secure compared to Screened-subnet firewalls, as the screened-subnet architecture is missing. A screened host is a firewall that communicates directly with a perimeter router and the internal network. D: A packet-filtering firewall is part of a screened-host firewall architecture, but is less secure as the screened-host firewall is missing."
+    },
+    {
+      "id": 388,
+      "question": "A Packet Filtering Firewall system is considered a:",
+      "options": {
+        "A": "first generation firewall.",
+        "B": "second generation firewall.",
+        "C": "third generation firewall.",
+        "D": "fourth generation firewall."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Packet filtering was the first generation of firewalls and it is the most rudimentary type of all of the firewall technologies. Incorrect Answers: B: Packet filtering is a first generation firewall, not a second generation firewall. Application -level gateways are known as second generation firewalls. C: Packet filtering is a first generation firewall, not a third generation firewall. D: Packet filtering is a first generation firewall, not a fourth generation firewall."
+    },
+    {
+      "id": 389,
+      "question": "Proxies work by transferring a copy of each accepted data packet from one network to another, thereby masking the:",
+      "options": {
+        "A": "data's payload.",
+        "B": "data's details.",
+        "C": "data's owner.",
+        "D": "data's origin."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Proxy servers act as an intermediary between the clients that want access to certain services and the servers that provide those services. The proxy server sends an independent request to the destination on behalf of the user, thereby masking the origin of the data. Incorrect Answers: A: The proxy server transfer they payload data to the destination. B: The proxy server transfer they payload data (the details of the data) to the destination. C: The origin of the data, not the owner of the data, is masked by the proxy server."
+    },
+    {
+      "id": 390,
+      "question": "An application layer firewall is also called a:",
+      "options": {
+        "A": "Proxy",
+        "B": "A Presentation Layer Gateway.",
+        "C": "A Session Layer Gateway.",
+        "D": "A Transport Layer Gateway."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A network-based application layer firewall is a computer networking firewall operating at the application layer of a protocol stack, and is also known as a proxy- based or reverse-proxy firewall. Incorrect Answers: B: Application layer firewall works at the application layer, not at the presentation layer. C: Application layer firewall works at the application layer, not at the session layer. D: Application layer firewall works at the application layer, not at the transport layer."
+    },
+    {
+      "id": 391,
+      "question": "Application Layer Firewalls operate at the:",
+      "options": {
+        "A": "OSI protocol Layer seven, the Application Layer.",
+        "B": "OSI protocol Layer six, the Presentation Layer.",
+        "C": "OSI protocol Layer five, the Session Layer.",
+        "D": "OSI protocol Layer four, the Transport Layer."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Application layer firewall works at the application layer, which is layer 7 in the OSI model. Incorrect Answers: B: Application layer firewalls do not work at OSI layer 6, the presentation layer. They are at the Application layer, layer 7. C: Application layer firewalls do not work at OSI layer 5, the session layer. They are at the Application layer, layer 7. D: Application layer firewalls do not work at OSI layer 4, the session layer. They are at the Transport layer, layer 7."
+    },
+    {
+      "id": 392,
+      "question": "One drawback of Application Level Firewall is that it reduces network performance due to the fact that it must analyze every packet and:",
+      "options": {
+        "A": "decide what to do with each application.",
+        "B": "decide what to do with each user.",
+        "C": "decide what to do with each port.",
+        "D": "decide what to do with each packet."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The application firewall is typically built to control all network traffic on any OSI layer up to the application layer. At the lowest level the application firewall can examine each data packet. This slows down the performance. Incorrect Answers: A: Making decisions at the application level would not slow down the firewall. B: An application firewall cannot make decisions based on the user. C: Making decisions at the port level would not slow down the firewall, especially compared deciding what to do with each packet."
+    },
+    {
+      "id": 393,
+      "question": "A circuit level proxy is ____________ when compared to an application level proxy.",
+      "options": {
+        "A": "lower in processing overhead.",
+        "B": "more difficult to maintain.",
+        "C": "more secure.",
+        "D": "slower."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A circuit level proxy works at the session layer of the OSI model and monitors traffic from a network-based view. This type of proxy cannot “look into” the contents of a packet like an application level proxy; thus, it does not carry out deep-packet inspection. This means that, compared to an application level proxy, A circuit level proxy is faster. Incorrect Answers: B: A circuit level proxy is easier to maintain as it is less flexible. C: A circuit level proxy is less secure since it only works at the session layer, and cannot inspect data packets. D: A circuit level proxy is faster, not slower."
+    },
+    {
+      "id": 394,
+      "question": "In a stateful inspection firewall, data packets are captured by an inspection engine that is operating at the:",
+      "options": {
+        "A": "Network or Transport Layer.",
+        "B": "Application Layer.",
+        "C": "Inspection Layer.",
+        "D": "Data Link Layer."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A stateful firewall filters traffic based on OSI Layer 3 (Network layer) and Layer 4 (Transport layer). Incorrect Answers: B: A stateful firewall does not operate at the Application layer. It work at the Network or Transport Layer. C: There is no inspection layer in the OSI model. D: A stateful firewall does not operate at the Data link layer. It work at the Network or Transport Layer."
+    },
+    {
+      "id": 395,
+      "question": "When an outgoing request is made on a port number greater than 1023, this type of firewall creates an ACL to allow the incoming reply on that port to pass:",
+      "options": {
+        "A": "packet filtering",
+        "B": "Circuit level proxy",
+        "C": "Dynamic packet filtering",
+        "D": "Application level proxy"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Ports up to 1023 are called well-known ports and are reserved for server-side services. The sending system must choose a dynamic port higher than 1023 when it sets up a connection with another entity. The dynamic packet-filtering firewall then creates an Access Control List (ACL) that allows the external entity to communicate with the internal system. Incorrect Answers: A: A Packet filtering firewall makes access decisions based upon network-level protocol header values. It does not use port numbers. B: A Circuit level proxy works at the session layer and does not use ports. D: An Application level proxy works at the packet level, not at the port level."
+    },
+    {
+      "id": 396,
+      "question": "A demilitarized zone is:",
+      "options": {
+        "A": "a part of a network perfectly safe from hackers",
+        "B": "a militarized network segment",
+        "C": "a firewall",
+        "D": "the network segment between the Internet and a private network"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A demilitarized zone (DMZ) is a network segment located between the protected private network and unprotected public network (typically being the Internet). Incorrect Answers: A: A demilitarized zone is not safe from hackers as it connected to the Internet. B: It is a demilitarized, not a militarized, zone. C: A demilitarized zone is not a firewall. A demilitarized zone is shielded by two firewalls: one facing the Internet, and one facing the private network."
+    },
+    {
+      "id": 397,
+      "question": "A DMZ is located:",
+      "options": {
+        "A": "right behind your first Internet facing firewall",
+        "B": "right in front of your first Internet facing firewall",
+        "C": "right behind your first network active firewall",
+        "D": "right behind your first network passive Internet http firewall"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A demilitarized zone is shielded by two firewalls: one right behind the first Internet facing the Internet, and one facing the private network. Incorrect Answers: B: A demilitarized zone is shielded by the Internet facing firewall. It is not placed outside this firewall. C: A demilitarized zone is placed behind the first Internet facing firewall, not behind the first network active firewall. D: A demilitarized zone does not need to be placed behind a network passive Internet http firewall. It just needs to be place behind the first Internet facing firewall."
+    },
+    {
+      "id": 398,
+      "question": "The DMZ does not normally contain:",
+      "options": {
+        "A": "encryption server",
+        "B": "web server",
+        "C": "external DNS server",
+        "D": "mail relay"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The DMZ usually contains web servers, mail servers, and external DNS servers. Incorrect Answers: B: A web server is usually located in the DMZ. C: An external web server is usually located in the DMZ. D: A mail server is usually located in the DMZ."
+    },
+    {
+      "id": 399,
+      "question": "A DMZ is also known as a:",
+      "options": {
+        "A": "screened subnet.",
+        "B": "three legged firewall.",
+        "C": "place to attract hackers.",
+        "D": "bastion host."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "With a screened subnet, two firewalls are used to create a DMZ. Incorrect Answers: B: The three legged model is just one way of implementing a DMZ. A DMZ can be implemented in different ways. C: A place to attract hackers is called a honeypot, not a DMZ. D: A bastion host is not a DMZ. It is a computer that is fully exposed to attack."
+    },
+    {
+      "id": 400,
+      "question": "Network-based Intrusion Detection systems:",
+      "options": {
+        "A": "commonly reside on a discrete network segment and monitor the traffic on that network segment.",
+        "B": "commonly will not reside on a discrete network segment and monitor the traffic on that network segment.",
+        "C": "commonly reside on a discrete network segment and does not monitor the traffic on that network segment.",
+        "D": "commonly reside on a host and monitor the traffic on that specific host."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "A network - based IDS (Intrusion Detection systems) watches for questionable activity occurring on the network medium by inspecting packets and observing network traffic patterns. Incorrect Answers: B: The networked-based ISD must be present on the network segment it is monitoring. C: The purpose of an Intrusion Detection system is to monitor the traffic. D: A host-based, not a network-based, IDS watches for questionable activity on a single computer system."
+    }
+  ]
+}

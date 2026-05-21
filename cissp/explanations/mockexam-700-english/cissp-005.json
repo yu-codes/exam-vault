@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "mockexam-700-english",
+    "question_range": "Q201 - Q250",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 201,
+      "question": "Which of the following is the MOST secure form of triple-DES encryption?",
+      "options": {
+        "A": "DES-EDE3",
+        "B": "DES-EDE1",
+        "C": "DES-EEE4",
+        "D": "DES-EDE2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "DES-EDE3 is the most secure form of triple-DES encryption as it uses three different keys for encryption. 3DES can work in different modes, and the mode chosen dictates the number of keys used and what functions are carried out: DES-EEE3: Uses three different keys for encryption, and the data are encrypted, encrypted, encrypted. DES-EDE3: Uses three different keys for encryption, and the data are encrypted, decrypted, encrypted. DES-EEE2: The same as DES-EEE3, but uses only two keys, and the first and third encryption processes use the same key. DES-EDE2: The same as DES-EDE3, but uses only two keys, and the first and third encryption processes use the same key. Incorrect Answers: B: DES-EDE1 uses one encryption key and returns the algorithm (and strength) as DES. It is only provided for backwards compatibility. This is not the most secure form of triple-DES encryption. C: DES-EEE4 is not a valid form of 3DES encryption. D: DES-EDE2 uses only two keys and is not the most secure form of triple-DES encryption."
+    },
+    {
+      "id": 202,
+      "question": "Which of the following is NOT a known type of Message Authentication Code (MAC)?",
+      "options": {
+        "A": "Keyed-hash message authentication code (HMAC)",
+        "B": "DES-CBC",
+        "C": "Signature-based MAC (SMAC)",
+        "D": "Universal Hashing Based MAC (UMAC)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Signature-based MAC (SMAC) is not a known type of Message Authentication Code (MAC). Message authentication code is a cryptographic function that uses a hashing algorithm and symmetric key for data integrity and system origin functions. A keyed-hash message authentication code (HMAC) is a specific construction for calculating a message authentication code (MAC) involving a cryptographic hash function in combination with a secret cryptographic key. A cipher block chaining message authentication code (CBC-MAC) is a technique for constructing a message authentication code from a block cipher. The message is encrypted with some block cipher algorithm in CBC mode to create a chain of blocks such that each block depends on the proper encryption of the previous block. A message authentication code based on universal hashing, or UMAC, is a type of message authentication code (MAC) calculated choosing a hash function from a class of hash functions according to some secret (random) process and applying it to the message. Incorrect Answers: A: Keyed-hash message authentication code (HMAC) is a known type of Message Authentication Code (MAC). B: DES-CBC is a known type of Message Authentication Code (MAC). D: Universal Hashing Based MAC (UMAC) is a known type of Message Authentication Code (MAC)."
+    },
+    {
+      "id": 203,
+      "question": "What is the maximum key size for the RC5 algorithm?",
+      "options": {
+        "A": "128 bits",
+        "B": "256 bits",
+        "C": "1024 bits",
+        "D": "2040 bits"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "RC5 is a block cipher that has a variety of parameters it can use for block size, key size, and the number of rounds used. It was created by Ron Rivest and analyzed by RSA Data Security, Inc. The block sizes used in this algorithm are 32, 64, or 128 bits, and the key size goes up to 2,048 bits. The number of rounds used for encryption and decryption is also variable. The number of rounds can go up to 255. Incorrect Answers: A: The maximum key size for the RC5 algorithm is 2048 bits, not 128 bits. B: The maximum key size for the RC5 algorithm is 2048 bits, not 256 bits. C: The maximum key size for the RC5 algorithm is 2048 bits, not 1024 bits."
+    },
+    {
+      "id": 204,
+      "question": "Which of the following algorithms is a stream cipher?",
+      "options": {
+        "A": "RC2",
+        "B": "RC4",
+        "C": "RC5",
+        "D": "RC6"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RC4 is one of the most commonly implemented stream ciphers. Incorrect Answers: A, C, & D: RC2, RC5and RC6 are block ciphers."
+    },
+    {
+      "id": 205,
+      "question": "In an SSL session between a client and a server, who is responsible for generating the master secret that will be used as a seed to generate the symmetric keys that will be used during the session?",
+      "options": {
+        "A": "Both client and server",
+        "B": "The client's browser",
+        "C": "The web server",
+        "D": "The merchant's Certificate Server"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "This is a tricky question. The client generates the “pre-master” secret. See step 4 of the process below. However, the master secret that will be used as a seed to generate the symmetric keys is generated (from the pre-master secret) by both the client and server. See step 6 below. The steps involved in the SSL handshake are as follows (note that the following steps assume the use of the cipher suites listed in Cipher Suites with RSA Key Exchange: Triple DES, RC4, RC2, DES): 1. The client sends the server the client's SSL version number, cipher settings, session-specific data, and other information that the server needs to communicate with the client using SSL. 2. The server sends the client the server's SSL version number, cipher settings, session-specific data, and other information that the client needs to communicate with the server over SSL. The server also sends its own certificate, and if the client is requesting a server resource that requires client authentication, the server requests the client's certificate. 3. The client uses the information sent by the server to authenticate the server (see Server Authentication for details). If the server cannot be authenticated, the user is warned of the problem and informed that an encrypted and authenticated connection cannot be established. If the server can be successfully authenticated, the client proceeds to step 4. 4. Using all data generated in the handshake thus far, the client (with the cooperation of the server, depending on the cipher being used) creates the pre-master secret for the session, encrypts it with the server's public key (obtained from the server's certificate, sent in step 2), and then sends the encrypted pre-master secret to the server. 5. If the server has requested client authentication (an optional step in the handshake), the client also signs another piece of data that is unique to this handshake and known by both the client and server. In this case, the client sends both the signed data and the client's own certificate to the server along with the encrypted pre-master secret. 6. If the server has requested client authentication, the server attempts to authenticate the client (see Client Authentication for details). If the client cannot be authenticated, the session ends. If the client can be successfully authenticated, the server uses its private key to decrypt the pre-master secret, and then performs a series of steps (which the client also performs, starting from the same pre-master secret) to generate the master secret. 7. Both the client and the server use the master secret to generate the session keys, which are symmetric keys used to encrypt and decrypt information exchanged during the SSL session and to verify its integrity (that is, to detect any changes in the data between the time it was sent and the time it is received over the SSL connection). 8. The client sends a message to the server informing it that future messages from the client will be encrypted with the session key. It then sends a separate (encrypted) message indicating that the client portion of the handshake is finished. 9. The server sends a message to the client informing it that future messages from the server will be encrypted with the session key. It then sends a separate (encrypted) message indicating that the server portion of the handshake is finished. 10.The SSL handshake is now complete and the session begins. The client and the server use the session keys to encrypt and decrypt the data they send to each other and to validate its integrity. 11.This is the normal operation condition of the secure channel. At any time, due to internal or external stimulus (either automation or user intervention), either side may renegotiate the connection, in which case, the process repeats itself. Incorrect Answers: B: The client generates the “pre-master” secret, not the “master secret”. The master secret that will be used as a seed to generate the symmetric keys is generated (from the pre-master secret) by both the client and server. C: The master certificate is not generated by the web server alone; the client also generates the master secret. D: The merchant's Certificate Server does not generate the master secret."
+    },
+    {
+      "id": 206,
+      "question": "Which of the following was NOT designed to be a proprietary encryption algorithm?",
+      "options": {
+        "A": "RC2",
+        "B": "RC4",
+        "C": "Blowfish",
+        "D": "Skipjack"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Blowfish is a block cipher that works on 64-bit blocks of data. The key length can be anywhere from 32 bits up to 448 bits, and the data blocks go through 16 rounds of cryptographic functions. It was intended as a replacement to the aging DES. While many of the other algorithms have been proprietary and thus encumbered by patents or kept as government secrets, this wasn’t the case with Blowfish. Bruce Schneier, the creator of Blowfish, has stated, “Blowfish is unpatented, and will remain so in all countries. The algorithm is hereby placed in the public domain, and can be freely used by anyone.” Incorrect Answers: A: RC2 was designed to be a proprietary encryption algorithm. B: RC4 was designed to be a proprietary encryption algorithm. D: Skipjack was designed to be a proprietary encryption algorithm."
+    },
+    {
+      "id": 207,
+      "question": "Which of the following is NOT an encryption algorithm?",
+      "options": {
+        "A": "Skipjack",
+        "B": "SHA-1",
+        "C": "Twofish",
+        "D": "DEA"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "SHA-1 is a hashing algorithm. Incorrect Answers: A: Skipjack is an algorithm used for encryption. C: Twofish is a symmetric block cipher that is used for encryption. D: DEA is the algorithm that fulfills DES, which provides encryption."
+    },
+    {
+      "id": 208,
+      "question": "What key size is used by the Clipper Chip?",
+      "options": {
+        "A": "40 bits",
+        "B": "56 bits",
+        "C": "64 bits",
+        "D": "80 bits"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The Clipper Chip made use of the Skipjack algorithm, which is a symmetric cipher that uses an 80-bit key. Incorrect Answers: A: RC4 is able to use key sizes ranging from 40 bits to 256 bits. B: DES makes use of a 64-bit key, of which 56 bits make up the true key, and 8 bits are used for parity. C: DES makes use of a 64-bit key, of which 56 bits make up the true key, and 8 bits are used for parity."
+    },
+    {
+      "id": 209,
+      "question": "Which of the following would BEST describe a Concealment cipher?",
+      "options": {
+        "A": "Permutation is used, meaning that letters are scrambled.",
+        "B": "Every X number of words within a text, is a part of the real message.",
+        "C": "Replaces bits, characters, or blocks of characters with different bits, characters or blocks.",
+        "D": "Hiding data in another message so that the very existence of the data is concealed."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The concealment cipher is a symmetric key, transposition cipher where the words or characters of the plaintext message are embedded in a page of words or characters at a consistent interval. Incorrect Answers: A: Transposition cyphers moves the original values around. C: The substitution cipher substitutes bits, characters, or blocks of characters with different bits, characters, or blocks. D: Steganography is a technique used to hide data in another media type so that the presence of the data is masked."
+    },
+    {
+      "id": 210,
+      "question": "Which of the following is BEST provided by symmetric cryptography?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Integrity",
+        "C": "Availability",
+        "D": "Non-repudiation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Symmetric cryptosystems is able to provide confidentiality, but not authentication or nonrepudiation. Incorrect Answers: B: Hashing algorithms provide data integrity. C: Availability is an Access Control concern. It is not provided by symmetric cryptography. D: Symmetric cryptosystems is unable to provide authentication or nonrepudiation."
+    },
+    {
+      "id": 211,
+      "question": "While using IPsec, the ESP and AH protocols both provide integrity services. However, when using AH, some special attention needs to be paid if one of the peers uses NAT for address translation service. Which of the items below would affects the use of AH and it´s Integrity Check Value (ICV) the MOST?",
+      "options": {
+        "A": "Key session exchange",
+        "B": "Packet Header Source or Destination address",
+        "C": "VPN cryptographic key size",
+        "D": "Cryptographic algorithm used"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "AH provides authentication and integrity, and ESP can provide those two functions and confidentiality. Why even bother with AH then? In most cases, the reason has to do with whether the environment is using network address translation (NAT). IPSec will generate an integrity check value (ICV), which is really the same thing as a MAC value, over a portion of the packet. Remember that the sender and receiver generate their own integrity values. In IPSec, it is called an ICV value. The receiver compares her ICV value with the one sent by the sender. If the values match, the receiver can be assured the packet has not been modified during transmission. If the values are different, the packet has been altered and the receiver discards the packet. The AH protocol calculates this ICV over the data payload, transport, and network headers. If the packet then goes through a NAT device, the NAT device changes the IP address of the packet. That is its job. This means a portion of the data (network header) that was included to calculate the ICV value has now changed, and the receiver will generate an ICV value that is different from the one sent with the packet, which means the packet will be discarded automatically. The ESP protocol follows similar steps, except it does not include the network header portion when calculating its ICV value. When the NAT device changes the IP address, it will not affect the receiver’s ICV value because it does not include the network header when calculating the ICV. Incorrect Answers: A: The key session exchange does not affect the use of AH and it´s Integrity Check Value. C: The VPN cryptographic key size does not affect the use of AH and it´s Integrity Check Value. D: The crypotographic algorithm used does not affect the use of AH and it´s Integrity Check Value. Harris, Shon, All In One CISSP Exam Guide, 6th Edition, McGraw-Hill, 2013, pp. 862-863"
+    },
+    {
+      "id": 212,
+      "question": "Which of the following protocols offers native encryption?",
+      "options": {
+        "A": "IPSEC, SSH, PPTP, SSL, MPLS, L2F, and L2TP",
+        "B": "IPSEC, SSH, SSL, TFTP",
+        "C": "IPSEC, SSH, SSL, TLS",
+        "D": "IPSEC, SSH, PPTP, SSL, MPLS, and L2TP"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "IPSec (Internet Protocol Security) is a standard that provides encryption, access control, non-repudiation, and authentication of messages over an IP network. SSH (Secure Shell) is a set of protocols that are primarily used for remote access over a network by establishing an encrypted tunnel between an SSH client and an SSH server. SSL (Secure Sockets Layer) is an encryption technology that is used to provide secure transactions such as the exchange of credit card numbers. SSL is a socket layer security protocol and is a two-layered protocol that contains the SSL Record Protocol and the SSL Handshake Protocol. Similar to SSH, SSL uses symmetric encryption for private connections and asymmetric or public key cryptography for peer authentication. Incorrect Answers: A: MPLS (Multiprotocol Label Switching) is a WAN technology that does not provide encryption. L2F (Layer 2 Forwarding Protocol) is a tunneling protocol that does not provide encryption by itself. L2TP (Layer 2 Tunneling Protocol) is also a tunneling protocol that does not provide encryption by itself. B: TFTP (Trivial File Transfer Protocol) is used for transferring files. TFTP does not provide encryption. D: MPLS (Multiprotocol Label Switching) is a WAN technology that does not provide encryption. L2TP (Layer 2 Tunneling Protocol) is a tunneling protocol that does not provide encryption by itself."
+    },
+    {
+      "id": 213,
+      "question": "Which of the following is NOT a disadvantage of symmetric cryptography when compared with asymmetric ciphers?",
+      "options": {
+        "A": "Provides Limited security services",
+        "B": "Has no built in Key distribution",
+        "C": "Speed",
+        "D": "Large number of keys are needed"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Symmetric cryptography is much faster than asymmetric systems, and is difficult to crack if a large key size is used. Incorrect Answers: A, B, D: Symmetric cryptography provides confidentiality, but not authenticity or nonrepudiation, and therefore deemed limited. It requires a secure mechanism to deliver keys correctly. Each pair of users needs a unique key. Therefore, as the number of individuals increase, so does the number of keys. These are all considered weaknesses of symmetric cryptography."
+    },
+    {
+      "id": 214,
+      "question": "Which of the following is more suitable for a hardware implementation?",
+      "options": {
+        "A": "Stream ciphers",
+        "B": "Block ciphers",
+        "C": "Cipher block chaining",
+        "D": "Electronic code book"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Stream ciphers require a lot of randomness and encrypt individual bits at a time. This requires more processing power than block ciphers require, which is why stream ciphers are better suited to be implemented at the hardware level. Because block ciphers do not require as much processing power, they can be easily implemented at the software level. Incorrect Answers: B: Block ciphers can be easily implemented at the software level because they do not require as much processing power as stream ciphers. C: Cipher block chaining is a block encryption method where each block of text, the key, and the value based on the previous block are processed in the algorithm and applied to the next block of text. Cipher block chaining is not more suitable for a hardware implementation. D: Electronic code book is a block encryption method. It is not more suitable for a hardware implementation."
+    },
+    {
+      "id": 215,
+      "question": "How many rounds are used by DES?",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "64",
+        "D": "48"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "DES uses a 64-bit key, of which 8 bits are used for parity, and 56 bits make up the true key. DES divides the message into blocks, which are put through 16 rounds of transposition and substitution functions, and operates on them one at a time. Incorrect Answers: B, C, & D: RC5 is a block cipher that has a selection of parameters that it can use for block size, key size, and the number of rounds used. The number of rounds can go from 0 up to 255."
+    },
+    {
+      "id": 216,
+      "question": "What is the key size of the International Data Encryption Algorithm (IDEA)?",
+      "options": {
+        "A": "64 bits",
+        "B": "128 bits",
+        "C": "160 bits",
+        "D": "192 bits"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "International Data Encryption Algorithm (IDEA) is a block cipher that operates on 64-bit blocks of data, which is divided into 16 smaller blocks, with eight rounds of mathematical functions performed on each to produce a key that is 128 bits long. Incorrect Answers: A: The block of data that the International Data Encryption Algorithm (IDEA) operates on is 64 bit in size. C: SHA produces a 160-bit hash value. D: Tiger produces a hash size of 192 bits."
+    },
+    {
+      "id": 217,
+      "question": "Which of the following is NOT an example of a block cipher?",
+      "options": {
+        "A": "Skipjack",
+        "B": "IDEA",
+        "C": "Blowfish",
+        "D": "RC4"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "RC4 is one of the most commonly used stream ciphers. Incorrect Answers: A: Skipjack is a symmetric key block cipher. B: International Data Encryption Algorithm (IDEA) is a block cipher and runs on 64-bit blocks of data. C: Blowfish is a block cipher that works on 64-bit blocks of data."
+    },
+    {
+      "id": 218,
+      "question": "The Diffie-Hellman algorithm is used for:",
+      "options": {
+        "A": "Encryption",
+        "B": "Digital signature",
+        "C": "Key agreement",
+        "D": "Non-repudiation"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The Diffie-Hellman algorithm is the first asymmetric key agreement algorithm, which was developed by Whitfield Diffie and Martin Hellman. Incorrect Answers: A, B: The Diffie-Hellman algorithm does not offer encryption or digital signature functionality. D: Non-repudiation requires digital signature functionality, which the Diffie-Hellman algorithm does not offer."
+    },
+    {
+      "id": 219,
+      "question": "A one-way hash provides which of the following?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Availability",
+        "C": "Integrity",
+        "D": "Authentication"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The verification of message integrity is an important application of secure hashes. Incorrect Answers: A, D: A hash function provides Integrity, not confidentiality or authentication. B: A hash function provides Integrity, not availability."
+    },
+    {
+      "id": 220,
+      "question": "Which of the following is not a one-way hashing algorithm?",
+      "options": {
+        "A": "MD2",
+        "B": "RC4",
+        "C": "SHA-1",
+        "D": "HAVAL"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "RC4 is a Symmetric Key Algorithm. Incorrect Answers: A: MD2 is a one-way hashing algorithm. C: SHA-1 is a one-way hashing algorithm. D: HAVAL is a one-way hashing algorithm."
+    },
+    {
+      "id": 221,
+      "question": "Which of the following statements pertaining to key management is NOT true?",
+      "options": {
+        "A": "The more a key is used, the shorter its lifetime should be.",
+        "B": "When not using the full keyspace, the key should be extremely random.",
+        "C": "Keys should be backed up or escrowed in case of emergencies.",
+        "D": "A key's lifetime should correspond with the sensitivity of the data it is protecting."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The rules for keys and key management advise that the keys must be extremely random. It also states that the algorithm must make use of the full spectrum of the keyspace. Incorrect Answers: A, C, D: These options are included in the rules for keys and key management."
+    },
+    {
+      "id": 222,
+      "question": "Which of the following statements pertaining to link encryption is FALSE?",
+      "options": {
+        "A": "It encrypts all the data along a specific communication path.",
+        "B": "It provides protection against packet sniffers and eavesdroppers.",
+        "C": "Information stays encrypted from one end of its journey to the other.",
+        "D": "User information, header, trailers, addresses and routing data that are part of the packets are encrypted."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Link encryption encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only is the user information encrypted, but the header, trailers, addresses, and routing data that are part of the packets are also encrypted. The only traffic not encrypted in this technology is the data link control messaging information, which includes instructions and parameters that the different link devices use to synchronize communication methods. Link encryption provides protection against packet sniffers and eavesdroppers. Link encryption, which is sometimes called online encryption, is usually provided by service providers and is incorporated into network protocols. All of the information is encrypted, and the packets must be decrypted at each hop so the router, or other intermediate device, knows where to send the packet next. The router must decrypt the header portion of the packet, read the routing and address information within the header, and then re-encrypt it and send it on its way. Incorrect Answers: A: It is true that link encryption encrypts all the data along a specific communication path. B: It is true that link encryption provides protection against packet sniffers and eavesdroppers. C: It is true that user information, header, trailers, addresses and routing data that are part of the packets are encrypted."
+    },
+    {
+      "id": 223,
+      "question": "Which key agreement scheme uses implicit signatures?",
+      "options": {
+        "A": "MQV",
+        "B": "DH",
+        "C": "ECC",
+        "D": "RSA"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "MQV (Menezes-Qu-Vanstone) is an authentication key agreement cryptography function very similar to Diffie-Hellman. The users’ public keys are exchanged to create session keys. It provides protection from an attacker figuring out the session key because she would need to have both users’ private keys. The MQV elliptic curve key agreement method is used to establish a shared secret between parties who already possess trusted copies of each other’s static public keys. Both parties still generate dynamic public and private keys and then exchange public keys. However, upon receipt of the other party’s public key, each party calculates a quantity called an implicit signature using its own private key and the other party’s public key. The shared secret is then generated from the implicit signature. The term implicit signature is used to indicate that the shared secrets do not agree if the other party’s public key is not employed, thus giving implicit verification that the public secret is generated by the public party. An attempt at interception will fail as the shared secrets will not be the same shared secrets because the adversary’s private key is not linked to the trusted public key. Incorrect Answers: B: DH (Diffie-Hellman) does not use implicit signatures. C: ECC (Elliptic Curve Cryptosystem) does not use implicit signatures. D: RSA does not use implicit signatures."
+    },
+    {
+      "id": 224,
+      "question": "Cryptography does NOT concern itself with which of the following choices?",
+      "options": {
+        "A": "Availability",
+        "B": "Integrity",
+        "C": "Confidentiality",
+        "D": "Validation"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Cryptography ensures the integrity of data, the confidentiality of the data and the validation of the sender and receiver of the data. Cryptography does not ensure the availability of the data. Modern cryptography concerns itself with the following four objectives: 1. Confidentiality (the information cannot be understood by anyone for whom it was unintended) 2. Integrity (the information cannot be altered in storage or transit between sender and intended receiver without the alteration being detected) 3. Non-repudiation (the creator/sender of the information cannot deny at a later stage his or her intentions in the creation or transmission of the information) 4. Authentication (the sender and receiver can confirm each other’s identity and the origin/destination of the information. Incorrect Answers: B: Cryptography does concern itself with integrity of data. C: Cryptography does concern itself with confidentiality of data. D: Cryptography does concern itself validation (of the source and destination of the data)."
+    },
+    {
+      "id": 225,
+      "question": "Which of the following does NOT concern itself with key management?",
+      "options": {
+        "A": "Internet Security Association Key Management Protocol (ISAKMP)",
+        "B": "Diffie-Hellman (DH)",
+        "C": "Cryptology (CRYPTO)",
+        "D": "Key Exchange Algorithm (KEA)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Cryptology involves ‘hiding’ data to make it unreadable by unauthorized parties. Keys are used to provide the encryption used in cryptology. However, cryptology itself is not concerned with the management of the keys used by the encryption algorithms. Modern cryptography concerns itself with the following four objectives: 1. Confidentiality (the information cannot be understood by anyone for whom it was unintended) 2. Integrity (the information cannot be altered in storage or transit between sender and intended receiver without the alteration being detected) 3. Non-repudiation (the creator/sender of the information cannot deny at a later stage his or her intentions in the creation or transmission of the information) 4. Authentication (the sender and receiver can confirm each other’s identity and the origin/destination of the information. Incorrect Answers: A: Internet Security Association and Key Management Protocol (ISAKMP) provides a framework for security association creation and key exchange. B: The Diffie-Hellman protocol is a key agreement protocol. D: Key Exchange Algorithm as its name suggests is used for the exchange of keys."
+    },
+    {
+      "id": 226,
+      "question": "Which of the following encryption algorithms does NOT deal with discrete logarithms?",
+      "options": {
+        "A": "El Gamal",
+        "B": "Diffie-Hellman",
+        "C": "RSA",
+        "D": "Elliptic Curve"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "RSA does not deal with discrete logarithms. RSA, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a public key algorithm that is the most popular when it comes to asymmetric algorithms. RSA is a worldwide de facto standard and can be used for digital signatures, key exchange, and encryption. It was developed in 1978 at MIT and provides authentication as well as key encryption. The security of this algorithm comes from the difficulty of factoring large numbers into their original prime numbers. The public and private keys are functions of a pair of large prime numbers, and the necessary activity required to decrypt a message from ciphertext to plaintext using a private key is comparable to factoring a product into two prime numbers. Incorrect Answers: A: El Gamal is a public key algorithm that can be used for digital signatures, encryption, and key exchange. It is based not on the difficulty of factoring large numbers but on calculating discrete logarithms in a finite field. B: The Diffie-Hellman algorithm enables two systems to generate a symmetric key securely without requiring a previous relationship or prior arrangements. The algorithm allows for key distribution, but does not provide encryption or digital signature functionality. The algorithm is based on the difficulty of calculating discrete logarithms in a finite field. D: The Elliptic Curve algorithm computes discrete logarithms of elliptic curves, which is different from calculating discrete logarithms in a finite field."
+    },
+    {
+      "id": 227,
+      "question": "Which of the following statements pertaining to message digests is NOT true?",
+      "options": {
+        "A": "The original file cannot be created from the message digest.",
+        "B": "Two different files should not have the same message digest.",
+        "C": "The message digest should be calculated using at least 128 bytes of the file.",
+        "D": "Message digests are usually of fixed size."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A message digest should be calculated using all of the original file’s data regardless of whether the original data is more or less than 128 bytes. The output of a hash function is called a message digest. The message digest is uniquely derived from the input file and, if the hash algorithm is strong, the message digest has the following characteristics: 1. The hash function is considered one-way because the original file cannot be created from the message digest. 2. Two files should not have the same message digest. 3. Given a file and its corresponding message digest, it should not be feasible to find another file with the same message digest. 4. The message digest should be calculated using all of the original file’s data. Incorrect Answers: A: It is true that the original file cannot be created from the message digest. B: It is true that two different files should not have the same message digest. D: It is true that message digests are usually of fixed size."
+    },
+    {
+      "id": 228,
+      "question": "Which type of attack is based on the probability of two different messages using the same hash function producing a common message digest?",
+      "options": {
+        "A": "Differential cryptanalysis",
+        "B": "Differential linear cryptanalysis",
+        "C": "Birthday attack",
+        "D": "Statistical attack"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Birthday Attack: Usually applied to the probability of two different messages using the same hash function that produces a common message digest; or given a message and its corresponding message digest, finding another message that when passed through the same hash function generates the same specific message digest. The term “birthday” comes from the fact that in a room with 23 people, the probability of two or more people having the same birthday is greater than 50%. Incorrect Answers: A: Differential Cryptanalysis is applied to private key cryptographic systems by looking at ciphertext pairs, which were generated through the encryption of plaintext pairs, with specific differences and analyzing the effect of these differences. This is not what is described in the question. B: Linear Cryptanalysis is using pairs of known plaintext and corresponding ciphertext to generate a linear approximation of a portion of the key. Differential Linear Cryptanalysis is using both differential and linear approaches. This is not what is described in the question. D: A statistical attack is exploiting the lack of randomness in key generation. This is not what is described in the question."
+    },
+    {
+      "id": 229,
+      "question": "Which of the following elements is NOT included in a Public Key Infrastructure (PKI)?",
+      "options": {
+        "A": "Timestamping",
+        "B": "Repository",
+        "C": "Certificate revocation",
+        "D": "Internet Key Exchange (IKE)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Internet Key Exchange (IKE) is not included in a Public Key Infrastructure (PKI). IKE is a key management protocol used in IPSec. A PKI may be made up of the following entities and functions: Certification authority Registration authority Certificate repository Certificate revocation system Key backup and recovery system Automatic key update Management of key histories Timestamping Client-side software Incorrect Answers: A: Timestamping is included in a Public Key Infrastructure (PKI). B: Repository (certificate repository) is included in a Public Key Infrastructure (PKI). C: Certificate revocation is included in a Public Key Infrastructure (PKI)."
+    },
+    {
+      "id": 230,
+      "question": "Which of the following was developed in order to protect against fraud in electronic fund transfers (EFT) by ensuring the message comes from its claimed originator and that it has not been altered in transmission?",
+      "options": {
+        "A": "Secure Electronic Transaction (SET)",
+        "B": "Message Authentication Code (MAC)",
+        "C": "Cyclic Redundancy Check (CRC)",
+        "D": "Secure Hash Standard (SHS)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "In order to protect against fraud in electronic fund transfers, the Message Authentication Code (MAC), ANSI X9.9, was developed. The MAC is a check value, which is derived from the contents of the message itself, that is sensitive to the bit changes in a message. It is similar to a Cyclic Redundancy Check (CRC). A MAC is appended to the message before it is transmitted. At the receiving end, a MAC is generated from the received message and is compared to the MAC of an original message. A match indicates that the message was received without any modification occurring while en route. Incorrect Answers: A: A consortium including MasterCard and Visa developed SET in 1997 as a means of preventing fraud from occurring during electronic payments. SET provides confidentiality for purchases by encrypting the payment information. Thus, the seller cannot read this information. This is not what is described in the question. C: Cyclic redundancy checking is a method of checking for errors in data that has been transmitted on a communications link. A sending device applies a 16- or 32- bit polynomial to a block of data that is to be transmitted and appends the resulting cyclic redundancy code (CRC) to the block. This is not what is described in the question. D: The Secure Hash Standard (SHS) is a set of cryptographically secure hash algorithms specified by the National Institute of Standards and Technology (NIST). This is not what is described in the question."
+    },
+    {
+      "id": 231,
+      "question": "Which of the following statements pertaining to Secure Sockets Layer (SSL) is FALSE?",
+      "options": {
+        "A": "The SSL protocol was developed by Netscape to secure Internet client-server transactions.",
+        "B": "The SSL protocol's primary use is to authenticate the client to the server using public key cryptography and digital certificates.",
+        "C": "Web pages using the SSL protocol start with HTTPS",
+        "D": "SSL can be used with applications such as Telnet, FTP and email protocols."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The SSL protocol was developed by Netscape in 1994 to secure Internet client-server transactions. The SSL protocol authenticates the server to the client using public key cryptography and digital certificates. In addition, this protocol also provides for optional client to server authentication. It supports the use of RSA public key algorithms, IDEA, DES and 3DES private key algorithms, and the MD5 hash function. Web pages using the SSL protocol start with HTTPs. SSL 3.0 and its successor, the Transaction Layer Security (TLS) 1.0 protocol are de-facto standards, but they do not provide the end-to-end capabilities of SET. TLS implements confidentiality, authentication, and integrity above the Transport Layer, and it resides between the application and TCP layer. Thus, TLS, as with SSL, can be used with applications such as Telnet, FTP, HTTP, and email protocols. Both SSL and TLS use certificates for public key verification that are based on the X.509 standard. Incorrect Answers: A: It is true that the SSL protocol was developed by Netscape to secure Internet client-server transactions. C: It is true that Web pages using the SSL protocol start with HTTPS. D: It is true that SSL can be used with applications such as Telnet, FTP and email protocols."
+    },
+    {
+      "id": 232,
+      "question": "What is the name of the protocol use to set up and manage Security Associations (SA) for IP Security (IPSec)?",
+      "options": {
+        "A": "Internet Key Exchange (IKE)",
+        "B": "Secure Key Exchange Mechanism",
+        "C": "Oakley",
+        "D": "Internet Security Association and Key Management Protocol"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Internet Key Exchange (IKE) is the protocol employed to establish a security association (SA) in the IPsec protocol suite. Incorrect Answers: B: Secure Key Exchange Mechanism allows different key distribution methods to be applied. C: OAKLEY is a key-agreement protocol that enables authenticated parties to exchange keying material via an insecure link by making use of the Diffie–Hellman key exchange algorithm. D: Internet Security Association and Key Management Protocol is a protocol defined for instituting Security Associations (SA) and cryptographic keys in an Internet environment."
+    },
+    {
+      "id": 233,
+      "question": "Which of the following binds a subject name to a public key value?",
+      "options": {
+        "A": "A public-key certificate",
+        "B": "A public key infrastructure",
+        "C": "A secret key infrastructure",
+        "D": "A private key certificate"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A typical PKI consists of hardware, software, policies and standards to manage the creation, administration, distribution and revocation of keys and digital certificates. Digital certificates are at the heart of PKI as they affirm the identity of the certificate subject and bind that identity to the public key contained in the certificate. Incorrect Answers: A: A public-key certificate contains a public key. However, it is the PKI (in particular the certificate authority) that verifies the subject’s identity and binds the subject name to the public key value. C: A secret key infrastructure is not a valid answer. A secret key can refer to a private key or more commonly to a shared key used in symmetric encryption. D: A private key (and its corresponding public key) is usually generated by a user or application. The public key is then validated and signed by a CA. A private key does not bind a subject name to a public key value."
+    },
+    {
+      "id": 234,
+      "question": "What can be defined as a digital certificate that binds a set of descriptive data items, other than a public key, either directly to a subject name or to the identifier of another certificate that is a public-key certificate?",
+      "options": {
+        "A": "A public-key certificate",
+        "B": "An attribute certificate",
+        "C": "A digital certificate",
+        "D": "A descriptive certificate"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The US American National Standards Institute (ANSI) X9 committee developed the concept of attribute certificate as a data structure that binds some attributes values with the identification information about its holder. According to RFC 2828 [24], an attribute certificate is “a digital certificate that binds a set of descriptive data items, other than a public key, either directly to a subject name or to the identifier of another certificate that is a public-key certificate. One of the advantages of attribute certificate is that it can be used for various other purposes. It may contain group membership, role clearance, or any other form of authorization. Incorrect Answers: A: An attribute certificate can be used to supplement a public-key certificate by storing additional information or attributes. However, an attribute certificate, not a public-key certificate is what is described in the question. C: A digital certificate is another name for a public key certificate. It is an electronic document used to prove ownership of a public key. This is not what is described in the question. D: A descriptive certificate is not a defined certificate type."
+    },
+    {
+      "id": 235,
+      "question": "What can be defined as a data structure that enumerates digital certificates that were issued to CAs but have been invalidated by their issuer prior to when they were scheduled to expire?",
+      "options": {
+        "A": "Certificate revocation list",
+        "B": "Certificate revocation tree",
+        "C": "Authority revocation list",
+        "D": "Untrusted certificate list"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "An Authority Revocation List (ARL) is a list of serial numbers for public key certificates issued to certificate authorities that have been revoked, and therefore should not be relied upon. Incorrect Answers: A: A certificate revocation list (CRL) is a list of serial numbers for certificates that have been revoked, and should therefore, no longer trust entities presenting them. B: A certificate revocation tree is a mechanism for distributing notices of certificate revocations, but is not supported in X.509. D: A list of untrusted certificates is known as an untrusted CTL. It does not contain revoked certificates, but untrusted ones."
+    },
+    {
+      "id": 236,
+      "question": "Who vouches for the binding between the data items in a digital certificate?",
+      "options": {
+        "A": "Registration authority",
+        "B": "Certification authority",
+        "C": "Issuing authority",
+        "D": "Vouching authority"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "A certification authority issues digital certificates that include a public key and the identity of the owner. The matching private key is not publicly available, but kept secret by the end user who created the key pair. The certificate is also a confirmation or validation by the CA that the public key contained in the certificate belongs to the person, organization, server or other entity noted in the certificate. A certification authority’s duty in such schemes is to verify an applicant's credentials, so that users and relying parties are able to trust the information in the CA's certificates. Incorrect Answers: A: A registration authority (RA) confirms user requests for a digital certificate and informs the certificate authority (CA) to distribute it. C: An issuing authority does not vouch for the binding between the data items in a digital certificate. D: A vouching authority does not vouch for the binding between the data items in a digital certificate."
+    },
+    {
+      "id": 237,
+      "question": "What enables users to validate each other's certificate when they are certified under different certification hierarchies?",
+      "options": {
+        "A": "Cross-certification",
+        "B": "Multiple certificates",
+        "C": "Redundant certification authorities",
+        "D": "Root certification authorities"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Cross certification allows entities in one public key infrastructure (PKI) to trust entities in another PKI. This mutual trust relationship is typically supported by a cross- certification agreement between the certification authorities (CAs) in each PKI. This agreement determines the responsibilities and liability of each party. A mutual trust relationship between two CAs requires that each CA issue a certificate to the other to establish the relationship in both directions. The path of trust is not hierarchal even though the separate PKIs may be certificate hierarchies. Incorrect Answers: B: Multiple certificates will not allow users to validate each other's certificate when they are certified under different certification hierarchies. C: Redundant certification authorities will not allow users to validate each other's certificate when they are certified under different certification hierarchies. D: A root certification authority is identified by a root certificate, which is an unsigned or a self-signed public key certificate."
+    },
+    {
+      "id": 238,
+      "question": "Which of the following would best define a digital envelope?",
+      "options": {
+        "A": "A message that is encrypted and signed with a digital certificate.",
+        "B": "A message that is signed with a secret key and encrypted with the sender's private key.",
+        "C": "A message encrypted with a secret key attached with the message. The secret key is encrypted with the public key of the receiver.",
+        "D": "A message that is encrypted with the recipient's public key and signed with the sender's private key."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Hybrid cryptography is the combined use of symmetric and asymmetric algorithms where the symmetric key encrypts data and an asymmetric key encrypts the symmetric key. A digital envelope is another term used to describe hybrid cryptography. When a message is encrypted with a symmetric key (secret key) and the symmetric key is encrypted with an asymmetric key, it is collectively known as a digital envelope. Incorrect Answers: A: A message that is encrypted and signed with a digital certificate is not the correct definition of a digital envelope. The message would have to be encrypted with a symmetric key and the symmetric key is encrypted with an asymmetric key to be a digital envelope. This answer does not specify what type of encryption is used. B: A message that is signed with a secret key and encrypted with the sender's private key is not the correct definition of a digital envelope. A private key is an asymmetric key. In a digital envelope, the message is encrypted with a symmetric key and the symmetric key is encrypted with an asymmetric key. D: A message that is encrypted with the recipient's public key and signed with the sender's private key is not the correct definition of a digital envelope. A public key is an asymmetric key. In a digital envelope, the message is encrypted with a symmetric key and the symmetric key is encrypted with an asymmetric key."
+    },
+    {
+      "id": 239,
+      "question": "What can be defined as a value computed with a cryptographic algorithm and appended to a data object in such a way that any recipient of the data can use the signature to verify the data's origin and integrity?",
+      "options": {
+        "A": "A digital envelope",
+        "B": "A cryptographic hash",
+        "C": "A Message Authentication Code",
+        "D": "A digital signature"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "A digital signature is a hash value that is encrypted with the sender’s private key. The hashing function guarantees the integrity of the message, while the signing of the hash value offers authentication and nonrepudiation. Incorrect Answers: A: When a message is encrypted with a symmetric key and the symmetric key is encrypted with an asymmetric key, it is collectively known as a digital envelope. B: A cryptographic hash can be used in digital signatures, but signatures are not part of the hash function. C: Message authentication code (MAC) is a keyed cryptographic hash function that is used for data integrity and data origin authentication. It does not, however, require a signature."
+    },
+    {
+      "id": 240,
+      "question": "The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated up to?",
+      "options": {
+        "A": "Illuminated at nine feet high with at least three foot-candles",
+        "B": "Illuminated at eight feet high with at least three foot-candles",
+        "C": "Illuminated at eight feet high with at least two foot-candles",
+        "D": "Illuminated at nine feet high with at least two foot-candles"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "A foot-candle (fc) is an illuminance measurement equal to one lumen per square foot. The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and use two foot-candles, which is a unit that represents the illumination power of an individual light. Incorrect Answers: A: The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and use two foot-candles, not nine feet high with at least three foot-candles. Therefore, this answer is incorrect. B: The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and use two foot-candles, not eight feet high with at least three foot-candles. Therefore, this answer is incorrect. D: The National Institute of Standards and Technology (NIST) standard pertaining to perimeter protection states that critical areas should be illuminated eight feet high and use two foot-candles, not nine feet high with at least two foot-candles. Therefore, this answer is incorrect."
+    },
+    {
+      "id": 241,
+      "question": "Which of the following is an Internet IPsec protocol to negotiate, establish, modify, and delete security associations, and to exchange key generation and authentication data, independent of the details of any specific key generation technique, key establishment protocol, encryption algorithm, or authentication mechanism?",
+      "options": {
+        "A": "OAKLEY",
+        "B": "Internet Security Association and Key Management Protocol (ISAKMP)",
+        "C": "Simple Key-management for Internet Protocols (SKIP)",
+        "D": "IPsec Key exchange (IKE)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "ISAKMP defines actions and packet formats to establish, negotiate, modify and delete Security Associations. It is distinct from key exchange protocols with the intention of cleanly separating the details of security association management and key management from the details of key exchange. Incorrect Answers: A: The Oakley Key Determination Protocol is a key-agreement protocol that allows authenticated parties to exchange keying material across an insecure connection by making use of the Diffie–Hellman key exchange algorithm. C: Simple Key-management for Internet Protocols (SKIP) was a protocol developed by the IETF Security Working Group for the sharing of encryption keys. D: Internet Key Exchange (IKE) provides authenticated keying material for use with ISAKMP."
+    },
+    {
+      "id": 242,
+      "question": "Which of the following is defined as a key establishment protocol based on the Diffie-Hellman algorithm proposed for IPsec but superseded by IKE?",
+      "options": {
+        "A": "Diffie-Hellman Key Exchange Protocol",
+        "B": "Internet Security Association and Key Management Protocol (ISAKMP)",
+        "C": "Simple Key-management for Internet Protocols (SKIP)",
+        "D": "OAKLEY"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "The Oakley Key Determination Protocol is a key-agreement protocol that allows authenticated parties to exchange keying material across an insecure connection by making use of the Diffie–Hellman key exchange algorithm. It formed the basis for the more widely used Internet key exchange protocol. Incorrect Answers: A: The Diffie-Hellman algorithm proposed for IPsec is the Diffie-Hellman Key Exchange Protocol. B: Internet Key Exchange (IKE) provides authenticated keying material for use with ISAKMP. It has not superseded ISAKMP. C: SKIP is a distribution protocol, not a key establishment protocol."
+    },
+    {
+      "id": 243,
+      "question": "Which of the following is defined as an Internet, IPsec, key-establishment protocol, partly based on OAKLEY, that is intended for putting in place authenticated keying material for use with ISAKMP and for other security associations?",
+      "options": {
+        "A": "Internet Key exchange (IKE)",
+        "B": "Security Association Authentication Protocol (SAAP)",
+        "C": "Simple Key-management for Internet Protocols (SKIP)",
+        "D": "Key Exchange Algorithm (KEA)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "With IPsec, Key management can be dealt with manually or automatically via a key management protocol. The genuine standard for IPSec is to make use of Internet Key Exchange (IKE), which is a permutation of the ISAKMP and OAKLEY protocols. Incorrect Answers: B: Security Association Authentication Protocol(SAAP) is not a valid term. C: Simple Key-management for Internet Protocols (SKIP) was a protocol developed by the IETF Security Working Group for the sharing of encryption keys. D: Key Exchange Algorithm includes Diffie-Hellman and RSA, but is not based on OAKLEY."
+    },
+    {
+      "id": 244,
+      "question": "Which of the following can best be defined as a key distribution protocol that uses hybrid encryption to convey session keys? This protocol establishes a long-term key once, and then requires no prior communication in order to establish or exchange keys on a session-by-session basis?",
+      "options": {
+        "A": "Internet Security Association and Key Management Protocol (ISAKMP)",
+        "B": "Simple Key-management for Internet Protocols (SKIP)",
+        "C": "Diffie-Hellman Key Distribution Protocol",
+        "D": "IPsec Key exchange (IKE)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Simple Key-management for Internet Protocols (SKIP) was a protocol developed by the IETF Security Working Group for the sharing of encryption keys. It is a hybrid Key distribution protocol. Incorrect Answers: A: Internet Security Association and Key Management Protocol (ISAKMP) provides a framework for security association creation and key exchange. C: Diffie–Hellman key exchange (D–H) is a specific method of securely exchanging cryptographic keys via a public channel D: Internet Key Exchange (IKE) provides authenticated keying material for use with ISAKMP."
+    },
+    {
+      "id": 245,
+      "question": "Which of the following can best be defined as a key recovery technique for storing knowledge of a cryptographic key by encrypting it with another key and ensuring that only certain third parties can perform the decryption operation to retrieve the stored key?",
+      "options": {
+        "A": "Key escrow",
+        "B": "Fair cryptography",
+        "C": "Key encapsulation",
+        "D": "Zero-knowledge recovery"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "According to RFC 4949, key encapsulation is a key recovery technique for storing knowledge of a cryptographic key by encrypting it with another key and ensuring that only certain third parties called \"recovery agents\" can perform the decryption operation to retrieve the stored key. Key encapsulation typically permits direct retrieval of a secret key used to provide data confidentiality. Incorrect Answers: A: A key recovery technique for storing knowledge of a cryptographic key or parts thereof in the custody of one or more third parties called \"escrow agents\", so that the key can be recovered and used in specified circumstances. This is not what is described in the question. B: Fair cryptography is not a valid answer. D: Zero-knowledge recovery is not a valid answer."
+    },
+    {
+      "id": 246,
+      "question": "Which of the following can best be defined as a cryptanalysis technique in which the analyst tries to determine the key from knowledge of some plaintext-ciphertext pairs?",
+      "options": {
+        "A": "A known-plaintext attack",
+        "B": "A known-algorithm attack",
+        "C": "A chosen-ciphertext attack",
+        "D": "A chosen-plaintext attack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "In this question, the attacker is trying to obtain the key from several “some plaintext-ciphertext pairs”. When the attacker has a copy of the plaintext corresponding to the ciphertext, this is known as a known-plaintext attack. Cryptanalysis is the act of obtaining the plaintext or key from the ciphertext. Cryptanalysis is used to obtain valuable information and to pass on altered or fake messages in order to deceive the original intended recipient. This attempt at “cracking” the cipher is also known as an attack. The following are example of some common attacks: Known Plaintext. The attacker has a copy of the plaintext corresponding to the ciphertext Chosen Ciphertext. Portions of the ciphertext are selected for trial decryption while having access to the corresponding decrypted plaintext Chosen Plaintext. Chosen plaintext is encrypted and the output ciphertext is obtained Ciphertext Only. Only the ciphertext is available Incorrect Answers: B: A known-algorithm attack is not a defined type of attack. C: With a Chosen-Ciphertext attack, the attacker has a copy of the plaintext corresponding to the ciphertext. This is not what is described in the question. D: With a chosen-plaintext attack, chosen plaintext is encrypted and the output ciphertext is obtained. This is not what is described in the question."
+    },
+    {
+      "id": 247,
+      "question": "Which of the following is NOT a property of a one-way hash function?",
+      "options": {
+        "A": "It converts a message of a fixed length into a message digest of arbitrary length.",
+        "B": "It is computationally infeasible to construct two different messages with the same digest.",
+        "C": "It converts a message of arbitrary length into a message digest of a fixed length.",
+        "D": "Given a digest value, it is computationally infeasible to find the corresponding message."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Cryptographic hash functions are designed to take a string of any length as input and produce a fixed-length message digest, not a message digest of arbitrary length. A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone. These one-way hash functions have been called \"the workhorses of modern cryptography\". The input data is often called the message, and the hash value is often called the message digest or simply the digest. The ideal cryptographic hash function has four main properties: it is easy to compute the hash value for any given message it is infeasible to generate a message from its hash it is infeasible to modify a message without changing the hash it is infeasible to find two different messages with the same hash. Incorrect Answers: B: It is true that it is computationally infeasible to construct two different messages with the same digest. C: It is true that it converts a message of arbitrary length into a message digest of a fixed length. D: It is true that given a digest value, it is computationally infeasible to find the corresponding message."
+    },
+    {
+      "id": 248,
+      "question": "The Data Encryption Algorithm performs how many rounds of substitution and permutation?",
+      "options": {
+        "A": "4",
+        "B": "16",
+        "C": "54",
+        "D": "64"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "International Data Encryption Algorithm (IDEA) is a block cipher and operates on 64-bit blocks of data, which is divided into 16 smaller blocks, and each has eight rounds of mathematical functions performed on it. Incorrect Answers: A: This is the size of one of the smaller blocks. C: This is not a valid block size for block ciphers. D: This is incorrect as it is the initial size of the block."
+    },
+    {
+      "id": 249,
+      "question": "Which of the following statements is MOST accurate regarding a digital signature?",
+      "options": {
+        "A": "It is a method used to encrypt confidential data.",
+        "B": "It is the art of transferring handwritten signature to electronic media.",
+        "C": "It allows the recipient of data to prove the source and integrity of data.",
+        "D": "It can be used as a signature system and a cryptosystem."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "The purpose of digital signatures is to detect unauthorized modifications of data, and to authenticate the identity of the signatories and non-repudiation. These functions are accomplished by generating a block of data that is usually smaller than the size of the original data. This smaller block of data is bound to the original data and to the identity of the sender. This binding verifies the integrity of data and provides non-repudiation. To quote the National Institute Standards and Technology (NIST) Digital Signature Standard (DSS): Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed data can use a digital signature in proving to a third party that the signature was in fact generated by the signatory. Incorrect Answers: A: Digital signatures do not provide encryption. B: A digital signature is not the art of transferring handwritten signature to electronic media. D: A digital signature cannot be used as a signature system and a cryptosystem."
+    },
+    {
+      "id": 250,
+      "question": "The computations involved in selecting keys and in enciphering data are complex, and are not practical for manual use. However, using mathematical properties of modular arithmetic and a method known as \"_________________,\" RSA is quite feasible for computer use.",
+      "options": {
+        "A": "computing in Galois fields",
+        "B": "computing in Gladden fields",
+        "C": "computing in Gallipoli fields",
+        "D": "computing in Galbraith fields"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "The computations involved in selecting keys and in enciphering data are complex, and are not practical for manual use. However, using mathematical properties of modular arithmetic and a method known as computing in Galois fields, RSA is quite feasible for computer use. A Galois field is a finite field. Incorrect Answers: B: A finite field is not called a Gladden field. Gladden fields are not used in RSA. C: A finite field is not called a Gallipoli field. Gallipoli fields are not used in RSA. D: A finite field is not called a Galbraith field. Galbraith fields are not used in RSA."
+    }
+  ]
+}

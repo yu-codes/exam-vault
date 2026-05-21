@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-english",
+    "question_range": "Q351 - Q400",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 351,
+      "question": "Why would an Ethernet LAN in a bus topology have a greater risk of unauthorized disclosure than switched Ethernet in a hub-and-spoke or star topology?",
+      "options": {
+        "A": "IEEE 802.5 protocol for Ethernet cannot support encryption.",
+        "B": "Ethernet is a broadcast technology.",
+        "C": "Hub and spoke connections are highly multiplexed.",
+        "D": "TCP/IP is an insecure protocol."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Ethernet is broadcast and the question asks about a bus topology vs a SWITCHED Ethernet. Most switched Ethernet lans are divided by vlans which contain broadcasts to a single vlan, but remember only a layer 3 device can stop a broadcast."
+    },
+    {
+      "id": 352,
+      "question": "What type of attacks occurs when a smartcard is operating under normal physical conditions, but sensitive information is gained by examining the bytes going to and from the smartcard?",
+      "options": {
+        "A": "Physical attacks.",
+        "B": "Logical attacks.",
+        "C": "Trojan Horse attacks.",
+        "D": "Social Engineering attacks."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Logical attacks occur when a smartcard is operating under normal physical conditions, but sensitive information is gained by examining the bytes going to and from the smartcard. One example is the so-called \"timing attack\" described by Paul Kocher. In this attack, various byte patterns are sent to the card to be signed by the private key. Information such as the time required to perform the operation and the number of zeroes and ones in the input bytes are used to eventually obtain the private key. There are logical countermeasures to this attack but not all smartcard manufacturers have implemented them. This attack does require that the PIN to the card be known, so that many private key operations can be performed on chosen input bytes."
+    },
+    {
+      "id": 353,
+      "question": "What is an effective countermeasure against Trojan horse attack that targets smart cards?",
+      "options": {
+        "A": "Singe-access device driver architecture.",
+        "B": "Handprint driver architecture.",
+        "C": "Fingerprint driver architecture.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The countermeasure to prevent this attack is to use \"single-access device driver\" architecture. With this type of architecture, the operating system enforces that only one application can have access to the serial device (and thus the smartcard) at any given time. This prevents the attack but also lessens the convenience of the smartcard because multiple applications cannot use the services of the card at the same time. Another way to prevent the attack is by using a smartcard that enforces a \"one private key usage per PIN entry\" policy model. In this model, the user must enter their PIN every single time the private key is to be used and therefore the Trojan horse would not have access to the key."
+    },
+    {
+      "id": 354,
+      "question": "Which of the following could illegally capture network user passwords?",
+      "options": {
+        "A": ") Data diddling",
+        "B": ") Sniffing",
+        "C": ") Spoofing",
+        "D": ") Smurfing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 355,
+      "question": "Which of the following statements is incorrect?",
+      "options": {
+        "A": ") Since the early days of mankind humans have struggled with the problems of protecting assets",
+        "B": ") The addition of a PIN keypad to the card reader was a solution to unreported card or lost cards problems",
+        "C": ") There has never been a problem of lost keys",
+        "D": ") Human guard is an inefficient and sometimes ineffective method of protecting resources"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 356,
+      "question": "A system uses a numeric password with 1-4 digits. How many passwords need to be tried before it is cracked?",
+      "options": {
+        "A": ") 1024",
+        "B": ") 10000",
+        "C": ") 100000",
+        "D": ") 1000000"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "The largest 4 digit number is 9999. So 10,000 is the closest answer."
+    },
+    {
+      "id": 357,
+      "question": "Which of the following can be used to protect your system against brute force password attack?",
+      "options": {
+        "A": "Decrease the value of password history.",
+        "B": "Employees must send in a signed email before obtaining a password.",
+        "C": "After three unsuccessful attempts to enter a password, the account will be locked.",
+        "D": "Increase the value of password age."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Employees must show up in person and present proper identification before obtaining a new or changed password (depending on your policy). After three unsuccessful attempts to enter a password, the account will be locked and only an administrator or the help desk can reactivate the involved user ID."
+    },
+    {
+      "id": 358,
+      "question": "Which of the following is an effective measure against a certain type of brute force password attack?",
+      "options": {
+        "A": "Password used must not be a word found in a dictionary.",
+        "B": "Password history is used.",
+        "C": "Password reuse is not allowed.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Password reuse is not allowed (rotating passwords). Password history must be used to prevent users from reusing passwords. On all systems with such a facility the last 12 passwords used will be kept in the history. All computer system users must choose passwords that cannot be easily guessed. Passwords used must not be a word found in a dictionary."
+    },
+    {
+      "id": 359,
+      "question": "Which type of attack will most likely provide an attacker with multiple passwords to authenticate to a system?",
+      "options": {
+        "A": ") Password sniffing",
+        "B": ") Dictionary attack",
+        "C": ") Dumpster diving",
+        "D": ") Social engineering"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 360,
+      "question": "Which of the following are measures against password sniffing?",
+      "options": {
+        "A": "Passwords must not be sent through email in plain text.",
+        "B": "Passwords must not be stored in plain text on any electronic media.",
+        "C": "You may store passwords electronically if it is encrypted.",
+        "D": "All of the choices."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Passwords must not be sent through email in plain text. Passwords must not be stored in plain text on any electronic media. It is acceptable to store passwords in a file if it is encrypted with PGP or equivalent strong encryption (once again depending on your organization policy). All vendor supplied default passwords must be changed."
+    },
+    {
+      "id": 361,
+      "question": "Which one of the following conditions is NOT necessary for a long dictionary attack to succeed?",
+      "options": {
+        "A": "The attacker must have access to the target system.",
+        "B": "The attacker must have read access to the password file.",
+        "C": "The attacker must have write access to the password file.",
+        "D": "The attacker must know the password encryption mechanism and key variable."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: The program encrypts the combination of characters and compares them to the encrypted entries in the password file. If a match is found, the program has uncovered a password. - Shon Harris All-in-one CISSP Certification Guide pg 199"
+    },
+    {
+      "id": 362,
+      "question": "What is an important factor affecting the time required to perpetrate a manual trial and error attack to gain access to a target computer system?",
+      "options": {
+        "A": "Keyspace for the password.",
+        "B": "Expertise of the person performing the attack.",
+        "C": "Processing speed of the system executing the attack.",
+        "D": "Encryption algorithm used for password transfer."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: I am not sure of the answer on this question. B seems good but the reference below states that Keyspace (or length of password) is the main deterrent. I did not come across something that directly relates in my readings. \"If an attacker mounts a trial-and-error attack against your password, a longer password gives the attacker a larger number of alternatives to try. If each character in the password may take on 96 different values (typical of printable ASCII characters) then each additional character presents the attacker with 96 times as many passwords to try. If the number of alternatives is large enough, the trial-and-error attack might discourage the attacker, or lead to the attacker's detection.\" http://www.smat.us/sanity/riskyrules.html"
+    },
+    {
+      "id": 363,
+      "question": "Which one of the following BEST describes a password cracker?",
+      "options": {
+        "A": "A program that can locate and read a password file.",
+        "B": "A program that provides software registration passwords or keys.",
+        "C": "A program that performs comparative analysis.",
+        "D": "A program that obtains privileged access to the system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: In a dictionary crack, L0phtCrack encrypts (i.e., hashes) all the passwords in a dictionary file you specify and compares every result with the password hash. If L0phtCrack finds any matches, it knows the password is the dictionary word. L0phtCrack comes with a default dictionary file, words-english. You can download additional files from the Internet or create a custom file. In the Tools Options dialog box, you can choose to run the dictionary attack against the LANMAN password hash, the NT LAN Manager (NTLM) password hash, or both (which is the default). In a hybrid crack, L0phtCrack extends the dictionary crack by appending numbers or symbols to each word in the dictionary file. For example, in addition to trying \"Galileo,\" L0phtCrack also tries \"Galileo24,\" \"13Galileo,\" \"?Galileo,\" \"Galileo!,\" and so on. The default number of characters L0phtCrack tries is two, and you can change this number in the Tools Options dialog box. In a brute-force crack, L0phtCrack tries every possible combination of characters in a character set. L0phtCrack offers four character sets, ranging from alpha only to all alphanumeric plus all symbol characters. You can choose a character set from the Character Set drop-down box in the Tools Options dialog box or type a custom character set in the Character Set drop-down box. L0phtCrack saves custom sets in files with an .lc extension. You can also specify a character set in the password file, as the example in Figure 2 shows. Not B: A key generator is what is being described by the registration password or key answer."
+    },
+    {
+      "id": 364,
+      "question": "If a token and 4-digit personal identification number (PIN) are used to access a computer system and the token performs off-line checking for the correct PIN, what type of attack is possible?",
+      "options": {
+        "A": "Birthday",
+        "B": "Brute force",
+        "C": "Man-in-the-middle",
+        "D": "Smurf"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Brute force attacks are performed with tools that cycle through many possible character, number, and symbol combinations to guess a password. Pg 134 Shon Harris CISSP All-In-One Certification Exam Guide. Since the token allows offline checking of PIN, the cracker can keep trying PINS until it is cracked."
+    },
+    {
+      "id": 365,
+      "question": "Which of the following actions can increase the cost of an exhaustive attack?",
+      "options": {
+        "A": "Increase the age of a password.",
+        "B": "Increase the length of a password.",
+        "C": "None of the choices.",
+        "D": "Increase the history of a password."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Defenses against exhaustive attacks involve increasing the cost of the attack by increasing the number of possibilities to be exhausted. For example, increasing the length of a password will increase the cost of an exhaustive attack. Increasing the effective length of a cryptographic key variable will make it more resistant to an exhaustive attack."
+    },
+    {
+      "id": 366,
+      "question": "Which of the following attacks focus on cracking passwords?",
+      "options": {
+        "A": "SMURF",
+        "B": "Spamming",
+        "C": "Teardrop",
+        "D": "Dictionary"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Dictionaries may be used in a cracking program to determine passwords. A short dictionary attack involves trying a list of hundreds or thousands of words that are frequently chosen as passwords against several systems. Although most systems resist such attacks, some do not. In one case, one system in five yielded to a particular dictionary attack."
+    },
+    {
+      "id": 367,
+      "question": "Which of the following can best eliminate dial-up access through a Remote Access Server as a hacking vector?",
+      "options": {
+        "A": ") Using TACACS+ server",
+        "B": ") Installing the Remote Access Server outside the firewall and forcing legitimate users to authenticate to the firewall.",
+        "C": ") Setting modem ring count to at least 5",
+        "D": ") Only attaching modems to non-networked hosts."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 368,
+      "question": "What is known as decoy system designed to lure a potential attacker away from critical systems?",
+      "options": {
+        "A": "Honey Pots",
+        "B": "Vulnerability Analysis Systems",
+        "C": "File Integrity Checker",
+        "D": "Padded Cells"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Honey pots are decoy systems that are designed to lure a potential attacker away from critical systems. Honey pots are designed to: Divert an attacker from accessing critical systems, Collect information about the attacker's activity, and encourage the attacker to stay on the system long enough for administrators to respond."
+    },
+    {
+      "id": 369,
+      "question": "Which of the following will you consider as a program that monitors data traveling over a network?",
+      "options": {
+        "A": "Smurfer",
+        "B": "Sniffer",
+        "C": "Fragmenter",
+        "D": "Spoofer"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: A sniffer is a program and/or device that monitor data traveling over a network. Sniffers can be used both for legitimate network management functions and for stealing information off a network. Unauthorized sniffers can be extremely dangerous to a network's security because they are virtually impossible to detect"
+    },
+    {
+      "id": 370,
+      "question": "Which of the following is NOT a system-sensing wireless proximity card?",
+      "options": {
+        "A": ") magnetically striped card",
+        "B": ") passive device",
+        "C": ") field-powered device",
+        "D": ") transponder"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 371,
+      "question": "Attacks on smartcards generally fall into what categories?",
+      "options": {
+        "A": "Physical attacks.",
+        "B": "Trojan Horse attacks.",
+        "C": "Logical attacks.",
+        "D": "All of the choices, plus Social Engineering attacks."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Attacks on smartcards generally fall into four categories: Logical attacks, Physical attacks, Trojan Horse attacks and Social Engineering attacks."
+    },
+    {
+      "id": 372,
+      "question": "Which of the following attacks could be the most successful when the security technology is properly implemented and configured?",
+      "options": {
+        "A": "Logical attacks",
+        "B": "Physical attacks",
+        "C": "Social Engineering attacks",
+        "D": "Trojan Horse attacks"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Social Engineering attacks - In computer security systems, this type of attack is usually the most successful, especially when the security technology is properly implemented and configured. Usually, these attacks rely on the faults in human beings. An example of a social engineering attack has a hacker impersonating a network service technician. The serviceman approaches a low-level employee and requests their password for network servicing purposes. With smartcards, this type of attack is a bit more difficult. Most people would not trust an impersonator wishing to have their smartcard and PIN for service purposes."
+    },
+    {
+      "id": 373,
+      "question": "What type of attacks occurs when normal physical conditions are altered in order to gain access to sensitive information on the smartcard?",
+      "options": {
+        "A": "Physical attacks",
+        "B": "Logical attacks",
+        "C": "Trojan Horse attacks",
+        "D": "Social Engineering attacks"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Physical attacks occur when normal physical conditions, such as temperature, clock frequency, voltage, etc, are altered in order to gain access to sensitive information on the smartcard. Most smartcard operating systems write sensitive data to the EEPROM area in a proprietary, encrypted manner so that it is difficult to obtain clear text keys by directly hacking into the EEPROM. Other physical attacks that have proven to be successful involve an intense physical fluctuation at the precise time and location where the PIN verification takes place. Thus, sensitive card functions can be performed even though the PIN is unknown. This type of attack can be combined with the logical attack mentioned above in order to gain knowledge of the private key. Most physical attacks require special equipment."
+    },
+    {
+      "id": 374,
+      "question": "Which one of the following is an example of electronic piggybacking?",
+      "options": {
+        "A": "Attaching to a communications line and substituting data.",
+        "B": "Abruptly terminating a dial-up or direct-connect session.",
+        "C": "Following an authorized user into the computer room.",
+        "D": "Recording and playing back computer transactions."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Ok this is a weird little question. The term electronic is kinda of throwing me a bit. A lot of times piggybacking can be used in terms of following someone in a building. Piggyback - Gaining unauthorized access to a system via another user's legitimate connection. (see between-the-lines entry) Between-the-lines entry 0 Unauthorized access obtained by tapping the temporarily inactive terminal of a legitimate user. -Ronald Krutz The CISSP PREP Guide (gold edition) pg 914, 885"
+    },
+    {
+      "id": 375,
+      "question": "A system using Discretionary Access Control (DAC) is vulnerable to which one of the following attacks?",
+      "options": {
+        "A": "Trojan horse",
+        "B": "Phreaking",
+        "C": "Spoofing",
+        "D": "SYN flood"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "An attempt to gain access to a system by posing as an authorized user. Synonymous with impersonating, masquerading, or mimicking.-Ronald Krutz The CISSP PREP Guide (gold edition) pg 921 \"Spoofing - The act of replacing the valid source and/or destination IP address and node numbers with false ones. Spoofing attack - any attack that involves spoofed or modified packets.\" - Ed Tittle CISSP Study Guide (sybex)"
+    },
+    {
+      "id": 376,
+      "question": "Which of the following is an example of an active attack?",
+      "options": {
+        "A": ") Traffic analysis",
+        "B": ") Masquerading",
+        "C": ") Eavesdropping",
+        "D": ") Shoulder surfing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 377,
+      "question": "What attack involves actions to mimic one's identity?",
+      "options": {
+        "A": "Brute force",
+        "B": "Exhaustive",
+        "C": "Social engineering",
+        "D": "Spoofing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Spoofing is an attack in which one person or process pretends to be a person or process that has more privileges. For example, user A can mimic behavior to make process B believe user A is user C. In the absence of any other controls, B may be duped into giving to user A the data and privileges that were intended for user C."
+    },
+    {
+      "id": 378,
+      "question": "Which access control model enables the owner of the resource to specify what subjects can access specific resources?",
+      "options": {
+        "A": ") Discretionary Access Control",
+        "B": ") Mandatory Access Control",
+        "C": ") Sensitive Access Control",
+        "D": ") Role-based Access Control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 379,
+      "question": "The type of discretionary access control that is based on an individual's identity is called:",
+      "options": {
+        "A": ") Identity-based access control",
+        "B": ") Rule-based access control",
+        "C": ") Non-Discretionary access control",
+        "D": ") Lattice-based access control"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 380,
+      "question": "Which of the following access control types gives \"UPDATE\" privileges on Structured Query Language (SQL) database objects to specific users or groups?",
+      "options": {
+        "A": "Supplemental",
+        "B": "Discretionary",
+        "C": "Mandatory",
+        "D": "System"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Supplemental and System are not access control types. The most correct answer is mandatory opposed to discretionary. The descriptions below sound typical of how a sql accounting database controls access. \"In a mandatory access control (MAC) model, users and data owners do not have as much freedom to determine who can access their files. Data owners can allow others to have access to their files, but it is the operating system that will make the final decision and can override the data owner's wishes.\" Pg. 154 Shon Harris CISSP All-In-One Certification Exam Guide \"Rule-based access controls are a variation of mandatory access controls. A rule based systems uses a set of rules, restrictions or filters to determine what can and cannot occur on the system, such as granting subject access, performing an action on an object, or accessing a resource. Pg 16 Tittle: CISSP Study Guide."
+    },
+    {
+      "id": 381,
+      "question": "With Discretionary access controls, who determines who has access and what privilege they have?",
+      "options": {
+        "A": "End users.",
+        "B": "None of the choices.",
+        "C": "Resource owners.",
+        "D": "Only the administrators."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Discretionary access controls can extend beyond limiting which subjects can gain what type of access to which objects. Administrators can limit access to certain times of day or days of the week. Typically, the period during which access would be permitted is 9 a.m. to 5 p.m. Monday through Friday. Such a limitation is designed to ensure that access takes place only when supervisory personnel are present, to discourage unauthorized use of data. Further, subjects' rights to access might be suspended when they are on vacation or leave of absence. When subjects leave an organization altogether, their rights must be terminated rather than merely suspended. Under this type of control, the owner determines who has access and what privilege they have."
+    },
+    {
+      "id": 382,
+      "question": "What defines an imposed access control level?",
+      "options": {
+        "A": "MAC",
+        "B": "DAC",
+        "C": "SAC",
+        "D": "CAC"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 383,
+      "question": "Under MAC, who can change the category of a resource?",
+      "options": {
+        "A": "All users.",
+        "B": "Administrators only.",
+        "C": "All managers.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 384,
+      "question": "Under MAC, who may grant a right of access that is explicitly forbidden in the access control policy?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "All users.",
+        "C": "Administrators only.",
+        "D": "All managers."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 385,
+      "question": "You may describe MAC as:",
+      "options": {
+        "A": "Opportunistic",
+        "B": "Prohibitive",
+        "C": "None of the choices.",
+        "D": "Permissive"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 386,
+      "question": "Under MAC, which of the following is true?",
+      "options": {
+        "A": "All that is expressly permitted is forbidden.",
+        "B": "All that is not expressly permitted is forbidden.",
+        "C": "All that is not expressly permitted is not forbidden.",
+        "D": "None of the choices."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 387,
+      "question": "Under MAC, a clearance is a:",
+      "options": {
+        "A": "Sensitivity",
+        "B": "Subject",
+        "C": "Privilege",
+        "D": "Object"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 388,
+      "question": "Under MAC, a file is a(n):",
+      "options": {
+        "A": "Privilege",
+        "B": "Subject",
+        "C": "Sensitivity",
+        "D": "Object"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 389,
+      "question": "Under MAC, classification reflects:",
+      "options": {
+        "A": "Sensitivity",
+        "B": "Subject",
+        "C": "Privilege",
+        "D": "Object"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 390,
+      "question": "MAC is used for:",
+      "options": {
+        "A": "Defining imposed access control level.",
+        "B": "Defining user preferences.",
+        "C": "None of the choices.",
+        "D": "Defining discretionary access control level."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As the name implies, the Mandatory Access Control defines an imposed access control level. MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 391,
+      "question": "With MAC, who may make decisions that bear on policy?",
+      "options": {
+        "A": "None of the choices.",
+        "B": "All users.",
+        "C": "Only the administrator.",
+        "D": "All users except guests."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As the name implies, the Mandatory Access Control defines an imposed access control level. MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 392,
+      "question": "With MAC, who may NOT make decisions that derive from policy?",
+      "options": {
+        "A": "All users except the administrator.",
+        "B": "The administrator.",
+        "C": "The power users.",
+        "D": "The guests."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: As the name implies, the Mandatory Access Control defines an imposed access control level. MAC is defined as follows in the Handbook of Information Security Management: With mandatory controls, only administrators and not owners of resources may make decisions that bear on or derive from policy. Only an administrator may change the category of a resource, and no one may grant a right of access that is explicitly forbidden in the access control policy."
+    },
+    {
+      "id": 393,
+      "question": "Under the MAC control system, what is required?",
+      "options": {
+        "A": "Performance monitoring",
+        "B": "Labeling",
+        "C": "Sensing",
+        "D": "None of the choices"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: It is important to note that mandatory controls are prohibitive (i.e., all that is not expressly permitted is forbidden), not permissive. Only within that context do discretionary controls operate, prohibiting still more access with the same exclusionary principle. In this type of control system decisions are based on privilege (clearance) of subject (user) and sensitivity (classification) of object (file). It requires labeling."
+    },
+    {
+      "id": 394,
+      "question": "Access controls that are not based on the policy are characterized as:",
+      "options": {
+        "A": "Secret controls",
+        "B": "Mandatory controls",
+        "C": "Discretionary controls",
+        "D": "Corrective controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access controls that are not based on the policy are characterized as discretionary controls by the U.S. government and as need-to-know controls by other organizations. The latter term connotes least privilege - those who may read an item of data are precisely those whose tasks entail the need."
+    },
+    {
+      "id": 395,
+      "question": "DAC are characterized by many organizations as:",
+      "options": {
+        "A": "Need-to-know controls",
+        "B": "Preventive controls",
+        "C": "Mandatory adjustable controls",
+        "D": "None of the choices"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Access controls that are not based on the policy are characterized as discretionary controls by the U.S. government and as need-to-know controls by other organizations. The latter term connotes least privilege - those who may read an item of data are precisely those whose tasks entail the need."
+    },
+    {
+      "id": 396,
+      "question": "Which of the following correctly describe DAC?",
+      "options": {
+        "A": "It is the most secure method.",
+        "B": "It is of the B2 class.",
+        "C": "It can extend beyond limiting which subjects can gain what type of access to which objects.",
+        "D": "It is of the B1 class."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With DAC, administrators can limit access to certain times of day or days of the week. Typically, the period during which access would be permitted is 9 a.m. to 5 p.m. Monday through Friday. Such a limitation is designed to ensure that access takes place only when supervisory personnel are present, to discourage unauthorized use of data. Further, subjects' rights to access might be suspended when they are on vacation or leave of absence. When subjects leave an organization altogether, their rights must be terminated rather than merely suspended."
+    },
+    {
+      "id": 397,
+      "question": "Under DAC, a subjects rights must be ________ when it leaves an organization altogether.",
+      "options": {
+        "A": "recycled",
+        "B": "terminated",
+        "C": "suspended",
+        "D": "resumed"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "Explanation: Discretionary access controls can extend beyond limiting which subjects can gain what type of access to which objects. Administrators can limit access to certain times of day or days of the week. Typically, the period during which access would be permitted is 9 a.m. to 5 p.m. Monday through Friday. Such a limitation is designed to ensure that access takes place only when supervisory personnel are present, to discourage unauthorized use of data. Further, subjects' rights to access might be suspended when they are on vacation or leave of absence. When subjects leave an organization altogether, their rights must be terminated rather than merely suspended."
+    },
+    {
+      "id": 398,
+      "question": "In a discretionary mode, which of the following entities is authorized to grant information access to other people?",
+      "options": {
+        "A": ") manager",
+        "B": ") group leader",
+        "C": ") security manager",
+        "D": ") user"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 399,
+      "question": "With RBAC, each user can be assigned:",
+      "options": {
+        "A": "One or more roles.",
+        "B": "Only one role.",
+        "C": "A token role.",
+        "D": "A security token."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With RBAC, security is managed at a level that corresponds closely to the organization's structure. Each user is assigned one or more roles, and each role is assigned one or more privileges that are permitted to users in that role. Roles can be hierarchical."
+    },
+    {
+      "id": 400,
+      "question": "With RBAC, roles are:",
+      "options": {
+        "A": "Based on labels.",
+        "B": "All equal",
+        "C": "Hierarchical",
+        "D": "Based on flows."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "Explanation: With RBAC, security is managed at a level that corresponds closely to the organization's structure. Each user is assigned one or more roles, and each role is assigned one or more privileges that are permitted to users in that role. Roles can be hierarchical."
+    }
+  ]
+}
