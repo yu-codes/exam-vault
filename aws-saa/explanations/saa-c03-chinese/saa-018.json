@@ -1,0 +1,779 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-chinese",
+    "file": "saa-018.json",
+    "question_range": "Q851-Q900",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 851,
+      "type": "single",
+      "question": "一家公司需要設置一個集中式解決方案，以審計對 AWS 的 API 調用，無論是運行在 AWS 服務還是非 AWS 服務上的工作負載。該公司必須將審計日誌存儲 7 年。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "在 Amazon S3 中設置數據湖。將 AWS CloudTrail 日誌和來自非 AWS 服務的日誌納入數據湖。使用 CloudTrail 將日誌存儲 7 年。",
+        "B": "配置 AWS CloudTrail Lake 的自定義集成，以收集和存儲來自 AWS 服務和非 AWS 服務的 CloudTrail 事件。使用 CloudTrail 將日誌存儲 7 年。",
+        "C": "為 AWS 服務啟用 AWS CloudTrail。將非 AWS 服務納入 CloudTrail，以存儲日誌 7 年。",
+        "D": "創建新的 Amazon CloudWatch Logs 群組。將來自非 AWS 服務的審計數據發送到 CloudWatch Logs 群組。為運行在 AWS 上的工作負載啟用 AWS CloudTrail。使用 CloudTrail 將日誌存儲 7 年。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWS CloudTrail Lake 是一個完全管理的服務，允許收集、存儲和查詢 AWS 和非 AWS 服務的 CloudTrail 事件。CloudTrail Lake 可以自定義以收集來自各種來源的日誌，確保集中式審計解決方案。它還支持長期存儲，因此日誌可以保留 7 年，以滿足合規要求。\n選項 A（數據湖）：在 S3 中設置數據湖會引入不必要的運營複雜性，與 CloudTrail Lake 相比。\n選項 C（將非 AWS 服務納入 CloudTrail）：CloudTrail Lake 更適合這項任務，運營開銷更少。\n選項 D（CloudWatch Logs）：雖然 CloudWatch 可以存儲日誌，但 CloudTrail Lake 專門設計用於 API 審計和存儲。\nAWS 參考：\nAWS CloudTrail Lake"
+    },
+    {
+      "id": 852,
+      "type": "single",
+      "question": "一家公司在 Amazon EC2 實例上運行其生產工作負載，並使用 Amazon Elastic Block Store (Amazon EBS) 卷。解決方案架構師需要分析當前的 EBS 卷成本並推薦優化方案。建議需要包括預估的每月節省機會。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用 Amazon Inspector 報告生成 EBS 卷優化建議。",
+        "B": "使用 AWS Systems Manager 報告來確定 EBS 卷的優化建議。",
+        "C": "使用 Amazon CloudWatch 指標報告來確定 EBS 卷的優化建議。",
+        "D": "使用 AWS Compute Optimizer 生成 EBS 卷的優化建議。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "AWS Compute Optimizer 提供有關優化 Amazon EBS 卷的詳細建議，包括對未充分利用的卷、效率低下的配置和潛在成本節省的見解。它分析使用模式並根據歷史數據提供建議，使其成為此用例的理想工具。\n選項 A（Amazon Inspector）：Amazon Inspector 用於安全評估，而不是成本優化。\n選項 B（Systems Manager）：Systems Manager 不專門提供 EBS 優化建議。\n選項 C（CloudWatch）：CloudWatch 指標有助於監控使用情況，但不提供像 Compute Optimizer 那樣的優化建議。\nAWS 參考：\nAWS Compute Optimizer"
+    },
+    {
+      "id": 853,
+      "type": "single",
+      "question": "一家公司需要在 2 週內將 MySQL 數據庫從本地數據中心遷移到 AWS。數據庫大小為 180 TB。該公司無法對數據庫進行分區。該公司希望在遷移過程中最小化停機時間。該公司的互聯網連接速度為 100 Mbps。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "訂購一個 AWS Snowball Edge Storage Optimized 設備。使用 AWS Database Migration Service (AWS DMS) 和 AWS Schema Conversion Tool (AWS SCT) 將數據庫遷移到 Amazon RDS for MySQL 並複製持續的變更。將 Snowball Edge 設備寄回 AWS 完成遷移。繼續複製持續的變更。",
+        "B": "在數據中心和 AWS 之間建立 AWS Site-to-Site VPN 連接。使用 AWS Database Migration Service (AWS DMS) 和 AWS Schema Conversion Tool (AWS SCT) 將數據庫遷移到 Amazon RDS for MySQL 並複製持續的變更。",
+        "C": "在數據中心和 AWS 之間建立 10 Gbps 專用的 AWS Direct Connect 連接。使用 AWS DataSync 將數據庫複製到 Amazon S3。創建一個腳本將數據從 Amazon S3 導入到新的 Amazon RDS for MySQL 數據庫實例。",
+        "D": "使用公司的現有互聯網連接。使用 AWS DataSync 將數據庫複製到 Amazon S3。創建一個腳本將數據從 Amazon S3 導入到新的 Amazon RDS for MySQL 數據庫實例。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "考慮到數據庫的巨大大小（180 TB）和時間限制，AWS Snowball Edge Storage Optimized 是最佳解決方案。Snowball Edge 允許高效地將大型數據集物理轉移到 AWS，而無需依賴緩慢的互聯網連接。AWS DMS 和 SCT 可用於執行遷移期間的任何變更的持續複製，確保最小的停機時間。\n選項 B（VPN）：使用 100 Mbps 的互聯網連接將需要花費太長時間來傳輸 180 TB。\n選項 C（Direct Connect）：在 2 週的時間範圍內建立 10 Gbps 的 Direct Connect 連接可能不可行。\n選項 D（通過互聯網的 DataSync）：使用現有的互聯網連接，DataSync 也會花費太長時間。\nAWS 參考：\nAWS Snowball Edge\nAWS DMS"
+    },
+    {
+      "id": 854,
+      "type": "single",
+      "question": "一家公司在開發 AWS 帳戶中擁有多個 Amazon RDS DB 實例。所有實例都有標籤以識別它們為開發資源。該公司需要開發 DB 實例僅在工作時間內運行。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon CloudWatch 警報以識別需要停止的 RDS 實例。創建一個 AWS Lambda 函數來啟動和停止 RDS 實例。",
+        "B": "創建一個 AWS Trusted Advisor 報告以識別需要啟動和停止的 RDS 實例。創建一個 AWS Lambda 函數來啟動和停止 RDS 實例。",
+        "C": "創建 AWS Systems Manager State Manager 關聯以啟動和停止 RDS 實例。",
+        "D": "創建一個 Amazon EventBridge 規則，調用 AWS Lambda 函數來啟動和停止 RDS 實例。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "為了在工作時間內以最少的運營開銷運行 RDS 實例，您可以使用 Amazon EventBridge 計劃事件，調用 AWS Lambda 函數。Lambda 函數可以根據指定的計劃（工作時間）配置為啟動和停止 RDS 實例。EventBridge 規則允許您輕鬆定義重複事件，Lambda 函數提供了一種無伺服器的方式來管理 RDS 實例的啟動和停止操作，減少管理開銷。\n選項 A：雖然 CloudWatch 警報可以使用，但它們更適合監控，使用 Lambda 和 EventBridge 更簡單。\n選項 B（Trusted Advisor）：Trusted Advisor 不適合計劃任務。\n選項 C（Systems Manager）：Systems Manager 也可以工作，但 EventBridge 和 Lambda 提供了更簡化和低開銷的解決方案。\nAWS 參考：\nAmazon EventBridge Scheduler\nAWS Lambda"
+    },
+    {
+      "id": 855,
+      "type": "single",
+      "question": "一家公司正在 Amazon EC2 實例上部署一個新的遊戲應用程序。該遊戲應用程序需要訪問共享存儲。該公司要求一個高性能的解決方案，以使應用程序能夠使用現有的自定義協議來訪問共享存儲。該解決方案必須確保低延遲並且運營高效。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon FSx File Gateway。創建一個使用現有自定義協議的文件共享。將承載應用程序的 EC2 實例連接到文件共享。",
+        "B": "創建一個 Amazon EC2 Windows 實例。在該實例上安裝和配置 Windows 文件共享角色。將承載應用程序的 EC2 實例連接到文件共享。",
+        "C": "創建一個 Amazon Elastic File System (Amazon EFS) 文件系統。配置文件系統以支持 Lustre。將承載應用程序的 EC2 實例連接到文件系統。",
+        "D": "創建一個 Amazon FSx for Lustre 文件系統。將承載應用程序的 EC2 實例連接到文件系統。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Amazon FSx for Lustre 是一個高性能、完全管理的文件系統，非常適合需要低延遲訪問共享存儲的應用程序，特別是在遊戲等需要高吞吐量和低延遲的用例中。它與 EC2 實例集成輕鬆，提供快速和可擴展的共享存儲，並支持特定應用需求的自定義協議。\n選項 A（FSx File Gateway）：FSx File Gateway 設計用於混合雲存儲，不適合高性能遊戲工作負載。\n選項 B（EC2 Windows 實例）：在 Windows 實例上設置文件共享會引入額外的管理開銷，並且無法提供所需的性能。\n選項 C（EFS 與 Lustre）：雖然 Lustre 與 FSx 集成，但 EFS 不原生支持 Lustre。\nAWS 參考：\nAmazon FSx for Lustre"
+    },
+    {
+      "id": 856,
+      "type": "single",
+      "question": "一家公司正在為其電子商務網頁應用程式開發一個評分系統。該公司需要一個解決方案來保存用戶提交的評分在 Amazon DynamoDB 表中。該公司希望確保開發人員不需要直接與 DynamoDB 表互動。該解決方案必須可擴展且可重用。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "創建一個應用程序負載平衡器 (ALB)。創建一個 AWS Lambda 函數，並將該函數設置為 ALB 的目標組。通過 ALB 使用 put_item 方法調用 Lambda 函數。",
+        "B": "創建一個 AWS Lambda 函數。配置 Lambda 函數通過 Boto3 的 put-item 方法與 DynamoDB 表互動。從網頁應用程序調用 Lambda 函數。",
+        "C": "創建一個 Amazon Simple Queue Service (Amazon SQS) 隊列和一個具有 SQS 觸發類型的 AWS Lambda 函數。指示開發人員將客戶評分作為 JSON 消息添加到 SQS 隊列中。配置 Lambda 函數從隊列中獲取評分並將評分存儲在 DynamoDB 中。",
+        "D": "創建一個 Amazon API Gateway REST API 定義一個資源並創建一個新的 POST 方法選擇 AWS 作為集成類型，並選擇 DynamoDB 作為服務。將操作設置為 PutItem。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "Amazon API Gateway 提供了一個可擴展且可重用的解決方案，用於與 DynamoDB 互動，而無需開發人員直接訪問。通過設置一個 REST API，使用與 DynamoDB 的 PutItem 操作集成的 POST 方法，開發人員可以通過 API Gateway 將數據（例如用戶評分）提交到 DynamoDB 表，而無需直接與數據庫互動。此解決方案是無伺服器的，並最小化了運營開銷。\n選項 A：使用 ALB 和 Lambda 增加了複雜性，對於此用例效率較低。\n選項 B：雖然使用 Lambda 是可能的，但 API Gateway 提供了更可擴展、可重用的介面。\n選項 C：SQS 與 Lambda 引入了不必要的組件，對於簡單的 put 操作來說。\nAWS 參考：\nAmazon API Gateway 與 DynamoDB"
+    },
+    {
+      "id": 857,
+      "type": "single",
+      "question": "一個市場營銷團隊想要為即將舉行的多項體育賽事建立一個活動。該團隊擁有過去五年的新聞報導，格式為 PDF。該團隊需要一個解決方案來提取有關內容和情感的見解。該解決方案必須使用 Amazon Textract 來處理新聞報導。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "將提取的見解提供給 Amazon Athena 進行分析，將提取的見解和分析存儲在 Amazon S3 存儲桶中。",
+        "B": "將提取的見解存儲在 Amazon DynamoDB 表中。使用 Amazon SageMaker 建立情感模型。",
+        "C": "將提取的見解提供給 Amazon Comprehend 進行分析。將分析結果保存到 Amazon S3 存儲桶中。",
+        "D": "將提取的見解存儲在 Amazon S3 存儲桶中。使用 Amazon QuickSight 來可視化和分析數據。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon Textract 可以從 PDF 中提取文本，而 Amazon Comprehend 是分析提取文本以獲取情感和見解的最合適服務。Comprehend 提供了一個完全管理的、低運營開銷的解決方案，用於分析文本數據。然後可以將結果存儲在 Amazon S3 存儲桶中，確保可擴展性和易於訪問。\n選項 A：Athena 用於查詢結構化數據，不適合情感分析。\n選項 B：SageMaker 增加了複雜性，當 Comprehend 可以原生處理情感分析時並不必要。\n選項 D：QuickSight 用於可視化和分析，但不提供情感分析。\nAWS 參考：\nAmazon Comprehend\nAmazon Textract"
+    },
+    {
+      "id": 858,
+      "type": "single",
+      "question": "一家電子商務公司正在將其本地工作負載遷移到 AWS 雲。該工作負載目前由一個網頁應用程序和一個後端 Microsoft SQL 數據庫組成。該公司預計在促銷活動期間會有大量客戶。AWS 雲中的新基礎設施必須高度可用且可擴展。哪種解決方案能以最少的管理開銷滿足這些要求？",
+      "options": {
+        "A": "將網頁應用程序遷移到兩個 Amazon EC2 實例，分佈在兩個可用區，並在應用程序負載平衡器後面。將數據庫遷移到 Amazon RDS for Microsoft SQL Server，並在兩個可用區中設置只讀副本。",
+        "B": "將網頁應用程序遷移到一個運行在自動擴展組中的 Amazon EC2 實例，分佈在兩個可用區，並在應用程序負載平衡器後面。將數據庫遷移到兩個分佈在不同 AWS 區域的 EC2 實例，並進行數據庫複製。",
+        "C": "將網頁應用程序遷移到運行在自動擴展組中的 Amazon EC2 實例，分佈在兩個可用區，並在應用程序負載平衡器後面。將數據庫遷移到 Amazon RDS，並進行多可用區部署。",
+        "D": "將網頁應用程序遷移到三個 Amazon EC2 實例，分佈在三個可用區，並在應用程序負載平衡器後面。將數據庫遷移到三個 EC2 實例，分佈在三個可用區。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "為了確保高可用性和可擴展性，網頁應用程序應在自動擴展組中運行，分佈在兩個可用區，並在應用程序負載平衡器 (ALB) 後面。數據庫應遷移到 Amazon RDS，並進行多可用區部署，這確保了容錯和在可用區故障時的自動故障轉移。此設置最小化了管理開銷，同時滿足公司對高可用性和可擴展性的要求。\n選項 A：只讀副本通常用於擴展讀取操作，而多可用區提供了事務性數據庫的更好可用性。\n選項 B：在 AWS 區域之間進行複製為單個網頁應用程序增加了不必要的複雜性。\n選項 D：在三個可用區的 EC2 實例增加了不必要的複雜性。\nAWS 參考：\n自動擴展組\nAmazon RDS 多可用區"
+    },
+    {
+      "id": 859,
+      "type": "single",
+      "question": "一家公司想要為其本地員工發布一個私有網站。該網站由幾個 HTML 頁面和圖像文件組成。該網站必須僅通過 HTTPS 可用，並且僅對本地員工可用。一位解決方案架構師計劃將網站文件存儲在 Amazon S3 存儲桶中。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "創建一個 S3 存儲桶策略，當來源 IP 地址不是本地環境的公共 IP 地址時拒絕訪問。設置一個 Amazon Route 53 別名記錄指向 S3 存儲桶。將別名記錄提供給本地員工以授予他們訪問網站的權限。",
+        "B": "創建一個 S3 訪問點以提供網站訪問。附加一個訪問點策略，當來源 IP 地址不是本地環境的公共 IP 地址時拒絕訪問。將 S3 訪問點別名提供給本地員工以授予他們訪問網站的權限。",
+        "C": "創建一個 Amazon CloudFront 發佈，包含配置為 S3 存儲桶的原始訪問控制 (OAC)。使用 AWS Certificate Manager 進行 SSL。使用 AWS WAF 和 IP 集合規則，允許本地 IP 地址的訪問。設置一個 Amazon Route 53 別名記錄指向 CloudFront 發佈。",
+        "D": "創建一個 Amazon CloudFront 發佈，包含配置為 S3 存儲桶的原始訪問控制 (OAC)。為存儲桶中的對象創建 CloudFront 簽名 URL。設置一個 Amazon Route 53 別名記錄指向 CloudFront 發佈。將簽名 URL 提供給本地員工以授予他們訪問網站的權限。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "此解決方案使用 CloudFront 通過 AWS Certificate Manager (ACM) 以 HTTPS 安全地提供網站。原始訪問控制 (OAC) 確保只有 CloudFront 可以直接訪問 S3 存儲桶。AWS WAF 與 IP 集合規則限制對網站的訪問，僅允許本地 IP 地址。Route 53 用於創建指向 CloudFront 發佈的別名記錄。此設置確保安全、私有地訪問網站，並且管理開銷低。\n選項 A 和 B：S3 存儲桶策略和訪問點不提供 HTTPS 支持，也不提供與 CloudFront 和 WAF 相同級別的安全性。\n選項 D：簽名 URL 更適合於臨時、過期的訪問，而不是本地員工的永久解決方案。\nAWS 參考：\nAmazon CloudFront 與原始訪問控制"
+    },
+    {
+      "id": 860,
+      "type": "single",
+      "question": "一家公司需要一個解決方案來強制執行 Amazon EC2 實例的數據靜態加密。該解決方案必須自動識別不合規的資源並對發現的問題強制執行合規政策。哪種解決方案能以最少的管理開銷滿足這些要求？",
+      "options": {
+        "A": "使用 IAM 策略，允許用戶僅創建加密的 Amazon Elastic Block Store (Amazon EBS) 卷。使用 AWS Config 和 AWS Systems Manager 自動檢測和修復未加密的 EBS 卷。",
+        "B": "使用 AWS Key Management Service (AWS KMS) 管理對加密的 Amazon Elastic Block Store (Amazon EBS) 卷的訪問。使用 AWS Lambda 和 Amazon EventBridge 自動檢測和修復未加密的 EBS 卷。",
+        "C": "使用 Amazon Macie 檢測未加密的 Amazon Elastic Block Store (Amazon EBS) 卷。使用 AWS Systems Manager 自動化規則自動加密現有和新 EBS 卷。",
+        "D": "使用 Amazon Inspector 檢測未加密的 Amazon Elastic Block Store (Amazon EBS) 卷。使用 AWS Systems Manager 自動化規則自動加密現有和新 EBS 卷。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "強制執行 Amazon EBS 卷的靜態加密的最佳解決方案是使用 IAM 策略來限制未加密卷的創建。要自動識別和修復未加密卷，可以使用 AWS Config 規則，這會持續監控資源的合規性，並使用 AWS Systems Manager 自動化修復，通過加密現有的未加密卷。此設置需要最少的管理開銷，同時確保合規性。\n選項 B (KMS)：KMS 用於管理加密密鑰，但 Config 和 Systems Manager 提供了更好的自動檢測和強制執行解決方案。\n選項 C (Macie)：Macie 用於數據分類，不適合此用例。\n選項 D (Inspector)：Inspector 用於安全漏洞，而不是加密合規性。\nAWS 參考：\nAWS Config 規則\nAWS Systems Manager"
+    },
+    {
+      "id": 861,
+      "type": "single",
+      "question": "一家公司在 AWS 區域內的 Amazon Elastic Kubernetes Service (Amazon EKS) 上部署其應用程式，並在應用程式負載平衡器後面運行。該應用程式需要將數據存儲在 PostgreSQL 數據庫引擎中。該公司希望數據庫中的數據具有高可用性。該公司還需要增加讀取工作負載的容量。哪種解決方案能以最高的操作效率滿足這些要求？",
+      "options": {
+        "A": "創建一個配置為全球表的 Amazon DynamoDB 數據庫表。",
+        "B": "創建一個具有多可用區部署的 Amazon RDS 數據庫。",
+        "C": "創建一個具有多可用區數據庫集群部署的 Amazon RDS 數據庫。",
+        "D": "創建一個配置為跨區域讀取副本的 Amazon RDS 數據庫。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon RDS 多可用區數據庫集群部署通過自動在多個可用區 (AZ) 之間複製數據來確保高可用性，並在某個 AZ 發生故障時支持故障轉移。此設置還通過允許在不同 AZ 中使用讀取實例來提供增加的讀取工作負載容量。此解決方案以最小的手動干預提供了最高的操作效率。\n選項 A (DynamoDB)：DynamoDB 不適合關係型數據庫工作負載，該工作負載需要 PostgreSQL 引擎。\n選項 B (RDS 與多可用區)：雖然這提供了高可用性，但不提供讀取擴展能力。\n選項 D (跨區域讀取副本)：這增加了複雜性，如果需求是在單個區域內的高可用性則不必要。\nAWS 參考：\nAmazon RDS 多可用區數據庫集群"
+    },
+    {
+      "id": 862,
+      "type": "single",
+      "question": "一家製造公司在其 VPC 中運行一個訂單處理應用程式。該公司希望安全地將消息從應用程式發送到使用開放授權 (OAuth) 的外部 Salesforce 系統。解決方案架構師需要將公司的訂單處理應用程式與外部 Salesforce 系統集成。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon Simple Notification Service (Amazon SNS) 主題，以扇出配置將數據推送到 HTTPS 端點。配置訂單處理應用程式以發布消息到 SNS 主題。",
+        "B": "創建一個 Amazon Simple Notification Service (Amazon SNS) 主題，以扇出配置將數據推送到具有 HTTP 目標的 Amazon Data Firehose 傳送流。配置訂單處理應用程式以發布消息到 SNS 主題。",
+        "C": "創建一個 Amazon EventBridge 規則並配置一個 Amazon EventBridge API 目標合作夥伴。配置訂單處理應用程式以發布消息到 Amazon EventBridge。",
+        "D": "創建一個具有出站 MSK 連接器的 Amazon Managed Streaming for Apache Kafka (Amazon MSK) 主題。配置訂單處理應用程式以發布消息到 MSK 主題。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon EventBridge API 目標允許您使用 HTTP API 將數據從 AWS 發送到外部系統，如 Salesforce，包括那些使用 OAuth 保護的 API。這提供了一個安全且可擴展的解決方案，用於將消息從訂單處理應用程式發送到 Salesforce。\n選項 A 和 B (SNS)：SNS 不適合 OAuth 保護的外部 API，並缺乏必要的 OAuth 集成。\n選項 D (MSK)：Amazon MSK 是基於 Kafka 的流媒體解決方案，對於簡單的消息轉發到 Salesforce 而言過於繁瑣。\nAWS 參考：\nAmazon EventBridge API 目標"
+    },
+    {
+      "id": 863,
+      "type": "single",
+      "question": "一家公司使用 Amazon EC2 自動調整組來托管 API。EC2 實例位於與應用程式負載平衡器 (ALB) 相關聯的目標組中。該公司在 Amazon Aurora PostgreSQL 數據庫中存儲數據。API 有一個每週的維護窗口。該公司必須確保 API 在每週維護窗口期間返回靜態維護響應。哪種解決方案能以最少的操作開銷滿足此要求？",
+      "options": {
+        "A": "在 Aurora PostgreSQL 中創建一個表，包含鍵和值的字段。為維護標誌創建一個鍵。在維護窗口開始時設置標誌。配置 API 查詢該表以獲取維護標誌，並在標誌設置時返回維護響應。在維護窗口結束時重置標誌。",
+        "B": "創建一個 Amazon Simple Queue Service (Amazon SQS) 隊列。訂閱 EC2 實例到該隊列。在維護窗口開始時向隊列發布消息。配置 API 在實例從隊列接收到維護開始消息時返回維護消息。在維護窗口結束時向隊列發布另一條消息以恢復正常操作。",
+        "C": "在 ALB 上創建一個監聽器規則，當請求的路徑匹配通配符時返回維護響應。將規則優先級設置為一。在進行維護時執行該操作。當維護窗口結束時，刪除監聽器規則。",
+        "D": "創建一個 Amazon Simple Notification Service (Amazon SNS) 主題，訂閱 EC2 實例到該主題。在維護窗口開始時向該主題發布消息。配置 API 在實例從主題接收到維護開始消息時返回維護響應。在維護窗口結束時向主題發布另一條消息以恢復正常操作。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "在應用程式負載平衡器 (ALB) 上創建一個監聽器規則以在維護窗口期間返回維護響應是最直接的解決方案，並且操作開銷最少。該規則可以配置為匹配所有進入的請求並返回自定義響應，並且一旦維護完成，可以輕鬆刪除。\n選項 A (Aurora 表標誌)：這為臨時維護響應增加了不必要的複雜性。\n選項 B 和 D (SQS 或 SNS)：這些選項引入了比簡單維護消息所需的更多組件。\nAWS 參考：\nALB 監聽器規則"
+    },
+    {
+      "id": 864,
+      "type": "single",
+      "question": "一個在線教育平台在高峰使用時段經歷延遲和緩衝，當時數千名學生同時訪問視頻課程。解決方案架構師需要改善教育平台的性能。該平台需要在不失去響應能力的情況下處理不可預測的流量激增。該平台必須在所有時候提供流暢的視頻播放性能。該平台必須創建每個視頻課程的多個副本，並以不同的比特率存儲這些副本，以服務具有不同網速的用戶。最小視頻大小為 7 GB。哪種解決方案能以最具成本效益的方式滿足這些要求？",
+      "options": {
+        "A": "使用 Amazon ElastiCache 將視頻緩存為所有所需的比特率。使用 AWS Lambda 函數處理視頻並將視頻轉換為所需的比特率。",
+        "B": "創建一個自動調整組，其中包括大小適合峰值負載的 Amazon EC2 實例。使用自動調整組來提供視頻。使用自動調整組將視頻轉換為所需的比特率。",
+        "C": "在 Amazon S3 存儲每個視頻的每個所需比特率的副本。使用單個 Amazon EC2 實例來提供視頻。",
+        "D": "使用 Amazon Kinesis Video Streams 存儲和提供視頻。使用 AWS Lambda 函數處理視頻並將視頻轉換為所需的比特率。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "以不同比特率提供視頻內容的最具成本效益的解決方案是將每個視頻的多個版本存儲在 Amazon S3 中。S3 提供可擴展且具有成本效益的大型媒體文件存儲。從單個 Amazon EC2 實例提供視頻可確保低延遲交付，而 S3 存儲有助於最小化成本。\n選項 A (ElastiCache)：在內存中緩存大型視頻文件將是過於昂貴且不必要的。\n選項 B (自動調整組)：使用自動調整組提供視頻的成本效益不如利用 S3 進行靜態存儲。\n選項 D (Kinesis Video Streams)：Kinesis Video Streams 是為實時視頻流設計的，不適合存儲和提供預錄視頻。\nAWS 參考：\nAmazon S3 媒體存儲"
+    },
+    {
+      "id": 865,
+      "type": "single",
+      "question": "一家公司在多個 AWS 區域中擁有 Amazon EC2 實例。這些實例都從同一個 Amazon S3 存儲桶中存儲和檢索機密數據。該公司希望改善其當前架構的安全性。該公司希望確保只有其 VPC 中的 Amazon EC2 實例可以訪問 S3 存儲桶。該公司必須阻止所有其他對該存儲桶的訪問。哪種解決方案能滿足此要求？",
+      "options": {
+        "A": "使用 IAM 策略限制對 S3 存儲桶的訪問。",
+        "B": "使用伺服器端加密 (SSE) 將 S3 存儲桶中的數據加密在靜止狀態。將加密密鑰存儲在 EC2 實例上。",
+        "C": "為 Amazon S3 創建一個 VPC 端點。配置 S3 存儲桶策略僅允許來自該端點的連接。",
+        "D": "使用 AWS 密鑰管理服務 (AWS KMS) 與客戶管理的密鑰在將數據發送到 S3 存儲桶之前加密數據。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "為 S3 創建 VPC 端點並配置存儲桶策略僅允許來自該端點的訪問，確保只有 VPC 中的 EC2 實例可以訪問 S3 存儲桶。此解決方案通過在網絡層面限制訪問來提高安全性，而無需公共互聯網訪問。\n選項 A (IAM 策略)：僅使用 IAM 策略無法根據網絡位置限制訪問。\n選項 B 和 D (加密)：加密在靜止狀態下保護數據，但不限制對存儲桶的網絡訪問。\nAWS 參考：\nAmazon S3 VPC 端點"
+    },
+    {
+      "id": 866,
+      "type": "multiple",
+      "question": "一家公司最近在一個 AWS 區域推出了一個高可用性的新產品。該產品由運行在 Amazon Elastic Container Service (Amazon ECS) 上的應用程序、一個公共的應用程序負載平衡器 (ALB) 和一個 Amazon DynamoDB 表組成。該公司希望有一個解決方案，使應用程序在不同區域之間具有高可用性。哪三個步驟的組合可以滿足這些要求？（選擇三個。）",
+      "options": {
+        "A": "在不同的區域中，將應用程序部署到一個新的 ECS 集群，並通過一個新的 ALB 訪問。",
+        "B": "創建一個 Amazon Route 53 故障轉移記錄。",
+        "C": "修改 DynamoDB 表以創建一個 DynamoDB 全球表。",
+        "D": "在同一區域中，將應用程序部署到一個可通過新的 ALB 訪問的 Amazon Elastic Kubernetes Service (Amazon EKS) 集群。",
+        "E": "修改 DynamoDB 表以創建全局次級索引 (GSIs)。",
+        "F": "為應用程序創建一個 AWS PrivateLink 端點。"
+      },
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "為了使應用程序在不同區域之間具有高可用性：\n在不同的區域中使用新的 ECS 集群和 ALB 部署應用程序，以確保區域冗餘。\n使用 Route 53 故障轉移路由在故障情況下自動將流量引導到健康的區域。\n使用 DynamoDB 全球表以確保數據庫在多個區域之間複製和可用，支持每個區域的讀取和寫入操作。\n選項 D（同一區域的 EKS 集群）：這不提供區域冗餘。\n選項 E（全局次級索引）：GSIs 提高查詢性能，但不提供多區域可用性。\n選項 F（PrivateLink）：PrivateLink 用於安全通信，而不是跨區域的高可用性。\nAWS 參考：\nDynamoDB 全球表\nAmazon ECS 與 ALB"
+    },
+    {
+      "id": 867,
+      "type": "single",
+      "question": "一家公司希望限制對其網絡應用程序內容的訪問。該公司需要通過使用 AWS 上可用的授權技術來保護內容。該公司還希望實施一個無伺服器架構的授權和身份驗證，並具有低登錄延遲。該解決方案必須與網絡應用程序集成並在全球範圍內提供網絡內容。該應用程序目前擁有一小部分用戶，但公司預計應用程序的用戶基數將會增加。哪個解決方案可以滿足這些要求？",
+      "options": {
+        "A": "配置 Amazon Cognito 進行身份驗證。實施 Lambda@Edge 進行授權。配置 Amazon CloudFront 在全球範圍內提供網絡應用程序。",
+        "B": "配置 AWS Directory Service for Microsoft Active Directory 進行身份驗證。實施 AWS Lambda 進行授權。使用應用程序負載平衡器在全球範圍內提供網絡應用程序。",
+        "C": "配置 Amazon Cognito 進行身份驗證。實施 AWS Lambda 進行授權。使用 Amazon S3 傳輸加速在全球範圍內提供網絡應用程序。",
+        "D": "配置 AWS Directory Service for Microsoft Active Directory 進行身份驗證。實施 Lambda@Edge 進行授權。使用 AWS Elastic Beanstalk 在全球範圍內提供網絡應用程序。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon Cognito 提供可擴展的無伺服器身份驗證，Lambda@Edge 用於授權，提供邊緣的低延遲訪問控制。Amazon CloudFront 在全球範圍內提供網絡應用程序，減少延遲並確保用戶安全訪問。此解決方案在提供可擴展性和安全性的同時，最小化了運營開銷。\n選項 B（Directory Service）：Directory Service 更適合涉及 Active Directory 的企業用例，而不適合基於網絡的應用程序。\n選項 C（S3 傳輸加速）：S3 傳輸加速有助於文件傳輸，但不提供授權功能。\n選項 D（Elastic Beanstalk）：Elastic Beanstalk 在 CloudFront 可以高效處理全球交付時增加了不必要的開銷。\nAWS 參考：\nAmazon Cognito\nLambda@Edge"
+    },
+    {
+      "id": 868,
+      "type": "multiple",
+      "question": "一家公司在 AWS 雲中運行支付處理系統。有時候，由於資金不足或技術問題，支付失敗，使用者會嘗試重新提交支付。有時支付重新提交會為相同的支付 ID 觸發多個支付消息。一位解決方案架構師需要確保支付處理系統按消息生成的順序接收具有相同支付 ID 的支付消息。處理系統必須按接收消息的順序處理這些消息。該解決方案必須保留所有支付消息 10 天以供分析。哪兩個解決方案可以滿足這些要求？（選擇兩個。）",
+      "options": {
+        "A": "將支付消息寫入使用支付 ID 作為分區鍵的 Amazon DynamoDB 表。",
+        "B": "將支付消息寫入使用支付 ID 作為分區鍵的 Amazon Kinesis 數據流。",
+        "C": "將支付消息寫入使用支付 ID 作為鍵的 Amazon ElastiCache for Memcached 集群。",
+        "D": "將支付消息寫入 Amazon Simple Queue Service (Amazon SQS) 隊列。將消息屬性設置為使用支付 ID。",
+        "E": "將支付消息寫入 Amazon Simple Queue Service (Amazon SQS) FIFO 隊列。將消息組設置為使用支付 ID。"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "explanation": "Amazon Kinesis 和 SQS FIFO 隊列都確保消息的順序處理。通過在 Kinesis 中使用支付 ID 作為分區鍵或在 SQS FIFO 隊列中作為消息組，消息按順序處理。這兩個解決方案還允許長期保留（最多 10 天）消息，使其適合此支付處理用例。\n選項 A（DynamoDB）：DynamoDB 不保證實時處理的消息順序。\n選項 C（ElastiCache）：ElastiCache 用於緩存，不適合順序消息處理。\n選項 D（標準 SQS 隊列）：標準 SQS 隊列不保證消息的順序。\nAWS 參考：\nAmazon Kinesis\nAmazon SQS FIFO 隊列"
+    },
+    {
+      "id": 869,
+      "type": "single",
+      "question": "一家諮詢公司向全球客戶提供專業服務。該公司提供解決方案和工具，幫助客戶加快在 AWS 上收集和分析數據。該公司需要集中管理和部署一組通用的解決方案和工具，以供客戶自助使用。哪個解決方案可以滿足這些要求？",
+      "options": {
+        "A": "為客戶創建 AWS Cloud Formation 模板。",
+        "B": "為客戶創建 AWS Service Catalog 產品。",
+        "C": "為客戶創建 AWS Systems Manager 模板。",
+        "D": "為客戶創建 AWS Config 項目。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWS Service Catalog 允許組織集中管理常見的 IT 服務，並為客戶提供自助部署能力。通過創建 Service Catalog 產品，諮詢公司可以將其解決方案和工具打包，以便客戶輕鬆重用，同時保持對配置和訪問的集中控制。這提供了一個標準化和自動化的解決方案，並在管理和部署解決方案時減少了運營開銷。\n選項 A（CloudFormation）：CloudFormation 模板很有用，但不提供與 Service Catalog 相同級別的管理和用戶友好的自助服務能力。\n選項 C（Systems Manager）：Systems Manager 更專注於管理基礎設施，並不提供相同的自助服務能力。\n選項 D（AWS Config）：AWS Config 用於跟踪資源配置，而不是用於部署解決方案。\nAWS 參考：\nAWS Service Catalog"
+    },
+    {
+      "id": 870,
+      "type": "multiple",
+      "question": "一家公司將客戶數據存儲在多租戶的 Amazon S3 存儲桶中。每個客戶的數據都存儲在一個對客戶唯一的前綴中。該公司需要將特定客戶的數據遷移到一個新的專用 S3 存儲桶，該存儲桶位於與源存儲桶相同的 AWS 區域中。該公司必須保留對象元數據，例如創建日期和版本 ID。遷移完成後，該公司必須從原始的多租戶 S3 存儲桶中刪除已遷移客戶的源數據。哪三個解決方案的組合可以以最小的開銷滿足這些要求？（選擇三個。）",
+      "options": {
+        "A": "創建一個新的 S3 存儲桶作為目標存儲桶。啟用新存儲桶的版本控制。",
+        "B": "使用 S3 批量操作將對象從指定前綴複製到目標存儲桶。",
+        "C": "使用 S3 CopyObject API，並創建一個腳本將數據複製到目標 S3 存儲桶。",
+        "D": "配置 S3 同區域複製 (SRR)，將源存儲桶中指定前綴的現有數據複製到目標存儲桶。",
+        "E": "配置 AWS DataSync 將數據從源存儲桶中的指定前綴遷移到目標存儲桶。",
+        "F": "使用 S3 生命周期策略在數據遷移到目標存儲桶後從源存儲桶中刪除對象。"
+      },
+      "answers": [
+        "A",
+        "B",
+        "F"
+      ],
+      "explanation": "這些解決方案的組合提供了一種高效且自動化的方式來遷移數據，同時保留元數據並確保清理：\n創建一個啟用版本控制的新 S3 存儲桶（選項 A），以在遷移過程中保留對象元數據，例如版本 ID。\n使用 S3 批量操作（選項 B）有效地將數據從源存儲桶中的特定前綴複製到目標存儲桶，以確保最小的開銷。\n使用 S3 生命周期策略（選項 F）在數據遷移後自動刪除源存儲桶中的數據，減少手動干預。\n選項 C（CopyObject API）：此方法需要更多的手動腳本編寫和努力。\n選項 D（同區域複製）：SRR 設計用於持續複製，而不是一次性遷移。\n選項 E（DataSync）：DataSync 為此任務增加了不必要的複雜性。\nAWS 參考：\nS3 批量操作\nS3 生命周期策略"
+    },
+    {
+      "id": 871,
+      "type": "single",
+      "question": "一家媒體公司正在使用運行在 Amazon EC2 實例上的視頻轉換工具。這些視頻轉換工具運行在 Windows EC2 實例和 Linux EC2 實例的組合上。每個視頻文件的大小為數十吉字節。視頻轉換工具必須在最短的時間內處理視頻文件。該公司需要一個單一的集中式文件存儲解決方案，該解決方案可以掛載在所有承載視頻轉換工具的 EC2 實例上。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "部署 Amazon FSx for Windows File Server，使用硬碟驅動器 (HDD) 存儲。",
+        "B": "部署 Amazon FSx for Windows File Server，使用固態硬碟 (SSD) 存儲。",
+        "C": "部署 Amazon Elastic File System (Amazon EFS)，使用最大 I/O 性能模式。",
+        "D": "部署 Amazon Elastic File System (Amazon EFS)，使用通用性能模式。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon EFS 的最大 I/O 性能模式旨在處理需要高並行性的工作負載，例如在多個 EC2 實例之間的視頻處理。EFS 提供可以在 Windows 和 Linux EC2 實例上掛載的共享文件存儲，最大 I/O 模式確保了處理大文件和多實例並發訪問的最佳性能。選項 A 和 B (FSx for Windows File Server)：FSx for Windows File Server 專為 Windows 工作負載優化，對於 Linux 實例或高吞吐量的並行工作負載並不理想。選項 D (EFS 通用模式)：通用模式提供較低的延遲，但不支持大型並發工作負載所需的高吞吐量。AWS 參考：Amazon EFS 性能模式"
+    },
+    {
+      "id": 872,
+      "type": "single",
+      "question": "一家公司的客戶遍布全球。該公司希望使用自動化來保護其系統和網絡基礎設施。公司的安全團隊必須能夠跟踪和審計基礎設施的所有增量變更。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Organizations 設置基礎設施。使用 AWS Config 跟踪變更。",
+        "B": "使用 AWS Cloud Formation 設置基礎設施。使用 AWS Config 跟踪變更。",
+        "C": "使用 AWS Organizations 設置基礎設施。使用 AWS Service Catalog 跟踪變更。",
+        "D": "使用 AWS Cloud Formation 設置基礎設施。使用 AWS Service Catalog 跟踪變更。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWS CloudFormation 允許自動化、可重複的基礎設施設置，減少人為錯誤並確保一致性。AWS Config 提供跟踪基礎設施變更的能力，確保所有變更都被記錄和可審計，滿足跟踪增量變更的要求。選項 A 和 C (AWS Organizations)：AWS Organizations 管理多個帳戶，但並不設計用於基礎設施設置或變更跟踪。選項 D (Service Catalog)：Service Catalog 用於部署產品，而不是設置基礎設施或跟踪變更。AWS 參考：AWS Config AWS CloudFormation"
+    },
+    {
+      "id": 873,
+      "type": "single",
+      "question": "一家公司的靜態網站托管在 Amazon CloudFront 前面，並使用 Amazon S3。該靜態網站使用數據庫後端。該公司注意到網站未反映在網站的 Git 存儲庫中所做的更新。該公司檢查了 Git 存儲庫和 Amazon S3 之間的持續集成和持續交付 (CI/CD) 管道。該公司驗證了 Webhook 配置正確，並且 CI/CD 管道正在發送指示成功部署的消息。一位解決方案架構師需要實施一個解決方案，以顯示網站上的更新。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "添加應用程序負載平衡器。",
+        "B": "將 Amazon ElastiCache for Redis 或 Memcached 添加到 Web 應用程序的數據庫層。",
+        "C": "使 CloudFront 緩存失效。",
+        "D": "使用 AWS Certificate Manager (ACM) 驗證網站的 SSL 證書。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "Amazon CloudFront 是一種內容傳遞網絡 (CDN) 服務，會在全球的邊緣位置緩存您的內容副本。這有助於通過從最接近用戶的邊緣提供內容來提高性能。然而，當 Amazon S3 (您的來源) 中的內容更新時，如果這些更新在 CloudFront 邊緣位置被緩存，則可能不會立即反映在網站上。問題中描述的情況表明 CI/CD 管道運行正常，並且更新已部署到 S3。然而，由於 CloudFront 緩存了這些內容，邊緣位置可能仍在提供過時的內容，導致更新未在網站上反映。要解決此問題，您需要使 CloudFront 緩存失效。通過使緩存失效，CloudFront 將刪除過時的內容，並從 S3 來源檢索最新版本。AWS 文檔說明此過程：CloudFront 緩存失效允許您清除緩存中的項目，以便 CloudFront 從來源檢索最新版本。您可以通過 AWS 管理控制台、AWS CLI 或 SDK 創建失效請求。AWS CloudFront 文檔 為什麼其他選項不正確：A. 添加應用程序負載平衡器：ALB 用於分配進來的應用程序流量，與緩存或從 CloudFront 提供內容無關。B. 添加 Amazon ElastiCache for Redis 或 Memcached：這將有助於緩存數據庫查詢，但與托管在 CloudFront 和 S3 上的靜態網站內容無關。D. 使用 AWS Certificate Manager (ACM)：ACM 用於管理 SSL/TLS 證書，與內容未在 CloudFront 上更新的問題無關。"
+    },
+    {
+      "id": 874,
+      "type": "single",
+      "question": "一家公司的應用程序正在從公司管理的本地 Microsoft Active Directory 遷移到 AWS。該公司在多個 AWS 帳戶中部署應用程序。該公司使用 AWS Organizations 來集中管理帳戶。公司的安全團隊需要一個跨所有公司 AWS 帳戶的單一登錄解決方案。該公司必須繼續管理本地 Active Directory 中的用戶和組。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "在 AWS Directory Service for Microsoft Active Directory 中創建企業版 Active Directory。將 Active Directory 配置為 AWS IAM 身份中心的身份來源。",
+        "B": "啟用 AWS IAM 身份中心。配置雙向森林信任關係，通過 AWS Directory Service for Microsoft Active Directory 將公司的自管理 Active Directory 與 IAM 身份中心連接。",
+        "C": "使用 AWS Directory Service，並與公司的自管理 Active Directory 創建雙向信任關係。",
+        "D": "在 Amazon EC2 上部署身份提供者 (IdP)。將 IdP 作為 AWS IAM 身份中心中的身份來源鏈接。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "該公司正在尋找一種解決方案，提供跨多個 AWS 帳戶的單一登錄 (SSO)，同時繼續管理其本地 Active Directory (AD) 中的用戶和組。AWS IAM 身份中心 (以前稱為 AWS SSO) 是這類需求的推薦解決方案。AWS IAM 身份中心提供集中式身份管理解決方案，實現跨多個 AWS 帳戶和其他雲應用程序的單一登錄。它可以與本地 Active Directory 集成，以利用現有的用戶和組。通過在 AWS Directory Service for Microsoft Active Directory 和公司的本地 Active Directory 之間配置雙向森林信任關係，用戶可以通過其本地 AD 進行身份驗證，並仍然可以通過 IAM 身份中心訪問 AWS 資源。此解決方案允許在 AWS Organizations 中集中管理 AWS 帳戶。雙向信任允許本地 AD 和 AWS Directory Service 之間的相互訪問。這意味著本地 AD 中的用戶和組可以用於在 AWS IAM 身份中心中的身份驗證，同時保持現有的身份管理系統。AWS 參考：AWS IAM 身份中心文檔 AWS Directory Service for Microsoft Active Directory 信任關係 AWS Directory Service 與 IAM 身份中心的集成 為什麼其他選項不正確：A. 在 AWS Directory Service 中創建企業版 Active Directory：這將需要在 AWS 中設置新的目錄並進行管理，這增加了不必要的開銷。要求是繼續使用現有的本地 AD，使此選項不合適。C. 使用 AWS Directory Service 並創建雙向信任關係：雖然此方法在本地 AD 和 AWS Directory Service 之間建立了信任，但並未解決通過 IAM 身份中心在多個 AWS 帳戶之間的單一登錄 (SSO) 要求。D. 在 Amazon EC2 上部署身份提供者 (IdP)：這比必要的更複雜，並引入了更多的管理開銷。AWS IAM 身份中心本地支持與本地 Active Directory 的集成，而無需自定義 IdP。"
+    },
+    {
+      "id": 875,
+      "type": "single",
+      "question": "一家正在設計基於微服務的架構的新應用程序在 AWS 上。每個微服務將運行在自己的一組 Amazon EC2 實例上。每個微服務需要與多個 AWS 服務互動，例如 Amazon S3 和 Amazon Simple Queue Service (Amazon SQS)。該公司希望根據最小特權原則管理每個 EC2 實例的權限。哪種解決方案能滿足這一要求？",
+      "options": {
+        "A": "為每個微服務分配一個 IAM 用戶。使用存儲在應用程序代碼中的訪問密鑰來驗證 AWS 服務請求。",
+        "B": "創建一個具有訪問所有 AWS 服務權限的單一 IAM 角色。將該 IAM 角色與運行微服務的所有 EC2 實例關聯。",
+        "C": "使用 AWS Organizations 為每個微服務創建一個單獨的帳戶。在帳戶級別管理權限。",
+        "D": "根據每個微服務的具體需求創建單獨的 IAM 角色。將 IAM 角色與相應的 EC2 實例關聯。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "在設計微服務架構時，每個微服務與不同的 AWS 服務互動，遵循最小特權原則至關重要。這意味著僅授予每個微服務執行其任務所需的權限，從而降低未經授權訪問或意外操作的風險。推薦的方法是根據每個微服務所需的具體權限創建單獨的 IAM 角色。然後，這些角色應與運行相應微服務的 EC2 實例關聯。這樣，每個 EC2 實例將承擔其特定的 IAM 角色，權限將由 AWS 自動管理。IAM 角色通過實例元數據服務提供臨時憑證，消除了在應用程序代碼中硬編碼憑證的需要，從而提高了安全性。AWS 參考：IAM 角色用於 Amazon EC2 解釋了 EC2 實例如何使用 IAM 角色安全地訪問 AWS 服務，而無需管理長期憑證。IAM 的最佳實踐包括實施最小特權原則和有效使用 IAM 角色的建議。為什麼其他選項不正確：A. 為每個微服務分配一個 IAM 用戶：這需要管理長期憑證 (訪問密鑰)，應該避免。在應用程序代碼中存儲密鑰是不安全的，並會產生維護負擔。B. 創建單一 IAM 角色：這違反了最小特權原則，因為具有廣泛權限的單一角色不夠安全。C. 使用 AWS Organizations：此方法增加了不必要的複雜性。在每個微服務的帳戶級別管理權限對於此用例來說過於繁瑣，並且不符合最小特權原則。"
+    },
+    {
+      "id": 876,
+      "type": "single",
+      "question": "一家媒體公司將其視頻處理工作負載托管在AWS上。該工作負載使用Amazon EC2實例在自動擴展組中處理不同的需求水平。該工作負載將原始視頻和處理後的視頻存儲在Amazon S3桶中。公司希望確保視頻處理工作負載具有可擴展性。公司希望防止因資源限制而導致的處理失敗。架構必須能夠處理視頻上傳的突然高峰，而不影響處理能力。哪種解決方案能以最少的開銷滿足這些要求？",
+      "options": {
+        "A": "將工作負載從Amazon EC2實例遷移到AWS Lambda函數。配置Amazon S3事件通知以在上傳新視頻時調用Lambda函數。配置Lambda函數直接處理視頻並將處理後的視頻保存回S3桶中。",
+        "B": "將工作負載從Amazon EC2實例遷移到AWS Lambda函數。使用Amazon S3在上傳新視頻時調用Amazon簡單通知服務（Amazon SNS）主題。將Lambda函數訂閱到SNS主題。配置Lambda函數異步處理視頻並將處理後的視頻保存回S3桶中。",
+        "C": "配置Amazon S3事件通知以在上傳新視頻時向Amazon簡單隊列服務（Amazon SQS）隊列發送消息。配置現有的自動擴展組以輪詢SQS隊列，處理視頻並將處理後的視頻保存回S3桶中。",
+        "D": "配置Amazon S3上傳觸發器以在上傳新視頻時調用AWS Step Functions狀態機。配置狀態機通過將作業消息放入Amazon SQS隊列來協調視頻處理工作流。配置作業消息以調用EC2實例處理視頻。將處理後的視頻保存回S3桶中。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "此解決方案解決了工作負載的可擴展性需求，同時防止因資源限制而導致的處理失敗。每當上傳新視頻時，可以使用Amazon S3事件通知觸發消息發送到SQS隊列。現有的EC2實例自動擴展組可以輪詢SQS隊列，確保EC2實例僅在隊列中有作業時處理視頻。SQS解耦了視頻上傳和處理步驟，允許系統在不過載EC2實例的情況下處理視頻上傳的突然高峰。使用自動擴展確保EC2實例可以根據需求進行擴展或縮減，保持成本效率，同時避免因資源不足而導致的處理失敗。AWS參考：S3事件通知詳細說明如何配置S3事件的通知。Amazon SQS是一個完全管理的消息隊列服務，解耦了系統的組件。自動擴展EC2解釋了如何根據需求管理EC2實例的自動擴展。為什麼其他選項不正確：A . AWS Lambda函數：雖然Lambda可以處理某些工作負載，但視頻處理通常資源密集且運行時間長，使得EC2成為更合適的解決方案。B . 使用SNS與Lambda：與A類似，由於其時間和內存限制，Lambda不適合大規模視頻處理。D . AWS Step Functions：雖然是一個有效的協調解決方案，但與更簡單的基於SQS的解決方案相比，這引入了更多的複雜性和開銷。"
+    },
+    {
+      "id": 877,
+      "type": "single",
+      "question": "一家公司使用一組Amazon EC2實例來托管網站。該網站使用Amazon S3桶來存儲圖像和媒體文件。公司希望自動化網站基礎架構的創建，以便將網站部署到多個AWS區域。公司還希望為EC2實例提供對S3桶的訪問，以便實例可以使用AWS身份和訪問管理（IAM）存儲和訪問數據。哪種解決方案能以最安全的方式滿足這些要求？",
+      "options": {
+        "A": "為Web服務器EC2實例創建AWS CloudFormation模板。在CloudFormation模板中的AWS::EC2::Instance實體的UserData部分中保存IAM訪問密鑰。",
+        "B": "創建一個包含IAM秘密訪問密鑰和訪問密鑰ID的文件。將該文件存儲在新的S3桶中。創建一個AWS CloudFormation模板。在模板中創建一個參數以指定包含訪問密鑰和訪問密鑰ID的S3對象的位置。",
+        "C": "創建一個IAM角色和一個IAM訪問策略，允許Web服務器EC2實例訪問S3桶。為Web服務器EC2實例創建一個AWS CloudFormation模板，其中包含一個IAM實例配置文件實體，引用IAM角色和IAM訪問策略。",
+        "D": "創建一個腳本，從IAM檢索IAM秘密訪問密鑰和訪問密鑰ID並將其存儲在Web服務器EC2實例上。將該腳本包含在AWS::EC2::Instance實體的CloudFormation模板的UserData部分中。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "允許EC2實例訪問S3桶的最安全解決方案是使用IAM角色。可以創建一個具有訪問策略的IAM角色，授予所需的權限（例如，讀取和寫入S3桶）。然後通過IAM實例配置文件將IAM角色與EC2實例關聯。通過將角色與實例關聯，EC2實例可以安全地假設該角色並通過實例元數據服務接收臨時憑證。這避免了在實例或應用程序中存儲憑證（例如訪問密鑰）的需要，增強了安全性並降低了憑證暴露的風險。AWS CloudFormation可用於自動化整個基礎架構的創建，包括EC2實例、IAM角色和相關策略。AWS參考：EC2實例的IAM角色概述了使用IAM角色安全訪問AWS服務的方法。AWS CloudFormation用戶指南詳細說明了如何使用CloudFormation模板創建和管理資源。為什麼其他選項不正確：A . 在UserData中保存IAM訪問密鑰：這是不安全的，因為它涉及在實例用戶數據中存儲長期憑證，這可能會被暴露。B . 將訪問密鑰存儲在S3中：這也是不安全的，因為它涉及管理和分發長期憑證，這應該避免。D . 通過腳本檢索訪問密鑰：這種方法不必要地複雜，並且不如使用IAM角色安全，後者自動提供臨時憑證。"
+    },
+    {
+      "id": 878,
+      "type": "single",
+      "question": "一家公司創建操作數據並將數據存儲在Amazon S3桶中，以便於公司的年度審計，一位外部顧問需要訪問存儲在S3桶中的年度報告。外部顧問需要訪問該報告7天。公司必須實施一個解決方案，以允許外部顧問僅訪問該報告。哪種解決方案能以最高的操作效率滿足這些要求？",
+      "options": {
+        "A": "創建一個新的S3桶，配置為托管公共靜態網站。將操作數據遷移到新的S3桶中。與外部顧問共享S3網站URL。",
+        "B": "在7天內啟用對S3桶的公共訪問。在外部顧問完成審計後，撤銷對S3桶的訪問。",
+        "C": "創建一個具有對S3桶中報告訪問權限的IAM用戶。將訪問密鑰提供給外部顧問。在7天後撤銷訪問密鑰。",
+        "D": "生成一個預簽名URL，該URL具有對S3桶中報告位置的所需訪問權限。與外部顧問共享預簽名URL。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "預簽名URL允許在不需要將桶設為公共或創建和管理額外的IAM用戶的情況下，臨時訪問S3桶中的特定對象。該URL是時間限制的，權限僅授予特定對象（在這種情況下為年度報告），使其成為一個高度安全且操作效率高的解決方案。通過預簽名URL，顧問可以在指定的時間內（7天）訪問報告，之後該URL將自動過期，無需手動干預以撤銷訪問。AWS參考：Amazon S3預簽名URL解釋了如何生成預簽名URL以授予對S3對象的臨時訪問。S3安全最佳實踐強調使用預簽名URL安全地共享對S3對象的臨時訪問。為什麼其他選項不正確：A . 公共靜態網站：這種方法涉及使S3桶公開可訪問，這對於敏感數據來說是不必要且不安全的。B . 啟用公共訪問：即使是暫時授予對整個桶的公共訪問也是一個安全風險，並違反最佳實踐。C . 創建IAM用戶：創建IAM用戶並管理憑證對於這種短期需求來說是不必要的開銷，並且不如預簽名URL安全。"
+    },
+    {
+      "id": 879,
+      "type": "single",
+      "question": "一家金融公司正在將其交易平台遷移到AWS。該交易平台處理大量市場數據並處理股票交易。該公司需要建立一個穩定的、低延遲的網絡連接，將其本地數據中心連接到AWS。該公司將在VPC中托管資源。解決方案不得使用公共互聯網。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用AWS Client VPN將本地數據中心連接到AWS。",
+        "B": "使用AWS Direct Connect設置從本地數據中心到AWS的連接。",
+        "C": "使用AWS PrivateLink設置從本地數據中心到AWS的連接。",
+        "D": "使用AWS Site-to-Site VPN將本地數據中心連接到AWS。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "AWS Direct Connect是建立從本地數據中心到AWS的穩定、低延遲連接的最佳解決方案，而不使用公共互聯網。Direct Connect提供專用的、高吞吐量和低延遲的網絡連接，這對於處理大量市場數據和股票交易的性能敏感型應用程序（如交易平台）非常理想。Direct Connect為您的AWS VPC提供私有連接，確保數據不會穿越公共互聯網，從而增強安全性和性能一致性。AWS參考：AWS Direct Connect提供到AWS服務的專用網絡連接，具有一致的低延遲性能。AWS高性能最佳實踐適用於性能敏感的工作負載，如交易平台。為什麼其他選項不正確：A . AWS Client VPN：雖然這提供安全連接，但它是通過公共互聯網，並不適合交易平台的低延遲、高性能需求。C . AWS PrivateLink：PrivateLink用於連接AWS內的VPC和服務，但不適合將本地數據中心連接到AWS。D . AWS Site-to-Site VPN：雖然這提供安全連接，但它使用公共互聯網，這可能會引入延遲，並不符合用例的低延遲要求。"
+    },
+    {
+      "id": 880,
+      "type": "single",
+      "question": "一位解決方案架構師正在設計一個由靜態內容組成的公司網站的架構。公司的目標客戶位於美國和歐洲。解決方案架構師應該推薦哪種架構以最小化成本？",
+      "options": {
+        "A": "將網站文件存儲在us-east-2區域的Amazon S3上。使用配置為限制使用的邊緣位置的Amazon CloudFront分發。",
+        "B": "將網站文件存儲在us-east-2區域的Amazon S3上。使用配置為最大化邊緣位置使用的Amazon CloudFront分發。",
+        "C": "將網站文件存儲在us-east-2區域和eu-west-1區域的Amazon S3上。使用Amazon CloudFront地理位置路由策略將請求路由到距用戶最近的區域。",
+        "D": "將網站文件存儲在us-east-2區域和eu-west-1區域的Amazon S3上。使用Amazon CloudFront分發和Amazon Route 53延遲路由策略將請求路由到距用戶最近的區域。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "該問題專注於在向美國和歐洲的用戶提供靜態內容時最小化成本。選項A使用單個S3桶並配置CloudFront以限制邊緣位置，通過使用較少的邊緣位置來降低成本，同時仍然提高性能。選項B最大化邊緣位置，這會不必要地增加成本。選項C和D涉及在多個區域存儲數據，這會增加存儲和運營成本。因此，選項A是最具成本效益的解決方案。"
+    },
+    {
+      "id": 881,
+      "type": "single",
+      "question": "一家公司在多個可用區域部署了一個運行於 Amazon RDS 實例上的資料庫。一個定期的腳本通過查詢資料庫對一個關鍵應用程式產生了負面影響。如何以最小的成本改善應用程式性能？",
+      "options": {
+        "A": "為腳本添加功能，以識別活動連接最少的實例並查詢該實例。",
+        "B": "創建資料庫的只讀副本。配置腳本僅查詢該只讀副本。",
+        "C": "指示開發團隊在一天結束時手動導出新條目。",
+        "D": "使用 Amazon ElastiCache 來緩存腳本運行的常見查詢。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "選項 A 引入了複雜性，且擴展性不佳。\n選項 B 創建了一個只讀副本，將讀取流量從主 RDS 實例卸載，且不影響關鍵應用程式。\n選項 C 是手動且低效的。\n選項 D 可能有助於緩存經常查詢的數據，但對於臨時報告來說並不理想。\n因此，選項 B 是最佳選擇。"
+    },
+    {
+      "id": 882,
+      "type": "single",
+      "question": "一家公司使用 Amazon API Gateway REST API 和 AWS Lambda 開發了一個 API。如何減少全球用戶的延遲？",
+      "options": {
+        "A": "將 REST API 部署為邊緣優化的 API 端點。啟用緩存。啟用內容編碼以壓縮傳輸中的數據。",
+        "B": "將 REST API 部署為區域 API 端點。啟用緩存。啟用內容編碼以壓縮傳輸中的數據。",
+        "C": "將 REST API 部署為邊緣優化的 API 端點。啟用緩存。為 Lambda 函數配置保留併發性。",
+        "D": "將 REST API 部署為區域 API 端點。啟用緩存。為 Lambda 函數配置保留併發性。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "邊緣優化的 API 端點通過 CloudFront 路由請求，減少全球用戶的延遲。\n選項 A 正確實現了邊緣優化、緩存和壓縮以最小化延遲。\n選項 B 和 D 不使用邊緣優化，導致全球用戶的延遲更高。\n選項 C 和 D 中的保留併發性改善了後端擴展性，但並未直接解決全球延遲問題。"
+    },
+    {
+      "id": 883,
+      "type": "single",
+      "question": "一家律師事務所如何使文件公開可讀，同時防止在特定未來日期之前的修改或刪除？",
+      "options": {
+        "A": "將文件上傳到配置為靜態網站託管的 Amazon S3 存儲桶。授予任何 AWS 主體只讀 IAM 權限。",
+        "B": "創建一個 S3 存儲桶。啟用 S3 版本控制。使用 S3 對象鎖定和保留期。創建 CloudFront 發行版。使用存儲桶策略限制訪問。",
+        "C": "創建一個 S3 存儲桶。啟用 S3 版本控制。配置 AWS Lambda 的事件觸發器以從私有 S3 存儲桶恢復已修改的對象。",
+        "D": "將文件上傳到用於靜態網站託管的 S3 存儲桶。使用 S3 對象鎖定和保留期。授予只讀 IAM 權限。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "選項 B 確保使用 S3 對象鎖定和版本控制以滿足不可變性的合規性。\nCloudFront 增強了性能，而存儲桶策略確保了安全訪問。\n選項 A 缺乏不可變性保障。\n選項 C 引入了不必要的複雜性。\n選項 D 錯過了 CloudFront 提供的額外安全好處。"
+    },
+    {
+      "id": 884,
+      "type": "single",
+      "question": "一家媒體公司在 AWS 上託管一個用於上傳視頻的網頁應用程式。只有經過身份驗證的用戶應在身份驗證後的特定時間範圍內上傳。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "配置應用程式為經過身份驗證的用戶生成 IAM 臨時安全憑證。",
+        "B": "創建一個 AWS Lambda 函數，當用戶身份驗證時生成預簽名 URL。",
+        "C": "開發一個自定義身份驗證服務，與 Amazon Cognito 集成，以控制和記錄通過應用程式對 S3 存儲桶的直接訪問。",
+        "D": "使用 AWS 安全令牌服務 (AWS STS) 假設一個預定義的 IAM 角色，該角色授予經過身份驗證的用戶臨時權限以直接上傳視頻到 S3 存儲桶。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "選項 B：預簽名 URL 提供臨時的、經過身份驗證的 S3 訪問，限制上傳在指定的時間範圍內。這種解決方案輕便、高效且易於實施。\n選項 A 需要管理 IAM 臨時憑證，增加了複雜性。\n選項 C 涉及不必要的開發工作。\n選項 D 引入了比預簽名 URL 更複雜的 STS 和角色。"
+    },
+    {
+      "id": 885,
+      "type": "single",
+      "question": "一家公司需要大規模地攝取和分析來自車輛的遙測數據，以進行機器學習和報告。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用 Amazon Timestream 進行 LiveAnalytics 來存儲數據點。授予 Amazon SageMaker 訪問數據的權限。使用 Amazon QuickSight 可視化數據。",
+        "B": "使用 Amazon DynamoDB 存儲數據點。使用 DynamoDB 連接器將數據攝取到 Amazon EMR 進行處理。使用 Amazon QuickSight 可視化數據。",
+        "C": "使用 Amazon Neptune 存儲數據點。使用 Amazon Kinesis 數據流將數據攝取到 Lambda 函數進行處理。使用 Amazon QuickSight 可視化數據。",
+        "D": "使用 Amazon Timestream 進行 LiveAnalytics 來存儲數據點。授予 Amazon SageMaker 訪問數據的權限。使用 Amazon Athena 可視化數據。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon Timestream 專為存儲和分析像遙測這樣的時間序列數據而設計。\n選項 A 利用 Timestream、SageMaker 進行機器學習和 QuickSight 進行可視化，以最小的複雜性滿足所有要求。\n選項 B 涉及更複雜的 DynamoDB-EMR 集成。\n選項 C 使用 Neptune，這是為圖形數據庫設計的，而不是遙測數據。\n選項 D 錯誤地使用 Athena 進行可視化，而不是 QuickSight。"
+    },
+    {
+      "id": 886,
+      "type": "single",
+      "question": "一家公司在 EC2 實例上運行應用程式，需要訪問存儲在 AWS Secrets Manager 中的 RDS 憑證。哪種解決方案滿足這一要求？",
+      "options": {
+        "A": "創建一個 IAM 角色，並將該角色附加到每個 EC2 實例配置檔。使用基於身份的策略授予該角色訪問秘密的權限。",
+        "B": "創建一個 IAM 用戶，並將該用戶附加到每個 EC2 實例配置檔。使用基於資源的策略授予該用戶訪問秘密的權限。",
+        "C": "為秘密創建一個基於資源的策略。使用 EC2 實例連接訪問秘密。",
+        "D": "為秘密創建一個基於身份的策略。授予 EC2 實例直接訪問權限。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "選項 A 使用附加到 EC2 實例配置檔的 IAM 角色，實現對 Secrets Manager 的安全和自動訪問。這是推薦的方法。\n選項 B 使用 IAM 用戶，這樣的安全性較低且管理較困難。\n選項 C 在以程式方式訪問秘密時不實用。\n選項 D 通過授予 EC2 實例直接訪問權限違反了最佳實踐。"
+    },
+    {
+      "id": 887,
+      "type": "multiple",
+      "question": "一家公司需要一個基於雲的解決方案來進行備份、恢復和存檔，同時保留對加密金鑰材料的控制。哪種解決方案的組合可以滿足這些要求？（選擇兩個）",
+      "options": {
+        "A": "創建一個不帶金鑰材料的 AWS Key Management Service (AWS KMS) 金鑰。將公司的金鑰材料導入 KMS 金鑰中。",
+        "B": "創建一個包含 AWS KMS 生成的金鑰材料的 AWS KMS 加密金鑰。",
+        "C": "將數據存儲在 Amazon S3 標準-不常訪問 (S3 Standard-IA) 中。使用 AWS KMS 金鑰的 S3 存儲桶金鑰。",
+        "D": "將數據存儲在 Amazon S3 Glacier 存儲類中。使用客戶提供的金鑰進行伺服器端加密 (SSE-C)。",
+        "E": "將數據存儲在 AWS Snowball 設備中。使用 AWS KMS 金鑰進行伺服器端加密 (SSE-KMS)。"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "explanation": "選項 A 允許將自己的加密金鑰導入 AWS KMS，確保對金鑰材料的控制。\n選項 D 使用 S3 Glacier 和 SSE-C，客戶控制加密金鑰，滿足合規需求。\n選項 B 使用 AWS 管理的金鑰材料，違反了對金鑰材料控制的要求。\n選項 C 和 E 不完全符合控制要求。"
+    },
+    {
+      "id": 888,
+      "type": "single",
+      "question": "一個網站使用帶有自動擴展和 EFS 的 EC2 實例。公司如何優化成本？",
+      "options": {
+        "A": "重新配置自動擴展組以設置所需的實例數量。關閉計劃擴展。",
+        "B": "創建一個新的啟動模板版本，使用更大的 EC2 實例。",
+        "C": "重新配置自動擴展組以使用目標跟踪擴展策略。",
+        "D": "用實例存儲卷替換 EFS 卷。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "選項 C 確保根據需求使用目標跟踪擴展策略進行動態擴展，優化成本。\n選項 A 導致過度配置，導致更高的成本。\n選項 B 通過使用更大的實例增加成本。\n選項 D 不可行，因為實例存儲卷是短暫的，不適合像 EFS 這樣的共享存儲。"
+    },
+    {
+      "id": 889,
+      "type": "single",
+      "question": "一家公司正在開發一個社交媒體應用程式，必須能夠擴展以應對需求高峰並處理有序過程。哪些 AWS 服務滿足這些要求？",
+      "options": {
+        "A": "ECS 與 Fargate、RDS 和 SQS 進行解耦。",
+        "B": "ECS 與 Fargate、RDS 和 SNS 進行解耦。",
+        "C": "DynamoDB、Lambda、DynamoDB Streams 和 Step Functions。",
+        "D": "Elastic Beanstalk、RDS 和 SNS 進行解耦。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "選項 A 將 ECS 與 Fargate 結合以實現可擴展性，使用 RDS 進行關聯數據，並使用 SQS 進行解耦和消息排序（FIFO 隊列）。\n選項 B 使用 SNS，這不維護消息順序。\n選項 C 適合無伺服器工作流，但不適用於關聯數據。\n選項 D 依賴於 Elastic Beanstalk，這對擴展的靈活性較低。"
+    },
+    {
+      "id": 890,
+      "type": "single",
+      "question": "公司如何檢測並通知安全團隊有關 S3 存儲桶中的 PII？",
+      "options": {
+        "A": "使用 Amazon Macie。為 SensitiveData 發現創建 EventBridge 規則並發送 SNS 通知。",
+        "B": "使用 Amazon GuardDuty。為 CRITICAL 發現創建 EventBridge 規則並發送 SNS 通知。",
+        "C": "使用 Amazon Macie。為 SensitiveData:S3Object/Personal 發現創建 EventBridge 規則並發送 SQS 通知。",
+        "D": "使用 Amazon GuardDuty。為 CRITICAL 發現創建 EventBridge 規則並發送 SQS 通知。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon Macie 專門用於檢測 S3 中的 PII。\n選項 A 使用 EventBridge 過濾 SensitiveData 發現並通過 SNS 通知，滿足要求。\n選項 B 和 D 涉及 GuardDuty，這不是為 PII 檢測而設計的。\n選項 C 使用 SQS，這不太適合即時通知。"
+    },
+    {
+      "id": 891,
+      "type": "multiple",
+      "question": "一家公司運行需要高 IOPS 的 HPC 工作負載。哪種步驟的組合可以滿足這些要求？（選擇兩項）",
+      "options": {
+        "A": "使用 Amazon EFS 作為高性能檔案系統。",
+        "B": "使用 Amazon FSx for Lustre 作為高性能檔案系統。",
+        "C": "創建一個 EC2 實例的自動擴展組。使用保留實例。配置擴展放置組。使用 AWS Batch 進行分析。",
+        "D": "使用 Mountpoint for Amazon S3 作為高性能檔案系統。",
+        "E": "創建一個 EC2 實例的自動擴展組。使用混合實例類型和集群放置組。使用 Amazon EMR 進行分析。"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "explanation": "選項 B：FSx for Lustre 專為高 IOPS 的 HPC 工作負載而設計。\n選項 E：集群放置組確保 HPC 分析工作負載的低延遲網絡。\n選項 A：Amazon EFS 並未針對 HPC 進行優化。\n選項 D：Mountpoint for S3 無法滿足高 IOPS 需求。"
+    },
+    {
+      "id": 892,
+      "type": "single",
+      "question": "如何將 DynamoDB 的交易數據攝取到 S3 數據湖中，以進行近實時分析？",
+      "options": {
+        "A": "使用 DynamoDB Streams 來調用一個 Lambda 函數，將數據寫入 S3。",
+        "B": "使用 DynamoDB Streams 來調用一個 Lambda 函數，將數據寫入 Data Firehose，然後寫入 S3。",
+        "C": "在 DynamoDB 上啟用 Kinesis Data Streams。配置它以調用一個 Lambda 函數，將數據寫入 S3。",
+        "D": "在 DynamoDB 上啟用 Kinesis Data Streams。使用 Data Firehose 寫入 S3。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "選項 A 是最簡單的解決方案，使用 DynamoDB Streams 和 Lambda 進行實時攝取到 S3。\n選項 B、C 和 D 增加了不必要的複雜性，涉及 Data Firehose 或 Kinesis。"
+    },
+    {
+      "id": 893,
+      "type": "single",
+      "question": "如何使 DynamoDB 數據可用於長期分析，並且操作開銷最小？",
+      "options": {
+        "A": "配置 DynamoDB 增量導出到 S3。",
+        "B": "配置 DynamoDB Streams 將記錄寫入 S3。",
+        "C": "配置 EMR 將 DynamoDB 數據複製到 S3。",
+        "D": "配置 EMR 將 DynamoDB 數據複製到 HDFS。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "選項 A 是將數據導出到 S3 以進行分析的最自動化和成本效益的解決方案。\n選項 B 涉及手動設置 Streams 到 S3。\n選項 C 和 D 引入了 EMR 的複雜性。"
+    },
+    {
+      "id": 894,
+      "type": "multiple",
+      "question": "一家公司在本地運行 Microsoft Windows SMB 檔案共享以支持應用程序。該公司希望將應用程序遷移到 AWS。該公司希望在多個 Amazon EC2 實例之間共享存儲。哪種解決方案可以以最少的操作開銷滿足這些要求？（選擇兩項。）",
+      "options": {
+        "A": "創建一個具有彈性吞吐量的 Amazon Elastic File System (Amazon EFS) 檔案系統。",
+        "B": "創建一個 Amazon FSx for NetApp ONTAP 檔案系統。",
+        "C": "使用 Amazon Elastic Block Store (Amazon EBS) 在實例上創建自我管理的 Windows 檔案共享。",
+        "D": "創建一個 Amazon FSx for Windows File Server 檔案系統。",
+        "E": "創建一個 Amazon FSx for OpenZFS 檔案系統。"
+      },
+      "answers": [
+        "A",
+        "D"
+      ],
+      "explanation": "A. Amazon EFS：提供可擴展的共享檔案存儲解決方案，操作開銷最小。\n它非常適合基於 Linux 的工作負載。\nB. Amazon FSx for NetApp ONTAP：更適合需要 NetApp 特定功能的工作負載。\nC. Amazon EBS：需要手動管理檔案共享，這增加了操作開銷。\nD. Amazon FSx for Windows File Server：最適合低操作開銷的 Windows SMB 工作負載。\nE. Amazon FSx for OpenZFS：更適合基於 Linux 和 Unix 的工作負載。\n參考：Amazon EFS，Amazon FSx"
+    },
+    {
+      "id": 895,
+      "type": "single",
+      "question": "一位解決方案架構師需要實施一個可以處理每秒最多 5,000 條消息的解決方案。該解決方案必須將消息作為事件發布給多個消費者。消息大小最多為 500 KB。消息消費者需要能夠使用多種編程語言以最小延遲消費消息。該解決方案必須保留已發布的消息超過 3 個月。該解決方案必須強制執行消息的嚴格排序。哪種解決方案可以滿足這些要求？",
+      "options": {
+        "A": "將消息發布到 Amazon Kinesis Data Streams 數據流。啟用增強的扇出。確保消費者使用專用吞吐量攝取數據流。",
+        "B": "將消息發布到 Amazon Simple Notification Service (Amazon SNS) 主題。確保消費者使用 Amazon Simple Queue Service (Amazon SQS) FIFO 隊列訂閱該主題。",
+        "C": "將消息發布到 Amazon EventBridge。允許每個消費者創建規則以將消息傳遞到消費者自己的目標。",
+        "D": "將消息發布到 Amazon Simple Notification Service (Amazon SNS) 主題。確保消費者使用 Amazon Data Firehose 訂閱該主題。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A. Kinesis Data Streams：支持高吞吐量、嚴格排序、多個消費者和 365 天的數據保留。\nB. SNS + SQS FIFO：可以強制執行排序，但缺乏對 500 KB 消息和保留要求的原生支持。\nC. EventBridge：缺乏嚴格排序和消息大小兼容性。\nD. SNS + Firehose：不適合嚴格排序或大消息大小。\n參考：Amazon Kinesis Data Streams"
+    },
+    {
+      "id": 896,
+      "type": "single",
+      "question": "一家公司計劃將一個使用 MySQL 的本地在線交易處理 (OLTP) 數據庫遷移到 AWS 管理的數據庫管理系統。幾個報告和分析應用程序在周末和每個月末大量使用本地數據庫。雲端解決方案必須能夠處理周末和每個月末的讀取高峰。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "將數據庫遷移到 Amazon Aurora MySQL 集群。配置 Aurora 自動擴展以使用副本來處理高峰。",
+        "B": "將數據庫遷移到運行 MySQL 的 Amazon EC2 實例。使用具有臨時存儲的 EC2 實例類型。將 Amazon EBS 提供的 IOPS SSD (io2) 卷附加到實例。",
+        "C": "將數據庫遷移到 Amazon RDS for MySQL 數據庫。將 RDS for MySQL 數據庫配置為多可用區部署，並設置自動擴展。",
+        "D": "將數據庫遷移到 Amazon Redshift。將 Amazon Redshift 用作 OLTP 和分析應用程序的數據庫。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A. Aurora MySQL：有效處理 OLTP 工作負載，具有內置的複製和自動擴展能力。\nB. EC2 與 MySQL：需要大量手動維護，無法無縫擴展。\nC. RDS for MySQL：與 Aurora 相比，自動擴展有限。\nD. Redshift：主要用於 OLAP，不適合 OLTP 工作負載。\n參考：Amazon Aurora"
+    },
+    {
+      "id": 897,
+      "type": "single",
+      "question": "一家公司最近將數據倉庫遷移到 AWS。該公司與 AWS 之間有 AWS Direct Connect 連接。公司用戶使用可視化工具查詢數據倉庫。數據倉庫返回的查詢平均大小為 50 MB。可視化工具生成的可視化平均大小為 500 KB。數據倉庫返回的結果集未被緩存。該公司希望優化數據倉庫與公司之間的數據傳輸成本。哪種解決方案能滿足這一要求？",
+      "options": {
+        "A": "將可視化工具托管在本地。通過互聯網直接連接到數據倉庫。",
+        "B": "將可視化工具托管在與數據倉庫相同的 AWS 區域。通過互聯網訪問可視化工具。",
+        "C": "將可視化工具托管在本地。通過 Direct Connect 連接到數據倉庫。",
+        "D": "將可視化工具托管在與數據倉庫相同的 AWS 區域。通過 Direct Connect 連接訪問可視化工具。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "A. 本地工具通過互聯網：由於大量數據傳輸，成本高。\nB. AWS 區域工具通過互聯網：未利用 Direct Connect，導致潛在延遲和更高成本。\nC. 本地工具通過 Direct Connect：增加查詢和可視化的延遲。\nD. AWS 區域工具通過 Direct Connect：減少延遲並利用 Direct Connect 來優化數據傳輸成本。\n參考：AWS Direct Connect"
+    },
+    {
+      "id": 898,
+      "type": "multiple",
+      "question": "一家公司在 AWS 上運行訂單管理應用程序。該應用程序允許客戶下訂單並使用信用卡付款。該公司使用 Amazon CloudFront 發佈應用程序。安全團隊已設置所有傳入請求的日誌記錄。安全團隊需要一種解決方案來生成警報，以便在任何用戶修改日誌配置時發出警報。哪種解決方案的組合能滿足這些要求？（選擇兩個。）",
+      "options": {
+        "A": "配置一個 Amazon EventBridge 規則，當用戶創建或修改 CloudFront 發佈時觸發。將 AWS Lambda 函數添加為 EventBridge 規則的目標。",
+        "B": "創建一個應用程序負載均衡器 (ALB)。為 ALB 啟用 AWS WAF 規則。配置 AWS Config 規則以檢測安全違規。",
+        "C": "創建一個 AWS Lambda 函數以檢測 CloudFront 發佈日誌的變更。配置 Lambda 函數使用 Amazon Simple Notification Service (Amazon SNS) 向安全團隊發送通知。",
+        "D": "設置 Amazon GuardDuty。配置 GuardDuty 監控來自 CloudFront 發佈的發現。創建一個 AWS Lambda 函數來處理這些發現。",
+        "E": "在 Amazon API Gateway 中創建一個私有 API。使用 AWS WAF 規則保護私有 API 免受常見安全問題。"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "A. EventBridge 規則：每當 CloudFront 發佈發生變更時觸發事件，確保實時監控。\nB. ALB 與 WAF：專注於應用層安全，而不是 CloudFront 日誌。\nC. Lambda + SNS：在檢測到日誌配置變更時提供通知。\nD. GuardDuty：監控異常，但不專門處理 CloudFront 日誌變更。\nE. 私有 API + WAF：與 CloudFront 日誌變更無關。\n參考：Amazon EventBridge, AWS Lambda"
+    },
+    {
+      "id": 899,
+      "type": "single",
+      "question": "一家公司擁有一個處理動態流量負載的網站。該網站架構基於 Amazon EC2 實例，這些實例位於配置為使用計劃擴展的 Auto Scaling 組中。每個 EC2 實例運行來自 Amazon Elastic File System (Amazon EFS) 卷的代碼，並將共享數據存儲回同一卷。該公司希望優化網站的成本。哪種解決方案能滿足這一要求？",
+      "options": {
+        "A": "重新配置 Auto Scaling 組以設置所需的實例數。關閉計劃擴展。",
+        "B": "為 Auto Scaling 組創建一個新的啟動模板版本，使用更大的 EC2 實例。",
+        "C": "重新配置 Auto Scaling 組以使用目標跟踪擴展策略。",
+        "D": "用實例存儲卷替換 EFS 卷。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A. 固定所需實例：無法適應流量負載波動，導致效率低下。\nB. 更大的 EC2 實例：不必要地增加成本。\nC. 目標跟踪擴展策略：根據實際需求調整容量，優化成本。\nD. 實例存儲卷：不持久且不適合跨實例共享數據。\n參考：Auto Scaling"
+    },
+    {
+      "id": 900,
+      "type": "single",
+      "question": "一家公司希望為在私有數據中心運行的第三方系統提供訪問其 AWS 帳戶的權限。該公司希望直接從第三方系統調用 AWS API。該公司有一個現有的數字證書管理流程。該公司不希望使用 SAML 或 OpenID Connect (OIDC) 功能，也不希望存儲長期的 AWS 憑證。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "配置雙向 TLS 以允許驗證通信通道的客戶端和服務器端。",
+        "B": "配置 AWS 簽名版本 4 以驗證傳入的 HTTPS 請求到 AWS API。",
+        "C": "配置 Kerberos 以交換可以由 AWS API 驗證的票據。",
+        "D": "配置 AWS 身份和訪問管理 (IAM) Roles Anywhere 以交換 X.509 證書以獲取 AWS 憑證以與 AWS API 互動。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "A. 雙向 TLS：提供安全通信，但不與 AWS 憑證交換集成。\nB. AWS 簽名 v4：需要與 AWS 直接集成，對外部系統的安全性較低。\nC. Kerberos：不原生支持 AWS API 驗證。\nD. IAM Roles Anywhere：允許使用 X.509 證書訪問 AWS API，而無需長期憑證。\n參考：IAM Roles Anywhere"
+    }
+  ]
+}

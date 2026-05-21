@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-chinese",
+    "file": "saa-019.json",
+    "question_range": "Q901-Q912",
+    "total_questions": 12
+  },
+  "questions": [
+    {
+      "id": 901,
+      "type": "single",
+      "question": "一家公司正在將一個新應用程式從本地數據中心遷移到 AWS 雲中的新 VPC。該公司擁有多個 AWS 帳戶和 VPC，並共享許多子網和應用程式。該公司希望對新應用程式進行細粒度的訪問控制。該公司希望確保所有被授權訪問新應用程式的帳戶和 VPC 中的網絡資源都能訪問該應用程式。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "為每個需要訪問新應用程式 VPC 的 VPC 設置 VPC 對等連接。更新每個 VPC 中的路由表以啟用連接。",
+        "B": "在承載新應用程式的帳戶中部署一個傳輸網關。將傳輸網關與每個需要連接到應用程式的帳戶共享。更新承載新應用程式的 VPC 和傳輸網關中的路由表以啟用連接。",
+        "C": "使用 AWS PrivateLink 端點服務使新應用程式可供其他 VPC 訪問。通過使用端點策略控制對應用程式的訪問。",
+        "D": "使用應用程式負載平衡器 (ALB) 將新應用程式暴露給互聯網。配置身份驗證和授權流程，以確保只有指定的 VPC 可以訪問該應用程式。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "A. VPC 對等連接：創建了一個完全網狀的架構，對於多個 VPC 來說管理起來較為複雜。\nB. 傳輸網關：通過通過中央集線器連接多個 VPC 和本地網絡，簡化了網絡管理。\nC. PrivateLink：限制了對應用程式端點的通信，但可能不允許完全的 VPC 連接。\nD. ALB 與互聯網暴露：不安全或不特定於私有網絡通信。\n參考：AWS Transit Gateway"
+    },
+    {
+      "id": 902,
+      "type": "single",
+      "question": "一家公司正在創建一個應用程式。該公司將應用程式的測試數據存儲在多個本地位置。該公司需要將本地位置連接到 AWS 雲中 AWS 區域的 VPC。隨著未來一年帳戶和 VPC 數量的增加，網絡架構必須簡化新連接的管理，並提供擴展能力。哪種解決方案能以最少的管理開銷滿足這些要求？",
+      "options": {
+        "A": "在 VPC 之間創建對等連接。在 VPC 和本地位置之間創建 VPN 連接。",
+        "B": "啟動一個 Amazon EC2 實例。在該實例上，包含使用 VPN 連接連接所有 VPC 和本地位置的 VPN 軟件。",
+        "C": "創建一個傳輸網關。為 VPC 連接創建 VPC 附加。為本地連接創建 VPN 附加。",
+        "D": "在本地位置和中央 VPC 之間創建 AWS Direct Connect 連接。通過使用對等連接將中央 VPC 連接到其他 VPC。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A. VPC 對等連接 + VPN：對於多個 VPC 和帳戶來說不具擴展性。\nB. 帶有 VPN 軟件的 EC2：需要手動設置和高管理開銷。\nC. 傳輸網關：簡化了跨 VPC 和本地位置的連接管理。\nD. 與中央 VPC 的 Direct Connect：限制了擴展性並需要額外的對等連接。\n參考：AWS Transit Gateway"
+    },
+    {
+      "id": 903,
+      "type": "single",
+      "question": "一家公司正在增強其 AWS 環境的安全性，該公司存儲了大量敏感的客戶數據。該公司需要一種解決方案，自動識別和分類存儲在多個 Amazon S3 存儲桶中的敏感數據。該解決方案必須在發現不合規數據時，自動響應數據洩露並立即通過電子郵件提醒公司的安全團隊。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用 Amazon GuardDuty。配置一個 AWS Lambda 函數將警報路由到 Amazon Simple Notification Service (Amazon SNS) 主題。訂閱安全團隊到 SNS 主題。",
+        "B": "使用 Amazon GuardDuty。配置一個 AWS Lambda 函數將警報路由到 Amazon Simple Queue Service (Amazon SQS) 隊列。配置第二個 Lambda 函數定期輪詢 SQS 隊列，並使用 Amazon Simple Email Service (Amazon SES) 向安全團隊發送電子郵件。",
+        "C": "使用 Amazon Macie。將 Amazon EventBridge 與 Macie 集成，並配置 EventBridge 將警報發送到 Amazon Simple Notification Service (Amazon SNS) 主題。訂閱安全團隊到 SNS 主題。",
+        "D": "使用 Amazon Macie。將 Amazon EventBridge 與 Macie 集成，並配置 EventBridge 將警報路由到 Amazon Simple Queue Service (Amazon SQS) 隊列。配置一個 AWS Lambda 函數定期輪詢 SQS 隊列，並使用 Amazon Simple Email Service (Amazon SES) 向安全團隊發送警報。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A & B. GuardDuty：設計用於威脅檢測，而不是識別或分類 S3 存儲桶中的敏感數據。\nC. Macie 與 EventBridge + SNS：自動識別敏感數據，觸發警報，並使用 SNS 進行電子郵件的即時通知。\nD. Macie 與 EventBridge + SQS：由於定期輪詢引入延遲，並增加不必要的複雜性。\n參考：Amazon Macie, Amazon EventBridge"
+    },
+    {
+      "id": 904,
+      "type": "single",
+      "question": "一家電子商務公司計劃將本地 Microsoft SQL Server 數據庫遷移到 AWS 雲。該公司需要將數據庫遷移到 SQL Server Always On 可用性組。基於雲的解決方案必須具有高可用性。選項：",
+      "options": {
+        "A": "在三個可用區部署三個 Amazon EC2 實例，並安裝 SQL Server。將一個 Amazon Elastic Block Store (Amazon EBS) 卷附加到 EC2 實例。",
+        "B": "將數據庫遷移到 Amazon RDS for SQL Server。配置多可用區部署和只讀副本。",
+        "C": "在三個可用區部署三個 Amazon EC2 實例，並使用 Amazon FSx for Windows File Server 作為存儲層。",
+        "D": "在三個可用區部署三個 Amazon EC2 實例，並使用 Amazon S3 作為存儲層。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "A. EC2 與 EBS：對 SQL Server Always On 可用性組的支持不佳。\nB. RDS 多可用區：提供高可用性，但不支持 SQL Server Always On 可用性組。\nC. EC2 與 FSx for Windows：對於 SQL Server Always On 的最佳解決方案，因為 FSx 提供與 SQL Server 集群兼容的共享存儲。\nD. EC2 與 S3：S3 不適合 SQL Server 存儲。\n參考：Amazon FSx for Windows"
+    },
+    {
+      "id": 905,
+      "type": "single",
+      "question": "一家公司正在開發一個高可用性的自然語言處理 (NLP) 應用程式。該應用程式處理大量的並發請求。該應用程式執行 NLP 任務，例如實體識別、情感分析和關鍵短語提取，針對文本數據。該公司需要將應用程式處理的數據存儲在一個高可用且可擴展的數據庫中。選項：",
+      "options": {
+        "A": "創建一個 Amazon API Gateway REST API 端點來處理傳入請求。配置 REST API 以調用每個請求的 AWS Lambda 函數。配置 Lambda 函數調用 Amazon Comprehend 以對文本數據執行 NLP 任務。將處理過的數據存儲在 Amazon DynamoDB 中。",
+        "B": "創建一個 Amazon API Gateway HTTP API 端點來處理傳入請求。配置 HTTP API 以調用每個請求的 AWS Lambda 函數。配置 Lambda 函數調用 Amazon Translate 以對文本數據執行 NLP 任務。將處理過的數據存儲在 Amazon ElastiCache 中。",
+        "C": "創建一個 Amazon SQS 隊列來緩衝傳入請求。在 Amazon EC2 實例的自動擴展組中部署 NLP 應用程式。使用 Amazon Comprehend 執行 NLP 任務。將處理過的數據存儲在 Amazon RDS 數據庫中。",
+        "D": "創建一個 Amazon API Gateway WebSocket API 端點來處理傳入請求。配置 WebSocket API 以調用每個請求的 AWS Lambda 函數。配置 Lambda 函數調用 Amazon Textract 以對文本數據執行 NLP 任務。將處理過的數據存儲在 Amazon ElastiCache 中。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A. API Gateway + DynamoDB：提供高可擴展性、低延遲，並與 Amazon Comprehend 進行 NLP 任務的無縫集成。\nB. HTTP API + Translate + ElastiCache：Translate 與情感分析或實體識別等 NLP 任務無關。ElastiCache 不適合永久存儲。\nC. SQS + EC2 + RDS：增加了複雜性和運營開銷。RDS 可能無法有效擴展以應對高並發負載。\nD. WebSocket API + Textract：Textract 與 NLP 任務無關。WebSocket API 不是此用例的最佳選擇。\n參考：Amazon Comprehend, Amazon DynamoDB"
+    },
+    {
+      "id": 906,
+      "type": "single",
+      "question": "一家公司使用 Amazon API Gateway REST API 和 AWS Lambda 函數開發了一個 API。該 API 為全球用戶提供靜態和動態內容。該公司希望減少 API 請求的內容傳輸延遲。選項：",
+      "options": {
+        "A": "將 REST API 部署為邊緣優化的 API 端點。啟用緩存。在 API 定義中啟用內容編碼，以壓縮傳輸中的應用數據。",
+        "B": "將 REST API 部署為區域 API 端點。啟用緩存。在 API 定義中啟用內容編碼，以壓縮傳輸中的應用數據。",
+        "C": "將 REST API 部署為邊緣優化的 API 端點。啟用緩存。為 Lambda 函數配置保留併發性。",
+        "D": "將 REST API 部署為區域 API 端點。啟用緩存。為 Lambda 函數配置保留併發性。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A . 邊緣優化 API + 緩存：通過使用 Amazon CloudFront 的邊緣位置來減少延遲，並為動態內容啟用緩存。壓縮減少數據傳輸延遲。\nB . 區域 API + 緩存：由於缺乏邊緣位置，全球用戶的延遲增加。\nC . 邊緣優化 API + 保留併發性：保留併發性確保 Lambda 可用性，但不解決動態內容的延遲。\nD . 區域 API + 保留併發性：缺乏邊緣優化，增加全球用戶的延遲。\n參考：Amazon API Gateway"
+    },
+    {
+      "id": 907,
+      "type": "single",
+      "question": "一家遊戲公司正在構建一個應用程序，使用數據庫來存儲用戶數據。該公司希望數據庫具有活動-活動配置，允許將數據寫入次要 AWS 區域。數據庫必須實現小於一秒的恢復點目標 (RPO)。選項：",
+      "options": {
+        "A": "部署一個 Amazon ElastiCache (Redis OSS) 集群。配置全球數據存儲以進行災難恢復。配置 ElastiCache 集群以緩存來自部署在主要區域的 Amazon RDS 數據庫的數據。",
+        "B": "在主要區域和次要區域部署一個 Amazon DynamoDB 表。配置 Amazon DynamoDB Streams 以調用 AWS Lambda 函數，將主要區域表中的更改寫入次要區域表。",
+        "C": "在主要區域部署一個 Amazon Aurora MySQL 數據庫。為次要區域配置全球數據庫。",
+        "D": "在主要區域部署一個 Amazon DynamoDB 表。為次要區域配置全球表。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "A . ElastiCache：提供內存緩存，不適合持久、可擴展的數據庫。\nB . DynamoDB Streams + Lambda：手動管理複製，增加延遲和操作複雜性。\nC . Aurora 全球數據庫：提供高可用性，但不支持活動-活動配置。\nD . DynamoDB 全球表：提供活動-活動配置和小於一秒的 RPO。\n參考：Amazon DynamoDB 全球表"
+    },
+    {
+      "id": 908,
+      "type": "single",
+      "question": "一家公司希望在 AWS 雲中實施數據湖。該公司必須確保只有特定團隊可以訪問數據湖中的敏感數據。該公司必須對數據湖實現行級訪問控制。選項：",
+      "options": {
+        "A": "使用 Amazon RDS 存儲數據。使用 IAM 角色和權限進行數據治理和訪問控制。",
+        "B": "使用 Amazon Redshift 存儲數據。使用 IAM 角色和權限進行數據治理和訪問控制。",
+        "C": "使用 Amazon S3 存儲數據。使用 AWS Lake Formation 進行數據治理和訪問控制。",
+        "D": "使用 AWS Glue Catalog 存儲數據。使用 AWS Glue DataBrew 進行數據治理和訪問控制。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "詳細\nA . RDS：適合關係型數據庫，但不提供對數據湖或行級訪問的本地支持。\nB . Redshift：主要用於分析，未設計為大規模數據湖治理。\nC . S3 + Lake Formation：提供對數據湖的本地支持，具有細粒度訪問控制，包括行級權限。\nD . Glue Catalog + DataBrew：專注於數據準備和元數據管理，而不是行級訪問控制。\n參考：AWS Lake Formation"
+    },
+    {
+      "id": 909,
+      "type": "single",
+      "question": "一家公司在 AWS 上托管一個多層庫存報告應用程序。該公司需要一個具有成本效益的解決方案來按需生成庫存報告。管理用戶需要能夠生成新報告。報告大約需要 5-10 分鐘才能完成。應用程序必須將報告發送到生成每個報告的管理用戶的電子郵件地址。選項：",
+      "options": {
+        "A": "使用 Amazon Elastic Container Service (Amazon ECS) 托管報告生成代碼。使用 Amazon API Gateway HTTP API 調用該代碼。使用 Amazon Simple Email Service (Amazon SES) 將報告發送給管理用戶。",
+        "B": "使用 Amazon EventBridge 調用計劃的 AWS Lambda 函數來生成報告。使用 Amazon Simple Notification Service (Amazon SNS) 將報告發送給管理用戶。",
+        "C": "使用 Amazon Elastic Kubernetes Service (Amazon EKS) 托管報告生成代碼。使用 Amazon API Gateway REST API 調用該代碼。使用 Amazon Simple Notification Service (Amazon SNS) 將報告發送給管理用戶。",
+        "D": "創建一個 AWS Lambda 函數來生成報告。使用函數 URL 調用該函數。使用 Amazon Simple Email Service (Amazon SES) 將報告發送給管理用戶。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "詳細\nA . ECS + API Gateway：對於按需的間歇性工作負載來說過於複雜和昂貴。\nB . EventBridge + SNS：EventBridge 調度對於按需生成來說是不必要的。\nC . EKS + API Gateway：對於此用例來說過度，運營開銷高。\nD . Lambda + SES：最具成本效益和高效的解決方案，用於按需生成和發送報告。\n參考：AWS Lambda，Amazon SES"
+    },
+    {
+      "id": 910,
+      "type": "single",
+      "question": "一家擁有多個 AWS 帳戶的公司維護著一個本地的 Microsoft Active Directory。該公司需要一個解決方案來實施員工的單點登錄。該公司希望使用 AWS IAM Identity Center。該解決方案必須滿足以下要求：允許用戶使用現有的 Active Directory 憑證訪問 AWS 帳戶和第三方應用程序。強制執行多因素身份驗證 (MFA) 以訪問 AWS 帳戶。集中管理訪問 AWS 帳戶和應用程序的權限。選項：",
+      "options": {
+        "A": "為每個 AWS 帳戶創建一個 Active Directory 的 IAM 身份提供者。確保 Active Directory 用戶和組通過 IAM 角色直接訪問 AWS 帳戶。使用 IAM Identity Center 在每個帳戶中強制執行所有用戶的 MFA。",
+        "B": "使用 AWS Directory Service 創建一個新的 AWS 管理的 Microsoft AD Active Directory。在每個帳戶中配置 IAM Identity Center，以使用新的 AWS 管理的 Microsoft AD Active Directory 作為身份來源。使用 IAM Identity Center 強制執行所有用戶的 MFA。",
+        "C": "使用 IAM Identity Center，將現有的 Active Directory 作為身份來源。強制執行所有用戶的 MFA。使用 AWS Organizations 和 Active Directory 組來管理 AWS 帳戶和應用程序訪問的權限。",
+        "D": "使用 AWS Lambda 函數定期同步 Active Directory 用戶和組與每個 AWS 帳戶中的 IAM 用戶和組。使用 IAM 角色和策略來管理應用程序訪問。創建第二個 Lambda 函數以強制執行 MFA。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "詳細\nA . IAM 身份提供者：不支持跨多個帳戶的集中管理。\nB . AWS 管理的 AD：如果已經存在本地 Active Directory，則不必要。\nC . IAM Identity Center + 現有 AD：將現有 Active Directory 集成到 SSO 的最佳方法，具有 MFA 和集中權限。\nD . 用於同步的 Lambda：增加了複雜性，並未利用 IAM Identity Center 的能力。\n參考：AWS IAM Identity Center"
+    },
+    {
+      "id": 911,
+      "type": "multiple",
+      "question": "一家公司在AWS上運行一個訂單管理應用程序。該應用程序允許客戶下訂單並使用信用卡付款。該公司使用Amazon CloudFront分發來交付應用程序。一個安全團隊已經設置了所有進入請求的日誌記錄。安全團隊需要一個解決方案來生成警報，如果任何用戶修改了日誌配置。選項（選擇兩個）：",
+      "options": {
+        "A": "配置一個Amazon EventBridge規則，當用戶創建或修改CloudFront分發時觸發。將AWS Lambda函數添加為EventBridge規則的目標。",
+        "B": "創建一個應用程序負載均衡器（ALB）。為ALB啟用AWS WAF規則。配置AWS Config規則以檢測安全違規。",
+        "C": "創建一個AWS Lambda函數來檢測CloudFront分發日誌的變更。配置Lambda函數使用Amazon Simple Notification Service（Amazon SNS）向安全團隊發送通知。",
+        "D": "設置Amazon GuardDuty。配置GuardDuty以監控來自CloudFront分發的發現。創建一個AWS Lambda函數來處理這些發現。",
+        "E": "在Amazon API Gateway中創建一個私有API。使用AWS WAF規則來保護私有API免受常見安全問題的影響。"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "詳細說明\nA . EventBridge規則：實時檢測CloudFront分發的修改並觸發Lambda函數進行進一步操作。\nB . ALB + Config：專注於ALB的安全違規，與CloudFront日誌變更無關。\nC . Lambda + SNS：提供有關日誌配置變更的實時通知。\nD . GuardDuty：專注於威脅檢測，而非日誌配置變更。\nE . API Gateway + WAF：與CloudFront日誌變更無關。\n參考：Amazon EventBridge，Amazon SNS"
+    },
+    {
+      "id": 912,
+      "type": "single",
+      "question": "一家公司在AWS上有一個三層環境，從用戶設備中接收傳感器數據。流量通過網絡負載均衡器（NLB），然後到達用於Web層的Amazon EC2實例，最後到達用於應用層的EC2實例，這些實例進行數據庫調用。解決方案架構師應該怎麼做來提高Web層數據傳輸的安全性？",
+      "options": {
+        "A": "配置TLS聽眾並在NLB上添加服務器證書",
+        "B": "配置AWS Shield Advanced並在NLB上啟用AWS WAF",
+        "C": "將負載均衡器更改為應用程序負載均衡器並將AWS WAF附加到其上",
+        "D": "使用AWS密鑰管理服務（AWS KMS）加密EC2實例上的Amazon Elastic Block Store（Amazon EBS）卷"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "A：如何保護您的數據在傳輸過程中？\n最佳實踐：\n實施安全的密鑰和證書管理：安全存儲加密密鑰和證書，並在適當的時間間隔內進行輪換，同時應用嚴格的訪問控制；例如，使用證書管理服務，如AWS Certificate Manager（ACM）。\n強制傳輸中的加密：根據適當的標準和建議強制執行您的加密要求，以幫助您滿足組織、法律和合規要求。\n自動檢測意外數據訪問：使用工具如GuardDuty自動檢測嘗試將數據移出定義邊界的行為，根據數據分類級別，例如，檢測一個木馬正在使用DNS協議將數據複製到未知或不受信任的網絡。\n驗證網絡通信：通過使用支持身份驗證的協議（如傳輸層安全性（TLS）或IPsec）來驗證通信的身份。"
+    }
+  ]
+}
