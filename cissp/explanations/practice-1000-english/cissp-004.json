@@ -8,12 +8,12 @@
   "questions": [
     {
       "id": 151,
-      "question": "Phreakers are hackers who specialize in telephone fraud. What type of telephone fraud/attack makes use of a device that generates tones to simulate inserting coins in pay phones, thus fooling the system into completing free calls? 241 Ill? lllll _€§%4§I§lEEi§3tii’l5l§l4Il§, ll/33|37i“l‘¥¥E‘] %i§,H£i'l5/I§rTlTT$Ul3HF”$’i%|‘iJ:\"»5]l§l‘Ji§§- l‘§TUl\"=UiUL%l%i?§Em, Mig/2¥=?}E7HEl3Z%%i@ii§?",
+      "question": "Where parties do not have a shared secret and large quantities of sensitive information must be passed, the most efficient means of transferring information is to use Hybrid Encryption Methods. What does this mean?",
       "options": {
-        "A": "White Boxes l§l€§'¥ E35:",
-        "B": "Blue Boxes Zljfr",
-        "C": "Red Boxes $55",
-        "D": "Black Boxes"
+        "A": "Use of software encryption assisted by a hardware encryption accelerator.",
+        "B": "Use of the recipient's public key for encryption and decryption based on the recipient's private key. lli%3'%5 5 i7 7E1 ]{ .\\ E)%lif1Jl1~.'\"%. Wililseil Bqfbtilitiiiij",
+        "C": "Use of public key encryption to secure a secret key, and message encryption using the secret key.",
+        "D": "Use of elliptic curve encryption."
       },
       "answers": [
         "C"
@@ -23,12 +23,12 @@
     },
     {
       "id": 152,
-      "question": "Under intellectual property law what would you call information that companies keep secret to give them an advantage over their competitors? l‘§€lE§EliFlTi7l‘1?£, >l%Z\\5]i%%El'~]\\ T<“F§‘5l55P‘ljl§§\"§‘l§l‘]i§§~l3Lll$5Iii‘Qs?",
+      "question": "Public Key Infrastructure (PKI) uses asymmetric key encryption between parties. The originator encrypts information using the intended recipient's \"public\" key in order to get confidentiality of the data being sent. The recipients use their own \"private\" key to decrypt the information. The \"Infrastructure\" of this methodology ensures that:",
       "options": {
-        "A": "Copyright Fdi 242 Gilli",
-        "B": "Trademark Féfjliai",
-        "C": "Trade Secrets F-§jl£$JZ~ZI;",
-        "D": "Patent 43% $3"
+        "A": "The sender and recipient have reached a mutual agreement on the encryption key exchange that they will use. 5< 75Zii7 %Ha%ll5 7 i Eiztiiali l ]U]~iXE ]7JU5E'",
+        "B": "The sender of the message is the only other person with access to the recipient's private key.",
+        "C": "The recipient's identity can be positively verified to the sender.",
+        "D": "The channels through which the information flows are secure."
       },
       "answers": [
         "C"
@@ -38,26 +38,27 @@
     },
     {
       "id": 153,
-      "question": "Which category of law is also referenced as a Tort law? ll3ll3*T‘l15l§Fl<]?2§l$ll1.l7§'LllLllililZl%l‘1fT§€l7ili7",
+      "question": "Which of the following statements is true about data encryption as a method of protecting data?",
       "options": {
-        "A": "Administrative law EBUZ",
-        "B": "Public law /A\\§¥?2\"§ cowmw @% lfllli",
-        "D": "Criminal law ma Q7l<"
+        "A": "It is usually easily administered",
+        "B": "It requires careful key management",
+        "C": "lt should sometimes be used for password files",
+        "D": "It makes few demands on system resources"
       },
       "answers": [
-        "C"
+        "E"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 154,
-      "question": "Phreakers are hackers who specialize in telephone fraud. What type of telephone fraud manipulates the line voltage to receive a toll-free call? K%%j§‘I5ZPEiE'?,Kki’FF1‘]%. l‘rQ\\%'$Z1§Ei<JEliiii-?F£i’ET%“éZl>lZ§2E%%JItH%'3%?%§a%'% 1%?",
+      "question": "How many bits is the effective length of the key of the Data Encryption Standard algorithm?",
       "options": {
-        "A": "Red Boxes 21%? 1%?",
-        "B": "Black Boxes",
-        "C": "White Boxes E§_¥",
-        "D": "Blue Boxes LEE? A-\\-‘-'"
+        "A": "It prevents an unauthorized person from trying multiple passwords in one logon i11TbJ%Jl:ilE",
+        "B": "It prevents an unauthorized person from reading or modifying the password.",
+        "C": "It minimizes the amount of storage required for user passwords.",
+        "D": "It minimizes the amount of processing time used for encrypting passwords."
       },
       "answers": [
         "B"
@@ -67,42 +68,41 @@
     },
     {
       "id": 155,
-      "question": "Which kind of evidence would printed business records, manuals and printouts classify as? iilflil Zlill F14]l£%iE'.§, El]E'l§EiF_‘UZll§J\\79l1}3l§¥iIETE ?",
+      "question": "Brute force attacks against encryption keys have increased in potency because of increased computing power. Which of the following is often considered protection against the brute force cryptography attack?",
       "options": {
-        "A": "Documentary evidenceill-Yliil",
-        "B": "Real evidencei5l%‘l$i1E§'E",
-        "C": "Demonstrative evidencei Eliilliil",
-        "D": "Direct evidenceEEl’%iEl’E 244"
+        "A": "The use of good key generators.",
+        "B": "Algorithms that are immune to brute force key attacks.",
+        "C": "Nothing can defend you against a brute force crypto key attack.",
+        "D": "The use of session keys."
       },
       "answers": [
-        "A"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 156,
-      "question": "Within the legal domain what rule is concerned with the legality of how the evidence was gathered ? ZT:%£l$@ii3iV, Li?lb’il5/i‘%?%J‘.X‘iIEi?%ll§*£%l’Ei%iEJ'ETE?",
+      "question": "To comply with the Internet Engineering Task Force (IETF) standard for the Security (IPSEC) Protocol, which key-exchange method must be used? 7 lTi ? IETF (internet Engineering Task Force)",
       "options": {
-        "A": "lnvestigation rule iliflijllll",
-        "B": "Hearsay rule l:l%lE?l<Pli.U1ll",
-        "C": "Exc|usionary rule Hl5l3§§$D\"|.Ulll",
-        "D": "Best evidence rule EE'iliiEEl’E¥Dl.W.'l"
+        "B": "Substitution Cipher Block Chaining (csc)",
+        "C": "Integrity, Authentication and Nonrepudiation ?E%%'li, $?1TiII:E%'l$",
+        "A": "Output Feedback (OFB) imlit (ore)",
+        "D": "Integrity, Confidentiality and Authorization 27 . Which of the following is NOT a mode of the Data Encryption Standard (DES)"
       },
       "answers": [
-        "C"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 157,
-      "question": "Computer-generated evidence is considered: illlliliqiliifidli",
+      "question": "? IJ11i /|\\iiI5iT\\Fa",
       "options": {
-        "A": "Best evidence§5il?EiEl’E",
-        "B": "Demonstrative evidencei§El5U§‘l§iETE",
-        "C": "Direct evidencefl",
-        "D": "Second hand evidenceZ¥i§lE ggiér"
+        "A": "",
+        "B": "c. DES-EDE2 lililiili/|*",
+        "D": ""
       },
       "answers": [
         "D"
@@ -112,27 +112,25 @@
     },
     {
       "id": 158,
-      "question": "Keeping in mind that these are objectives that are provided for information only within the CBK as they only apply to the committee and not to the individuals. Which of the following statements pertaining to the (lSC)2 Code of Ethics is incorrect? iili, l5U$cB|<?iiHKlJ, §ll‘l§l'3'UL§€‘§l3l3/l\\)\\Bd', \"'i5l|']§°%liEl%.%_. ¥'£l<FUl1/@2113 “P, iililbiéé (isc) 2iiéi%%Ni%$IE6qEi<J?",
+      "question": "T5lJll3 l5/l iiID iz ?:",
       "options": {
-        "A": "All information systems security professionals who are certified by (lSC)2 shall forbid 245 11>? §l_li°r behavior such as associating or appearing to associate with criminals or criminal behavior. E(BO2%E%%E%%%%§$%%AE%%i@%%,w%%$E %W@%%Q",
-        "B": "All information systems security professionals who are certified by (lSC)2 recognize that such a certification is a privilege that must be both earned and maintained. %%%§%%§£%%ME<502%%,E%ME%—W%,M%i%% %%%$@",
-        "C": "All information systems security professionals who are certified by (lSC)2 shall provide diligent and competent service to principals. $(50zwmE%%§€%%A%%%%i%%€%%W %%.",
-        "D": "All information systems security professionals who are certified by (lSC)2 shall promote the understanding and acceptance of prudent information security measures. E(502%E%%€%%%%§é%%AE%%$%%E§$%%%%%"
+        "A": "3-DES",
+        "B": "RSA",
+        "D": "PKI"
       },
       "answers": [
-        "A"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 159,
-      "question": "Where can the phrase \"Discourage unsafe practice\" be found? EW%%“@i%%i”%%? 246 WW %%",
+      "question": "1: Ull}.ll5 T l 5 -i 5%%%3: Z :i }E |_lZ ?ggli (Vigenere Polyalphabetic Cipher)",
       "options": {
-        "A": "Computer Ethics Institute commandments 1ll'§l‘ll.l€If¥_i}fj”§F):r1T§Zi$",
-        "B": "CIAC Guidelines ciActl§i",
-        "C": "Internet Activities Board's Ethics and the Internet (RFC1087) EW%§%%%E%W<muwD",
-        "D": "(ISC)2 Code of Ethics 5c>nE%Hi"
+        "A": "(The Jefferson disks)",
+        "B": "",
+        "D": "fLi I%*53 (Caesar Cipher)"
       },
       "answers": [
         "D"
@@ -142,41 +140,40 @@
     },
     {
       "id": 160,
-      "question": "Which of the following European Union (EU) principles pertaining to the protection of information on private individuals is incorrect? QTMW%<M)%TlA%§%$%§N%$E%M?",
+      "question": "U\\_F }:1|513BL1E$5' 7J[I5.J'.Z. (Strong enmyption)",
       "options": {
-        "A": "Individuals have the right to correct errors contained in their personal data. iA€E@€E%M%¢A§HE%%&.",
-        "B": "Data collected by an organization can be used for any purpose and for as long as necessary, as long as it is never communicated outside of the organization by which it was collected. R%€M%,R%%$5W%%%%%%,%W%%%W%¥E @%%,.",
-        "C": "Transmission of personal information to locations where \"equivalent\" personal data protection cannot be assured is prohibited. %i%lA%§%%$E%@%%F%#%.",
-        "D": "Records kept on an individual should be accurate and up to date. $¢A%%EiE€%%%%%."
+        "B": "%%m%&",
+        "C": "",
+        "A": "%%%%E%Qw",
+        "D": ""
       },
       "answers": [
-        "B"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 161,
-      "question": "Which of the following is NOT a Generally Accepted System Security Principle (GASSP)? TWWT%~¢W%%§%%%E$EE(m$w?",
+      "question": "",
       "options": {
-        "A": "Systems owners have security responsibilities outside their organization. %%%€%%EE%%&€§%E.",
-        "B": "Computer security supports the mission of the organization §M§%i%%%%E.",
-        "C": "The conception of computer viruses and worms is unethical. §M%§%£%%$%%. Dé. C i omputer security should be cost-effective 247 WH 11Ai > : :% ttii"
+        "A": "icA",
+        "B": "ICA",
+        "D": "CA"
       },
       "answers": [
-        "C"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 162,
-      "question": "Which type of attack would a competitive intelligence attack best classify as? €9\"l€l3'l%Tls’<I5IjJiZ'J61‘79~l‘5lB$‘l1§’€\":§2?",
+      "question": "CAE%%%@i%%%P% E$@%HQ%%Z@Ei%&%%",
       "options": {
-        "A": "Business attack Fiklfli",
-        "B": "Grudge attack ?i“_',Z,E.I§Z{E",
-        "C": "Intelligence attack 9§‘l€'éI§Z':T iiljiji",
-        "D": "Financial attack"
+        "B": "& W%",
+        "A": "W%&%m%",
+        "D": "%i%%WcAE%"
       },
       "answers": [
         "A"
@@ -186,26 +183,10 @@
     },
     {
       "id": 163,
-      "question": "Which of the following is not a form of passive attack? Tllll/1ll5IJFi$%?<&Z<JJI5Zj.= 248",
+      "question": "",
       "options": {
-        "A": "SnWng @%%E Jii",
-        "B": "Shoulder surfing c. Data diddling ittii",
-        "D": "Scavenging E5?"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 164,
-      "question": "Once an intrusion into your organization's information system has been detected, which of the following actions should be performed first? %W%%%%%A@W,%§%%WUT%WW?",
-      "options": {
-        "A": "Determine to what extent systems and data are compromised. %E%%W§%E",
-        "B": "Communicate with relevant parties. 5€%%%.",
-        "C": "Eliminate all means of intruder access. ‘FD l?é)\\l%i7i iii E%f%.,",
-        "D": "Contain the intrusion. §%A@."
+        "A": "$CA%%4%%%iWEM@",
+        "D": ""
       },
       "answers": [
         "A"
@@ -214,13 +195,11 @@
       "explanation": ""
     },
     {
-      "id": 165,
-      "question": "In order to preserve a proper chain of custody of evidence: %T§%%%E%%=",
+      "id": 164,
+      "question": "",
       "options": {
-        "A": "Log files containing information regarding an intrusion are retained for at least as long as normal business records, and longer in the case of an ongoing investigation. @€€%A@%§%HEiW§&W%M%%%%@W@%E,w%%%% §%§NE%%%E%W@.",
-        "B": "Verifiable documentation indicating the sequence of individuals who have handled a piece of evidence should be available. W%E%i%%iA%E—WE%%W$E§W%.",
-        "C": "Law enforcement officials should be contacted for advice on how and when to collect critical information. mawmm%eww@u&nwu%%@eemeu.",
-        "D": "Evidence has to be collected following predefined procedures in accordance with all laws and legal regulations. E%%%¢&%E§W%E%."
+        "A": "$@ %E c REEM Verisign",
+        "D": "%? % #"
       },
       "answers": [
         "B"
@@ -229,13 +208,26 @@
       "explanation": ""
     },
     {
-      "id": 166,
-      "question": "Which of the following should be notified first in the event of a Network or System intrusion? %$%%W%A@W,E%§%%—T%—?",
+      "id": 165,
+      "question": "A %%%&% E%$EjW%E %%EE%%W%$% ~~%E\\E%W%E%",
       "options": {
-        "A": "Human resources A%%",
-        "B": "System and network administrator(s) %%%@WW%%",
-        "C": "lnternal public relations point of contact W%®%%%%%A 250 1H1>r::w ?l*l % mill‘ EYE",
-        "D": "Law enforcement agencies mama"
+        "A": "$@",
+        "B": "Dm",
+        "D": "%&"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 166,
+      "question": "",
+      "options": {
+        "A": "ECC",
+        "D": "",
+        "C": "RSA"
       },
       "answers": [
         "C"
@@ -245,27 +237,10 @@
     },
     {
       "id": 167,
-      "question": "When should a post-mortem review meeting be held after an intrusion has been properly taken care of? A@§%%E@WEE%%$€%&?",
+      "question": "Dife-Hellman",
       "options": {
-        "A": "Within the first week of completing the investigation of the intrusion. %WA@E%%—%W.",
-        "B": "Within the first month after the investigation of the intrusion is completed. %&A@§E%%miHW.",
-        "C": "Within the first three months after the investigation of the intrusion is completed. %A@E%5iHW.",
-        "D": "Within the first week after prosecution of intruders have taken place, whether successful or not. EA@%E%%*iE%W,%%W%5€@"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 168,
-      "question": "lf an organization were to monitor their employees’ e-mail, it should not: M%ti%%§%%EI%$¥%,E$E&=",
-      "options": {
-        "A": "Explain what is considered an acceptable use of the e-mail system. EMW%%%E%@%.",
-        "B": "Explain who can read the e-mail and how long it is backed up. meaauaaatmwwmwawaa.",
-        "C": "lnform all employees that e-mail is being monitored. %€I%#%%E%%.",
-        "D": "Monitor only a limited number of employees. RN%%I%M%§."
+        "B": "%%",
+        "D": "%%w"
       },
       "answers": [
         "D"
@@ -274,28 +249,43 @@
       "explanation": ""
     },
     {
-      "id": 169,
-      "question": "Which U.S. act places responsibility on senior organizational management for the prevention and detection program with fines of up to $290 million for nonperformance? %EW&%iNMW%&%EE%WE$%$¢%U%%zE% ~ iBl1l1;/~ ETA?",
+      "id": 168,
+      "question": "T:",
       "options": {
-        "A": "The 1987 U.S. Computer Security Act 251 WW 11>:% itlilt‘ ww$%@#§§é&%",
-        "B": "The 1996 U.S. National Information Infrastructure Protection Act w%¢%@E%%%%%%%%%",
-        "C": "The 1991 U.S. Federal Sentencing Guidelines wm$%E%%%%",
-        "D": "The 1986 U.S. Computer Fraud and Abuse Act w%¢%E%%%%"
+        "A": "S/MIME",
+        "B": "SET",
+        "C": "SSH",
+        "D": "SSL"
       },
       "answers": [
-        "C"
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 169,
+      "question": "",
+      "options": {
+        "A": "E%%iK$",
+        "B": "%%YK$",
+        "C": "%%iW$",
+        "D": "%%XK$"
+      },
+      "answers": [
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 170,
-      "question": "Which of the following is a problem regarding computer investigation issues? §EQTW~%?",
+      "question": "Secure Sockets Layer (SSL) uses a Message Authentication Code (MAC) for what purpose?",
       "options": {
-        "A": "Evidence is easy to gather. E%§%%%.",
-        "B": "Computer-generated records are only considered secondary evidence, thus are not as reliable as best evidence. %%$%R%W%E%,i%$w%%EW%.",
-        "C": "In many instances, an expert or specialist is not required. E§%%T,%%%%$%M%%.",
-        "D": "Information is tangible. l%.%_%i§ff2 E4] .."
+        "A": "message interleave checking.",
+        "B": "message integrity.",
+        "C": "message confidentiality.",
+        "D": "message non-repudiation."
       },
       "answers": [
         "B"
@@ -305,42 +295,42 @@
     },
     {
       "id": 171,
-      "question": "What is defined as inference of information from other, intermediate, relevant facts? Ell:@B\"*5%XT$¥Eq“FEQTE9§§§§EE@E5?",
+      "question": "Which of the following is NOT a property of the Rijndael block cipher algorithm?",
       "options": {
-        "A": "Hearsay evidenceliflil HE??? 252 M 11>:ff ill",
-        "B": "Secondary evidencel§\"lIEl7§'i",
-        "C": "Conclusive evidence€\"l§l/Eli",
-        "D": "Circumstantial evidencell5]l2?iIE?§"
+        "A": "The key size does not have to match the block size",
+        "B": "Maximum key size is",
+        "C": "Maximum block size is",
+        "D": "The key sizes may be any multiple of"
       },
       "answers": [
-        "D"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 172,
-      "question": "Which of the following exceptions is less likely to make evidence such as audit logs and audit trails admissible and have more weight in court under the Business Exemption Rule to the hearsay evidence ? HFW%%%$W%@(w$BE$)%%%,#%%@E% %%%%W,E%EL%%¥E§%E?",
+      "question": "Which of the following standards concerns digital certificates?",
       "options": {
-        "A": "Records are collected during the regular conduct of business. W%%E%%%%.",
-        "B": "Records are collected at or near the time of occurrence of the act being investigated to generate automated reports. wemaawmemwanaaemmamwa.",
-        "C": "You can prove no one could have changed the records/data/logs that were collected. 15135 liilEiU§l§t“€)\\‘élfJZE5Z’EB<JiE%/¥3Il?§/El",
-        "D": "Records are collected by senior or executive management. W%%$E%%E."
+        "A": "? X.75",
+        "B": "",
+        "C": "",
+        "D": "? X.25"
       },
       "answers": [
-        "D"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 173,
-      "question": "Which of the following categories of hackers poses the greatest threat? 253 1HB1?lr??:ti §9l%}<‘fr HFW*¥¥¥%%%i?",
+      "question": "Which of the following offers security to wireless communications?",
       "options": {
-        "A": "Corporate spies fJ;\\il£l‘l3i§",
-        "B": "Criminal hackers lt'J$%’§",
-        "C": "Student hackers",
-        "D": "Disgruntled employees 1E.~‘l$7F%El4Jj!1I"
+        "A": "? WDP",
+        "B": "? WSP",
+        "C": "",
+        "D": "? WTLS"
       },
       "answers": [
         "D"
@@ -350,12 +340,12 @@
     },
     {
       "id": 174,
-      "question": "Which of the following best defines a Computer Security Incident Response Team (amm &TW%%M§%$%E$<6md?",
+      "question": "Which of the following offers confidentiality to an e-mail message?",
       "options": {
-        "A": "An organization that ensures that security incidents are reported to the authorities. %§$$M@€%%H%%%.",
-        "B": "An organization that coordinates and supports the response to security incidents. l7J~iJ%'il$l1§%5<‘i*Zé$ltFlEéItlj I1l'=HF_iE<]éHéR..",
-        "C": "An organization that disseminates incident-related information to its constituency and other involved parties. %$#%%§%%%§F%%%£%.",
-        "D": "An organization that provides a secure channel for receiving reports about suspected security incidents. %%W€%%%§$$%%%@§%¥%%."
+        "A": "The sender encrypting it with the receiver's private key",
+        "B": "The sender encrypting it with the receiver's public key 7;ii%i li%i%Ll =ii5H<JQ.\\ iE)?liJH",
+        "C": "The sender encrypting it with its public key.",
+        "D": "The sender encrypting it with its private key."
       },
       "answers": [
         "B"
@@ -365,12 +355,11 @@
     },
     {
       "id": 175,
-      "question": "Under the principle of culpable negligence, executives can be held liable for losses that result from computer system breaches if: W€%E%W,%%i§M%%%%§ iilili, u %=",
+      "question": "Which of the following statements pertaining to key management is incorrect? 9@?% a\" )%\"e I. A i . tlTihleimore a key is used, the shorter its lifetime should be.",
       "options": {
-        "A": "They have failed to properly insure computer resources against loss. lthliiil%‘é§'é%6%l%i‘rl‘IL§17)Z§$§’39€ ..",
-        "B": "They have not exercised due care protecting computing resources. l’il3lI‘]‘J§t7€J§\\'ERl%iFi+l‘lL‘$E..",
-        "C": "The company is not a multi-national company. iZ2.\\€]$%~/|‘Z{/k.",
-        "D": "The company does not prosecute the hacker that caused the breach. /Lt T\\“@iil55i§‘i\"1§~'€Fl‘]E."
+        "B": "When not using the full keyspace, the key should be extremely random.",
+        "C": "Keys should be backed up or escrowed in case of emergencies.",
+        "D": "A key's lifetime should correspond with the sensitivity of the data it is protecting. %T HEl4]$i1 lEiZ5 \"Ei%fFE"
       },
       "answers": [
         "B"
@@ -380,72 +369,27 @@
     },
     {
       "id": 176,
-      "question": "The deliberate planting of apparent flaws in a system for the purpose of detecting attempted penetrations or confusing an intruder about which flaws to exploit is called: ¥iE—/|‘,%éiEf55I%5l‘E)\\EEEzl3‘J%l<’é, 5l%i?il‘J§i{iél§l‘7E'¢i%)\\l%%, TF1?/U9. 254 m ill“ El %",
+      "question": "Which type of attack is based on the probability of two different messages using the same hash function producing a common message digest?",
       "options": {
-        "A": "enticement.i§'-'§%Z<, entrapmentf",
-        "B": " investigationil",
-        "C": "",
-        "D": "alterationE§Z’§"
+        "A": "Statistical attack",
+        "B": "Birthday attack",
+        "C": "Differential linear cryptanalysis",
+        "D": ""
       },
       "answers": [
-        "A"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 177,
-      "question": "A security analyst asks you to look at the traffic he has gathered, and you find several Push flags within the capture. It seems the packets are sent to an unknown lnternet Address (lP) that is not in your network from one of your own IP addresses which is a financial database that is critical and must remain up and running 24x7. This traffic was noticed in the middle of the day. What would be the best course of action to follow? rli\"-c?;t§1‘l‘UFl5 Iii 1/Kilt; E€§é§T3%EI<J‘bii§, l?F7ifJJ§%’3€El<J@El1€—%Push flagso T5 lH¥?:E@%)§7>iii¥Il~/riliilil El4]FLH§éWili1.iJl; (IP) , %$%¥£l71<EI<JWl?%l)\\~’|‘ Q EH41 |Pitl1i1t, i2¢'%~/|‘$|%$i5Zi‘lFali%i§'€§%H‘J, uZ~ZDil%§‘%24><7$7<l&ié.. ‘_i’i%“P~ Eli 3€7iIJ‘tT Fiilifiii, Li\"F\"}JllI7‘:‘iz‘%Z15‘H‘JiiJ7‘i€‘r?",
+      "question": "Which of the following elements is NOT included in a Public Key Infrastructure",
       "options": {
-        "A": "Shut off the Port to the database and start conducting computer forensics 9€|‘2Ha‘% El ill%$'£i*Eli9‘=F‘FZ1f1‘i&i+l‘lLE§(iiE",
-        "B": "Block the IP address at the perimeter and create a bit level copy of the database server. Run antivirus scan on the database and add to the lPS a rule to automatically block similar traffic. iiliiiii ?£5Yf@i*r%)‘iH’~]|Pil’aiil:, %’F€'l§i*/|‘lii‘é£€E'J7~l§El‘]%S£i‘E‘l§Bl§ia\"§%§Q 7 255 E511q\\ -Q :\\{'\\ ilill %,%mw@mnwemm¢%mm§@.",
-        "C": "Contact the FBI or the US Secret Service to give guidance on what steps should be taken %%%%%§%%E%%%$%%i@%HZ#%%",
-        "D": "Let the connection stay up because you do not want to disrupt availability t%&,i%W$%%%§%%%"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 178,
-      "question": "The US department of Health, Education and Welfare developed a list of fair information practices focused on privacy of individually, personal indentifiable information. Which one of the following is incorrect? %@E$%H,§W%@®T%%%M%,%E¥i%%%,tA%Z %%%WQTWW—i%$E%%?",
-      "options": {
-        "A": "There must be a way for a person to find out what information about them exists and how it is used. M~iA&$Z%¥%M%%E%€E,Q&E%wW&%%~Wo",
-        "B": "There must be a way for a person to prevent information about them, which was obtained for one purpose, from being used or made available for another purpose without their consent. %€~iA%~W,Q%i%%M%%E E ~iE%,EE&%% ¥E@E%,$&E@%@",
-        "C": "Any organisation creating, maintaining, using, or disseminating records of personal indentifiable information must ensure reliability of the data for their intended use and must make precautions to prevent misuses of that data. E@%@%,%,&%%%iA%Z%%M%%EMi%% %W§,%%W%%%»H%i&%°",
-        "D": "There must be a personal data record-keeping system whose very existence shall be kept secret. %€%%%%iA§%EE%%%%."
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 179,
-      "question": "An attack that involves an fraudster tricking a user into making inappropriate security decisions is known as: @%%%FM$$E%§£&E%i%K$%HTW—W?",
-      "options": {
-        "A": "Man-in-the~Middle EP|‘@)\\Ij(3}",
-        "B": "Spoofing Eiglii Engineeringiiiélllllfli",
-        "C": "Social",
-        "D": "Surveillance HEW, 256 Hit 11>;%% Elm"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 180,
-      "question": "What Cloud Deployment model consist of a cloud infrastructure provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units)? Such deployment model may be owned, managed, and operated by the organization, ‘a third party, or some combination of them, and it may exist on or off premises. LiF\").ll§-$*l1€:9fZvii‘§§fCZHJiliJ5l€5l%l¥E€{%§4‘l5l%F‘ (’A%]) F1<]$~€HéRE4Jz?%4?tB%’i%ii], i$$‘l‘ii‘3i‘7iij=*Zi€FlLi%%—éHéR, é'i§E7?iJi%§7:Tilii’§. féiiié, Flléifé /|‘¥f7‘i5ZEi9€|>Tl H<JFi1l:? Htfz",
-      "options": {
-        "A": "Private Cloud",
-        "B": "Community Cloud HIXYI",
-        "C": "PubHc(]oud Qkétii",
-        "D": "Hybrid Cloud"
+        "A": "Internet Key Exchange (lKE)l",
+        "B": "Repository iIlH",
+        "C": "Certificate revocation iIlH",
+        "D": "Timestamping ElLl"
       },
       "answers": [
         "A"
@@ -454,28 +398,40 @@
       "explanation": ""
     },
     {
-      "id": 181,
-      "question": "When referring to the Cloud Computing Service models. What would you call a service model where the consumer does not manage or control the underlying cloud infrastructure including networks, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment? F<‘?%ii1iifHE%i§%E!, Fflf“iEi§7F%%‘“€IE$B¥a\"‘5fl%UF:€J?:£%i?ili%-215143, tl:i1ui]é%, HE-'<%%%, i>i'%l’E/%€3ELi£2i'¥ii%, iE7%4Z~2li5<i‘F_iH%£i=IL17f%Ei<J%/Miliqfiiliii“-:il%U, iifiifil ?",
+      "id": 178,
+      "question": "In a Public Key Infrastructure (PKI) context where your own LDAP server is being used to store credetials and certificates, which of the following is a primary concern with this LDAP server?",
       "options": {
-        "A": "Code as a Service (CaaS) iJil555§eE§iHli%",
-        "B": "Infrastructure as a Service (laaS) %fi$ii§fE§<5§Eli%",
-        "C": "Platform as a Service (PaaS) 5lZE‘%)5SiHE§§",
-        "D": "Software as a Service (SaaS) ?l=§Ii¢l=%J5}iHl§% /fétiz"
+        "B": "Identity *E.%'li",
+        "C": "Confidentiality",
+        "D": "Accountability Elllllli"
       },
       "answers": [
-        "C"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
-      "id": 182,
-      "question": "Which of the following should be emphasized during the Business Impact Analysis (BIA) considering that the BIA focus is on business processes? T§IllBl$IDi?:1k%%2l’6:tl‘Fr (BIA) Eliii, %l’§1iIl BIA E1<]§r€.%ik%ir’rIt%?",
+      "id": 179,
+      "question": "Which of the following was developed in order to protect against fraud in electronic fund transfers (EFT) by ensuring the message comes from its claimed originator and that it has not been altered in transmission?",
       "options": {
-        "A": "Priorities l}l§§E7l‘1 261 1&5?» ~2$‘§.'% WW.5bxM, =m,-w",
-        "B": "Dependencies lZ€%19€,%-7:",
-        "C": "Service levels llEl%7l<¥",
-        "D": "Composition ZHEYL. l‘/Qli %%"
+        "A": "",
+        "B": "Secure Hash Standard (SHS) Secure Electronic Transaction (SET)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 180,
+      "question": "Mandatory Access requires that sensitivity labels be attached to all objects. Which of the following would be designated as objects on",
+      "options": {
+        "A": "users, windows, and programs.",
+        "B": "files, directories, and print",
+        "C": "devices, processes, I/O pipe, and sockets.",
+        "D": "files, directories, processes, and sockets."
       },
       "answers": [
         "B"
@@ -484,13 +440,43 @@
       "explanation": ""
     },
     {
-      "id": 183,
-      "question": "Which of the following computer recovery sites is the least expensive and the most difficult to test? L1Flb§BID3i+§lH.‘WE£ ;€\\%P.'EilEi|%1E‘J%U%5<§?!llii§Ei‘J ?",
+      "id": 181,
+      "question": "|n Mandatory Access Control, sensitivity labels contain what information?",
       "options": {
-        "A": "non-mobile hot site. 3lE$2.'éi:j],??l$r5",
-        "B": "cold site.",
-        "C": "warm site.",
-        "D": "mobile hot site. $§71}J??lE;§"
+        "A": "the item's classification",
+        "B": "the item's classification and category set",
+        "C": "the item's classification, category set and compartment set",
+        "D": "the item's classification and its compartment"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 182,
+      "question": "What is a \"system high\" security policy?",
+      "options": {
+        "A": "A system where all users are cleared to view the most highly classified data on the system.",
+        "B": "A system that contains only data of one security classification.",
+        "C": "A system with data that contains only data of the highest security classification.",
+        "D": "A system that uses a Multi-Level Security Policy to separate the highly classified data from the other data residing on the system."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 183,
+      "question": "What are the components of an object's sensitivity label?",
+      "options": {
+        "A": "Storage and permissions.",
+        "B": "Storage and classification.",
+        "C": "Storage and",
+        "D": "Storage and timing."
       },
       "answers": [
         "B"
@@ -500,11 +486,12 @@
     },
     {
       "id": 184,
-      "question": "Which of the following is the most important consideration in locating an alternate computing facility during the development of a disaster recovery plan? ?'£¥F7iT<3<€‘W§il5Z'l‘:l‘» jl§l—/l\\§’lJ§El<]ll§l‘ll~%l§li§fEIliiJlIl5lUL, lill/3ll5— aéfg?",
+      "question": "Configuration Management controls what?",
       "options": {
-        "A": "It is close enough to become operational quickly. /@l‘]Zl§il:£L1i$l3li79i§”",
-        "B": "It is convenient to airports and hotels. 7‘;T{E§Lll<}l,iZ3$[l;‘/ETE",
-        "C": "It is unlikely to be affected by the same contingency. $7K5lfil€€:“§§lll‘El§.l l§l4]$$5Z§Zllll 262 El Elm lint lm Hill close enough to serve its users. /'J4i’i3§f§§J‘l’rl‘]l3§)?“ H519?"
+        "A": "Control of changes to the Trusted Computing Base.",
+        "B": "Changes in the configuration access to the Trusted Computing Base.",
+        "C": "Auditing and controlling any changes to the Trusted Computing Base.",
+        "D": "Auditing of changes to the Trusted Computing Base."
       },
       "answers": [
         "C"
@@ -514,57 +501,41 @@
     },
     {
       "id": 185,
-      "question": "Which of the following is NOT a transaction redundancy implementation? _F§lJ[l/g|gIZ<fEé_‘/|\\§_‘EElj?Lié%E]4];£j‘u7‘j“Hi?",
+      "question": "The Information Technology Security Evaluation Criteria (ITSEC) was written to address which of the following that the Orange Book did not address?",
       "options": {
-        "A": "database shadowing §§[irElQ€ElJ2|-Y i",
-        "B": "remote journaling El",
-        "C": "electronic vaulting EE,¥1'4§i<€",
-        "D": "on-site mirroring f)l1i’£l% %%"
+        "A": "integrity and confidentiality.",
+        "B": "none of the above.",
+        "C": "integrity and availability.",
+        "D": "confidentiality and availability."
       },
       "answers": [
-        "D"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 186,
-      "question": "The Recovery Point Objective (RPO) in Disaster Recovery Planning refers to which of the following? ?;'E9\"<5<€‘l%Ei+iZllEl1 E1<]'WE»§ E iii? (RPO) %?l% LAT ?",
+      "question": "Which of the following components are considered part of the Trusted Computing Base?",
       "options": {
-        "A": "Point to which information system must be operational at alternate site l%.%_,%é?iZ~2Diié¥';T:%FH&?:§E1‘JH‘lEI5",
-        "B": "Point to which application data must be recovered to resume business transactions F_?Fl%f%l?i5Zl’EuZ\\2DTl1)?Eillik%T§1 E14]H‘|‘ET] if-:1",
-        "C": "Maximum elapsed time required to complete recovery of application data ?EEliF;A“F1‘%f%T¥H‘Ji3Z?fEWEE‘JP?'i7<H’\\]Hili?",
-        "D": "Point to which application data must be recovered to resume system operations lFH%lI%EuZ~ZDi'WEi'l,%éjEiéi%T%l’F H<JH9“l‘EU»3—i %%"
+        "A": "trusted hardware and firmware",
+        "B": "trusted hardware and software",
+        "C": "trusted hardware, software and firmware",
+        "D": "trusted computer operators and system managers"
       },
       "answers": [
-        "B"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 187,
-      "question": "Which of the following is covered under Crime Insurance Policy Coverage? T§IJl139l§/|\\%5l3‘?i‘=%l%B<1‘E5ILf‘iil?')ffE%l?l<]? 265 E5 Fl? an",
+      "question": "Which of the following is NOT a basic component of system architecture?",
       "options": {
-        "A": "lnscribed, printed and Written documents %i,WWW%5Y#",
-        "B": "Money and Securities $WE#",
-        "C": "Accounts Receivable W%",
-        "D": "Manuscripts"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 188,
-      "question": "If your property Insurance has Actual Cash Valuation (ACV) clause, your damaged property will be compensated based on: w%W%WF%%E€i%%$(mN)%%,W%%WF%%?Z if%lé=",
-      "options": {
-        "A": "Rep|acement with a new item for the old one regardless of condition of lost item E%—i%%%%%%%#%Hz",
-        "B": "Value of item on the date of loss plus 10 percent %E%%§FWEmw%",
-        "C": "Value of item one month before the loss %W—lH%%¥@",
-        "D": "Value of item on the date of loss %B%%%F%@"
+        "A": "Peripherals (input/output devices)",
+        "B": "Storage Devices",
+        "C": "Central Processing Unit (CPU)"
       },
       "answers": [
         "D"
@@ -573,28 +544,43 @@
       "explanation": ""
     },
     {
-      "id": 189,
-      "question": "If your property Insurance has Replacement Cost Valuation (RCV) clause your damaged property will be compensated: W%W%WF%%€E§§$%(mN)%%,W%WF%%%%=",
+      "id": 188,
+      "question": "Which of the following addresses a portion of the primary memory by specifying the actual address of the memory location?",
       "options": {
-        "A": "Based on new, comparable, or identical item for old regardless of condition of lost item %?%%,E€W%%%@%%F,%%%%%%#%Z",
-        "B": "Based on the value listed on the Ebay auction web site l@EwwHiW%iW$%",
-        "C": "Based on value of item one month before the loss %?%%—$E%%F",
-        "D": "Based on the value of item on the date of loss %?%E%%%?W@"
+        "A": "Indirect addressing llUi%TE'J-i1l:i",
+        "B": "direct addressing",
+        "C": "indexed addressing",
+        "D": "implied addressing"
       },
       "answers": [
-        "A"
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 189,
+      "question": "The steps of an access control model should follow which logical flow:",
+      "options": {
+        "A": "Authentication, Authorization, Identification Eillil",
+        "B": "Identification, authentication, authorization",
+        "C": "Identification, accountability, authorization iFl5'5'J\\ lilililll Tigtil",
+        "D": "Authorization, Identification, authentication iE%'J\\"
+      },
+      "answers": [
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 190,
-      "question": "Which is not one ofthe primary goals of BIA? TWW$%mA%I%E?",
+      "question": "Which of the following statements pertaining to protection rings is false? biT\"3l$",
       "options": {
-        "A": "Deciding on various test to be performed to validate Business Contuity Plan %i%%%WW%%E%%WE",
-        "B": "Critica|ity Prioritization %%%%W?",
-        "C": "Determining requirements for critical business functions %i%%%%%%%%",
-        "D": "Down time estimation %W@E"
+        "A": "They provide users with a direct access to peripherals",
+        "B": "They support the CIA triad requirements of multitasking operating systems.",
+        "C": "Programs operating in inner rings are usually referred to as existing in YEW1TFI<Ji%B 1i l Ei % i4F?a E~4*l%",
+        "D": "They provide strict boundaries and definitions on what the processes that work within each ring can access."
       },
       "answers": [
         "A"
@@ -604,27 +590,10 @@
     },
     {
       "id": 191,
-      "question": "Which one of the following is NOT one of the outcomes of a vulnerability analysis? FWW—$%—i%%%Z—?",
+      "question": "What is it called when a computer uses more than one CPU in parallel to execute instructions?",
       "options": {
-        "A": "Quantative loss assessment §%WE",
-        "B": "Formal approval of BCP scope and initiation document EM@%mP@E@i 2m WW %",
-        "C": "Defining critical support areas X%%i%E",
-        "D": "Qualitative loss assessment 'l€El’5\"'19%iT‘l$ %%"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 192,
-      "question": "The term critical support areas is defined as: %%i%@%iX%=",
-      "options": {
-        "A": "Business units or functions that must be present to sustain continuity of business, maintain life safety and avoid public embarrassment %E%M%$i%%,&i%M%%,?$§é Eliil",
-        "B": "Business units or functions that require support against man made disasters §Zf§jk%$lfL§§1)J§ilZ'?%?é, )i5<‘)\\797“<%",
-        "C": "Human Resource and Information technologies A11 Z%%E%[1l*a’Z'§_i1*a%",
-        "D": "Business units or functions that may be replaced by others in disaster situation T<>l€‘l%¥5LTFlDl¥J;‘ZE>Zl‘€H<Jka\"‘%$7T:EJZERl2"
+        "B": "",
+        "D": "Parallel running"
       },
       "answers": [
         "A"
@@ -633,14 +602,26 @@
       "explanation": ""
     },
     {
-      "id": 193,
-      "question": "Similarity between ALL recovery plans is:",
+      "id": 192,
+      "question": "Which of the following is not a method to protect objects and the data within the objects?",
       "options": {
-        "F": "'r€'l7)?Ei+iZ'JZl‘ Ei‘Ji=Hl9l‘l$%;",
-        "A": "They become obsolete quickly lil3.ll\\]lE'l§%3J5i§'rl3/’J3ll5l",
-        "B": "They need to be developed only by business continuity experts ll1‘1l1‘]%%iEiiik%é§‘é\"§%¥F7>i",
-        "C": "They create employment opportunities lil3lI‘]'J?3TJtkiJl%",
-        "D": "They need to be fully tested at least every two years l1’al|‘]§//\"’§W§£F%'%%?E§a‘EI’~J°/illiit—i5\"\\"
+        "A": "Data hiding",
+        "B": "Data mining"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 193,
+      "question": "Which of the following statements pertaining to the Bell-LaPadula is false if you are NOT making use of the strong star property? i1u%TlE%",
+      "options": {
+        "A": "lt does not allow \"write up.\"",
+        "B": "It does not allow \"read up.\" EI$fBi$\"_lZii\"o",
+        "C": "It does not address management of access controls.",
+        "D": "It does not address covert channels."
       },
       "answers": [
         "A"
@@ -650,42 +631,54 @@
     },
     {
       "id": 194,
-      "question": "What is NOT one of the drawbacks of hot sites? iiB’|‘$%if»f@5,'§B‘J%r\"niZ—?",
+      "question": "Which security model introduces access to objects only through programs? Iili/I ;/\"-E l EZil Fl f13i4FlEl5l%f%J? f. A The Clark-Wilson model Clark-Wilson",
       "options": {
-        "A": "Need Security controls, as it usually contain mirrored copies of live production data %%%c‘”$i§\":’F*'l, 7Ei\"E'%\"@éi‘i°§'ti%$F*§§IiiE='-Ei<J%%l%E'l$",
-        "B": "Full redundancy in hardware, software, communication lines and applications is very expensive JTé%H‘]l5El¢lH ‘AF’/11*?’ iEi%E%%lIIiEliii%J?r'%ili'%’?»%Fi‘]",
-        "C": "The hot sites are available immediately or within maximum tolerable downtime (MTD) (MTD) %?liéi,=§Fili§%P'§-%§i4Fl$'iJLH‘l‘ETJ",
-        "D": "They are administratively resource intensive, as transaction redundacy controls need to be implemented to keep data up-to-date lil3l|‘]%%i§.i§':i£€5$%E2 F14] , 51 )'ié%i5T2$'JJ§Zl%i%§5£il*.-‘E§€% 269 11l>iii"
+        "B": "The Bell-LaPadula model Bell-LaPadula TEE",
+        "C": "The information flow model",
+        "D": "The Biba model Biba TEE!"
       },
       "answers": [
-        "C"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 195,
-      "question": "What is the most correct choice below when talking about the steps to resume normal operation at the primary site after the green light has been given by the salvage team? %@M%$%UWEE%E»%?WE%E%EW%§W%HFWi% %%%%?",
+      "question": "Which security model ensures that actions that take place at a higher security level do not affect actions that take place at a lower level?",
       "options": {
-        "A": "You moves items back in the same order as the categories document in your plan or exactly in the same order as you did on your way to the alternate site §%#*%%i%%%%§%Z%%%%%%M§%;",
-        "B": "The most critical operations are moved from alternate site to primary site before others %%%%¢M%%%I",
-        "C": "Operation may be carried by a completely different team than disaster recovery team %¢W&$—i%%$@?%%WE$%iM%",
-        "D": "The least critical functions should be moved back first %$%%%%§E%%@£"
+        "B": "The noninterference model",
+        "C": "The Clark-Wilson model Clark-Wilson",
+        "D": "The Bell-LaPadula model Bell-LaPadula TEE"
       },
       "answers": [
-        "D"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 196,
-      "question": "Business Continuity and Disaster Recovery Planning (Primarily) addresses the: M%%%I%WE<I%>%%T",
+      "question": "Which of the following security models does NOT concern itself with the flow of data? A The information flow model",
       "options": {
-        "A": "Integrity of the CIA triad 0AZi%%%%%",
-        "B": "Availability, Confidentiality and Integrity of the CIA triad W%,%%W%%%uAEi",
-        "C": "Availability of the CIA triad cmE%W%%",
-        "D": "Confidentiality of the CIA triad cm3i%%%"
+        "B": "The Bell-LaPadula model Bell-LaPadula",
+        "C": "The noninterference model",
+        "D": "The Biba model Biba TEE"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 197,
+      "question": "In what security mode can a system be operating if all users have the clearance or authorization and need-to-know to all data processed within the system?",
+      "options": {
+        "A": "Compartmented security mode",
+        "B": "Multilevel security mode",
+        "C": "",
+        "D": ""
       },
       "answers": [
         "C"
@@ -694,58 +687,42 @@
       "explanation": ""
     },
     {
-      "id": 197,
-      "question": "What is the MOST critical piece to disaster recovery and continuity planning? ltz %7U'1j1§‘W§%l1i§?£‘l§£%JFUZ'l EI‘J§29€%i1‘]%lK61\\",
-      "options": {
-        "A": "Managementsupport ’;§i_@E5‘£¥%E",
-        "B": "Stafftraining §lIi%iJlI",
-        "C": "Security policy 1-<$if£l1i%",
-        "D": "Availability of backup information processing facilities %{§;i\\{%.§.5¢IjEi§£Ei’{EE4]}5l§"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
       "id": 198,
-      "question": "What is the MAIN concern when reviewing a reciprocal disaster recovery agreement between two companies? ?\"l'5§lW%/$5] E§l§”<¥'§‘l7)?§Q5c§T7J~i§(BL, iET.El.'lL~l§l‘]%ll\"Q\\ ?",
+      "question": "What is called the formal acceptance of the adequacy of a system's overall security by the management?",
       "options": {
-        "A": "Hardware and software compatibility. 5E1¢$[l§}({41|1%%*~'l€E",
-        "B": "The soundness of the business impact analysis. ll?/V;T%2U|'15']§Il\\l‘}T l§l4Il€$§‘li",
-        "C": "Frequency of system testing.",
-        "D": "Differences in IS policies and procedures. Z<l3]H4]K§Z“i$l1$§l?Q %$"
+        "B": "Accreditation UJJT",
+        "C": "Evaluation iiizlfi",
+        "D": "Certification i)\\iE"
       },
       "answers": [
-        "A"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 199,
-      "question": "The results of a test of the disaster recovery plan conducted at a warm site notes that clients (internal and external clients) were unable to log on to the restored online systems as there were insufficient data lines connecting the client premises to the recovery site. The MOST likely conclusion that can be drawn is that: ?:'E—/|‘iEii5El1, (|7%l1%H9l~%1@%F‘) 3i3i2i%%§IJ??|:23€'lEE,%é3iS‘&€/@’@1§Eit TEE, %F‘%i§i%iU'W§_£,'ifii&ii‘9?5<‘§‘l%Ei+52IlWlif€E<Jé%§'E0 EIl%%=tljE1‘1é=é€i’i2% €%TETFlFil2i§1‘]%=",
+      "question": "What does the * (star) property mean in the Bell-LaPadula model?",
       "options": {
-        "A": "The impact of a potential disaster was not fully analyzed.",
-        "B": "The external communications service providers were not involved in the test. 271 1111>>?? at till‘: %%%%%%%%$?5%",
-        "C": "The use of a warm site is inappropriate. —i&H%@%%$%%%",
-        "D": "The business units were not sufficiently involved or consulted in plan development. %%N%%%H&€%§5H%"
+        "A": "No read up 7i<l\"5llii",
+        "B": "No read down ZQFKUTE",
+        "C": "No write down",
+        "D": "No write up"
       },
       "answers": [
-        "D"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 200,
-      "question": "Which of the following could lead to the conclusion that the disaster recovery plan may NOT be operational within the timeframe the business needs to recover? 1‘§Ul13lllID‘iWl2§i~§5'£T<S<E‘WEi+iZU3E?£i§T:k%?%§l?WEi%'T%l’EWEEW B‘]?EE5Z?",
+      "question": "What can best be described as a domain of trust that shares a single security policy and single management?",
       "options": {
-        "A": "The alternate site is a warm site. %l5l5]Ei,'§%ii%r5",
-        "B": "The alternate site is located 70 miles away from the primary site l)\\3-3i!i,'§l?%l$lEi,=1§?_ 70 95$",
-        "C": "Offsite backups are located away from the alternate site. %ill3%l61‘¢‘§:'i2iF’%'§%l5l5JEi,'?%",
-        "D": "Critical recovery priority levels are not defined %%"
+        "A": "The reference monitor",
+        "B": "The security perimeter",
+        "C": "The security kernel",
+        "D": "A security domain"
       },
       "answers": [
         "D"

@@ -1,0 +1,771 @@
+{
+  "meta": {
+    "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "subject": "saa-c03-chinese",
+    "file": "saa-014.json",
+    "question_range": "Q651-Q700",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 651,
+      "type": "single",
+      "question": "一家公司需要創建一個在其主要 AWS 帳戶的 VPC 中運行的 AWS Lambda 函數。該 Lambda 函數需要訪問公司存儲在 Amazon Elastic File System (Amazon EFS) 文件系統中的文件。EFS 文件系統位於第二個 AWS 帳戶中。隨著公司向文件系統添加文件，解決方案必須能夠擴展以滿足需求。哪種解決方案能以最具成本效益的方式滿足這些要求？",
+      "options": {
+        "A": "在主要帳戶中創建一個新的 EFS 文件系統，使用 AWS DataSync 將原始 EFS 文件系統的內容複製到新的 EFS 文件系統",
+        "B": "在主要帳戶和次要帳戶的 VPC 之間創建 VPC 對等連接",
+        "C": "在次要帳戶中創建第二個 Lambda 函數，並為該文件系統配置掛載。使用主要帳戶的 Lambda 函數來調用次要帳戶的 Lambda 函數",
+        "D": "將文件系統的內容移動到 Lambda 層，配置 Lambda 層的權限以允許公司的次要帳戶使用該 Lambda 層。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "此選項是最具成本效益和可擴展的方式，允許主要帳戶中的 Lambda 函數訪問次要帳戶中的 EFS 文件系統。VPC 對等連接使兩個 VPC 之間的私有連接成為可能，而無需網關、VPN 連接或專用網絡連接。Lambda 函數可以使用 VPC 對等連接將 EFS 文件系統掛載為本地文件系統，並根據需要訪問文件。該解決方案不會產生額外的數據傳輸或存儲成本，並利用現有的 EFS 文件系統，而無需重複或移動數據。選項 A 不是成本效益高的，因為它需要創建一個新的 EFS 文件系統並使用 AWS DataSync 將數據從原始 EFS 文件系統複製過來。這將產生額外的存儲和數據傳輸成本，並且不會提供對文件的實時訪問。選項 C 不是可擴展的，因為它需要在次要帳戶中創建第二個 Lambda 函數並配置跨帳戶權限以從主要帳戶調用它。這將增加解決方案的複雜性和延遲，並增加 Lambda 調用成本。選項 D 不可行，因為 Lambda 層並不設計用於存儲大量數據或提供文件系統訪問。Lambda 層用於在多個 Lambda 函數之間共享公共代碼或庫。將 EFS 文件系統的內容移動到 Lambda 層將超過層的 250 MB 大小限制，並且不允許 Lambda 函數讀取或寫入層中的文件。參考：什麼是 VPC 對等連接？使用 Amazon EFS 文件系統與 AWS Lambda，什麼是 Lambda 層？"
+    },
+    {
+      "id": 652,
+      "type": "single",
+      "question": "一家公司在 Amazon EC2 實例上運行分析軟件。該軟件接受來自用戶的作業請求，以處理已上傳到 Amazon S3 的數據。用戶報告某些提交的數據未被處理。Amazon CloudWatch 顯示 EC2 實例的 CPU 利用率始終保持在 100% 或接近 100%。該公司希望改善系統性能並根據用戶負載擴展系統。解決方案架構師應該怎麼做以滿足這些要求？",
+      "options": {
+        "A": "創建實例的副本，將所有實例放在應用負載均衡器後面",
+        "B": "為 Amazon S3 創建一個 S3 VPC 端點，更新軟件以引用該端點",
+        "C": "停止 EC2 實例。將實例類型修改為具有更強大 CPU 和更多內存的類型。重新啟動實例。",
+        "D": "將傳入請求路由到 Amazon Simple Queue Service (Amazon SQS)，根據隊列大小配置 EC2 自動擴展組，更新軟件以從隊列讀取。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "此選項是最佳解決方案，因為它允許公司將分析軟件與用戶請求解耦，並根據需求動態擴展 EC2 實例。通過使用 Amazon SQS，公司可以創建一個隊列，存儲用戶請求，並作為用戶與分析軟件之間的緩衝區。這樣，軟件可以按照自己的節奏處理請求，而不會丟失任何數據或過載 EC2 實例。通過使用 EC2 自動擴展，公司可以創建一個自動擴展組，根據隊列的大小自動啟動或終止 EC2 實例。這樣，公司可以確保有足夠的實例來處理負載，並優化系統的成本和性能。通過更新軟件以從隊列讀取，公司可以使分析軟件能夠消耗來自隊列的請求並處理來自 Amazon S3 的數據。A . 創建實例的副本，將所有實例放在應用負載均衡器後面。此選項不是最佳的，因為它沒有解決問題的根本原因，即 EC2 實例的高 CPU 利用率。應用負載均衡器可以將傳入流量分配到多個實例，但無法根據負載擴展實例或減少分析軟件的處理時間。此外，此選項可能會產生額外的負載均衡器和額外實例的成本。B . 為 Amazon S3 創建一個 S3 VPC 端點，更新軟件以引用該端點。此選項無效，因為它無法解決 EC2 實例的高 CPU 利用率問題。S3 VPC 端點可以使 EC2 實例在不經過互聯網的情況下訪問 Amazon S3，這可以改善網絡性能和安全性。然而，它無法減少分析軟件的處理時間或根據負載擴展實例。C . 停止 EC2 實例。將實例類型修改為具有更強大 CPU 和更多內存的類型。重新啟動實例。此選項不是可擴展的，因為它沒有考慮用戶負載的變化。將實例類型更改為更強大的類型可以改善分析軟件的性能，但無法根據需求調整實例的數量。此外，此選項可能會增加系統的成本，並在實例修改期間導致停機。參考：1 使用 Amazon SQS 隊列與 Amazon EC2 自動擴展 - Amazon EC2 自動擴展 2 教程：設置擴展和負載均衡的應用程序 - Amazon EC2 自動擴展 3 Amazon EC2 自動擴展常見問題"
+    },
+    {
+      "id": 653,
+      "type": "single",
+      "question": "一家公司正在開發一款移動遊戲，該遊戲將分數更新流式傳輸到後端處理器，然後在排行榜上發布結果。解決方案架構師需要設計一個解決方案，能夠處理大量流量峰值，按接收順序處理移動遊戲更新，並將處理過的更新存儲在高可用性數據庫中。該公司還希望最小化維護該解決方案所需的管理開銷。解決方案架構師應該怎麼做以滿足這些要求？",
+      "options": {
+        "A": "將分數更新推送到 Amazon Kinesis Data Streams，使用 AWS Lambda 處理 Kinesis Data Streams 中的更新，將處理過的更新存儲在 Amazon DynamoDB 中。",
+        "B": "將分數更新推送到 Amazon Kinesis Data Streams，使用設置為自動擴展的 Amazon EC2 實例集群處理更新，將處理過的更新存儲在 Amazon Redshift 中。",
+        "C": "將分數更新推送到 Amazon Simple Notification Service (Amazon SNS) 主題，訂閱一個 AWS Lambda 函數以處理更新。將處理過的更新存儲在運行在 Amazon EC2 上的 SQL 數據庫中。",
+        "D": "將分數更新推送到 Amazon Simple Queue Service (Amazon SQS) 隊列。使用設置為自動擴展的 Amazon EC2 實例集群處理 SQS 隊列中的更新。將處理過的更新存儲在 Amazon RDS Multi-AZ 數據庫實例中。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon Kinesis Data Streams 是一個可擴展且可靠的服務，可以實時攝取、緩衝和處理流數據。它可以處理大量流量峰值並保持進來的數據記錄的順序。AWS Lambda 是一個無伺服器計算服務，可以處理來自 Kinesis Data Streams 的數據流，而無需任何基礎設施管理。它還可以自動擴展以匹配數據流的吞吐量。Amazon DynamoDB 是一個完全管理的、高可用的、快速的 NoSQL 數據庫，可以存儲來自 Lambda 的處理更新。它還可以處理高寫入吞吐量並提供一致的性能。通過使用這些服務，解決方案架構師可以設計一個滿足公司要求的解決方案，並且管理開銷最小。"
+    },
+    {
+      "id": 654,
+      "type": "single",
+      "question": "一家公司使用 AWS Organizations 在多個 AWS 帳戶中運行工作負載。標籤策略在公司創建標籤時向 AWS 資源添加部門標籤。會計團隊需要確定 Amazon EC2 消耗的支出。會計團隊必須確定哪些部門對成本負責，無論 AWS 帳戶如何。會計團隊可以訪問組織內所有 AWS 帳戶的 AWS 成本探查器，並需要訪問成本探查器中的所有報告。哪種解決方案以最具操作效率的方式滿足這些要求？",
+      "options": {
+        "A": "從組織管理帳戶的計費控制台啟用名為部門的用戶定義成本分配標籤。在成本探查器中創建一個按標籤名稱分組並按 EC2 過濾的成本報告。",
+        "B": "從組織管理帳戶的計費控制台啟用名為部門的 AWS 定義成本分配標籤。在成本探查器中創建一個按標籤名稱分組並按 EC2 過濾的成本報告。",
+        "C": "從組織成員帳戶的計費控制台啟用名為部門的用戶定義成本分配標籤。在成本探查器中創建一個按標籤名稱分組並按 EC2 過濾的成本報告。",
+        "D": "從組織成員帳戶的計費控制台啟用名為部門的 AWS 定義成本分配標籤。在成本探查器中創建一個按標籤名稱分組並按 EC2 過濾的成本報告。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "此解決方案滿足以下要求：它在操作上高效，因為它只需要從管理帳戶啟用一次成本分配標籤並創建一次成本報告，該帳戶可以訪問所有成員帳戶的數據和計費偏好。它是一致的，因為它使用名為部門的 AWS 定義成本分配標籤，該標籤在公司使用 AWS Organizations 強制執行的標籤策略創建標籤時自動應用於資源。這確保標籤名稱和數值在所有資源和帳戶中相同，避免了用戶定義標籤可能出現的任何差異或錯誤。它是信息豐富的，因為它在成本探查器中創建一個按標籤名稱分組並按 EC2 過濾的成本報告。這允許會計團隊查看按部門劃分的 EC2 消耗和成本，無論 AWS 帳戶如何。該團隊還可以使用成本探查器的其他功能，如圖表、過濾器和預測，來分析和優化支出。參考：使用 AWS 成本分配標籤 - AWS 計費，用戶定義的成本分配標籤 - AWS 計費，AWS Organizations 的成本標籤和報告"
+    },
+    {
+      "id": 655,
+      "type": "single",
+      "question": "一家公司使用 Amazon S3 作為其數據湖。該公司有一個新合作夥伴必須使用 SFTP 上傳數據文件。解決方案架構師需要實施一個高可用的 SFTP 解決方案，並最小化操作開銷。哪種解決方案將滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Transfer Family 配置一個具有公共可訪問端點的 SFTP 啟用服務器，選擇 S3 數據湖作為目的地。",
+        "B": "使用 Amazon S3 文件網關作為 SFTP 服務器，將 S3 文件網關端點 URL 暴露給新合作夥伴，與新合作夥伴共享 S3 文件網關端點。",
+        "C": "在 VPC 的私有子網中啟動一個 Amazon EC2 實例，指示新合作夥伴通過 VPN 將文件上傳到 EC2 實例。在 EC2 實例上運行一個 cron 作業腳本，將文件上傳到 S3 數據湖。",
+        "D": "在 VPC 的私有子網中啟動 Amazon EC2 實例，將一個網絡負載均衡器 (NLB) 放在 EC2 實例前面，為 NLB 創建一個 SFTP 監聽端口，與新合作夥伴共享 NLB 主機名，在 EC2 實例上運行一個 cron 作業腳本，將文件上傳到 S3 數據湖。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "此選項是最具成本效益和簡單的方式，以啟用對 S3 數據湖的 SFTP 訪問。AWS Transfer Family 是一個完全管理的服務，支持通過 SFTP、FTPS 和 FTP 協議進行安全文件傳輸。您可以創建一個具有公共端點的 SFTP 啟用服務器並將其與您的 S3 存儲桶關聯。您還可以使用 AWS 身份和訪問管理 (IAM) 角色和策略來控制對 S3 數據湖的訪問。該服務自動擴展以處理任何數量的文件傳輸，並提供高可用性和耐用性。您無需配置、管理或修補任何服務器或負載均衡器。選項 B 不正確，因為 Amazon S3 文件網關不是 SFTP 服務器。它是一種混合雲存儲服務，提供 S3 的本地文件系統接口。您可以使用它通過標準文件協議（如 NFS 和 SMB）將文件作為對象存儲和檢索到 S3。然而，它不支持 SFTP 協議，並且需要在本地或 EC2 上部署文件網關設備。選項 C 不是成本效益高或可擴展的，因為它需要在私有子網中啟動和管理 EC2 實例，並為新合作夥伴設置 VPN 連接。這將產生 EC2 實例、VPN 連接和數據傳輸的額外成本。它還會為解決方案引入複雜性和安全風險。此外，它需要在 EC2 實例上運行 cron 作業腳本以將文件上傳到 S3 數據湖，這並不高效或可靠。選項 D 不是成本效益高或可擴展的，因為它需要在私有子網中啟動和管理多個 EC2 實例，並在它們前面放置 NLB。這將產生 EC2 實例、NLB 和數據傳輸的額外成本。它還會為解決方案引入複雜性和安全風險。此外，它需要在 EC2 實例上運行 cron 作業腳本以將文件上傳到 S3 數據湖，這並不高效或可靠。參考：什麼是 AWS Transfer Family？什麼是 Amazon S3 文件網關？什麼是 Amazon EC2？[什麼是 Amazon 虛擬私有雲？][什麼是網絡負載均衡器？]"
+    },
+    {
+      "id": 656,
+      "type": "single",
+      "question": "一家公司有 Amazon EC2 實例，每晚運行批次作業來處理數據。這些 EC2 實例運行在使用按需計費的自動擴展組中。如果一個實例上的作業失敗，另一個實例將重新處理該作業。批次作業每天在當地時間凌晨 12:00 到早上 6:00 之間運行。哪種解決方案能以最具成本效益的方式提供 EC2 實例以滿足這些要求？",
+      "options": {
+        "A": "購買一個涵蓋批次作業所使用的自動擴展組實例系列的 Amazon EC2 一年儲蓄計劃。",
+        "B": "為自動擴展組中批次作業所使用的特定實例類型和操作系統購買一個一年期的保留實例。",
+        "C": "為自動擴展組創建一個新的啟動模板，將實例設置為競價實例，並根據 CPU 使用率設置擴展策略。",
+        "D": "為自動擴展組創建一個新的啟動模板，增加實例大小，並根據 CPU 使用率設置擴展策略。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "這個選項是最具成本效益的解決方案，因為它利用了競價實例，這些是未使用的 EC2 實例，與按需價格相比可享受高達 90% 的折扣。當對按需實例的需求增加時，AWS 可能會中斷競價實例，但由於批次作業是容錯的，並且可以由另一個實例重新處理，因此這不是主要問題。通過使用啟動模板，公司可以指定競價實例的配置，例如實例類型、操作系統和用戶數據。通過使用自動擴展組，公司可以根據 CPU 使用率自動擴展競價實例的數量，這反映了批次作業的負載。這樣，公司可以優化 EC2 實例的性能和成本，以滿足每晚的批次作業需求。\nA . 購買一個涵蓋批次作業所使用的自動擴展組實例系列的 Amazon EC2 一年儲蓄計劃。這個選項不是最佳的，因為它要求在一年的期限內對每小時的計算使用量做出一致的承諾，無論實例類型、大小、地區或操作系統如何。這可能會限制自動擴展組的靈活性和可擴展性，並導致為未使用的計算能力支付過多費用。此外，儲蓄計劃不提供容量預留，這意味著公司仍需使用按需容量預留來預留容量，並以較低的價格支付儲蓄計劃。\nB . 為自動擴展組中批次作業所使用的特定實例類型和操作系統購買一個一年期的保留實例。這個選項不是理想的，因為它要求在一年的期限內對特定實例配置做出承諾，這可能會減少自動擴展組的靈活性和可擴展性，並導致為未使用的計算能力支付過多費用。此外，保留實例不提供容量預留，這意味著公司仍需使用按需容量預留來預留容量，並以較低的價格支付保留實例。\nD . 為自動擴展組創建一個新的啟動模板，增加實例大小，並根據 CPU 使用率設置擴展策略。這個選項不是成本效益高的，因為它沒有利用競價實例的較低價格。增加實例大小可以提高批次作業的性能，但也可能增加按需實例的成本。此外，根據 CPU 使用率擴展可能導致啟動比所需更多的實例，這也可能增加系統的成本。\n參考：\n1 競價實例 - Amazon Elastic Compute Cloud\n2 啟動模板 - Amazon Elastic Compute Cloud\n3 自動擴展組 - Amazon EC2 自動擴展\n[4] 儲蓄計劃 - Amazon EC2 保留實例及其他 AWS 預留模型"
+    },
+    {
+      "id": 657,
+      "type": "single",
+      "question": "一家公司在 Amazon S3 存儲了 10 TB 的 Apache Parquet 格式的日誌文件。該公司偶爾需要使用 SQL 來分析日誌文件。哪種解決方案能以最具成本效益的方式滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon Aurora MySQL 數據庫，使用 AWS 數據庫遷移服務 (AWS DMS) 將數據從 S3 存儲桶遷移到 Aurora，並向 Aurora 數據庫發出 SQL 語句。",
+        "B": "創建一個 Amazon Redshift 集群，使用 Redshift Spectrum 直接對 S3 存儲桶中的數據運行 SQL 語句。",
+        "C": "創建一個 AWS Glue 爬蟲，從 S3 存儲桶存儲和檢索表元數據，使用 Amazon Athena 直接對 S3 存儲桶中的數據運行 SQL 語句。",
+        "D": "創建一個 Amazon EMR 集群，使用 Apache Spark SQL 直接對 S3 存儲桶中的數據運行 SQL 語句。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWS Glue 是一個無伺服器數據集成服務，可以爬取、編目和準備數據以進行分析。AWS Glue 可以自動發現存儲在 S3 中的 Apache Parquet 格式數據的模式和分區，並在 AWS Glue 數據目錄中創建一個表。Amazon Athena 是一個無伺服器的交互式查詢服務，可以直接對 S3 中的數據運行 SQL 查詢，而無需任何數據加載或轉換。Athena 可以使用來自 AWS Glue 數據目錄的表元數據來查詢 S3 中的數據。通過使用 AWS Glue 和 Athena，您可以以最具成本效益的方式分析 S3 中的日誌文件，因為您只需為爬蟲和查詢消耗的資源付費，並且不需要配置或管理任何伺服器或集群。\n參考：\nAWS Glue\nAmazon Athena\n使用 Amazon Athena 分析 S3 中的數據"
+    },
+    {
+      "id": 658,
+      "type": "single",
+      "question": "一家公司擁有從其本地位置到 AWS 帳戶的 AWS Direct Connect 連接。該 AWS 帳戶在同一 AWS 區域中擁有 30 個不同的 VPC。這些 VPC 使用私有虛擬接口 (VIF)。每個 VPC 的 CIDR 塊與公司控制下的其他網絡不重疊。該公司希望集中管理網絡架構，同時允許每個 VPC 與所有其他 VPC 和本地網絡進行通信。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "創建一個傳輸網關，並將 Direct Connect 連接與新的傳輸 VIF 關聯，啟用傳輸網關的路由傳播功能。",
+        "B": "創建一個 Direct Connect 網關，重新創建私有 VIF，使用新的網關關聯每個 VPC，創建新的虛擬私有網關。",
+        "C": "創建一個傳輸 VPC，將 Direct Connect 連接連接到傳輸 VPC，在區域內的所有其他 VPC 之間創建對等連接，更新路由表。",
+        "D": "從本地到每個 VPC 創建 AWS Site-to-Site VPN 連接，確保每個連接的兩個 VPN 隧道都處於啟用狀態，啟用路由傳播功能。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "這個解決方案滿足以下要求：\n它在運營上是高效的，因為它只需要一個傳輸網關和一個傳輸 VIF 將 Direct Connect 連接到同一 AWS 區域中的所有 VPC。傳輸網關充當區域網絡中心，簡化網絡管理並減少所需的 VIF 和網關數量。\n它是可擴展的，因為它可以支持每個傳輸網關最多 5000 個附件，包括 VPC、VPN、Direct Connect 網關和對等連接。傳輸網關還可以通過對等連接連接到不同區域或帳戶中的其他傳輸網關，實現跨區域和跨帳戶的連接。\n它是靈活的，因為它允許每個 VPC 使用動態路由協議（例如邊界網關協議 (BGP)）與所有其他 VPC 和本地網絡進行通信。傳輸網關的路由傳播功能會自動將附加 VPC 和 VPN 的路由傳播到傳輸網關路由表，消除了手動更新路由表的需要。\n參考：\n傳輸網關 - Amazon 虛擬私有雲\n使用傳輸網關 - AWS Direct Connect\nAmazon VPC 到 Amazon VPC 的連接選項 - Amazon 虛擬私有雲連接選項"
+    },
+    {
+      "id": 659,
+      "type": "single",
+      "question": "一家公司有一款移動遊戲，從 Amazon RDS DB 實例中讀取大部分元數據。隨著遊戲人氣的增加，開發人員注意到與遊戲的元數據加載時間相關的延遲。性能指標表明，僅僅擴展數據庫並不能解決問題。解決方案架構師必須探索所有選項，包括快照、複製和亞毫秒響應時間的能力。解決方案架構師應該推薦什麼來解決這些問題？",
+      "options": {
+        "A": "將數據庫遷移到 Amazon Aurora，並使用 Aurora 副本。",
+        "B": "將數據庫遷移到 Amazon DynamoDB，並使用全局表。",
+        "C": "在數據庫前添加一層 Amazon ElastiCache for Redis。",
+        "D": "在數據庫前添加一層 Amazon ElastiCache for Memcached。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "這個選項是改善遊戲元數據加載時間的最合適方法，而無需遷移數據庫。Amazon ElastiCache for Redis 是一個完全管理的內存數據存儲，為讀取密集型工作負載提供亞毫秒延遲和高吞吐量。您可以將其用作 RDS DB 實例前的緩存層，以存儲經常訪問的元數據，並減少對數據庫的負載。您還可以利用 Redis 的快照、複製和數據持久性等功能，以確保數據的持久性和可用性。ElastiCache for Redis 會自動擴展以滿足您的需求，並與其他 AWS 服務（如 CloudFormation、CloudWatch 和 IAM）集成。\n選項 A 不是最佳的，因為將數據庫遷移到 Amazon Aurora 並使用 Aurora 副本會產生額外的成本和複雜性。Amazon Aurora 是一種關聯數據庫服務，提供高性能、高可用性，並與 MySQL 和 PostgreSQL 兼容。Aurora 副本是主數據庫的只讀副本，可用於擴展讀取容量和增強可用性。然而，將數據庫遷移到 Aurora 將需要修改應用程序代碼、測試兼容性和執行數據遷移。此外，Aurora 副本可能無法提供像 ElastiCache for Redis 那樣的亞毫秒響應時間。\n選項 B 不是最佳的，因為將數據庫遷移到 Amazon DynamoDB 並使用全局表會產生額外的成本和複雜性。Amazon DynamoDB 是一種 NoSQL 數據庫服務，為任何規模提供快速和靈活的數據訪問。全局表是 DynamoDB 的一個功能，使您能夠在多個 AWS 區域之間複製數據，以實現高可用性和性能。然而，將數據庫遷移到 DynamoDB 將需要更改數據模型、修改應用程序代碼和執行數據遷移。此外，對於遊戲的元數據來說，全局表可能不是必需的，因為它們主要用於跨區域數據訪問和災難恢復。\n選項 D 不是最佳的，因為在數據庫前添加一層 Amazon ElastiCache for Memcached 不會提供與 ElastiCache for Redis 相同的功能。Amazon ElastiCache for Memcached 是另一個完全管理的內存數據存儲，為緩存工作負載提供高性能和可擴展性。然而，Memcached 不支持快照、複製或數據持久性，這意味著在節點故障或緩存驅逐的情況下，緩存數據可能會丟失。此外，Memcached 與其他 AWS 服務的集成程度不如 Redis。\n因此，ElastiCache for Redis 是此場景的更好選擇。\n參考：\n什麼是 Amazon ElastiCache for Redis？\n什麼是 Amazon Aurora？\n什麼是 Amazon DynamoDB？\n什麼是 Amazon ElastiCache for Memcached？"
+    },
+    {
+      "id": 660,
+      "type": "single",
+      "question": "一家電子商務公司在 AWS Organizations 中的 AWS 帳戶中運行應用程序。這些應用程序在所有帳戶中運行 Amazon Aurora PostgreSQL 數據庫。該公司需要防止惡意活動，並必須識別對數據庫的異常失敗和不完整的登錄嘗試。哪種解決方案能以最具運營效率的方式滿足這些要求？",
+      "options": {
+        "A": "將服務控制策略 (SCP) 附加到組織的根目錄，以識別失敗的登錄嘗試。",
+        "B": "為組織的成員帳戶啟用 Amazon GuardDuty 中的 Amazon RDS 保護功能。",
+        "C": "將 Aurora 一般日誌發佈到 Amazon CloudWatch Logs 中的日誌組，並將日誌數據導出到中央 Amazon S3 存儲桶。",
+        "D": "將所有 Aurora PostgreSQL 數據庫事件發佈到 AWS CloudTrail 中的中央 Amazon S3 存儲桶。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "這個選項是滿足要求的最具運營效率的方式，因為它允許公司監控和分析組織中所有帳戶的數據庫登錄活動。通過將 Aurora 一般日誌發佈到 Amazon CloudWatch Logs 中的日誌組，公司可以啟用數據庫連接、斷開連接和失敗的身份驗證嘗試的日誌記錄。通過將日誌數據導出到中央 Amazon S3 存儲桶，公司可以以耐用且具成本效益的方式存儲日誌數據，並使用其他 AWS 服務或工具對日誌數據進行進一步分析或警報。例如，公司可以使用 Amazon Athena 查詢 Amazon S3 中的日誌數據，或使用 Amazon SNS 根據日誌數據發送通知。\nA . 將服務控制策略 (SCP) 附加到組織的根目錄，以識別失敗的登錄嘗試。這個選項無效，因為 SCP 不是為了識別失敗的登錄嘗試而設計的，而是為了限制組織成員帳戶中用戶和角色可以執行的操作。SCP 適用於 AWS API 調用，而不是數據庫登錄嘗試。此外，SCP 不提供任何數據庫活動的日誌記錄或分析功能。\nB . 為組織的成員帳戶啟用 Amazon GuardDuty 中的 Amazon RDS 保護功能。這個選項不是最佳的，因為 Amazon GuardDuty 中的 Amazon RDS 保護功能不適用於 Aurora PostgreSQL 數據庫，而僅適用於 Amazon RDS for MySQL 和 Amazon RDS for MariaDB 數據庫。此外，Amazon RDS 保護功能不監控數據庫登錄嘗試，而是監控與 RDS 實例相關的網絡和 API 活動。\nD . 將所有 Aurora PostgreSQL 數據庫事件發佈到 AWS CloudTrail 中的中央 Amazon S3 存儲桶。這個選項不夠充分，因為 AWS CloudTrail 不捕獲數據庫登錄嘗試，而僅捕獲由 Aurora PostgreSQL 數據庫執行或代表其執行的 AWS API 調用。例如，AWS CloudTrail 可以記錄創建、修改或刪除數據庫實例、集群或快照等事件，但不包括連接、斷開連接或身份驗證失敗等事件。\n參考：\n1 使用 Amazon Aurora PostgreSQL - Amazon Aurora\n2 使用日誌組和日誌流 - Amazon CloudWatch Logs\n3 將日誌數據導出到 Amazon S3 - Amazon CloudWatch Logs\n[4] Amazon GuardDuty 常見問題\n[5] 使用 AWS CloudTrail 記錄 Amazon RDS API 調用 - Amazon 關聯數據庫服務"
+    },
+    {
+      "id": 661,
+      "type": "single",
+      "question": "一家公司在 AWS Organizations 中擁有啟用所有功能的組織。該公司要求所有 API 調用和任何現有或新 AWS 帳戶的登錄必須進行審計。該公司需要一個受管理的解決方案來防止額外的工作並最小化成本。該公司還需要知道何時任何 AWS 帳戶不符合 AWS 基礎安全最佳實踐 (FSBP) 標準。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "在 Organizations 管理帳戶中部署 AWS Control Tower 環境，啟用 AWS Security Hub 和 AWS Control Tower Account Factory。",
+        "B": "在專用的 Organizations 成員帳戶中部署 AWS Control Tower 環境，啟用 AWS Security Hub 和 AWS Control Tower Account Factory。",
+        "C": "使用 AWS Managed Services (AMS) Accelerate 建立多帳戶登陸區 (MALZ)，提交 RFC 自助服務配置 Amazon GuardDuty。",
+        "D": "使用 AWS Managed Services (AMS) Accelerate 建立多帳戶登陸區 (MALZ)，提交 RFC 自助服務配置 AWS Security Hub。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "AWS Control Tower 是一項完全受管理的服務，簡化了安全、合規的多帳戶 AWS 環境的設置和治理。它建立了一個基於最佳實踐藍圖的登陸區，並使用您可以從預打包列表中選擇的控制來啟用治理。該登陸區是一個良好架構的多帳戶基線，遵循 AWS 最佳實踐。控制實施安全、合規和運營的治理規則。AWS Security Hub 是一項服務，提供您在 AWS 帳戶中的安全狀態的全面視圖。它聚合、組織和優先處理來自多個 AWS 服務的安全警報和發現，例如 Amazon GuardDuty、Amazon Inspector、Amazon Macie、AWS Firewall Manager 和 AWS IAM Access Analyzer，以及來自 AWS 夥伴解決方案的警報。AWS Security Hub 持續監控您的環境，使用基於 AWS 最佳實踐和行業標準（例如 AWS 基礎安全最佳實踐 (FSBP) 標準）的自動合規檢查。AWS Control Tower Account Factory 是一個功能，能自動配置滿足您的業務、安全和合規要求的新 AWS 帳戶。通過在 Organizations 管理帳戶中部署 AWS Control Tower 環境，您可以利用現有的組織結構和政策，並在環境中啟用 AWS Security Hub 和 AWS Control Tower Account Factory。這樣，您可以審計任何現有或新 AWS 帳戶中的所有 API 調用和登錄，監控每個帳戶與 FSBP 標準的合規狀態，並輕鬆且一致地配置新帳戶。此解決方案以最少的運營開銷滿足要求，因為您不需要管理任何基礎設施、執行任何數據遷移或提交任何變更請求。參考：AWS Control Tower [AWS Security Hub] [AWS Control Tower Account Factory]"
+    },
+    {
+      "id": 662,
+      "type": "single",
+      "question": "一家公司擁有一個業務關鍵應用程序，該應用程序運行在 Amazon EC2 實例上。該應用程序將數據存儲在 Amazon DynamoDB 表中。該公司必須能夠將表恢復到過去 24 小時內的任何時間點。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "為該表配置時間點恢復。",
+        "B": "使用 AWS Backup 為該表進行備份。",
+        "C": "使用 AWS Lambda 函數每小時對該表進行按需備份。",
+        "D": "在該表上啟用流以捕獲過去 24 小時內對該表的所有更改的日誌，並將流的副本存儲在 Amazon S3 存儲桶中。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "DynamoDB 的時間點恢復 (PITR) 是一項功能，允許您將表數據恢復到過去 35 天內的任何時間點。PITR 有助於保護您的表免受意外寫入或刪除操作的影響，例如測試腳本寫入生產表或用戶發出錯誤命令。PITR 易於使用，完全受管理，快速且可擴展。您可以在 DynamoDB 控制台中單擊一次或使用簡單的 API 調用啟用 PITR。您可以使用控制台、AWS CLI 或 DynamoDB API 將表恢復到新表。PITR 不消耗任何預配置的表容量，對您生產應用程序的性能或可用性沒有影響。PITR 以最少的運營開銷滿足公司的要求，因為它不需要任何手動備份創建、調度或維護。它還提供對過去 24 小時內的任何時間點恢復表的每秒粒度。參考：DynamoDB 的時間點恢復 - Amazon DynamoDB Amazon DynamoDB 時間點恢復 (PITR) 為 DynamoDB 全局表啟用時間點恢復 (PITR) 將 DynamoDB 表恢復到某個時間點 - Amazon DynamoDB 時間點恢復：它是如何工作的 - Amazon DynamoDB"
+    },
+    {
+      "id": 663,
+      "type": "single",
+      "question": "一家公司每月在 Amazon S3 Standard 存儲中維護約 300 TB 的數據。S3 對象的大小通常約為 50 GB，並且經常被其全球應用程序的多部分上傳所替換。S3 對象的數量和大小保持不變，但該公司的 S3 存儲成本每月都在增加。解決方案架構師應如何在這種情況下降低成本？",
+      "options": {
+        "A": "將多部分上傳切換到 Amazon S3 Transfer Acceleration。",
+        "B": "啟用 S3 生命周期策略以刪除不完整的多部分上傳。",
+        "C": "配置 S3 清單以防止對象過快歸檔。",
+        "D": "配置 Amazon CloudFront 以減少存儲在 Amazon S3 中的對象數量。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "此選項是在此情況下降低 S3 存儲成本的最具成本效益的方法。不完整的多部分上傳是未完成或被應用程序中止的對象部分。它們佔用存儲空間並產生費用，直到被刪除。通過啟用 S3 生命周期策略以刪除不完整的多部分上傳，您可以在指定的時間段（例如一天）後自動刪除它們，並釋放存儲空間。這將降低 S3 存儲成本，並通過避免不必要的重試或錯誤來提高應用程序的性能。選項 A 是不正確的，因為將多部分上傳切換到 Amazon S3 Transfer Acceleration 不會降低 S3 存儲成本。Amazon S3 Transfer Acceleration 是一項功能，通過使用 AWS 邊緣網絡來實現更快的數據傳輸到 S3 和從 S3。它對於改善長距離大對象的上傳速度很有用，但不會影響存儲空間或費用。事實上，它可能會通過增加使用該功能的數據傳輸費用來增加成本。選項 C 是不正確的，因為配置 S3 清單以防止對象過快歸檔不會降低 S3 存儲成本。Amazon S3 清單是一項功能，提供 S3 存儲桶中對象及其元數據的報告。它對於管理和審計 S3 對象很有用，但不會影響存儲空間或費用。事實上，它可能會通過生成額外的 S3 對象來增加清單報告的成本。選項 D 是不正確的，因為配置 Amazon CloudFront 以減少存儲在 Amazon S3 中的對象數量不會降低 S3 存儲成本。Amazon CloudFront 是一個內容傳遞網絡 (CDN)，將 S3 對象分發到邊緣位置以實現更快和更低延遲的訪問。它對於改善 S3 對象的下載速度和可用性很有用，但不會影響存儲空間或費用。事實上，它可能會通過增加使用該服務的數據傳輸費用來增加成本。參考：管理您的存儲生命周期 使用多部分上傳 Amazon S3 Transfer Acceleration Amazon S3 清單 什麼是 Amazon CloudFront？"
+    },
+    {
+      "id": 664,
+      "type": "single",
+      "question": "一家金融公司需要處理高度敏感的數據。該公司將在 Amazon S3 存儲桶中存儲這些數據。該公司需要確保數據在傳輸和靜止時都被加密。該公司必須在 AWS 雲之外管理加密密鑰。哪種解決方案將滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Key Management Service (AWS KMS) 客戶管理密鑰對 S3 存儲桶中的數據進行伺服器端加密 (SSE)。",
+        "B": "使用 AWS Key Management Service (AWS KMS) AWS 管理密鑰對 S3 存儲桶中的數據進行伺服器端加密 (SSE)。",
+        "C": "使用默認的伺服器端加密 (SSE) 對 S3 存儲桶中的數據進行加密。",
+        "D": "在公司的數據中心對數據進行加密，然後再將數據存儲在 S3 存儲桶中。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "此選項是唯一滿足要求的解決方案，因為它允許公司使用其自己的加密密鑰和工具在 AWS 雲之外對數據進行加密。通過在公司的數據中心對數據進行加密，然後再將數據存儲在 S3 存儲桶中，該公司可以確保數據在傳輸和靜止時都被加密，並且該公司對加密密鑰和過程擁有完全控制權。此選項還避免了使用任何 AWS 加密服務或功能的需要，這些服務或功能可能與公司的安全政策或合規標準不兼容。A. 使用 AWS Key Management Service (AWS KMS) 客戶管理密鑰對 S3 存儲桶中的數據進行伺服器端加密 (SSE)。此選項不符合要求，因為它不允許公司在 AWS 雲之外管理加密密鑰。儘管該公司可以在 AWS KMS 中創建和使用自己的客戶管理密鑰，但該密鑰仍然由 AWS KMS 存儲和管理，這是一項 AWS 雲內的服務。此外，該公司仍然需要使用 AWS 加密功能和 API 對 S3 存儲桶中的數據進行加密和解密，這可能與公司的安全政策或合規標準不兼容。B. 使用 AWS Key Management Service (AWS KMS) AWS 管理密鑰對 S3 存儲桶中的數據進行伺服器端加密 (SSE)。此選項不符合要求，因為它不允許公司在 AWS 雲之外管理加密密鑰。在此選項中，該公司使用 AWS KMS 中的默認 AWS 管理密鑰，該密鑰由 AWS 代表公司創建和管理。該公司對密鑰的輪換、刪除或恢復政策沒有控制權。此外，該公司仍然需要使用 AWS 加密功能和 API 對 S3 存儲桶中的數據進行加密和解密，這可能與公司的安全政策或合規標準不兼容。C. 使用默認的伺服器端加密 (SSE) 對 S3 存儲桶中的數據進行加密。此選項不符合要求，因為它不允許公司在 AWS 雲之外管理加密密鑰。在此選項中，該公司使用 Amazon S3 管理密鑰的默認伺服器端加密 (SSE-S3)，該加密適用於 Amazon S3 中的每個存儲桶。該公司對由 Amazon S3 管理的加密密鑰沒有可見性或控制權。此外，該公司仍然需要使用 AWS 加密功能和 API 對 S3 存儲桶中的數據進行加密和解密，這可能與公司的安全政策或合規標準不兼容。參考：1 保護數據的加密 - Amazon Simple Storage Service 2 使用伺服器端加密保護數據 - Amazon Simple Storage Service 3 使用客戶端加密保護數據 - Amazon Simple Storage Service 4 AWS Key Management Service 概念 - AWS Key Management Service"
+    },
+    {
+      "id": 665,
+      "type": "single",
+      "question": "一家公司的市場數據從多個來源上傳到 Amazon S3 存儲桶。一系列數據準備作業聚合數據以進行報告。數據準備作業需要定期並行運行。一些作業需要稍後按特定順序運行。該公司希望消除作業錯誤處理、重試邏輯和狀態管理的運營開銷。哪種解決方案將滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Lambda 函數在數據上傳到 S3 存儲桶後立即處理數據，並在定期安排的時間調用其他 Lambda 函數。",
+        "B": "使用 Amazon Athena 處理數據，使用 Amazon EventBridge Scheduler 定期調用 Athena。",
+        "C": "使用 AWS Glue DataBrew 處理數據，使用 AWS Step Functions 狀態機運行 DataBrew 數據準備作業。",
+        "D": "使用 AWS Data Pipeline 處理數據。安排 Data Pipeline 在午夜處理數據一次。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWS Glue DataBrew 是一個可視化數據準備工具，允許您輕鬆清理、標準化和轉換數據，而無需編寫任何代碼。您可以在存儲在 Amazon S3、Amazon Redshift 或其他數據源中的數據上創建和運行數據準備作業。AWS Step Functions 是一項服務，讓您將多個 AWS 服務協調成無伺服器工作流。您可以使用 Step Functions 來編排 DataBrew 作業，定義執行的順序和並行性，處理錯誤和重試，並監控工作流的狀態。通過使用 AWS Glue DataBrew 和 AWS Step Functions，您可以以最小的運營開銷滿足公司的要求，因為您無需編寫任何代碼、管理任何伺服器或處理複雜的依賴關係。參考：AWS Glue DataBrew AWS Step Functions 使用 AWS Step Functions 編排 AWS Glue DataBrew 作業"
+    },
+    {
+      "id": 666,
+      "type": "single",
+      "question": "一家公司想要分析和排除與 IAM 權限相關的存取被拒絕錯誤和未經授權錯誤。該公司已啟用 AWS CloudTrail。哪種解決方案能以最少的努力滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Glue 並編寫自定義腳本查詢 CloudTrail 日誌以查找錯誤",
+        "B": "使用 AWS Batch 並編寫自定義腳本查詢 CloudTrail 日誌以查找錯誤",
+        "C": "使用 Amazon Athena 查詢 CloudTrail 日誌以識別錯誤",
+        "D": "使用 Amazon QuickSight 查詢 CloudTrail 日誌，創建儀表板以識別錯誤。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "此解決方案滿足以下要求：\n它是最少的努力，因為它不需要任何額外的 AWS 服務、自定義腳本或數據處理步驟。Amazon Athena 是一種無伺服器的互動查詢服務，允許您使用標準 SQL 分析 Amazon S3 中的數據。您可以直接從存儲 CloudTrail 日誌的 S3 存儲桶中查詢日誌，而無需任何數據加載或轉換。您還可以使用 AWS 管理控制台、AWS CLI 或 Athena API 來運行和管理查詢。\n它是有效的，因為它允許您使用 SQL 語法過濾、聚合和聯接 CloudTrail 日誌數據。您可以使用各種 SQL 函數和運算符來指定識別存取被拒絕和未經授權錯誤的標準，例如錯誤代碼、用戶身份、事件來源、事件名稱、事件時間和資源 ARN。您還可以使用子查詢、視圖和公共表達式來簡化和優化查詢。\n它是靈活的，因為它允許您自定義和保存查詢以供未來使用。您還可以將查詢結果導出為其他格式，例如 CSV 或 JSON，或將其與其他 AWS 服務（例如 Amazon QuickSight）集成，以進行進一步分析和可視化。\n參考：\n查詢 AWS CloudTrail 日誌 - Amazon Athena\n使用 Amazon Athena 分析 S3 中的數據 | AWS 大數據博客\n排除 IAM 權限存取被拒絕或未經授權錯誤 | AWS re:Post"
+    },
+    {
+      "id": 667,
+      "type": "single",
+      "question": "一家公司正在為其工作負載構建 Amazon Elastic Kubernetes Service (Amazon EKS) 叢集。所有存儲在 Amazon EKS 中的秘密必須在 Kubernetes etcd 鍵值存儲中加密。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "創建一個新的 AWS Key Management Service (AWS KMS) 密鑰，使用 AWS Secrets Manager 管理、輪換和存儲所有秘密在 Amazon EKS 中。",
+        "B": "創建一個新的 AWS Key Management Service (AWS KMS) 密鑰，啟用 Amazon EKS KMS 秘密加密在 Amazon EKS 叢集中。",
+        "C": "使用默認選項創建 Amazon EKS 叢集，使用 Amazon Elastic Block Store (Amazon EBS) 容器存儲接口 (CSI) 驅動程序作為附加功能。",
+        "D": "創建一個新的 AWS Key Management Service (AWS KMS) 密鑰，使用 alias aws/ebs，啟用帳戶的默認 Amazon Elastic Block Store (Amazon EBS) 卷加密。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "此選項是加密存儲在 Amazon EKS 中的秘密的最安全和簡單的方法。\nAWS Key Management Service (AWS KMS) 是一項服務，允許您創建和管理可用於加密數據的加密密鑰。Amazon EKS KMS 秘密加密是一項功能，使您能夠使用 KMS 密鑰加密存儲在 Kubernetes etcd 鍵值存儲中的秘密。這為您的敏感數據（例如密碼、令牌和密鑰）提供了額外的保護層。您可以創建一個新的 KMS 密鑰或使用現有的，然後在 Amazon EKS 叢集上啟用 Amazon EKS KMS 秘密加密。您還可以使用 IAM 策略控制誰可以訪問或使用 KMS 密鑰。\n選項 A 不正確，因為使用 AWS Secrets Manager 管理、輪換和存儲所有秘密在 Amazon EKS 中並不是必要或高效的。AWS Secrets Manager 是一項服務，幫助您安全地存儲、檢索和輪換您的秘密，例如數據庫憑據、API 密鑰和密碼。您可以使用它來管理應用程序或服務在 Amazon EKS 之外使用的秘密，但它並不是設計用來加密存儲在 Kubernetes etcd 鍵值存儲中的秘密。此外，使用 AWS Secrets Manager 會產生額外的成本和複雜性，並且不會利用原生 Kubernetes 秘密管理功能。\n選項 C 不正確，因為使用 Amazon EBS 容器存儲接口 (CSI) 驅動程序作為附加功能並不會加密存儲在 Amazon EKS 中的秘密。Amazon EBS CSI 驅動程序是一個插件，允許您將 Amazon EBS 卷用作 Kubernetes Pod 的持久存儲。它對於為您的應用程序提供耐用和可擴展的存儲非常有用，但不會影響存儲在 Kubernetes etcd 鍵值存儲中的秘密的加密。此外，使用 Amazon EBS CSI 驅動程序需要額外的配置和資源，並且不會提供與使用 KMS 密鑰相同的安全級別。\n選項 D 不正確，因為創建一個新的 AWS KMS 密鑰，使用 alias aws/ebs 並啟用帳戶的默認 Amazon EBS 卷加密並不會加密存儲在 Amazon EKS 中的秘密。alias aws/ebs 是 AWS 用來為您的帳戶創建默認 KMS 密鑰的保留別名。該密鑰用於加密在您的帳戶中創建的 Amazon EBS 卷，除非您指定其他 KMS 密鑰。啟用帳戶的默認 Amazon EBS 卷加密是一個設置，確保所有新創建的 Amazon EBS 卷默認加密。然而，這些功能不會影響存儲在 Kubernetes etcd 鍵值存儲中的秘密的加密。此外，使用默認 KMS 密鑰或默認加密設置不會提供與使用自定義 KMS 密鑰和啟用 Amazon EKS KMS 秘密加密功能相同的控制和安全級別。參考：\n加密在 Amazon EKS 中使用的秘密\n什麼是 AWS Key Management Service？\n什麼是 AWS Secrets Manager？\nAmazon EBS CSI 驅動程序\n靜態加密"
+    },
+    {
+      "id": 668,
+      "type": "multiple",
+      "question": "一家公司使用 Docker 容器構建了一個應用程序，並需要在 AWS Cloud 中運行該應用程序。該公司希望使用一個管理服務來託管該應用程序。該解決方案必須根據單個容器服務的需求適當地進行擴展，並且不應導致額外的運營開銷或基礎設施管理。哪種解決方案能滿足這些要求？（選擇兩個）",
+      "options": {
+        "A": "使用 Amazon Elastic Container Service (Amazon ECS) 與 AWS Fargate。",
+        "B": "使用 Amazon Elastic Kubernetes Service (Amazon EKS) 與 AWS Fargate。",
+        "C": "提供一個 Amazon API Gateway API，將 API 連接到 AWS Lambda 以運行容器。",
+        "D": "使用 Amazon Elastic Container Service (Amazon ECS) 與 Amazon EC2 工作節點。",
+        "E": "使用 Amazon Elastic Kubernetes Service (Amazon EKS) 與 Amazon EC2 工作節點。"
+      },
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "這些選項是最佳解決方案，因為它們允許公司在 AWS Cloud 中使用 Docker 容器運行應用程序，並使用自動擴展的管理服務，無需管理任何基礎設施。通過使用 AWS Fargate，公司可以啟動和運行容器，而無需提供、配置或擴展 EC2 實例集群。Fargate 為每個容器分配適當的計算資源，並根據需要進行擴展。通過使用 Amazon ECS 或 Amazon EKS，公司可以選擇最適合其需求的容器編排平台。Amazon ECS 是一項完全管理的服務，與其他 AWS 服務集成，簡化了容器的部署和管理。Amazon EKS 是一項管理服務，在 AWS 上運行 Kubernetes，並提供與現有 Kubernetes 工具和插件的兼容性。\nC . 提供一個 Amazon API Gateway API，將 API 連接到 AWS Lambda 以運行容器。此選項不可行，因為 AWS Lambda 不支持直接運行 Docker 容器。Lambda 函數在與其他函數和資源隔離的沙盒環境中執行。要在 Lambda 上運行 Docker 容器，公司需要使用自定義運行時或模擬 Docker API 的包裝庫，這可能會引入額外的複雜性和開銷。\nD . 使用 Amazon Elastic Container Service (Amazon ECS) 與 Amazon EC2 工作節點。此選項不是最佳選擇，因為它要求公司管理承載容器的 EC2 實例。公司需要提供、配置、擴展、修補和監控 EC2 實例，這可能會增加運營開銷和基礎設施成本。\nE . 使用 Amazon Elastic Kubernetes Service (Amazon EKS) 與 Amazon EC2 工作節點。此選項也不是理想的，因為它要求公司管理承載容器的 EC2 實例。公司需要提供、配置、擴展、修補和監控 EC2 實例，這可能會增加運營開銷和基礎設施成本。\n參考：\n1 AWS Fargate - Amazon Web Services\n2 Amazon Elastic Container Service - Amazon Web Services\n3 Amazon Elastic Kubernetes Service - Amazon Web Services\n4 AWS Lambda 常見問題 - Amazon Web Services"
+    },
+    {
+      "id": 669,
+      "type": "single",
+      "question": "一家公司正在創建一個應用程序。該公司將應用程序測試的數據存儲在多個本地位置。該公司需要將本地位置連接到 AWS Cloud 中的一個 AWS 區域的 VPC。隨著未來一年帳戶和 VPC 數量的增加，網絡架構必須簡化新連接的管理，並提供擴展能力。哪種解決方案能以最少的管理開銷滿足這些要求？",
+      "options": {
+        "A": "在 VPC 之間創建對等連接，並在 VPC 和本地位置之間創建 VPN 連接。",
+        "B": "啟動一個 Amazon EC2 實例，在該實例上包含使用 VPN 連接連接所有 VPC 和本地位置的 VPN 軟件。",
+        "C": "創建一個傳輸網關，為 VPC 連接創建 VPC 附加，為本地連接創建 VPN 附加。",
+        "D": "在本地位置和中央 VPC 之間創建 AWS Direct Connect 連接。通過使用對等連接將中央 VPC 連接到其他 VPC。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "傳輸網關是一個網絡傳輸中心，使您能夠以集中和可擴展的方式連接 VPC 和本地網絡。您可以創建 VPC 附加以將 VPC 連接到傳輸網關，並創建 VPN 附加以通過互聯網將本地網絡連接到傳輸網關。傳輸網關充當附加網絡之間的路由器，並通過減少所需的對等或 VPN 連接數量簡化新連接的管理。您還可以使用傳輸網關路由表控制附加網絡之間的流量路由。通過創建傳輸網關並使用 VPC 和 VPN 附加，您可以以最少的管理開銷滿足公司的要求。\n參考：\nAWS 傳輸網關\n傳輸網關附加\n傳輸網關路由表"
+    },
+    {
+      "id": 670,
+      "type": "single",
+      "question": "一家公司擁有多個 AWS 帳戶，應用程序部署在 us-west-2 區域。應用程序日誌存儲在每個帳戶的 Amazon S3 存儲桶中。該公司希望建立一個集中式日誌分析解決方案，使用單個 S3 存儲桶。日誌必須不離開 us-west-2，並且該公司希望承擔最少的運營開銷。哪種解決方案滿足這些要求並且最具成本效益？",
+      "options": {
+        "A": "創建一個 S3 生命週期策略，將對象從其中一個應用程序 S3 存儲桶複製到集中式 S3 存儲桶",
+        "B": "使用 S3 同區域複製將日誌從 S3 存儲桶複製到 us-west-2 中的另一個 S3 存儲桶，使用此 S3 存儲桶進行日誌分析。",
+        "C": "編寫一個腳本，每天使用 PutObject API 操作將存儲桶的所有內容複製到 us-west-2 中的另一個 S3 存儲桶，使用此 S3 存儲桶進行日誌分析。",
+        "D": "在這些帳戶中編寫 AWS Lambda 函數，當日誌交付到 S3 存儲桶時觸發（s3 ObjectCreated 事件），將日誌複製到 us-west-2 中的另一個 S3 存儲桶，使用此 S3 存儲桶進行日誌分析。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "此解決方案滿足以下要求：\n它是具有成本效益的，因為它僅對複製對象的存儲和數據傳輸收費，並且不需要任何額外的 AWS 服務或自定義腳本。S3 同區域複製 (SRR) 是一項功能，會自動在同一 AWS 區域內的 S3 存儲桶之間複製對象。SRR 可以幫助您從多個來源聚合日誌到單一目的地進行分析和審計。SRR 還保留源對象的元數據、加密和訪問控制。\n它在運營上高效，因為它不需要任何手動干預或調度。SRR 在對象上傳到源存儲桶後立即複製對象，確保目標存儲桶始終擁有最新的日誌數據。SRR 還處理源對象的任何更新或刪除，保持目標存儲桶的同步。SRR 可以在 S3 控制台中通過幾次點擊或通過簡單的 API 調用啟用。\n它是安全的，因為它不允許日誌離開 us-west-2 區域。SRR 僅在同一 AWS 區域內複製對象，確保滿足數據主權和合規要求。SRR 還支持使用 AWS KMS 或 S3 管理密鑰的伺服器端加密或客戶端加密。\n參考：\n同區域複製 - Amazon 簡單存儲服務\n如何在同一 AWS 區域內複製 S3 存儲桶中的對象？\nAWS 上的集中式日誌記錄 | AWS 解決方案 | AWS 解決方案庫"
+    },
+    {
+      "id": 671,
+      "type": "multiple",
+      "question": "一位解決方案架構師正在設計一個共享存儲解決方案，用於部署在多個可用區的網頁應用程式。該網頁應用程式運行在一個自動擴展組中的 Amazon EC2 實例上。公司計劃對內容進行頻繁更改。該解決方案必須在更改發生時立即返回新內容，並具備強一致性。哪些解決方案符合這些要求？（選擇兩個）",
+      "options": {
+        "A": "使用 AWS Storage Gateway Volume Gateway，將互聯網小型計算機系統介面（iSCSI）塊存儲掛載到各個 EC2 實例上",
+        "B": "創建一個 Amazon Elastic File System（Amazon EFS）文件系統，將 EFS 文件系統掛載到各個 EC2 實例上",
+        "C": "創建一個共享的 Amazon Elastic Block Store（Amazon EBS）卷，將 EBS 卷掛載到各個 EC2 實例上。",
+        "D": "使用 AWS DataSync 在自動擴展組中的 EC2 主機之間執行持續數據同步",
+        "E": "創建一個 Amazon S3 存儲桶來存放網頁內容，將 Cache-Control 標頭的元數據設置為 no-cache，使用 Amazon CloudFront 來交付內容"
+      },
+      "answers": [
+        "B",
+        "E"
+      ],
+      "explanation": "這些選項是設計一個共享存儲解決方案的最合適方式，該解決方案用於部署在多個可用區的網頁應用程式並需要強一致性。選項 B 使用 Amazon Elastic File System（Amazon EFS）作為共享文件系統，可以掛載在不同可用區的多個 EC2 實例上。Amazon EFS 提供高可用性、耐用性、可擴展性和文件工作負載的性能。它還支持強一致性，這意味著對文件系統所做的任何更改都會立即對所有客戶端可見。選項 E 使用 Amazon S3 作為共享對象存儲，可以存放網頁內容並通過 Amazon CloudFront（內容傳遞網絡）提供。Amazon S3 提供高可用性、耐用性、可擴展性和對象工作負載的性能。它還支持讀後寫和列操作的強一致性，這意味著對對象所做的任何更改都會立即對所有客戶端可見。通過將 Cache-Control 標頭的元數據設置為 no-cache，可以防止網頁內容被瀏覽器或 CDN 邊緣位置緩存，確保最新內容始終交付給用戶。選項 A 不合適，因為使用 AWS Storage Gateway Volume Gateway 作為網頁應用程式的共享存儲解決方案既不高效也不具可擴展性。AWS Storage Gateway Volume Gateway 是一種混合雲存儲服務，提供可以掛載在本地或 EC2 實例上的塊存儲卷，作為 iSCSI 設備。它對於將數據遷移或備份到 AWS 是有用的，但並不設計用於提供網頁內容或提供強一致性。此外，使用 Volume Gateway 會產生額外的成本和複雜性，並且不會利用原生 AWS 存儲服務。選項 C 不合適，因為創建一個共享的 Amazon EBS 卷並將其掛載到多個 EC2 實例上是不可能或不可靠的。Amazon EBS 是一種塊存儲服務，為 EC2 實例提供持久和高性能的卷。然而，EBS 卷一次只能附加到一個 EC2 實例，並且受限於單個可用區。因此，為部署在多個可用區的網頁應用程式創建共享 EBS 卷是不可行的。此外，EBS 卷不支持強一致性，這意味著對卷所做的任何更改可能不會立即對其他客戶端可見。選項 D 不合適，因為使用 AWS DataSync 在自動擴展組中的 EC2 主機之間執行持續數據同步既不高效也不具可擴展性。AWS DataSync 是一種數據傳輸服務，幫助您將大量數據移動到 AWS 存儲服務或從 AWS 存儲服務移動。它對於遷移或存檔數據是有用的，但並不設計用於提供網頁內容或提供強一致性。此外，使用 DataSync 會產生額外的成本和複雜性，並且不會利用原生 AWS 存儲服務。參考：\nWhat Is Amazon Elastic File System?\nWhat Is Amazon Simple Storage Service?\nWhat Is Amazon CloudFront?\nWhat Is AWS Storage Gateway?\nWhat Is Amazon Elastic Block Store?\nWhat Is AWS DataSync?"
+    },
+    {
+      "id": 672,
+      "type": "single",
+      "question": "一家公司在其數據中心的 Kubernetes 集群上運行容器應用程式。該應用程式使用高級消息隊列協議（AMQP）與消息隊列進行通信。數據中心無法快速擴展以滿足公司的業務需求。公司希望將工作負載遷移到 AWS。哪種解決方案將以最低的運營開銷滿足這些要求？",
+      "options": {
+        "A": "將容器應用程式遷移到 Amazon Elastic Container Service（Amazon ECS），使用 Amazon Simple Queue Service（Amazon SQS）來檢索消息。",
+        "B": "將容器應用程式遷移到 Amazon Elastic Kubernetes Service（Amazon EKS），使用 Amazon MQ 來檢索消息。",
+        "C": "使用高可用的 Amazon EC2 實例運行應用程式，使用 Amazon MQ 來檢索消息。",
+        "D": "使用 AWS Lambda 函數運行應用程式，使用 Amazon Simple Queue Service（Amazon SQS）來檢索消息。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "這個選項是最佳解決方案，因為它允許公司將容器應用程式遷移到 AWS，並且變更最小，利用管理服務運行 Kubernetes 集群和消息隊列。通過使用 Amazon EKS，公司可以在完全管理的 Kubernetes 控制平面上運行容器應用程式，這與現有的 Kubernetes 工具和插件兼容。Amazon EKS 處理 Kubernetes 集群的供應、擴展、修補和安全性，減少運營開銷和複雜性。通過使用 Amazon MQ，公司可以使用完全管理的消息代理服務，支持 AMQP 和其他流行的消息協議。Amazon MQ 處理消息代理的管理、維護和擴展，確保消息的高可用性、耐用性和安全性。選項 A：將容器應用程式遷移到 Amazon Elastic Container Service（Amazon ECS），使用 Amazon Simple Queue Service（Amazon SQS）來檢索消息。這個選項不理想，因為它要求公司將容器編排平台從 Kubernetes 更改為 ECS，這可能會引入額外的複雜性和風險。此外，它要求公司將消息協議從 AMQP 更改為 SQS，這也可能影響應用程式邏輯和性能。Amazon ECS 和 Amazon SQS 都是完全管理的服務，簡化了容器和消息的部署和管理，但它們可能與現有的應用程式架構和要求不兼容。選項 C：使用高可用的 Amazon EC2 實例運行應用程式，使用 Amazon MQ 來檢索消息。這個選項不理想，因為它要求公司管理承載容器應用程式的 EC2 實例。公司需要供應、配置、擴展、修補和監控 EC2 實例，這可能會增加運營開銷和基礎設施成本。此外，公司需要在 EC2 實例上安裝和維護 Kubernetes 軟體，這也可能增加複雜性和風險。Amazon MQ 是一個完全管理的消息代理服務，支持 AMQP 和其他流行的消息協議，但它無法彌補缺乏管理 Kubernetes 服務的不足。選項 D：使用 AWS Lambda 函數運行應用程式，使用 Amazon Simple Queue Service（Amazon SQS）來檢索消息。這個選項不可行，因為 AWS Lambda 不支持直接運行容器應用程式。Lambda 函數在與其他函數和資源隔離的沙盒環境中執行。要在 Lambda 上運行容器應用程式，公司需要使用自定義運行時或包裝庫來模擬容器 API，這可能會引入額外的複雜性和開銷。此外，Lambda 函數在可用的 CPU、內存和運行時間方面有一定的限制，這可能不適合應用程式需求。Amazon SQS 是一個完全管理的消息隊列服務，支持異步通信，但不支持 AMQP 或其他消息協議。參考：\n1 Amazon Elastic Kubernetes Service - Amazon Web Services\n2 Amazon MQ - Amazon Web Services\n3 Amazon Elastic Container Service - Amazon Web Services\n4 AWS Lambda FAQs - Amazon Web Services"
+    },
+    {
+      "id": 673,
+      "type": "single",
+      "question": "一家公司在 Amazon EC2 實例上托管的網站處理存儲在 Amazon Elastic Block Store（Amazon EBS）卷中的機密數據。該公司需要確保寫入 EBS 卷的所有數據在靜止時都是加密的。哪種解決方案將滿足這一要求？",
+      "options": {
+        "A": "創建一個 IAM 角色，指定 EBS 加密，將該角色附加到 EC2 實例上",
+        "B": "將 EBS 卷創建為加密卷，將 EBS 卷附加到 EC2 實例上",
+        "C": "創建一個 EC2 實例標籤，鍵為 Encrypt，值為 True，標記所有需要在 EBS 層面加密的實例",
+        "D": "創建一個 AWS Key Management Service（AWS KMS）密鑰策略，強制執行帳戶中的 EBS 加密，確保密鑰策略是有效的"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "確保所有寫入 EBS 卷的數據在靜止時都是加密的最簡單和最有效的方法是將 EBS 卷創建為加密卷。您可以在創建新 EBS 卷時選擇加密選項，或將現有的未加密卷複製到新的加密卷。您還可以指定要用於加密的 AWS KMS 密鑰，或使用默認的 AWS 管理密鑰。當您將加密的 EBS 卷附加到 EC2 實例時，數據將自動由 EC2 主機加密和解密。此解決方案不需要任何額外的 IAM 角色、標籤或策略。參考：\nAmazon EBS encryption\nCreating an encrypted EBS volume\nEncrypting an unencrypted EBS volume"
+    },
+    {
+      "id": 674,
+      "type": "single",
+      "question": "一家公司在 Amazon EC2 實例上托管的網站處理存儲在 Amazon S3 中的機密數據。由於安全考慮，該公司要求其 EC2 資源與 Amazon S3 之間建立私密和安全的連接。哪種解決方案滿足這些要求？",
+      "options": {
+        "A": "設置 S3 存儲桶策略以允許來自 VPC 端點的訪問。",
+        "B": "設置 IAM 策略以授予對 S3 存儲桶的讀寫訪問權限。",
+        "C": "設置 NAT 網關以訪問私有子網外的資源。",
+        "D": "設置訪問密鑰 ID 和秘密訪問密鑰以訪問 S3 存儲桶。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "此解決方案滿足以下要求：\n它是私密和安全的，因為它允許 EC2 實例在不使用公共互聯網的情況下訪問 S3 存儲桶。VPC 端點是一個網關，使您能夠在同一區域內在 VPC 和其他 AWS 服務（例如 S3）之間創建私密連接。S3 的 VPC 端點提供使用來自您的 VPC 的私有 IP 地址對 S3 存儲桶和對象的安全和直接訪問。您還可以使用 VPC 端點策略和 S3 存儲桶策略根據端點、IAM 用戶、IAM 角色或源 IP 地址控制對 S3 資源的訪問。\n它簡單且可擴展，因為它不需要任何額外的 AWS 服務、網關或 NAT 設備。S3 的 VPC 端點是一個完全管理的服務，會隨著網絡流量自動擴展。您可以在 VPC 控制台中輕鬆創建 S3 的 VPC 端點，或通過簡單的 API 調用創建。您還可以使用相同的 VPC 端點訪問同一區域中的多個 S3 存儲桶。參考：\nVPC Endpoints - Amazon Virtual Private Cloud\nGateway VPC endpoints - Amazon Virtual Private Cloud\nUsing Amazon S3 with interface VPC endpoints - Amazon Simple Storage Service\nUsing Amazon S3 with gateway VPC endpoints - Amazon Simple Storage Service"
+    },
+    {
+      "id": 675,
+      "type": "multiple",
+      "question": "一家公司正在部署一個幾乎實時處理流數據的應用程式。該公司計劃使用 Amazon EC2 實例來處理工作負載。網絡架構必須可配置，以提供節點之間最低的延遲。哪種網絡解決方案的組合將滿足這些要求？（選擇兩個）",
+      "options": {
+        "A": "在每個 EC2 實例上啟用和配置增強型網絡",
+        "B": "將 EC2 實例分組到不同的帳戶中",
+        "C": "在集群放置組中運行 EC2 實例",
+        "D": "將多個彈性網絡接口附加到每個 EC2 實例",
+        "E": "使用 Amazon Elastic Block Store（Amazon EBS）優化的實例類型。"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "這些選項是配置網絡架構以提供節點之間最低延遲的最合適方式。選項 A 在每個 EC2 實例上啟用和配置增強型網絡，這是一項通過提供更高帶寬、更低延遲和更低抖動來改善實例網絡性能的功能。增強型網絡使用單根 I/O 虛擬化（SR-IOV）或彈性織網適配器（EFA）提供對網絡硬體的直接訪問。您可以通過選擇支持的實例類型和兼容的操作系統，並安裝所需的驅動程序來啟用和配置增強型網絡。選項 C 在集群放置組中運行 EC2 實例，這是在單個可用區內將實例邏輯分組的方式，這些實例被放置在相同的底層硬體上。集群放置組提供最低的網絡延遲和最高的網絡吞吐量。您可以通過創建放置組並將實例啟動到其中來運行 EC2 實例。選項 B 不合適，因為將 EC2 實例分組到不同的帳戶中並不提供節點之間最低的延遲。不同的帳戶用於隔離和組織資源以滿足不同的目的，例如安全性、計費或合規性。然而，它們不會影響實例的網絡性能或接近性。此外，將 EC2 實例分組到不同的帳戶中會產生額外的成本和複雜性，並且需要設置跨帳戶的網絡和權限。選項 D 不合適，因為將多個彈性網絡接口附加到每個 EC2 實例並不提供節點之間最低的延遲。彈性網絡接口是可以附加到 EC2 實例的虛擬網絡接口，提供額外的網絡功能，例如多個 IP 地址、多個子網或增強的安全性。然而，它們不會影響實例的網絡性能或接近性。此外，將多個彈性網絡接口附加到每個 EC2 實例會消耗額外的資源並限制實例類型的選擇。選項 E 不合適，因為使用 Amazon EBS 優化的實例類型並不提供節點之間最低的延遲。Amazon EBS 優化的實例類型是為 Amazon EBS 卷提供專用帶寬的實例，這些卷是可以附加到 EC2 實例的塊存儲卷。EBS 優化的實例類型改善了 EBS 卷的性能和一致性，但不會影響實例的網絡性能或接近性。此外，使用 EBS 優化的實例類型會產生額外的成本，並且對於流數據工作負載可能不是必要的。參考：\n增強型網絡在 Linux 上\n放置組\n彈性網絡接口\nAmazon EBS 優化實例"
+    },
+    {
+      "id": 676,
+      "type": "single",
+      "question": "一家公司希望在 AWS 上運行其支付應用程序。該應用程序從移動設備接收支付通知。支付通知在進一步處理之前需要進行基本驗證。後端處理應用程序是長時間運行的，並且需要調整計算和內存。該公司不想管理基礎設施。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon Simple Queue Service (Amazon SQS) 隊列，將該隊列與 Amazon EventBridge 規則集成，以接收來自移動設備的支付通知。配置該規則以驗證支付通知並將通知發送到後端應用程序。在 Amazon Elastic Kubernetes Service (Amazon EKS) Anywhere 上部署後端應用程序，創建一個獨立集群。",
+        "B": "創建一個 Amazon API Gateway API，將該 API 與 AWS Step Functions 狀態機集成，以接收來自移動設備的支付通知。調用狀態機以驗證支付通知並將通知發送到後端應用程序。在 Amazon Elastic Kubernetes Service (Amazon EKS) 上部署後端應用程序。配置一個自我管理的 EKS 集群。",
+        "C": "創建一個 Amazon Simple Queue Service (Amazon SQS) 隊列，將該隊列與 Amazon EventBridge 規則集成，以接收來自移動設備的支付通知。配置該規則以驗證支付通知並將通知發送到後端應用程序。在 Amazon EC2 Spot 實例上部署後端應用程序。配置一個具有默認分配策略的 Spot Fleet。",
+        "D": "創建一個 Amazon API Gateway API，將該 API 與 AWS Lambda 集成，以接收來自移動設備的支付通知。調用 Lambda 函數以驗證支付通知並將通知發送到後端應用程序。在 Amazon Elastic Container Service (Amazon ECS) 上部署後端應用程序。使用 AWS Fargate 啟動類型配置 Amazon ECS。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "這個選項是最佳解決方案，因為它允許公司在 AWS 上運行其支付應用程序，並且運營開銷和基礎設施管理最小。通過使用 Amazon API Gateway，公司可以創建一個安全且可擴展的 API 來接收來自移動設備的支付通知。通過使用 AWS Lambda，公司可以運行無伺服器函數來驗證支付通知並將其發送到後端應用程序。Lambda 處理函數的配置、擴展和安全性，減少了運營複雜性和成本。通過使用 Amazon ECS 和 AWS Fargate，公司可以在完全管理的容器服務上運行後端應用程序，該服務自動擴展計算資源，並且不需要管理任何 EC2 實例。Fargate 為每個容器分配適當的 CPU 和內存，並根據需要進行調整。"
+    },
+    {
+      "id": 677,
+      "type": "single",
+      "question": "一位解決方案架構師正在為一家公司設計用戶身份驗證解決方案。該解決方案必須對來自不一致地理位置、IP 地址或設備登錄的用戶啟用雙因素身份驗證。該解決方案還必須能夠擴展以容納數百萬用戶。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "配置 Amazon Cognito 用戶池以進行用戶身份驗證，啟用基於風險的自適應身份驗證功能，並使用多因素身份驗證 (MFA)。",
+        "B": "配置 Amazon Cognito 身份池以進行用戶身份驗證，啟用多因素身份驗證 (MFA)。",
+        "C": "配置 AWS 身份和訪問管理 (IAM) 用戶以進行用戶身份驗證，附加一個 IAM 策略，允許 AllowManageOwnUserMFA 操作。",
+        "D": "配置 AWS IAM 身份中心 (AWS 單點登錄) 身份驗證以進行用戶身份驗證，配置權限集以要求多因素身份驗證 (MFA)。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "Amazon Cognito 用戶池提供了一個安全且可擴展的用戶目錄，用於用戶身份驗證和管理。用戶池支持多種身份驗證方法，例如用戶名和密碼、電子郵件和密碼、電話號碼和密碼以及社交身份提供者。用戶池還支持多因素身份驗證 (MFA)，這通過要求用戶提供驗證碼或生物識別因素來增加安全性，除了他們的憑據。用戶池還可以啟用基於風險的自適應身份驗證，根據登錄嘗試的風險級別動態調整身份驗證挑戰。例如，如果用戶嘗試從不熟悉的設備或位置登錄，用戶池可以要求更強的身份驗證因素，例如 SMS 或電子郵件驗證碼。這一功能有助於保護用戶帳戶免受未經授權的訪問，並減少合法用戶的摩擦。用戶池可以擴展到數百萬用戶，並與其他 AWS 服務集成，例如 Amazon SNS、Amazon SES、AWS Lambda 和 AWS KMS。"
+    },
+    {
+      "id": 678,
+      "type": "single",
+      "question": "一家公司希望在其 AWS 環境中使用 NAT 網關。該公司的 Amazon EC2 實例必須能夠通過 NAT 網關連接到公共互聯網。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "在與 EC2 實例相同的私有子網中創建公共 NAT 網關。",
+        "B": "在與 EC2 實例相同的私有子網中創建私有 NAT 網關。",
+        "C": "在與 EC2 實例相同的公共子網中創建公共 NAT 網關。",
+        "D": "在與 EC2 實例相同的公共子網中創建私有 NAT 網關。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "公共 NAT 網關使私有子網中的實例能夠向互聯網發送出站流量，同時防止互聯網與實例建立連接。公共 NAT 網關需要一個彈性 IP 地址和一條通往 VPC 的互聯網網關的路由。私有 NAT 網關使私有子網中的實例能夠通過傳輸網關或虛擬私有網關連接到其他 VPC 或本地網絡。私有 NAT 網關不需要彈性 IP 地址或互聯網網關。無論是公共還是私有 NAT 網關，都會將實例的源私有 IPv4 地址映射到 NAT 網關的私有 IPv4 地址，但在公共 NAT 網關的情況下，互聯網網關會將公共 NAT 網關的私有 IPv4 地址映射到與 NAT 網關關聯的彈性 IP 地址。在向實例發送響應流量時，無論是公共還是私有 NAT 網關，NAT 網關都會將地址轉換回原始源 IP 地址。創建與 EC2 實例相同的私有子網中的公共 NAT 網關（選項 A）不是有效解決方案，因為 NAT 網關將沒有通往互聯網網關的路由。創建與 EC2 實例相同的私有子網中的私有 NAT 網關（選項 B）也不是有效解決方案，因為實例將無法通過私有 NAT 網關訪問互聯網。創建與 EC2 實例相同的公共子網中的私有 NAT 網關（選項 D）也不是有效解決方案，因為互聯網網關會丟棄來自私有 NAT 網關的流量。因此，唯一有效的解決方案是創建與 EC2 實例相同的公共子網中的公共 NAT 網關（選項 C），因為這將允許實例通過公共 NAT 網關和互聯網網關訪問互聯網。"
+    },
+    {
+      "id": 679,
+      "type": "single",
+      "question": "一家公司需要一個解決方案，以防止 AWS CloudFormation 堆棧部署包含內聯策略或 \"*\" 的 AWS 身份和訪問管理 (IAM) 資源。該解決方案還必須禁止部署具有公共 IP 地址的 Amazon EC2 實例。該公司在 AWS Organizations 中啟用了 AWS Control Tower。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "使用 AWS Control Tower 主動控制來阻止部署具有公共 IP 地址的 EC2 實例和具有提升訪問權限或 \"*\" 的內聯策略。",
+        "B": "使用 AWS Control Tower 偵測控制來阻止部署具有公共 IP 地址的 EC2 實例和具有提升訪問權限或 \"*\" 的內聯策略。",
+        "C": "使用 AWS Config 創建 EC2 和 IAM 合規性規則，配置這些規則以運行 AWS Systems Manager Session Manager 自動化，以在不合規時刪除資源。",
+        "D": "使用服務控制策略 (SCP) 阻止 EC2 實例和 IAM 資源的操作，如果這些操作導致不合規。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "服務控制策略 (SCP) 是一種策略，您可以使用它來管理組織中的權限。SCP 提供對組織中所有帳戶的最大可用權限的集中控制，允許您確保帳戶保持在組織的訪問控制指南內。SCP 只能在啟用了所有功能的組織中使用。SCP 不授予權限；相反，它們指定組織或組織單元 (OU) 的最大權限。SCP 限制基於身份的策略或基於資源的策略授予帳戶內實體（用戶或角色）的權限，但不授予實體權限。您可以使用 SCP 限制帳戶中的根用戶可以執行的操作。您還可以使用 SCP 防止任何帳戶中的用戶或角色創建或修改某些 AWS 資源，例如具有公共 IP 地址的 EC2 實例或具有內聯策略或 \"*\" 的 IAM 資源。例如，您可以創建一個 SCP，拒絕 ec2:RunInstances 操作，如果請求包含 AssociatePublicIpAddress 參數設置為 true。您還可以創建一個 SCP，拒絕 iam:PutUserPolicy 和 iam:PutRolePolicy 操作，如果請求包含包含 \"*\" 的策略文檔。通過將這些 SCP 附加到您的組織或 OU，您可以防止部署違反這些規則的 AWS CloudFormation 堆棧。AWS Control Tower 主動控制是強制性政策，對您的帳戶和資源施加預防性政策。主動防護欄作為 AWS Organizations 服務控制策略 (SCP) 和 AWS Config 規則實施。然而，AWS Control Tower 不提供內置的主動防護欄來阻止具有公共 IP 地址的 EC2 實例或具有內聯策略或 \"*\" 的 IAM 資源。您必須使用 AWS CloudFormation 模板和 SCP 創建自己的自定義防護欄，這本質上與選項 D 相同。因此，選項 A 是不正確的。AWS Control Tower 偵測控制是檢測和警報您帳戶和資源中的政策違規的防護欄。偵測防護欄作為 AWS Config 規則和 Amazon CloudWatch 警報實施。偵測防護欄不會阻止或修復不合規的資源；它們僅通知您問題。因此，選項 B 是不正確的。AWS Config 是一項服務，使您能夠評估、審核和評估 AWS 資源的配置。AWS Config 持續監控和記錄您的 AWS 資源配置，並允許您自動評估記錄的配置與所需配置之間的差異。AWS Config 規則是可自定義的 AWS Lambda 函數，AWS Config 調用這些函數以評估您的 AWS 資源配置。您可以使用 AWS Config 規則檢查是否符合您的政策，例如確保 EC2 實例禁用公共 IP 地址或 IAM 資源沒有內聯策略或 \"*\"。然而，僅僅依賴 AWS Config 規則無法防止違反這些政策的 AWS CloudFormation 堆棧的部署；它們只能報告合規狀態。您需要使用其他服務，例如 AWS Systems Manager Session Manager，運行自動化腳本以刪除或修改不合規的資源。這將需要額外的配置和權限，並且可能不是強制執行政策的最有效或安全的方法。因此，選項 C 是不正確的。"
+    },
+    {
+      "id": 680,
+      "type": "single",
+      "question": "一家公司擁有一個客戶移動應用程序。該應用程序的數據是敏感的，必須在靜態時進行加密。該公司使用 AWS Key Management Service (AWS KMS)。該公司需要一個解決方案，以防止 KMS 密鑰的意外刪除。該解決方案必須使用 Amazon Simple Notification Service (Amazon SNS) 在用戶嘗試刪除 KMS 密鑰時向管理員發送電子郵件通知。哪種解決方案能以最少的運營開銷滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon EventBridge 規則，當用戶嘗試刪除 KMS 密鑰時做出反應。配置 AWS Config 規則以取消任何 KMS 密鑰的刪除。將 AWS Config 規則作為 EventBridge 規則的目標，創建一個 SNS 主題以通知管理員。",
+        "B": "創建一個 AWS Lambda 函數，具有自定義邏輯以防止 KMS 密鑰刪除。創建一個當用戶嘗試刪除 KMS 密鑰時啟用的 Amazon CloudWatch 警報。創建一個 Amazon EventBridge 規則，當執行 DeleteKey 操作時調用 Lambda 函數。創建一個 SNS 主題，配置 EventBridge 規則以發布 SNS 消息，通知管理員。",
+        "C": "創建一個 Amazon EventBridge 規則，當執行 KMS DeleteKey 操作時做出反應。配置該規則以啟動 AWS Systems Manager 自動化運行手冊。配置運行手冊以取消 KMS 密鑰的刪除。創建一個 SNS 主題，配置 EventBridge 規則以發布 SNS 消息，通知管理員。",
+        "D": "創建一個 AWS CloudTrail 跟蹤，配置該跟蹤以將日誌傳送到新的 Amazon CloudWatch 日誌組。根據 CloudWatch 日誌組的指標過濾器創建 CloudWatch 警報，配置該警報使用 Amazon SNS 在執行 KMS DeleteKey 操作時通知管理員。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "這個解決方案以最少的運營開銷滿足要求，因為它使用的是完全管理和可擴展的 AWS 服務。EventBridge 規則可以檢測 AWS KMS API 中的 DeleteKey 操作並觸發 Systems Manager 自動化運行手冊，該運行手冊可以執行預定義的工作流程以取消密鑰刪除。EventBridge 規則還可以發布 SNS 消息到主題，向管理員發送電子郵件通知。這樣，公司可以防止 KMS 密鑰的意外刪除，並通知管理員任何刪除嘗試。選項 A 不是有效解決方案，因為 AWS Config 規則用於評估 AWS 資源的配置，而不是取消 KMS 密鑰的刪除。選項 B 不是有效解決方案，因為它需要創建和維護具有防止 KMS 密鑰刪除邏輯的自定義 Lambda 函數，這增加了運營開銷。選項 D 不是有效解決方案，因為它僅通知管理員 DeleteKey 操作，但不會取消它。"
+    },
+    {
+      "id": 681,
+      "type": "single",
+      "question": "一家公司擁有一個 Amazon S3 數據湖。該公司需要一個解決方案，將數據從數據湖轉換並每天加載到數據倉庫中。數據倉庫必須具備大規模並行處理 (MPP) 能力。數據分析師然後需要使用 SQL 命令在數據上創建和訓練機器學習 (ML) 模型。該解決方案必須盡可能使用無伺服器的 AWS 服務。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "運行每日的 Amazon EMR 作業以轉換數據並將數據加載到 Amazon Redshift 中。使用 Amazon Redshift ML 創建和訓練 ML 模型。",
+        "B": "運行每日的 Amazon EMR 作業以轉換數據並將數據加載到 Amazon Aurora Serverless 中。使用 Amazon Aurora ML 創建和訓練 ML 模型。",
+        "C": "運行每日的 AWS Glue 作業以轉換數據並將數據加載到 Amazon Redshift Serverless 中。使用 Amazon Redshift ML 創建和訓練 ML 模型。",
+        "D": "運行每日的 AWS Glue 作業以轉換數據並將數據加載到 Amazon Athena 表中。使用 Amazon Athena ML 創建和訓練 ML 模型。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWS Glue 是一個完全管理的提取、轉換和加載 (ETL) 服務，使您能夠輕鬆準備和加載數據以進行分析。AWS Glue 可以自動發現您在 Amazon S3 中的數據並對其進行編目，因此您可以使用 SQL 查詢和搜索數據。AWS Glue 還可以使用 Apache Spark 和 Python 運行無伺服器的 ETL 作業，以將數據轉換並加載到各種目的地，例如 Amazon Redshift、Amazon Athena 或 Amazon Aurora。AWS Glue 是一項無伺服器服務，因此您只需為作業消耗的資源付費，無需配置或管理任何基礎架構。Amazon Redshift 是一個完全管理的、PB 級數據倉庫服務，使您能夠使用標準 SQL 和現有的商業智能 (BI) 工具來分析數據。Amazon Redshift 還支持大規模並行處理 (MPP)，這意味著它可以在多個節點之間並行分配和執行查詢，提供快速的性能和可擴展性。Amazon Redshift Serverless 是一個新選項，根據運行的查詢自動調整查詢計算能力，因此您無需管理集群或容量。您只需為查詢處理時間和數據消耗的存儲付費。Amazon Redshift ML 是一項功能，使您能夠使用熟悉的 SQL 命令創建、訓練和部署機器學習 (ML) 模型。Amazon Redshift ML 可以自動發現適合您數據的最佳模型和超參數，並將模型存儲在 Amazon SageMaker 中，這是一項完全管理的服務，提供了一整套構建、訓練和部署 ML 模型的工具。然後，您可以使用 SQL 函數將模型應用於 Amazon Redshift 中的數據並生成預測。AWS Glue、Amazon Redshift Serverless 和 Amazon Redshift ML 的組合滿足了問題的要求，因為它提供了一個無伺服器、可擴展的基於 SQL 的解決方案，以轉換、加載和分析來自 Amazon S3 數據湖的數據，並在數據上創建和訓練 ML 模型。選項 A 不正確，因為 Amazon EMR 不是一項無伺服器服務。Amazon EMR 是一項管理服務，簡化了在 AWS 上運行 Apache Spark、Apache Hadoop 和其他大數據框架的過程。Amazon EMR 需要您啟動和配置 EC2 實例的集群來運行 ETL 作業，這增加了與 AWS Glue 相比的複雜性和成本。選項 B 不正確，因為 Amazon Aurora Serverless 不是數據倉庫服務，並且不支持 MPP。Amazon Aurora Serverless 是一種按需、自動擴展的配置，適用於 Amazon Aurora，這是一種與 MySQL 和 PostgreSQL 兼容的關係型數據庫服務。Amazon Aurora Serverless 可以根據流量自動調整數據庫容量，但不會像 Amazon Redshift 那樣在多個節點之間分配數據和查詢。Amazon Aurora Serverless 更適合事務工作負載，而不是分析工作負載。選項 D 不正確，因為 Amazon Athena 不是數據倉庫服務，並且不支持 MPP。Amazon Athena 是一項交互式查詢服務，使您能夠使用標準 SQL 分析 Amazon S3 中的數據。Amazon Athena 是無伺服器的，因此您只需為運行的查詢付費，無需將數據加載到數據庫中。然而，Amazon Athena 不會像 Amazon Redshift 那樣以列式格式存儲數據、壓縮數據或優化查詢執行計劃。Amazon Athena 更適合即席查詢，而不是複雜的分析和 ML。參考資料：AWS Glue、Amazon Redshift、Amazon Redshift Serverless、Amazon Redshift ML、Amazon EMR、Amazon Aurora Serverless、Amazon Athena"
+    },
+    {
+      "id": 682,
+      "type": "single",
+      "question": "一家公司在其本地數據中心的 Kubernetes 環境中運行容器。該公司希望使用 Amazon Elastic Kubernetes Service (Amazon EKS) 和其他 AWS 管理服務。數據必須保持在公司的數據中心內，不能存儲在任何遠程位置或雲中以保持合規性。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "在公司的數據中心部署 AWS Local Zones",
+        "B": "在公司的數據中心使用 AWS Snowmobile",
+        "C": "在公司的數據中心安裝 AWS Outposts 橋架",
+        "D": "在數據中心安裝 AWS Snowball Edge Storage Optimized 節點"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "AWS Outposts 是一項完全管理的服務，將 AWS 基礎設施和服務交付到幾乎任何本地或邊緣位置，以實現一致的混合體驗。AWS Outposts 支持 Amazon EKS，這是一項管理服務，使在 AWS 和本地運行 Kubernetes 變得容易。通過在公司的數據中心安裝 AWS Outposts 橋架，該公司可以使用 Amazon EKS 和其他 AWS 管理服務在 Kubernetes 環境中運行容器，同時將數據保留在公司的數據中心內，並滿足合規要求。AWS Outposts 還提供與本地 AWS 區域的無縫連接，以訪問廣泛的 AWS 服務。選項 A 不是有效的解決方案，因為 AWS Local Zones 不會部署在公司的數據中心，而是在靠近最終用戶的大型都市區。AWS Local Zones 由 AWS 擁有、管理和運營，提供對公共互聯網和本地 AWS 區域的低延遲訪問。選項 B 不是有效的解決方案，因為 AWS Snowmobile 是一項使用 45 英尺長的堅固運輸集裝箱由半掛車運輸數十億字節數據到 AWS 的服務。AWS Snowmobile 不適合在本地運行容器或 AWS 管理服務，而是用於大規模數據遷移。選項 D 不是有效的解決方案，因為 AWS Snowball Edge Storage Optimized 是一種設備，提供 80 TB 的 HDD 或 210 TB 的 NVMe 存儲容量，用於數據傳輸和邊緣計算。AWS Snowball Edge Storage Optimized 不支持 Amazon EKS 或其他 AWS 管理服務，並且不適合在 Kubernetes 環境中運行容器。參考資料：AWS Outposts - Amazon Web Services、Amazon EKS on AWS Outposts - Amazon EKS、AWS Local Zones - Amazon Web Services、AWS Snowmobile - Amazon Web Services、AWS Snowball Edge Storage Optimized - Amazon Web Services"
+    },
+    {
+      "id": 683,
+      "type": "single",
+      "question": "一家社交媒體公司有工作負載收集和處理數據。這些工作負載將數據存儲在本地 NFS 存儲中。數據存儲無法快速擴展以滿足公司的擴展業務需求。該公司希望將當前的數據存儲遷移到 AWS。哪種解決方案能以最具成本效益的方式滿足這些要求？",
+      "options": {
+        "A": "設置 AWS Storage Gateway Volume Gateway。使用 Amazon S3 生命週期策略將數據轉移到適當的存儲類別。",
+        "B": "設置 AWS Storage Gateway Amazon S3 File Gateway。使用 Amazon S3 生命週期策略將數據轉移到適當的存儲類別。",
+        "C": "使用 Amazon Elastic File System (Amazon EFS) 標準-不常訪問 (Standard-IA) 存儲類別。啟用不常訪問生命週期策略。",
+        "D": "使用 Amazon Elastic File System (Amazon EFS) 單區-不常訪問 (One Zone-IA) 存儲類別。啟用不常訪問生命週期策略。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "這個解決方案以最具成本效益的方式滿足要求，因為它使公司能夠將其本地 NFS 數據存儲遷移到 AWS，而無需更改現有的應用程序或工作流程。AWS Storage Gateway 是一項混合雲存儲服務，提供本地和 AWS 存儲之間的無縫和安全的集成。Amazon S3 File Gateway 是一種 AWS Storage Gateway，提供對 Amazon S3 的文件接口，並具有本地緩存以實現低延遲訪問。通過設置 Amazon S3 File Gateway，該公司可以使用標準文件協議（如 NFS）將文件作為對象存儲和檢索到 Amazon S3 中。該公司還可以使用 Amazon S3 生命週期策略根據訪問頻率和存儲成本自動將數據轉移到適當的存儲類別。例如，該公司可以對於經常訪問的數據使用 S3 標準，對於不常訪問的數據使用 S3 標準-不常訪問 (S3 Standard-IA) 或 S3 單區-不常訪問 (S3 One Zone-IA)，以及對於長期存檔數據使用 S3 Glacier 或 S3 Glacier Deep Archive。選項 A 不是有效的解決方案，因為 AWS Storage Gateway Volume Gateway 是一種 AWS Storage Gateway，提供對 Amazon S3 的塊接口，並具有本地緩存以實現低延遲訪問。Volume Gateway 不適合遷移 NFS 數據存儲，因為它需要將卷附加到 EC2 實例或本地服務器，使用 iSCSI 協議。選項 C 不是有效的解決方案，因為 Amazon Elastic File System (Amazon EFS) 是一個完全管理的彈性 NFS 文件系統，旨在滿足需要高可用性、可擴展性和性能的工作負載。Amazon EFS 標準-不常訪問 (Standard-IA) 是 Amazon EFS 中的一個存儲類別，專為不常訪問的文件優化，具有每 GB 更低的價格和每次訪問更高的價格。使用 Amazon EFS 標準-不常訪問來遷移 NFS 數據存儲並不具成本效益，因為它會產生更高的訪問費用，並需要額外的配置來啟用生命週期管理。選項 D 不是有效的解決方案，因為 Amazon EFS 單區-不常訪問 (One Zone-IA) 是 Amazon EFS 中的一個存儲類別，專為不需要 Amazon EFS 標準或標準-不常訪問的可用性和耐久性而優化的不常訪問文件。Amazon EFS 單區-不常訪問將數據存儲在單個可用區中，這使得成本降低 47%，但在可用區故障的情況下也增加了數據丟失的風險。使用 Amazon EFS 單區-不常訪問來遷移 NFS 數據存儲並不具成本效益，因為它會產生更高的訪問費用，並需要額外的配置來啟用生命週期管理。這也會妨礙數據的可用性和耐久性。參考資料：AWS Storage Gateway - Amazon Web Services、Amazon S3 File Gateway - AWS Storage Gateway、對象生命週期管理 - Amazon Simple Storage Service、AWS Storage Gateway Volume Gateway - AWS Storage Gateway、Amazon Elastic File System - Amazon Web Services、使用 EFS 存儲類別 - Amazon Elastic File System"
+    },
+    {
+      "id": 684,
+      "type": "single",
+      "question": "一家公司有一個在 Amazon EC2 實例上運行的應用程序。一位解決方案架構師已根據公司的當前需求對特定的實例系列和各種實例大小進行了標準化。該公司希望在接下來的 3 年內最大化應用程序的成本節省。該公司需要能夠根據應用程序的受歡迎程度和使用情況在接下來的 6 個月內更改實例系列和大小。哪種解決方案能以最具成本效益的方式滿足這些要求？",
+      "options": {
+        "A": "計算節省計劃",
+        "B": "EC2 實例節省計劃",
+        "C": "區域保留實例",
+        "D": "標準保留實例"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "理解需求：該公司希望在接下來的三年內最大化其應用程序的成本節省，並在接下來的六個月內根據應用程序的受歡迎程度和使用情況靈活更改實例系列和大小。選項分析：計算節省計劃：該計劃提供最大的靈活性，允許公司更改實例系列、大小和區域。它適用於 EC2、AWS Fargate 和 AWS Lambda，提供顯著的成本節省和靈活性。EC2 實例節省計劃：該計劃的靈活性不如計算節省計劃，因為它僅適用於 EC2 實例，並允許在特定實例系列內進行更改。區域保留實例：這些提供對 EC2 實例的折扣，但與特定可用區和實例類型綁定，提供的靈活性最少。標準保留實例：這些對 EC2 實例提供折扣，但與節省計劃相比有更多限制，特別是在更改實例類型和系列時。最佳靈活性和節省的選擇：計算節省計劃是最具成本效益的解決方案，因為它允許公司在保持靈活性的同時實現顯著的成本節省。這對於適應不斷變化的應用程序需求至關重要，而不會被鎖定在特定的實例類型或系列中。參考資料：AWS 節省計劃、EC2 實例類型"
+    },
+    {
+      "id": 685,
+      "type": "single",
+      "question": "一家公司每週在工作週的第一天之前運行一個關鍵的數據分析作業。該作業需要至少 1 小時才能完成分析。該作業是有狀態的，不能容忍中斷。該公司需要一個解決方案在 AWS 上運行該作業。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "為該作業創建一個容器。安排該作業作為 AWS Fargate 任務在 Amazon Elastic Container Service (Amazon ECS) 集群上運行，使用 Amazon EventBridge Scheduler。",
+        "B": "將該作業配置為在 AWS Lambda 函數中運行。在 Amazon EventBridge 中創建一個計劃規則以調用 Lambda 函數。",
+        "C": "配置一個 Amazon EC2 Spot 實例的自動擴展組，運行 Amazon Linux。在實例上配置 crontab 條目以運行分析。",
+        "D": "配置一個 AWS DataSync 任務以運行該作業。配置一個 cron 表達式以按計劃運行該任務。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "理解需求：該作業是有狀態的，不能容忍中斷，並且需要每週可靠運行至少一小時。選項分析：AWS Fargate 與 Amazon ECS 和 EventBridge：此選項提供了一個無伺服器的容器計算引擎，可以可靠地運行有狀態的任務。使用 EventBridge Scheduler，可以在指定時間自動觸發該作業，而無需人工干預。AWS Lambda 與 EventBridge：Lambda 函數不適合長時間運行的有狀態作業，因為它們的最大執行時間為 15 分鐘。EC2 Spot 實例：Spot 實例可能會被中斷，因此不適合無法容忍中斷的有狀態作業。AWS DataSync：該服務主要用於移動大量數據，並不設計用於運行有狀態的分析作業。最佳可靠性和計劃執行的選擇：ECS 上的 Fargate 任務與 EventBridge Scheduler 滿足所有要求，提供必要的可靠性和計劃能力，沒有中斷風險。參考資料：Amazon ECS、AWS Fargate、Amazon EventBridge"
+    },
+    {
+      "id": 686,
+      "type": "single",
+      "question": "一家公司在 AWS 雲端運行工作負載。該公司希望集中收集安全數據，以評估整個公司的安全性並改善工作負載保護。哪種解決方案能以最少的開發工作滿足這些要求？",
+      "options": {
+        "A": "在 AWS Lake Formation 中配置數據湖，使用 AWS Glue 爬蟲將安全數據導入數據湖。",
+        "B": "配置一個 AWS Lambda 函數以 CSV 格式收集安全數據。將數據上傳到 Amazon S3 存儲桶。",
+        "C": "在 Amazon Security Lake 中配置數據湖以收集安全數據，將數據上傳到 Amazon S3 存儲桶。",
+        "D": "配置 AWS 數據庫遷移服務 (AWS DMS) 複製實例，將安全數據加載到 Amazon RDS 集群中。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "理解需求：該公司希望以最小的開發工作集中收集安全數據，以評估和改善所有工作負載的安全性。\n選項分析：\nAmazon Security Lake：這是一項專門為集中來自 AWS 服務和第三方來源的安全數據而設計的服務。它提供原生集成，並需要最少的開發工作來設置。\nAWS Lake Formation 與 AWS Glue：雖然可以用來創建數據湖，但需要更多的開發工作來設置和配置 Glue 爬蟲以進行數據導入。\nAWS Lambda 與 S3：這種方法涉及自定義開發，以收集和處理安全數據，然後將其存儲在 S3 中，這需要更多的工作。\nAWS DMS 到 RDS：AWS 數據庫遷移服務通常用於數據庫遷移，不適合收集和分析安全數據。\n最小開發工作最佳選擇：\nAmazon Security Lake 提供了設置安全數據集中庫所需的最少開發工作。它簡化了數據導入和管理，使其成為此用例中最有效的解決方案。\n參考：\nAmazon Security Lake\nAWS Lake Formation\nAWS Glue"
+    },
+    {
+      "id": 687,
+      "type": "single",
+      "question": "一家公司在 Amazon S3 Standard 中存儲了 PB 級的數據。這些數據存儲在多個 S3 存儲桶中，並以不同的頻率訪問。該公司不知道所有數據的訪問模式。該公司需要為每個 S3 存儲桶實施解決方案，以優化 S3 使用的成本。哪種解決方案能以最高的操作效率滿足這些要求？",
+      "options": {
+        "A": "創建一個 S3 生命周期配置，設置規則將 S3 存儲桶中的對象轉移到 S3 Intelligent-Tiering。",
+        "B": "使用 S3 存儲類別分析工具來確定 S3 存儲桶中每個對象的正確層級。將每個對象移動到識別的存儲層級。",
+        "C": "創建一個 S3 生命周期配置，設置規則將 S3 存儲桶中的對象轉移到 S3 Glacier Instant Retrieval。",
+        "D": "創建一個 S3 生命周期配置，設置規則將 S3 存儲桶中的對象轉移到 S3 One Zone-Infrequent Access (S3 One Zone-IA)。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "理解需求：該公司在多個存儲桶中擁有 PB 級的 S3 Standard 數據，並且訪問頻率各異。他們不知道訪問模式，並且需要一個成本優化的存儲解決方案，並且操作工作量最小。\n選項分析：\nS3 Intelligent-Tiering：此存儲類別根據變化的訪問模式自動在兩個訪問層級（頻繁和不頻繁）之間移動數據。它會產生少量的監控和自動化費用，但消除了手動在存儲類別之間移動數據的需要。\nS3 存儲類別分析工具：雖然對確定訪問模式有用，但此工具需要手動干預才能將對象移動到適當的存儲類別，這增加了操作開銷。\nS3 Glacier Instant Retrieval：此存儲類別旨在處理很少訪問但需要即時檢索的數據。它可能不適合訪問模式未知且各異的數據。\nS3 One Zone-IA：這是一個針對不經常訪問的數據的低成本選擇，數據存儲在單一可用區域中。它不提供與其他選項相同的耐用性和可用性，並且需要了解訪問模式。\n操作效率的最佳選擇：\nS3 Intelligent-Tiering 提供了成本節省和操作效率的最佳平衡。它根據訪問模式動態調整，而無需手動干預，確保公司只為所需支付費用，而不會因不頻繁訪問的數據而產生高成本風險。\n參考：\nAmazon S3 Intelligent-Tiering\n管理您的存儲生命周期"
+    },
+    {
+      "id": 688,
+      "type": "single",
+      "question": "一家公司計劃將數據遷移到 Amazon S3 存儲桶。數據必須在 S3 存儲桶中靜態加密。加密密鑰必須每年自動輪換。哪種解決方案能以最少的操作開銷滿足這些要求？",
+      "options": {
+        "A": "將數據遷移到 S3 存儲桶。使用 Amazon S3 管理密鑰的伺服器端加密 (SSE-S3)。使用 SSE-S3 加密密鑰的內置密鑰輪換行為。",
+        "B": "創建一個 AWS 密鑰管理服務 (AWS KMS) 客戶管理密鑰，啟用自動密鑰輪換。將 S3 存儲桶的默認加密行為設置為使用客戶管理的 KMS 密鑰。將數據遷移到 S3 存儲桶。",
+        "C": "創建一個 AWS 密鑰管理服務 (AWS KMS) 客戶管理密鑰，將 S3 存儲桶的默認加密行為設置為使用客戶管理的 KMS 密鑰。將數據遷移到 S3 存儲桶。每年手動輪換 KMS 密鑰。",
+        "D": "使用客戶密鑰材料加密數據，將數據遷移到 S3 存儲桶。創建一個沒有密鑰材料的 AWS 密鑰管理服務 (AWS KMS) 密鑰，將客戶密鑰材料導入 KMS 密鑰。啟用自動密鑰輪換。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "理解需求：數據必須靜態加密，並且每年自動輪換密鑰，並且操作開銷最小。\n選項分析：\nSSE-S3：此選項提供使用 S3 管理密鑰的加密和自動密鑰輪換，但相比於 KMS 密鑰，提供的控制和靈活性較少。\nAWS KMS 與客戶管理密鑰（自動輪換）：此選項提供對加密密鑰的完全控制，AWS KMS 處理自動密鑰輪換，最小化操作開銷。\nAWS KMS 與客戶管理密鑰（手動輪換）：這需要手動干預進行密鑰輪換，增加了操作開銷。\n客戶密鑰材料：這涉及更複雜的管理，包括導入密鑰材料和設置自動輪換，這增加了操作開銷。\n最小操作開銷的最佳選擇：\nAWS KMS 與客戶管理密鑰和自動輪換提供所需的安全性和密鑰輪換，並且操作工作量最小。將 S3 存儲桶的默認加密設置為使用此密鑰可確保所有數據按要求加密。\n參考：\nAWS 密鑰管理服務 (KMS)\nAmazon S3 默認加密"
+    },
+    {
+      "id": 689,
+      "type": "single",
+      "question": "一家公司希望建立其 IT 基礎設施的地圖，以識別和執行對資源的安全風險政策。公司的安全團隊必須能夠查詢 IT 基礎設施地圖中的數據，並快速識別安全風險。哪種解決方案能以最少的操作開銷滿足這些要求？",
+      "options": {
+        "A": "使用 Amazon RDS 存儲數據。使用 SQL 查詢數據以識別安全風險。",
+        "B": "使用 Amazon Neptune 存儲數據。使用 SPARQL 查詢數據以識別安全風險。",
+        "C": "使用 Amazon Redshift 存儲數據。使用 SQL 查詢數據以識別安全風險。",
+        "D": "使用 Amazon DynamoDB 存儲數據。使用 PartiQL 查詢數據以識別安全風險。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "理解需求：該公司需要繪製其 IT 基礎設施的地圖，以識別和執行安全政策，並能夠快速查詢和識別安全風險。\n選項分析：\nAmazon RDS：雖然適合關聯數據，但不適合處理複雜關係和查詢這些關係，這對於 IT 基礎設施地圖至關重要。\nAmazon Neptune：一種設計用於處理高度連接數據的圖形數據庫服務。它使用 SPARQL 高效查詢圖形數據，非常適合繪製 IT 基礎設施並識別可能的安全風險關係。\nAmazon Redshift：一種數據倉庫解決方案，優化了對大型數據集的複雜查詢，但不專門針對圖形數據。\nAmazon DynamoDB：一種 NoSQL 數據庫，使用 PartiQL 進行查詢，但不適合處理圖形數據中的複雜關係。\n映射和查詢 IT 基礎設施的最佳選擇：\nAmazon Neptune 提供了最合適的解決方案，操作開銷最小。它專門為圖形數據設計，並能有效查詢複雜關係以識別安全風險。\n參考：\nAmazon Neptune\n使用 SPARQL 查詢"
+    },
+    {
+      "id": 690,
+      "type": "single",
+      "question": "一家公司希望將其現有的 AWS 使用成本添加到其運營成本儀表板中。解決方案架構師需要推薦一種解決方案，該解決方案將使公司能夠以編程方式訪問其使用成本。該公司必須能夠訪問當前年度的成本數據並預測未來 12 個月的成本。哪種解決方案能以最少的操作開銷滿足這些要求？",
+      "options": {
+        "A": "使用 AWS 成本探索者 API 以分頁方式訪問與使用成本相關的數據。",
+        "B": "使用可下載的 AWS 成本探索者報告 CSV 文件訪問與使用成本相關的數據。",
+        "C": "配置 AWS Budgets 操作，通過 FTP 將使用成本數據發送給公司。",
+        "D": "為使用成本數據創建 AWS Budgets 報告，通過 SMTP 將數據發送給公司。"
+      },
+      "answers": [
+        "A"
+      ],
+      "explanation": "理解需求：該公司需要以編程方式訪問其 AWS 使用成本，並且需要當前年度的成本數據和未來 12 個月的成本預測，操作開銷最小。\n選項分析：\nAWS 成本探索者 API：提供對詳細使用和成本數據的編程訪問，包括預測成本。它支持分頁以處理大型數據集，使其成為高效的解決方案。\n可下載的 AWS 成本探索者報告 CSV 文件：雖然有用，但此方法需要手動處理文件，並且不提供實時訪問。\n通過 FTP 的 AWS Budgets 操作：這不太合適，因為它涉及設置 FTP 傳輸，並且不提供與 API 相同的詳細程度和實時訪問。\n通過 SMTP 的 AWS Budgets 報告：與 FTP 類似，此方法涉及額外的設置，並且缺乏 API 提供的實時訪問和詳細信息。\n最小操作開銷的最佳選擇：\nAWS 成本探索者 API 提供對成本數據的直接編程訪問，包括詳細的使用和預測，設置和操作工作量最小。它是將成本數據集成到運營成本儀表板中的最有效解決方案。\n參考：\nAWS 成本探索者 API\nAWS 成本和使用報告"
+    },
+    {
+      "id": 691,
+      "type": "multiple",
+      "question": "一家公司想要創建一個移動應用程序，允許用戶在其移動設備上串流慢動作視頻片段。目前，該應用程序捕獲視頻片段並將視頻片段以原始格式上傳到 Amazon S3 存儲桶中。該應用程序直接從 S3 存儲桶中檢索這些視頻片段。然而，這些視頻在原始格式下非常大。用戶在移動設備上遇到了緩衝和播放問題。該公司希望實施解決方案，以最大化應用程序的性能和可擴展性，同時最小化運營開銷。哪種解決方案的組合能滿足這些要求？（選擇兩個。）",
+      "options": {
+        "A": "部署 Amazon CloudFront 進行內容交付和緩存",
+        "B": "使用 AWS DataSync 在其他 S3 存儲桶中跨 AWS 區域複製視頻文件",
+        "C": "使用 Amazon Elastic Transcoder 將視頻文件轉換為更合適的格式。",
+        "D": "在本地區域部署一組自動擴展的 Amazon EC2 實例進行內容交付和緩存",
+        "E": "部署一組自動擴展的 Amazon EC2 實例以將視頻文件轉換為更合適的格式。"
+      },
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "理解需求：移動應用程序捕獲並上傳原始視頻片段到 S3，但用戶因這些視頻的巨大尺寸而遇到緩衝和播放問題。選項分析：Amazon CloudFront：一個內容交付網絡 (CDN)，可以以低延遲在全球範圍內緩存和交付內容。它通過從靠近用戶的邊緣位置交付內容來幫助減少緩衝。AWS DataSync：主要用於跨 AWS 區域的數據傳輸和複製，並不直接解決視頻大小和緩衝問題。Amazon Elastic Transcoder：一個媒體轉碼服務，可以將原始視頻文件轉換為更適合串流的格式和分辨率，減小文件大小並改善播放性能。本地區域的 EC2 實例：雖然這可以提供內容交付和緩存，但與使用 CloudFront 相比，涉及更多的運營開銷。轉碼的 EC2 實例：涉及設置和維護基礎設施，導致比使用 Elastic Transcoder 更高的運營開銷。最佳解決方案組合：部署 Amazon CloudFront：這通過在邊緣位置緩存內容來優化性能，減少用戶的延遲和緩衝。使用 Amazon Elastic Transcoder：這減小了文件大小並將視頻轉換為更適合在移動設備上串流的格式。參考：Amazon CloudFront，Amazon Elastic Transcoder"
+    },
+    {
+      "id": 692,
+      "type": "single",
+      "question": "一家公司應用程序在 Amazon EC2 實例上運行，並位於 Elastic Load Balancing (ELB) 負載均衡器後的自動擴展組中。根據應用程序的歷史記錄，公司預計每年在假期期間會出現流量高峰。解決方案架構師必須設計一個策略，以確保自動擴展組主動增加容量，以最小化對應用程序用戶的性能影響。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "創建一個 Amazon CloudWatch 警報，當 CPU 利用率超過 90% 時擴展 EC2 實例。",
+        "B": "創建一個定期計劃的操作，在預期的高需求期間之前擴展自動擴展組。",
+        "C": "在高需求期間增加自動擴展組中 EC2 實例的最小和最大數量。",
+        "D": "配置 Amazon Simple Notification Service (Amazon SNS) 通知，當有 autoscaling:EC2_INSTANCE_LAUNCH 事件時發送警報。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "理解需求：公司預計在假期期間會出現流量高峰，並希望確保自動擴展組能夠處理增加的負載，而不影響性能。選項分析：CloudWatch 警報：這根據 CPU 利用率等指標對流量高峰做出反應，但不會在預期需求之前主動擴展。定期計劃的操作：這允許自動擴展組根據已知的計劃進行擴展，確保在預期高峰之前有額外的容量可用。增加最小/最大實例：這可能會導致不必要的成本，因為即使在不需要的情況下也會維持更高的容量。SNS 通知：對擴展事件發出警報，但不會主動管理擴展以防止性能問題。最佳主動擴展解決方案：創建一個定期計劃的操作：這種方法確保自動擴展組在高需求之前擴展，主動提供必要的容量，而無需手動干預。參考：自動擴展的計劃擴展"
+    },
+    {
+      "id": 693,
+      "type": "multiple",
+      "question": "一家公司在 Amazon S3 上托管一個高流量的靜態網站，並擁有一個默認 TTL 為 0 秒的 Amazon CloudFront 發佈。該公司希望實施緩存以改善網站性能。然而，該公司還希望確保在部署後不超過幾分鐘的時間內不會提供過時的內容。哪種緩存方法的組合應該由解決方案架構師實施以滿足這些要求？（選擇兩個。）",
+      "options": {
+        "A": "將 CloudFront 默認 TTL 設置為 2 分鐘。",
+        "B": "在 S3 存儲桶上設置 2 分鐘的默認 TTL",
+        "C": "在 Amazon S3 中的對象上添加 Cache-Control private 指令。",
+        "D": "創建一個 AWS Lambda@Edge 函數，向 HTTP 響應添加 Expires 標頭，並配置該函數在查看者響應時運行。",
+        "E": "在 Amazon S3 中的對象上添加 24 小時的 Cache-Control max-age 指令。在部署時，創建 CloudFront 無效化以清除邊緣緩存中任何更改的文件。"
+      },
+      "answers": [
+        "A",
+        "E"
+      ],
+      "explanation": "理解需求：該公司希望改善緩存以增強網站性能，同時確保在部署後不超過幾分鐘的時間內不會提供過時的內容。選項分析：設置 CloudFront TTL：設置短 TTL（例如 2 分鐘）確保緩存內容經常刷新，減少提供過時內容的風險。S3 存儲桶 TTL：這不會控制 CloudFront 發佈的緩存持續時間。Cache-Control Private：該指令用於控制私有緩存（例如瀏覽器）的緩存，並不適用於 CloudFront。Lambda@Edge：雖然這可以動態添加標頭，但會增加複雜性和運營開銷。Cache-Control max-age 和 CloudFront 無效化：為對象設置更長的 max-age 確保它們被更長時間地緩存，減少對源的負載。無效化確保在部署後立即刷新更新的內容。最佳緩存方法組合：將 CloudFront 默認 TTL 設置為 2 分鐘：這平衡了緩存和內容的新鮮度。添加 24 小時的 Cache-Control max-age 指令並使用 CloudFront 無效化：這確保了高效的緩存，同時提供了一種在部署後立即清除過時內容的機制。參考：Amazon CloudFront 緩存，無效化 CloudFront 中的文件"
+    },
+    {
+      "id": 694,
+      "type": "single",
+      "question": "一家使用 AWS Organizations 的公司在 30 個不同的 AWS 帳戶中運行 150 個應用程序。該公司使用 AWS 成本和使用報告在管理帳戶中創建了一個新報告。該報告被傳送到一個 Amazon S3 存儲桶，該存儲桶被複製到數據收集帳戶中的一個存儲桶。公司的高層領導希望查看一個自定義儀表板，該儀表板提供 NAT 網關的每日成本，從本月初開始。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "共享一個包含請求的表格視覺的 Amazon QuickSight 儀表板。配置 QuickSight 使用 AWS DataSync 查詢新報告",
+        "B": "共享一個包含請求的表格視覺的 Amazon QuickSight 儀表板。配置 QuickSight 使用 Amazon Athena 查詢新報告。",
+        "C": "共享一個包含請求的表格視覺的 Amazon CloudWatch 儀表板。配置 CloudWatch 使用 AWS DataSync 查詢新報告",
+        "D": "共享一個包含請求的表格視覺的 Amazon CloudWatch 儀表板。配置 CloudWatch 使用 Amazon Athena 查詢新報告"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "理解需求：高層領導希望查看一個自定義儀表板，顯示從本月初開始的 NAT 網關每日成本。選項分析：QuickSight 與 DataSync：雖然 QuickSight 適合用於儀表板，但 DataSync 不是用於查詢和分析數據報告的設計。QuickSight 與 Athena：QuickSight 可以可視化由 Athena 查詢的數據，Athena 設計用於直接分析來自 S3 的數據。CloudWatch 與 DataSync：CloudWatch 主要用於監控指標，而不是創建詳細的成本分析儀表板。CloudWatch 與 Athena：同樣，使用 CloudWatch 與 Athena 不太符合可視化儀表板的需求。最佳可視化和查詢解決方案：Amazon QuickSight 與 Athena：這種組合允許強大的數據可視化和查詢能力。QuickSight 可以創建動態儀表板，而 Athena 可以有效查詢存儲在 S3 中的成本和使用報告數據。參考：Amazon QuickSight，Amazon Athena"
+    },
+    {
+      "id": 695,
+      "type": "single",
+      "question": "一家公司有一個在私有子網中運行的應用程序，該應用程序需要處理來自 Amazon S3 存儲桶的敏感信息。該應用程序必須不使用互聯網連接到 S3 存儲桶。哪種解決方案能滿足這些要求？",
+      "options": {
+        "A": "配置一個互聯網閘道。更新 S3 存儲桶策略以允許來自互聯網閘道的訪問。更新應用程序以使用新的互聯網閘道。",
+        "B": "配置一個 VPN 連接。更新 S3 存儲桶策略以允許來自 VPN 連接的訪問。更新應用程序以使用新的 VPN 連接。",
+        "C": "配置一個 NAT 閘道。更新 S3 存儲桶策略以允許來自 NAT 閘道的訪問。更新應用程序以使用新的 NAT 閘道。",
+        "D": "配置一個 VPC 端點。更新 S3 存儲桶策略以允許來自 VPC 端點的訪問。更新應用程序以使用新的 VPC 端點。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "理解需求：在私有子網中運行的 EC2 實例上的應用程序需要處理來自 S3 存儲桶的敏感信息，而不使用互聯網。選項分析：互聯網閘道：這會將應用程序暴露於互聯網，這不適合安全地訪問敏感信息。VPN 連接：VPN 主要用於在本地網絡和 AWS VPC 之間建立安全連接，而不是用於在同一 VPC 內直接訪問 S3。NAT 閘道：這允許私有子網中的實例連接到互聯網，但目標是避免互聯網訪問。VPC 端點：提供 VPC 和 S3 之間的私有連接，而不使用互聯網，確保安全訪問 S3 存儲桶。最佳解決方案：VPC 端點：配置 VPC 端點允許 EC2 實例與 S3 存儲桶之間的安全、私有通信，而不使用互聯網，確保數據安全和合規。參考：Amazon VPC 端點，Amazon S3 VPC 端點"
+    },
+    {
+      "id": 696,
+      "type": "single",
+      "question": "一家公司使用 Amazon EC2 實例和 Amazon Elastic Block Store (Amazon EBS) 來運行其自我管理的數據庫。該公司在所有 EBS 卷上擁有 350 TB 的數據。該公司每天進行 EBS 快照並將快照保留 1 個月。每日變更率為 EBS 卷的 5%。由於新的法規，該公司需要將每月的快照保留 7 年。該公司需要更改其備份策略以遵守新法規，並確保數據可用且管理工作量最小。哪種解決方案最具成本效益地滿足這些要求？",
+      "options": {
+        "A": "將每日快照保留在 EBS 快照標準層 1 個月，將每月快照複製到 Amazon S3 Glacier Deep Archive，保留 7 年。",
+        "B": "繼續使用當前的 EBS 快照策略。添加新策略將每月快照移動到 Amazon EBS Snapshots Archive，保留 7 年。",
+        "C": "將每日快照保留在 EBS 快照標準層 1 個月，將每月快照保留在標準層 7 年，使用增量快照。",
+        "D": "將每日快照保留在 EBS 快照標準層。使用 EBS 直接 API 每月對所有 EBS 卷進行快照。將快照存儲在 Amazon S3 存儲桶的低頻訪問層，保留 7 年。"
+      },
+      "answers": [
+        "B"
+      ],
+      "explanation": "理解需求：該公司需要將每日 EBS 快照保留 1 個月，並由於新法規將每月快照保留 7 年。\n選項分析：\nS3 Glacier Deep Archive：將快照移動到 S3 Glacier Deep Archive 涉及額外的複雜性，可能不是 EBS 快照的最直接方法。\nEBS Snapshots Archive：這是一個專門為 EBS 快照的長期存儲而設計的成本效益解決方案。\n標準層 7 年：將快照保留在標準層 7 年的成本較高，且未能優化成本。\nEBS 直接 API 到 S3：這涉及額外的運營開銷，與使用 EBS Snapshots Archive 相比，這不是最具成本效益的方法。\n最佳解決方案：\nEBS Snapshots Archive：添加一個策略將每月快照移動到 EBS Snapshots Archive 以進行長期保留，是最具成本效益且管理上簡單的解決方案。\n參考：\nAmazon EBS Snapshots\nAmazon EBS Snapshots Archive"
+    },
+    {
+      "id": 697,
+      "type": "single",
+      "question": "一家公司正在將五個本地應用程序遷移到 AWS Cloud 中的 VPC。每個應用程序目前在本地的隔離虛擬網絡中部署，並應在 AWS Cloud 中以類似方式部署。這些應用程序需要訪問共享服務 VPC。所有應用程序必須能夠彼此通信。如果遷移成功，該公司將對超過 100 個應用程序重複進行遷移過程。哪種解決方案將以最少的管理開銷滿足這些要求？",
+      "options": {
+        "A": "在應用程序 VPC 和共享服務 VPC 之間部署軟件 VPN 隧道。在其子網中添加應用程序 VPC 之間到共享服務 VPC 的路由。",
+        "B": "在應用程序 VPC 和共享服務 VPC 之間部署 VPC 對等連接。在其子網中通過對等連接添加應用程序 VPC 之間到共享服務 VPC 的路由。",
+        "C": "在應用程序 VPC 和共享服務 VPC 之間部署 AWS Direct Connect 連接。在其子網中從應用程序 VPC 到共享服務 VPC 和應用程序 VPC 添加路由。在共享服務 VPC 子網中添加到應用程序 VPC 的路由。",
+        "D": "部署一個傳輸網關，並在傳輸網關與應用程序 VPC 和共享服務 VPC 之間建立關聯。在其子網中添加應用程序 VPC 之間和應用程序 VPC 到共享服務 VPC 的路由，通過傳輸網關。"
+      },
+      "answers": [
+        "D"
+      ],
+      "explanation": "理解需求：該公司需要將應用程序遷移到 AWS，同時保持隔離的網絡，並允許與共享服務 VPC 以及應用程序之間的通信。\n選項分析：\n軟件 VPN 隧道：這種方法涉及高管理開銷和管理多個 VPN 連接的複雜性。\nVPC 對等：雖然適合較少的 VPC，但在超過 100 個應用程序的規模下變得複雜且難以管理。\nDirect Connect：主要用於高帶寬、低延遲的本地網絡連接，而不是 VPC 之間的通信。\n傳輸網關：通過作為中央樞紐簡化網絡管理，允許隨著更多應用程序的遷移而輕鬆路由和擴展。\n最佳解決方案：\n傳輸網關：這提供了一個可擴展、高效的解決方案，並且管理開銷最小，用於管理多個 VPC 和共享服務 VPC 之間的網絡連接。\n參考：\nAWS Transit Gateway\n建立傳輸網關"
+    },
+    {
+      "id": 698,
+      "type": "single",
+      "question": "一家公司有兩個 AWS 帳戶：生產和開發。該公司需要將開發帳戶中的代碼更改推送到生產帳戶。在 alpha 階段，只有開發團隊中的兩位高級開發人員需要訪問生產帳戶。在 beta 階段，更多開發人員將需要訪問以進行測試。哪種解決方案將滿足這些要求？",
+      "options": {
+        "A": "在每個帳戶中使用 AWS 管理控制台創建兩個策略文檔。將策略分配給需要訪問的開發人員。",
+        "B": "在開發帳戶中創建一個 IAM 角色，授予該 IAM 角色訪問生產帳戶的權限。允許開發人員假設該角色。",
+        "C": "在生產帳戶中創建一個 IAM 角色。定義一個信任策略，指定開發帳戶，允許開發人員假設該角色。",
+        "D": "在生產帳戶中創建一個 IAM 群組。將該群組作為信任策略中的主體，指定生產帳戶。將開發人員添加到該群組。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "理解需求：開發帳戶中的開發人員需要將代碼更改推送到生產帳戶，並對項目的不同階段進行分階段的訪問控制。\n選項分析：\n每個帳戶中的策略文檔：這種方法增加了複雜性，相較於基於角色的訪問更難管理。\n開發帳戶中的 IAM 角色：開發帳戶中的角色無法直接控制對生產帳戶資源的訪問。\n生產帳戶中的 IAM 角色：在生產帳戶中創建一個角色，並設置信任策略，允許開發帳戶假設該角色，提供了受控的安全訪問。\n生產帳戶中的 IAM 群組：這種方法未能提供所需的跨帳戶訪問控制。\n最佳解決方案：\n生產帳戶中的 IAM 角色：這種方法允許精確控制誰可以從開發帳戶訪問生產帳戶，並有效管理權限和訪問級別。\n參考：\n具有跨帳戶訪問的 IAM 角色\n創建跨帳戶訪問的角色"
+    },
+    {
+      "id": 699,
+      "type": "single",
+      "question": "一家機器人公司正在設計一個醫療手術解決方案。這些機器人將使用先進的傳感器、攝像頭和 AI 算法來感知其環境並完成手術。該公司需要在 AWS Cloud 中設置一個公共負載均衡器，以確保與後端服務的無縫通信。該負載均衡器必須能夠根據查詢字符串將流量路由到不同的目標組。流量還必須加密。哪種解決方案將滿足這些要求？",
+      "options": {
+        "A": "使用附加自 AWS Certificate Manager (ACM) 的證書的網絡負載均衡器，使用基於查詢參數的路由。",
+        "B": "使用網關負載均衡器。在 AWS 身份與訪問管理 (IAM) 中導入生成的證書。將證書附加到負載均衡器，使用基於 HTTP 路徑的路由。",
+        "C": "使用附加自 AWS Certificate Manager (ACM) 的證書的應用負載均衡器，使用基於查詢參數的路由。",
+        "D": "使用網絡負載均衡器。在 AWS 身份與訪問管理 (IAM) 中導入生成的證書。將證書附加到負載均衡器，使用基於查詢參數的路由。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "理解需求：該機器人公司需要一個公共負載均衡器，以確保與後端服務的無縫通信，根據查詢字符串路由流量，並加密流量。\n選項分析：\n帶有 ACM 證書的網絡負載均衡器：NLB 主要在傳輸層 (第 4 層) 操作，並不原生支持基於查詢參數的路由，這是第 7 層的特性。\n帶有 IAM 證書的網關負載均衡器：網關負載均衡器旨在部署、擴展和管理第三方虛擬設備，不支持基於 HTTP 路徑或查詢參數的路由。\n帶有 ACM 證書的應用負載均衡器：ALB 在應用層 (第 7 層) 操作，支持基於查詢參數的路由和使用 ACM 證書的 SSL/TLS 終止。\n帶有 IAM 證書的網絡負載均衡器：與第一個選項一樣，NLB 不支持基於查詢參數的路由，因此不適合此要求。\n最佳解決方案：\n帶有 ACM 證書的應用負載均衡器：此選項提供必要的第 7 層路由能力和 SSL/TLS 終止，以滿足基於查詢參數的路由和加密通信的要求。\n參考：\n應用負載均衡器\nAWS Certificate Manager"
+    },
+    {
+      "id": 700,
+      "type": "single",
+      "question": "一家公司在 AWS 區域中有多個 VPC，以支持和運行與其他區域的工作負載隔離的工作負載。由於最近的應用程序啟動要求，該公司的 VPC 必須與所有其他區域的 VPC 進行通信。哪種解決方案將以最少的管理工作量滿足這些要求？",
+      "options": {
+        "A": "使用 VPC 對等來管理單個區域中的 VPC 通信，使用跨區域的 VPC 對等來管理 VPC 通信。",
+        "B": "在所有區域中使用 AWS Direct Connect 網關來連接跨區域的 VPC 並管理 VPC 通信。",
+        "C": "使用 AWS Transit Gateway 來管理單個區域中的 VPC 通信，並使用 Transit Gateway 對等來管理跨區域的 VPC 通信。",
+        "D": "在所有區域中使用 AWS PrivateLink 來連接跨區域的 VPC 並管理 VPC 通信。"
+      },
+      "answers": [
+        "C"
+      ],
+      "explanation": "理解需求：該公司需要在多個 AWS 區域之間啟用 VPC 之間的通信，並且管理工作量最少。\n選項分析：\nVPC 對等：管理跨區域的多個 VPC 對等連接是複雜且難以擴展的，導致顯著的管理開銷。\nAWS Direct Connect 網關：主要用於在 AWS 與本地環境之間創建私有連接，而不是用於跨區域的 VPC 之間的通信。\nAWS Transit Gateway：簡化了區域內的 VPC 互連，並支持跨區域連接的 Transit Gateway 對等，減少了管理複雜性。\nAWS PrivateLink：用於通過私有連接訪問 AWS 服務和第三方服務，而不是用於 VPC 之間的通信。\n最佳解決方案：\nAWS Transit Gateway 與 Transit Gateway 對等：此選項提供了一個可擴展且高效的解決方案，用於管理單個區域內和跨多個區域的 VPC 通信，管理工作量最少。\n參考：\nAWS Transit Gateway\nTransit Gateway Peering"
+    }
+  ]
+}

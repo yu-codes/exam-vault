@@ -8,12 +8,11 @@
   "questions": [
     {
       "id": 51,
-      "question": "The older coaxial cable has been widely replaced with twisted pair, which is extremely easy to work with and also resistant to multiple hosts failure, especially when used in a: %%@%%%B%FE%W%%§EE%#%%§IHE%§%%%,%%%%% 62 MM %W 6 >2? M twtu?",
+      "question": "Which of the following represents the columns of the table in a relational database?",
       "options": {
-        "A": "Token Passing Configuration. %%%W%%W",
-        "B": "Point to Point Configuration. §W%%W",
-        "C": "Ring Configuration. %%W%%W",
-        "D": "Star Configuration. $@W%%%"
+        "B": "records or tuples",
+        "C": "record retention iE%l",
+        "D": "attributes Fuli"
       },
       "answers": [
         "D"
@@ -23,262 +22,41 @@
     },
     {
       "id": 52,
-      "question": "Which of the following items is NOT primarily used to ensure integrity? TWl%$%£%%T%E%%%?",
+      "question": "Which of the following is used to monitor network traffic or to monitor host audit logs in real time to determine violations of system security policy that have taken place?",
       "options": {
-        "A": "Cyclic Redundancy Check (CRC) %%E%%",
-        "B": "Redundant Array of inexpensive Disks (RAID) system Rmo%%",
-        "C": "Hashing Algorithms %%%",
-        "D": "The Biba Security model"
+        "A": "Intrusion Management System (IMS)",
+        "B": "Compliance Validation System",
+        "C": "Intrusion Detection System",
+        "D": "Compliance Monitoring System"
       },
       "answers": [
-        "B"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 53,
-      "question": "Which conceptual approach to intrusion detection is characterized with a high rate of false positives? Q?WW%%m%%E€%%%§%",
+      "question": "A host-based IDS is resident on which of the following?",
       "options": {
-        "A": "Network-based intrusion detection %¥W%%A@W%%",
-        "B": "Statistical analysis-based intrusion detection 63 MM WW Q63 ,/»= -Q %f%i%d%A@W",
-        "C": "Knowledge-based intrusion detection %¥E%A@%",
-        "D": "Host-based intrusion detection %¥IM%A§W"
+        "A": "bastion hosts",
+        "B": "central hosts EPQQEHL",
+        "C": "decentralized hosts",
+        "D": "On each of the critical hosts"
       },
       "answers": [
-        "B"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 54,
-      "question": "What protocol is used to match an IP address to the appropriate hardware address of the packet's destination so it can be sent? E1‘Ji’@,1£l:\"iZFI lfQ.lJ~i>Z%Ffl§l%lEEE—4\\|Pi~;i1l;iUiE%iEl‘Jl1El¢FilEiitEl‘J%I?E’i'=EE‘J E",
+      "question": "Which of the following usually provides reliable, real-time information without consuming network or host resources?",
       "options": {
-        "A": "Routing tables E%El3i%",
-        "B": "Internet Control Message Protocol (ICMP) ltT_H9%|WJf§':'FliIl?‘lii.%.1‘}J~i>‘(",
-        "C": "Reverse address resolution protocol (RARP) 67 ll 1111>$? llillllllllllll '':Ji$$ W%%WW",
-        "D": "Address resolution protocol (ARP) emnwwu"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 55,
-      "question": "Which of the following does NOT allow for a workstation to get an IP address assigned? FEUl13JBI$fBi¢F~4\\Il’E£¥3€?%|Pi1’aiit?",
-      "options": {
-        "A": "lCMP",
-        "B": "RARP BOOTP DHCP"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 56,
-      "question": "What layer of the OSI/ISO model does Point-to-point tunnelling protocol (PPTP) work at? l§i§i‘é;l7J~i>‘L(PPTP)?£os|/isotil9JM‘EI1’is:>",
-      "options": {
-        "A": "Data link layer l titiii",
-        "B": "Transport layer t'.%§%Hl%~",
-        "C": "Session layer",
-        "D": "Network layer WJé%l%'"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 57,
-      "question": "Which type of attack involves impersonating a user or a system? WWK$%¥%&%T%F%%?",
-      "options": {
-        "A": "Spoofing attack @¥%%&m .",
-        "B": "Smurfing attack Smurfingljlifi",
-        "C": "Spamming attack iiZiE1l3i\"FI§Zi'ET",
-        "D": "Sniffing attack @%K$ %¥#\\ 70 %ET@wmmm$___ $EM%E%%%F%E% W%%§@% %WW@%%%% %%§¢K$%W%K$ L %%%§%€X% A %F$%H$$%%m€i% a %%%%E%E%E%%%%Y%E %%%#&i% @#H#E&&%%%%W,immlii u $0 % @€%%@%m&$%L%$%F$&%,@¥%Lw%%F&€"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 58,
-      "question": "—%@? $%E5%%,%§ §%@$EE#%%E §MT~%E,$%&%§QE m%$%maem& %A .%%@E%%$,%%@@%,E—$%%¢,%€% 1O %%iEE%ié%%%%%W§? %%&E %%E%&%% %%$#W 72 .9l1I.9>9§9.9U“.9°?.°’°??> %%A 11E%%%$%%%%+M&%$EéWE%Wu$ A %%&M& 5 %i%%5M& C %WM& u EW%%M& %%c n.?%%%%,FWi%%%%i%&? g A amaw B",
-      "options": {
-        "C": " E%%%%%i¢%%iT%%¥$E%",
-        "B": " E%%R€%E%EWm%i",
-        "D": " K$5 III M.%%%WWW%E€¥%EE%%,%%EQTWW%%¢ A §M%%%E5%@ e §%%%5%@ c wmnwwa wmmngnwae D ic %",
-        "A": " W?%%E%%%,%%%%%%%,i%§EW%%%&E%$"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 59,
-      "question": "DDE %%c w.TW%¥$%%%%%%%%= A E%¥W%EZL%H#,%%E€ZL%W%%%o B C €%%5mmM@%%%,@€%mmMHE§%WFH<mwmmw> u %E%mmm%~%%F\\§#Q %%c $.FWW%§EE&&E%@%%,@%%%#%Q% A B %%@% 0 u %%% %%c mu%EW$#%%%I%E% %m&,#mu$w A 5 %%W%%%,§%E%& C &%%%% u &%§%mmwm %%A $.&%@%wzw$m@m%@ A %€%§@ B %%%%% 0 @iE% u %m¢@m% %%D %fTW¢%?$#%iWW?§$%E%%,REEER§W= 81 %Fm%i# %%E$i# %F%%Y# Ei $5 .F@W$$%%E%$? 57 A W? a W% C EW D %% %%A .E%%%%W+%&%m@%%W%= 58 A %%& %5i% a 0 E%%%%% u %%%iiX %c % w.?@WWW%¥%M?§E&€%AU%&€%% w A B EEWE 0 ewmm $iW n %%B w.?@W¢%W%%%%%%E%E&%E= %%EW%%%%",
-      "options": {
-        "A": "Ii]51%)? (Function point Analysis)",
-        "B": "l%5T\\'5lTEEl‘§Z7|¢ (Delphi technique) C- I53 5 i¥?IlI5ili§7l¢§% (Program Evaluation Review Technique charts)",
-        "C": "UJ§E,l§7??£(Function Point)",
-        "D": "‘§%¥lJli= (Expertjudgment) %%c w.?Wl%%%T%z#%E%%&%$%%E%F% A E%%EI$E% a %§%%%F%X c EX%%%iM,%F§5$% u E%E$@ m.%&€~l%iX%E$%%&%WJFWi%?%F§%M@ A E%%E% a 5%%%%%EM%%F%i c E%%5%€%%$%§ E%%% %%B n.TW+%%%% A E%%%§E%%E%E%#$% a E%%W%%H§%%i% c E%%%%%§%W@W$ u 2%%m%$%mm@%%&¢ %%c 84"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 60,
-      "question": "What is called the number of columns in a table? T£il*?“l“7*§ll§lZf7§Ul;F79ll'Q>. ?",
-      "options": {
-        "A": "Cardinality%§i",
-        "B": "Degreefifilif/( (Degree)",
-        "C": "Relation9€,%",
-        "D": "Schema§i§l‘5]"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 61,
-      "question": "Which of the following would not correspond to the number of primary keys values found in a table in a relational database? Fili“P\"JlI3\"4‘$’ri‘éR‘Fi§ii?':T:9%%¥5l£E‘l3TE‘1l“i%E<]3£fElEEi‘]i5I§",
-      "options": {
-        "A": "Number of rowsil",
-        "B": "Cardinality%§§Z",
-        "C": "Number of tuplesilill",
-        "D": "Degreel51'|‘§l'l{ (degree) llifl’/§;g:"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 62,
-      "question": "Which of the following represents the best programming? ‘l:§lli5limll/§l5—/i\\lJ€§%Y§ Zlflflflé/if§7‘ii§? lfki",
-      "options": {
-        "A": "Low cohesion, low coupling TEEW 5%,",
-        "B": "High cohesion, high coupling %|7q 51%, llib",
-        "C": "High cohesion, low coupling E§—}|7\\]%,",
-        "D": "Low cohesion, high coupling TEEW E52, %'%i%€“ Ell@%:%: C"
-      },
-      "answers": [
-        "E"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 63,
-      "question": "Buffer overflow and boundary condition errors are subsets of which of the following? ?/%7fl“|X??Hj$UiZ§??kl¢€%i5&%?§U$l54\\iiIDi Ell]??? iii",
-      "options": {
-        "A": "Access validation errors. IE]5iE%l§*<",
-        "B": "Exceptional condition handling errors. ¥'FT%“§%l1‘l1§¢iE!Ej§i§'e Input validation errors. §§T1)\\5iIE!F*§i§'< Race condition errors. %é5%4¢!r%i§é"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 64,
-      "question": "Which of the following phases of a system development life-cycle is most concerned with establishing a sound policy as the foundation for design? L)T%B/|‘l1f|‘E<i%f%€ii3¥7fZ’5liBl%lEH':l“%§5£iJ‘f6l§i¥£ E%12’§‘i3<J§%lH§*_%l@? ‘llvitit éllliéiiill ?",
-      "options": {
-        "A": "Maintenanceiif“",
-        "B": "Development/acquisitioniliiiill3§€H1",
-        "C": "lnitiation)E,' izjj",
-        "D": "lmplementation§T<')?EE Egggéz"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 65,
-      "question": "What can be defined as: It confirms that users’ needs have been met by the supplied solution ? lfQ\\Fll1iE>‘47ii “T5iEiTl5l%F‘ El’\\J'€%§l?E€él§l&1T%fJiE1<]$¥J%7N£?E” ?",
-      "options": {
-        "A": "Assurance{%ift",
-        "B": "Acceptanceglli Accreditationikil",
-        "C": "",
-        "D": "CertificationU\\iE"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 66,
-      "question": "Which of the following statements pertaining to software testing is incorrect? TlliilbiKPlL*ll§4‘9%3‘$Kl‘F%l1lii€B‘]i5£Y2i%%%i§‘eB‘]?",
-      "options": {
-        "A": "Testing should be performed with live data to cover all possible situations. Esitiilitff ?5!lliiUJiZl5l§ U.l5l€§l€’e1?F€Fl€'l%%",
-        "B": "Test data should be part of the specifications. %l1liii§%S£lEJiZ%¥Bl?EEl1l3‘J—\"»§lK61*",
-        "C": "Test data generators can be used to systematically generate random test data that can be used to test programs. ?l!'lii€§SZlE$5li%§l2% §l€$Elil§iEl=JlE‘J?l1lii€il£§'E Ul5l%§l€“/llUi'Kf%l?",
-        "D": "Unit testing should be addressed and considered when the modules are being designed. iéiiiitiffiiiifi, $i'r;?l!liiF_?%l§%Jf§$l1T%tli"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 67,
-      "question": "Which of the following test makes sure the modified or new system includes appropriate access controls and does not introduce any security holes that might compromise other systems? biffiil 1% T llZE5Ii1“Ei‘]§?Jf El‘J,%?3E@i%ii5%’| B41175 Iii???-\"lJ9YFH$ %l )\\l£l5l5l’‘é%2 11l@El’|i1/%é}il§l‘J§'<$?E‘7F]?",
-      "options": {
-        "A": "Recovery testingillii",
-        "B": "Interface testin t g e f s El t?Ui1lnli,i:\"\\ glijj/fl",
-        "C": "Stress/volume",
-        "D": "Security testingiibllii"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 68,
-      "question": "In a database management system (DBMS), what is the \"cardinality?\" T£§§£fEl§’%\"$§_/@515 (DBMS) Pl“, %l‘l'Q\\ ?",
-      "options": {
-        "A": "The set of allowable values that an attribute can take. ~Z.liJ*”§\"a'léEH‘J4\"e‘?i1FlEE‘]§%é‘",
-        "B": "The number of columns in a relation. §€,%Fl3§lJ Ei<]§§Z§ Pljfjii",
-        "C": "The number of rows in a relation. 9%,?",
-        "D": "The number of relations in a database. §§UEl§PI1§‘€,%l§l4]§§'[§"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 69,
-      "question": "At which of the basic phases of the System Development Life Cycle are security requirements formalized? ?:E/%?33T7>‘Zit%J%l,H.J%l‘llI', \"ll/|‘%ZlKl3fl‘&li4£%$l?$§5l?",
-      "options": {
-        "A": "Functional Requirements DefinitionUJ§E?%3R)‘(",
-        "B": "Development and |mplementation3:F7yf$l1i]§i",
-        "C": "System Design Specifications,%€}Ei¥?lEi‘r Disposal",
+        "A": "",
+        "B": "host-based",
+        "C": "firewall-based",
         "D": ""
       },
       "answers": [
@@ -288,13 +66,231 @@
       "explanation": ""
     },
     {
-      "id": 70,
-      "question": "Which of the following is less likely to be included in the change control sub-phase of the maintenance phase of a software product? .1:5U“/§|3/Pizfil7F5lFJ“‘é’€L/§3f$¢?ZETF‘l3'fll5§ fl4]§§\"\\l*l‘rt§E1 El4]3§3€f??il’ill¥l3f|\\F§':l3 ?",
+      "id": 55,
+      "question": "Which of the following access control models requires security clearance for subjects?",
       "options": {
-        "A": "Establishing the priorities of requestsiii/L_i§3,|?B4]1'1E§EZKz",
-        "B": "Recreating and analyzing the prob|em§§i9\\:l‘§H‘lT W13. flff",
-        "C": "Determining the interface that is presented to the userE%i%i§l1.Z’E?J% F“",
-        "D": "Estimating the cost of the changes requested1E':i§ii§3RE§EE4]E§i2l§"
+        "A": "Identity-based access control",
+        "B": "Role-based access control",
+        "C": "Discretionary access control",
+        "D": "Mandatory access control"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 56,
+      "question": "Attributes that characterize an attack are stored for reference using which of the following Intrusion Detection System (IDS)",
+      "options": {
+        "C": "statistical anomaly-based",
+        "D": "signature-based"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 57,
+      "question": "Which of the following is an issue with signature-based intrusion detection systems?",
+      "options": {
+        "A": "It runs only on the windows operating system l1Ewindowsf T%i'E/%",
+        "B": "Only previously identified attack signatures are detected.",
+        "C": "Signature databases must be augmented with inferential elements.",
+        "D": "Hackers can circumvent signature evaluations."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 58,
+      "question": "Which of the following is an IDS that acquires data and defines a \"normal\" usage profile for the network or host?",
+      "options": {
+        "A": "Statistical Anomaly-Based",
+        "B": "dynamical anomaly-based",
+        "C": "inferential anomaly-based",
+        "D": ""
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 59,
+      "question": "Which of the following is a disadvantage of a statistical anomaly-based intrusion detection system? A it may correctly detect a non-attack event that had caused a momentary anomaly in the system. T5W l2l \\ l J)ll'l tliiilili/?. B it may loosely detect a non-attack event that had caused a momentary anomaly in the system.",
+      "options": {
+        "C": "it may falsely detect a non-attack event that had caused a momentary anomaly in the system.",
+        "D": "it may truly detect a non-attack event that had caused a momentary anomaly in the system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 60,
+      "question": "Which of the following is NOT a factor related to Access Control?",
+      "options": {
+        "A": "",
+        "B": "integrity *E%'l$",
+        "C": "availability",
+        "D": "condenthHty"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is not used to compensate for both internal and external access violations?",
+      "options": {
+        "B": "",
+        "C": "Business Availability Planning",
+        "D": ""
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 62,
+      "question": "In the course of responding to and handling an incident, you work on determining the root cause of the incident. In which step are you in?",
+      "options": {
+        "A": "Analysis and tracking",
+        "C": "Containment",
+        "D": "Recovery WE"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 63,
+      "question": "Access control is the collection of mechanisms that permits managers of a system to exercise directing or restraining influence over the behavior, use, and content of a system. It does not permit management to:",
+      "options": {
+        "A": "specify what operations they can perform on",
+        "B": "specify which resources they can access",
+        "C": "specify how to restrain hackers",
+        "D": "specify what users can do"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 64,
+      "question": "Access Control techniques do not include which of the following choices?",
+      "options": {
+        "A": "Discretionary Access Control",
+        "B": "Mandatory Access Control fl?'lij;il",
+        "C": "Lattice Based Access Control",
+        "D": "Relevant Access Controls"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 65,
+      "question": "Which of the following statements relating to the Bell-LaPadula security model is FALSE (assuming the Strong Star property is not being used)",
+      "options": {
+        "A": "lt is restricted to confidentiality.",
+        "B": "The *- property restriction can be escaped by temporarily downgrading a high level subject.",
+        "C": "A subject is not allowed to read down.",
+        "D": "A subject is not allowed to read up."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 66,
+      "question": "Which type of attack will MOST likely provide an attacker with multiple passwords to authenticate to liillfill l ilBil ?",
+      "options": {
+        "A": "Dictionary attack against an encrypted password file",
+        "B": "Social engineering",
+        "C": "Dumpster diving iTLZT",
+        "D": "Password sniffing"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 67,
+      "question": "Which of the following statements pertaining to biometrics is FALSE?",
+      "options": {
+        "A": "User can be authenticated based on behavior.",
+        "B": "User can be authenticated based on unique physical attributes.",
+        "C": "User can be authenticated by what he knows.",
+        "D": "A biometric system's accuracy is determined by its crossover error rate (CER)."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 68,
+      "question": "Which of the following statements pertaining to access control is false?",
+      "options": {
+        "A": "Roles can be an efficient way to assign rights to a type of user who performs certain tasks",
+        "B": "Access rights should be granted based on the level of trust a company has on l 15l7iRl1EF_~ ZiZ% /i Q XH %4 i ?iEi<Ji%FH z5'JUiJ",
+        "C": "Users should only access data on a need-to-know basis.",
+        "D": "If access is not explicitly denied, it should be implicitly allowed."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 69,
+      "question": "Which of the following is NOT part of the Kerberos authentication protocol?",
+      "options": {
+        "A": "Public Key /NEE",
+        "B": "Authentication service (AS)",
+        "D": "Symmetric key cryptography"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 70,
+      "question": "Which of the following accessiciontrol models is based on sensitivity labels?",
+      "options": {
+        "A": "Discretionary access control",
+        "B": "Rule-based access control",
+        "C": "Role-based access control",
+        "D": "Mandatory access control"
       },
       "answers": [
         "D"
@@ -304,55 +300,57 @@
     },
     {
       "id": 71,
-      "question": "Sensitivity labels are an example of what application control type? '*§‘§Z!§§‘l$l‘/T_?§%l1/§l§T‘l‘l§‘Ll5l§T§l?f§f*l?ll3'$El<]§'$l§U ?",
+      "question": "Which access model is most appropriate for companies with a high employee turnover?",
       "options": {
-        "A": "Preventive security controlsl5)5lil1§l_J§£?5“ifl?l]",
-        "B": "Preventive accuracy controlsl3)§l§l1¥l@§7§if§fl%U",
-        "C": "Compensating administrative controls?|‘l%fé‘$§€f§$'l 91 9F51-°1?’9",
-        "D": "Detective security controls1l‘fl?§ll§Lli?£H‘Fl?ll"
+        "A": "Mandatory access control",
+        "B": "Lattice-based access control %?i:'1Ei'al",
+        "C": "Discretionary access control",
+        "D": "Role-based access control %1t%@il l4]ij"
       },
       "answers": [
-        "A"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 72,
-      "question": "Which of the following is not a defined maturity level within the Software Capability Maturity Model? T§U\"IV|\\iz”iI51Z<z‘%i’Kl*FEi3Eliéitli El“ i>‘4E‘JE52%%@J,€%’-‘@252 ?",
+      "question": "In a security context what are database views used for?",
       "options": {
-        "A": "Oriented EIJKUEFJ",
-        "B": "Defined i>‘LE|<J Managed %“‘15§EEl4] Hlilflfl Repeatable 92 l=.r9l.vo?s==‘.> l.§:l.v.oK.wiri"
+        "A": "To allow easier access to data in",
+        "B": "To restrict user access to data in",
+        "C": "To provide audit trails 7\\JTTi%l ?\"l'5il?",
+        "D": "To ensure referential integrity"
       },
       "answers": [
-        "A"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 73,
-      "question": "Which of the following characteristics pertaining to databases is not true? T§U\"3§ll/l\\€9@§5Z€lEl§Fl4J5l‘§fEEl4]?l‘ili%$lEl3% F19?",
+      "question": "What can be defined as a list of subjects along with their access rights that are authorized to access a specific object?",
       "options": {
-        "A": "All relations must have a specific cardinality. F)f§9§?\\dZ‘37§”‘/l\\5f%‘“iE<]%§§[",
-        "B": "No NULLs should be allowed for primary keys. If>’é$’Ji4l1Z?T£§lE",
-        "C": "Justifications must exist for normalized data. fT'.f€1‘?JI3'Ii§§3Zf7§JZ\\3§“I€‘,;%If§E4]I$El3",
-        "D": "A data model should exist and all entities should have a significant name. é/Pill??? Ilil f§@lEfT7?'£3‘l‘Hl5)T€¥lZ|§F_“Z€—/l\\7§%'?Xl§l4Il€1i 93"
+        "A": "A role-based matrix",
+        "B": "An access control list",
+        "C": "An access control matrix",
+        "D": "A capability table"
       },
       "answers": [
-        "C"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 74,
-      "question": "At what stage of the applications development process should the security department become involved? T:EF_\"Z§$525‘?B4]3:l:7iii?§l3fTF§@§l54\\|3fTF§@iZiii¥%35l3l‘]4i)\\? testingiiiillii",
+      "question": "What is the difference between Access Control Lists (ACLs) and Capability Tables?",
       "options": {
-        "A": "During unit",
-        "B": "During requirements development?';E%2Q§3\\l‘Frl5l*I",
-        "C": "Prior to the implementation¥l?FEZiEl",
-        "D": "Prior to systems testing%§€33EiU!lJiiQZi=]‘"
+        "A": "Access control lists are related/attached to a subject whereas capability tables are related/attached to an object.",
+        "B": "Access control lists are related/attached to an object whereas capability tables are related/attached",
+        "C": "Capability tables are used for objects whereas access control lists are used for users.",
+        "D": "They are basically the same."
       },
       "answers": [
         "B"
@@ -362,42 +360,41 @@
     },
     {
       "id": 75,
-      "question": "In what way could Java applets pose a security threat? iilalfjii, java applets Igfilliiiiilililljl‘?",
+      "question": "What can be defined as a table of subjects and objects indicating what actions individual subjects can take upon individual objects?",
       "options": {
-        "A": "Java does not check the bytecode at runtime or provide other safety mechanisms for program isolation from the client system. java %Ei1T<.i?H‘Z<%l‘§?i|\"1“l’€li%§El)\\EF‘191%é3i7iif%J?l§i%%‘i;‘%iiE;@2l1’Ei-‘Z$1l=IL$'l",
-        "B": "Their transport can interrupt the secure distribution of World Wide Web pages over the Internet by removing SSL and S-HTTP l1l3li‘]E<Jié$a’i15lLiiil7cE9%|7><]'Il1l:l=li7iZEl§|lWD‘iEl‘]i“r£§1‘1‘i§fZl5é’? SSL $5 S-HTTP",
-        "C": "Executables from the Internet may attempt an intentional attack when they are downloaded on a client system. 94 l<l 95+ rifll Elli lll Fri ?‘El lm t l+i> ‘$1? E“-E %EWi%Wi#%EF%%&TWWQ",
-        "D": "Java interpreters do not provide the ability to limit system access that an applet could have on a client system. pw%%%EEF%%%$%W%%%%@%%,@$?WH"
+        "A": "A capacity table",
+        "B": "An access control matrix U:il",
+        "C": "A capability table",
+        "D": "An access control list | 11T,Ii 3'li$lJ"
       },
       "answers": [
-        "C"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 76,
-      "question": "- For competitive reasons, the customers of a large shipping company called the \"lntegrated International Secure Shipping Containers Corporation\" (IISSCC) like to keep private the various cargos that they ship. IISSCC uses a secure database system based on the Bell-LaPadula access control model to keep this information private. Different information in this database is classified at different levels. For example, the time and date a ship departs is labeled Unclassified, so customers can estimate when their cargos will arrive, but the contents of all shipping containers on the ship are labeled Top Secret to keep different shippers from viewing each other's cargos. An unscrupulous fruit shipper, the \"Association of Private Fuit Exporters, Limited\" (APFEL) wants to learn whether or not a competitor, the \"Fruit ls Good Corporation\" (FIGCO), is shipping pineapples on the ship \"S.S. Cruise Pacific\" (S.S. CP). APFEL can't simply read the top secret contents in the IISSCC database because of the access model. A smart APFEL worker, however, attempts to insert a false, unclassified record in the database that says that FIGCO is shipping pineapples on the S.S. CP, reasoning that if there is already a FIGCO-pineapple-SSCP record then the insertion attempt will fail. But the attempt does not fail, so APFEL can't be sure whether or not FIGCO is shipping pineapples on the S.S. CP. i%%%EE,—%@®umm>%EFE%mW%E%W %%%%uu$m@%~f%?mwm%wmW%%§%%E%%%%E W E §%%%%.E+%E¢$@%E$%oWW,%%%%W@WB %E%%,$%%%,i%.EF%W%M%%zW%,@%%€ % %%%%%%i%E%%M%%%%EA€%N%%Q 95 P(iii i w % -\\-Fl- Eli :1 lill ~}l>< all ll? ~/|\\5¥3r5%'¢l~€EI<J2l<%%£iéQ§ “APFEL”l§!%uiEl1Ell‘]Ee (neco) %’§FHs.s.cP 1‘%L%li£liéii?§§@ APFEL?si75|‘i§%IJi3€i\"B‘]JT!i$‘é%$il’giiH>Z||sscc%5I3El§EI<JL*3*lZJ 45$, lE1‘%—/i‘H.'é'~'1J%E<JAPFELjF»\\I{E[EH%5£¥EJ§EP%i's)\\~4*’%‘%i5‘eB<]i’€6:\\él€E<1iEi, Frieco/At?IEB%s.s.cP-%i’i5iéi%%° i1u§'EEéé¥¥?:T:~%’: “Fieco-pineapple-sscP”EiiiiriEii, §%BQ\\ia‘?)\\i1‘%%l%%%W5IQ lE%iX/1\";-.%’i?\\¥1‘i§i ltét, ittAPFEL9ii£Efa%F|<;co%?§%s.s.cP%ié%§@ What is the name of the access control model property that prevented APFEL from reading F|GCO's cargo information? What is a secure database technique that could explain why, when the insertion attempt succeeded, APFEL was still unsure whether or not FIGCO was shipping pineapples? EEK Bit APFEL Qliadél FIGCO L%1l%l’§,§~El<JiI‘=i§%lJl‘;%iJ‘éH‘JF%‘lél£E<J4‘é%1F%? i siltéi %i?)\\i5IiEl53iIJJ5L, APFEL i5%7\"i3i£6%E FIGCO %%??£iéii?§¥E1<J>/\"‘-Zéillilii 7l<%?",
+      "question": "Which access control model is best suited in an environment where a high security level is required and where it is desired that only the administrator grants access control?",
       "options": {
-        "A": "Simple Security Property and Polymorphism $*§$E'lflE$U§7§‘l§lE",
-        "B": "Strong Security Property and Polyinstantiation 5'§>7?i§l|?i‘li$l1§il§Il1»k,",
-        "C": "Simple Security Property and Polyinstantiation $\"§?$l§‘li9Fl1§§E1§Il{J(,",
-        "D": "Security Property and Polymorphism ;7?$l?i‘l@lE$l?l§il§'llJC."
+        "A": "",
+        "B": "",
+        "C": "Access control matrix"
       },
       "answers": [
-        "C"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 77,
-      "question": "ln which phase of the System Development Lifecycle (SDLC) is Security Accreditation Obtained? ll/§lV|\\/%?E§l‘7;iéli\"?:rJ%EH%3J%?-'§‘ri“<%U\\iiEE<JBfiB%?",
+      "question": "Which of the following is a preventive control?",
       "options": {
-        "A": "Postinstallation Phase §%)€I3f\\E& 96 U(TUJJ>",
-        "B": "Acceptance Phase5fill§'£l5fT§",
-        "C": "Implementation Phaseiff",
-        "D": "Functional Requirements Phase1jJ§€‘l$%?3Ql3i|\\iE§ Efg:"
+        "A": "Audit logs",
+        "B": "Intrusion detection systems",
+        "C": "Guard dogs",
+        "D": "Motion detectors Liiililm"
       },
       "answers": [
         "C"
@@ -407,72 +404,69 @@
     },
     {
       "id": 78,
-      "question": "Java follows which security model: javaiif T3335/l\\§$7f;'5'iiQ?",
+      "question": "What is the primary goal of setting up",
       "options": {
-        "A": "least priviledgei/]\\5l%\"=1‘1",
-        "B": "C|A",
-        "C": "OSI",
-        "D": "Sand box ‘I’/\"55?"
+        "A": "To entrap and track down possible hackers i?5$liliEE}%",
+        "B": "To set up a sacrificial lamb on the network",
+        "C": "To know when certain types of attacks are in progress and to learn about attack techniques so the network can be fortified.",
+        "D": "To lure hackers into attacking unused systems i%1% !5{~Iin' il%liFl"
       },
       "answers": [
-        "D"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 79,
-      "question": "Many approaches to Knowledge Discovery in Databases (KDD) are used to identify valid and useful patterns in data. This is an evolving field of study that includes a variety of automated analysis solutions such as Data Mining. Which of the following is not an approach used by KDD? ill?/‘§l§§EHiR7i£)Fl (KDD) Ei<1i‘F%7‘i‘7£%@§l€iE9\"1'li5I¥EElllvfilflilBiliiio iX%~/1‘ lE?£i&lJcH‘JE3f?f;’%£i, @l%%$‘l‘€r1l‘¥El‘] Q ?=JJlt§1‘ilf$¥J&7‘i;% Zlililiilo F§IJ\"Bl§’i‘ $%i51iEf§§E|;1iR (KDD) 7iID1E‘J—/i‘7*iiz’E?",
+      "question": "Which of the following countermeasures would be the most appropriate to prevent possible intrusion or damage from wardialing attacks?",
       "options": {
-        "A": "Probabilistic",
-        "B": "Classification§J*%'$ 97 Deviationl§",
-        "C": "",
-        "D": "Oriented§f5]"
+        "A": "Using completely different numbers for voice and data accesses",
+        "B": "Making sure only necessary phone numbers are made public ii%l%F'J uZ~%E",
+        "C": "Require user authentication",
+        "D": "Monitoring and auditing for such activity"
       },
       "answers": [
-        "D"
+        "C"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 80,
-      "question": "Which approach to a security program makes sure that the people actually responsible for protecting the company's assets are DRIVING the program? \"}il§$=l1><\"‘i$f%$E1‘]i1i1@?i?zli’riEPllXiJJ&§] 5'i.IiE1l%%7*'/ EI‘J£%F\"E‘1%l5E?",
+      "question": "Which of the following issues is not addressed by Kerberos?",
       "options": {
-        "A": "The top-down approach E i;ilTE<J7‘i‘i£",
-        "B": "The Delphi approach Delphi",
-        "C": "The bottom-up approach Tiii",
-        "D": "The technology approach %,=E :A 112 I PO.D l9l? 1111>>?? llillllllll}}l ''br1'bw$"
+        "A": "Availability Wlili",
+        "B": "",
+        "D": "Authentication f5;i\\5iE"
       },
       "answers": [
-        "E"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 81,
-      "question": "Which of the following is true about Kerberos? UJU1/]§l5—/l\\IE11:9§d; Kerberos El4]§1%iZB7~E:—'3§liiE|<]?",
+      "question": "Why do buffer overflows happen?",
       "options": {
-        "A": "lt encrypts data after a ticket is granted, but passwords are exchanged in plain text. Emwa%%HEw%M%,@%%@%i&%%i.",
-        "B": "It depends upon symmetric ciphers. emmtwwwe.",
-        "C": "lt is a second party authentication system. E%—W%Z%M%%",
-        "D": "It utilizes public key cryptography. €E%£%%E#."
+        "A": "Because input data is not checked for appropriate length at time of input",
+        "B": "Because of insufficient system memory",
+        "C": "Because buffers can only hold so much data",
+        "D": "Because they are an easy weakness to exploit %T?T ?1*Tii':ffi zE'i1:*/l\\ i?Bi"
       },
       "answers": [
-        "B"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 82,
-      "question": "Kerberos depends upon what encryption method? in Upnw 11>: iillll Kerberos lZ?§5H:3§l3iE‘l“7Jl1”T.?I?£",
+      "question": "What is the main focus of the Bell-LaPadula security model?",
       "options": {
-        "A": "Blowfish cryptography. Blowfish jJl15.§",
-        "B": "Public Key cryptography. &%m%",
-        "C": "El Gamal cryptography. El Gamal BUZII",
-        "D": "Secret Key cryptography. ‘E)€l7J[1%%‘"
+        "A": "lntegrity",
+        "B": "Availability Wfgfi"
       },
       "answers": [
         "D"
@@ -482,25 +476,12 @@
     },
     {
       "id": 83,
-      "question": "Which of the following statements is true about data encryption as a method of protecting data? QTW—%?@%%m%¢%%?%%—W%%%E%W?.",
+      "question": "An Intrusion Detection System (IDS) is what type of control?",
       "options": {
-        "A": "It is usually easily administered %§5%E",
-        "B": "It requires careful key management %?%i“E1l%Ei‘JX‘~\".%3€Hi&’*@i§£EE ~",
-        "C": "lt should sometimes be used for password files €H¢ll%'PUL1?l§l%X?i%?E5SCl¢l=",
-        "D": "It makes few demands on system resources \"E5<n‘,%é3E’£‘iJE€~71?EI‘J*E§l?"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 84,
-      "question": "Which of the following issues is not addressed by digital signatures? biY“/§l§—/l\\ l5.l§E7l<%§§£?§Z Fl4]IjJ EIE‘ ?",
-      "options": {
-        "A": "Nonrepudiation 7FWfl§§‘li",
-        "B": "Authentication i)\\iIEHl§% data integrity §§I5l’E5T1§%‘li denial-of-service ilE€@,El§i%"
+        "A": "A recovery control.",
+        "B": "A directive control. TE/?\\T",
+        "C": "A preventive control.",
+        "D": "A detective control."
       },
       "answers": [
         "D"
@@ -509,13 +490,28 @@
       "explanation": ""
     },
     {
-      "id": 85,
-      "question": "The Data Encryption Standard (DES) encryption algorithm has which of the following characteristics? §5ITE7JH~\".i-Fri‘/i<¥’§(DEs)7JH5.%?£,E.€U\\T%B4‘*l%.¢i?",
+      "id": 84,
+      "question": "What ensures that the control mechanisms correctly implement the security policy for the entire life cycle of an information system?",
       "options": {
-        "A": "64 bit blocks with a 64 bit total key length 64&—4c4%%%&E 135 w 1111 e >>?:it >*:\"H Elm Illlil",
-        "B": "128 bit key with 8 bits used for parity 128 l5.%“.~%H*-3 8 iFl%€‘§l|%l%E3&",
-        "C": "64 bits of data input results in 56 bits of encrypted output m%%A@@%m%%$",
-        "D": "56 bits of data input results in 56 bits of encrypted output 56 lii-®)\\l§Fii 5sli7Ju~3-W551"
+        "A": "Mandatory access controls",
+        "B": "",
+        "C": "Assurance procedures",
+        "D": "Accountability controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 85,
+      "question": "Which of the following is a type of non discretionary access control?",
+      "options": {
+        "A": "Role-based access control.",
+        "B": "Mandatory access control.",
+        "C": "User-directed access control.",
+        "D": "Ladder-based access control."
       },
       "answers": [
         "A"
@@ -525,53 +521,57 @@
     },
     {
       "id": 86,
-      "question": "Which of the following is NOT true of Secure Sockets Layer (SSL)? 1‘ll/‘ll§—IE7l<%5‘*€€‘ SSL 155% Ebliti?",
+      "question": "Which of the following statements pertaining to Kerberos is TRUE?",
       "options": {
-        "A": "By convention it uses ‘s-http://' instead of 'http://'. ii??.?:'l§—Il§'lliF “S-httpr//” Tl’$zEf2 “http://”",
-        "B": "it is used for transmitting private information, data, and documents over the Internet. lit biiiilli >‘§:'l#5l§l%7£¢l%*l*Ylil#%§éi%L)\\l%.%, $51173 c. It was developed by Netscape. \"E %El§l Netscape 3f7iEl4] ls the predecessor to the Transport Layer Security (TLS) protocol ia\"‘ul?:i-Z*ilJ\\i>‘(E1‘JF‘iTJ§% 136 .9 n11El>?11.Ul?Y>m‘P?°?.> /ii$llll ?*_ll°r U 22 There are parallels between the trust models in Kerberos and Public Key . Infrastructure (PKI). When we compare them side by side, Kerberos tickets correspond most closely to which of the following? 5 Kerberos PKI l5l4]l§i§l§7l§Zl‘@€ifF§l‘5iU~Z9i<> §~'i5HZll‘]ilEi’@.ll])5§Zf:?—EJ£fa H3 , kerberos l§l’5]%;i%5 U\\_F|1/§l§—I]‘l9§/%%5“*‘-I331]? private-key certificates $L!f~HiEjr“3 public-key certificates /L\\\\\"E5iIE‘l:'3 private keys THEE public keys 2%}?"
+        "A": "Kerberos does not address availability Kerberoslwii/t ZE.lF",
+        "B": "Kerberos cannot address confidentiality of information",
+        "C": "Kerberos does not make use of Symmetric Keys Kerber0sZ<i%iIElil335<",
+        "D": "Kerberos does not address integrity Kerberos7F ?31/tZZli"
       },
       "answers": [
-        "B"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 87,
-      "question": "Which of the following identifies the encryption algorithm selected by NIST for the new Advanced Encryption Standard? LiTS\"39l§—ID'ilJ11%%?§‘2£%%& NIST i,E£§5'l7'9HE'i%Jf, %5Ei&l‘:1<]7iIlI1%?i/1T<¥’$?",
+      "question": "Database views are NOT used tor",
       "options": {
-        "A": "RC6",
-        "B": "Twofish Rijndael Serpent"
+        "A": "Implement least privilege",
+        "B": "To implement content-dependent access restrictions",
+        "C": "Implement need-to-know",
+        "D": "Implement referential integrity"
       },
       "answers": [
-        "C"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 88,
-      "question": "Compared to RSA, which of the following is true of Elliptic Curve Cryptography(ECC)? 5 RSA TE H3, Li?\"/%l§—ID\"19E3‘l‘ll El?l1Z%27JU~\"5%?£E’~Jl%%§';HE6% E14] ?",
+      "question": "What is the primary goal of setting up",
       "options": {
-        "A": "It has been mathematically proved to be more secure. \"Eii E%BZiIEBE?€1E%'\"cii§I‘].",
-        "B": "It is believed to require shorter keys for equivalent security. T5%&i)\\79%E@‘%~*.~§i\"-c%é£€%\"5Ul5')f%El?l<J”T.~%*%Hl§5'£1i§?§i1i.",
-        "C": "It has been mathematically proved to be less secure. TZE1<J§‘iZ%§iEF)€li§c$§£",
-        "D": "It is believed to require longer key for equivalent security. TZ%Ei)\\79TiEl%§\"<£é£€9’5UF)f%’%E<]%Z“EHli%'£Et%"
+        "A": "To lure hackers into attacking unused systems 1iJ\\\" l%I ZE'ri% I5I$Z<i",
+        "B": "To entrap and track down possible hackers igfi",
+        "C": "To set up a sacrificial lamb on the network",
+        "D": "To know when certain types of attacks are in progress and to learn about attack techniques so the network can be fortified."
       },
       "answers": [
-        "B"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 89,
-      "question": "To comply with the Internet Engineering Task Force (IETF) standard for the IP Security (IPSEC) Protocol, which key-exchange method must be used? 7€lTi§? IETF (internet Engineering Task Force) 1l‘§<¥’EEi4] IPSEC li]\\i)Z, lJ\\Tll}.l|§—T %H§Ei§%i£uZ~2Di%PsZliFH",
+      "question": "Which of the following access control models requires defining classification for objects?",
       "options": {
-        "A": "Output Feedback (OFB) imlit (ore)",
-        "B": "Electronic Code Book (ECB) $,:J%‘iE5H1’3 (ECB) ER Substitution iilikiiii Cipher Block Chaining (csc) (CBC) c -",
-        "C": "Integrity, Authentication and Nonrepudiation i)\\iE, ?E%%'li, $?1TiII:E%'l$",
-        "D": "Integrity, Confidentiality and Authorization ll iiigirli, ?6%'l$, 27 . Which of the following is NOT a mode of the Data Encryption Standard (DES) Li Ti1}ll§~IDi$% DES El‘J—$‘l\"f§iY§?"
+        "A": "Role-based access control @El4]l7",
+        "B": "Identity-based access control",
+        "C": "Mandatory access control %lJiji|",
+        "D": "Discretionary access control"
       },
       "answers": [
         "C"
@@ -581,25 +581,26 @@
     },
     {
       "id": 90,
-      "question": "",
+      "question": "ICMP and IGMP belong to which layer of the",
       "options": {
-        "A": "icA",
-        "B": "ICA c.mEcA",
-        "D": "¥CA %%=c §1ME£E¢%%Z?"
+        "A": "Datagram Layer.",
+        "B": "Network Layer.",
+        "C": "Data Link Layer.",
+        "D": "Transport Layer."
       },
       "answers": [
-        "D"
+        "B"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 91,
-      "question": "",
+      "question": "Which of the following protocols does the Internet use?",
       "options": {
-        "A": "%E%E%%%%§",
-        "B": "%E%%%E%%%% %E%%%%%% %E%T%—E%%$%€E%%€",
-        "D": " %'“~%é= TW—%%H%%W%%i@%”"
+        "A": "",
+        "B": "SNA.",
+        "D": ""
       },
       "answers": [
         "D"
@@ -609,11 +610,27 @@
     },
     {
       "id": 92,
-      "question": "",
+      "question": "Which of the following OSI layers provides routing and related services?",
       "options": {
-        "A": "cmm&%%W%>",
-        "D": "$CA%$%%%$%EWW %\"$= A w.?WW~$%E%%%§mE%%?",
-        "B": "E%&%%%ww0mw c. CRL"
+        "A": "Network Layer",
+        "B": "Physical Layer",
+        "C": "Presentation Layer",
+        "D": "Session Layer"
+      },
+      "answers": [
+        "E"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 93,
+      "question": "Frame relay and X.25 networks are part of which of the following?",
+      "options": {
+        "A": "Circuit-switched services",
+        "B": "Cell-switched services",
+        "C": "Packet-switched services",
+        "D": "Dedicated digital services"
       },
       "answers": [
         "C"
@@ -622,38 +639,57 @@
       "explanation": ""
     },
     {
-      "id": 93,
-      "question": "Q%%%&%HGI%W%%= A %%%&% %~W%E%%%%%%%&% E%$EjW%E¥%%EE%%W%$% ~~%E\\E%W%E% D 61 $L@%m%uFw—wm%&?",
-      "options": {
-        "A": "$@",
-        "B": "Dm c.§&",
-        "D": "%& '/‘I;-15%: FWW—$%%W%m%&?"
-      },
-      "answers": [
-        "A"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
       "id": 94,
-      "question": "Which of the following is NOT related to a Public key infrastructure (PKl)? Li 'FI1Jil§/i‘ii;lE.’-J‘-%Q\\\\%)?J9§§i5ilii§tl‘5@ (PKI) 5593?",
+      "question": "Which of the following is TRUE regarding Transmission Control Protocol (TCP) and User Datagram Protocol T U\"Jil IDiF<w ?TcP%uuoPl9J\\i$LE",
       "options": {
-        "A": "A x.509 certificate <x.509 EH13)",
-        "B": "A Ticket Granting Service (%§%E¥'§¥'Hl?i%) A Registration authority (?Ii§l75LfJl.7f'/El) A Certificate authority (iIE‘F5fJl.f'Q)"
+        "A": "TCP does not guarantee delivery of data, UDP does guarantee data delivery.",
+        "B": "UDP is useful for longer messages, rather than",
+        "C": "UDP provides for Error Correction, TCP does not.",
+        "D": "TCP is connection-oriented, UDP is not."
       },
       "answers": [
-        "B"
+        "D"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 95,
-      "question": "Why does a digital signature CONTAIN a message digest? falTQ»§§Z$§%@€'T—/i\\il§,§~?f§%l:?",
+      "question": "Which of the following is NOT true of Secure Sockets Layer 43 biT\"Jil$Ii '%TssLE",
       "options": {
-        "A": "To confirm the identity of the receiver 7~]T5@i)\\E|i§Ll§‘£%H4]§i§1\\",
-        "B": "To indicate the encryption algorithm 39??/T<E7J[i>'.j%‘?Z To detect any alteration of the message 79T7|‘fIZ“/5llJ3lL?l§ E l§14]%E§Z To enable transmission in a digital format §'§iTl§€;i£§§I?i‘%iU4§$iau 146 o0 $nHm n1$L,Q9>iO0; p?.9WU“ iiiiilliilli ill‘ J((W'7>"
+        "A": "It is used for transmitting private information, data, and documents over the Internet.",
+        "B": "It was developed by Netscape. l7J~i>ZzE eNet$ aPe3i",
+        "C": "By convention it uses 's http://' instead of",
+        "D": "ls the predecessor to the Transport Layer Security (TLS) protocol."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 96,
+      "question": "Which OSI/ISO layer is responsible for determining the best route for data to be transferred?",
+      "options": {
+        "A": "Transport layer",
+        "B": "Session layer",
+        "C": "Network layer"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 97,
+      "question": "Lower Layers (Physical, Link, Network, Transport) are unable to protect against what kind of attacks? oslii lilj, lEEl?;",
+      "options": {
+        "A": "Content BasedAttacks",
+        "B": "Brute Force",
+        "C": "Denial of Service Attacks",
+        "D": "Piggy Back Attacks"
       },
       "answers": [
         "A"
@@ -662,50 +698,26 @@
       "explanation": ""
     },
     {
-      "id": 96,
-      "question": "Which of the following features of stream ciphers is incorrect? U~_F%.%*555l34]\"1’§l3/I\\%llE%*?%i5‘i'&B‘]?",
-      "options": {
-        "A": "Statistically unbiased keystream. Zi+lI§ElH4]’EH‘§HY)",
-        "B": "Requires less processing power then block ciphers El3§:i‘€El.5.J3§l35§l§l‘J§7i1f¥§/l\\ Statistically unpredictable. %i1L_l:Z<ETT?)l1ll E14] Offers long periods with no repeating. jU§»E~:q3l§§§‘l$"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 97,
-      "question": "Which of the following is NOT a known type of Message Authentication Code (MAC)? LiFlll/|\\Z<>%EL%uH<J?‘i%.‘§_%9“1lll5E5 (MAC) ?",
-      "options": {
-        "A": "Stream cipher-based MAC %;f?;ii5§5§l§l‘] MAC",
-        "B": "Signature-based MAC %3:§§€ E4] MAC Block cipher-based MAC %;i:§J\\ZHlJlIl5-.}Z§El4] MAC Hash function-based MAC %3Z§§I§lJ54] MAC"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
       "id": 98,
-      "question": "What is the maximum key size for the RC5 algorithm? RC5 *7£El<1%?<~I%%HtéB2%%’-//'\\?",
+      "question": "What is the role of IKE within the |Psec protocol?",
       "options": {
-        "A": "128 bits",
-        "B": "2040 bits 1024 bits 256 bits"
+        "A": "peer authentication and key exchange",
+        "B": "enforcing quality of service",
+        "C": "data signature",
+        "D": "data encryption"
       },
       "answers": [
-        "B"
+        "A"
       ],
       "type": "single",
       "explanation": ""
     },
     {
       "id": 99,
-      "question": "Which of the following is not an encryption algorithm? Lifliill/|‘$%7Ji1%%\"*‘i£?",
+      "question": "In which phase of Internet Key Exchange (IKE) protocol is peer authentication performed? EW~i% %mw&EW%%%%E? WE2",
       "options": {
-        "A": "Skipjack",
-        "B": "DEA Twofish SHA-1"
+        "B": "No peer authentication is performed",
+        "C": "Pre Initialization Phase"
       },
       "answers": [
         "D"
@@ -715,13 +727,15 @@
     },
     {
       "id": 100,
-      "question": "Which of the following is best provided by symmetric cryptography? 5F.i$7J75§555$§‘é§lifxEéi§§l1/lillfiiiiii?",
+      "question": "Which of the following is true of network security?",
       "options": {
-        "A": "Integrity 5*E§‘i§i£",
-        "B": "Availability EUEHTE Non-repudiation Z<El7i§U\\‘ii Confidentiality iJ_L%‘iLi_"
+        "A": "A firewall is a not a necessity in today's connected world. %i \\i i5\"i r H9%llEl1$%%W J<i%t",
+        "B": "A firewall is a necessity in today's connected world.",
+        "C": "A whitewall is a necessity in today's connected world.",
+        "D": "A black firewall is a necessity in today's connected world."
       },
       "answers": [
-        "D"
+        "B"
       ],
       "type": "single",
       "explanation": ""

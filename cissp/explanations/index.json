@@ -351,10 +351,24 @@
       },
       {
         "file": "cissp-005.json",
-        "label": "Q201 - Q209",
+        "label": "Q201 - Q250",
         "start": 201,
-        "end": 209,
-        "count": 9
+        "end": 250,
+        "count": 50
+      },
+      {
+        "file": "cissp-006.json",
+        "label": "Q251 - Q300",
+        "start": 251,
+        "end": 300,
+        "count": 50
+      },
+      {
+        "file": "cissp-007.json",
+        "label": "Q301 - Q315",
+        "start": 301,
+        "end": 315,
+        "count": 15
       }
     ]
   }
