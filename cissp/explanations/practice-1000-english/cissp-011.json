@@ -1,0 +1,720 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "file": "cissp-011.json",
+    "question_range": "Q501 - Q550",
+    "start": 501,
+    "end": 550,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 501,
+      "question": "If an internal database holds a number of printers in every department and this equals the total number of printers for the whole organization recorded elsewhere in the database, it is an example of",
+      "options": {
+        "A": "Internal consistency of the information system.",
+        "B": "Differential consistency of the information system.",
+        "C": "External consistency of the information system.",
+        "D": "Referential consistency of the information system."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 502,
+      "question": "What would BEST define a covert channel?",
+      "options": {
+        "A": "Atrojan horse.",
+        "B": "An undocumented backdoor that has been left by a programmer in an operating system",
+        "C": "An open system port that should be closed.",
+        "D": "A communication channel that allows transfer of information in a manner that violates the system's security policy."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 503,
+      "question": "Which of the following statements relating to the Biba security model is FALSE?",
+      "options": {
+        "A": "Programs serve as an intermediate layer between subjects and objects.",
+        "B": "It is a state machine model.",
+        "C": "A subject is not allowed to write up.",
+        "D": "Integrity levels are assigned to subjects and objects."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 504,
+      "question": "Why do buffer overflows happen?",
+      "options": {
+        "A": "Because they are an easy weakness to exploit i:il12l|]",
+        "B": "Because buffers can only hold so much data aiE''i1lXRE4?",
+        "C": "Because of insufficient system memory ?",
+        "D": "Because input data is not checked for appropriate length at time of input 39%-i)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 505,
+      "question": "Which of the following statements pertainingto protection rings is false?",
+      "options": {
+        "A": "They provide users with a direct access to peripherals liiAll]",
+        "B": "They support the CIA triad requirements of multitasking operating systems.",
+        "C": "Programs operating in inner rings are usually referred to as existing in a privileged YEW1TFI<Ji%B1ilEi%i4F?",
+        "D": "They provide strict boundaries and definitions on what the processes that work within each ring can access."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 506,
+      "question": "What is it called when a computer uses more than one CPU in parallel to execute instructions?",
+      "options": {
+        "A": "Multiprocessing",
+        "C": "Multitasking",
+        "D": "Parallel running"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 507,
+      "question": "Which of the following statements pertainingto the trusted computing base (TCB) is false?",
+      "options": {
+        "A": "lts enforcement of security policy is independent of parameters supplied by system iii-<'iH%B<1%;Mf%Ela%ii%$EZmji;%itE<Js%5I.",
+        "B": "It is defined in the Orange Book.",
+        "C": "It includes hardware, firmware and software.",
+        "D": "A higher TCB rating will require that details of their testing procedures and documentation be reviewed with more granularity. Efgiliil TCB i3iZli>l%%E?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 508,
+      "question": "What can be defined as an abstract machine that mediates all access to objects by subjects to ensure that subjects have the necessary access rights and to protect objects from unauthorized access?",
+      "options": {
+        "A": "The Trusted Computing Base",
+        "B": "The Security Domain",
+        "C": "The Reference Monitor '?",
+        "D": "The Security Kernel"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 509,
+      "question": "Which of the following is not a method to protect objects and the data within the objects?",
+      "options": {
+        "A": "Data hiding 5ZiE|3%.",
+        "B": "Data mining",
+        "C": "Abstraction TH]",
+        "D": "Layering"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 510,
+      "question": "What is the main focus of the Bell-LaPadula security model? Bell-LaPadula",
+      "options": {
+        "A": "Accountability",
+        "B": "Availability lilit",
+        "C": "Integrity",
+        "D": "Confidentiality l%?"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 511,
+      "question": "Which of the following statements pertaining to the Bell-LaPadula is false ifyou are NOT making use of the strong star property?",
+      "options": {
+        "A": "lt does not allow \"write up.",
+        "B": "It does not allow \"read up.",
+        "C": "It does not address management of access controls.",
+        "D": "It does not address covert channels."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 512,
+      "question": "Which security model introduces access to objects onlythrough programs?",
+      "options": {
+        "A": "The Clark-Wilson model Clark-Wilson",
+        "B": "The Bell-LaPadula model Bell-LaPadula TEE",
+        "C": "The information flow model 1%.",
+        "D": "The Biba model Biba TEE!"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 513,
+      "question": "Which security model ensures that actionsthat take place at a higher security level do not affect actionsthat take place at a lower level?",
+      "options": {
+        "A": "The information flow model l'.",
+        "B": "The noninterference model",
+        "C": "The Clark-Wilson model Clark-Wilson lil",
+        "D": "The Bell-LaPadula model Bell-LaPadula TEE"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 514,
+      "question": "Which of the following security models does NOT concern itselfwith the flow of data?",
+      "options": {
+        "A": "The information flow model",
+        "B": "The Bell-LaPadula model Bell-LaPadula TE?",
+        "C": "The noninterference model",
+        "D": "The Biba model Biba TEE"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 515,
+      "question": "In what security mode can a system be operating if all users have the clearance or authorization and need-to-know to all data processed within the system?",
+      "options": {
+        "A": "Compartmented security mode H|%H3El4]",
+        "B": "Multilevel security mode Z&3'?",
+        "C": "Dedicated security mode '1H[3\\]",
+        "D": "System-high security mode"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 516,
+      "question": "Which of the following Orange Book ratings represents the highest level oftrust?",
+      "options": {
+        "A": "F6",
+        "B": "B2",
+        "C": "C2",
+        "D": "B1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 517,
+      "question": "What is another name for the Orange Book?",
+      "options": {
+        "A": "The Information Technology Security Evaluation Criteria (ITSEC)",
+        "B": "The Common Criteria (CC)",
+        "C": "The Trusted ComputerSystem Evaluation Criteria (TCSEC)",
+        "D": "The Trusted Computing Base (TCB)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 518,
+      "question": "Which of the following is least likely to be found in the Orange Book?",
+      "options": {
+        "A": "Security policy",
+        "B": "Networks and network components l7>l?",
+        "C": "Accountability 5.",
+        "D": "Documentation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 519,
+      "question": "What is called the formal acceptance of the adequacy of a system's overall security by the management?",
+      "options": {
+        "A": "Acceptance",
+        "B": "Accreditation UJJT",
+        "C": "Evaluation iiizlfi",
+        "D": "Certification i)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 520,
+      "question": "What does the Clark-Wilson security model focus on?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Accountability",
+        "C": "Availability Elliii",
+        "D": "Integrity Ebopii"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 521,
+      "question": "What does the simple security (ss) property mean in the Bell-LaPadula model? iiiltljuiiitz?",
+      "options": {
+        "A": "No write up",
+        "B": "No write down Zzlllitg",
+        "C": "No read down",
+        "D": "No read up $lJ5."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 522,
+      "question": "What does the * (star) property mean in the Bell-LaPadula model? * (E) %J'WJJi:E Bell-LaPadula",
+      "options": {
+        "A": "No read up",
+        "B": "No read down ZQFKUTE",
+        "C": "No write down",
+        "D": "No write up"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 523,
+      "question": "What is the Biba security model concerned with?",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Reliability Fiiilt"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 524,
+      "question": "Which security model uses division of operations into different parts and requires different users to perform each part?",
+      "options": {
+        "A": "Bell-LaPadula model Bell-LaPadula 1%?",
+        "B": "Biba model Biba EFL Clark-Wilson model Clark-Wilson lill Non-interference model 5l|5il)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 525,
+      "question": "What can best be described as a domain oftrust that shares a single security policy and single management? iF5IiFP 1Plllli.?Ul??.",
+      "options": {
+        "A": "The reference monitor il",
+        "B": "The security perimeter",
+        "C": "The security kernel P5]",
+        "D": "A security domain"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 526,
+      "question": "Which of the following describes a technique in which a number of processor units are employed in a single computer system to increase the performance of the system in its application environment above the performance of a single processor of the same kind? ltll/1i5IB\"13*?iii7EY~/i\\f5'Z7li,",
+      "options": {
+        "B": "Multiprocessing",
+        "C": "Multiprogramming $F5IE?",
+        "D": "Multitasking"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 527,
+      "question": "What can best be described as an abstract machine which must mediate all access to subjects to objects?",
+      "options": {
+        "A": "The security perimeter",
+        "B": "The security kernel ilj",
+        "C": "A security domain",
+        "D": "The reference monitor"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 528,
+      "question": "Which TCSEC class specifies discretionary protection?",
+      "options": {
+        "A": "C1",
+        "B": "B1",
+        "C": "B2",
+        "D": "C2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 529,
+      "question": "Accordingto the Common Criteria, what can be described as an intermediate combination of security requirement components?",
+      "options": {
+        "A": "Security target (ST) E (ST)",
+        "B": "The Target Of Evaluation (TOE)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 530,
+      "question": "What access control technique is also known as multilevel security?",
+      "options": {
+        "A": "Mandatory access control t-l?",
+        "B": "Role-based access control %T% @E'l4]",
+        "C": "iDiscretionary access control Qiii]",
+        "D": "Lattice-based access control %:1':Tl}T%El4]"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 531,
+      "question": "O. Which access control model was proposed for enforcing access control in government and military applications?",
+      "options": {
+        "A": "Bell-LaPadula model Bell-LaPadula TE?",
+        "B": "Brewer-Nash model Brewer-Nash TEE Sutherland model Sutherland TEE!"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 532,
+      "question": "Which access control model achieves data integrity through well-formed transactions and separation of duties?",
+      "options": {
+        "A": "Non-interference model EIETTJCTEE",
+        "B": "Biba model Biba TE?-Ll Sutherland model Sutherland TEE] Clark-Wilson model Clark-Wilson TEE"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 533,
+      "question": "Which TCSEC level is labeled Controlled Access Protection?",
+      "options": {
+        "A": "C2",
+        "B": "C1"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 534,
+      "question": "Which of the following security modes of operation involvesthe highest risk?",
+      "options": {
+        "A": "Dedicated Security Mode #555]",
+        "B": "System-High Security Mode",
+        "C": "Multilevel Security Mode ZZi3\"?",
+        "D": "Compartmented Security Mode }l3r?"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 535,
+      "question": "Which of the following statements pertaining to the security kernel is incorrect?",
+      "options": {
+        "A": "The security kernel must provide isolation forthe processes carrying out the reference monitor concept and they must be tamperproof.",
+        "B": "The security kernel must be small enough to be able to be tested and verified in a complete and comprehensive manner.",
+        "C": "The security kernel is an access control concept, not an actual physical component.",
+        "D": "The security kernel is made up of mechanisms that fall under the TCB and implements and enforces the reference monitor concept."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 536,
+      "question": "Which of the following security mode of operation does NOT require all users to have the clearance for all information processed on the system?",
+      "options": {
+        "A": "Multilevel security mode",
+        "B": "System-high security mode F?",
+        "C": "Dedicated security mode",
+        "D": "Compartmented security mode J\\l3i%H3B<]"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 537,
+      "question": "What can best be defined as the sum of protection mechanisms inside the computer, including hardware, firmware and software?",
+      "options": {
+        "A": "Trusted system EHEE/%?",
+        "B": "Trusted computing base",
+        "C": "Security perimeter",
+        "D": "Security kernel W"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 538,
+      "question": "Il%,%?}i%F$l*'/t2LiTl}3BIDi?",
+      "options": {
+        "A": "Independently-verifiable evidence that the security policy-enforcing mechanisms are sufficient and effective.",
+        "B": "Enforcement of a security policy.",
+        "C": "Assurance that the security policy can be enforced in an efficient and reliable manner.",
+        "D": "Sufficiency and effectiveness of mechanisms to be able to enforce a security policy."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 539,
+      "question": "What can be described as an imaginary line that separates the trusted components of the TCB from those elements that are NOTtrusted?",
+      "options": {
+        "A": "The security kernel fc",
+        "B": "The reference perimeter gl",
+        "C": "The security perimeter",
+        "D": "The reference monitor gl l3}lW."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 540,
+      "question": "What are the three conditions that must be met bythe reference monitor?",
+      "options": {
+        "A": "Isolation, completeness and verifiability",
+        "B": "Isolation, layering and abstraction l1%?",
+        "C": "Policy, mechanism and assurance",
+        "D": "Confidentiality, availability and integrity l%?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 541,
+      "question": "Which of the following is an ISO standard product evaluation criteria that supersedes several different criteria l/iii ztiiflill TIll9llIDi1%E>ZlT %l$l5]l/\"T?/EH41 ISO ?",
+      "options": {
+        "A": "The Trusted Computer System Evaluation Criteria Wlliifilll/2%?",
+        "B": "ISO standard",
+        "C": "The Information Technology Security Evaluation Criteria.",
+        "D": "The Common Criteria"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 542,
+      "question": "Which of the following is NOTa common integrity goal?",
+      "options": {
+        "A": "Prevent paths that could lead to inappropriate disclosure.",
+        "B": "Prevent authorized users from making improper modifications l9:iitii1E]",
+        "C": "Prevent unauthorized users from making modifications.",
+        "D": "Maintain internal and external consistency."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 543,
+      "question": "What is used to protect programs from all unauthorized modification or executional interference?",
+      "options": {
+        "A": "A security perimeter",
+        "B": "A protection domain. l%ilFiZ",
+        "D": "Abstraction."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 544,
+      "question": "What is called a system that is capable of detecting that a fault has occurred and has the ability to correct the fault or operate around it?",
+      "options": {
+        "A": "Afail safe system",
+        "B": "A failover system.",
+        "C": "A fault-tolerant system.",
+        "D": "A fail soft system."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 545,
+      "question": "In regards to corporate data, the Orange Book does NOTcover",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Accountability. Wiglllli"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 546,
+      "question": "Which integrity model defines a constrained data item, an integrity verification procedure and a transformation procedure? Tilll/i?E%'l$lEili>LTZiiilililbi.",
+      "options": {
+        "A": "The Biba integrity model",
+        "B": "The Clark Wilson integrity model",
+        "C": "The Bell-LaPadula integrity model",
+        "D": "The Take-Grant model"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 547,
+      "question": "What is defined as the hardware, firmware and software elements of a trusted computing base that implement the reference monitor concept? Elailif.",
+      "options": {
+        "A": "Protection rings",
+        "B": "Aisieicurity kernel",
+        "C": "A protection domain",
+        "D": "The reference monitor"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 548,
+      "question": "In the Bell-LaPadula model, the Star-property is also called",
+      "options": {
+        "B": "The tranquility property",
+        "C": "The confinement property",
+        "D": "The confidentiality property"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 549,
+      "question": "Which of the following is best defined as an administrative declaration by a designated authoritythat an information system is approved to operate in a particular security configuration with a prescribed set ofsafeguards?",
+      "options": {
+        "A": "Accreditation T:1l%i)",
+        "B": "Declaration",
+        "D": "Certification i)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 550,
+      "question": "Controlled Security Mode is also known as",
+      "options": {
+        "A": "System-high Security Mode",
+        "B": "Dedicated Security Mode",
+        "C": "Multilevel Security Mode",
+        "D": "Partitioned Security Mode"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "file": "cissp-008.json",
+    "question_range": "Q351 - Q400",
+    "start": 351,
+    "end": 400,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 351,
+      "question": "What can be described as a measure of the magnitude of loss or impact on the value of an asset?",
+      "options": {
+        "A": "Exposure factor",
+        "B": "Probability"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 352,
+      "question": "Computer security should be first and foremost which of the following",
+      "options": {
+        "A": "Cover all identified risks.",
+        "B": "Be cost-effective.",
+        "C": "Be proportionate to the value of ITsystems.",
+        "D": "Be examined in both monetary and non-monetaryterms."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 353,
+      "question": "Which of the following best allows risk management results to be used knowledgeably?",
+      "options": {
+        "A": "likelihood assessment",
+        "B": "An uncertainty analysis"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 354,
+      "question": "In an organization, an information Technology securityfunction should",
+      "options": {
+        "A": "Be a function within the information systems function of an organization.",
+        "B": "Be independent but report to the Information Systems function.",
+        "C": "Be lead by a ChiefSecurity Officer and report directlyto the CEO.",
+        "D": "Report directly to a specialized business unit such as legal, corporate security or insurance."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 355,
+      "question": "IT security measures should",
+      "options": {
+        "A": "Not be developed in a layered fashion.",
+        "B": "Be tailored to meet organizational security goals.",
+        "C": "Make sure that every asset of the organization is well protected.",
+        "D": "Be complex"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 356,
+      "question": "What can be best defined as the examination ofthreat sources against system vulnerabilities to determine the threats for a particular system in a particular operational environment?",
+      "options": {
+        "A": "Risk management",
+        "B": "Due diligence 'l%)HR? Threat analysis )J'ZHJ]~3\\l Risk analysis Jikllfr"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 357,
+      "question": "Which of the following is NOTa common integrity goal?",
+      "options": {
+        "A": "Prevent paths that could lead to inappropriate disclosure.",
+        "B": "Prevent authorized users from making improper modifications.",
+        "C": "Maintain internal and external consistency.",
+        "D": "Prevent unauthorized users from making modifications."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 358,
+      "question": "Who of the following is responsible for ensuring that proper controls are in place to address integrity, confidentiality, and availability of IT systems and data?",
+      "options": {
+        "A": "Business and functional managers",
+        "B": "Chief information officer",
+        "C": "System and information owners",
+        "D": "ITSecurity practitioners"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 359,
+      "question": "Which of the following is an advantage of a qualitative over a quantitative risk TIJ\"3JlIDi%i'l$JF<kl$1iJfl=H tl:iiJ>'<kl~alFrlIJi1ii.'.T.?",
+      "options": {
+        "A": "It can easily be automated.",
+        "B": "It prioritizes the risks and identifies areas for immediate improvement in addressing the vulnerabilities.",
+        "C": "It provides specific quantiable measurements of the magnitude of the",
+        "D": "It makes a cost-benefit analysis of recommended controls easier."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 360,
+      "question": "An effective information security policy should not have which of the following characteristic?",
+      "options": {
+        "A": "Be designed with a short- to mid-term focus",
+        "B": "Include separation ofduties",
+        "C": "Be understandable and supported by all stakeholders",
+        "D": "Specify areas of responsibility and authority"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 361,
+      "question": "Which of the following choice is NOT normally part of the questions that would be asked in regards to an organization's information security policy?",
+      "options": {
+        "A": "Who is responsible for monitoring compliance to the organization's security",
+        "B": "Who is involved in establishing the security policy?",
+        "C": "Where is the organization's security policy defined?",
+        "D": "What are the actions that need to be performed in case of a disaster?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 362,
+      "question": "Which of the following would best relate to resources being used only for intended lJT\"}.il3IB'\"1i2\"%il?bF2'JHliili Blil5l",
+      "options": {
+        "A": "Confidentiality",
+        "B": "Availability"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 363,
+      "question": "Which of the following is most concerned with personnel security?",
+      "options": {
+        "A": "Operational controls",
+        "B": "Human resources controls )"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 364,
+      "question": "Which of the following would best classify as a management control?",
+      "options": {
+        "A": "Personnel security",
+        "B": "Physical and environmental protection",
+        "C": "Documentation",
+        "D": "Review ofsecurity controls"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 365,
+      "question": "Which of the following statements pertaining to a security policy is incorrect?",
+      "options": {
+        "A": "It specifies how hardware and software should be used throughout the",
+        "B": "Its main purpose is to inform the users, administrators and managers of their obligatory requirements for protecting technology and information assets.",
+        "C": "It needs to have the acceptance and support of all levels of employees within the organization in order for it to be appropriate and effective.",
+        "D": "It must be flexible to the changing environment."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 366,
+      "question": "Which of the following best defines add-on security?",
+      "options": {
+        "A": "Determine alternate courses of action",
+        "B": "Establish a security audit function.",
+        "C": "Establish objectives.",
+        "D": "List planning assumptions."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 367,
+      "question": "Step-by-step instructions used to satisfy control requirements is called a",
+      "options": {
+        "A": "Standard",
+        "B": "Guideline TEW"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 368,
+      "question": "One purpose of a security awareness program is to modify",
+      "options": {
+        "A": "corporate attitudes about safeguarding data",
+        "B": "employee's attitudes and behaviors towards enterprise's security posture 1IRMEikiz:%.",
+        "C": "attitudes ofemployees with sensitive data",
+        "D": "management's approach towards enterprise's security posture"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 369,
+      "question": "Whose role is it to assign classification level to information?",
+      "options": {
+        "A": "Security Administrator.",
+        "B": "Auditor."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 370,
+      "question": "In Risk Modelingthe focus is to obtain credible and usable portrayal of risks. Ofthe following, which is NOTa question used to perform this function?",
+      "options": {
+        "A": "ls it credible?",
+        "B": "How often could it occur?",
+        "C": "How bad would it be?",
+        "D": "What could happen?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 371,
+      "question": "Which type of security control is also known as \"Logical\" control?",
+      "options": {
+        "A": "Risk",
+        "B": "Technical EU]"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 372,
+      "question": "Separation of Duties describes the process of",
+      "options": {
+        "A": "Dividing duties so that only one person is required to complete a task or multiple ones efficiently lZlJ61HR%,1kl:F\"ii)",
+        "B": "Dividing duties so that more than one person is required to complete a critical Hlliill5a,$lt~4)",
+        "C": "Creating duties whereby at least one person can complete all the required tasks without the reliance on another person 'li%HF, \" )",
+        "D": "Dividing duties whereby only conflicting tasks can be completed by one Hiilla,/:lfHE7=l19&EJl9%W Li m )"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 373,
+      "question": "What is surreptitious transfer of information from a higher classification compartment to a lower classification compartment without goingthrough the formal communication channels?",
+      "options": {
+        "A": "Covert Channel",
+        "B": "Security domain",
+        "C": "Data Transfer Object Reuse"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 374,
+      "question": "Which of the following is best practice to employ in orderto reduce the risk of TFIJll/1ll31%U~W/\"il>1lWT@Elflgilii?",
+      "options": {
+        "A": "Mandatory Vacations",
+        "B": "Least Privilege 1%/JVFRIKE Seperation of Duties HF'\\:I\\_f5=\"'i Job Rotation"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 375,
+      "question": "Which of the following is not classified as a \"Security and Audit Frameworks and Methodologies\"",
+      "options": {
+        "A": "Bell LaPadula BLP",
+        "B": "Committee of Sponsoring Organizations of the Treadway Commission (COSO)",
+        "C": "IT Infrastructure Library (lT|L)",
+        "D": "Control Objectives for Information and related Technology (COBIT)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 376,
+      "question": "Which of the following is true about Kerberos?",
+      "options": {
+        "A": "lt encrypts data after a ticket is granted, but passwords are exchanged in plain Emwa%%HEw%M%,@%%@%i&%%i.",
+        "B": "It depends upon symmetric ciphers.",
+        "C": "lt is a second party authentication system.",
+        "D": "It utilizes public key cryptography."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 377,
+      "question": "What are two types ofciphers?",
+      "options": {
+        "A": "Transposition and Permutation.",
+        "B": "Substitution and Replacement.",
+        "C": "Transposition and Substitution.",
+        "D": "Transposition and Shift."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 378,
+      "question": "Kerberos depends upon what encryption method?",
+      "options": {
+        "A": "Blowfish cryptography.",
+        "B": "Public Key cryptography.",
+        "C": "El Gamal cryptography.",
+        "D": "Secret Key cryptography."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 379,
+      "question": "What is a characteristic of using the Electronic Code Book mode of DES encryption?",
+      "options": {
+        "A": "Repetitive encryption obscures any repeated patterns that may have been present in the plaintext.",
+        "B": "The previous DES output is used as input.",
+        "C": "Individual characters are encoded by combining output from earlier encryption routines with plaintext.",
+        "D": "A given block of plaintext and a given key will always produce the same rd Za7i2l\"JlEY7Fl1 i El]"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 380,
+      "question": "Where parties do not have a shared secret and large quantities of sensitive information must be passed, the most efficient means of transferring information is to use Hybrid Encryption Methods. What does this mean?",
+      "options": {
+        "A": "Use ofsoftware encryption assisted by a hardware encryption accelerator.",
+        "B": "Use of the recipient's public key for encryption and decryption based on the recipient's private key.",
+        "C": "Use of public key encryption to secure a secret key, and message encryption using the secret key.",
+        "D": "Use of elliptic curve encryption."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 381,
+      "question": "Public Key Infrastructure (PKI) uses asymmetric key encryption between parties. The originator encrypts information using the intended recipient's \"public\" key in order to get confidentiality of the data being sent. The recipients use their own \"private\" key to decrypt the information. The \"Infrastructure\" of this methodology ensures that",
+      "options": {
+        "A": "The sender and recipient have reached a mutual agreement on the encryption key exchange that they will use.",
+        "B": "The sender of the message is the only other person with access to the recipient's iii.",
+        "C": "The recipient's identity can be positively verified to the sender.",
+        "D": "The channels through which the information flows are secure."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 382,
+      "question": "Which of the following statements is true about data encryption as a method of protecting data?",
+      "options": {
+        "A": "It is usually easily administered",
+        "B": "It requires careful key management %?",
+        "C": "lt should sometimes be used for password files Hll%'PUL1?",
+        "D": "It makes few demands on system resources \"E5<n,%3EiJE~71?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 383,
+      "question": "Which type of algorithm is considered to have the highest strength per bit of key length ofany of the asymmetric algorithms?",
+      "options": {
+        "A": "Rivest, Shamir, Adleman (RSA)",
+        "B": "Elliptic Curve Cryptography (ECC) Advanced Encryption Standard (AES) %: Elliptic Curve Cryptography (ECC)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 384,
+      "question": "U1y1l>1>1.PU?>.o.?P.?:=ill password file is which of the following?",
+      "options": {
+        "A": "It prevents an unauthorized person from trying multiple passwords in one logon i11TbJ%Jl:ilE3J'-7fRl5lJ)",
+        "B": "It prevents an unauthorized person from reading or modifying the password.",
+        "C": "It minimizes the amount ofstorage required for user passwords.",
+        "D": "It minimizes the amount of processing time used for encrypting passwords."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 385,
+      "question": "Which of the following issues is not addressed by digital signatures?",
+      "options": {
+        "A": "Nonrepudiation",
+        "B": "Authentication i)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 386,
+      "question": "Brute force attacks against encryption keys have increased in potency because of increased computing power. Which of the following is often considered a good protection against the brute force cryptography attack?",
+      "options": {
+        "A": "The use ofgood key generators.",
+        "B": "Algorithms that are immune to brute force key attacks.",
+        "C": "Nothing can defend you against a brute force crypto key attack.",
+        "D": "The use ofsession keys."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 387,
+      "question": "The Data Encryption Standard (DES) encryption algorithm has which of the following characteristics?",
+      "options": {
+        "A": "64 bit blocks with a 64 bit total key length",
+        "B": "128 bit key with 8 bits used for parity 128 l5.",
+        "C": "64 bits ofdata input results in 56 bits of encrypted output",
+        "D": "56 bits ofdata input results in 56 bits ofencrypted output 56 lii-)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 388,
+      "question": "PGP uses which of the following to encrypt data?",
+      "options": {
+        "A": "An X.509 digital certificate",
+        "B": "An asymmetric encryption algorithm",
+        "C": "A symmetric key distribution system 5<f/1\"~%%.",
+        "D": "A symmetric encryption algorithm"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 389,
+      "question": "Which of the following is NOT true ofSecure Sockets Layer (SSL)?",
+      "options": {
+        "A": "By convention it uses s-http: ' instead of 'http: '.",
+        "B": "it is used for transmitting private information, data, and documents over the >:'l#5ll%7l%*l*Ylil#%i%L)\\l%.%, $51173 c. It was developed by Netscape. \"E%Ell Netscape 3f7iEl4] ls the predecessor to the Transport Layer Security (TLS)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 390,
+      "question": "Which of the following identifies the encryption algorithm selected by NIST for the new Advanced Encryption Standard?",
+      "options": {
+        "A": "RC6",
+        "B": "Twofish"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 391,
+      "question": "Compared to RSA, which of the following is true of Elliptic Curve Cryptography(ECC)? RSA TEH3, Li?\"/%lID\"19E3lll",
+      "options": {
+        "A": "It has been mathematically proved to be more secure.",
+        "B": "It is believed to require shorter keys for equivalent security.",
+        "C": "It has been mathematically proved to be less secure.",
+        "D": "It is believed to require longer key for equivalent security."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 392,
+      "question": "To comply with the Internet Engineering Task Force (IETF) standard for the IP Security (IPSEC) Protocol, which key-exchange method must be used? 7lTi?",
+      "options": {
+        "A": "Diffie-Hellman",
+        "B": "Internet Security Association and Key Management Protocol (|SAKMP)",
+        "C": "lnternet Key Exchange (IKE) none of the above"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 393,
+      "question": "What are the three most important functions that Digital Signatures perform?",
+      "options": {
+        "A": "Output Feedback (OFB) imlit (ore)",
+        "B": "Electronic Code Book (ECB) $,:J%iE5H13 (ECB) Cipher Block Chaining (csc) (CBC)",
+        "C": "Integrity, Authentication and Nonrepudiation ?",
+        "D": "Integrity, Confidentiality and Authorization 27 . Which of the following is NOT a mode of the Data Encryption Standard (DES)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 394,
+      "question": "Which of the following is a cryptographic protocol and infrastructure developed to send encrypted credit card numbers overthe Internet?",
+      "options": {
+        "A": "Secure Shell (SSH-2)",
+        "B": "Secure Hypertext Transfer Protocol (S-HTTP)",
+        "C": "Secure Electronic Transaction (SET)",
+        "D": "MONDEX"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 395,
+      "question": "Which of the following cryptographic attacks describes when the attacker has a copy of the plaintext and the corresponding ciphertext?",
+      "options": {
+        "A": "DES-EEE2 li <.",
+        "B": "DES-EEE3 lili %*3%H c.",
+        "C": "known plaintext E.",
+        "D": "DES-EEE1 liP/:T%H"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 396,
+      "question": "T5lJll3l5/liiIDiz?:%*F%;*}iHl7J~Fii91i>L,",
+      "options": {
+        "A": "(The Jefferson disks)",
+        "B": "SIAGABA",
+        "C": "Dife-Hellman",
+        "D": "fLiI%*53 (Caesar Cipher)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 397,
+      "question": "U\\_F}:1|513BL1E$5'7J[I5.J'.Z.",
+      "options": {
+        "B": "W%%X%",
+        "C": "QB? 64 $EE3?",
+        "A": "PKCS#1O X.",
+        "D": "S/MIME H1 SSH"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 398,
+      "question": "Lw&oWWm%%%Hz?",
+      "options": {
+        "A": "Ej+%%PmE%%",
+        "B": "ICA",
+        "D": "CA",
+        "C": "CHAP"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 399,
+      "question": "FWWWm%%m%E$MmE%?",
+      "options": {
+        "A": "1>1<cs#17799",
+        "B": "PKCS#11",
+        "D": "PKCS#1",
+        "C": "PKCS-RSA"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 400,
+      "question": "X.509",
+      "options": {
+        "A": "$@%E",
+        "B": "$E%$%E%E%%%%%$%%%A c REEM Verisign %n RSA %';%?",
+        "D": "%?%#"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

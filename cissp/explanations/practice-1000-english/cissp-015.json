@@ -1,0 +1,748 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "file": "cissp-015.json",
+    "question_range": "Q701 - Q750",
+    "start": 701,
+    "end": 750,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 701,
+      "question": "Why would a memory dump be admissible as evidence in court?",
+      "options": {
+        "A": "Because it is used to identify the state of the system.",
+        "B": "Because it is used to demonstrate the truth of the contents.",
+        "C": "Because the state of the memory cannot be used as evidence.",
+        "D": "Because of the exclusionary rule."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 702,
+      "question": "Which type of attack would a competitive intelligence attack best classify as?",
+      "options": {
+        "A": "Business attack Fiklfli",
+        "B": "Grudge attack ?",
+        "C": "Intelligence attack",
+        "D": "Financial attack"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 703,
+      "question": "Due care is not related to",
+      "options": {
+        "A": "Best interest B.",
+        "B": "Prudent man ETEEDIIJ c."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 704,
+      "question": "Which of the following is not a form of passive attack?",
+      "options": {
+        "A": "SnWng",
+        "B": "Shoulder surfing c. Data diddling ittii",
+        "D": "Scavenging E5?"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 705,
+      "question": "Once an intrusion into your organization's information system has been detected, which of the following actions should be performed first?",
+      "options": {
+        "A": "Determine to what extent systems and data are compromised.",
+        "B": "Communicate with relevant parties.",
+        "C": "Eliminate all means of intruder access.",
+        "D": "Contain the intrusion."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 706,
+      "question": "When first analyzing an intrusion that hasjust been detected and confirmingthat it is a true positive, which of the following actions should be done as a first step ifyou wish to prosecute the attacker in court?",
+      "options": {
+        "A": "Back up the compromised systems.",
+        "B": "Identify the attacks used to gain access.",
+        "C": "Capture and record system information.",
+        "D": "Isolate the compromised systems."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 707,
+      "question": "In orderto be able to successfully prosecute an intruder",
+      "options": {
+        "A": "Whenever possible, analyze a replica of the compromised resource, not the original, thereby avoiding inadvertentlytamping with evidence.",
+        "B": "Collection ofevidence has to be done following predefined procedures",
+        "C": "A proper chain ofcustody ofevidence has to be preserved.",
+        "D": "A point ofcontact should be designated to be responsible for communicating with law enforcement and other external agencies."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 708,
+      "question": "In orderto preserve a proper chain of custody of evidence",
+      "options": {
+        "A": "Log files containing information regarding an intrusion are retained for at least as long as normal business records, and longer in the case of an ongoing investigation.",
+        "B": "Verifiable documentation indicating the sequence of individuals who have handled a piece of evidence should be available.",
+        "C": "Law enforcement officials should be contacted for advice on how and when to collect critical information.",
+        "D": "Evidence has to be collected following predefined procedures in accordance with all laws and legal regulations."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 709,
+      "question": "Which of the following should be notified first in the event of a Network or System",
+      "options": {
+        "A": "Human resources",
+        "B": "System and network administrator(s)",
+        "C": "lnternal public relations point ofcontact",
+        "D": "Law enforcement agencies"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 710,
+      "question": "When should a post-mortem review meeting be held after an intrusion has been properlytaken care of?",
+      "options": {
+        "A": "Explain what is considered an acceptable use of the e-mail system.",
+        "B": "Explain who can read the e-mail and how long it is backed up.",
+        "C": "lnform all employees that e-mail is being monitored.",
+        "D": "Monitor only a limited number of employees."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 711,
+      "question": "Which U.S. act places responsibility on senior organizational management forthe prevention and detection program with fines of up to $290 million for nonperformance?",
+      "options": {
+        "A": "The 1987 U.S. Computer SecurityAct",
+        "B": "The 1996 U.S. National Information Infrastructure Protection Act",
+        "C": "The 1991 U.S. Federal Sentencing Guidelines",
+        "D": "The 1986 U.S. Computer Fraud and Abuse Act"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 712,
+      "question": "Ifan employee's computer has been used by a fraudulent employee to commit a crime, the hard disk may be seized as evidence and once the investigation is complete it would follow the normal steps of the Evidence Life Cycle. In such case, the Evidence life cycle would not include which of the following steps listed below?",
+      "options": {
+        "A": "Destruction",
+        "B": "Storage, preservation, and transportation Yili, {%7[?",
+        "C": "Acquisition collection and identification",
+        "D": "Analysis"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 713,
+      "question": "Which of the following is a problem regarding computer investigation issues?",
+      "options": {
+        "A": "Evidence is easyto gather.",
+        "B": "Computer-generated records are only considered secondary evidence, thus are not as reliable as best evidence.",
+        "C": "In many instances, an expert or specialist is not required.",
+        "D": "Information is tangible."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 714,
+      "question": "What is defined as inference of information from other, intermediate, relevant Ell:@B\"*5%XT$EqFEQTE9EE@E5?",
+      "options": {
+        "A": "Hearsay evidenceliflil HE?",
+        "B": "Secondary",
+        "C": "Conclusive evidence\"ll/Eli",
+        "D": "Circumstantial evidencell5]"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 715,
+      "question": "Which of the following exceptions is less likelyto make evidence such as audit logs and audittrails admissible and have more weight in court under the Business Exemption Rule to the hearsay evidence ?",
+      "options": {
+        "A": "Records are collected during the regular conduct of business.",
+        "B": "Records are collected at or near the time ofoccurrence of the act being investigated to generate automated reports. wemaawmemwanaaemmamwa.",
+        "C": "You can prove no one could have changed the records/data/logs that were collected.",
+        "D": "Records are collected by senior or executive management."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 716,
+      "question": "Which of the following is the BESTway to detect software license violations?",
+      "options": {
+        "A": "Requiringthat all PCs be diskless workstations.",
+        "B": "Regularly scanning PCs in use to ensure that unauthorized copies of software have not been loaded on the PC.",
+        "C": "Installing metering software on the LAN so applications can be accessed through the :'El%.",
+        "D": "Implementing a corporate policy on copyright infringements and software use."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 717,
+      "question": "HB1?lr??:ti",
+      "options": {
+        "A": "Corporate spies",
+        "B": "Criminal hackers",
+        "C": "Student hackers",
+        "D": "Disgruntled employees 1E."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 718,
+      "question": "Which of the following best defines a Computer Security Incident Response Team",
+      "options": {
+        "A": "An organization that ensures that security incidents are reported to the authorities.",
+        "B": "An organization that coordinates and supports the response to security incidents.",
+        "C": "An organization that disseminates incident-related information to its constituency and other involved parties.",
+        "D": "An organization that provides a secure channel for receiving reports about suspected"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 719,
+      "question": "Underthe principle of culpable negligence, executives can be held liable for losses that result from computer system breaches if",
+      "options": {
+        "A": "They have failed to properly insure computer resources against loss.",
+        "B": "They have not exercised due care protecting computing resources.",
+        "C": "The company is not a multi-national company.",
+        "D": "The company does not prosecute the hacker that caused the breach."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 720,
+      "question": "The deliberate planting of apparent flaws in a system forthe purpose of detecting attempted penetrations or confusing an intruder about which flaws to exploit is called",
+      "options": {
+        "A": "enticement.",
+        "D": "alterationEZ"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 721,
+      "question": "Which element must computer evidence have to be admissible in court?",
+      "options": {
+        "A": "It must be annotated.",
+        "B": "It must be printed.",
+        "C": "It must be relevant.",
+        "D": "It must contain source code."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 722,
+      "question": "The Internet Architecture Board (IAB) characterizes which of the following as unethical behavior for lnternet users?",
+      "options": {
+        "A": "Writing computerviruses.",
+        "B": "Monitoring data traffic.",
+        "C": "Concealing unauthorized accesses.",
+        "D": "Wasting computer resources."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 723,
+      "question": "The US department of Health, Education and Welfare developed a list offair information practices focused on privacy of individually, personal indentifiable information. Which one of the following is incorrect?",
+      "options": {
+        "A": "There must be a wayfor a person to find out what information about them exists and",
+        "B": "There must be a wayfor a person to prevent information about them, which was obtained for one purpose, from being used or made available for another purpose without their consent.",
+        "C": "Any organisation creating, maintaining, using, or disseminating records of personal indentifiable information must ensure reliability of the data for their intended use and must make precautions to prevent misuses ofthat data.",
+        "D": "There must be a personal data record-keeping system whose very existence shall be"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 724,
+      "question": "An attack that involves an fraudstertricking a user into making inappropriate security decisions is known as",
+      "options": {
+        "A": "Man-in-the~Middle EP|@)",
+        "B": "Spoofing Eiglii Engineeringiiilllllfli",
+        "C": "Social",
+        "D": "Surveillance HEW,"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 725,
+      "question": "The US-EU Safe Harbor process has been created to address which of the following?",
+      "options": {
+        "A": "Protection of personal data transfered between U.S and European companies",
+        "B": "Confidentiality of data transfered between European and international companies",
+        "C": "Confidentiality of data transfered between U.S and European companies",
+        "D": "Integrity of data transfered between U.S. and european companies"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 726,
+      "question": "What is Dumpster Diving?",
+      "options": {
+        "A": "Going through dust bin",
+        "B": "performing forensics on the deleted items",
+        "C": "Running through another person's garbage for discarded document, information and other previous items that could be used against that person or company Performing media analysis"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 727,
+      "question": "Which of the following is the most important |SC2 Code of Ethics Canons?",
+      "options": {
+        "A": "Provide diligent and competent service to prinicipals",
+        "B": "Act honorably, honestly, justly, responsibly, and legally",
+        "C": "Protect society, the commonwealth, and the infrastructure",
+        "D": "Advance and protect the profession"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 728,
+      "question": "What Cloud Deployment model consist of a cloud infrastructure provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units)? Such deployment model may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off",
+      "options": {
+        "A": "Private Cloud",
+        "B": "Community Cloud HIXYI",
+        "C": "PubHc(]oud Qktii",
+        "D": "Hybrid Cloud"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 729,
+      "question": "When referring to the Cloud Computing Service models. What would you call a service model where the consumer does not manage or control the underlying cloud infrastructure including networks, servers, operating systems, or storage, but has control overthe deployed applications and possibly configuration settings forthe application-hosting environment?",
+      "options": {
+        "A": "Code as a Service (CaaS)",
+        "B": "Infrastructure as a Service (laaS)",
+        "C": "Platform as a Service (PaaS)",
+        "D": "Software as a Service (SaaS)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 730,
+      "question": "The exact requirements for the ofevidence vary across legal systems and between different cases (e.g., criminal versus tort). At a more generic level, evidence should have some probative value, be relevant to the case at hand, and meet the following criteria which are often called the five rules of evidence",
+      "options": {
+        "A": "It has to be authentic, hashed, complete, convincing, and Admissible.",
+        "B": "It has to be authentic, accurate, complete, convincing, and Admissible.",
+        "C": "It has to be authentic, accurate, complete, convincing, and auditable.",
+        "D": "It has to be encrypted, accurate, complete, convincing, and Admissible T=IIi%%'li, ii%'li, ?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 731,
+      "question": "Which of the following best describes what would be expected at a \"hot lil<FlBIDi.ti%1i5r%Zli1E1<Jt%i$Ti%ti5\"?",
+      "options": {
+        "A": "Dedicated climate control systems %l$ti5i<Ji5l,%tFl%'l,-.",
+        "B": "Computers and dedicated climate control systems.",
+        "C": "Computers and peripherals",
+        "D": "Computers, climate control, cables and peripherals"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 732,
+      "question": "Who should direct short-term recovery actions immediately following a disaster?",
+      "options": {
+        "A": "ChiefOperating Officer.",
+        "B": "Chief Information Officer.",
+        "C": "Chief Executive Officer. CEO",
+        "D": "Disaster Recovery Manager."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 733,
+      "question": "Prior to a live disaster test also called a Full Interruption test, which of the following is most important?",
+      "options": {
+        "A": "Conduct of a successful Parallel Test IjJl'4]",
+        "B": "Restore all files in preparation for the test.",
+        "C": "Document expected findings.",
+        "D": "Arrange physical securityforthe test site."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 734,
+      "question": "Which of the following should be emphasized during the Business Impact Analysis (BIA) consideringthat the BIA focus is on business processes?",
+      "options": {
+        "A": "Priorities",
+        "B": "Dependencies",
+        "C": "Service levels",
+        "D": "Composition ZHEYL."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 735,
+      "question": "Which of the following recovery plan test results would be most useful to management?",
+      "options": {
+        "A": "amount ofwork completed.",
+        "B": "description ofeach activity.",
+        "C": "list ofsuccessful and unsuccessful activities.",
+        "D": "elapsed time to perform various activities."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 736,
+      "question": "Which of the following computer recovery sites is only partially equipped with processing equipment?",
+      "options": {
+        "A": "hot site.",
+        "B": "cold site.",
+        "C": "warm site.",
+        "D": "rolling hot site."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 737,
+      "question": "Which of the following computer recovery sites is the least expensive and the most difficult to test?",
+      "options": {
+        "A": "non-mobile hot site.",
+        "B": "cold site.",
+        "C": "warm site.",
+        "D": "mobile hot site."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 738,
+      "question": "Which of the following is the most important consideration in locating an alternate computing facility during the development of a disaster recovery plan?",
+      "options": {
+        "A": "It is close enough to become operational quickly.",
+        "B": "It is convenient to airports and hotels.",
+        "C": "It is unlikely to be affected by the same contingency. $7K5lfil:lllEl.l close enough to serve its users."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 739,
+      "question": "Contracts and agreements are often times unenforceable or hard to enforce in which of the following alternate facility recovery agreement?",
+      "options": {
+        "A": "hot site.",
+        "B": "cold site.",
+        "C": "reciprocal agreement.",
+        "D": "warm site."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 740,
+      "question": "Organizations should not view disaster recovery as which of the following?",
+      "options": {
+        "A": "Compliance with regulations.",
+        "B": "Committed expense.",
+        "C": "Discretionary expense. El Q Elili El4]",
+        "D": "Enforcement of legal statutes."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 741,
+      "question": "Which of the following backup sites is the most effective for disaster recovery?",
+      "options": {
+        "A": "Reciprocal Agreement",
+        "B": "Cold sites",
+        "C": "Time brokers l5lLllT.",
+        "D": "Hot sites"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 742,
+      "question": "Which of the following is NOT a transaction redundancy implementation?",
+      "options": {
+        "A": "database shadowing",
+        "B": "remote journaling El",
+        "C": "electronic vaulting",
+        "D": "on-site mirroring f)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 743,
+      "question": "Which of the following provides enterprise management with a prioritized list of time-critical business processes, and estimates a recovery time objective for each of the time critical processes and the components of the enterprise that support those processess?",
+      "options": {
+        "A": "Current State Assessment",
+        "B": "Business Risk Assessment.",
+        "C": "Business Impact Assessment l%%3l1ll3.",
+        "D": "Risk Mitigation Assessment."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 744,
+      "question": "Which of the following steps is NOT one of the eight detailed steps of a Business Impact Assessment (BIA)",
+      "options": {
+        "A": "Calculating the risk for each different business function.",
+        "B": "Identifying critical business functions.",
+        "C": "Creating data gathering techniques.",
+        "D": "Notifying senior management of the start of the assessment."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 745,
+      "question": "Which of the following results in the most devastating business interruptions?",
+      "options": {
+        "A": "Loss of Hardwar ie i/S iioftware i3jl*l=/)",
+        "B": "Loss of Data",
+        "C": "Loss of Communication Links",
+        "D": "Loss ofApplications EH1?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 746,
+      "question": "During recovery from a disaster, which offollowing is the most critical item?",
+      "options": {
+        "A": "Software Applications EYE",
+        "B": "Communication Links",
+        "C": "Hardware/Software",
+        "D": "Data"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 747,
+      "question": "Which of the following is defined as the most recent point in time to which data must be synchronized without adversely affecting the organization (financial or operational impacts)?",
+      "options": {
+        "A": "Recovery Point Objective Tit",
+        "B": "Critical Time Objective 'i$l5lTjlli E",
+        "C": "Point ofTime Objective",
+        "D": "Recovery Time Objective 'l7)ZEl?lULIIT_l El Ti?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 748,
+      "question": "The Recovery Point Objective (RPO) in Disaster Recovery Planning refers to which of the following? ?;'E9\"<5<l%Ei+iZllEl1 E1<]'WE E iii?",
+      "options": {
+        "A": "Point to which information system must be operational at alternate site l%.",
+        "B": "Point to which application data must be recovered to resume business transactions F_?",
+        "C": "Maximum elapsed time required to complete recovery of application data ?",
+        "D": "Point to which application data must be recovered to resume system operations"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 749,
+      "question": "Valuable paper insurance coverage does not cover damage to which of the lfitE%l%B?E$LMTlllfl1%iT?",
+      "options": {
+        "A": "Manuscripts",
+        "B": "Inscribed, printed and Written documents \"EY,?",
+        "C": "Records",
+        "D": "Money and Securities"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 750,
+      "question": "Which of the following is covered under Crime Insurance Policy Coverage?",
+      "options": {
+        "A": "lnscribed, printed and Written documents",
+        "B": "Money and Securities",
+        "C": "Accounts Receivable",
+        "D": "Manuscripts"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

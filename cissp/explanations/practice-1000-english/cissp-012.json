@@ -1,0 +1,733 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "file": "cissp-012.json",
+    "question_range": "Q551 - Q600",
+    "start": 551,
+    "end": 600,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 551,
+      "question": "The Reference Validation Mechanism that ensures the authorized access relationships between subjects and objects is implementing which of the following concept",
+      "options": {
+        "A": "The reference monitor.",
+        "B": "B. Mandatory Access Control. ililliji I5]iilill Discretionary Access Control. EEliiji",
+        "D": "The Security Kernel. ZZQWTZ"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 552,
+      "question": "Which of the following models does NOT nnclude data Integrity or conflict of |nterest7",
+      "options": {
+        "A": "Brewer-Nash",
+        "B": "Bell-LaPaduIa %' 3 @ f** 'Mr5."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 553,
+      "question": "Configuration Management controls what?",
+      "options": {
+        "A": "Auditing and controlling any changes to the Trusted Computing Base.",
+        "B": "Auditing ofchanges to the Trusted Computing Base.",
+        "C": "Contro| of changes to the Trusted Computing Base.",
+        "D": "Changes in the configuration access to the Trusted Computing Base."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 554,
+      "question": "Which one of the following functions provides the least effective organizational reporting structure forthe Information Systems Security function?",
+      "options": {
+        "A": "lS quality assurance. IS )",
+        "B": "lS resource management.",
+        "C": "lS operations.",
+        "D": "Corporate security."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 555,
+      "question": "If an operating system permits shared resources such as memory to be used sequentially by multiple users/application or subjects without a refresh of the objects/memory area, what security problem is most likely to exist?",
+      "options": {
+        "A": "disclosure of residual data.",
+        "B": "unauthorized obtaining of a privileged execution state.",
+        "C": "data leakage through covert channels.",
+        "D": "denial of sen/ice through a deadly embrace."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 556,
+      "question": "What security procedure would force/require an employee to work in collusion with another employee of the company in order to have access to unauthorized data or to defeat the company security mechanisms?",
+      "options": {
+        "A": "Security personel monitoring of audit logs.",
+        "B": "Periodical|y reviewing subject's access rights.",
+        "C": "Limiting the specific accesses ofoperations personnel.",
+        "D": "Job rotation of people through different assignments."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 557,
+      "question": "Operations Security seeks to primarily protect against which of the following?",
+      "options": {
+        "A": "compromising emanations",
+        "B": "facility disaster iijiliifiil",
+        "C": "asset threats T:TZJ'ij'ZHJ]",
+        "D": "object reuse"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 558,
+      "question": "Operation security requires the implementation of physical security to con- trol which of the following?",
+      "options": {
+        "A": "evacuation procedures",
+        "B": "incoming hardware",
+        "C": "contingency conditions",
+        "D": "unauthorized personnel access 5liZ5%\"<7FZE4]"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 559,
+      "question": "Which of the following components are considered part of the Trusted Computing Base?",
+      "options": {
+        "A": "trusted hardware, software and firmware FH%El<1ll5Ell, $'XlF5Fl1[Z5]",
+        "B": "trusted hardware and software EH?Eilliilffllliilf",
+        "C": "trusted computer operators and system managers",
+        "D": "trusted hardware and firmware EH?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 560,
+      "question": "Which of the following is NOT an example of an operational control?",
+      "options": {
+        "A": "Auditing",
+        "B": "operations procedures",
+        "C": "backup and recovery",
+        "D": "contingency planning"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 561,
+      "question": "Degaussing is used to clear data from all of the following medias except",
+      "options": {
+        "A": "Floppy Disks HE;",
+        "B": "Read-Only Media Wiil",
+        "C": "Video Tapes",
+        "D": "Magnetic Hard Disks liiliii"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 562,
+      "question": "It is a violation of the \"separation of duties principle when which of the fol- lowing individuals access the software on systems implementing security?",
+      "options": {
+        "A": "systems auditor ?",
+        "B": "systems programmer",
+        "C": "security analyst",
+        "D": "security administrator"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 563,
+      "question": "When backing up an applications system's data, which of the following is a key question to be answered first?",
+      "options": {
+        "A": "Where to keep backups",
+        "B": "What records to backup %161lrZ W",
+        "C": "How to store backups Z1[llW?",
+        "D": "When to make backups"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 564,
+      "question": "The number of violations that will be accepted or forgiven before a viola- tion record is produced is called which of the following?",
+      "options": {
+        "A": "logging level",
+        "B": "forgiveness level",
+        "C": "acceptance level",
+        "D": "clipping level"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 565,
+      "question": "Which of the following is the most reliable, secure means of removing data from magnetic storage media such as a magnetic tape, or a cassette?",
+      "options": {
+        "A": "Buffer overflow",
+        "B": "Degaussing illii",
+        "C": "Zeroization U32?",
+        "D": "Parity Bit Manipulation li%7l$?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 566,
+      "question": "Which of the following is true related to network snifng?",
+      "options": {
+        "A": "Sniffers allow an attacker to monitor data passing across a network.",
+        "B": "Sniffers send IP fragments to a system that overlap with each other.",
+        "C": "Sniffers alter the source address of a computer to disguise and exploit weak authentication methods.",
+        "D": "Sniffers take over network connections."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 567,
+      "question": "Which of the following is NOT a technique used to perform a penetration test?",
+      "options": {
+        "A": "Snifng 16? Btrafc padding",
+        "C": "scanning and probing",
+        "D": "war dialing"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 568,
+      "question": "Which of the following is NOT a media viability control used to protect the viability of data storage media?",
+      "options": {
+        "A": "Marking Fii",
+        "B": "Handling 5/iii?",
+        "C": "Storage Zili",
+        "D": "clearing E55?"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 569,
+      "question": "Which of the following are the two commonly defined types of covert channels",
+      "options": {
+        "A": "Software and Timing }(1F%[lHqJ?",
+        "B": "Storage and Timing",
+        "C": "Storage and Kernel",
+        "D": "Kernel and Timing Pq1]"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 570,
+      "question": "Which of the following refers to the data left on the media after the media has been erased?",
+      "options": {
+        "A": "sticky bits fifitl",
+        "B": "semi-hidden illiih",
+        "C": "Recovery WE",
+        "D": "remanence iiill"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 571,
+      "question": "Which of the following ensures that security is not breached when a sys- tem crash or other system failure occurs?",
+      "options": {
+        "A": "trusted recovery",
+        "B": "secure boot",
+        "C": "Redundancy T51?",
+        "D": "hot swappable"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 572,
+      "question": "Which of the following ensures that a TCB is designed, developed, and maintained with formally controlled standards that enforces protection at each stage in the system's life cycle?",
+      "options": {
+        "A": "covert storage assurance",
+        "B": "covert timing assurance l3%~Fl'?",
+        "C": "operational assurance i1?",
+        "D": "life cycle assurance"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 573,
+      "question": "Which of the following is the lowest TCSEC class wherein the systems must support separate operator and system administrator roles?",
+      "options": {
+        "A": "B2",
+        "B": "B1",
+        "C": "A2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 574,
+      "question": "Which of the following are NOT a countermeasure to traffic analysis?",
+      "options": {
+        "A": "Sending noise.",
+        "B": "Faraday Cage",
+        "C": "Eavesdropping.",
+        "D": "Padding messages."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 575,
+      "question": "Which of the following is the BEST way to handle obsolete magnetic tapes before disposing of them ? ?lJll/13l5IDiaJzHEiilElJil5YilJFJU57iiEll<Ill?Z%i\"??",
+      "options": {
+        "A": "Degaussing the tapes",
+        "B": "Erasing the tapes ililiiiriif",
+        "C": "Overvvriting the tapes iglifw",
+        "D": "Initializing the tape labels ?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 576,
+      "question": "Which of the following is a detective control?",
+      "options": {
+        "A": "Back-up procedures",
+        "B": "Segregation of duties",
+        "C": "Physical access control",
+        "D": "Audit trails"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 577,
+      "question": "The primary reason for enabling software audit trails is which of the follow- Fll\")9lIDi%it=!FXl@F'@-iiifitiiitlEl?",
+      "options": {
+        "A": "lmprove system efficiency.",
+        "B": "lmprove response time for users.",
+        "C": "Establish responsibility and accountability.",
+        "D": "Provide useful information to track down processing errors."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 578,
+      "question": "Which of the following files used for accountability purpose should the se- curity administrator restrict to READ only access? U\\T\"Bl5/|5lil\"1] E4111?",
+      "options": {
+        "A": "System log fii El",
+        "B": "Conguration files EEEYW",
+        "C": "User passwords FHF",
+        "D": "User profiles"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 579,
+      "question": "Which of the following functions does RAID Level 0 perform?",
+      "options": {
+        "A": "lt creates one large disk by using several disks.",
+        "B": "It removes one large disk as it creates several smaller disks.",
+        "C": "lt recovers one large disk by using several smaller disks.",
+        "D": "lt creates several smaller disks from one large disk."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 580,
+      "question": "Which of the following is often implemented by a one-for-one disk to disk ratio?",
+      "options": {
+        "A": "RAlD Level",
+        "B": "RAlD Level",
+        "C": "RAlD Level",
+        "D": "RAlD Level"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 581,
+      "question": "Which of the following effectively doubles the amount of hard drives need- ed but also provides redundancy?",
+      "options": {
+        "A": "RAID Level",
+        "B": "RAID Level",
+        "C": "RAlD Level",
+        "D": "RAID Level"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 582,
+      "question": "Which of the following is used to create parity information?",
+      "options": {
+        "A": "a hamming code",
+        "B": "a clustering code",
+        "C": "a mirroring code",
+        "D": "a striping code"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 583,
+      "question": "The only difference between RAID 3 and RAID 4 is that level 3 is imple- mented at the byte level while level 4 is usually implemented at which of the FIJli}liIl% RAID3 fiii RAID4",
+      "options": {
+        "A": "block level. iifliiit",
+        "B": "buffer level.",
+        "C": "channel level. illl",
+        "D": "bridge level."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 584,
+      "question": "Which backup method usually resets the archive bit on the les after they have been backed up? iiiE%l51J, _iEUElllj?",
+      "options": {
+        "A": "Tape backup method.",
+        "B": "Differential backup method.",
+        "C": "Partial backup method.",
+        "D": "Incremental backup method."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 585,
+      "question": "Physically securing backup tapes from unauthorized access is obviously a security concern and is considered a function of the",
+      "options": {
+        "A": "Operations Security Domain",
+        "B": "Operations Security Domain Analysis.",
+        "C": "Telecommunications and Network Security Domain.",
+        "D": "Business Continuity Planning and Disater Recovery Planning."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 586,
+      "question": "The high availability of multiple all-inclusive, easy-to-use hacking tools that do NOT require much technical knowledge has brought a growth in the num- ber of which type of attackers?",
+      "options": {
+        "A": "Black hats WE?",
+        "B": "White hats Elli?",
+        "C": "Script kiddies",
+        "D": "Phreakers"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 587,
+      "question": "Which of the following staff member would be best suited to provide in- formation during a review? In this case the review is focused on the controls in place related to the pro- cess of defining IT service levels.",
+      "options": {
+        "A": "Business unit manager k%%l?",
+        "B": "Programmer",
+        "C": "Systems programmer",
+        "D": "Legal staff ?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 588,
+      "question": "Which of the following would be BEST to use when a company wish to dispose of personal computers that once were used to store confidential or sensitive data?",
+      "options": {
+        "A": "Oven/vrite all data on the hard disk with zeroes",
+        "B": "Low level format the hard disk",
+        "C": "Delete all data contained on the hard disk",
+        "D": "Degaussing"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 589,
+      "question": "Which of the following computer crime is MORE often associated with IN- l:'Jl/13|3%l1irlJl.5l1'll55E%\"'5l7*Efl3A9?",
+      "options": {
+        "A": "Data diddling ittiiil",
+        "B": "lP spoong",
+        "C": "Denial of service (DOS)",
+        "D": "Password sniffing ii lil"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 590,
+      "question": "Which of the following logical access exposures INVOLVES CHANGING data before, or as it is entered into the computer?",
+      "options": {
+        "A": "Salami techniques",
+        "B": "Viruses",
+        "C": "Trojan horses |%?",
+        "D": "Data diddling ilztil"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 591,
+      "question": "Notifying the appropriate parties to take action in order to determine the extent of the severity of an incident and to remediate the incldent's effects is i:FEEtl9%1%7?TH1i<JJ,",
+      "options": {
+        "A": "lncident Response",
+        "B": "lncident Evaluation",
+        "C": "lncident Recognition",
+        "D": "lncident Protection"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 592,
+      "question": "An Intrusion Detection System (lDS) is what type of control?",
+      "options": {
+        "A": "detective control",
+        "B": "A recovery control. WEliT$lJ",
+        "C": "A directive control.",
+        "D": "A preventive control."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 593,
+      "question": "What is the main objective of proper separation of duties?",
+      "options": {
+        "A": "To ensure that no single individual can compromise a system",
+        "B": "To ensure that audit trails are not tampered with.",
+        "C": "To prevent employees from disclosing sensitive information.",
+        "D": "To ensure access controls are in place."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 594,
+      "question": "Which of the following should NOT be accessible by a computer operator?",
+      "options": {
+        "A": "Operations documentation",
+        "B": "C0mputer console Till",
+        "C": "Source code of applications Ei]",
+        "D": "lnformation security guidelines"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 595,
+      "question": "Which of the following is not a component of a Operations Security \"tri-",
+      "options": {
+        "A": "Risk",
+        "B": "Threat",
+        "C": "Vulnerability",
+        "D": "Asset 5%?"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 596,
+      "question": "Which of the following Operation Security controls is intended to prevent unauthorized intruders from internally or externally accessing the system, and to lower the amount and impact of unintentional errors that are entering the",
+      "options": {
+        "A": "Detective Controls ?",
+        "B": "Corrective Controls ZL|lHfl?l]",
+        "C": "Preventative Controls",
+        "D": "Directive Controls"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 597,
+      "question": "This type of control is used to ensure that transactions are properly en- tered into the system once. Elements of this type of control may include counting data and time stamping it with the date it was entered or edited?",
+      "options": {
+        "A": "lnput/Output Controls fi) filzli Tflfll",
+        "B": "lnput Controls ?",
+        "C": "Output Controls",
+        "D": "Processing Controls ifii$i?"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 598,
+      "question": "When two operators review and approve the work of each other, this is iiiP1i4ti'%l'l5%l1J?IF%l13ittE3<7?ll]It'l5,",
+      "options": {
+        "A": "Dual Control Xlifilill",
+        "B": "Twin Control ?",
+        "C": "Two-fold Control",
+        "D": "Two-man Control"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 599,
+      "question": "Configuration Management is a requirement for the following level(s) of the Orange Book?",
+      "options": {
+        "A": "B3 and",
+        "B": "B2, B3, and",
+        "C": "A1"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 600,
+      "question": "Which level of \"|east privilege enables operators the right to modify data directly in its original location, in addition to data copied from the original loca-",
+      "options": {
+        "A": "Read Nrite",
+        "B": "Access Rewrite ii?",
+        "C": "Access Delete ijiliifllllllllli",
+        "D": "Access Change i)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

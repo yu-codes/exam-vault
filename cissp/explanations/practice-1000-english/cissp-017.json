@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-english",
+    "file": "cissp-017.json",
+    "question_range": "Q801 - Q833",
+    "start": 801,
+    "end": 833,
+    "total_questions": 33
+  },
+  "questions": [
+    {
+      "id": 801,
+      "question": "During the salvage of the Local Area Network and Servers, which of the following steps would normally be performed first?",
+      "options": {
+        "A": "Recover equipment",
+        "B": "Assess damage to LAN and servers",
+        "C": "lnstall LAN communications network and servers",
+        "D": "Damage mitigation"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 802,
+      "question": "Which of the following rules pertaining to a Business Continuity Plan/Disaster Recovery Plan is incorrect?",
+      "options": {
+        "A": "Critical vendors should be contacted ahead oftime to validate equipment can be obtained in a timely manner.",
+        "B": "There should be requirements to form a committee to decide a course of action. These decisions should be made ahead of time and incorporated into",
+        "C": "In orderto facilitate recovery, a single plan should cover all locations.",
+        "D": "ln its procedures and tasks, the plan should refer to functions, not specific EE%?"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 803,
+      "question": "Which of the following statements pertaining to dealing with the media/news outfit after a disaster occurred and disturbed the organization's activities is incorrect?",
+      "options": {
+        "A": "The CEO should always be the spokesperson for the company during",
+        "B": "The disaster recovery plan must include how the media is to be handled",
+        "C": "The organization's spokesperson should report bad news before the press gets a hold of it through another channel.",
+        "D": "An emergency press conference site should be planned ahead."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 804,
+      "question": "Which of the following statements pertainingto a Criticality Survey is incorrect?",
+      "options": {
+        "A": "The purpose of the survey must be clearly stated.",
+        "B": "Management's approval should be obtained before distributing the survey.",
+        "C": "Its intent is to find out what services and systems are critical to keeping the organization in business.",
+        "D": "It is implemented to gather input from all personnel that is going to be part of the"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 805,
+      "question": "System reliability is increased by",
+      "options": {
+        "A": "A lower MTBF and a lower MTTR.",
+        "B": "A higher MTBF and a higher MTTR.",
+        "C": "A lower MTBF and a higher MTTR.",
+        "D": "A higher MTBF and a lower MTTR."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 806,
+      "question": "The MOST common threat that impacts a business's ability to function normally %2\"Fk%IiJEE%\"izT3?iE] P_'uEl4]Jllil~zE",
+      "options": {
+        "A": "Water Damage Vlii",
+        "B": "Power Outage lil.",
+        "C": "Labor Strike Severe Weather"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 807,
+      "question": "Failure of a contingency plan is usually",
+      "options": {
+        "A": "management failure.",
+        "B": "A technical failure.il7li5'9E'< Because of a lack oftraining."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 808,
+      "question": "Which of the following questions is less likely to help in assessing an organization's contingency planning controls?",
+      "options": {
+        "A": "ls damaged media stored and/or destroyed?",
+        "B": "Are the backup storage site and alternate site geographically far enough from %l516.",
+        "C": "ls there an up-to-date copy of the plan stored securely off-site?",
+        "D": "ls the location ofstored backups identified?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 809,
+      "question": "Once an intrusion into your organization's information system has been detected, which of the following actions should be performed first?",
+      "options": {
+        "A": "Eliminate all means of intruder access.",
+        "B": "Contain the intrusion.",
+        "C": "Determine to what extent systems and data are compromised.",
+        "D": "Communicate with relevant parties."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 810,
+      "question": "Which of the following is used to help business units understand the impact of a disruptive event?",
+      "options": {
+        "A": "A disaster recovery plan Z5<E'l7)",
+        "B": "A vulnerability assessment",
+        "C": "A business impact assessment",
+        "D": "A risk analysis"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 811,
+      "question": "When preparing a business continuity plan, who of the following is responsible for identifying and prioritizingtimecritical systems?",
+      "options": {
+        "A": "Functional business units I)",
+        "B": "BCP committee BCP Senior business unit management _i%lk%%$ElZl1 Executive management staff"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 812,
+      "question": "Which of the following statements pertaining to disaster recovery planning is",
+      "options": {
+        "A": "A disaster recovery plan should cover return from alternate facilities to primary F<l'l7)",
+        "B": "Every organization must have a disaster recovery plan 4|lJllAiIaZ~ZiE?",
+        "C": "The major goal of disaster recovery planning is to provide an organized way to make decisions if a disruptive event occurs.",
+        "D": "A disaster recovery plan contains actions to be taken before, during and after a T<li'l7)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 813,
+      "question": "Which of the following statements do not apply to a hot site?",
+      "options": {
+        "A": "It is accessible on a first come first serve basis. In case of large disaster it might not ?",
+        "B": "|t provides a false sense ofsecurity.",
+        "C": "There are cases of common overselling of processing capabilities by the service",
+        "D": "|t is expensive."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 814,
+      "question": "Which of the following statements pertainingto disaster recovery is incorrect?",
+      "options": {
+        "A": "When returning to the primary site, the most critical applications should be 1%9%H<]",
+        "B": "The disaster recovery plan should include how the company will return from the alternate site to the primary site.",
+        "C": "A salvage team's task is to ensure that the primary site returns to normal processing conditions.",
+        "D": "A recovery team's primary task is to get the pre-defined critical business functions at the alternate backup processing site."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 815,
+      "question": "Which of the following statements pertaining to Business Continuity (BC) Program development is correct?",
+      "options": {
+        "A": "The first step when developing a business continuity program is to perform a business impact analysis.",
+        "B": "A business continuity plan mainly concerns the organization's information l4%&@lEir3ZIlI%9%i5HFlE]",
+        "C": "Generally, each lT platform that runs an application will need a recovery '5 iZ5JZFlTT?ll]",
+        "D": "Recovery oftelecommunications should be part of the recovery of IT facilities."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 816,
+      "question": "Which of the following statements is the most important assumption behind the warm site concept?",
+      "options": {
+        "A": "The warm site is partially configured with selected network equipments and",
+        "B": "The choice of a warm site is less expensive than that of a hot site.",
+        "C": "The main equipment can be obtained quickly for emergency installation at",
+        "D": "Heat, ventilation and air conditioning are installed at the warm site."
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 817,
+      "question": "For which areas of the enterprise are business continuity plans required?",
+      "options": {
+        "A": "All areas of the enterprise.",
+        "B": "The marketing, finance, and information processing areas.",
+        "C": "The operating areas of the enterprise.",
+        "D": "The financial and information processing areas of the enterprise."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 818,
+      "question": "Which of the following will a Business Impact Analysis NOT identify?",
+      "options": {
+        "A": "The outage time that can be tolerated by the enterprise as a result of",
+        "B": "The names of individuals to be contacted during a disaster.",
+        "C": "Systems critical to the survival of the enterprise.",
+        "D": "Areas that would suffer the greatest financial or operational loss in the event"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 819,
+      "question": "What is a hot-site facility?",
+      "options": {
+        "A": "A site with ready made work space with telecommunications equipment, LANs, PCs, and terminals for work groups.",
+        "B": "A site with pre-installed computers, raised flooring, air conditioning, telecommunications and networking equipment, and UPS.",
+        "C": "A site in which space is reserved with pre-installed wiring and raised floors.",
+        "D": "A site with raised flooring, air conditioning, telecommunications, and networking to/FY95}?-i, liilillll, Ql, iifligii, UPS."
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 820,
+      "question": "Which of the following best describes remote journaling?",
+      "options": {
+        "A": "Real time transmission of copies of the entries in the journal of transactions to an alternate site.",
+        "B": "Send hourly tapes containing transactions off-site.",
+        "C": "Real-time capture oftransactions to multiple storage devices.",
+        "D": "Send daily tapes containing transactions off-site."
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 821,
+      "question": "All of the following can be considered essential business functions that should be identified when creating a Business Impact Analysis (BIA) except one. Which of the following would not be considered an essential element of the BIA but an important topic to include within the BCP plan",
+      "options": {
+        "A": "Purchasing Wg",
+        "B": "Public Relations 2 'E9/% IT Network Support IT W25?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 822,
+      "question": "Of the following, which is NOT a specific loss criteria that should be considered while developing a BIA?",
+      "options": {
+        "A": "Loss in profits",
+        "B": "Loss in reputation",
+        "C": "Loss ofskilled workers knowledge gfgi (%?",
+        "D": "Loss in revenue"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 823,
+      "question": "Of the reasons why a Disaster Recovery plan gets outdated, which of the following is not true?",
+      "options": {
+        "A": "Large plans can take a lot ofwork to maintain ?",
+        "B": "lnfrastructure and environment changes i6$&iii.",
+        "C": "Continous auditing makes a Disaster Recovery plan irrelevant iEi?",
+        "D": "Personnel turnover"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 824,
+      "question": "Which backup type run at regular intervals would take the least time to",
+      "options": {
+        "A": "Full Backup",
+        "B": "Differential Backup",
+        "C": "Disk Mirroring liiiflg Incremental Backup"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 825,
+      "question": "What is electronic vaulting?",
+      "options": {
+        "A": "lnformation is backed up to tape on a hourly basis and is stored in a on-site vault.",
+        "B": "lnformation is backed up to tape on a daily basis and is stored in a on-site vault.",
+        "C": "Transferring electronicjournals or transaction logs to an off-site storage facility ltEE El EE%5c1iE,i'li?",
+        "D": "A transfer of bulk information to a remote central backup facility."
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 826,
+      "question": "After a company is out of an emergency state, what should be moved back to the original site first?",
+      "options": {
+        "A": "Most critical components Bgiiilllill",
+        "B": "Least critical components",
+        "C": "lT support staff IT 5'ZT?",
+        "D": "Executives E"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 827,
+      "question": "How often should tests and disaster recovery drills be performed?",
+      "options": {
+        "A": "At least once every 6 months",
+        "B": "At least once a year",
+        "C": "At least once every 2 years 533* A",
+        "D": "At least once a quarter"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 828,
+      "question": "During a test of a disaster recovery plan the IT systems are concurrently set up at the alternate site. The results are compared to the results of regular processing at the original site. What kind oftesting has taken place? ?:E5<'l77<ifi2'JE1%D1lii,EH,|T",
+      "options": {
+        "A": "Simulation fifillii",
+        "B": "Full interruption iitlllflliii",
+        "C": "Check|ist",
+        "D": "Parallel 5F?"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 829,
+      "question": "During a business impact analysis it is concluded that a system has maximum tolerable downtime of 2 hours. What would this system be classified as?",
+      "options": {
+        "A": "Critical EB4]",
+        "B": "Vital",
+        "C": "lmportant Eigllllil",
+        "D": "Urgent ',%%'."
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 830,
+      "question": "Which type of alternate site would be the best strategy if you have applications which cannot accept any downtime without negatively impacting your business?",
+      "options": {
+        "A": "Dual Data Center Fliliililgtlj/ll",
+        "B": "Internal Hot Site External Hot Site 9i%?l\\5 Seeded Hot Site Tl?"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 831,
+      "question": "Business Impact Analysis (BIA) is about l3l1l'tll):r%9d;",
+      "options": {
+        "A": "Technology",
+        "B": "Due Care iiliji Risk Assessment l>ll3il$ Supportingthe mission of the organization"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 832,
+      "question": "What is the MOST important step in business continuity planning I11l11l????? ???llloo .lFP..lflo90f9ll ?k%iiE3'li\"l, BEiFl]_ Q?",
+      "options": {
+        "A": "Due Diligence ilgjll",
+        "B": "Due Care",
+        "C": "Business Impact Analysis (BIA)",
+        "D": "Risk Assessment Blllzl"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 833,
+      "question": "You have been tasked with developing a Business Continuity Plan/Disaster Recovery (BCP/DR) plan. After several months of researching the various areas of the organization, you are readyto present the plan to Senior Management. During the presentation meeting, the plan that you have dutifully created is not received positively. Senior Management is not convinced that they need to enact your plan, nor are they prepared to invest any money in the plan. What is the BEST reason, as to why Senior Management is not willing to enact your l:E15%iliE1k%i3E''l$i+I2U/Z5<l'l%Etrill (BCP/ DR) fl/I)? 5<~l?iFl",
+      "options": {
+        "A": "A Business Impact Assessment was not performed.",
+        "B": "They were not included in any of the Business Impact Assessment meetings.",
+        "C": "The business case was not initially made and thus did not secure their support.",
+        "D": "They were not included in any of the Risk Assesment meetings llillll$@?"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}
