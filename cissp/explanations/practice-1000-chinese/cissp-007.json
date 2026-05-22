@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-chinese",
+    "file": "cissp-007.json",
+    "question_range": "Q301 - Q350",
+    "start": 301,
+    "end": 350,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 301,
+      "question": "提供資訊安全的風險緩解和風險降低控制措施分為三大類別，以下哪些正在被使用？",
+      "options": {
+        "A": "預防性、矯正性和管理性",
+        "B": "管理性、操作性和",
+        "C": "偵測性、矯正性和實體性",
+        "D": "實體性、技術性和管理性"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 302,
+      "question": "以下哪一項最適合監督資訊安全政策的制定？",
+      "options": {
+        "A": "系統管理員",
+        "B": "安全管理員",
+        "C": "安全官員",
+        "D": "人力資源"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：系統管理員。其他選項不正確：B（安全管理員）；C（安全官員）；D（人力資源）。"
+    },
+    {
+      "id": 303,
+      "question": "以下哪一項是與員工離職相關的最重要方面？",
+      "options": {
+        "A": "提供給員工的公司財產已歸還。",
+        "B": "員工的使用者 ID 和密碼已被刪除。",
+        "C": "相關公司人員已被通知離職事宜。",
+        "D": "員工的詳細資料已從活躍薪資名冊中移除"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 304,
+      "question": "以下哪一項不應該在員工離職程序中處理？",
+      "options": {
+        "A": "歸還門禁卡。",
+        "B": "將員工從活躍薪資名冊中移除",
+        "C": "員工保證金以防止因竊盜造成的損失。",
+        "D": "刪除指派的登入 ID 和密碼以禁止系統存取"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 305,
+      "question": "如果風險被定義為特定威脅的潛在影響",
+      "options": {
+        "A": "威脅的機率",
+        "B": "基於威脅和弱點對資產的影響",
+        "C": "應對威脅的控制措施",
+        "D": "對流程的威脅和弱點"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 306,
+      "question": "以下哪一項是建立資訊安全的第一步？",
+      "options": {
+        "A": "為員工制定安全意識培訓計劃。",
+        "B": "制定和實施資訊安全標準",
+        "C": "購買安全存取控制軟體。",
+        "D": "採用企業資訊安全政策聲明。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 307,
+      "question": "為什麼許多組織要求每位員工休一週或以上的強制休假？",
+      "options": {
+        "A": "為了發現不當或",
+        "B": "為了讓更多員工更好地了解整體",
+        "C": "為了為其他員工提供適當的交叉培訓。",
+        "D": "為了通過更好的品質提高生產力"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 308,
+      "question": "以下哪一項不應該是安全管理員的職責？",
+      "options": {
+        "A": "授權存取權限",
+        "B": "實施安全規則",
+        "C": "確保本地政策已獲管理層授權",
+        "D": "分配存取權限"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 309,
+      "question": "誰應該提供電腦化資訊的存取授權？",
+      "options": {
+        "A": "網路管理員",
+        "B": "資料擁有者",
+        "C": "資料庫管理員",
+        "D": "安全管理員"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 310,
+      "question": "確保只有應該存取資料的人才能存取資料，這屬於以下哪一項？",
+      "options": {
+        "A": "可用性。",
+        "B": "完整性。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 311,
+      "question": "與資訊安全相關，機密性是以下哪一項的相反？",
+      "options": {
+        "A": "關閉 (Closure)",
+        "B": "揭露 (Disclosure)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 312,
+      "question": "與資訊安全相關，完整性是以下哪一項的相反？",
+      "options": {
+        "A": "應用 (Application)",
+        "B": "認可 (Accreditation)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 313,
+      "question": "確保資料在需要時可以存取，這屬於以下哪一項？",
+      "options": {
+        "A": "機密性",
+        "B": "完整性"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 314,
+      "question": "與資訊安全相關，可用性是以下哪一項的相反？",
+      "options": {
+        "A": "破壞 (Destruction)",
+        "B": "文件化 (Documentation)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 315,
+      "question": "與資訊安全相關，防止有意或無意的",
+      "options": {
+        "A": "機密性",
+        "B": "完整性"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 316,
+      "question": "以下關於良好組態管理流程關鍵要素的陳述中，哪一項是",
+      "options": {
+        "A": "確保變更、標準和需求被及時傳達",
+        "B": "確保所有需求保持清晰、簡潔和有效",
+        "C": "控制對系統硬體的修改以防止資源",
+        "D": "適應已驗證標準和最佳實務的重複使用"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 317,
+      "question": "以下哪一項不是管理控制？",
+      "options": {
+        "A": "變更控制程序",
+        "B": "制定政策、標準、程序和指南",
+        "C": "人員篩選",
+        "D": "邏輯存取控制機制"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：變更控制程序。其他選項不正確：B（制定政策、標準、程序和指南）；C（人員篩選）；D（邏輯存取控制機制）。"
+    },
+    {
+      "id": 318,
+      "question": "以下哪一項不是技術控制？",
+      "options": {
+        "A": "身分識別和認證方法",
+        "B": "實體監控",
+        "C": "入侵偵測系統",
+        "D": "密碼和資源管理"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 319,
+      "question": "以下哪一項最能被定義為實體控制？",
+      "options": {
+        "A": "身分識別和認證方法",
+        "B": "邏輯存取控制機制",
+        "C": "圍籬",
+        "D": "系統活動監控"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 320,
+      "question": "以下哪一項不會違反盡職調查 (Due Diligence) 的概念？",
+      "options": {
+        "A": "按照修補管理程序安裝伺服器最新安全修補",
+        "B": "網路管理員未按計劃休強制兩週假",
+        "C": "資料擁有者未制定資料保護基礎",
+        "D": "安全政策已過時"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 321,
+      "question": "以下哪一項最能被定義為可能被利用的安全保護措施的缺失或弱點？",
+      "options": {
+        "A": "威脅",
+        "B": "風險"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 322,
+      "question": "以下哪一項最能被定義為威脅代理利用弱點的可能性？",
+      "options": {
+        "A": "殘餘風險",
+        "B": "風險"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 323,
+      "question": "哪種安全計劃方法確保實際負責保護公司資產的人員在推動計劃？",
+      "options": {
+        "A": "自上而下方法",
+        "B": "德爾菲法 (Delphi approach)",
+        "C": "自下而上方法",
+        "D": "技術方法"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：自上而下方法。其他選項不正確：B（德爾菲法）；C（自下而上方法）；D（技術方法）。"
+    },
+    {
+      "id": 324,
+      "question": "以下哪一項不是風險分析的一部分？",
+      "options": {
+        "A": "識別風險",
+        "B": "選擇最佳對策",
+        "C": "在風險影響和相關對策成本之間提供經濟平衡",
+        "D": "量化潛在威脅的影響"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 325,
+      "question": "當對策成本超過風險影響時，應如何處理風險？",
+      "options": {
+        "A": "降低風險",
+        "B": "接受風險",
+        "D": "拒絕風險"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 326,
+      "question": "以下哪一項被賦予資料維護和保護的責任？",
+      "options": {
+        "A": "安全管理員",
+        "B": "資料保管者 (Data custodian)",
+        "C": "資料擁有者 (Data owner)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 327,
+      "question": "誰應該決定公司如何處理安全問題以及應實施哪些安全措施？",
+      "options": {
+        "A": "資料擁有者",
+        "B": "稽核員 資訊安全專家 高階管理層"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 328,
+      "question": "以下哪一項對大多數安全問題負責？",
+      "options": {
+        "A": "設備",
+        "B": "人員 外部間諜"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 329,
+      "question": "安全的三個基本原則是什麼？",
+      "options": {
+        "A": "責任性、機密性和",
+        "B": "完整性、可用性和責任性",
+        "C": "機密性、完整性和可用性",
+        "D": "可用性、責任性和機密性"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 330,
+      "question": "什麼最能定義風險管理？",
+      "options": {
+        "A": "評估風險的過程",
+        "B": "轉移風險的過程",
+        "C": "消除風險的過程",
+        "D": "將風險降低到可接受水準的過程"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 331,
+      "question": "在 CBK 的脈絡中，以下哪一項提供了環境可接受的最低安全等級？",
+      "options": {
+        "A": "標準",
+        "B": "程序"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 332,
+      "question": "根據私部門資料分類等級，薪資水準和醫療資訊應如何分類？",
+      "options": {
+        "A": "公開。",
+        "B": "私密"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 333,
+      "question": "以下哪一項是確定資訊資產分類時應考慮的最佳標準？",
+      "options": {
+        "A": "價值",
+        "B": "有用性"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 334,
+      "question": "以下哪一項不是資訊（資料）擁有者的責任？",
+      "options": {
+        "A": "定期執行備份並定期測試備份的有效性",
+        "B": "將資料保護責任委派給資料保管者。",
+        "C": "根據業務需求定期審查分類指派",
+        "D": "確定資訊需要的分類等級。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：根據業務需求定期審查分類指派。其他選項不正確：A（定期執行備份並定期測試備份的有效性）；B（將資料保護責任委派給資料保管者）；D（確定資訊需要的分類等級）。"
+    },
+    {
+      "id": 335,
+      "question": "以下哪一項包含人員需要執行的所有詳細行動？",
+      "options": {
+        "A": "標準",
+        "B": "基準線 (Baselines)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 336,
+      "question": "誰負責向高階管理層提供有關安全控制有效性的報告？",
+      "options": {
+        "A": "資料擁有者",
+        "B": "資訊系統安全專業人員"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 337,
+      "question": "以下關於定量風險分析的哪項陳述是錯誤的？",
+      "options": {
+        "A": "它需要",
+        "B": "它需要大量的",
+        "C": "它涉及複雜的計算",
+        "D": "其中一部分可以自動化"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 338,
+      "question": "以下哪一項不是內部程式設計師在開發軟體時繞過正常安全控制的常見方式？",
+      "options": {
+        "A": "特洛伊木馬 (Trojan horse)",
+        "B": "維護鉤 (maintenance hook)",
+        "C": "後門 (back door)",
+        "D": "陷阱門 (trap door)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 339,
+      "question": "哪個屬性確保只有應該存取資料的人才能存取？",
+      "options": {
+        "A": "可用性。",
+        "B": "完整性。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 340,
+      "question": "在制定安全政策、標準和程序等文件時，通常遵循以下哪些步驟？",
+      "options": {
+        "A": "設計、評估、批准、發布和",
+        "B": "設計、開發、發布、編碼和測試。",
+        "C": "啟動、評估、開發、批准、發布",
+        "D": "可行性、開發、批准、實施和"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 341,
+      "question": "在安全政策的常見開發過程中，維護階段的目標是什麼？",
+      "options": {
+        "A": "向管理層撰寫一份說明政策目標的提案",
+        "B": "將文件提交給審批機構",
+        "C": "在指定的審查日期審查文件",
+        "D": "在組織內發布"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 342,
+      "question": "諮詢性安全政策和法規性安全政策有什麼區別？",
+      "options": {
+        "A": "它們之間沒有區別",
+        "B": "諮詢性政策是強制性的，法規性政策則不是",
+        "C": "法規性政策是高階政策，諮詢性政策非常",
+        "D": "諮詢性政策不是強制性的。法規性政策必須"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 343,
+      "question": "關於資訊分類，資訊（資料）擁有者的主要責任是什麼？",
+      "options": {
+        "A": "確定資料敏感度或分類",
+        "B": "定期檢查資料的有效性和準確性",
+        "C": "稽核資料使用者",
+        "D": "定期執行資料備份"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 344,
+      "question": "企業安全政策的主要目的是什麼？",
+      "options": {
+        "A": "為所有開發活動提供共同框架",
+        "B": "提供執行特定行動的詳細步驟",
+        "C": "傳達管理層對資訊安全的意圖",
+        "D": "將資訊安全責任轉移給所有使用者"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 345,
+      "question": "以下哪一項不是安全政策的一部分？",
+      "options": {
+        "A": "定義資訊安全的整體步驟和重要性",
+        "B": "管理層意向聲明，支持以下目標和原則",
+        "C": "描述所使用的特定技術",
+        "D": "定義資訊安全的一般和特定責任"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 346,
+      "question": "以下哪一項不是資料庫管理員的責任？",
+      "options": {
+        "A": "提供資料庫存取授權",
+        "B": "重組資料庫",
+        "C": "維護資料庫",
+        "D": "實施資料庫存取規則"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 347,
+      "question": "哪個安全和稽核框架已被一些致力於 Sarbanes-Oxley 第 404 條合規的組織所採用？",
+      "options": {
+        "A": "Treadway 委員會贊助組織委員會 (COSO)",
+        "B": "CCTA 風險分析和管理方法 (CRAMM)",
+        "C": "美國國家標準技術研究院特別出版物",
+        "D": "其他"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 348,
+      "question": "缺少安全保護措施或系統中可能被利用的弱點被稱為？",
+      "options": {
+        "A": "可用性",
+        "B": "認證"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 349,
+      "question": "所有風險必須：",
+      "options": {
+        "A": "轉移",
+        "B": "消除"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 350,
+      "question": "控制措施的實施是為了",
+      "options": {
+        "A": "消除風險並降低潛在",
+        "B": "緩解風險並消除潛在",
+        "C": "緩解風險並降低潛在",
+        "D": "消除風險並消除潛在"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

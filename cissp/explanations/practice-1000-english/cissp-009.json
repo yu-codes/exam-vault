@@ -4,129 +4,86 @@
     "subject": "practice-1000-english",
     "file": "cissp-009.json",
     "question_range": "Q401 - Q450",
-    "start": 401,
+    "start": 402,
     "end": 450,
-    "total_questions": 50
+    "total_questions": 43
   },
   "questions": [
     {
-      "id": 401,
-      "question": "Q%%%&%HGI%W",
-      "options": {
-        "A": "El Gamal",
-        "B": "DES",
-        "D": "RSA",
-        "C": "ECC"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
       "id": 402,
-      "question": "Dife-Hellman YZjZ%?Hi5ik2%i;@:'l[5Fi5i?",
+      "question": "Dife-Hellman",
       "options": {
-        "A": "$W7|r'i)",
-        "B": "%%",
+        "A": "$W7|r'i)\\i",
         "D": "%%w"
       },
       "answers": [
         "D"
       ],
       "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 403,
-      "question": "T:UD2i5/I\\JiJJi)(%iF",
-      "options": {
-        "A": "E%%iK$",
-        "B": "%%YK$",
-        "C": "%%iW$",
-        "D": "%%XK$"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D: %%w. The other options are incorrect: A ($W7|r'i)\\i)."
     },
     {
       "id": 404,
       "question": "Which of the following keys has the SHORTEST lifespan?",
       "options": {
-        "A": "Private key ($15)",
-        "B": "Session key (%i7.",
+        "A": "Private key",
+        "B": "Session key",
         "C": "Public key (Q55)",
-        "D": "Secret key (5?"
+        "D": "Secret key"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 405,
-      "question": "JU~\".;Z}fU%1r%li)33i13|\\$liHJ%*%)",
-      "options": {
-        "B": "DataEEncryptio5n Standard (DES) is a typical private key cryptosystem.",
-        "C": "The key used for decryption is known to the sender",
-        "D": "The encryption key should be secure."
-      },
-      "answers": [],
-      "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Session key. The other options are incorrect: A (Private key); C (Public key (Q55)); D (Secret key)."
     },
     {
       "id": 406,
-      "question": "Which of the following is NOT related to a Public key infrastructure (PKl)? Li",
+      "question": "Which of the following is NOT related to a",
       "options": {
-        "A": "Certificate authority (iIEF5fJl.",
-        "B": "ATicket Granting Service (%%E''Hl?"
+        "A": "Certificate authority",
+        "B": "ATicket Granting Service"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: ATicket Granting Service. The other options are incorrect: A (Certificate authority)."
     },
     {
       "id": 407,
       "question": "Why does a digital signature CONTAIN a message digest?",
       "options": {
-        "A": "To confirm the identity of the receiver 7~]",
-        "B": "To indicate the encryption algorithm 39??/T<E7J[i>'.j%?Z To detect any alteration of the message 79T7|fIZ/5llJ3lL?l E l14]%EZ To enable transmission in a digital format 'iTl;iI?"
+        "A": "To confirm the identity of the receiver",
+        "B": "To indicate the encryption algorithm"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: To confirm the identity of the receiver. The other options are incorrect: B (To indicate the encryption algorithm)."
     },
     {
       "id": 408,
       "question": "Which of the following BEST provides e-mail message authenticity and confidentiality?",
       "options": {
-        "A": "Signing the message using the sender's public key and encrypting the message using the receiver's private key Fl7>iii%F1]",
-        "B": "Signing the message using the sender's private key and encrypting the message using the receiver's public key %7iii%BJ%LH;L1%Fr.",
-        "C": "Signing the message using the receiver's private key and encrypting the message using the sender's public key Fl?",
-        "D": "Signing the message using the receiver's public key and encrypting the message using the sender's private key Fl5l3%LlkiBJ2."
+        "A": "Signing the message using the sender's public key and encrypting the message using the receiver's private key",
+        "B": "Signing the message using the sender's private key and encrypting the message using the receiver's public key",
+        "C": "Signing the message using the receiver's private key and encrypting the message using the sender's public key",
+        "D": "Signing the message using the receiver's public key and encrypting the message using the sender's private key"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Signing the message using the sender's private key and encrypting the message using the receiver's public key. The other options are incorrect: A (Signing the message using the sender's public key and encrypting the message using the receiver's private key); C (Signing the message using the receiver's private key and encrypting the message using the sender's public key); D (Signing the message using the receiver's public key and encrypting the message using the sender's private key)."
     },
     {
       "id": 409,
-      "question": "Secure Sockets Layer (SSL) uses a Message Authentication Code (MAC) for what ?%J% (SSL) liFJl%.%.i)\\iHE5 (MAC)",
+      "question": "Secure Sockets Layer (SSL) uses a Message Authentication Code (MAC) for what",
       "options": {
         "A": "message interleave checking.",
-        "B": "message integrity.",
+        "B": "message",
         "C": "message confidentiality.",
         "D": "message non-repudiation."
       },
@@ -134,26 +91,13 @@
         "B"
       ],
       "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 410,
-      "question": "JlIll'JYi*i",
-      "options": {
-        "B": "? This mode does not provide protection if anyone of the nodes along the transmission path is compromised.",
-        "C": "? Only secure nodes are used in this type oftransmission. iX%*=l1%eli%fiR i%l2lfli%Z-Z$1rT,= Each entity has a common key with the destination node."
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: message. The other options are incorrect: A (message interleave checking.); C (message confidentiality.); D (message non-repudiation.)."
     },
     {
       "id": 411,
       "question": "Which of the following is NOT a property of the Rijndael block cipher algorithm?",
       "options": {
-        "A": "The key size does not have to match the block size ~\".",
+        "A": "The key size does not have to match the block size",
         "B": "Maximum key size is 512 bits",
         "C": "Maximum block size is 256 bits",
         "D": "The key sizes may be any multiple of32 bits"
@@ -162,29 +106,12 @@
         "B"
       ],
       "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 412,
-      "question": "Which of the following standards concerns digital certificates?",
-      "options": {
-        "A": "? X.75",
-        "B": "? X.509",
-        "C": "? X.4O0",
-        "D": "? X.25"
-      },
-      "answers": [
-        "B"
-      ],
-      "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Maximum key size is 512 bits. The other options are incorrect: A (The key size does not have to match the block size); C (Maximum block size is 256 bits); D (The key sizes may be any multiple of32 bits)."
     },
     {
       "id": 413,
       "question": "Which of the following offers security to wireless communications?",
       "options": {
-        "A": "? WDP",
-        "B": "? WSP",
         "C": "? S-WAP",
         "D": "? WTLS"
       },
@@ -192,29 +119,27 @@
         "D"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D: ? WTLS. The other options are incorrect: C (? S-WAP)."
     },
     {
       "id": 414,
       "question": "What is the effective key size of DES?",
       "options": {
         "A": "? 128 bits",
-        "B": "? 1024 bits",
-        "C": "? 56 bits",
-        "D": "? 64 bits"
+        "B": "? 1024 bits"
       },
       "answers": [
         "C"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is C. The other options are incorrect: A (? 128 bits); B (? 1024 bits)."
     },
     {
       "id": 415,
       "question": "Which of the following offers confidentiality to an e-mail message?",
       "options": {
-        "A": "The sender encrypting it with the receiver's private key 7iii%l5l5lll&ii%E1<]",
-        "B": "The sender encrypting it with the receiver's public key 7;ii%ili%i%Ll=ii5H<JQ.",
+        "A": "The sender encrypting it with the receiver's private key",
+        "B": "The sender encrypting it with the receiver's public key",
         "C": "The sender encrypting it with its public key.",
         "D": "The sender encrypting it with its private key."
       },
@@ -222,7 +147,7 @@
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: The sender encrypting it with the receiver's public key. The other options are incorrect: A (The sender encrypting it with the receiver's private key); C (The sender encrypting it with its public key.); D (The sender encrypting it with its private key.)."
     },
     {
       "id": 416,
@@ -237,35 +162,35 @@
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: A stream cipher generates what is called a keystream.. The other options are incorrect: B (A stream cipher is slowerthan a block cipher.); C (A stream cipher is not appropriate for hardware-based encryption.); D (A stream cipher is a type of asymmetric encryption algorithm.)."
     },
     {
       "id": 417,
       "question": "Which of the following statements pertainingto block ciphers is incorrect?",
       "options": {
-        "A": "lt operates on fixed-size blocks of plaintext.",
+        "A": "It operates on fixed-size blocks of plaintext.",
         "B": "Some Block ciphers can operate internally as a stream.",
-        "C": "Plain text is encrypted with a public key and decrypted with a private key. HEY",
-        "D": "It is more suitable for software than hardware implementations."
+        "C": "Plain text is encrypted with a public key and decrypted with a private key.",
+        "D": "It is more suitable for software than hardware"
       },
       "answers": [
         "C"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is C: Plain text is encrypted with a public key and decrypted with a private key.. The other options are incorrect: A (It operates on fixed-size blocks of plaintext.); B (Some Block ciphers can operate internally as a stream.); D (It is more suitable for software than hardware)."
     },
     {
       "id": 418,
       "question": "Which of the following features ofstream ciphers is incorrect?",
       "options": {
         "A": "Statistically unbiased keystream.",
-        "B": "Requires less processing power then block ciphers El3:iEl.5.J3l35llJ7i1f/l\\ Statistically unpredictable. %i1L_l:Z<ETT?)l1ll Offers long periods with no repeating."
+        "B": "Requires less processing power then block ciphers"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Requires less processing power then block ciphers. The other options are incorrect: A (Statistically unbiased keystream.)."
     },
     {
       "id": 419,
@@ -282,18 +207,18 @@
       "id": 420,
       "question": "Which of the following is NOT a known type of Message Authentication Code",
       "options": {
-        "A": "Stream cipher-based MAC %;f?",
-        "B": "Signature-based MAC %3: E4] MAC Block cipher-based MAC %;i:J\\ZHlJlIl5-.}ZEl4] MAC Hash function-based MAC %3ZIlJ54] MAC"
+        "A": "Stream cipher-based MAC",
+        "B": "Signature-based MAC %3: E4] MAC Block cipher-based MAC"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Signature-based MAC %3: E4] MAC Block cipher-based MAC. The other options are incorrect: A (Stream cipher-based MAC)."
     },
     {
       "id": 421,
-      "question": "What is the maximum key size forthe RC5 algorithm?",
+      "question": "What is the maximum key size for the RC5 algorithm?",
       "options": {
         "A": "128 bits",
         "B": "2040 bits"
@@ -302,7 +227,7 @@
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: 2040 bits. The other options are incorrect: A (128 bits)."
     },
     {
       "id": 422,
@@ -315,33 +240,7 @@
         "D"
       ],
       "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 423,
-      "question": "F.i$7J75555$lifxEil1/lillfiiiiii?",
-      "options": {
-        "A": "Integrity",
-        "B": "Availability EUEHTE Non-repudiation"
-      },
-      "answers": [
-        "D"
-      ],
-      "type": "single",
-      "explanation": ""
-    },
-    {
-      "id": 424,
-      "question": "FW$7JT5I;l35'.1%7lEH3,",
-      "options": {
-        "A": "Large number of keys are needed 5.",
-        "B": "Provides Limited security services $;\\<$Hla?"
-      },
-      "answers": [
-        "C"
-      ],
-      "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D. The other options are incorrect: A (Skipjack)."
     },
     {
       "id": 425,
@@ -358,7 +257,7 @@
       "id": 426,
       "question": "Which of the following statements pertainingto key management is incorrect?",
       "options": {
-        "B": "When not using the full keyspace, the key should be extremely random.",
+        "B": "When not using the",
         "C": "Keys should be backed up or escrowed in case ofemergencies.",
         "D": "A key's lifetime should correspond with the sensitivity of the data it is protecting."
       },
@@ -366,14 +265,14 @@
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: When not using the. The other options are incorrect: C (Keys should be backed up or escrowed in case ofemergencies.); D (A key's lifetime should correspond with the sensitivity of the data it is protecting.)."
     },
     {
       "id": 427,
       "question": "Which of the following should be used as a replacement for Telnet for secure remote login over an insecure network?",
       "options": {
         "A": "S-Telnet",
-        "B": "SSH Un.1."
+        "B": "SSH"
       },
       "answers": [],
       "type": "single",
@@ -385,107 +284,107 @@
       "options": {
         "A": "The original file cannot be created from the message digest.",
         "B": "Messages digests are usually offixed size.",
-        "C": "Two different files should not have the same message digest.",
-        "D": "The message digest should be calculated using at least 128 bytes of the file."
+        "C": "Two different",
+        "D": "The message digest should be calculated using at least 128 bytes of the"
       },
       "answers": [
         "D"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D: The message digest should be calculated using at least 128 bytes of the. The other options are incorrect: A (The original file cannot be created from the message digest.); B (Messages digests are usually offixed size.); C (Two different)."
     },
     {
       "id": 429,
-      "question": "Which type of attack is based on the probability oftwo different messages using the same hash function producing a common message digest?",
+      "question": "Which type of attack is based on the probability of two different messages using the same hash function producing a common message digest?",
       "options": {
         "A": "Statistical attack",
-        "B": "Birthday attack 53 ElIlrlil",
-        "C": "Differential linear cryptanalysis J\\El$5.",
+        "B": "Birthday attack 53",
+        "C": "Differential linear cryptanalysis",
         "D": "Differential cryptanalysis"
       },
       "answers": [
         "B"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is B: Birthday attack 53. The other options are incorrect: A (Statistical attack); C (Differential linear cryptanalysis); D (Differential cryptanalysis)."
     },
     {
       "id": 430,
-      "question": "Which of the following elements is NOT included in a Public Key Infrastructure (PKI)?",
+      "question": "Which of the following elements is NOT included in a",
       "options": {
-        "A": "Internet Key Exchange (lKE)",
+        "A": "Internet Key Exchange",
         "B": "Repository",
         "C": "Certificate revocation",
-        "D": "Timestamping ElLlI]"
+        "D": "Timestamping"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: Internet Key Exchange. The other options are incorrect: B (Repository); C (Certificate revocation); D (Timestamping)."
     },
     {
       "id": 431,
       "question": "In a Public Key Infrastructure (PKI) context where your own LDAP server is being used to store credetials and certificates, which of the following is a primary concern with this LDAP server?",
       "options": {
         "A": "Availability",
-        "B": "Identity *E.",
+        "B": "Identity",
         "C": "Confidentiality",
-        "D": "Accountability Elllllli"
+        "D": "Accountability"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: Availability. The other options are incorrect: B (Identity); C (Confidentiality); D (Accountability)."
     },
     {
       "id": 432,
       "question": "Which of the following was developed in order to protect against fraud in electronic fund transfers (EFT) by ensuring the message comes from its claimed originator and that it has not been altered in transmission?",
       "options": {
         "A": "Message Authentication Code (MAC)",
-        "B": "Cyclic Redundancy Check (CRC) fl5$IrllJ?l3L31 (CRC) Secure Hash Standard (SHS) $j'WU7l<7E (SHS) Secure Electronic Transaction (SET)"
+        "B": "Cyclic Redundancy Check (CRC)"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: Message Authentication Code (MAC). The other options are incorrect: B (Cyclic Redundancy Check (CRC))."
     },
     {
       "id": 433,
-      "question": "Which of the following statements pertaining to Secure Sockets Layer (SSL) is false?",
+      "question": "Which of the following statements pertaining to Secure Sockets Layer (SSL)",
       "options": {
-        "A": "The SSL protoco|'s primary use is to authenticate the client to the server using public key cryptography and digital certificates.",
-        "B": "Web pages using the SSL protocol start with HTTPS 3-Vii? T SSL H4]",
+        "A": "The SSL protoco|'s primary use is to authenticate the client to the server using public key cryptography and digital certificates",
+        "B": "Web pages using the SSL protocol start with HTTPS",
         "C": "SSL can be used with applications such as Telnet, FTP and email protocols. SSL WUJZFHE Telnets FTP $5 email",
-        "D": "The SSL protocol was developed by Netscape to secure Internet client-server transactions."
+        "D": "The SSL protocol was developed by Netscape to secure Internet client-server transactions"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: The SSL protoco|'s primary use is to authenticate the client to the server using public key cryptography and digital certificates. The other options are incorrect: B (Web pages using the SSL protocol start with HTTPS); C (SSL can be used with applications such as Telnet, FTP and email protocols. SSL WUJZFHE Telnets FTP $5 email); D (The SSL protocol was developed by Netscape to secure Internet client-server transactions)."
     },
     {
       "id": 434,
       "question": "What is called the standard format that was established to set up and manage Security Associations (SA) on the Internet in lPSec?",
       "options": {
-        "A": "Internet Key Exchange (IKE) Internet %?",
-        "B": "Secure Key Exchange Mechanism i?",
-        "C": "Internet Security Association and Key Management Protocol. Internet"
+        "A": "Internet Key Exchange",
+        "B": "Secure Key Exchange Mechanism",
+        "C": "Internet Security Association and Key Management Protocol"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: Internet Key Exchange. The other options are incorrect: B (Secure Key Exchange Mechanism); C (Internet Security Association and Key Management Protocol)."
     },
     {
       "id": 435,
       "question": "Which of the following binds a subject name to a public key value?",
       "options": {
-        "A": "secret key infrastructure 5.",
+        "A": "secret key",
         "B": "A public-key certificate"
       },
       "answers": [],
@@ -505,23 +404,23 @@
     },
     {
       "id": 437,
-      "question": "Guards are appropriate whenever the function required bythe security program involves which of the",
+      "question": "Guards are appropriate whenever the function required by the security program involves which of the",
       "options": {
-        "A": "The use ofdiscriminatingjluidigjmjent lEH97llUb?",
-        "B": "The use of physical force EI4]ElTHI'% The operation of access control devices 5liiJil\"5]1*fl%IJi%T?l\"%ll5l34]HUl|;% The need to detect unauthorized access %EllUlllll5ll*7i1iji I15]El4]Hqll5 11(U U]>';5U1H('3>oJJ;> What physical characteristic does a retinal scan biometric device measure?W,W] 3fi5iZ%i71?W}il3%)\\lZl5i7.l5fl? The pattern of light receptors at the back of the eye El5lCiZlil3'l_Z/U\\l\"-elf]@?i The pattern of blood vessels at the back of the eye EEFIEJIIIEEFJgig? The amount of light reaching the retina i)'1|35]H%ilC The amount of light reflected bythe retina ?"
+        "A": "The use ofdiscriminatingjluidigjmjent",
+        "B": "The use of physical"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: The use ofdiscriminatingjluidigjmjent. The other options are incorrect: B (The use of physical)."
     },
     {
       "id": 438,
       "question": "Which of the following is the most costly countermeasure to reducing physical security",
       "options": {
-        "A": "Procedural Controls ?",
-        "B": "Electronic Systems EE,,%}i Hardware Devices liEiFii% Which isthe last line of defense in a physical security sense??ll\"}ilI3i%5l%E $!%lIlll4]%J5El3J\\iZ3Z? perimeter barriers i25'i'~@ii% interior barriers Ii]"
+        "A": "Procedural Controls",
+        "B": "Electronic Systems"
       },
       "answers": [],
       "type": "single",
@@ -529,67 +428,67 @@
     },
     {
       "id": 439,
-      "question": "Which of the following is true about a \"dry pipe\" sprinkler system?Tllll}J|3~ID1",
+      "question": "Which of the following is true about a \"dry pipe\" sprinkler system?",
       "options": {
-        "A": "It reduces the likelihood of the sprinkler system pipes freezinglli lTllj7i7l<ZJ< 3%Z1-EF14]",
-        "B": "It is a substitute for carbon dioxide systems.Z'\\lJ67JR</%Z}i Ei4]li|;''1 c It uses less waterthan \"wet pipe\" systems.tljlF:?Q9Z</%?}EE414i17l< o It maximizes chances of accidental discharge ofwater."
+        "A": "It reduces the likelihood of the sprinkler system pipes",
+        "B": "It is a substitute for carbon dioxide"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: It reduces the likelihood of the sprinkler system pipes. The other options are incorrect: B (It is a substitute for carbon dioxide)."
     },
     {
       "id": 440,
-      "question": "Which of the following is a class A fire?Flll1}llmID1% A Z-'J<Z",
+      "question": "Which of the following is a class A",
       "options": {
-        "A": "Halon (Z\\l'LEl3iJn)",
+        "A": "Halon",
         "B": "electrical",
         "C": "liquid",
-        "D": "common combustibles %Zi."
+        "D": "common combustibles"
       },
       "answers": [
         "D"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D: common combustibles. The other options are incorrect: A (Halon); B (electrical); C (liquid)."
     },
     {
       "id": 441,
-      "question": "Which of the following is the preferred way to suppress an electrical fire in an information center??'i_~ FFL ,",
+      "question": "Which of the following is the preferred way to suppress an electrical",
       "options": {
-        "A": "CO2, soda acid, or Halon I/iLiJC)",
+        "A": "CO2, soda acid, or Halon",
         "B": "water or soda acid",
-        "C": "ABC Rated Dry Chemical ABC EBtl3lJC."
+        "C": "ABC Rated Dry Chemical"
       },
       "answers": [
         "C"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is C: ABC Rated Dry Chemical. The other options are incorrect: A (CO2, soda acid, or Halon); B (water or soda acid)."
     },
     {
       "id": 442,
       "question": "What are the four basic elements of",
       "options": {
-        "A": "Heat, Fuel, Oxygen, and Chain Reaction /it, $U'1.",
-        "B": "Flame, Fuel, Oxygen, and Chain Reaction",
-        "C": "Heat, Wood, Oxygen, and Chain Reaction YE)",
-        "D": "Heat, Fuel, CO2, and Chain Reaction l5'1l, l."
+        "A": "Heat, Fuel, Oxygen, and Chain Reaction",
+        "B": "Flame, Fuel, Oxygen, and Chain Reaction W5l3l",
+        "C": "Heat, Wood, Oxygen, and Chain Reaction",
+        "D": "Heat, Fuel, CO2, and Chain Reaction"
       },
       "answers": [
         "A"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is A: Heat, Fuel, Oxygen, and Chain Reaction. The other options are incorrect: B (Flame, Fuel, Oxygen, and Chain Reaction W5l3l); C (Heat, Wood, Oxygen, and Chain Reaction); D (Heat, Fuel, CO2, and Chain Reaction)."
     },
     {
       "id": 443,
       "question": "Which of the following is NOTa type of motion",
       "options": {
-        "A": "Ultrasonic Sensor.",
-        "B": "Photoelectric sensor jijEEl%!T% Passive infrared sensors ?"
+        "A": "Ultrasonic",
+        "B": "Photoelectric sensor"
       },
       "answers": [],
       "type": "single",
@@ -597,10 +496,10 @@
     },
     {
       "id": 444,
-      "question": "Which of the following is NOT a precaution you can take to reduce static electricity?T",
+      "question": "Which of the following is NOT a precaution you can take to reduce static electricity?",
       "options": {
-        "A": "anti-static flooring l3)",
-        "B": "power line conditioning EE,lil%l\"f5% maintain proper humidity levels l%f?"
+        "A": "anti-static",
+        "B": "power line conditioning"
       },
       "answers": [],
       "type": "single",
@@ -608,7 +507,7 @@
     },
     {
       "id": 445,
-      "question": "Which of the following is currently the most recommended water system for a computer room?*FUll/1ll51l7?i E",
+      "question": "Which of the following is currently the most recommended water system for a computer",
       "options": {
         "A": "preaction",
         "B": "deluge"
@@ -619,10 +518,10 @@
     },
     {
       "id": 446,
-      "question": "Which of the following is electromagnetic interference (EMI) that is noise from the radiation generated bythe difference between the hot and ground wires?T7illl1}5l| Elirifliggf?",
+      "question": "Which of the following is electromagnetic interference",
       "options": {
         "A": "traverse-mode noise",
-        "B": "crossover-mode noise EY|15T%;% common-mode noise -Tzillr transversal-mode noise $15i5]"
+        "B": "crossover-mode noise"
       },
       "answers": [],
       "type": "single",
@@ -630,9 +529,9 @@
     },
     {
       "id": 447,
-      "question": "The \"vulnerability of a facility\" to damage or attack may be assessed by all of the following except:XUL1Ij1P3ZT/Iglif, igFii'ii%El4]lif5.iliZ</EH5 U~l:\"/lllllji ?",
+      "question": "The \"vulnerability of a facility\" to damage or attack may be assessed by all of the following",
       "options": {
-        "A": "History of losses",
+        "A": "History of",
         "B": "Security controls"
       },
       "answers": [],
@@ -641,7 +540,7 @@
     },
     {
       "id": 448,
-      "question": "Which of the following is not an EPA-approved replacement for Halon?T<IJl1}J|3",
+      "question": "Which of the following is not an EPA-approved replacement for Halon?",
       "options": {
         "A": "Bromine",
         "B": "FE-13"
@@ -652,10 +551,10 @@
     },
     {
       "id": 449,
-      "question": "Crime Prevention Through Environmental Design (CPTED) is a discipline ii17F%i,?vi+fD1lJ5l1\"E%iETFU\"3l5mI?",
+      "question": "Crime Prevention Through Environmental Design (CPTED)",
       "options": {
-        "A": "Outlines how the proper design of the logical environment can reduce crime by directly affecting human behavior.",
-        "B": "Outlines how the proper design of the administrative control environment can reduce crime by directly affecting human behavior.",
+        "A": "Outlines how the proper design of the logical environment can reduce crime by directly affecting human",
+        "B": "Outlines how the proper design of the administrative control environment can reduce crime by directly affecting human",
         "C": "Outlines how the proper design of the detective control environment can reduce crime by directly affecting human behavior.",
         "D": "Outlines how the proper design of a physical environment can reduce crime by directly affecting human behavior."
       },
@@ -663,14 +562,14 @@
         "D"
       ],
       "type": "single",
-      "explanation": ""
+      "explanation": "The correct answer is D: Outlines how the proper design of a physical environment can reduce crime by directly affecting human behavior.. The other options are incorrect: A (Outlines how the proper design of the logical environment can reduce crime by directly affecting human); B (Outlines how the proper design of the administrative control environment can reduce crime by directly affecting human); C (Outlines how the proper design of the detective control environment can reduce crime by directly affecting human behavior.)."
     },
     {
       "id": 450,
       "question": "The main risks that physical security components combat are all of the following",
       "options": {
         "A": "Tailgating",
-        "B": "SYN flood SYN ?"
+        "B": "SYN flood SYN"
       },
       "answers": [],
       "type": "single",

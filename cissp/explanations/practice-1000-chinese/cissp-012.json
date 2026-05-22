@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-chinese",
+    "file": "cissp-012.json",
+    "question_range": "Q551 - Q600",
+    "start": 551,
+    "end": 600,
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 551,
+      "question": "確保主體和物件之間授權存取關係的參考驗證機制 (Reference Validation Mechanism) 正在實現以下哪個概念？",
+      "options": {
+        "A": "參考監視器 (Reference Monitor)。",
+        "D": "安全核心 (Security Kernel)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 552,
+      "question": "以下哪個模型不包含資料完整性或利益衝突的考量？",
+      "options": {
+        "A": "Brewer-Nash",
+        "B": "Bell-LaPadula"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 553,
+      "question": "組態管理 (Configuration Management) 控制什麼？",
+      "options": {
+        "A": "稽核和控制對可信計算基礎 (Trusted Computing Base) 的任何變更。",
+        "B": "稽核對可信計算基礎的變更。",
+        "C": "控制對可信計算基礎的變更。",
+        "D": "對可信計算基礎的組態存取變更。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：稽核和控制對可信計算基礎 (Trusted Computing Base) 的任何變更。其他選項不正確：B（稽核對可信計算基礎的變更）；C（控制對可信計算基礎的變更）；D（對可信計算基礎的組態存取變更）。"
+    },
+    {
+      "id": 554,
+      "question": "以下哪個功能為資訊系統安全功能提供最不有效的組織報告結構？",
+      "options": {
+        "A": "資訊系統品質保證。",
+        "B": "資訊系統資源管理。",
+        "C": "資訊系統營運。",
+        "D": "企業安全。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：資訊系統營運。其他選項不正確：A（資訊系統品質保證）；B（資訊系統資源管理）；D（企業安全）。"
+    },
+    {
+      "id": 555,
+      "question": "如果作業系統允許多個使用者/應用程式或主體在不刷新物件/記憶體區域的情況下依序使用記憶體等共享資源，最可能出現什麼安全問題？",
+      "options": {
+        "A": "殘餘資料洩露。",
+        "B": "未經授權取得特權執行狀態。",
+        "C": "通過隱蔽通道的資料洩漏。",
+        "D": "因死鎖導致的阻斷服務。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：殘餘資料洩露。其他選項不正確：B（未經授權取得特權執行狀態）；C（通過隱蔽通道的資料洩漏）；D（因死鎖導致的阻斷服務）。"
+    },
+    {
+      "id": 556,
+      "question": "什麼安全程序會強制/要求員工必須與公司另一名員工串通才能存取未授權資料或破壞公司安全機制？",
+      "options": {
+        "A": "安全人員監控稽核。",
+        "B": "定期審查主體的存取權限。",
+        "C": "限制營運人員的特定存取權限。",
+        "D": "透過不同職務進行人員輪調。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：安全人員監控稽核。其他選項不正確：B（定期審查主體的存取權限）；C（限制營運人員的特定存取權限）；D（透過不同職務進行人員輪調）。"
+    },
+    {
+      "id": 557,
+      "question": "營運安全 (Operations Security) 主要尋求保護免受以下哪項威脅？",
+      "options": {
+        "A": "洩密電磁輻射",
+        "B": "設施災難",
+        "C": "資產威脅",
+        "D": "物件重用"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 558,
+      "question": "營運安全需要實施實體安全來控制以下哪項？",
+      "options": {
+        "A": "疏散程序",
+        "B": "進入的硬體",
+        "C": "應急條件",
+        "D": "未授權人員存取"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 559,
+      "question": "以下哪些組件被認為是可信計算基礎 (Trusted Computing Base) 的一部分？",
+      "options": {
+        "A": "可信的硬體、軟體和韌體",
+        "B": "可信的硬體和軟體",
+        "C": "可信的電腦操作員和系統管理員",
+        "D": "可信的硬體和韌體"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：可信的硬體、軟體和韌體。其他選項不正確：B（可信的硬體和軟體）；C（可信的電腦操作員和系統管理員）；D（可信的硬體和韌體）。"
+    },
+    {
+      "id": 560,
+      "question": "以下哪項不是營運控制的範例？",
+      "options": {
+        "A": "稽核",
+        "B": "營運程序",
+        "C": "備份和復原",
+        "D": "應急規劃"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 561,
+      "question": "消磁 (Degaussing) 用於清除以下所有媒體的資料，除了：",
+      "options": {
+        "A": "軟碟",
+        "B": "唯讀媒體",
+        "C": "錄影帶",
+        "D": "磁性硬碟"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：唯讀媒體。其他選項不正確：A（軟碟）；C（錄影帶）；D（磁性硬碟）。"
+    },
+    {
+      "id": 562,
+      "question": "當以下哪類人員存取實施安全的系統軟體時，違反了「職責分離」原則？",
+      "options": {
+        "A": "系統稽核員",
+        "B": "系統程式設計師",
+        "C": "安全分析師",
+        "D": "安全管理員"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：系統程式設計師。其他選項不正確：A（系統稽核員）；C（安全分析師）；D（安全管理員）。"
+    },
+    {
+      "id": 563,
+      "question": "備份應用系統資料時，以下哪個是需要首先回答的關鍵問題？",
+      "options": {
+        "A": "備份存放在哪裡",
+        "B": "備份哪些記錄",
+        "C": "如何儲存備份",
+        "D": "何時進行備份"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：備份哪些記錄。其他選項不正確：A（備份存放在哪裡）；C（如何儲存備份）；D（何時進行備份）。"
+    },
+    {
+      "id": 564,
+      "question": "在系統開始記錄為違規之前允許的違規次數稱為：",
+      "options": {
+        "A": "記錄",
+        "B": "寬恕",
+        "C": "接受",
+        "D": "截止值 (clipping)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：截止值 (clipping)。其他選項不正確：A（記錄）；B（寬恕）；C（接受）。"
+    },
+    {
+      "id": 565,
+      "question": "以下哪項是從磁帶或卡帶等磁性儲存媒體中移除資料最可靠、最安全的方法？",
+      "options": {
+        "A": "緩衝區溢位",
+        "B": "消磁 (Degaussing)",
+        "C": "歸零化 (Zeroization)",
+        "D": "同位位元操作"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 566,
+      "question": "以下關於網路嗅探 (network sniffing) 的哪項陳述是正確的？",
+      "options": {
+        "A": "嗅探器允許攻擊者監控通過網路傳輸的資料。",
+        "B": "嗅探器向系統發送相互重疊的 IP 片段。",
+        "C": "嗅探器改變電腦的來源位址以偽裝並利用弱認證方法。",
+        "D": "嗅探器接管網路連線。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：嗅探器允許攻擊者監控通過網路傳輸的資料。其他選項不正確：B（嗅探器向系統發送相互重疊的 IP 片段）；C（嗅探器改變電腦的來源位址以偽裝並利用弱認證方法）；D（嗅探器接管網路連線）。"
+    },
+    {
+      "id": 567,
+      "question": "以下哪項不是用於執行滲透測試的技術？",
+      "options": {
+        "A": "嗅探",
+        "C": "掃描和探測",
+        "D": "戰爭撥號 (war dialing)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B。其他選項不正確：A（嗅探）；C（掃描和探測）；D（戰爭撥號）。"
+    },
+    {
+      "id": 568,
+      "question": "以下哪項不是用於保護資料儲存媒體可用性的媒體可用性控制？",
+      "options": {
+        "A": "標記",
+        "B": "處理",
+        "C": "儲存",
+        "D": "清除"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：清除。其他選項不正確：A（標記）；B（處理）；C（儲存）。"
+    },
+    {
+      "id": 569,
+      "question": "以下哪兩種是隱蔽通道 (covert channels) 的常見定義類型？",
+      "options": {
+        "A": "軟體和時序",
+        "B": "儲存和時序",
+        "C": "儲存和核心",
+        "D": "核心和時序"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：儲存和時序。其他選項不正確：A（軟體和時序）；C（儲存和核心）；D（核心和時序）。"
+    },
+    {
+      "id": 570,
+      "question": "以下哪項指的是資料殘留？",
+      "options": {
+        "A": "粘滯位元 (sticky bits)",
+        "B": "半隱藏",
+        "C": "復原",
+        "D": "殘留 (remanence)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：殘留 (remanence)。其他選項不正確：A（粘滯位元）；B（半隱藏）；C（復原）。"
+    },
+    {
+      "id": 571,
+      "question": "以下哪項確保在系統當機或其他系統故障發生時安全性不被破壞？",
+      "options": {
+        "A": "可信復原 (trusted recovery)",
+        "B": "安全開機 (secure boot)",
+        "C": "冗餘 (Redundancy)",
+        "D": "熱插拔 (hot swappable)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：可信復原 (trusted recovery)。其他選項不正確：B（安全開機）；C（冗餘）；D（熱插拔）。"
+    },
+    {
+      "id": 572,
+      "question": "以下哪項確保 TCB 的設計、開發和維護具有正式控制的標準，在系統生命週期的每個階段強制保護？",
+      "options": {
+        "A": "隱蔽儲存保證",
+        "B": "隱蔽時序保證",
+        "C": "營運保證",
+        "D": "生命週期保證"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 573,
+      "question": "以下哪個是 TCSEC 中最低要求系統必須支援獨立操作員和系統管理員角色的等級？",
+      "options": {
+        "A": "B2",
+        "B": "B1",
+        "C": "A2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：B2。"
+    },
+    {
+      "id": 574,
+      "question": "以下哪項不是對抗流量分析 (traffic analysis) 的反制措施？",
+      "options": {
+        "A": "發送雜訊。",
+        "B": "法拉第籠 (Faraday Cage)",
+        "C": "竊聽。",
+        "D": "填充訊息。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 575,
+      "question": "在處置過時磁帶之前，以下哪種方式是最安全的處理方法？",
+      "options": {
+        "A": "消磁磁帶",
+        "B": "擦除磁帶",
+        "C": "覆寫磁帶",
+        "D": "初始化磁帶"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：消磁磁帶。其他選項不正確：B（擦除磁帶）；C（覆寫磁帶）；D（初始化磁帶）。"
+    },
+    {
+      "id": 576,
+      "question": "以下哪項是偵測性控制？",
+      "options": {
+        "A": "備份程序",
+        "B": "職責分離",
+        "C": "實體存取控制",
+        "D": "稽核軌跡"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 577,
+      "question": "啟用軟體稽核軌跡的主要原因是以下哪項？",
+      "options": {
+        "A": "提高系統效率。",
+        "B": "改善使用者回應時間。",
+        "C": "建立責任和問責制。",
+        "D": "提供追蹤處理錯誤的有用資訊。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：建立責任和問責制。其他選項不正確：A（提高系統效率）；B（改善使用者回應時間）；D（提供追蹤處理錯誤的有用資訊）。"
+    },
+    {
+      "id": 578,
+      "question": "以下哪項應由操作員存取？",
+      "options": {
+        "A": "系統日誌檔",
+        "B": "組態設定",
+        "C": "使用者密碼",
+        "D": "使用者設定檔"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：系統日誌檔。其他選項不正確：B（組態設定）；C（使用者密碼）；D（使用者設定檔）。"
+    },
+    {
+      "id": 579,
+      "question": "RAID 等級的以下哪個功能是正確的？",
+      "options": {
+        "A": "它使用多個較小的磁碟建立一個大磁碟。",
+        "B": "它在建立多個較小磁碟時移除一個大磁碟。",
+        "C": "它使用多個較小的磁碟復原一個大磁碟。",
+        "D": "它從一個大磁碟建立多個較小的磁碟。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：它使用多個較小的磁碟建立一個大磁碟。其他選項不正確：B（它在建立多個較小磁碟時移除一個大磁碟）；C（它使用多個較小的磁碟復原一個大磁碟）；D（它從一個大磁碟建立多個較小的磁碟）。"
+    },
+    {
+      "id": 580,
+      "question": "以下哪項通常通過一對一的磁碟比例來實現？",
+      "options": {
+        "A": "RAID 等級 0",
+        "B": "RAID 等級 3",
+        "C": "RAID 等級 5",
+        "D": "RAID 等級 1"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：RAID 等級 1。其他選項不正確：A（RAID 等級 0）；B（RAID 等級 3）；C（RAID 等級 5）。"
+    },
+    {
+      "id": 581,
+      "question": "以下哪項有效地使所需硬碟數量加倍但也提供了冗餘？",
+      "options": {
+        "A": "RAID 等級 1",
+        "B": "RAID 等級 0",
+        "C": "RAID 等級 3",
+        "D": "RAID 等級 5"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：RAID 等級 1。其他選項不正確：B（RAID 等級 0）；C（RAID 等級 3）；D（RAID 等級 5）。"
+    },
+    {
+      "id": 582,
+      "question": "以下哪項用於建立同位檢查資訊？",
+      "options": {
+        "A": "漢明碼 (hamming code)",
+        "B": "叢集碼 (clustering code)",
+        "C": "鏡像碼 (mirroring code)",
+        "D": "分割碼 (striping code)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：漢明碼 (hamming code)。其他選項不正確：B（叢集碼）；C（鏡像碼）；D（分割碼）。"
+    },
+    {
+      "id": 583,
+      "question": "RAID 等級之間唯一的差異是什麼？",
+      "options": {
+        "A": "區塊 (block)",
+        "B": "緩衝區 (buffer)",
+        "C": "通道 (channel)",
+        "D": "橋接 (bridge)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：區塊 (block)。其他選項不正確：B（緩衝區）；C（通道）；D（橋接）。"
+    },
+    {
+      "id": 584,
+      "question": "以下哪種備份方法通常在備份檔案後重設封存位元 (archive bit)？",
+      "options": {
+        "A": "磁帶備份方法。",
+        "B": "差異備份方法。",
+        "C": "部分備份方法。",
+        "D": "增量備份方法。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 585,
+      "question": "實體保護備份磁帶免受未授權存取顯然是一個安全問題，被認為是以下哪個領域的功能？",
+      "options": {
+        "A": "營運安全領域",
+        "B": "營運安全領域分析。",
+        "C": "電信和網路安全領域。",
+        "D": "營運持續計劃和災難復原"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：營運安全領域。其他選項不正確：B（營運安全領域分析）；C（電信和網路安全領域）；D（營運持續計劃和災難復原）。"
+    },
+    {
+      "id": 586,
+      "question": "多種全面且易於使用的駭客工具的高度可用性（不需要太多技術知識）帶來了哪類攻擊者數量的增長？",
+      "options": {
+        "A": "黑帽駭客",
+        "B": "白帽駭客",
+        "C": "腳本小子 (Script kiddies)",
+        "D": "電話駭客 (Phreakers)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：腳本小子 (Script kiddies)。其他選項不正確：A（黑帽駭客）；B（白帽駭客）；D（電話駭客）。"
+    },
+    {
+      "id": 587,
+      "question": "在審查過程中，以下哪位工作人員最適合提供資訊？本例中審查聚焦於定義 IT 服務等級相關的控制措施。",
+      "options": {
+        "A": "業務單位經理",
+        "B": "程式設計師",
+        "C": "系統程式設計師",
+        "D": "法務人員"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：業務單位經理。其他選項不正確：B（程式設計師）；C（系統程式設計師）；D（法務人員）。"
+    },
+    {
+      "id": 588,
+      "question": "當公司希望處置曾經用於儲存機密或敏感資料的個人電腦時，以下哪項是最佳選擇？",
+      "options": {
+        "A": "用零覆寫硬碟上的所有資料",
+        "B": "低階格式化硬碟",
+        "C": "刪除硬碟上包含的所有資料",
+        "D": "消磁 (Degaussing)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：消磁 (Degaussing)。其他選項不正確：A（用零覆寫硬碟上的所有資料）；B（低階格式化硬碟）；C（刪除硬碟上包含的所有資料）。"
+    },
+    {
+      "id": 589,
+      "question": "以下哪種電腦犯罪更常與內部人員相關？",
+      "options": {
+        "A": "資料篡改 (Data diddling)",
+        "B": "IP 欺騙 (IP spoofing)",
+        "C": "阻斷服務 (DOS)",
+        "D": "密碼嗅探"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：資料篡改 (Data diddling)。其他選項不正確：B（IP 欺騙）；C（阻斷服務）；D（密碼嗅探）。"
+    },
+    {
+      "id": 590,
+      "question": "以下哪種邏輯存取暴露涉及在資料輸入電腦之前或同時更改資料？",
+      "options": {
+        "A": "切香腸技術 (Salami techniques)",
+        "B": "病毒",
+        "C": "特洛伊木馬",
+        "D": "資料篡改 (Data diddling)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：資料篡改 (Data diddling)。其他選項不正確：A（切香腸技術）；B（病毒）；C（特洛伊木馬）。"
+    },
+    {
+      "id": 591,
+      "question": "通知適當人員採取行動以確定事件嚴重程度並修復事件影響稱為：",
+      "options": {
+        "A": "事件回應 (Incident Response)",
+        "B": "事件評估 (Incident Evaluation)",
+        "C": "事件識別 (Incident Recognition)",
+        "D": "事件保護 (Incident Protection)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：事件回應 (Incident Response)。其他選項不正確：B（事件評估）；C（事件識別）；D（事件保護）。"
+    },
+    {
+      "id": 592,
+      "question": "入侵偵測系統 (IDS) 是什麼類型的控制？",
+      "options": {
+        "A": "偵測性控制",
+        "B": "復原性控制。",
+        "C": "指令性控制。",
+        "D": "預防性控制。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：偵測性控制。其他選項不正確：B（復原性控制）；C（指令性控制）；D（預防性控制）。"
+    },
+    {
+      "id": 593,
+      "question": "適當的職責分離的主要目標是什麼？",
+      "options": {
+        "A": "確保沒有單一個人可以危害系統",
+        "B": "確保稽核軌跡不被篡改。",
+        "C": "防止員工洩露敏感資訊。",
+        "D": "確保存取控制已到位。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：確保沒有單一個人可以危害系統。其他選項不正確：B（確保稽核軌跡不被篡改）；C（防止員工洩露敏感資訊）；D（確保存取控制已到位）。"
+    },
+    {
+      "id": 594,
+      "question": "以下哪項不應該讓電腦操作員存取？",
+      "options": {
+        "A": "營運文件",
+        "B": "電腦主控台",
+        "C": "應用程式原始碼",
+        "D": "資訊安全指南"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：應用程式原始碼。其他選項不正確：A（營運文件）；B（電腦主控台）；D（資訊安全指南）。"
+    },
+    {
+      "id": 595,
+      "question": "以下哪項不是營運安全「三元組」的組成部分？",
+      "options": {
+        "A": "風險",
+        "B": "威脅",
+        "C": "弱點",
+        "D": "資產"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：資產。其他選項不正確：A（風險）；B（威脅）；C（弱點）。"
+    },
+    {
+      "id": 596,
+      "question": "以下哪種營運安全控制旨在防止未授權入侵者從內部或外部存取系統，並降低進入系統的無意錯誤的數量和影響？",
+      "options": {
+        "A": "偵測性控制",
+        "B": "矯正性控制",
+        "C": "預防性控制",
+        "D": "指令性控制"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：預防性控制。其他選項不正確：A（偵測性控制）；B（矯正性控制）；D（指令性控制）。"
+    },
+    {
+      "id": 597,
+      "question": "這種控制用於確保交易被正確地一次性輸入系統。此控制類型的元素可能包括計數資料並加上輸入或編輯日期的時間戳記？",
+      "options": {
+        "A": "輸入/輸出控制",
+        "B": "輸入控制",
+        "C": "輸出控制",
+        "D": "處理控制"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：輸入控制。其他選項不正確：A（輸入/輸出控制）；C（輸出控制）；D（處理控制）。"
+    },
+    {
+      "id": 598,
+      "question": "當兩名操作員審查和批准彼此的工作時，這稱為：",
+      "options": {
+        "A": "雙重控制 (Dual Control)",
+        "B": "雙胞胎控制 (Twin Control)",
+        "C": "雙重控制 (Two-fold Control)",
+        "D": "雙人控制 (Two-man Control)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 599,
+      "question": "組態管理 (Configuration Management) 是橘皮書 (Orange Book) 以下哪個等級的要求？",
+      "options": {
+        "A": "B3 和 A1",
+        "B": "B2、B3 和 A1",
+        "C": "A1"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 600,
+      "question": "以下哪個存取等級是正確的？",
+      "options": {
+        "A": "讀取/寫入",
+        "B": "存取/改寫",
+        "C": "存取/刪除",
+        "D": "存取/變更"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：存取/變更。其他選項不正確：A（讀取/寫入）；B（存取/改寫）；C（存取/刪除）。"
+    }
+  ]
+}

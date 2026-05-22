@@ -1,0 +1,688 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-chinese",
+    "file": "cissp-006.json",
+    "question_range": "Q251 - Q300",
+    "start": 251,
+    "end": 300,
+    "total_questions": 49
+  },
+  "questions": [
+    {
+      "id": 251,
+      "question": "以下哪一項不涉及資料庫管理系統 (DBMS) 安全性？",
+      "options": {
+        "A": "擾動 (Perturbation)",
+        "B": "單元格 (Cell)",
+        "C": "填充 (Padded)",
+        "D": "分區 (Partitioning)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：填充 (Padded)。其他選項不正確：A（擾動）；B（單元格）；D（分區）。"
+    },
+    {
+      "id": 252,
+      "question": "在 IT 系統的哪個階段中",
+      "options": {
+        "A": "功能設計分析與",
+        "B": "實施",
+        "C": "運作"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：功能設計分析與。其他選項不正確：B（實施）；C（運作）。"
+    },
+    {
+      "id": 253,
+      "question": "系統開發生命週期的哪個階段最關注建立健全的政策作為設計基礎？",
+      "options": {
+        "A": "維護",
+        "B": "開發/採購",
+        "C": "啟動",
+        "D": "實施"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：啟動。其他選項不正確：A（維護）；B（開發/採購）；D（實施）。"
+    },
+    {
+      "id": 254,
+      "question": "在考慮 IT 系統開發生命週期時，安全性應該",
+      "options": {
+        "A": "主要在開發階段考慮。",
+        "B": "主要在啟動階段考慮。",
+        "C": "在設計完成後再加入。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 255,
+      "question": "系統開發生命週期的哪個階段最關注維護適當的使用者和程序認證以確保適當的存取控制決策？",
+      "options": {
+        "A": "開發/採購",
+        "D": "啟動"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C。其他選項不正確：A（開發/採購）；D（啟動）。"
+    },
+    {
+      "id": 256,
+      "question": "什麼可以被定義為",
+      "options": {
+        "A": "保證 (Assurance)",
+        "B": "驗收 (Acceptance)",
+        "D": "認證 (Certification)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：驗收 (Acceptance)。其他選項不正確：A（保證）；D（認證）。"
+    },
+    {
+      "id": 257,
+      "question": "開發人員應該",
+      "options": {
+        "A": "支援生產資料。",
+        "B": "執行單元測試。",
+        "C": "執行驗收測試。",
+        "D": "實施系統。"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：執行單元測試。其他選項不正確：A（支援生產資料）；C（執行驗收測試）；D（實施系統）。"
+    },
+    {
+      "id": 258,
+      "question": "以下關於軟體測試的哪項陳述是不正確的？",
+      "options": {
+        "A": "測試應該使用",
+        "B": "測試資料應該是規格的一部分。",
+        "C": "測試資料產生器可用於系統性地產生隨機測試資料，用於測試程式。",
+        "D": "單元測試應在模組開發時就加以考慮和處理"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：測試應該使用。其他選項不正確：B（測試資料應該是規格的一部分）；C（測試資料產生器可用於系統性地產生隨機測試資料，用於測試程式）；D（單元測試應在模組開發時就加以考慮和處理）。"
+    },
+    {
+      "id": 259,
+      "question": "以下哪一項可以定義為重新執行測試情境或測試計劃的一部分，以確保變更或修正沒有引入新的問題？",
+      "options": {
+        "A": "試驗 (Pilot)",
+        "B": "迴歸測試 (Regression testing)",
+        "C": "平行 (Parallel)",
+        "D": "單元 (Unit)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：迴歸測試 (Regression testing)。其他選項不正確：A（試驗）；C（平行）；D（單元）。"
+    },
+    {
+      "id": 260,
+      "question": "以下關於軟體測試方法的哪項陳述是正確的？",
+      "options": {
+        "A": "自上而下的方法允許更早發現關鍵模組中的錯誤。",
+        "B": "測試計劃和結果應作為系統永久紀錄的一部分保留。",
+        "C": "黑箱測試建立在對程序細節的密切檢查之上。",
+        "D": "自下而上的方法允許更早發現介面錯誤。"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：測試計劃和結果應作為系統永久紀錄的一部分保留。其他選項不正確：A（自上而下的方法允許更早發現關鍵模組中的錯誤）；C（黑箱測試建立在對程序細節的密切檢查之上）；D（自下而上的方法允許更早發現介面錯誤）。"
+    },
+    {
+      "id": 261,
+      "question": "以下哪項測試確保修改或新系統包含適當的存取控制，並且不會引入可能危及其他系統的安全漏洞？",
+      "options": {
+        "B": "介面測試",
+        "C": "壓力/容量安全測試"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D。其他選項不正確：B（介面測試）；C（壓力/容量安全測試）。"
+    },
+    {
+      "id": 262,
+      "question": "在資料庫管理系統 (DBMS) 中，什麼是「基數 (cardinality)」？",
+      "options": {
+        "A": "屬性可以取的允許值集合。",
+        "B": "關係中的欄位數。",
+        "C": "關係中的列數。",
+        "D": "資料庫中的關係數。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：關係中的列數。其他選項不正確：A（屬性可以取的允許值集合）；B（關係中的欄位數）；D（資料庫中的關係數）。"
+    },
+    {
+      "id": 263,
+      "question": "在系統開發的哪個基本階段",
+      "options": {
+        "A": "功能需求",
+        "B": "開發與",
+        "C": "系統設計"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：功能需求。其他選項不正確：B（開發與）；C（系統設計）。"
+    },
+    {
+      "id": 264,
+      "question": "以下哪項較不可能包含在軟體產品維護階段的變更控制子階段中？",
+      "options": {
+        "A": "建立優先順序",
+        "B": "重新建立和分析",
+        "C": "確定呈現給使用者的介面",
+        "D": "估算變更成本"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：估算變更成本。其他選項不正確：A（建立優先順序）；B（重新建立和分析）；C（確定呈現給使用者的介面）。"
+    },
+    {
+      "id": 265,
+      "question": "敏感度標籤是哪種應用控制類型的範例？",
+      "options": {
+        "A": "預防性安全",
+        "B": "預防性準確性",
+        "C": "補償性管理",
+        "D": "偵測性安全"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：預防性安全。其他選項不正確：B（預防性準確性）；C（補償性管理）；D（偵測性安全）。"
+    },
+    {
+      "id": 266,
+      "question": "為什麼編譯程式碼比解譯程式碼構成更大的安全風險？",
+      "options": {
+        "A": "因為惡意程式碼可以嵌入編譯程式碼中且難以偵測",
+        "B": "解譯程式碼和編譯程式碼之間沒有風險差異",
+        "C": "如果執行的編譯程式碼",
+        "D": "因為編譯器不可靠。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：因為惡意程式碼可以嵌入編譯程式碼中且難以偵測。其他選項不正確：B（解譯程式碼和編譯程式碼之間沒有風險差異）；C（如果執行的編譯程式碼）；D（因為編譯器不可靠）。"
+    },
+    {
+      "id": 267,
+      "question": "以下哪一項不是軟體能力成熟度模型 (Software Capability Maturity Model) 中定義的成熟度等級？",
+      "options": {
+        "A": "導向型 (Oriented)",
+        "B": "已定義 (Defined)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：導向型 (Oriented)。其他選項不正確：B（已定義）。"
+    },
+    {
+      "id": 268,
+      "question": "哪種軟體開發模型實際上是一個元模型，包含了多種軟體開發模型？",
+      "options": {
+        "A": "瀑布模型 (Waterfall model)",
+        "B": "關鍵路徑模型 (Critical Path Model, CPM)",
+        "C": "螺旋模型 (Spiral model)",
+        "D": "修改型瀑布模型 (modified Waterfall model)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：螺旋模型 (Spiral model)。其他選項不正確：A（瀑布模型）；B（關鍵路徑模型 CPM）；D（修改型瀑布模型）。"
+    },
+    {
+      "id": 269,
+      "question": "以下哪一項用於資料庫資訊安全中隱藏資訊？",
+      "options": {
+        "A": "繼承 (Inheritance)",
+        "B": "委派 (Delegation)",
+        "C": "多型 (Polymorphism)",
+        "D": "多重實例化 (Polyinstantiation)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：多重實例化 (Polyinstantiation)。其他選項不正確：A（繼承）；B（委派）；C（多型）。"
+    },
+    {
+      "id": 270,
+      "question": "哪個模型基於軟體產品的品質是其相關軟體開發和維護流程品質的直接函數這一前提而引入？",
+      "options": {
+        "A": "軟體能力成熟度模型 (Software Capability Maturity Model)",
+        "B": "全面品質模型 (Total Quality Model, TQM)",
+        "C": "螺旋模型 (Spiral Model)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：軟體能力成熟度模型。其他選項不正確：B（全面品質模型 TQM）；C（螺旋模型）。"
+    },
+    {
+      "id": 271,
+      "question": "以下關於資料庫的哪個特徵不正確？",
+      "options": {
+        "A": "所有關係必須具有特定的基數。",
+        "B": "主鍵不應允許 NULL 值。",
+        "C": "正規化資料必須有正當理由。",
+        "D": "應該存在資料模型，所有實體應有有意義的名稱。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：正規化資料必須有正當理由。其他選項不正確：A（所有關係必須具有特定的基數）；B（主鍵不應允許 NULL 值）；D（應該存在資料模型，所有實體應有有意義的名稱）。"
+    },
+    {
+      "id": 272,
+      "question": "以下哪一項最能定義為一組資訊項目的集合需要被歸類為比組成它的任何單個項目更高安全等級的情況？",
+      "options": {
+        "A": "推理 (Inference)",
+        "B": "聚集 (Clustering)",
+        "C": "碰撞 (Collision)",
+        "D": "聚合 (Aggregation)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：聚合 (Aggregation)。其他選項不正確：A（推理）；B（聚集）；C（碰撞）。"
+    },
+    {
+      "id": 273,
+      "question": "在應用程式開發過程的哪個階段，安全部門應該參與？",
+      "options": {
+        "A": "在單元測試期間",
+        "B": "在需求階段期間",
+        "C": "在...之前",
+        "D": "在系統...之前"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：在需求階段期間。其他選項不正確：A（在單元測試期間）；C（在...之前）；D（在系統...之前）。"
+    },
+    {
+      "id": 274,
+      "question": "內容相依保護資訊的一個缺點是什麼？",
+      "options": {
+        "A": "增加處理開銷。",
+        "B": "使系統暴露於資料",
+        "C": "需要額外的密碼輸入。",
+        "D": "限制使用者的個人位址空間。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 275,
+      "question": "Java applet 可能以何種方式構成安全威脅？",
+      "options": {
+        "A": "Java 不在執行時檢查位元組碼或提供程式與客戶端系統隔離的其他安全機制",
+        "B": "其傳輸可能通過移除 SSL 和 S-HTTP 中斷安全的全球資訊網頁面在網際網路上的分發",
+        "C": "從網際網路下載的可執行檔可能在下載到客戶端系統時嘗試進行蓄意攻擊。",
+        "D": "Java 直譯器不提供以下功能"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：從網際網路下載的可執行檔可能在下載到客戶端系統時嘗試進行蓄意攻擊。其他選項不正確：A（Java 不在執行時檢查位元組碼或提供程式與客戶端系統隔離的其他安全機制）；B（其傳輸可能通過移除 SSL 和 S-HTTP 中斷安全的全球資訊網頁面在網際網路上的分發）；D（Java 直譯器不提供以下功能）。"
+    },
+    {
+      "id": 276,
+      "question": "以下什麼不包含在資料字典中？",
+      "options": {
+        "A": "安裝後階段",
+        "B": "驗收",
+        "C": "實施階段",
+        "D": "功能需求"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：實施階段。其他選項不正確：A（安裝後階段）；B（驗收）；D（功能需求）。"
+    },
+    {
+      "id": 277,
+      "question": "防範惡意程式碼的最佳措施是什麼？",
+      "options": {
+        "A": "防止重複使用外部可攜式媒體",
+        "B": "使用防毒軟體",
+        "C": "管理使用者行為",
+        "D": "在網頁瀏覽器上停用行動程式碼"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 278,
+      "question": "Java 遵循哪種安全模型？",
+      "options": {
+        "A": "最小權限",
+        "B": "CIA",
+        "C": "OSI",
+        "D": "沙箱 (Sand box)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：沙箱 (Sand box)。其他選項不正確：A（最小權限）。"
+    },
+    {
+      "id": 279,
+      "question": "什麼是不通過正式通訊管道，從較高分類等級隱密傳輸資訊到較低分類等級的行為？",
+      "options": {
+        "A": "物件重用 (Object Reuse)",
+        "B": "資料傳輸 (Data Transfer)",
+        "C": "安全域 (Security domain)",
+        "D": "隱蔽通道 (Covert Channel)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：隱蔽通道 (Covert Channel)。其他選項不正確：A（物件重用）；B（資料傳輸）；C（安全域）。"
+    },
+    {
+      "id": 280,
+      "question": "許多資料庫知識發現 (KDD) 方法用於識別資料中有效且有用的模式。這是一個不斷發展的研究領域，包括各種自動化分析解決方案，如資料探勘。以下哪一項不是使用的方法？",
+      "options": {
+        "A": "機率式 (Probabilistic)",
+        "B": "分類 (Classification)",
+        "D": "導向式 (Oriented)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：導向式 (Oriented)。其他選項不正確：A（機率式）；B（分類）。"
+    },
+    {
+      "id": 281,
+      "question": "業務規則可以通過使用什麼在資料庫中強制執行？",
+      "options": {
+        "A": "視圖 (Views)",
+        "B": "認證 (Authentication)",
+        "C": "代理 (Proxy)",
+        "D": "冗餘 (Redundancy)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：視圖 (Views)。其他選項不正確：B（認證）；C（代理）；D（冗餘）。"
+    },
+    {
+      "id": 283,
+      "question": "什麼允許一個關係包含具有相同主鍵的多列？",
+      "options": {
+        "A": "RDBMS",
+        "B": "多型 (Polymorphism)",
+        "C": "多重實例化 (Polyinstantiation)",
+        "D": "不可能"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：多重實例化 (Polyinstantiation)。其他選項不正確：A（RDBMS）；B（多型）；D（不可能）。"
+    },
+    {
+      "id": 284,
+      "question": "以下哪一個代表 ALE 計算？",
+      "options": {
+        "A": "總損失期望值 x 損失",
+        "B": "實際替換成本",
+        "C": "資產價值 x 損失期望值",
+        "D": "單一損失期望值 x 年化發生率"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 285,
+      "question": "通訊測試設備的控制應該在安全政策中明確說明，原因是以下哪一項？",
+      "options": {
+        "A": "測試設備可用於瀏覽網路上傳遞的資訊",
+        "B": "測試設備一旦遺失或被盜很難替換。",
+        "D": "測試設備必須隨時可供維護人員使用"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 286,
+      "question": "在自主存取控制環境中，以下哪個實體有權授予他人資訊存取權限？",
+      "options": {
+        "A": "資料擁有者 (Data Owner)",
+        "B": "管理者 安全管理者"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 287,
+      "question": "以下哪個群體代表電腦犯罪的主要來源？",
+      "options": {
+        "A": "員工",
+        "B": "駭客 外國情報人員"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 288,
+      "question": "以下哪一項是使用自動化風險分析的最佳原因？",
+      "options": {
+        "A": "自動化方法只需要最少的訓練和風險知識",
+        "B": "大多數軟體工具具有易於使用的使用者介面",
+        "C": "由於工具中內建的大量資訊，資訊收集將被最小化和加速。",
+        "D": "審查期間收集的大部分資料無法重複使用"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 289,
+      "question": "在任何組織中，誰對電腦資訊系統的安全負最終責任？",
+      "options": {
+        "A": "營運層級",
+        "B": "管理層級"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 290,
+      "question": "在 IT 安全的範疇中，以下哪種組合最能定義風險？",
+      "options": {
+        "A": "威脅加上違規",
+        "B": "威脅加上安全違規",
+        "C": "弱點加上攻擊"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 291,
+      "question": "以下哪一項被認為是安全系統中最薄弱的環節？",
+      "options": {
+        "A": "硬體",
+        "B": "通訊"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 292,
+      "question": "以下哪一項",
+      "options": {
+        "A": "基本安全措施的實施和認證",
+        "B": "密碼演算法驗證的評估標準",
+        "C": "公鑰認證",
+        "D": "資訊安全管理系統"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 293,
+      "question": "在風險管理中，CIA 的相反概念是什麼？",
+      "options": {
+        "A": "機密性、完整性、可用性",
+        "B": "誤用、暴露、破壞",
+        "C": "授權、不可否認性",
+        "D": "揭露、篡改、破壞"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 294,
+      "question": "年化損失期望值 (ALE) 如何從威脅中推導？",
+      "options": {
+        "A": "ARO x (SLE",
+        "B": "SLE",
+        "C": "SLE/EF",
+        "D": "AV X EF"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：SLE。其他選項不正確：A（ARO x (SLE）；C（SLE/EF）；D（AV X EF）。"
+    },
+    {
+      "id": 295,
+      "question": "「殘餘風險」是什麼意思？",
+      "options": {
+        "A": "被審計資產固有的安全風險，未進行任何緩解",
+        "B": "執行風險評估後剩餘的風險",
+        "C": "控制措施實施後仍然存在的安全風險",
+        "D": "資產中可被威脅利用的弱點"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：控制措施實施後仍然存在的安全風險。其他選項不正確：A（被審計資產固有的安全風險，未進行任何緩解）；B（執行風險評估後剩餘的風險）；D（資產中可被威脅利用的弱點）。"
+    },
+    {
+      "id": 296,
+      "question": "定量分析與定性風險分析有什麼區別？",
+      "options": {
+        "A": "定量分析提供正式的成本/效益分析，定性則不",
+        "B": "定性和定量分析之間沒有區別",
+        "C": "完全定性分析不可能，而定量可以",
+        "D": "定性使用強大的數學公式，定量則不"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 297,
+      "question": "在資訊系統中保持機密性要求資訊不被揭露給",
+      "options": {
+        "A": "授權人員和程序",
+        "B": "授權人員",
+        "C": "未授權人員。",
+        "D": "未授權人員或程序。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：授權人員和程序。其他選項不正確：B（授權人員）；C（未授權人員）；D（未授權人員或程序）。"
+    },
+    {
+      "id": 298,
+      "question": "以下哪一項不是完整性的目標？",
+      "options": {
+        "A": "防止未經授權或無意的資訊修改。",
+        "B": "保持內部和外部一致性。",
+        "C": "防止授權使用者修改資訊。",
+        "D": "防止未授權使用者修改資訊。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 299,
+      "question": "什麼被稱為有可能對資訊系統或網路造成損害的事件或活動？",
+      "options": {
+        "A": "弱點 (Vulnerability)",
+        "B": "弱點 (Weakness)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 300,
+      "question": "什麼被稱為威脅對資訊系統造成影響的機率？",
+      "options": {
+        "A": "威脅 (Threat)",
+        "B": "弱點 (Vulnerability)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

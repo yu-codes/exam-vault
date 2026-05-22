@@ -1,0 +1,663 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "questionbank-2021-chinese",
+    "question_range": "Q751 - Q800",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "id": 751,
+      "question": "單向雜湊提供：",
+      "options": {
+        "A": "機密性",
+        "B": "可用性",
+        "C": "完整性",
+        "D": "認證"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "雜湊函數用於密碼系統實現數位簽章，以提供訊息來自特定使用者的證明，並確保訊息在兩方之間傳輸時未被修改。完整性是一種狀態，其特徵是確保未經授權的使用者不會進行修改，且授權使用者不會進行未經授權的修改。"
+    },
+    {
+      "id": 752,
+      "question": "MD5 訊息摘要（雜湊）的大小是多少？",
+      "options": {
+        "A": "128 位元",
+        "B": "160 位元",
+        "C": "256 位元",
+        "D": "128 位元組"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "MD4 是由 Ron Rivest 設計的單向雜湊函數，產生 128 位元的雜湊值或訊息摘要。MD5 是 MD4 的較新版本，仍然產生 128 位元的雜湊值，但演算法更複雜，使其更難被破解。SHA 由 NIST 和 NSA 設計，用於 DSS，產生 160 位元的雜湊值。HAVAL 是可變長度的單向雜湊函數，是 MD5 的修改版本。"
+    },
+    {
+      "id": 753,
+      "question": "以下哪項不是單向雜湊函數的屬性？",
+      "options": {
+        "A": "它將固定長度的訊息轉換為任意長度的訊息摘要",
+        "B": "在計算上不可能構造具有相同摘要的兩個不同訊息",
+        "C": "它將任意長度的訊息轉換為固定長度的訊息摘要",
+        "D": "給定一個摘要值，在計算上不可能找到對應的訊息"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 754,
+      "question": "以下哪項最能描述隱藏密碼（Concealment cipher）？",
+      "options": {
+        "A": "使用排列，意味著字母被打亂",
+        "B": "文本中每隔 X 個字是真實訊息的一部分",
+        "C": "用不同的位元、字元或字元區塊替換位元、字元或字元區塊",
+        "D": "將資料隱藏在另一個訊息中，使資料的存在本身被隱藏"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "參考：Shon Harris: All-in-One CISSP Certification 第 468 頁"
+    },
+    {
+      "id": 755,
+      "question": "以下哪種密碼是 Vigenère 多字母密碼的子集？",
+      "options": {
+        "A": "Caesar",
+        "B": "Jefferson",
+        "C": "Alberti",
+        "D": "SIGABA"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "Caesar 密碼是一種簡單的替換密碼，涉及將字母表向右移動三個位置。Caesar 密碼是 Vigenère 多字母密碼的子集。在 Caesar 密碼中，訊息的字元和金鑰的重複以模 26 相加。"
+    },
+    {
+      "id": 756,
+      "question": "以下哪項不是 Rijndael 區塊密碼演算法的屬性？",
+      "options": {
+        "A": "抵抗所有已知攻擊",
+        "B": "設計簡潔",
+        "C": "最大金鑰大小 512 位元",
+        "D": "在各種平台上的程式碼緊湊性"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 757,
+      "question": "密碼有哪兩種類型？",
+      "options": {
+        "A": "轉置和排列",
+        "B": "轉置和移位",
+        "C": "轉置和替換",
+        "D": "替換和替代"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "古典密碼包括：替換、轉置（排列）、Vernam（一次性密碼本）、書本或運行金鑰、編碼、隱寫術。"
+    },
+    {
+      "id": 758,
+      "question": "以下哪項如果嵌入密文中，將降低訊息被重放的可能性？",
+      "options": {
+        "A": "停止位元",
+        "B": "校驗和",
+        "C": "時間戳記",
+        "D": "數位簽章"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "CBC 是某種區塊密碼的 CBC 模式，HMAC 是帶金鑰的訊息摘要，MD 是普通訊息摘要，時間戳記用於防止重放攻擊。"
+    },
+    {
+      "id": 759,
+      "question": "以下關於區塊密碼的陳述哪項是不正確的？",
+      "options": {
+        "A": "它對固定大小的明文區塊進行操作",
+        "B": "它比硬體實現更適合軟體實現",
+        "C": "明文用公鑰加密，用私鑰解密",
+        "D": "區塊密碼可以作為串流操作"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "強大且高效的區塊密碼系統使用隨機金鑰值，使攻擊者無法找到選擇和使用哪些 S-box 的模式。區塊密碼更容易在軟體中實現，因為它們處理軟體習慣處理的資料區塊。"
+    },
+    {
+      "id": 760,
+      "question": "重複使用演算法對由許多區塊組成的訊息進行加密稱為",
+      "options": {
+        "A": "密碼回饋",
+        "B": "橢圓曲線",
+        "C": "密碼區塊鏈結",
+        "D": "Triple DES"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "密碼區塊鏈結（CBC）對 64 位元的明文區塊進行操作。注意在此模式中，錯誤會傳播。"
+    },
+    {
+      "id": 761,
+      "question": "當使用區塊鏈結密碼學時，計算並附加到資料上以確保真實性的代碼是什麼類型？",
+      "options": {
+        "A": "訊息認證碼",
+        "B": "密文認證碼",
+        "C": "循環冗餘檢查",
+        "D": "電子數位簽章"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "如果有意義的明文不能自動識別，可以計算訊息認證碼（MAC）並附加到訊息中。計算是整個訊息和秘密金鑰的函數。接收者使用相同的秘密金鑰計算 MAC 來檢查訊息的真實性，然後驗證計算值與隨訊息傳輸的值是否相同。"
+    },
+    {
+      "id": 762,
+      "question": "以下關於區塊密碼的陳述哪項是不正確的？",
+      "options": {
+        "A": "它對固定大小的明文區塊進行操作",
+        "B": "它比硬體實現更適合軟體實現",
+        "C": "明文用公鑰加密，用私鑰解密",
+        "D": "區塊密碼可以作為串流操作"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "強大且高效的區塊密碼系統使用隨機金鑰值，使攻擊者無法找到選擇和使用哪些 S-box 的模式。區塊密碼更容易在軟體中實現，因為它們處理軟體習慣處理的資料區塊。"
+    },
+    {
+      "id": 763,
+      "question": "以下哪項是對稱加密演算法？",
+      "options": {
+        "A": "RSA",
+        "B": "橢圓曲線",
+        "C": "RC5",
+        "D": "El Gamal"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 764,
+      "question": "資料加密標準演算法的有效金鑰長度是多少位元？",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "56",
+        "D": "64"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 765,
+      "question": "與 RSA 相比，以下關於橢圓曲線密碼學的哪項是正確的？",
+      "options": {
+        "A": "它已被數學證明更安全",
+        "B": "它已被數學證明不太安全",
+        "C": "據信它需要更長的金鑰才能達到等效安全性",
+        "D": "據信它需要更短的金鑰才能達到等效安全性"
+      },
+      "answers": ["D"],
+      "type": "single",
+      "explanation": "在大多數情況下，金鑰長度越長，提供的保護越多，但 ECC 可以用比 RSA 要求更小的金鑰大小提供相同級別的保護。例如，160 位元的橢圓曲線金鑰等同於 1024 位元的 RSA 金鑰。"
+    },
+    {
+      "id": 766,
+      "question": "以下哪項不是單向演算法？",
+      "options": {
+        "A": "MD2",
+        "B": "RC2",
+        "C": "SHA-1",
+        "D": "DSA"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "雜湊函數包括 SHA、MD2、MD4、MD5。DSA（數位簽章演算法）是使用 SHA-1 雜湊函數的數位簽章核准標準。RC2 不是單向演算法，而是加密演算法。"
+    },
+    {
+      "id": 767,
+      "question": "既能進行加密又能進行數位簽章的公鑰演算法是以下哪項？",
+      "options": {
+        "A": "RSA",
+        "B": "DES",
+        "C": "IDEA",
+        "D": "DSS"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "RSA 以其發明者 Ron Rivest、Adi Shamir 和 Leonard Adleman 命名，是最受歡迎的非對稱演算法公鑰演算法。RSA 是全球事實上的標準，可用於數位簽章、金鑰交換和加密。"
+    },
+    {
+      "id": 768,
+      "question": "以下哪種加密演算法不涉及離散對數？",
+      "options": {
+        "A": "El Gamal",
+        "B": "Diffie-Hellman",
+        "C": "RSA",
+        "D": "橢圓曲線"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 769,
+      "question": "RSA 演算法是哪種類型密碼學的範例？",
+      "options": {
+        "A": "非對稱金鑰",
+        "B": "對稱金鑰",
+        "C": "秘密金鑰",
+        "D": "私鑰"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 770,
+      "question": "DES 使用多少輪？",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "64",
+        "D": "48"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "當 DES 演算法應用於資料時，它將訊息分成區塊並逐一操作。一個區塊由 64 位元組成，被分成兩半，每個字元逐一加密。字元經過 16 輪轉置和替換函數。轉置和替換函數的順序和類型取決於輸入演算法的金鑰值。結果是 64 位元的密文區塊。"
+    },
+    {
+      "id": 771,
+      "question": "以下哪項是最安全的三重 DES 加密形式？",
+      "options": {
+        "A": "DES-EDE3",
+        "B": "DES-EDE1",
+        "C": "DES-EEE4",
+        "D": "DES-EDE2"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 772,
+      "question": "以下哪種演算法不提供雜湊？",
+      "options": {
+        "A": "SHA-1",
+        "B": "MD2",
+        "C": "RC4",
+        "D": "MD5"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "雜湊演算法包括：SHA-1、HMAC-SHA-1、MD5、HMAC-MD5。RC4 是串流加密演算法，不是雜湊演算法。"
+    },
+    {
+      "id": 773,
+      "question": "以下哪項與其他三項不同？",
+      "options": {
+        "A": "El Gamal",
+        "B": "Teardrop",
+        "C": "緩衝區溢位",
+        "D": "Smurf"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 774,
+      "question": "以下哪項不是加密演算法？",
+      "options": {
+        "A": "Skipjack",
+        "B": "SHA-1",
+        "C": "Twofish",
+        "D": "DEA"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "SHA-1 是雜湊演算法而非加密演算法。"
+    },
+    {
+      "id": 775,
+      "question": "以下哪項是非對稱演算法？",
+      "options": {
+        "A": "資料加密演算法",
+        "B": "資料加密標準",
+        "C": "Enigma",
+        "D": "Knapsack"
+      },
+      "answers": ["D"],
+      "type": "single",
+      "explanation": "Merkle-Hellman Knapsack 是一種公鑰演算法。DES 描述了資料加密演算法（DEA）。最知名的對稱金鑰系統可能是資料加密標準（DES）。德國軍方在第二次世界大戰期間使用名為 Enigma 的多字母替換密碼機作為其主要加密系統。"
+    },
+    {
+      "id": 776,
+      "question": "以下哪項不是對稱金鑰演算法？",
+      "options": {
+        "A": "Blowfish",
+        "B": "數位簽章標準（DSS）",
+        "C": "Triple DES（3DES）",
+        "D": "RC5"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "參考：Shon Harris 第 489 頁"
+    },
+    {
+      "id": 777,
+      "question": "Rijndael 演算法不使用以下哪個層？",
+      "options": {
+        "A": "非線性層",
+        "B": "轉置層",
+        "C": "金鑰加法層",
+        "D": "線性混合層"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "參考：Krutz: CISSP Prep Guide: Gold Edition 第 201 頁"
+    },
+    {
+      "id": 778,
+      "question": "Rivest-Shamir-Adelman（RSA）演算法方案的基礎是什麼？",
+      "options": {
+        "A": "排列",
+        "B": "工作因子",
+        "C": "因數分解能力",
+        "D": "可逆性"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "此演算法基於分解數字 N 的困難性，N 是兩個大質數的乘積。"
+    },
+    {
+      "id": 779,
+      "question": "以下哪種加密演算法不涉及離散對數？",
+      "options": {
+        "A": "El Gamal",
+        "B": "Diffie-Hellman",
+        "C": "RSA",
+        "D": "橢圓曲線"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "參考：Hansche: Official (ISC)2 Guide to the CISSP Exam 第 416 頁"
+    },
+    {
+      "id": 780,
+      "question": "RSA 演算法使用哪個數學概念作為其加密的基礎？",
+      "options": {
+        "A": "幾何學",
+        "B": "無理數",
+        "C": "PI（3.14159...）",
+        "D": "大質數"
+      },
+      "answers": ["D"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 781,
+      "question": "PGP 提供以下哪些功能？（選擇三個）",
+      "options": {
+        "A": "機密性",
+        "B": "問責性",
+        "C": "可存取性",
+        "D": "完整性",
+        "E": "利益",
+        "F": "不可否認性",
+        "G": "真實性"
+      },
+      "answers": ["A", "D", "G"],
+      "type": "multiple",
+      "explanation": "PGP 提供機密性、完整性和真實性。"
+    },
+    {
+      "id": 782,
+      "question": "PGP 使用以下哪種方式加密資料？",
+      "options": {
+        "A": "非對稱方案",
+        "B": "對稱方案",
+        "C": "對稱金鑰分配系統",
+        "D": "非對稱金鑰分配"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 783,
+      "question": "以下哪種郵件標準依賴「信任網路」？",
+      "options": {
+        "A": "安全多用途網際網路郵件擴展（S/MIME）",
+        "B": "Pretty Good Privacy（PGP）",
+        "C": "MIME 物件安全服務（MOSS）",
+        "D": "隱私增強郵件（PEM）"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "PGP 不使用 CA 的層級結構或任何類型的正式信任憑證，而是在其金鑰管理方法中依賴「信任網路」。每個使用者生成並分發他或她的公鑰，使用者互相簽署彼此的公鑰，這創建了一個相互信任的使用者社群。"
+    },
+    {
+      "id": 784,
+      "question": "以下哪項為電子郵件訊息提供機密性？",
+      "options": {
+        "A": "寄件者用其私鑰加密",
+        "B": "寄件者用其公鑰加密",
+        "C": "寄件者用接收者的公鑰加密",
+        "D": "寄件者用接收者的私鑰加密"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 785,
+      "question": "以下哪些項目不應保留在電子郵件目錄中？",
+      "options": {
+        "A": "文件草稿",
+        "B": "文件副本",
+        "C": "永久記錄",
+        "D": "臨時文件"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 786,
+      "question": "在安全電子交易（SET）中，支付閘道器需要多少憑證才能支援多個收單機構？",
+      "options": {
+        "A": "僅閘道器兩個憑證",
+        "B": "閘道器兩個憑證和收單機構兩個憑證",
+        "C": "每個收單機構兩個憑證",
+        "D": "閘道器兩個憑證和每個收單機構兩個憑證"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": "SET 使用 DES 對稱金鑰系統加密支付資訊，使用 RSA 進行對稱金鑰交換和數位簽章。SET 涵蓋從持卡人到金融機構的端到端交易。在 SET 環境中，存在憑證授權機構的層級結構。"
+    },
+    {
+      "id": 787,
+      "question": "哪個協議利用客戶 PC 上的電子錢包，將加密的信用卡資訊發送到商家的 Web 伺服器，商家對其進行數位簽章並將其發送到其處理銀行？",
+      "options": {
+        "A": "SSH",
+        "B": "S/MIME",
+        "C": "SET",
+        "D": "SSL"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 788,
+      "question": "以下哪項最能描述安全電子交易（SET）協議？",
+      "options": {
+        "A": "由 VISA 和 MasterCard 發起的網際網路信用卡協議",
+        "B": "由 VISA 和 MasterCard 發起的使用數位簽章的網際網路信用卡協議",
+        "C": "由 VISA 和 MasterCard 發起的使用傳輸層的網際網路信用卡協議",
+        "D": "由 VISA 和 MasterCard 發起的使用 SSL 的網際網路信用卡協議"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 789,
+      "question": "以下哪項最能定義「WAP Gap」安全問題？",
+      "options": {
+        "A": "無線裝置和 PC 之間的處理能力差距",
+        "B": "WTLS 傳輸必須在運營商的 WAP 閘道器處解密，然後用 SSL 重新加密以在有線網路上使用",
+        "C": "無線通訊比有線通訊更容易被攔截",
+        "D": "無線裝置無法實現強加密"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 790,
+      "question": "哪種加密演算法最適合與手持無線裝置通訊？",
+      "options": {
+        "A": "ECC",
+        "B": "RSA",
+        "C": "SHA",
+        "D": "RC4"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "橢圓曲線密碼系統（ECC）提供了 RSA 提供的大部分功能：數位簽章、安全金鑰分配和加密。不同之處在於 ECC 的效率。某些裝置的處理能力、儲存、電源和頻寬有限，如無線裝置和行動電話。ECC 可以用比 RSA 更小的金鑰大小提供相同級別的保護。"
+    },
+    {
+      "id": 791,
+      "question": "哪種安全措施最能提供電子郵件中的不可否認性？",
+      "options": {
+        "A": "數位簽章",
+        "B": "雙倍長度金鑰加密金鑰（KEK）",
+        "C": "訊息認證",
+        "D": "Triple DES"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "數位簽章是一種用於提供訊息寄件者認證的工具。它可以驗證訊息的來源以及寄件者的身份。它對每個交易都是唯一的，並使用私鑰建立。"
+    },
+    {
+      "id": 792,
+      "question": "數位簽章標準（DSS）不提供以下哪項服務？",
+      "options": {
+        "A": "加密",
+        "B": "完整性",
+        "C": "數位簽章",
+        "D": "認證"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 793,
+      "question": "公鑰密碼學通過使用公鑰簽章和什麼來提供完整性驗證？",
+      "options": {
+        "A": "安全雜湊",
+        "B": "零知識",
+        "C": "私鑰簽章",
+        "D": "會話金鑰"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": "參考：Krutz Gold Edition 第 213 頁"
+    },
+    {
+      "id": 794,
+      "question": "電子簽章可以防止訊息被：",
+      "options": {
+        "A": "刪除",
+        "B": "洩露",
+        "C": "否認",
+        "D": "轉發"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 795,
+      "question": "為什麼供應商在提供軟體修補程式供客戶從網際網路下載時會發布 MD5 雜湊值？",
+      "options": {
+        "A": "接收者可以在下載後驗證軟體的完整性",
+        "B": "接收者可以確認下載修補程式的網站的真實性",
+        "C": "接收者可以使用分配的雜湊值請求軟體的未來更新",
+        "D": "接收者需要雜湊值才能成功啟動新軟體"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "如果兩個值不同，接收者知道訊息已被更改（有意或無意），並丟棄訊息。使用單向雜湊函數的目標是提供訊息的指紋。"
+    },
+    {
+      "id": 796,
+      "question": "X.509 憑證中包含哪個屬性？",
+      "options": {
+        "A": "主體的識別名稱",
+        "B": "部門的電話號碼",
+        "C": "發行 CA 的秘密金鑰",
+        "D": "憑證持有者的金鑰對"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "符合 X.509 的憑證包含以下資料：X.509 版本、序號、簽章演算法識別符、發行者名稱、有效期、主體名稱（包含擁有憑證中公鑰的實體的識別名稱或 DN）、主體的公鑰。"
+    },
+    {
+      "id": 797,
+      "question": "什麼用於將文件與其在特定時間的建立綁定？",
+      "options": {
+        "A": "網路時間協議（NTP）",
+        "B": "數位簽章",
+        "C": "數位時間戳記",
+        "D": "憑證授權機構（CA）"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 798,
+      "question": "X.509 憑證中包含哪個屬性？",
+      "options": {
+        "A": "主體的識別名稱",
+        "B": "部門的電話號碼",
+        "C": "發行 CA 的秘密金鑰",
+        "D": "憑證持有者的金鑰對"
+      },
+      "answers": ["A"],
+      "type": "single",
+      "explanation": "符合 X.509 的憑證包含以下資料：X.509 版本、序號、簽章演算法識別符、發行者名稱、有效期、主體名稱（包含擁有憑證中公鑰的實體的識別名稱或 DN）、主體的公鑰。"
+    },
+    {
+      "id": 799,
+      "question": "以下哪項標準涉及數位憑證？",
+      "options": {
+        "A": "X.400",
+        "B": "X.25",
+        "C": "X.509",
+        "D": "X.75"
+      },
+      "answers": ["C"],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 800,
+      "question": "數位憑證的哪個保證等級只需要電子郵件地址？",
+      "options": {
+        "A": "等級 0",
+        "B": "等級 1",
+        "C": "等級 2",
+        "D": "等級 3"
+      },
+      "answers": ["B"],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}

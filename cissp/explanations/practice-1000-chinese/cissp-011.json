@@ -1,0 +1,707 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-chinese",
+    "file": "cissp-011.json",
+    "question_range": "Q501 - Q550",
+    "start": 501,
+    "end": 550,
+    "total_questions": 49
+  },
+  "questions": [
+    {
+      "id": 501,
+      "question": "如果內部資料庫中每個部門的印表機數量總和等於資料庫其他地方記錄的整個組織的印表機總數，這是以下哪一項的範例？",
+      "options": {
+        "A": "資訊系統的內部一致性。",
+        "B": "資訊系統的差異一致性。",
+        "C": "資訊系統的外部一致性。",
+        "D": "資訊系統的參照一致性。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 502,
+      "question": "什麼最能定義隱蔽通道 (covert channel)？",
+      "options": {
+        "A": "特洛伊木馬。",
+        "B": "一個未記錄的後門",
+        "C": "一個應該關閉的開放系統連接埠。",
+        "D": "一種允許以違反系統安全政策的方式傳輸資訊的通訊管道。"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：一種允許以違反系統安全政策的方式傳輸資訊的通訊管道。其他選項不正確：A（特洛伊木馬）；B（一個未記錄的後門）；C（一個應該關閉的開放系統連接埠）。"
+    },
+    {
+      "id": 503,
+      "question": "以下關於 Biba 安全模型的哪項陳述是錯誤的？",
+      "options": {
+        "A": "程式作為主體和物件之間的中間層。",
+        "B": "它是一個狀態機器模型。",
+        "C": "主體不允許向上寫入。",
+        "D": "完整性等級被分配給主體和物件。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：程式作為主體和物件之間的中間層。其他選項不正確：B（它是一個狀態機器模型）；C（主體不允許向上寫入）；D（完整性等級被分配給主體和物件）。"
+    },
+    {
+      "id": 504,
+      "question": "緩衝區溢位為什麼會發生？",
+      "options": {
+        "A": "因為它們是容易利用的弱點",
+        "B": "因為緩衝區只能容納有限的資料",
+        "C": "因為系統記憶體不足",
+        "D": "因為輸入資料在輸入時未檢查適當的長度"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 505,
+      "question": "以下關於保護環 (protection rings) 的哪項陳述是錯誤的？",
+      "options": {
+        "A": "它們為使用者提供直接存取周邊設備的能力",
+        "B": "它們支援多工作業系統的 CIA 三元組需求。",
+        "C": "在內環運作的程式通常被稱為存在於特權",
+        "D": "它們為每個環內工作的程序提供嚴格的邊界和定義，限制其可存取的內容。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：它們為使用者提供直接存取周邊設備的能力。其他選項不正確：B（它們支援多工作業系統的 CIA 三元組需求）；C（在內環運作的程式通常被稱為存在於特權）；D（它們為每個環內工作的程序提供嚴格的邊界和定義，限制其可存取的內容）。"
+    },
+    {
+      "id": 506,
+      "question": "當電腦使用多個 CPU 並行執行指令時，這被稱為什麼？",
+      "options": {
+        "A": "多重處理 (Multiprocessing)",
+        "C": "多工 (Multitasking)",
+        "D": "平行執行 (Parallel running)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：多重處理 (Multiprocessing)。其他選項不正確：C（多工）；D（平行執行）。"
+    },
+    {
+      "id": 507,
+      "question": "以下關於可信計算基礎 (TCB) 的哪項陳述是正確的？",
+      "options": {
+        "A": "其安全政策執行獨立於系統提供的參數",
+        "B": "它在橘皮書中定義。",
+        "C": "它包括硬體、韌體和軟體。",
+        "D": "更高的 TCB 評等"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：其安全政策執行獨立於系統提供的參數。其他選項不正確：B（它在橘皮書中定義）；C（它包括硬體、韌體和軟體）；D（更高的 TCB 評等）。"
+    },
+    {
+      "id": 508,
+      "question": "什麼可以被定義為一個抽象機器，調解主體對物件的所有存取，以確保主體具有必要的存取權限並保護物件免受未經授權的存取？",
+      "options": {
+        "A": "可信計算基礎 (Trusted Computing Base)",
+        "B": "安全域 (Security Domain)",
+        "C": "參考監視器 (Reference Monitor)",
+        "D": "安全核心 (Security Kernel)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：參考監視器 (Reference Monitor)。其他選項不正確：A（可信計算基礎）；B（安全域）；D（安全核心）。"
+    },
+    {
+      "id": 509,
+      "question": "以下哪一項不是保護物件和物件內資料的方法？",
+      "options": {
+        "A": "資料隱藏 (Data hiding)",
+        "B": "資料探勘 (Data mining)",
+        "C": "抽象化 (Abstraction)",
+        "D": "分層 (Layering)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：資料探勘 (Data mining)。其他選項不正確：A（資料隱藏）；C（抽象化）；D（分層）。"
+    },
+    {
+      "id": 510,
+      "question": "Bell-LaPadula 安全模型的主要焦點是什麼？",
+      "options": {
+        "A": "責任性 (Accountability)",
+        "B": "可用性 (Availability)",
+        "C": "完整性 (Integrity)",
+        "D": "機密性 (Confidentiality)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：機密性 (Confidentiality)。其他選項不正確：A（責任性）；B（可用性）；C（完整性）。"
+    },
+    {
+      "id": 511,
+      "question": "如果不使用強星號屬性 (strong star property)，以下關於 Bell-LaPadula 的哪項陳述是錯誤的？",
+      "options": {
+        "A": "它不允許「向上寫入」。",
+        "B": "它不允許「向上讀取」。",
+        "C": "它不處理存取控制的管理。",
+        "D": "它不處理隱蔽通道。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：它不允許「向上寫入」。其他選項不正確：B（它不允許「向上讀取」）；C（它不處理存取控制的管理）；D（它不處理隱蔽通道）。"
+    },
+    {
+      "id": 512,
+      "question": "哪個安全模型引入了僅通過程式存取物件？",
+      "options": {
+        "A": "Clark-Wilson 模型",
+        "B": "Bell-LaPadula 模型",
+        "C": "資訊流模型",
+        "D": "Biba 模型"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：Clark-Wilson 模型。其他選項不正確：B（Bell-LaPadula 模型）；C（資訊流模型）；D（Biba 模型）。"
+    },
+    {
+      "id": 513,
+      "question": "哪個安全模型確保在較高安全等級發生的操作不會影響在較低等級發生的操作？",
+      "options": {
+        "A": "資訊流模型",
+        "B": "非干擾模型 (noninterference model)",
+        "C": "Clark-Wilson 模型",
+        "D": "Bell-LaPadula 模型"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：非干擾模型 (noninterference model)。其他選項不正確：A（資訊流模型）；C（Clark-Wilson 模型）；D（Bell-LaPadula 模型）。"
+    },
+    {
+      "id": 514,
+      "question": "以下哪個安全模型不關注資料流？",
+      "options": {
+        "A": "資訊流模型",
+        "B": "Bell-LaPadula 模型",
+        "C": "非干擾模型",
+        "D": "Biba 模型"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：資訊流模型。其他選項不正確：B（Bell-LaPadula 模型）；C（非干擾模型）；D（Biba 模型）。"
+    },
+    {
+      "id": 515,
+      "question": "如果所有使用者都擁有系統上處理的所有資料的許可或授權和知情需要，系統可以在什麼安全模式下運作？",
+      "options": {
+        "A": "隔間安全模式 (Compartmented security mode)",
+        "B": "多級安全模式 (Multilevel security mode)",
+        "C": "專用安全模式 (Dedicated security mode)",
+        "D": "系統高安全模式 (System-high security mode)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：專用安全模式 (Dedicated security mode)。其他選項不正確：A（隔間安全模式）；B（多級安全模式）；D（系統高安全模式）。"
+    },
+    {
+      "id": 516,
+      "question": "以下哪個橘皮書評等代表最高的信任等級？",
+      "options": {
+        "A": "F6",
+        "B": "B2",
+        "C": "C2",
+        "D": "B1"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：B2。"
+    },
+    {
+      "id": 517,
+      "question": "橘皮書的另一個名稱是什麼？",
+      "options": {
+        "A": "資訊技術安全評估標準 (ITSEC)",
+        "B": "共同準則 (Common Criteria, CC)",
+        "C": "可信電腦系統評估標準 (TCSEC)",
+        "D": "可信計算基礎 (TCB)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：可信電腦系統評估標準 (TCSEC)。其他選項不正確：A（資訊技術安全評估標準 ITSEC）；B（共同準則 CC）；D（可信計算基礎 TCB）。"
+    },
+    {
+      "id": 518,
+      "question": "以下哪一項最不相關？",
+      "options": {
+        "A": "安全政策",
+        "B": "網路和網路組件",
+        "C": "責任性",
+        "D": "文件化"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：網路和網路組件。其他選項不正確：A（安全政策）；C（責任性）；D（文件化）。"
+    },
+    {
+      "id": 519,
+      "question": "什麼被稱為管理層對系統整體安全充分性的正式接受？",
+      "options": {
+        "A": "驗收 (Acceptance)",
+        "B": "認可 (Accreditation)",
+        "C": "評估 (Evaluation)",
+        "D": "認證 (Certification)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：認可 (Accreditation)。其他選項不正確：A（驗收）；C（評估）；D（認證）。"
+    },
+    {
+      "id": 520,
+      "question": "Clark-Wilson 安全模型關注什麼？",
+      "options": {
+        "A": "機密性",
+        "B": "責任性",
+        "C": "可用性",
+        "D": "完整性"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：完整性。其他選項不正確：A（機密性）；B（責任性）；C（可用性）。"
+    },
+    {
+      "id": 521,
+      "question": "在 Bell-LaPadula 模型中，簡單安全 (ss) 屬性是什麼意思？",
+      "options": {
+        "A": "不可向上寫入 (No write up)",
+        "B": "不可向下寫入 (No write down)",
+        "C": "不可向下讀取 (No read down)",
+        "D": "不可向上讀取 (No read up)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：不可向上讀取 (No read up)。其他選項不正確：A（不可向上寫入）；B（不可向下寫入）；C（不可向下讀取）。"
+    },
+    {
+      "id": 522,
+      "question": "星號 (*) 屬性是什麼意思？",
+      "options": {
+        "A": "不可向上讀取 (No read up)",
+        "B": "不可向下讀取 (No read down)",
+        "C": "不可向下寫入 (No write down)",
+        "D": "不可向上寫入 (No write up)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：不可向下寫入 (No write down)。其他選項不正確：A（不可向上讀取）；B（不可向下讀取）；D（不可向上寫入）。"
+    },
+    {
+      "id": 523,
+      "question": "Biba 安全模型關注什麼？",
+      "options": {
+        "A": "機密性 (Confidentiality)",
+        "B": "可靠性 (Reliability)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D。其他選項不正確：A（機密性）；B（可靠性）。"
+    },
+    {
+      "id": 524,
+      "question": "哪個安全模型使用將操作分為不同部分並要求不同使用者執行每個部分？",
+      "options": {
+        "A": "Bell-LaPadula 模型",
+        "B": "Biba 模型 Clark-Wilson 模型"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 525,
+      "question": "什麼最能描述為共享單一安全政策和單一管理的信任域？",
+      "options": {
+        "A": "參考監視器 (reference monitor)",
+        "B": "安全周界 (security perimeter)",
+        "C": "安全核心 (security kernel)",
+        "D": "安全域 (security domain)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：安全域 (security domain)。其他選項不正確：A（參考監視器）；B（安全周界）；C（安全核心）。"
+    },
+    {
+      "id": 526,
+      "question": "以下哪一項描述了在單一電腦系統中使用多個處理器單元以提高系統在其應用環境中的性能超過同類單一處理器的技術？",
+      "options": {
+        "B": "多重處理 (Multiprocessing)",
+        "C": "多重程式設計 (Multiprogramming)",
+        "D": "多工 (Multitasking)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：多重處理 (Multiprocessing)。其他選項不正確：C（多重程式設計）；D（多工）。"
+    },
+    {
+      "id": 527,
+      "question": "什麼最能描述為必須調解主體對物件所有存取的抽象機器？",
+      "options": {
+        "A": "安全周界 (security perimeter)",
+        "B": "安全核心 (security kernel)",
+        "C": "安全域 (security domain)",
+        "D": "參考監視器 (reference monitor)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：參考監視器 (reference monitor)。其他選項不正確：A（安全周界）；B（安全核心）；C（安全域）。"
+    },
+    {
+      "id": 528,
+      "question": "哪個 TCSEC 等級指定自主保護 (discretionary protection)？",
+      "options": {
+        "A": "C1",
+        "B": "B1",
+        "C": "B2",
+        "D": "C2"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：C1。"
+    },
+    {
+      "id": 529,
+      "question": "根據共同準則 (Common Criteria)，什麼可以描述為安全需求組件的中間組合？",
+      "options": {
+        "A": "安全目標 (Security target, ST)",
+        "B": "評估目標 (Target Of Evaluation, TOE)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 530,
+      "question": "哪種存取控制技術也被稱為多級安全 (multilevel security)？",
+      "options": {
+        "A": "強制存取控制 (Mandatory access control)",
+        "B": "角色型存取控制 (Role-based access control)",
+        "C": "自主存取控制 (Discretionary access control)",
+        "D": "格狀存取控制 (Lattice-based access control)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：強制存取控制 (Mandatory access control)。其他選項不正確：B（角色型存取控制）；C（自主存取控制）；D（格狀存取控制）。"
+    },
+    {
+      "id": 531,
+      "question": "哪個存取控制模型是為強制執行政府和軍事應用的存取控制而提出的？",
+      "options": {
+        "A": "Bell-LaPadula 模型",
+        "B": "Brewer-Nash 模型"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：Bell-LaPadula 模型。其他選項不正確：B（Brewer-Nash 模型）。"
+    },
+    {
+      "id": 532,
+      "question": "哪個存取控制模型通過良好格式的交易和職責分離實現資料完整性？",
+      "options": {
+        "A": "非干擾模型 (Non-interference model)",
+        "B": "Biba 模型 Sutherland 模型"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：Biba 模型。其他選項不正確：A（非干擾模型）。"
+    },
+    {
+      "id": 533,
+      "question": "哪個 TCSEC 等級被標記為受控存取保護 (Controlled Access Protection)？",
+      "options": {
+        "A": "C2",
+        "B": "C1"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 534,
+      "question": "以下哪種安全操作模式涉及最高風險？",
+      "options": {
+        "A": "專用安全模式 (Dedicated Security Mode)",
+        "B": "系統高安全模式 (System-High Security Mode)",
+        "C": "多級安全模式 (Multilevel Security Mode)",
+        "D": "隔間安全模式 (Compartmented Security Mode)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：多級安全模式 (Multilevel Security Mode)。其他選項不正確：A（專用安全模式）；B（系統高安全模式）；D（隔間安全模式）。"
+    },
+    {
+      "id": 535,
+      "question": "以下關於安全核心 (security kernel) 的哪項陳述是不正確的？",
+      "options": {
+        "A": "安全核心必須為執行參考監視器概念的程序提供隔離，且必須防篡改。",
+        "B": "安全核心必須足夠小，以便能夠以完整和全面的方式進行測試和驗證。",
+        "C": "安全核心是一個存取控制概念，不是實際的實體組件。",
+        "D": "安全核心由以下機制組成"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 536,
+      "question": "以下哪種安全操作模式不要求所有使用者擁有系統上處理的所有資訊的許可？",
+      "options": {
+        "A": "多級安全模式 (Multilevel security mode)",
+        "B": "系統高安全模式 (System-high security mode)",
+        "C": "專用安全模式 (Dedicated security mode)",
+        "D": "隔間安全模式 (Compartmented security mode)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：多級安全模式 (Multilevel security mode)。其他選項不正確：B（系統高安全模式）；C（專用安全模式）；D（隔間安全模式）。"
+    },
+    {
+      "id": 537,
+      "question": "什麼最能被定義為電腦內部保護機制的總和，包括硬體、韌體和軟體？",
+      "options": {
+        "A": "可信系統 (Trusted system)",
+        "B": "可信計算基礎 (Trusted computing base)",
+        "C": "安全周界 (Security perimeter)",
+        "D": "安全核心 (Security kernel)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：可信計算基礎 (Trusted computing base)。其他選項不正確：A（可信系統）；C（安全周界）；D（安全核心）。"
+    },
+    {
+      "id": 539,
+      "question": "什麼可以被描述為一個想像的邊界？",
+      "options": {
+        "A": "安全核心 (security kernel)",
+        "B": "參考周界 (reference perimeter)",
+        "C": "安全周界 (security perimeter)",
+        "D": "參考監視器 (reference monitor)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：安全周界 (security perimeter)。其他選項不正確：A（安全核心）；B（參考周界）；D（參考監視器）。"
+    },
+    {
+      "id": 540,
+      "question": "參考監視器必須滿足的三個條件是什麼？",
+      "options": {
+        "A": "隔離性、完整性和可驗證性",
+        "B": "隔離性、分層和抽象化",
+        "C": "政策、機制和保證",
+        "D": "機密性、可用性和"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：隔離性、完整性和可驗證性。其他選項不正確：B（隔離性、分層和抽象化）；C（政策、機制和保證）；D（機密性、可用性和）。"
+    },
+    {
+      "id": 541,
+      "question": "以下哪一項是取代多個不同標準的 ISO 標準產品評估標準？",
+      "options": {
+        "A": "可信電腦系統評估標準 (TCSEC)",
+        "B": "ISO 標準",
+        "C": "資訊技術安全評估標準 (ITSEC)。",
+        "D": "共同準則 (Common Criteria)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 542,
+      "question": "以下哪一項不是常見的完整性目標？",
+      "options": {
+        "A": "防止可能導致不當揭露的路徑。",
+        "B": "防止授權使用者進行不當修改",
+        "C": "防止未授權使用者進行修改。",
+        "D": "維護內部和外部一致性。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：防止可能導致不當揭露的路徑。其他選項不正確：B（防止授權使用者進行不當修改）；C（防止未授權使用者進行修改）；D（維護內部和外部一致性）。"
+    },
+    {
+      "id": 543,
+      "question": "什麼用於保護程式免受所有未經授權的修改或執行干擾？",
+      "options": {
+        "A": "安全周界",
+        "B": "保護域。",
+        "D": "抽象化。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 544,
+      "question": "什麼被稱為能夠偵測故障發生並具有修正故障或繞過故障運作能力的系統？",
+      "options": {
+        "A": "故障安全系統 (fail safe system)",
+        "B": "故障轉移系統 (failover system)。",
+        "C": "容錯系統 (fault-tolerant system)。",
+        "D": "故障軟體系統 (fail soft system)。"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：容錯系統 (fault-tolerant system)。其他選項不正確：A（故障安全系統）；B（故障轉移系統）；D（故障軟體系統）。"
+    },
+    {
+      "id": 545,
+      "question": "關於企業資料，橘皮書不涵蓋",
+      "options": {
+        "A": "機密性",
+        "B": "責任性。"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 546,
+      "question": "哪個完整性模型定義了受約束的資料項目、完整性驗證程序和轉換程序？",
+      "options": {
+        "A": "Biba 完整性模型",
+        "B": "Clark-Wilson 完整性模型",
+        "C": "Bell-LaPadula 完整性模型",
+        "D": "Take-Grant 模型"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 547,
+      "question": "什麼被定義為實現參考監視器概念的可信計算基礎中的硬體、韌體和軟體元素？",
+      "options": {
+        "A": "保護環 (Protection rings)",
+        "B": "安全核心 (Security kernel)",
+        "C": "保護域 (protection domain)",
+        "D": "參考監視器 (reference monitor)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：安全核心 (Security kernel)。其他選項不正確：A（保護環）；C（保護域）；D（參考監視器）。"
+    },
+    {
+      "id": 548,
+      "question": "在 Bell-LaPadula 模型中，",
+      "options": {
+        "B": "寧靜屬性 (tranquility property)",
+        "C": "限制屬性 (confinement property)",
+        "D": "機密性屬性 (confidentiality property)"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：限制屬性 (confinement property)。其他選項不正確：B（寧靜屬性）；D（機密性屬性）。"
+    },
+    {
+      "id": 549,
+      "question": "什麼最能被定義為指定權威機構的行政聲明，批准資訊系統在特定安全配置下以規定的保護措施集運作？",
+      "options": {
+        "A": "認可 (Accreditation)",
+        "B": "聲明 (Declaration)",
+        "D": "認證 (Certification)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 550,
+      "question": "受控安全模式 (Controlled Security Mode) 也被稱為",
+      "options": {
+        "A": "系統高安全模式 (System-high Security Mode)",
+        "B": "專用安全模式 (Dedicated Security Mode)",
+        "C": "多級安全模式 (Multilevel Security Mode)",
+        "D": "分區安全模式 (Partitioned Security Mode)"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：分區安全模式 (Partitioned Security Mode)。其他選項不正確：A（系統高安全模式）；B（專用安全模式）；C（多級安全模式）。"
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "exam": "CISSP",
+    "subject": "practice-1000-chinese",
+    "file": "cissp-009.json",
+    "question_range": "Q401 - Q450",
+    "start": 402,
+    "end": 450,
+    "total_questions": 43
+  },
+  "questions": [
+    {
+      "id": 402,
+      "question": "Diffie-Hellman",
+      "options": {
+        "A": "金鑰交換",
+        "D": "金鑰協商"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：金鑰協商。其他選項不正確：A（金鑰交換）。"
+    },
+    {
+      "id": 404,
+      "question": "以下哪種金鑰的生命週期最短？",
+      "options": {
+        "A": "私鑰 (Private key)",
+        "B": "會話金鑰 (Session key)",
+        "C": "公鑰 (Public key)",
+        "D": "秘密金鑰 (Secret key)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：會話金鑰 (Session key)。其他選項不正確：A（私鑰）；C（公鑰）；D（秘密金鑰）。"
+    },
+    {
+      "id": 406,
+      "question": "以下哪一項與 PKI 無關？",
+      "options": {
+        "A": "憑證授權機構 (Certificate authority)",
+        "B": "票證授予服務 (Ticket Granting Service)"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：票證授予服務 (Ticket Granting Service)。其他選項不正確：A（憑證授權機構）。"
+    },
+    {
+      "id": 407,
+      "question": "為什麼數位簽章包含訊息摘要？",
+      "options": {
+        "A": "確認接收者的身分",
+        "B": "指示加密演算法"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：確認接收者的身分。其他選項不正確：B（指示加密演算法）。"
+    },
+    {
+      "id": 408,
+      "question": "以下哪一項最能提供電子郵件訊息的真實性和機密性？",
+      "options": {
+        "A": "使用發送者的公鑰簽署訊息並使用接收者的私鑰加密訊息",
+        "B": "使用發送者的私鑰簽署訊息並使用接收者的公鑰加密訊息",
+        "C": "使用接收者的私鑰簽署訊息並使用發送者的公鑰加密訊息",
+        "D": "使用接收者的公鑰簽署訊息並使用發送者的私鑰加密訊息"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：使用發送者的私鑰簽署訊息並使用接收者的公鑰加密訊息。其他選項不正確：A（使用發送者的公鑰簽署訊息並使用接收者的私鑰加密訊息）；C（使用接收者的私鑰簽署訊息並使用發送者的公鑰加密訊息）；D（使用接收者的公鑰簽署訊息並使用發送者的私鑰加密訊息）。"
+    },
+    {
+      "id": 409,
+      "question": "安全通訊端層 (SSL) 使用訊息認證碼 (MAC) 的目的是什麼？",
+      "options": {
+        "A": "訊息交錯檢查。",
+        "B": "訊息完整性。",
+        "C": "訊息機密性。",
+        "D": "訊息不可否認性。"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：訊息完整性。其他選項不正確：A（訊息交錯檢查）；C（訊息機密性）；D（訊息不可否認性）。"
+    },
+    {
+      "id": 411,
+      "question": "以下哪一項不是 Rijndael 區塊密碼演算法的特性？",
+      "options": {
+        "A": "金鑰大小不必匹配區塊大小",
+        "B": "最大金鑰大小為 512 位元",
+        "C": "最大區塊大小為 256 位元",
+        "D": "金鑰大小可以是 32 位元的任何倍數"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：最大金鑰大小為 512 位元。其他選項不正確：A（金鑰大小不必匹配區塊大小）；C（最大區塊大小為 256 位元）；D（金鑰大小可以是 32 位元的任何倍數）。"
+    },
+    {
+      "id": 413,
+      "question": "以下哪一項為無線通訊提供安全性？",
+      "options": {
+        "C": "S-WAP",
+        "D": "WTLS"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：WTLS。其他選項不正確：C（S-WAP）。"
+    },
+    {
+      "id": 414,
+      "question": "DES 的有效金鑰大小是多少？",
+      "options": {
+        "A": "128 位元",
+        "B": "1024 位元"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C。其他選項不正確：A（128 位元）；B（1024 位元）。"
+    },
+    {
+      "id": 415,
+      "question": "以下哪一項為電子郵件訊息提供機密性？",
+      "options": {
+        "A": "發送者使用接收者的私鑰加密",
+        "B": "發送者使用接收者的公鑰加密",
+        "C": "發送者使用自己的公鑰加密。",
+        "D": "發送者使用自己的私鑰加密。"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：發送者使用接收者的公鑰加密。其他選項不正確：A（發送者使用接收者的私鑰加密）；C（發送者使用自己的公鑰加密）；D（發送者使用自己的私鑰加密）。"
+    },
+    {
+      "id": 416,
+      "question": "以下關於串流密碼 (stream ciphers) 的哪項陳述是正確的？",
+      "options": {
+        "A": "串流密碼產生所謂的金鑰流 (keystream)。",
+        "B": "串流密碼比區塊密碼慢。",
+        "C": "串流密碼不適合基於硬體的加密。",
+        "D": "串流密碼是一種非對稱加密演算法。"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：串流密碼產生所謂的金鑰流 (keystream)。其他選項不正確：B（串流密碼比區塊密碼慢）；C（串流密碼不適合基於硬體的加密）；D（串流密碼是一種非對稱加密演算法）。"
+    },
+    {
+      "id": 417,
+      "question": "以下關於區塊密碼 (block ciphers) 的哪項陳述是不正確的？",
+      "options": {
+        "A": "它對固定大小的明文區塊進行操作。",
+        "B": "某些區塊密碼可以在內部作為串流運作。",
+        "C": "明文使用公鑰加密，使用私鑰解密。",
+        "D": "它比硬體更適合軟體"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：明文使用公鑰加密，使用私鑰解密。其他選項不正確：A（它對固定大小的明文區塊進行操作）；B（某些區塊密碼可以在內部作為串流運作）；D（它比硬體更適合軟體）。"
+    },
+    {
+      "id": 418,
+      "question": "以下關於串流密碼特性的哪項是不正確的？",
+      "options": {
+        "A": "統計上無偏差的金鑰流。",
+        "B": "比區塊密碼需要更少的處理能力"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：比區塊密碼需要更少的處理能力。其他選項不正確：A（統計上無偏差的金鑰流）。"
+    },
+    {
+      "id": 419,
+      "question": "以下哪一項是最安全的三重 DES (triple-DES) 加密形式？",
+      "options": {
+        "A": "DES-EDE2",
+        "B": "DES-EEE4"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 420,
+      "question": "以下哪一項不是已知的訊息認證碼 (MAC) 類型？",
+      "options": {
+        "A": "基於串流密碼的 MAC",
+        "B": "基於簽章的 MAC 基於區塊密碼的 MAC"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：基於簽章的 MAC。其他選項不正確：A（基於串流密碼的 MAC）。"
+    },
+    {
+      "id": 421,
+      "question": "RC5 演算法的最大金鑰大小是多少？",
+      "options": {
+        "A": "128 位元",
+        "B": "2040 位元"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：2040 位元。其他選項不正確：A（128 位元）。"
+    },
+    {
+      "id": 422,
+      "question": "以下哪一項不是加密演算法？",
+      "options": {
+        "A": "Skipjack",
+        "B": "DEA"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D。其他選項不正確：A（Skipjack）。"
+    },
+    {
+      "id": 425,
+      "question": "以下哪一項不是單向雜湊演算法？",
+      "options": {
+        "A": "RC4",
+        "B": "MD2"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 426,
+      "question": "以下關於金鑰管理的哪項陳述是不正確的？",
+      "options": {
+        "B": "不使用時",
+        "C": "金鑰應該備份或託管以備緊急情況。",
+        "D": "金鑰的生命週期應與其保護資料的敏感度相對應。"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：不使用時。其他選項不正確：C（金鑰應該備份或託管以備緊急情況）；D（金鑰的生命週期應與其保護資料的敏感度相對應）。"
+    },
+    {
+      "id": 427,
+      "question": "以下哪一項應該用作通過不安全網路進行安全遠端登入的 Telnet 替代品？",
+      "options": {
+        "A": "S-Telnet",
+        "B": "SSH"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 428,
+      "question": "以下關於訊息摘要的哪項陳述是不正確的？",
+      "options": {
+        "A": "無法從訊息摘要重建原始檔案。",
+        "B": "訊息摘要通常是固定大小的。",
+        "C": "兩個不同的",
+        "D": "訊息摘要應使用至少 128 位元組計算"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：訊息摘要應使用至少 128 位元組計算。其他選項不正確：A（無法從訊息摘要重建原始檔案）；B（訊息摘要通常是固定大小的）；C（兩個不同的）。"
+    },
+    {
+      "id": 429,
+      "question": "哪種攻擊基於兩個不同訊息使用相同雜湊函數產生共同訊息摘要的機率？",
+      "options": {
+        "A": "統計攻擊",
+        "B": "生日攻擊 (Birthday attack)",
+        "C": "差分線性密碼分析",
+        "D": "差分密碼分析"
+      },
+      "answers": [
+        "B"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 B：生日攻擊 (Birthday attack)。其他選項不正確：A（統計攻擊）；C（差分線性密碼分析）；D（差分密碼分析）。"
+    },
+    {
+      "id": 430,
+      "question": "以下哪個元素不包含在 PKI 中？",
+      "options": {
+        "A": "網際網路金鑰交換 (Internet Key Exchange)",
+        "B": "儲存庫 (Repository)",
+        "C": "憑證撤銷 (Certificate revocation)",
+        "D": "時間戳記 (Timestamping)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：網際網路金鑰交換 (Internet Key Exchange)。其他選項不正確：B（儲存庫）；C（憑證撤銷）；D（時間戳記）。"
+    },
+    {
+      "id": 431,
+      "question": "在公鑰基礎架構 (PKI) 環境中，當使用自己的 LDAP 伺服器儲存憑證和證書時，此 LDAP 伺服器的主要關注點是什麼？",
+      "options": {
+        "A": "可用性 (Availability)",
+        "B": "身分 (Identity)",
+        "C": "機密性 (Confidentiality)",
+        "D": "責任性 (Accountability)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：可用性 (Availability)。其他選項不正確：B（身分）；C（機密性）；D（責任性）。"
+    },
+    {
+      "id": 432,
+      "question": "以下哪一項是為防止電子資金轉帳 (EFT) 中的詐欺而開發的，確保訊息來自其聲稱的發送者且在傳輸中未被篡改？",
+      "options": {
+        "A": "訊息認證碼 (MAC)",
+        "B": "循環冗餘檢查 (CRC)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：訊息認證碼 (MAC)。其他選項不正確：B（循環冗餘檢查 CRC）。"
+    },
+    {
+      "id": 433,
+      "question": "以下關於安全通訊端層 (SSL) 的哪項陳述是正確的？",
+      "options": {
+        "A": "SSL 協定的主要用途是使用公鑰密碼學和數位憑證向伺服器認證客戶端",
+        "B": "使用 SSL 協定的網頁以 HTTPS 開頭",
+        "C": "SSL 可與 Telnet、FTP 和電子郵件協定等應用程式一起使用",
+        "D": "SSL 協定由 Netscape 開發，用於保護網際網路客戶端-伺服器交易"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：SSL 協定的主要用途是使用公鑰密碼學和數位憑證向伺服器認證客戶端。其他選項不正確：B（使用 SSL 協定的網頁以 HTTPS 開頭）；C（SSL 可與 Telnet、FTP 和電子郵件協定等應用程式一起使用）；D（SSL 協定由 Netscape 開發，用於保護網際網路客戶端-伺服器交易）。"
+    },
+    {
+      "id": 434,
+      "question": "在 IPSec 中建立和管理安全關聯 (SA) 的標準格式被稱為什麼？",
+      "options": {
+        "A": "網際網路金鑰交換 (Internet Key Exchange)",
+        "B": "安全金鑰交換機制 (Secure Key Exchange Mechanism)",
+        "C": "網際網路安全關聯和金鑰管理協定 (Internet Security Association and Key Management Protocol)"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：網際網路金鑰交換 (Internet Key Exchange)。其他選項不正確：B（安全金鑰交換機制）；C（網際網路安全關聯和金鑰管理協定）。"
+    },
+    {
+      "id": 435,
+      "question": "以下哪一項將主體名稱繫結到公鑰值？",
+      "options": {
+        "A": "秘密金鑰",
+        "B": "公鑰憑證 (public-key certificate)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 436,
+      "question": "實體存取控制的類型範例包括以下所有項目，除了哪一項？",
+      "options": {
+        "A": "密碼 (passwords)",
+        "B": "警衛 (guards)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 437,
+      "question": "當安全計劃要求的功能涉及以下哪一項時，警衛是適當的？",
+      "options": {
+        "A": "使用辨別力判斷",
+        "B": "使用實體"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：使用辨別力判斷。其他選項不正確：B（使用實體）。"
+    },
+    {
+      "id": 438,
+      "question": "以下哪一項是降低實體安全風險最昂貴的對策？",
+      "options": {
+        "A": "程序控制",
+        "B": "電子系統"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 439,
+      "question": "以下關於「乾管」(dry pipe) 灑水系統的哪項是正確的？",
+      "options": {
+        "A": "它降低了灑水系統管道的可能性",
+        "B": "它是二氧化碳的替代品"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：它降低了灑水系統管道的可能性。其他選項不正確：B（它是二氧化碳的替代品）。"
+    },
+    {
+      "id": 440,
+      "question": "以下哪一項是 A 類火災？",
+      "options": {
+        "A": "海龍 (Halon)",
+        "B": "電氣",
+        "C": "液體",
+        "D": "一般可燃物"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：一般可燃物。其他選項不正確：A（海龍）；B（電氣）；C（液體）。"
+    },
+    {
+      "id": 441,
+      "question": "以下哪一項是撲滅電氣火災的首選方式？",
+      "options": {
+        "A": "CO2、蘇打酸或海龍 (Halon)",
+        "B": "水或蘇打酸",
+        "C": "ABC 級乾粉滅火劑"
+      },
+      "answers": [
+        "C"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 C：ABC 級乾粉滅火劑。其他選項不正確：A（CO2、蘇打酸或海龍）；B（水或蘇打酸）。"
+    },
+    {
+      "id": 442,
+      "question": "火的四個基本元素是什麼？",
+      "options": {
+        "A": "熱量、燃料、氧氣和連鎖反應",
+        "B": "火焰、燃料、氧氣和連鎖反應",
+        "C": "熱量、木材、氧氣和連鎖反應",
+        "D": "熱量、燃料、CO2 和連鎖反應"
+      },
+      "answers": [
+        "A"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 A：熱量、燃料、氧氣和連鎖反應。其他選項不正確：B（火焰、燃料、氧氣和連鎖反應）；C（熱量、木材、氧氣和連鎖反應）；D（熱量、燃料、CO2 和連鎖反應）。"
+    },
+    {
+      "id": 443,
+      "question": "以下哪一項不是動態偵測器的類型？",
+      "options": {
+        "A": "超音波 (Ultrasonic)",
+        "B": "光電感測器 (Photoelectric sensor)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 444,
+      "question": "以下哪一項不是減少靜電的預防措施？",
+      "options": {
+        "A": "防靜電",
+        "B": "電源線調節"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 445,
+      "question": "以下哪一項是目前電腦設施最推薦的水系統？",
+      "options": {
+        "A": "預動式 (preaction)",
+        "B": "洪水式 (deluge)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 446,
+      "question": "以下哪一項是電磁干擾 (EMI)？",
+      "options": {
+        "A": "橫向模式雜訊",
+        "B": "交叉模式雜訊"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 447,
+      "question": "「設施的弱點」可通過以下所有方法評估，除了",
+      "options": {
+        "A": "歷史記錄",
+        "B": "安全控制"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 448,
+      "question": "以下哪一項不是 EPA 批准的海龍 (Halon) 替代品？",
+      "options": {
+        "A": "溴 (Bromine)",
+        "B": "FE-13"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    },
+    {
+      "id": 449,
+      "question": "透過環境設計預防犯罪 (CPTED)",
+      "options": {
+        "A": "概述適當的邏輯環境設計如何通過直接影響人類行為來減少犯罪",
+        "B": "概述適當的管理控制環境設計如何通過直接影響人類行為來減少犯罪",
+        "C": "概述適當的偵測控制環境設計如何通過直接影響人類行為來減少犯罪。",
+        "D": "概述適當的實體環境設計如何通過直接影響人類行為來減少犯罪。"
+      },
+      "answers": [
+        "D"
+      ],
+      "type": "single",
+      "explanation": "正確答案是 D：概述適當的實體環境設計如何通過直接影響人類行為來減少犯罪。其他選項不正確：A（概述適當的邏輯環境設計如何通過直接影響人類行為來減少犯罪）；B（概述適當的管理控制環境設計如何通過直接影響人類行為來減少犯罪）；C（概述適當的偵測控制環境設計如何通過直接影響人類行為來減少犯罪）。"
+    },
+    {
+      "id": 450,
+      "question": "實體安全組件對抗的主要風險包括以下所有項目，除了",
+      "options": {
+        "A": "尾隨 (Tailgating)",
+        "B": "SYN 洪水攻擊 (SYN flood)"
+      },
+      "answers": [],
+      "type": "single",
+      "explanation": ""
+    }
+  ]
+}
